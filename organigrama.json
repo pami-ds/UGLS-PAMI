@@ -1,0 +1,619 @@
+{
+ "_fuente": "Organigrama Nivel Central INSSJP - Anexo I (organigrama_2025.pdf)",
+ "_niveles": {
+  "organo": "Órgano ejecutivo de gobierno",
+  "coordinacion": "Coordinación ejecutiva",
+  "unidad": "Unidad operativa de nivel gerencial",
+  "gerencia": "Nivel gerencial",
+  "subgerencia": "Nivel subgerencial"
+ },
+ "unidades": [
+  {
+   "id": "DE",
+   "nombre": "Dirección Ejecutiva",
+   "nivel": "organo",
+   "padre": null,
+   "siglas": [
+    "DE"
+   ]
+  },
+  {
+   "id": "ULT",
+   "nombre": "Unidad Legal y Técnica",
+   "nivel": "unidad",
+   "padre": "DE",
+   "staff": true,
+   "siglas": [
+    "ULYT",
+    "ULT"
+   ]
+  },
+  {
+   "id": "SG",
+   "nombre": "Sindicatura General",
+   "nivel": "organo",
+   "padre": null,
+   "siglas": [
+    "SG",
+    "SIGEN"
+   ]
+  },
+  {
+   "id": "SG-CTL",
+   "nombre": "Coordinación Técnica Legal",
+   "nivel": "subgerencia",
+   "padre": "SG"
+  },
+  {
+   "id": "SG-CTE",
+   "nombre": "Coordinación Técnica Económica",
+   "nivel": "subgerencia",
+   "padre": "SG"
+  },
+  {
+   "id": "SECPRIV",
+   "nombre": "Secretaría Privada",
+   "nivel": "subgerencia",
+   "padre": "DE"
+  },
+  {
+   "id": "UAI",
+   "nombre": "Unidad de Auditoría Interna",
+   "nivel": "gerencia",
+   "padre": "DE",
+   "siglas": [
+    "UAI"
+   ]
+  },
+  {
+   "id": "UAI-AIA",
+   "nombre": "Auditor Interno Adjunto",
+   "nivel": "subgerencia",
+   "padre": "UAI"
+  },
+  {
+   "id": "GAP",
+   "nombre": "Gerencia de Auditoría Prestacional",
+   "nivel": "gerencia",
+   "padre": "DE",
+   "siglas": [
+    "GAP"
+   ]
+  },
+  {
+   "id": "GAP-AIP",
+   "nombre": "Subgerencia de Auditoría Integral de Prestaciones",
+   "nivel": "subgerencia",
+   "padre": "GAP"
+  },
+  {
+   "id": "GAP-SET",
+   "nombre": "Subgerencia de Seguimiento y Enlace Territorial",
+   "nivel": "subgerencia",
+   "padre": "GAP"
+  },
+  {
+   "id": "GAJ",
+   "nombre": "Gerencia de Asuntos Jurídicos",
+   "nivel": "gerencia",
+   "padre": "DE",
+   "siglas": [
+    "GAJ"
+   ]
+  },
+  {
+   "id": "GAJ-ACP",
+   "nombre": "Subgerencia de Asuntos Contenciosos y Patrocinio",
+   "nivel": "subgerencia",
+   "padre": "GAJ"
+  },
+  {
+   "id": "GAJ-DC",
+   "nombre": "Subgerencia de Dictámenes y Contratos",
+   "nivel": "subgerencia",
+   "padre": "GAJ"
+  },
+  {
+   "id": "GAJ-AJ",
+   "nombre": "Subgerencia de Asuntos Jurídicos",
+   "nivel": "subgerencia",
+   "padre": "GAJ"
+  },
+  {
+   "id": "JGA",
+   "nombre": "Jefatura de Gabinete de Asesores",
+   "nivel": "unidad",
+   "padre": "DE",
+   "siglas": [
+    "JGA"
+   ]
+  },
+  {
+   "id": "JGA-AF",
+   "nombre": "Subgerencia de Afiliaciones",
+   "nivel": "subgerencia",
+   "padre": "JGA"
+  },
+  {
+   "id": "GSIAD",
+   "nombre": "Gerencia de Seguridad de la Información y Activos Digitales",
+   "nivel": "gerencia",
+   "padre": "JGA",
+   "siglas": [
+    "GSIAD",
+    "GSIYAD"
+   ]
+  },
+  {
+   "id": "GSIAD-S",
+   "nombre": "Subgerencia de Seguridad de la Información y Activos Digitales",
+   "nivel": "subgerencia",
+   "padre": "GSIAD"
+  },
+  {
+   "id": "GCRI",
+   "nombre": "Gerencia de Comunicación y Relaciones Institucionales",
+   "nivel": "gerencia",
+   "padre": "JGA",
+   "siglas": [
+    "GCRI",
+    "GCYRI",
+    "GCYR"
+   ]
+  },
+  {
+   "id": "GCRI-CI",
+   "nombre": "Subgerencia de Comunicación Institucional",
+   "nivel": "subgerencia",
+   "padre": "GCRI"
+  },
+  {
+   "id": "GCRI-PER",
+   "nombre": "Subgerencia de PAMI Escucha y Responde",
+   "nivel": "subgerencia",
+   "padre": "GCRI"
+  },
+  {
+   "id": "CGPE",
+   "nombre": "Coordinación General de Planeamiento Estratégico",
+   "nivel": "gerencia",
+   "padre": "JGA",
+   "siglas": [
+    "CGPE"
+   ]
+  },
+  {
+   "id": "CGPE-T",
+   "nombre": "Subgerencia de Transparencia",
+   "nivel": "subgerencia",
+   "padre": "CGPE"
+  },
+  {
+   "id": "CGPE-PEI",
+   "nombre": "Subgerencia de Proyectos Especiales e Institucionales",
+   "nivel": "subgerencia",
+   "padre": "CGPE"
+  },
+  {
+   "id": "UTM",
+   "nombre": "Unidad Técnico Médica",
+   "nivel": "unidad",
+   "padre": "DE",
+   "siglas": [
+    "UTM"
+   ]
+  },
+  {
+   "id": "UTM-HE",
+   "nombre": "Coordinación Operativa Hospital Español",
+   "nivel": "subgerencia",
+   "padre": "UTM",
+   "claves": [
+    "HOSPITAL ESPANOL"
+   ]
+  },
+  {
+   "id": "GM",
+   "nombre": "Gerencia de Medicamentos",
+   "nivel": "gerencia",
+   "padre": "UTM",
+   "siglas": [
+    "GM",
+    "GMED"
+   ]
+  },
+  {
+   "id": "GM-CGO",
+   "nombre": "Coordinación General Operativa",
+   "nivel": "subgerencia",
+   "padre": "GM"
+  },
+  {
+   "id": "GM-VC",
+   "nombre": "Subgerencia de Validación y Control de Medicamentos",
+   "nivel": "subgerencia",
+   "padre": "GM"
+  },
+  {
+   "id": "GM-GC",
+   "nombre": "Subgerencia de Gestión de Compras de Medicamentos",
+   "nivel": "subgerencia",
+   "padre": "GM"
+  },
+  {
+   "id": "GM-AM",
+   "nombre": "Subgerencia de Auditoría de Medicamentos",
+   "nivel": "subgerencia",
+   "padre": "GM"
+  },
+  {
+   "id": "GESP",
+   "nombre": "Gerencia de Efectores Sanitarios Propios",
+   "nivel": "gerencia",
+   "padre": "UTM",
+   "siglas": [
+    "GESP"
+   ],
+   "claves": [
+    "HOSPITAL",
+    "HOUSSAY",
+    "BICENTENARIO",
+    "POLICLINICO",
+    "PPI",
+    "PPII",
+    "RESIDENCIA",
+    "HBI"
+   ]
+  },
+  {
+   "id": "GESP-CAF",
+   "nombre": "Coordinación Administrativo Financiera",
+   "nivel": "subgerencia",
+   "padre": "GESP"
+  },
+  {
+   "id": "GESP-CME",
+   "nombre": "Coordinación Médica de Efectores",
+   "nivel": "subgerencia",
+   "padre": "GESP"
+  },
+  {
+   "id": "GPM",
+   "nombre": "Gerencia de Prestaciones Médicas",
+   "nivel": "gerencia",
+   "padre": "UTM",
+   "siglas": [
+    "GPM"
+   ]
+  },
+  {
+   "id": "GPM-PM",
+   "nombre": "Subgerencia de Prestaciones Médicas",
+   "nivel": "subgerencia",
+   "padre": "GPM"
+  },
+  {
+   "id": "GPM-DSM",
+   "nombre": "Subgerencia de Discapacidad y Salud Mental",
+   "nivel": "subgerencia",
+   "padre": "GPM"
+  },
+  {
+   "id": "GPM-PRM",
+   "nombre": "Subgerencia de Provisiones Médicas",
+   "nivel": "subgerencia",
+   "padre": "GPM"
+  },
+  {
+   "id": "GPM-ID",
+   "nombre": "Subgerencia de Internación Domiciliaria",
+   "nivel": "subgerencia",
+   "padre": "GPM"
+  },
+  {
+   "id": "GPM-COD",
+   "nombre": "Centro Operativo Derivador",
+   "nivel": "subgerencia",
+   "padre": "GPM"
+  },
+  {
+   "id": "GPM-DAM",
+   "nombre": "Dirección de Atención Médica No Programada y Programada",
+   "nivel": "subgerencia",
+   "padre": "GPM",
+   "claves": [
+    "DAMNPYP",
+    "DAMNP"
+   ]
+  },
+  {
+   "id": "SE",
+   "nombre": "Subdirección Ejecutiva",
+   "nivel": "organo",
+   "padre": "DE",
+   "siglas": [
+    "SE",
+    "SDE"
+   ]
+  },
+  {
+   "id": "UGTO",
+   "nombre": "Unidad de Gestión Técnico Operativa",
+   "nivel": "unidad",
+   "padre": "SE",
+   "siglas": [
+    "UGTO"
+   ],
+   "red_ugl": true
+  },
+  {
+   "id": "UGTO-ACU",
+   "nombre": "Subgerencia de Administración y Coordinación de UGL",
+   "nivel": "subgerencia",
+   "padre": "UGTO"
+  },
+  {
+   "id": "UGTO-PFU",
+   "nombre": "Subgerencia de Planificación y Fortalecimiento de UGL",
+   "nivel": "subgerencia",
+   "padre": "UGTO"
+  },
+  {
+   "id": "UGTO-Z1",
+   "nombre": "Subgerencia Operativa de UGL Zona 1",
+   "nivel": "subgerencia",
+   "padre": "UGTO"
+  },
+  {
+   "id": "UGTO-Z2",
+   "nombre": "Subgerencia Operativa de UGL Zona 2",
+   "nivel": "subgerencia",
+   "padre": "UGTO"
+  },
+  {
+   "id": "GVG",
+   "nombre": "Gerencia de Veteranos de Guerra",
+   "nivel": "gerencia",
+   "padre": "UGTO",
+   "siglas": [
+    "GVG"
+   ]
+  },
+  {
+   "id": "GVG-S",
+   "nombre": "Subgerencia de Veteranos de Guerra",
+   "nivel": "subgerencia",
+   "padre": "GVG"
+  },
+  {
+   "id": "GPSYC",
+   "nombre": "Gerencia de Promoción Social y Comunitaria",
+   "nivel": "gerencia",
+   "padre": "UGTO",
+   "siglas": [
+    "GPSYC",
+    "GPSC"
+   ]
+  },
+  {
+   "id": "GPSYC-PPC",
+   "nombre": "Subgerencia de Prevención y Participación Comunitaria",
+   "nivel": "subgerencia",
+   "padre": "GPSYC"
+  },
+  {
+   "id": "GPSYC-PS",
+   "nombre": "Subgerencia de Promoción Social",
+   "nivel": "subgerencia",
+   "padre": "GPSYC"
+  },
+  {
+   "id": "GPSYC-CC",
+   "nombre": "Subgerencia de Cuidados en la Comunidad",
+   "nivel": "subgerencia",
+   "padre": "GPSYC"
+  },
+  {
+   "id": "GPSYC-CI",
+   "nombre": "Subgerencia de Cuidados Institucionales",
+   "nivel": "subgerencia",
+   "padre": "GPSYC"
+  },
+  {
+   "id": "GPSYC-ROJ",
+   "nombre": "Subgerencia de Relación con las Organizaciones de Jubilados y Pensionados",
+   "nivel": "subgerencia",
+   "padre": "GPSYC"
+  },
+  {
+   "id": "GPSYC-VPE",
+   "nombre": "Subgerencia de Vinculación y Proyectos Especiales",
+   "nivel": "subgerencia",
+   "padre": "GPSYC"
+  },
+  {
+   "id": "CE",
+   "nombre": "Coordinación Ejecutiva",
+   "nivel": "coordinacion",
+   "padre": "DE",
+   "siglas": [
+    "CE"
+   ]
+  },
+  {
+   "id": "GTI",
+   "nombre": "Gerencia de Tecnología de Información",
+   "nivel": "gerencia",
+   "padre": "CE",
+   "siglas": [
+    "GTI",
+    "GIT"
+   ]
+  },
+  {
+   "id": "GTI-ADS",
+   "nombre": "Subgerencia de Análisis y Desarrollo de Sistemas",
+   "nivel": "subgerencia",
+   "padre": "GTI"
+  },
+  {
+   "id": "GTI-SSE",
+   "nombre": "Subgerencia de Soluciones de Salud, Efectores Propios y Externos",
+   "nivel": "subgerencia",
+   "padre": "GTI"
+  },
+  {
+   "id": "GTI-CGI",
+   "nombre": "Subgerencia de Gestión de la Calidad y Gestión de la Información",
+   "nivel": "subgerencia",
+   "padre": "GTI"
+  },
+  {
+   "id": "GTI-SI",
+   "nombre": "Subgerencia de Seguridad Informática",
+   "nivel": "subgerencia",
+   "padre": "GTI"
+  },
+  {
+   "id": "GTI-OP",
+   "nombre": "Subgerencia de Operaciones",
+   "nivel": "subgerencia",
+   "padre": "GTI"
+  },
+  {
+   "id": "GTI-TIT",
+   "nombre": "Subgerencia de Tecnología Informática y Telecomunicaciones",
+   "nivel": "subgerencia",
+   "padre": "GTI"
+  },
+  {
+   "id": "GEF",
+   "nombre": "Gerencia Económico Financiera",
+   "nivel": "gerencia",
+   "padre": "CE",
+   "siglas": [
+    "GEF"
+   ]
+  },
+  {
+   "id": "GEF-COP",
+   "nombre": "Coordinación Operativa de Pagos",
+   "nivel": "subgerencia",
+   "padre": "GEF"
+  },
+  {
+   "id": "GEF-GPE",
+   "nombre": "Subgerencia de Gestión y Programación Económica",
+   "nivel": "subgerencia",
+   "padre": "GEF"
+  },
+  {
+   "id": "GEF-AF",
+   "nombre": "Subgerencia de Administración Financiera",
+   "nivel": "subgerencia",
+   "padre": "GEF"
+  },
+  {
+   "id": "GEF-RP",
+   "nombre": "Coordinación de Redeterminación de Precios",
+   "nivel": "subgerencia",
+   "padre": "GEF"
+  },
+  {
+   "id": "GAI",
+   "nombre": "Gerencia de Administración e Infraestructura",
+   "nivel": "gerencia",
+   "padre": "CE",
+   "siglas": [
+    "GAI",
+    "GAD",
+    "GAEI"
+   ]
+  },
+  {
+   "id": "GAI-RF",
+   "nombre": "Subgerencia de Recursos Físicos",
+   "nivel": "subgerencia",
+   "padre": "GAI"
+  },
+  {
+   "id": "GAI-CC",
+   "nombre": "Subgerencia de Compras y Contrataciones",
+   "nivel": "subgerencia",
+   "padre": "GAI"
+  },
+  {
+   "id": "GAI-CGSC",
+   "nombre": "Subgerencia de Control de Gestión y Seguimiento de Contratos",
+   "nivel": "subgerencia",
+   "padre": "GAI"
+  },
+  {
+   "id": "GAI-PP",
+   "nombre": "Subgerencia de Planificación y Pliegos",
+   "nivel": "subgerencia",
+   "padre": "GAI"
+  },
+  {
+   "id": "GAI-INF",
+   "nombre": "Subgerencia de Infraestructura",
+   "nivel": "subgerencia",
+   "padre": "GAI"
+  },
+  {
+   "id": "GAPR",
+   "nombre": "Gerencia de Análisis de Procesos Retributivos",
+   "nivel": "gerencia",
+   "padre": "CE",
+   "siglas": [
+    "GAPR"
+   ]
+  },
+  {
+   "id": "GAPR-PL",
+   "nombre": "Coordinación de Planeamiento",
+   "nivel": "subgerencia",
+   "padre": "GAPR"
+  },
+  {
+   "id": "GAPR-AT",
+   "nombre": "Coordinación de Análisis de Transmisión",
+   "nivel": "subgerencia",
+   "padre": "GAPR"
+  },
+  {
+   "id": "GRRHH",
+   "nombre": "Gerencia de Recursos Humanos",
+   "nivel": "gerencia",
+   "padre": "CE",
+   "siglas": [
+    "GRRHH",
+    "GRH"
+   ]
+  },
+  {
+   "id": "GRRHH-AJRL",
+   "nombre": "Subgerencia de Asesoramiento Jurídico y Relaciones Laborales",
+   "nivel": "subgerencia",
+   "padre": "GRRHH"
+  },
+  {
+   "id": "GRRHH-ARH",
+   "nombre": "Subgerencia de Administración de Recursos Humanos",
+   "nivel": "subgerencia",
+   "padre": "GRRHH"
+  },
+  {
+   "id": "GRRHH-CCFC",
+   "nombre": "Centro de Capacitación y Formación Continua",
+   "nivel": "subgerencia",
+   "padre": "GRRHH"
+  },
+  {
+   "id": "GRRHH-CPSI",
+   "nombre": "Coordinación de Políticas de Seguridad del Instituto",
+   "nivel": "subgerencia",
+   "padre": "GRRHH"
+  }
+ ]
+}
