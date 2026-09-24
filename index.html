@@ -205,7 +205,7 @@
         let baseDatos = {};
         let dataGlobalNodes = null;
         let dataGlobalEdges = null;
-        let mapaRelaciones = {}; // UGL -> Array de Agencias
+        let mapaRelaciones = {}; // UGL -> Array de Agencias/CAPs
 
         async function inicializarGrafo() {
             try {
@@ -229,15 +229,15 @@
             const nodos = [];
             const aristas = [];
             const ugls = [];
-            const agenciasCap = [];
+            const subDependencias = [];
 
-            // 1. Clasificar nodos entre UGLs y Agencias/CAPs
+            // 1. Clasificación estricta: Solo las UGLs empiezan con "UGL"
             for (const nombre in datos) {
                 const nombreUpper = nombre.toUpperCase();
-                if (nombreUpper.includes('AGENCIA') || nombreUpper.includes('CAP ') || nombreUpper.startsWith('CAPS')) {
-                    agenciasCap.push(nombre);
-                } else {
+                if (nombreUpper.startsWith('UGL')) {
                     ugls.push(nombre);
+                } else {
+                    subDependencias.push(nombre);
                 }
             }
 
@@ -250,7 +250,7 @@
                 font: { color: '#f8fafc', size: 11, bold: true }
             });
 
-            // 3. Nodos UGL (Visibles por defecto en círculo alrededor de Central)
+            // 3. Nodos UGL (Visibles en órbita circular alrededor de Central)
             ugls.forEach(ugl => {
                 mapaRelaciones[ugl] = [];
                 nodos.push({
@@ -263,33 +263,45 @@
                 aristas.push({ from: 'CENTRAL', to: ugl });
             });
 
-            // 4. Nodos Agencias y CAPs (Ocultos por defecto, vinculados a su UGL padre)
-            agenciasCap.forEach(agencia => {
-                let uglPadre = ugls.find(u => agencia.includes(u) || u.includes(agencia.replace('AGENCIA', '').trim()));
+            // 4. Nodos Agencias, CAPs y Localidades (Ocultos por defecto, vinculados a su UGL padre)
+            subDependencias.forEach(subDep => {
+                const subDepUpper = subDep.toUpperCase();
+                
+                // Encontrar la UGL padre por coincidencia de texto (ej: "MAR DEL PLATA" con "UGLXI - MAR DEL PLATA")
+                let uglPadre = ugls.find(u => {
+                    const uLimpio = u.toUpperCase().replace(/UGL[\s\w-]+-\s*/, '').trim();
+                    return uLimpio.length > 2 && subDepUpper.includes(uLimpio);
+                });
+
+                if (!uglPadre) {
+                    // Segunda pasada: buscar si la UGL contiene parte del nombre de la subdependencia
+                    uglPadre = ugls.find(u => subDepUpper.includes(u.toUpperCase().split(' ')[0]));
+                }
+
                 if (!uglPadre && ugls.length > 0) {
-                    uglPadre = ugls[0]; 
+                    uglPadre = ugls[0]; // Fallback por seguridad
                 }
 
                 if (uglPadre) {
                     if (!mapaRelaciones[uglPadre]) mapaRelaciones[uglPadre] = [];
-                    mapaRelaciones[uglPadre].push(agencia);
+                    mapaRelaciones[uglPadre].push(subDep);
                 }
 
                 nodos.push({
-                    id: agencia,
-                    label: agencia,
+                    id: subDep,
+                    label: subDep,
                     size: 5,
-                    hidden: true, // Ocultas hasta seleccionar la UGL
-                    color: { background: '#8b5cf6', border: '#7c3aed', highlight: { background: '#f59e0b', border: '#d97706' } },
+                    hidden: true, // Ocultas hasta seleccionar la UGL correspondiente
+                    color: { background: '#8b5cf6', border: '#7c3aed', highlight: { background: '#f59e0b', border: '#e0a800' } },
                     font: { size: 9, color: '#c084fc' }
                 });
 
                 if (uglPadre) {
-                    aristas.push({ from: uglPadre, to: agencia, hidden: true, color: { color: '#8b5cf6', opacity: 0.4 } });
+                    aristas.push({ from: uglPadre, to: subDep, hidden: true, color: { color: '#8b5cf6', opacity: 0.4 } });
                 }
             });
 
-            document.getElementById('estadisticas').innerText = `${ugls.length} UGLs | ${agenciasCap.length} Agencias/CAPs`;
+            document.getElementById('estadisticas').innerText = `${ugls.length} UGLs | ${subDependencias.length} Dependencias`;
 
             const opcionesGrafo = {
                 nodes: {
@@ -332,7 +344,7 @@
             redGrafo.on("click", function (params) {
                 if (params.nodes.length > 0) {
                     const idNodo = params.nodes[0];
-                    if (idNodo !== 'CENTRAL' && !agenciasCap.includes(idNodo)) {
+                    if (idNodo !== 'CENTRAL' && Object.keys(mapaRelaciones).includes(idNodo)) {
                         mostrarDetallesUGL(idNodo, datos[idNodo]);
                         revelarHijosUGL(idNodo);
                     } else if (idNodo === 'CENTRAL') {
@@ -343,13 +355,11 @@
         }
 
         function revelarHijosUGL(uglSeleccionada) {
-            // Ocultar todas las agencias de otras UGLs primero y mostrar solo las de esta UGL
             const updatesNodos = [];
             const updatesAristas = [];
 
             dataGlobalNodes.forEach(nodo => {
                 if (nodo.id !== 'CENTRAL' && !Object.keys(mapaRelaciones).includes(nodo.id)) {
-                    // Es agencia o CAP
                     const esHijo = mapaRelaciones[uglSeleccionada] && mapaRelaciones[uglSeleccionada].includes(nodo.id);
                     updatesNodos.push({ id: nodo.id, hidden: !esHijo });
                 }
@@ -402,14 +412,13 @@
                 html += `<div class="mensaje-vacio" style="margin-top: 10px; margin-bottom: 15px;">No hay registros hist&oacute;ricos de autoridades para esta UGL.</div>`;
             }
 
-            // Sección de Agencias y CAPs dependientes
-            html += `<div class="seccion-titulo">Agencias y CAPs Jurisdiccionales (${agenciasAsociadas.length})</div>`;
+            html += `<div class="seccion-titulo">Agencias, CAPs y Localidades (${agenciasAsociadas.length})</div>`;
             if (agenciasAsociadas.length > 0) {
                 agenciasAsociadas.forEach(ag => {
                     html += `<div class="lista-agencias">🏛️ ${ag}</div>`;
                 });
             } else {
-                html += `<div class="mensaje-vacio" style="margin-top: 10px;">No se registraron agencias dependientes vinculadas a esta UGL.</div>`;
+                html += `<div class="mensaje-vacio" style="margin-top: 10px;">No se registraron dependencias vinculadas a esta UGL.</div>`;
             }
 
             document.getElementById('contenido-detalles').innerHTML = html;
@@ -420,14 +429,14 @@
             if (!baseDatos) return;
 
             for (const ugl in baseDatos) {
-                if (ugl.includes(inputVal)) {
-                    redGrafo.focus(ugl, { scale: 1.4, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
-                    redGrafo.selectNodes([ugl]);
-                    if (!ugl.includes('AGENCIA') && !ugl.includes('CAP')) {
+                if (ugl.toUpperCase().includes(inputVal)) {
+                    if (ugl.toUpperCase().startsWith('UGL')) {
+                        redGrafo.focus(ugl, { scale: 1.4, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+                        redGrafo.selectNodes([ugl]);
                         mostrarDetallesUGL(ugl, baseDatos[ugl]);
                         revelarHijosUGL(ugl);
+                        break;
                     }
-                    break;
                 }
             }
         }
