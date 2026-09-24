@@ -638,8 +638,11 @@ def main():
         clave_cache = f"{nombre}:{os.path.getsize(ruta)}"
         if clave_cache not in cache:
             try:
-                # hasta 2023 los resúmenes del índice no traen nombres: se leen los artículos de cada norma
-                cache[clave_cache] = leer_indice_viejo(ruta) if fecha < "2024" else (leer_indice(ruta) or leer_indice_viejo(ruta))
+                # en los boletines viejos los resúmenes del índice no traen nombres: se leen los artículos de cada norma
+                # (formato viejo, hasta mediados de 2024). Se usa la lectura que encuentra más designaciones.
+                nuevo, viejo = leer_indice(ruta), leer_indice_viejo(ruta)
+                util = lambda ents: sum(1 for x in ents if interpretar(x["txt"]))
+                cache[clave_cache] = viejo if util(viejo) > util(nuevo) else (nuevo or viejo)
             except Exception as ex:
                 print(f"[ERROR] {nombre}: {ex}")
                 continue
