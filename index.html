@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo Federal UGLs - PAMI</title>
+    <!-- Vis.js Network -->
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        :root {
+            --bg-canvas: #090d16;
+            --bg-sidebar: #0f1420;
+            --bg-card: #161c2e;
+            --bg-input: #070a10;
+            --primary-accent: #3b82f6;
+            --success-accent: #10b981;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: var(--bg-canvas);
+            color: var(--text-main);
+            overflow: hidden;
+        }
+
+        #contenedor-grafo {
+            flex: 1;
+            height: 100%;
+            background-color: var(--bg-canvas);
+        }
+
+        #panel-lateral {
+            width: 420px;
+            background: var(--bg-sidebar);
+            border-left: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .cabecera-panel {
+            background-color: var(--bg-sidebar);
+            padding: 22px 20px 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .cabecera-panel h2 {
+            margin: 0 0 12px 0;
+            font-size: 1.15rem;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            color: var(--text-main);
+        }
+
+        .buscador-input {
+            width: 100%;
+            padding: 9px 14px;
+            background: var(--bg-input);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.88rem;
+            color: var(--text-main);
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .buscador-input:focus {
+            border-color: var(--primary-accent);
+        }
+
+        .badge-estadisticas {
+            font-size: 0.72rem;
+            background: rgba(59, 130, 246, 0.12);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            padding: 4px 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        #contenido-detalles {
+            padding: 20px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        #contenido-detalles::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        #contenido-detalles::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 3px;
+        }
+
+        .mensaje-vacio {
+            color: var(--text-muted);
+            font-style: italic;
+            text-align: center;
+            margin-top: 70px;
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        .seccion-titulo {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .datos-contacto {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--primary-accent);
+            padding: 12px 14px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .datos-contacto p {
+            margin: 6px 0;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            display: flex;
+            align-items: center;
+        }
+
+        .tarjeta-cargo {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--success-accent);
+            padding: 10px 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        .cargo-titulo {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 3px;
+            letter-spacing: 0.4px;
+        }
+
+        .cargo-nombre {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .icon-svg {
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="contenedor-grafo"></div>
+    
+    <div id="panel-lateral">
+        <div class="cabecera-panel">
+            <h2>Red Federal UGLs - PAMI</h2>
+            <input type="text" id="buscadorUgl" class="buscador-input" placeholder="Buscar UGL o Localidad..." onkeyup="filtrarNodos()">
+            <div id="estadisticas" class="badge-estadisticas">Cargando base de datos...</div>
+        </div>
+        <div id="contenido-detalles">
+            <div class="mensaje-vacio">Seleccion&aacute; un nodo en el grafo o escrib&iacute; el nombre de una UGL en el buscador para analizar su jurisdicci&oacute;n, datos de contacto y responsables actuales.</div>
+        </div>
+    </div>
+
+    <script>
+        let redGrafo = null;
+        let baseDatos = {};
+        let dataGlobalNodes = null;
+
+        const opcionesGrafo = {
+            nodes: {
+                shape: 'dot',
+                size: 8,
+                font: { size: 10, color: '#94a3b8', face: 'Segoe UI' },
+                borderWidth: 1.5,
+                shadow: { enabled: true, color: 'rgba(0,0,0,0.6)', size: 4 }
+            },
+            edges: {
+                width: 0.8,
+                color: { color: '#1e293b', highlight: '#3b82f6' },
+                smooth: { type: 'cubicBezier', roundness: 0.2 }
+            },
+            physics: {
+                solver: 'forceAtlas2Based',
+                forceAtlas2Based: {
+                    gravitationalConstant: -50,
+                    centralGravity: 0.01,
+                    springLength: 130,
+                    springConstant: 0.04
+                }
+            },
+            interaction: {
+                hover: true,
+                zoomView: true,
+                dragView: true
+            }
+        };
+
+        async function inicializarGrafo() {
+            try {
+                const respuesta = await fetch('datos_ugl.json');
+                if (!respuesta.ok) throw new Error("No se pudo leer datos_ugl.json");
+                baseDatos = await respuesta.json();
+                dibujarRed(baseDatos);
+            } catch (error) {
+                console.error("Error cargando red:", error);
+                document.getElementById('contenido-detalles').innerHTML = `
+                    <div class="mensaje-vacio" style="color: #ef4444;">
+                        <b>Error de lectura local (CORS).</b><br><br>
+                        Record&aacute; ejecutar en tu terminal:<br>
+                        <code>python -m http.server 8000</code><br><br>
+                        Y acceder desde tu navegador a: <b>http://localhost:8000</b>
+                    </div>`;
+            }
+        }
+
+        function dibujarRed(datos) {
+            const nodos = [];
+            const aristas = [];
+            let totalUgls = Object.keys(datos).length;
+
+            nodos.push({
+                id: 'CENTRAL',
+                label: 'PAMI\nNivel Central',
+                size: 16,
+                color: { background: '#3b82f6', border: '#60a5fa', highlight: { background: '#60a5fa', border: '#93c5fd' } },
+                font: { color: '#f8fafc', size: 11, bold: true }
+            });
+
+            for (const ugl in datos) {
+                nodos.push({
+                    id: ugl,
+                    label: ugl,
+                    color: { 
+                        background: '#10b981', 
+                        border: '#059669', 
+                        highlight: { background: '#f59e0b', border: '#d97706' } 
+                    }
+                });
+
+                aristas.push({
+                    from: 'CENTRAL',
+                    to: ugl
+                });
+            }
+
+            document.getElementById('estadisticas').innerText = `${totalUgls} UGLs / Dependencias mapeadas`;
+
+            const contenedor = document.getElementById('contenedor-grafo');
+            dataGlobalNodes = new vis.DataSet(nodos);
+            
+            const dataGrafo = {
+                nodes: dataGlobalNodes,
+                edges: new vis.DataSet(aristas)
+            };
+
+            redGrafo = new vis.Network(contenedor, dataGrafo, opcionesGrafo);
+
+            redGrafo.on("click", function (params) {
+                if (params.nodes.length > 0) {
+                    const idNodo = params.nodes[0];
+                    if (idNodo !== 'CENTRAL') {
+                        mostrarDetallesUGL(idNodo, datos[idNodo]);
+                    } else {
+                        document.getElementById('contenido-detalles').innerHTML = '<div class="mensaje-vacio">Nivel Central institucional seleccionado.</div>';
+                    }
+                }
+            });
+        }
+
+        function mostrarDetallesUGL(nombreUgl, info) {
+            let html = '';
+
+            const direccion = info._direccion || "Direcci&oacute;n pendiente de sincronizaci&oacute;n";
+            const telefono = info._telefono || "Tel&eacute;fono no disponible";
+
+            // Iconos SVG limpios y profesionales
+            const svgPin = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>`;
+            const svgPhone = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>`;
+
+            html += `
+                <div class="seccion-titulo">Ubicaci&oacute;n y Contacto</div>
+                <div class="datos-contacto">
+                    <p>${svgPin}<strong>Direcci&oacute;n:</strong>&nbsp;${direccion}</p>
+                    <p>${svgPhone}<strong>Tel&eacute;fono:</strong>&nbsp;${telefono}</p>
+                </div>
+                <div class="seccion-titulo">Estructura de Autoridades</div>
+            `;
+
+            let hayCargos = false;
+            for (const cargo in info) {
+                if (cargo.startsWith('_')) continue;
+                
+                hayCargos = true;
+                html += `
+                    <div class="tarjeta-cargo">
+                        <div class="cargo-titulo">${cargo}</div>
+                        <div class="cargo-nombre">${info[cargo]}</div>
+                    </div>
+                `;
+            }
+
+            if (!hayCargos) {
+                html += `<div class="mensaje-vacio" style="margin-top: 20px;">No hay registros hist&oacute;ricos de cambios de autoridades para esta dependencia en el per&iacute;odo analizado.</div>`;
+            }
+
+            document.getElementById('contenido-detalles').innerHTML = html;
+        }
+
+        function filtrarNodos() {
+            const inputVal = document.getElementById('buscadorUgl').value.toUpperCase();
+            if (!baseDatos) return;
+
+            for (const ugl in baseDatos) {
+                if (ugl.includes(inputVal)) {
+                    redGrafo.focus(ugl, { scale: 1.4, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+                    redGrafo.selectNodes([ugl]);
+                    mostrarDetallesUGL(ugl, baseDatos[ugl]);
+                    break;
+                }
+            }
+        }
+
+        window.onload = inicializarGrafo;
+    </script>
+</body>
+</html>

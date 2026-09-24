@@ -1,0 +1,314 @@
+{
+    "MORÓN": {
+        "Titular de la División Recepción y Despacho de Emergencias, Urgencias Médicas y Visitas Domiciliarias": "Federico Javier Messori",
+        "Titular del Departamento de Políticas Sociales": "Diego Lopez Garrigo",
+        "Titular de la Boca de Atención Morón Sur": "Diego Lopez Garrigo"
+    },
+    "LA RIOJA": {
+        "Jefe de la División Vinculación Social": "Laura Alejandra Chanampa",
+        "_direccion": "EN CABA",
+        "_telefono": "(3825) 494113"
+    },
+    "MISIONES": {
+        "titular de la División Auditoria Prestacional": "Laura Lorena Gauna",
+        "Titular de la División Auditoria Prestacional": "Guillermo Fernando MALDONADO",
+        "Titular de la Dirección Ejecutiva": "Bárbara Samantha Stekler",
+        "Titular de la Dirección Ejecutiva Local": "Bárbara Samantha STEKLER",
+        "Prestador de servicios": "Alberto Martín CELESTINO",
+        "Titular del Departamento Contable": "Alberto Martín CELESTINO",
+        "_direccion": "EN CABA",
+        "_telefono": "(376) 4227777"
+    },
+    "LA PAMPA": {
+        "Director Ejecutivo Local": "Luciano Marcos Germán Ortiz",
+        "_direccion": "EN CABA",
+        "_telefono": "(2338) 432391"
+    },
+    "LANÚS": {
+        "Titular de la Agencia Monte Grande": "Paula Beatriz Canegallo",
+        "Titular del Centro de Atención Personalizada Guernica": "Hugo Fernando MARTEL",
+        "Titular del CAP Monte Grande": "Ernesto Spagnuolo",
+        "Titular del Centro de Atención Personalizada Monte Grande": "Ernesto SPAGNUOLO"
+    },
+    "CAPITAL FEDERAL": {
+        "Titular de la División Contable, Coordinación General Dirección de Atención Médica No Programada y Programada": "Lia Daniela Palacios",
+        "Titular del Sector Despacho de la Dirección Hospital Dr. Bernardo A. Houssay": "María Carolina DI Clemente",
+        "Trabajadora - Agencia 8 (UGL VI)": "María Alejandra Catini",
+        "Titular del Departamento Seguridad Alimentaria y Nutricional, Subgerencia de Promoción Social, Gerencia de Promoción Social y Comunitaria": "María Alejandra Catini",
+        "Titular de la Agencia PAMI 7": "Miguel Eduardo Lopez",
+        "Titular de la Agencia PAMI 4": "Ignacio Martín FIORITI"
+    },
+    "SAN JUSTO": {
+        "Titular de la Agencia Tapiales": "Anabella Maribel PRETTO",
+        "Titular de la Agencia Ramos Mejía": "Bárbara Soledad LUQUE",
+        "Titular de la Agencia Isidro Casanova": "Cecilia Beatriz BREGENZER",
+        "Titular de la Agencia Gregorio de Laferrere": "Mariela Verónica RAMOS",
+        "Titular de la Agencia González Catán": "Mónica Beatriz MONTIEL",
+        "_direccion": "EN CABA",
+        "_telefono": "(011) 44413265"
+    },
+    "CÓRDOBA": {
+        "Titular del Centro de Atención Personalizada Morteros": "María Florencia AMBROGGIO"
+    },
+    "SAN MARTÍN": {
+        "Titular del Departamento Contable": "Matías Alejandro Ceresa"
+    },
+    "RÍO CUARTO": {
+        "Titular del CAP Canals": "Roxana Elizabeth Carretero"
+    },
+    "BAHÍA BLANCA": {
+        "titular del CAP Pigue": "Natalia Ivana CLEPPE",
+        "titular del CAP Orense": "Nuri Yamile Boiachi Rodriguez",
+        "titular del CAP Casbas": "Natalia Irupé Afonso",
+        "titular de la Agencia Tres Arroyos": "Nicolás Groenenberg",
+        "Titular del Centro de Atención Personalizada Pigué": "Natalia Ivana CLEPPE",
+        "Prestadora de servicios en el Centro de Atención Personalizada Orense": "Nuri Yamile BOIACHI RODRIGUEZ",
+        "Titular del Centro de Atención Personalizada Orense": "Nuri Yamile BOIACHI RODRIGUEZ",
+        "Titular del Centro de Atención Personalizada Casbas": "Natalia Irupé AFONSO",
+        "Titular de la Agencia Tres Arroyos": "Nicolás GROENENBERG"
+    },
+    "QUILMES": {
+        "titular del CAP Hudson": "Laura Carolina Maga",
+        "Titular del Centro de Atención Personalizada Hudson": "Laura Carolina MAGA",
+        "_direccion": "EN CABA",
+        "_telefono": "(0) 0"
+    },
+    "MAR DEL PLATA": {
+        "titular del CAP González Chaves": "María Florencia Bondia Carne",
+        "Titular del Centro de Atención Personalizada González Chaves": "María Florencia Bondia Carne",
+        "_direccion": "EN CABA",
+        "_telefono": "(2255) 473025"
+    },
+    "LA PLATA": {
+        "Titular del CAP Los Hornos": "Daniela Patricia Puca",
+        "Titular del CAP Villa Elisa": "María Antonella Racunti",
+        "Titular de la Agencia Ana María Aguilera Pelusa": "Jacqueline Lorena Salerno",
+        "Titular del CAP Melchor Romero": "Daniel Alejandro Pedro",
+        "Titular del CAP La Plata Centro": "Gastón Manuel Alvarez",
+        "Titular del CAP City Bell": "María Virginia Fernandez",
+        "Titular del Centro de Atención Personalizada Los Hornos": "Daniela Patricia PUCA",
+        "Titular del Centro de Atención Personalizada Villa Elisa": "Abigail Anake ARCONDO",
+        "Titular de la Agencia Ana María Aguilera “Pelusa”": "Jacqueline Lorena SALERNO",
+        "Titular del Centro de Atención Personalizada Melchor Romero": "Daniel Alejandro PEDRO",
+        "Titular del Centro de Atención Personalizada La Plata Centro": "Gastón Manuel ALVAREZ",
+        "Titular del Centro de Atención Personalizada City Bell": "Marisol ARANGUREN",
+        "_direccion": "EN CABA",
+        "_telefono": "(0221) 4730098"
+    },
+    "LUJÁN": {
+        "Titular de la Agencia Campana": "Gabriel Oscar Chiliutti"
+    },
+    "SANTIAGO DEL ESTERO": {
+        "Titular de la Dirección Ejecutiva Local": "Luis Horacio Ochoa",
+        "Titular del CAP Cabecera Añatuya": "María Noemí Lopez",
+        "Titular del CAP Campo Gallo": "Valeria Cecilia del Carmen Mansilla",
+        "Titular del Centro de Atención Personalizada Campo Gallo": "Valeria Cecilia del Carmen Mansilla",
+        "Titular del Centro de Atención Personalizada Monte Quemado": "Edgard Ramiro CARO",
+        "Titular del Centro de Atención Personalizada Tintina": "Luisina Aymé MENDOZA",
+        "Titular": "Laila María QUIUAN",
+        "Titular del Centro de Atención Personalizada Bandera": "Laila María QUIUAN",
+        "Titular del Centro de Atención Personalizada Frías": "Emanuel DAHI",
+        "Titular de la Agencia La Banda": "Esteban Maximiliano Herrera",
+        "Titular del CAP Frías": "Emanuel Dahi",
+        "_direccion": "EN CABA",
+        "_telefono": "(03845) 494071"
+    },
+    "AZUL": {
+        "titular del CAP Daireux": "María Agustina Ratto",
+        "_direccion": "EN CABA",
+        "_telefono": "(2283) 420068"
+    },
+    "SANTA CRUZ": {
+        "desempeñar tareas en el CAP Caleta Olivia": "Roa Georgina Damaris Pérez",
+        "desempeñar tareas": "Sofía Fernanda Flores Del Moral",
+        "titular del CAP San Julián": "María Rocío Marin Alaggia",
+        "titular del CAP Puerto Santa Cruz": "Horacio Heriberto Ortega",
+        "titular del CAP Puerto Deseado": "Claudio Oscar Gendana",
+        "titular del CAP Gobernador Gregores": "Joaquín Rubiolo",
+        "Designada": "Yamila Irene Noelia CALLATA",
+        "Titular del Centro de Atención Personalizada San Julián": "María Rocío MARIN ALAGGIA",
+        "Titular del Centro de Atención Personalizada Puerto Santa Cruz": "Horacio Heriberto ORTEGA",
+        "Titular del Centro de Atención Personalizada Gobernador Gregores": "Joaquín RUBIOLO",
+        "_direccion": "EN CABA",
+        "_telefono": "(02902) 422500"
+    },
+    "JUNÍN": {
+        "titular del CAP Ameghino": "Milinka Cañon Ramirez",
+        "titular del CAP Roberts": "Paola Andrea Pérez",
+        "titular del CAP General Arenales": "Gustavo Javier Galván",
+        "Titular del Centro de Atención Personalizada Ameghino": "Milinka Cañon Ramirez",
+        "Titular": "Gustavo Javier Galván",
+        "Titular del Centro de Atención Personalizada General Arenales": "Gustavo Javier Galván",
+        "Titular de la Dirección Ejecutiva Local": "Alberto Eduardo PASCUAL"
+    },
+    "XXVIII - SANTA CRUZ": {
+        "desempeñar tareas": "Sofía Fernanda FLORES DEL MORAL",
+        "prestar servicios": "María Rocío MARIN ALAGGIA"
+    },
+    "XXX - AZUL": {
+        "prestar servicios": "María Agustina RATTO",
+        "titular del Centro de Atención Personalizada Daireux": "María Agustina RATTO"
+    },
+    "PUERTO DESEADO": {
+        "Titular": "Claudio Oscar GENDANA"
+    },
+    "GOBERNADOR GREGORES": {
+        "Titular": "Joaquín RUBIOLO"
+    },
+    "TUCUMÁN": {
+        "Prestador de servicios": "Matías Buda"
+    },
+    "BANDERA": {
+        "Titular del Centro de Atención Personalizada": "Laila María Quiuan"
+    },
+    "MONTE QUEMADO": {
+        "Titular del Centro de Atención Personalizada": "Edgard Ramiro Caro"
+    },
+    "TINTINA": {
+        "Titular del Centro de Atención Personalizada": "Luisina Aymé Mendoza"
+    },
+    "OJO DE AGUA": {
+        "Titular del Centro de Atención Personalizada": "Sergio Ariel Diaz"
+    },
+    "FRÍAS": {
+        "Titular del Centro de Atención Personalizada": "Heber Omar Diaz"
+    },
+    "UGLXI – MAR DEL PLATA": {
+        "Titular del Sector de Atención Continua": "Mayra Romina Miranda",
+        "Titular del Sector Calidad y Capacitación Continua": "Sabrina Laura Fernandez",
+        "Titular de la División Salud Mental": "Sandra Lorena Carrera",
+        "Titular de la División Proyectos Especiales": "Karina Mabel Porras",
+        "Subgerencia de Seguridad de la Información y Activos Digitales": "Nadina El Achcar",
+        "Departamento de Normas de Protección de Datos y Seguridad de la Información": "Gabriela Alejandra Mich",
+        "Titular del Departamento de Planificación Comunicacional y Gubernamental": "Estefanía Magdalena Traverso"
+    },
+    "UGLXVIII – MISIONES": {
+        "Titular del Departamento Contable": "Alberto Martín Celestino"
+    },
+    "UGLVII – LA PLATA": {
+        "Trasladada a la sede de la UGLVII": "Marisol Aranguren"
+    },
+    "UGLVI – CAPITAL FEDERAL": {
+        "Asistente social": "Sandra Lorena Mazzanti"
+    },
+    "ROSARIO": {
+        "Director Ejecutivo": "Esteban Ernesto Leguizamo",
+        "Subdirector Ejecutivo": "Carlos Blas Zamparolo",
+        "_direccion": "EN CABA",
+        "_telefono": "(2473) 481483"
+    },
+    "CHUBUT": {
+        "Titular del CAP Gaiman": "Mariela Hughes",
+        "_direccion": "EN CABA",
+        "_telefono": "(2945) 480080"
+    },
+    "CONCORDIA": {
+        "Titular de la División Administrativa Contable, Agencia Gualeguaychú": "María Belén Bordagaray",
+        "Titular de la Coordinación General Ejecutiva Local": "Alicia Cristina Veron",
+        "Titular de la Coordinación Administrativo Contable": "Carlos Eduardo Ayala",
+        "Titular de la División de Relación con las Organizaciones de Jubilados y Pensionados": "Martín Alejandro Berterame",
+        "_direccion": "EN CABA",
+        "_telefono": "(03455) 422326"
+    },
+    "XXXIV - CONCORDIA": {},
+    "BAHIA BLANCA": {
+        "_direccion": "EN CABA",
+        "_telefono": "(0291) 4818588"
+    },
+    "SAN MARTIN": {
+        "_direccion": "EN CABA",
+        "_telefono": "(011) 39753725"
+    },
+    "LANUS": {
+        "_direccion": "EN CABA",
+        "_telefono": "(011) 42864214"
+    },
+    "MORON": {
+        "_direccion": "EN CABA",
+        "_telefono": "(011) 46625673"
+    },
+    "JUNIN": {
+        "_direccion": "EN CABA",
+        "_telefono": "(2354) 420359"
+    },
+    "LUJAN": {
+        "_direccion": "EN CABA",
+        "_telefono": "(2326) 452004"
+    },
+    "CHIVILCOY": {
+        "_direccion": "EN CABA",
+        "_telefono": "(2394) 420427"
+    },
+    "CIUDAD AUTONOMA DE BUENOS AIRES": {
+        "_direccion": "EN CABA",
+        "_telefono": "(011) 46118751"
+    },
+    "CATAMARCA": {
+        "_direccion": "EN CABA",
+        "_telefono": "(0) 0"
+    },
+    "CHACO": {
+        "_direccion": "EN CABA",
+        "_telefono": "(0) 0"
+    },
+    "CORDOBA": {
+        "_direccion": "EN CABA",
+        "_telefono": "(3544) 420692"
+    },
+    "RIO CUARTO": {
+        "_direccion": "EN CABA",
+        "_telefono": "(3583) 420647"
+    },
+    "CORRIENTES": {
+        "_direccion": "EN CABA",
+        "_telefono": "(3774) 480066"
+    },
+    "PARANA": {
+        "_direccion": "EN CABA",
+        "_telefono": "(3436) 421216"
+    },
+    "FORMOSA": {
+        "_direccion": "EN CABA",
+        "_telefono": "(03716) 403195"
+    },
+    "JUJUY": {
+        "_direccion": "EN CABA",
+        "_telefono": "(388) 4955338"
+    },
+    "MENDOZA": {
+        "_direccion": "EN CABA",
+        "_telefono": "(02625) 470035"
+    },
+    "NEUQUEN": {
+        "_direccion": "EN CABA",
+        "_telefono": "(02942) 430817"
+    },
+    "RIO NEGRO": {
+        "_direccion": "EN CABA",
+        "_telefono": "(298) 4460054"
+    },
+    "SALTA": {
+        "_direccion": "EN CABA",
+        "_telefono": "(387) 4931428"
+    },
+    "SAN JUAN": {
+        "_direccion": "EN CABA",
+        "_telefono": "(0264) 4978366"
+    },
+    "SAN LUIS": {
+        "_direccion": "EN CABA",
+        "_telefono": "(2658) 495013"
+    },
+    "SANTA FE": {
+        "_direccion": "EN CABA",
+        "_telefono": "(3482) 467545"
+    },
+    "TIERRA DEL FUEGO": {
+        "_direccion": "EN CABA",
+        "_telefono": "(2964) 430803"
+    },
+    "TUCUMAN": {
+        "_direccion": "EN CABA",
+        "_telefono": "(0) 0"
+    }
+}
