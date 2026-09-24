@@ -3,445 +3,520 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitoreo Federal UGLs y Agencias - PAMI</title>
-    <!-- Vis.js Network -->
-    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <title>Red Federal UGLs y Agencias - PAMI</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
     <style>
         :root {
             --bg-canvas: #090d16;
             --bg-sidebar: #0f1420;
             --bg-card: #161c2e;
             --bg-input: #070a10;
-            --primary-accent: #3b82f6;
-            --success-accent: #10b981;
-            --agency-accent: #8b5cf6;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --border-color: #1e293b;
+            --c-central: #3b82f6;
+            --c-ugl: #10b981;
+            --c-agencia: #f59e0b;
+            --c-cap: #a78bfa;
+            --c-vacio: #475569;
+            --c-alerta: #f87171;
         }
-
+        * { box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            height: 100vh;
-            background-color: var(--bg-canvas);
-            color: var(--text-main);
-            overflow: hidden;
+            margin: 0; display: flex; height: 100vh;
+            background: var(--bg-canvas); color: var(--text-main); overflow: hidden;
         }
+        #zona-grafo { flex: 1; position: relative; min-width: 0; }
+        #contenedor-grafo { width: 100%; height: 100%; }
 
-        #contenedor-grafo {
-            flex: 1;
-            height: 100%;
-            background-color: var(--bg-canvas);
+        /* Leyenda + filtros */
+        #leyenda {
+            position: absolute; left: 16px; top: 16px; z-index: 5;
+            background: rgba(15, 20, 32, 0.92); border: 1px solid var(--border-color);
+            border-radius: 8px; padding: 10px 12px; font-size: 0.78rem; color: var(--text-muted);
         }
+        #leyenda label { display: flex; align-items: center; gap: 8px; margin: 4px 0; cursor: pointer; user-select: none; }
+        #leyenda input { accent-color: var(--c-central); margin: 0; }
+        .sw { width: 11px; height: 11px; display: inline-block; flex-shrink: 0; }
+        .sw.central { background: var(--c-central); border-radius: 50%; }
+        .sw.ugl { background: var(--c-ugl); border-radius: 50%; }
+        .sw.agencia { background: var(--c-agencia); transform: rotate(45deg) scale(.85); }
+        .sw.cap { width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 11px solid var(--c-cap); }
+        .sw.vacio { background: var(--c-vacio); border-radius: 50%; }
 
         #panel-lateral {
-            width: 440px;
-            background: var(--bg-sidebar);
-            border-left: 1px solid var(--border-color);
-            display: flex;
-            flex-direction: column;
-            z-index: 10;
-            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+            width: 420px; background: var(--bg-sidebar); border-left: 1px solid var(--border-color);
+            display: flex; flex-direction: column; z-index: 10; box-shadow: -10px 0 30px rgba(0,0,0,.5);
         }
-
-        .cabecera-panel {
-            background-color: var(--bg-sidebar);
-            padding: 22px 20px 16px 20px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .cabecera-panel h2 {
-            margin: 0 0 12px 0;
-            font-size: 1.15rem;
-            font-weight: 600;
-            letter-spacing: -0.2px;
-            color: var(--text-main);
-        }
-
+        .cabecera-panel { padding: 22px 20px 16px; border-bottom: 1px solid var(--border-color); }
+        .cabecera-panel h2 { margin: 0 0 12px; font-size: 1.15rem; font-weight: 600; }
         .buscador-input {
-            width: 100%;
-            padding: 9px 14px;
-            background: var(--bg-input);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            font-size: 0.88rem;
-            color: var(--text-main);
-            box-sizing: border-box;
-            outline: none;
-            transition: border-color 0.2s;
+            width: 100%; padding: 9px 14px; background: var(--bg-input); border: 1px solid var(--border-color);
+            border-radius: 6px; font-size: .88rem; color: var(--text-main); outline: none;
         }
+        .buscador-input:focus { border-color: var(--c-central); }
+        .badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+        .badge { font-size: .72rem; padding: 3px 9px; border-radius: 10px; font-weight: 600; border: 1px solid; }
+        .badge.ugl { color: var(--c-ugl); border-color: rgba(16,185,129,.35); background: rgba(16,185,129,.1); }
+        .badge.agencia { color: var(--c-agencia); border-color: rgba(245,158,11,.35); background: rgba(245,158,11,.1); }
+        .badge.cap { color: var(--c-cap); border-color: rgba(167,139,250,.35); background: rgba(167,139,250,.1); }
+        .badge.alerta { color: var(--c-alerta); border-color: rgba(248,113,113,.35); background: rgba(248,113,113,.1); cursor: pointer; }
 
-        .buscador-input:focus {
-            border-color: var(--primary-accent);
+        #contenido-detalles { padding: 20px; overflow-y: auto; flex: 1; }
+        #contenido-detalles::-webkit-scrollbar { width: 5px; }
+        #contenido-detalles::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+
+        .mensaje-vacio { color: var(--text-muted); font-style: italic; text-align: center; margin-top: 60px; font-size: .88rem; line-height: 1.6; }
+        .tipo-chip { display: inline-block; font-size: .66rem; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; }
+        .tipo-chip.ugl { background: rgba(16,185,129,.15); color: var(--c-ugl); }
+        .tipo-chip.agencia { background: rgba(245,158,11,.15); color: var(--c-agencia); }
+        .tipo-chip.cap { background: rgba(167,139,250,.15); color: var(--c-cap); }
+        .titulo-nodo { font-size: 1.2rem; font-weight: 600; margin: 0 0 4px; }
+        .subtitulo-nodo { font-size: .82rem; color: var(--text-muted); margin: 0 0 18px; }
+        .subtitulo-nodo a { color: var(--c-ugl); cursor: pointer; text-decoration: none; }
+        .subtitulo-nodo a:hover { text-decoration: underline; }
+
+        .seccion-titulo { font-size: .72rem; text-transform: uppercase; letter-spacing: .9px; color: var(--text-muted); margin: 18px 0 8px; font-weight: 700; }
+        .datos-contacto { background: var(--bg-card); border: 1px solid var(--border-color); border-left: 3px solid var(--c-central); padding: 10px 14px; border-radius: 6px; }
+        .datos-contacto p { margin: 6px 0; font-size: .85rem; color: #cbd5e1; display: flex; align-items: flex-start; }
+        .datos-contacto .pendiente { color: var(--text-muted); font-style: italic; }
+        .icon-svg { width: 15px; height: 15px; margin-right: 8px; flex-shrink: 0; margin-top: 2px; }
+
+        .tarjeta-cargo { background: var(--bg-card); border: 1px solid var(--border-color); border-left: 3px solid var(--c-ugl); padding: 10px 12px; margin-bottom: 8px; border-radius: 6px; }
+        .tarjeta-cargo.agencia { border-left-color: var(--c-agencia); }
+        .tarjeta-cargo.cap { border-left-color: var(--c-cap); }
+        .cargo-titulo { font-size: .7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 3px; letter-spacing: .4px; }
+        .cargo-nombre { font-size: .95rem; font-weight: 600; margin: 0; }
+        .cargo-alerta { font-size: .72rem; color: var(--c-alerta); margin-top: 4px; }
+
+        .lista-hijos { display: flex; flex-direction: column; gap: 6px; }
+        .item-hijo {
+            display: flex; align-items: center; gap: 10px; background: var(--bg-card); border: 1px solid var(--border-color);
+            border-radius: 6px; padding: 8px 12px; cursor: pointer; font-size: .86rem; transition: border-color .15s;
         }
+        .item-hijo:hover { border-color: #334155; }
+        .item-hijo .n { color: var(--text-muted); font-size: .75rem; margin-left: auto; white-space: nowrap; }
 
-        .badge-estadisticas {
-            font-size: 0.72rem;
-            background: rgba(59, 130, 246, 0.12);
-            color: #60a5fa;
-            border: 1px solid rgba(59, 130, 246, 0.25);
-            padding: 4px 10px;
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 10px;
-            font-weight: 500;
-        }
+        .resultado { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 6px; cursor: pointer; font-size: .86rem; }
+        .resultado:hover { background: var(--bg-card); }
+        .resultado small { color: var(--text-muted); margin-left: auto; font-size: .72rem; white-space: nowrap; }
+        code { background: var(--bg-card); padding: 1px 5px; border-radius: 3px; font-size: .8rem; }
 
-        #contenido-detalles {
-            padding: 20px;
-            overflow-y: auto;
-            flex: 1;
-        }
-
-        #contenido-detalles::-webkit-scrollbar {
-            width: 5px;
-        }
-
-        #contenido-detalles::-webkit-scrollbar-thumb {
-            background: var(--border-color);
-            border-radius: 3px;
-        }
-
-        .mensaje-vacio {
-            color: var(--text-muted);
-            font-style: italic;
-            text-align: center;
-            margin-top: 70px;
-            font-size: 0.88rem;
-            line-height: 1.6;
-        }
-
-        .seccion-titulo {
-            font-size: 0.72rem;
-            text-transform: uppercase;
-            letter-spacing: 0.9px;
-            color: var(--text-muted);
-            margin-bottom: 8px;
-            font-weight: 700;
-            margin-top: 16px;
-        }
-
-        .datos-contacto {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-left: 3px solid var(--primary-accent);
-            padding: 12px 14px;
-            border-radius: 6px;
-            margin-bottom: 15px;
-        }
-
-        .datos-contacto p {
-            margin: 6px 0;
-            font-size: 0.85rem;
-            color: #cbd5e1;
-            display: flex;
-            align-items: center;
-        }
-
-        .tarjeta-cargo {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-left: 3px solid var(--success-accent);
-            padding: 10px 12px;
-            margin-bottom: 10px;
-            border-radius: 6px;
-        }
-
-        .cargo-titulo {
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 3px;
-            letter-spacing: 0.4px;
-        }
-
-        .cargo-nombre {
-            font-size: 0.95rem;
-            color: var(--text-main);
-            font-weight: 600;
-            margin: 0;
-        }
-
-        .lista-agencias {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-left: 3px solid var(--agency-accent);
-            padding: 10px 12px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            color: #cbd5e1;
-            margin-bottom: 6px;
-        }
-
-        .icon-svg {
-            width: 15px;
-            height: 15px;
-            margin-right: 8px;
-            flex-shrink: 0;
+        @media (max-width: 800px) {
+            body { flex-direction: column; }
+            #zona-grafo { height: 50vh; flex: none; }
+            #panel-lateral { width: 100%; flex: 1; min-height: 0; border-left: none; border-top: 1px solid var(--border-color); }
         }
     </style>
 </head>
 <body>
 
+<div id="zona-grafo">
     <div id="contenedor-grafo"></div>
-    
-    <div id="panel-lateral">
-        <div class="cabecera-panel">
-            <h2>Red Federal UGLs y Agencias</h2>
-            <input type="text" id="buscadorUgl" class="buscador-input" placeholder="Buscar UGL o Localidad..." onkeyup="filtrarNodos()">
-            <div id="estadisticas" class="badge-estadisticas">Cargando base de datos...</div>
-        </div>
-        <div id="contenido-detalles">
-            <div class="mensaje-vacio">Seleccion&aacute; una UGL en el grafo circular para desplegar sus datos, autoridades y sus Agencias/CAPs asociadas.</div>
-        </div>
+    <div id="leyenda">
+        <label><span class="sw central"></span>PAMI Nivel Central</label>
+        <label><span class="sw ugl"></span>UGL con datos</label>
+        <label><span class="sw vacio"></span>UGL sin datos</label>
+        <label><input type="checkbox" id="chkAgencias" checked><span class="sw agencia"></span>Agencias</label>
+        <label><input type="checkbox" id="chkCaps" checked><span class="sw cap"></span>CAPs</label>
     </div>
+</div>
 
-    <script>
-        let redGrafo = null;
-        let baseDatos = {};
-        let dataGlobalNodes = null;
-        let dataGlobalEdges = null;
-        let mapaRelaciones = {}; // UGL -> Array de Agencias/CAPs
+<div id="panel-lateral">
+    <div class="cabecera-panel">
+        <h2>Red Federal UGLs y Agencias</h2>
+        <input type="text" id="buscador" class="buscador-input" placeholder="Buscar UGL, Agencia, CAP o persona..." autocomplete="off">
+        <div class="badges" id="estadisticas"><span class="badge ugl">Cargando...</span></div>
+    </div>
+    <div id="contenido-detalles">
+        <div class="mensaje-vacio">Seleccion&aacute; una UGL en el grafo para desplegar sus datos, autoridades y sus Agencias/CAPs asociadas.</div>
+    </div>
+</div>
 
-        async function inicializarGrafo() {
-            try {
-                const respuesta = await fetch('datos_ugl.json');
-                if (!respuesta.ok) throw new Error("No se pudo leer datos_ugl.json");
-                baseDatos = await respuesta.json();
-                dibujarRed(baseDatos);
-            } catch (error) {
-                console.error("Error cargando red:", error);
-                document.getElementById('contenido-detalles').innerHTML = `
-                    <div class="mensaje-vacio" style="color: #ef4444;">
-                        <b>Error de lectura local (CORS).</b><br><br>
-                        Record&aacute; ejecutar en tu terminal:<br>
-                        <code>python -m http.server 8000</code><br><br>
-                        Y acceder desde tu navegador a: <b>http://localhost:8000</b>
-                    </div>`;
-            }
-        }
+<script>
+/* =====================================================================
+   1. CATÁLOGO OFICIAL DE UGLs
+   Fuente: institucional.pami.org.ar/files/programaDesarrolloPrestadores/contactos_UGL.pdf
+   "alias" = variantes con que aparecen en datos_ugl.json (sin tildes, en mayúsculas).
+   ===================================================================== */
+const CATALOGO_UGL = [
+    { num: 'I',       nombre: 'Tucumán',             alias: ['TUCUMAN'] },
+    { num: 'II',      nombre: 'Corrientes',          alias: ['CORRIENTES'] },
+    { num: 'III',     nombre: 'Córdoba',             alias: ['CORDOBA'] },
+    { num: 'IV',      nombre: 'Mendoza',             alias: ['MENDOZA'] },
+    { num: 'V',       nombre: 'Bahía Blanca',        alias: ['BAHIA BLANCA'] },
+    { num: 'VI',      nombre: 'Capital Federal',     alias: ['CAPITAL FEDERAL', 'CIUDAD AUTONOMA DE BUENOS AIRES', 'CABA'] },
+    { num: 'VII',     nombre: 'La Plata',            alias: ['LA PLATA'] },
+    { num: 'VIII',    nombre: 'San Martín',          alias: ['SAN MARTIN'] },
+    { num: 'IX',      nombre: 'Rosario',             alias: ['ROSARIO'] },
+    { num: 'X',       nombre: 'Lanús',               alias: ['LANUS'] },
+    { num: 'XI',      nombre: 'Mar del Plata',       alias: ['MAR DEL PLATA'] },
+    { num: 'XII',     nombre: 'Salta',               alias: ['SALTA'] },
+    { num: 'XIII',    nombre: 'Chaco',               alias: ['CHACO'] },
+    { num: 'XIV',     nombre: 'Entre Ríos',          alias: ['ENTRE RIOS', 'PARANA'] },
+    { num: 'XV',      nombre: 'Santa Fe',            alias: ['SANTA FE'] },
+    { num: 'XVI',     nombre: 'Neuquén',             alias: ['NEUQUEN'] },
+    { num: 'XVII',    nombre: 'Chubut',              alias: ['CHUBUT'] },
+    { num: 'XVIII',   nombre: 'Misiones',            alias: ['MISIONES'] },
+    { num: 'XIX',     nombre: 'Santiago del Estero', alias: ['SANTIAGO DEL ESTERO'] },
+    { num: 'XX',      nombre: 'La Pampa',            alias: ['LA PAMPA'] },
+    { num: 'XXI',     nombre: 'San Juan',            alias: ['SAN JUAN'] },
+    { num: 'XXII',    nombre: 'Jujuy',               alias: ['JUJUY'] },
+    { num: 'XXIII',   nombre: 'Formosa',             alias: ['FORMOSA'] },
+    { num: 'XXIV',    nombre: 'Catamarca',           alias: ['CATAMARCA'] },
+    { num: 'XXV',     nombre: 'La Rioja',            alias: ['LA RIOJA'] },
+    { num: 'XXVI',    nombre: 'San Luis',            alias: ['SAN LUIS'] },
+    { num: 'XXVII',   nombre: 'Río Negro',           alias: ['RIO NEGRO'] },
+    { num: 'XXVIII',  nombre: 'Santa Cruz',          alias: ['SANTA CRUZ'] },
+    { num: 'XXIX',    nombre: 'Morón',               alias: ['MORON'] },
+    { num: 'XXX',     nombre: 'Azul',                alias: ['AZUL'] },
+    { num: 'XXXI',    nombre: 'Junín',               alias: ['JUNIN'] },
+    { num: 'XXXII',   nombre: 'Luján',               alias: ['LUJAN'] },
+    { num: 'XXXIII',  nombre: 'Tierra del Fuego',    alias: ['TIERRA DEL FUEGO'] },
+    { num: 'XXXIV',   nombre: 'Concordia',           alias: ['CONCORDIA'] },
+    { num: 'XXXV',    nombre: 'San Justo',           alias: ['SAN JUSTO'] },
+    { num: 'XXXVI',   nombre: 'Río Cuarto',          alias: ['RIO CUARTO', 'RIO IV'] },
+    { num: 'XXXVII',  nombre: 'Quilmes',             alias: ['QUILMES'] },
+    { num: 'XXXVIII', nombre: 'Chivilcoy',           alias: ['CHIVILCOY'] }
+];
 
-        function dibujarRed(datos) {
-            const nodos = [];
-            const aristas = [];
-            const ugls = [];
-            const subDependencias = [];
+/* Claves del JSON que en realidad son la localidad de un CAP/Agencia (el LLM las
+   cargó como si fueran UGL). Se cuelgan de su UGL real y se tratan como CAP.
+   Agregar acá cualquier localidad nueva que aparezca como "Sin clasificar". */
+const LOCALIDAD_A_UGL = {
+    'PUERTO DESEADO': 'XXVIII', 'GOBERNADOR GREGORES': 'XXVIII', 'CALETA OLIVIA': 'XXVIII',
+    'SAN JULIAN': 'XXVIII', 'PUERTO SANTA CRUZ': 'XXVIII',
+    'BANDERA': 'XIX', 'MONTE QUEMADO': 'XIX', 'TINTINA': 'XIX', 'OJO DE AGUA': 'XIX',
+    'FRIAS': 'XIX', 'CAMPO GALLO': 'XIX', 'ANATUYA': 'XIX', 'LA BANDA': 'XIX'
+};
 
-            // 1. Clasificación estricta: Solo las UGLs empiezan con "UGL"
-            for (const nombre in datos) {
-                const nombreUpper = nombre.toUpperCase();
-                if (nombreUpper.startsWith('UGL')) {
-                    ugls.push(nombre);
-                } else {
-                    subDependencias.push(nombre);
-                }
-            }
+/* Cargos genéricos: si la misma persona ya figura en una Agencia/CAP de esa UGL, se descartan */
+const CARGOS_GENERICOS = /^(titular|designad[ao]|prestar servicios|prestador(a)? de servicios|desempe[nñ]ar tareas)$/i;
 
-            // 2. Nodo Central Institucional
-            nodos.push({
-                id: 'CENTRAL',
-                label: 'PAMI\nNivel Central',
-                size: 16,
-                color: { background: '#3b82f6', border: '#60a5fa', highlight: { background: '#60a5fa', border: '#93c5fd' } },
-                font: { color: '#f8fafc', size: 11, bold: true }
-            });
+/* =====================================================================
+   2. NORMALIZACIÓN: datos_ugl.json (plano) -> árbol UGL > Agencias / CAPs
+   ===================================================================== */
+const sinTildes = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+const clave = s => sinTildes(String(s)).toUpperCase().replace(/[“”"'«»]/g, '').replace(/\s+/g, ' ').trim();
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const CONECTORES = new Set(['de', 'del', 'la', 'las', 'los', 'y', 'e']);
+const nombreBonito = s => {
+    // "Natalia Ivana CLEPPE" -> "Natalia Ivana Cleppe"; "OJO DE AGUA" -> "Ojo de Agua"
+    return String(s).trim().split(/\s+/).map((p, i) => {
+        if (p !== p.toUpperCase() || !/[A-ZÁÉÍÓÚÑ]/.test(p)) return p;          // ya viene en formato mixto
+        const low = p.toLowerCase();
+        if (i > 0 && CONECTORES.has(low)) return low;
+        return low.charAt(0).toUpperCase() + low.slice(1);
+    }).join(' ');
+};
+const tieneTildes = s => s !== sinTildes(s);
+const valorBasura = v => !v || /^EN CABA$/i.test(v.trim()) || /^\(?0\)?\s*0?$/.test(v.trim());
 
-            // 3. Nodos UGL (Visibles en órbita circular alrededor de Central)
-            ugls.forEach(ugl => {
-                mapaRelaciones[ugl] = [];
-                nodos.push({
-                    id: ugl,
-                    label: ugl,
-                    size: 9,
-                    color: { background: '#10b981', border: '#059669', highlight: { background: '#f59e0b', border: '#d97706' } },
-                    font: { size: 10, color: '#94a3b8' }
-                });
-                aristas.push({ from: 'CENTRAL', to: ugl });
-            });
+function resolverUGL(claveJson) {
+    // Quita prefijos "UGLXI – ", "XXVIII - ", "UGL VI - "
+    const limpia = clave(claveJson).replace(/^(UGL\s*)?[IVXL]+\s*[-–—]\s*/, '').trim();
+    for (const u of CATALOGO_UGL) if (u.alias.includes(limpia)) return { ugl: u, localidad: null };
+    if (LOCALIDAD_A_UGL[limpia]) {
+        const u = CATALOGO_UGL.find(x => x.num === LOCALIDAD_A_UGL[limpia]);
+        return { ugl: u, localidad: limpia };
+    }
+    return { ugl: null, localidad: limpia };
+}
 
-            // 4. Nodos Agencias, CAPs y Localidades (Ocultos por defecto, vinculados a su UGL padre)
-            subDependencias.forEach(subDep => {
-                const subDepUpper = subDep.toUpperCase();
-                
-                // Encontrar la UGL padre por coincidencia de texto (ej: "MAR DEL PLATA" con "UGLXI - MAR DEL PLATA")
-                let uglPadre = ugls.find(u => {
-                    const uLimpio = u.toUpperCase().replace(/UGL[\s\w-]+-\s*/, '').trim();
-                    return uLimpio.length > 2 && subDepUpper.includes(uLimpio);
-                });
+// Detecta si un cargo pertenece a una Agencia o CAP. Devuelve {tipo, nombre, rol} o null.
+function clasificarCargo(cargo) {
+    const txt = cargo.replace(/\s+/g, ' ').trim();
+    let m = txt.match(/^(.*?)\b(?:CAP|Centro de Atenci[oó]n Personalizada)\b(?:\s+Cabecera)?\s*(.*)$/i);
+    if (m) return { tipo: 'cap', nombre: cortarNombre(m[2]), rol: limpiarRol(m[1]) };
+    m = txt.match(/^(.*?)\b(?:Agencia|Boca de Atenci[oó]n)\b(?:\s+PAMI)?\s*(.*)$/i);
+    if (m && m[2]) return { tipo: 'agencia', nombre: cortarNombre(m[2]), rol: limpiarRol(m[1]), boca: /boca/i.test(txt) };
+    return null;
+}
+function cortarNombre(s) {
+    return s.replace(/\(.*?\)/g, '').split(/[,;]/)[0].replace(/[“”"]/g, '').trim();
+}
+function limpiarRol(s) {
+    let r = s.replace(/[\s,\-–]+$/, '').replace(/\s+(de la|del|de|en el|en la|en)$/i, '').trim();
+    if (!r || /^titular$/i.test(r)) return 'Titular';
+    return r.charAt(0).toUpperCase() + r.slice(1);
+}
 
-                if (!uglPadre) {
-                    // Segunda pasada: buscar si la UGL contiene parte del nombre de la subdependencia
-                    uglPadre = ugls.find(u => subDepUpper.includes(u.toUpperCase().split(' ')[0]));
-                }
+function construirModelo(datos) {
+    const ugls = new Map();   // num -> nodo UGL
+    const sinClasificar = []; // claves que no pudimos ubicar
+    const obtenerUgl = u => {
+        if (!ugls.has(u.num)) ugls.set(u.num, {
+            id: 'UGL-' + u.num, tipo: 'ugl', num: u.num, nombre: u.nombre,
+            direccion: null, telefono: null, autoridades: new Map(), hijos: new Map(), claves: []
+        });
+        return ugls.get(u.num);
+    };
+    // Registra persona en un mapa cargo -> [personas únicas]
+    const agregarPersona = (mapa, cargo, persona) => {
+        const k = clave(cargo);
+        if (!mapa.has(k)) mapa.set(k, { cargo, personas: [] });
+        const e = mapa.get(k);
+        if (!e.personas.some(p => clave(p) === clave(persona))) e.personas.push(nombreBonito(persona));
+    };
+    const obtenerHijo = (ugl, tipo, nombre) => {
+        const k = tipo + ':' + clave(nombre);
+        if (!ugl.hijos.has(k)) ugl.hijos.set(k, {
+            id: ugl.id + '|' + k, tipo, nombre: nombreBonito(nombre), ugl, autoridades: new Map()
+        });
+        const h = ugl.hijos.get(k);
+        if (tieneTildes(nombre) && !tieneTildes(h.nombre)) h.nombre = nombreBonito(nombre); // "Pigue" -> "Pigué"
+        return h;
+    };
 
-                if (!uglPadre && ugls.length > 0) {
-                    uglPadre = ugls[0]; // Fallback por seguridad
-                }
+    // Todas las UGLs del catálogo aparecen, aunque no tengan datos
+    CATALOGO_UGL.forEach(obtenerUgl);
 
-                if (uglPadre) {
-                    if (!mapaRelaciones[uglPadre]) mapaRelaciones[uglPadre] = [];
-                    mapaRelaciones[uglPadre].push(subDep);
-                }
+    for (const [claveJson, info] of Object.entries(datos)) {
+        const { ugl: u, localidad } = resolverUGL(claveJson);
+        if (!u) { sinClasificar.push({ clave: claveJson, info }); continue; }
+        const ugl = obtenerUgl(u);
+        ugl.claves.push(claveJson);
 
-                nodos.push({
-                    id: subDep,
-                    label: subDep,
-                    size: 5,
-                    hidden: true, // Ocultas hasta seleccionar la UGL correspondiente
-                    color: { background: '#8b5cf6', border: '#7c3aed', highlight: { background: '#f59e0b', border: '#e0a800' } },
-                    font: { size: 9, color: '#c084fc' }
-                });
+        for (const [cargo, valor] of Object.entries(info || {})) {
+            if (cargo === '_direccion') { if (!valorBasura(valor) && !localidad) ugl.direccion = valor; continue; }
+            if (cargo === '_telefono')  { if (!valorBasura(valor) && !localidad) ugl.telefono = valor; continue; }
+            if (cargo.startsWith('_') || !valor) continue;
 
-                if (uglPadre) {
-                    aristas.push({ from: uglPadre, to: subDep, hidden: true, color: { color: '#8b5cf6', opacity: 0.4 } });
-                }
-            });
-
-            document.getElementById('estadisticas').innerText = `${ugls.length} UGLs | ${subDependencias.length} Dependencias`;
-
-            const opcionesGrafo = {
-                nodes: {
-                    shape: 'dot',
-                    borderWidth: 1.5,
-                    shadow: { enabled: true, color: 'rgba(0,0,0,0.6)', size: 4 }
-                },
-                edges: {
-                    width: 0.8,
-                    color: { color: '#1e293b', highlight: '#3b82f6' },
-                    smooth: { type: 'cubicBezier', roundness: 0.2 }
-                },
-                physics: {
-                    solver: 'forceAtlas2Based',
-                    forceAtlas2Based: {
-                        gravitationalConstant: -55,
-                        centralGravity: 0.012,
-                        springLength: 140,
-                        springConstant: 0.04
-                    }
-                },
-                interaction: {
-                    hover: true,
-                    zoomView: true,
-                    dragView: true
-                }
-            };
-
-            const contenedor = document.getElementById('contenedor-grafo');
-            dataGlobalNodes = new vis.DataSet(nodos);
-            dataGlobalEdges = new vis.DataSet(aristas);
-            
-            const dataGrafo = {
-                nodes: dataGlobalNodes,
-                edges: dataGlobalEdges
-            };
-
-            redGrafo = new vis.Network(contenedor, dataGrafo, opcionesGrafo);
-
-            redGrafo.on("click", function (params) {
-                if (params.nodes.length > 0) {
-                    const idNodo = params.nodes[0];
-                    if (idNodo !== 'CENTRAL' && Object.keys(mapaRelaciones).includes(idNodo)) {
-                        mostrarDetallesUGL(idNodo, datos[idNodo]);
-                        revelarHijosUGL(idNodo);
-                    } else if (idNodo === 'CENTRAL') {
-                        document.getElementById('contenido-detalles').innerHTML = '<div class="mensaje-vacio">Nivel Central institucional seleccionado.</div>';
-                    }
-                }
-            });
-        }
-
-        function revelarHijosUGL(uglSeleccionada) {
-            const updatesNodos = [];
-            const updatesAristas = [];
-
-            dataGlobalNodes.forEach(nodo => {
-                if (nodo.id !== 'CENTRAL' && !Object.keys(mapaRelaciones).includes(nodo.id)) {
-                    const esHijo = mapaRelaciones[uglSeleccionada] && mapaRelaciones[uglSeleccionada].includes(nodo.id);
-                    updatesNodos.push({ id: nodo.id, hidden: !esHijo });
-                }
-            });
-
-            dataGlobalEdges.forEach(arista => {
-                if (arista.from !== 'CENTRAL') {
-                    const perteneceAUgl = (arista.from === uglSeleccionada);
-                    updatesAristas.push({ id: arista.id, hidden: !perteneceAUgl });
-                }
-            });
-
-            dataGlobalNodes.update(updatesNodos);
-            dataGlobalEdges.update(updatesAristas);
-        }
-
-        function mostrarDetallesUGL(nombreUgl, info) {
-            let html = '';
-
-            const direccion = info._direccion || "Direcci&oacute;n pendiente de sincronizaci&oacute;n";
-            const telefono = info._telefono || "Tel&eacute;fono no disponible";
-            const agenciasAsociadas = mapaRelaciones[nombreUgl] || [];
-
-            const svgPin = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>`;
-            const svgPhone = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>`;
-
-            html += `
-                <div class="seccion-titulo">Ubicaci&oacute;n y Contacto UGL</div>
-                <div class="datos-contacto">
-                    <p>${svgPin}<strong>Direcci&oacute;n:</strong>&nbsp;${direccion}</p>
-                    <p>${svgPhone}<strong>Tel&eacute;fono:</strong>&nbsp;${telefono}</p>
-                </div>
-                <div class="seccion-titulo">Estructura de Autoridades</div>
-            `;
-
-            let hayCargos = false;
-            for (const cargo in info) {
-                if (cargo.startsWith('_')) continue;
-                
-                hayCargos = true;
-                html += `
-                    <div class="tarjeta-cargo">
-                        <div class="cargo-titulo">${cargo}</div>
-                        <div class="cargo-nombre">${info[cargo]}</div>
-                    </div>
-                `;
-            }
-
-            if (!hayCargos) {
-                html += `<div class="mensaje-vacio" style="margin-top: 10px; margin-bottom: 15px;">No hay registros hist&oacute;ricos de autoridades para esta UGL.</div>`;
-            }
-
-            html += `<div class="seccion-titulo">Agencias, CAPs y Localidades (${agenciasAsociadas.length})</div>`;
-            if (agenciasAsociadas.length > 0) {
-                agenciasAsociadas.forEach(ag => {
-                    html += `<div class="lista-agencias">🏛️ ${ag}</div>`;
-                });
+            let c = clasificarCargo(cargo);
+            // Clave-localidad (ej. "BANDERA") con cargo genérico -> es un CAP de esa localidad
+            if (!c?.nombre && localidad) c = { tipo: 'cap', nombre: localidad, rol: c?.rol || limpiarRol(cargo) };
+            if (c && c.nombre) {
+                const hijo = obtenerHijo(ugl, c.tipo, c.nombre);
+                if (c.boca) hijo.subtipo = 'Boca de Atención';
+                agregarPersona(hijo.autoridades, c.rol, valor);
             } else {
-                html += `<div class="mensaje-vacio" style="margin-top: 10px;">No se registraron dependencias vinculadas a esta UGL.</div>`;
-            }
-
-            document.getElementById('contenido-detalles').innerHTML = html;
-        }
-
-        function filtrarNodos() {
-            const inputVal = document.getElementById('buscadorUgl').value.toUpperCase();
-            if (!baseDatos) return;
-
-            for (const ugl in baseDatos) {
-                if (ugl.toUpperCase().includes(inputVal)) {
-                    if (ugl.toUpperCase().startsWith('UGL')) {
-                        redGrafo.focus(ugl, { scale: 1.4, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
-                        redGrafo.selectNodes([ugl]);
-                        mostrarDetallesUGL(ugl, baseDatos[ugl]);
-                        revelarHijosUGL(ugl);
-                        break;
-                    }
-                }
+                agregarPersona(ugl.autoridades, cargo.charAt(0).toUpperCase() + cargo.slice(1), valor);
             }
         }
+    }
 
-        window.onload = inicializarGrafo;
-    </script>
+    // Limpieza: cargos genéricos de UGL cuya persona ya está en una Agencia/CAP
+    for (const ugl of ugls.values()) {
+        const enHijos = new Set();
+        ugl.hijos.forEach(h => h.autoridades.forEach(a => a.personas.forEach(p => enHijos.add(clave(p)))));
+        for (const [k, a] of [...ugl.autoridades]) {
+            if (CARGOS_GENERICOS.test(a.cargo.trim())) {
+                a.personas = a.personas.filter(p => !enHijos.has(clave(p)));
+                if (!a.personas.length) ugl.autoridades.delete(k);
+            }
+        }
+    }
+    return { ugls: [...ugls.values()], sinClasificar };
+}
+
+/* =====================================================================
+   3. GRAFO
+   ===================================================================== */
+const COLORES = {
+    central: '#3b82f6', ugl: '#10b981', uglVacia: '#475569', agencia: '#f59e0b', cap: '#a78bfa'
+};
+let red = null, nodosDS = null, aristasDS = null, modelo = null;
+const indice = new Map(); // id -> objeto del modelo
+
+const svgPin = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>`;
+const svgPhone = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>`;
+
+async function inicializar() {
+    try {
+        const r = await fetch('datos_ugl.json', { cache: 'no-store' });
+        if (!r.ok) throw new Error('No se pudo leer datos_ugl.json');
+        modelo = construirModelo(await r.json());
+        window.modeloPAMI = modelo; // útil para depurar desde la consola
+        dibujar();
+    } catch (e) {
+        console.error(e);
+        document.getElementById('contenido-detalles').innerHTML = `
+            <div class="mensaje-vacio" style="color:#ef4444">
+                <b>No se pudo cargar datos_ugl.json.</b><br><br>
+                Si lo abr&iacute;s localmente, ejecut&aacute;:<br><code>python -m http.server 8000</code><br>
+                y entr&aacute; a <b>http://localhost:8000</b>
+            </div>`;
+    }
+}
+
+function dibujar() {
+    const nodos = [], aristas = [];
+    let nAg = 0, nCap = 0;
+
+    nodos.push({
+        id: 'CENTRAL', label: 'PAMI\nNivel Central', shape: 'dot', size: 22, mass: 4,
+        color: { background: COLORES.central, border: '#60a5fa', highlight: { background: '#60a5fa', border: '#93c5fd' } },
+        font: { color: '#f8fafc', size: 13, bold: true }
+    });
+    indice.set('CENTRAL', { tipo: 'central' });
+
+    for (const u of modelo.ugls) {
+        indice.set(u.id, u);
+        const conDatos = u.autoridades.size || u.hijos.size || u.telefono || u.direccion;
+        const col = conDatos ? COLORES.ugl : COLORES.uglVacia;
+        nodos.push({
+            id: u.id, label: `UGL ${u.num}\n${u.nombre}`, shape: 'dot', size: 13, mass: 2 + u.hijos.size * 0.3,
+            color: { background: col, border: col, highlight: { background: '#34d399', border: '#6ee7b7' } },
+            font: { color: conDatos ? '#e2e8f0' : '#64748b', size: 11 }
+        });
+        aristas.push({ from: 'CENTRAL', to: u.id, length: 260, color: { color: '#1e3a5f' } });
+
+        for (const h of u.hijos.values()) {
+            indice.set(h.id, h);
+            h.tipo === 'agencia' ? nAg++ : nCap++;
+            const c = COLORES[h.tipo];
+            nodos.push({
+                id: h.id, tipo: h.tipo, label: h.nombre,
+                shape: h.tipo === 'agencia' ? 'diamond' : 'triangle',
+                size: h.tipo === 'agencia' ? 8 : 6,
+                color: { background: c, border: c, highlight: { background: '#fde68a', border: '#fbbf24' } },
+                font: { color: '#94a3b8', size: 9 }
+            });
+            aristas.push({ from: u.id, to: h.id, length: 60, color: { color: '#1e293b' } });
+        }
+    }
+
+    const badges = [
+        `<span class="badge ugl">${modelo.ugls.length} UGLs</span>`,
+        `<span class="badge agencia">${nAg} Agencias</span>`,
+        `<span class="badge cap">${nCap} CAPs</span>`
+    ];
+    if (modelo.sinClasificar.length) badges.push(`<span class="badge alerta" onclick="mostrarSinClasificar()">${modelo.sinClasificar.length} sin clasificar</span>`);
+    document.getElementById('estadisticas').innerHTML = badges.join('');
+
+    nodosDS = new vis.DataSet(nodos);
+    aristasDS = new vis.DataSet(aristas);
+    red = new vis.Network(document.getElementById('contenedor-grafo'), { nodes: nodosDS, edges: aristasDS }, {
+        nodes: { borderWidth: 1.5, shadow: { enabled: true, color: 'rgba(0,0,0,.6)', size: 4 } },
+        edges: { width: 0.8, smooth: false, color: { highlight: '#3b82f6', hover: '#3b82f6' } },
+        physics: {
+            solver: 'forceAtlas2Based',
+            forceAtlas2Based: { gravitationalConstant: -60, centralGravity: 0.008, springLength: 80, springConstant: 0.06, avoidOverlap: 0.4 },
+            stabilization: { iterations: 400 }
+        },
+        interaction: { hover: true, tooltipDelay: 150 }
+    });
+    red.once('stabilizationIterationsDone', () => {
+        red.setOptions({ physics: false }); // congela el layout para que no "baile" al hacer foco
+        red.fit({ animation: { duration: 500 } });
+    });
+    red.on('click', p => { if (p.nodes.length) seleccionar(p.nodes[0], false); });
+}
+
+function seleccionar(id, enfocar = true) {
+    const obj = indice.get(id);
+    if (!obj) return;
+    if (enfocar && red) {
+        red.selectNodes([id]);
+        red.focus(id, { scale: obj.tipo === 'ugl' ? 1.3 : 1.8, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+    }
+    if (obj.tipo === 'central') {
+        document.getElementById('contenido-detalles').innerHTML = '<div class="mensaje-vacio">Nivel Central institucional seleccionado.</div>';
+    } else if (obj.tipo === 'ugl') mostrarUGL(obj);
+    else mostrarDependencia(obj);
+}
+
+function htmlAutoridades(mapa, clase) {
+    if (!mapa.size) return `<div class="mensaje-vacio" style="margin-top:8px">Sin registros de autoridades en los boletines analizados.</div>`;
+    let h = '';
+    for (const a of mapa.values()) {
+        h += `<div class="tarjeta-cargo ${clase}">
+                <div class="cargo-titulo">${esc(a.cargo)}</div>
+                ${a.personas.map(p => `<div class="cargo-nombre">${esc(p)}</div>`).join('')}
+                ${a.personas.length > 1 ? `<div class="cargo-alerta">Hay ${a.personas.length} designaciones distintas para este cargo: verificar cu&aacute;l est&aacute; vigente.</div>` : ''}
+              </div>`;
+    }
+    return h;
+}
+
+function htmlContacto(direccion, telefono) {
+    return `<div class="seccion-titulo">Ubicaci&oacute;n y Contacto</div>
+        <div class="datos-contacto">
+            <p>${svgPin}<strong>Direcci&oacute;n:</strong>&nbsp;${direccion ? esc(direccion) : '<span class="pendiente">pendiente de sincronizaci&oacute;n</span>'}</p>
+            <p>${svgPhone}<strong>Tel&eacute;fono:</strong>&nbsp;${telefono ? esc(telefono) : '<span class="pendiente">no disponible</span>'}</p>
+        </div>`;
+}
+
+function mostrarUGL(u) {
+    const hijos = [...u.hijos.values()];
+    const ag = hijos.filter(h => h.tipo === 'agencia').sort((a, b) => a.nombre.localeCompare(b.nombre));
+    const caps = hijos.filter(h => h.tipo === 'cap').sort((a, b) => a.nombre.localeCompare(b.nombre));
+    const lista = (arr, tipo) => arr.length
+        ? `<div class="lista-hijos">${arr.map(h => `<div class="item-hijo" onclick="seleccionar('${esc(h.id)}')">
+                <span class="sw ${tipo}"></span>${esc(h.nombre)}${h.subtipo ? ` <small style="color:var(--text-muted)">(${h.subtipo})</small>` : ''}
+                <span class="n">${[...h.autoridades.values()].reduce((s, a) => s + a.personas.length, 0)} autoridad(es)</span></div>`).join('')}</div>`
+        : `<div class="mensaje-vacio" style="margin-top:8px">Sin registros.</div>`;
+
+    document.getElementById('contenido-detalles').innerHTML = `
+        <span class="tipo-chip ugl">UGL ${esc(u.num)}</span>
+        <h3 class="titulo-nodo">${esc(u.nombre)}</h3>
+        <p class="subtitulo-nodo">Unidad de Gesti&oacute;n Local &middot; ${ag.length} agencia(s) &middot; ${caps.length} CAP(s)</p>
+        ${htmlContacto(u.direccion, u.telefono)}
+        <div class="seccion-titulo">Autoridades de la UGL</div>
+        ${htmlAutoridades(u.autoridades, '')}
+        <div class="seccion-titulo">Agencias (${ag.length})</div>
+        ${lista(ag, 'agencia')}
+        <div class="seccion-titulo">Centros de Atenci&oacute;n Personalizada (${caps.length})</div>
+        ${lista(caps, 'cap')}`;
+}
+
+function mostrarDependencia(h) {
+    const etiqueta = h.tipo === 'agencia' ? (h.subtipo || 'Agencia') : 'CAP';
+    document.getElementById('contenido-detalles').innerHTML = `
+        <span class="tipo-chip ${h.tipo}">${etiqueta}</span>
+        <h3 class="titulo-nodo">${esc(h.nombre)}</h3>
+        <p class="subtitulo-nodo">Depende de <a onclick="seleccionar('${esc(h.ugl.id)}')">UGL ${esc(h.ugl.num)} &ndash; ${esc(h.ugl.nombre)}</a></p>
+        ${htmlContacto(h.direccion, h.telefono)}
+        <div class="seccion-titulo">Autoridades</div>
+        ${htmlAutoridades(h.autoridades, h.tipo)}`;
+}
+
+function mostrarSinClasificar() {
+    document.getElementById('contenido-detalles').innerHTML = `
+        <div class="seccion-titulo">Claves sin UGL asignada</div>
+        <p class="subtitulo-nodo">Estas entradas de <code>datos_ugl.json</code> no coinciden con ninguna UGL del cat&aacute;logo.
+        Agreg&aacute; su localidad a <code>LOCALIDAD_A_UGL</code> en index.html.</p>
+        ${modelo.sinClasificar.map(s => `<div class="tarjeta-cargo" style="border-left-color:var(--c-alerta)">
+            <div class="cargo-titulo">${esc(s.clave)}</div>
+            ${Object.entries(s.info || {}).filter(([k]) => !k.startsWith('_')).map(([k, v]) => `<div style="font-size:.82rem;margin-top:4px">${esc(k)}: <b>${esc(v)}</b></div>`).join('')}
+        </div>`).join('')}`;
+}
+
+/* ---------- Buscador: lista de resultados (UGL, Agencia, CAP o persona) ---------- */
+document.getElementById('buscador').addEventListener('input', e => {
+    const q = clave(e.target.value);
+    if (q.length < 2) return;
+    const res = [];
+    for (const [id, o] of indice) {
+        if (o.tipo === 'central') continue;
+        const nombre = o.tipo === 'ugl' ? `UGL ${o.num} ${o.nombre}` : o.nombre;
+        let motivo = null;
+        if (clave(nombre).includes(q)) motivo = o.tipo === 'ugl' ? 'UGL' : (o.tipo === 'agencia' ? 'Agencia' : 'CAP');
+        else for (const a of o.autoridades.values()) if (a.personas.some(p => clave(p).includes(q))) { motivo = 'Persona'; break; }
+        if (motivo) res.push({ id, o, nombre, motivo });
+    }
+    const orden = { UGL: 0, Agencia: 1, CAP: 2, Persona: 3 };
+    res.sort((a, b) => orden[a.motivo] - orden[b.motivo]);
+    document.getElementById('contenido-detalles').innerHTML = res.length
+        ? `<div class="seccion-titulo">${res.length} resultado(s)</div>` + res.slice(0, 60).map(r => `
+            <div class="resultado" onclick="seleccionar('${esc(r.id)}')">
+                <span class="sw ${r.o.tipo}"></span>${esc(r.nombre)}
+                <small>${r.motivo}${r.o.tipo !== 'ugl' ? ' &middot; UGL ' + esc(r.o.ugl.num) : ''}</small>
+            </div>`).join('')
+        : '<div class="mensaje-vacio">Sin coincidencias.</div>';
+});
+
+/* ---------- Filtros de la leyenda ---------- */
+function aplicarFiltros() {
+    const verAg = document.getElementById('chkAgencias').checked;
+    const verCap = document.getElementById('chkCaps').checked;
+    nodosDS.update(nodosDS.get({ filter: n => n.tipo }).map(n => ({ id: n.id, hidden: n.tipo === 'agencia' ? !verAg : !verCap })));
+}
+document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros);
+document.getElementById('chkCaps').addEventListener('change', aplicarFiltros);
+
+window.onload = inicializar;
+</script>
 </body>
 </html>
