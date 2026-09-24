@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitoreo Federal UGLs - PAMI</title>
+    <title>Monitoreo Federal UGLs y Agencias - PAMI</title>
     <!-- Vis.js Network -->
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <style>
@@ -14,6 +14,7 @@
             --bg-input: #070a10;
             --primary-accent: #3b82f6;
             --success-accent: #10b981;
+            --agency-accent: #8b5cf6;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --border-color: #1e293b;
@@ -178,12 +179,12 @@
     
     <div id="panel-lateral">
         <div class="cabecera-panel">
-            <h2>Red Federal UGLs - PAMI</h2>
-            <input type="text" id="buscadorUgl" class="buscador-input" placeholder="Buscar UGL o Localidad..." onkeyup="filtrarNodos()">
+            <h2>Red Federal UGLs y Agencias</h2>
+            <input type="text" id="buscadorUgl" class="buscador-input" placeholder="Buscar UGL, Agencia o Localidad..." onkeyup="filtrarNodos()">
             <div id="estadisticas" class="badge-estadisticas">Cargando base de datos...</div>
         </div>
         <div id="contenido-detalles">
-            <div class="mensaje-vacio">Seleccion&aacute; un nodo en el grafo o escrib&iacute; el nombre de una UGL en el buscador para analizar su jurisdicci&oacute;n, datos de contacto y responsables actuales.</div>
+            <div class="mensaje-vacio">Seleccion&aacute; un nodo en el grafo o escrib&iacute; el nombre de una dependencia para analizar su jurisdicci&oacute;n, datos de contacto y responsables.</div>
         </div>
     </div>
 
@@ -191,35 +192,6 @@
         let redGrafo = null;
         let baseDatos = {};
         let dataGlobalNodes = null;
-
-        const opcionesGrafo = {
-            nodes: {
-                shape: 'dot',
-                size: 8,
-                font: { size: 10, color: '#94a3b8', face: 'Segoe UI' },
-                borderWidth: 1.5,
-                shadow: { enabled: true, color: 'rgba(0,0,0,0.6)', size: 4 }
-            },
-            edges: {
-                width: 0.8,
-                color: { color: '#1e293b', highlight: '#3b82f6' },
-                smooth: { type: 'cubicBezier', roundness: 0.2 }
-            },
-            physics: {
-                solver: 'forceAtlas2Based',
-                forceAtlas2Based: {
-                    gravitationalConstant: -50,
-                    centralGravity: 0.01,
-                    springLength: 130,
-                    springConstant: 0.04
-                }
-            },
-            interaction: {
-                hover: true,
-                zoomView: true,
-                dragView: true
-            }
-        };
 
         async function inicializarGrafo() {
             try {
@@ -242,34 +214,96 @@
         function dibujarRed(datos) {
             const nodos = [];
             const aristas = [];
-            let totalUgls = Object.keys(datos).length;
 
+            // 1. Nodo Central Institucional (Nivel 0)
             nodos.push({
                 id: 'CENTRAL',
                 label: 'PAMI\nNivel Central',
-                size: 16,
+                level: 0,
+                size: 18,
                 color: { background: '#3b82f6', border: '#60a5fa', highlight: { background: '#60a5fa', border: '#93c5fd' } },
                 font: { color: '#f8fafc', size: 11, bold: true }
             });
 
-            for (const ugl in datos) {
+            const ugls = [];
+            const agenciasCap = [];
+
+            // Clasificar entradas entre UGLs y Agencias/CAPs
+            for (const nombre in datos) {
+                const nombreUpper = nombre.toUpperCase();
+                if (nombreUpper.includes('AGENCIA') || nombreUpper.includes('CAP ') || nombreUpper.startsWith('CAPS')) {
+                    agenciasCap.push(nombre);
+                } else {
+                    ugls.push(nombre);
+                }
+            }
+
+            // 2. Nodos UGL (Nivel 1 - Conectados a Central)
+            ugls.forEach(ugl => {
                 nodos.push({
                     id: ugl,
                     label: ugl,
-                    color: { 
-                        background: '#10b981', 
-                        border: '#059669', 
-                        highlight: { background: '#f59e0b', border: '#d97706' } 
+                    level: 1,
+                    size: 10,
+                    color: { background: '#10b981', border: '#059669', highlight: { background: '#f59e0b', border: '#d97706' } },
+                    font: { size: 10, color: '#94a3b8' }
+                });
+                aristas.push({ from: 'CENTRAL', to: ugl });
+            });
+
+            // 3. Nodos Agencias y CAPs (Nivel 2 - Colgados de su UGL correspondiente)
+            agenciasCap.forEach(agencia => {
+                let uglPadre = ugls.find(u => agencia.includes(u) || u.includes(agencia.replace('AGENCIA', '').trim()));
+                if (!uglPadre && ugls.length > 0) {
+                    uglPadre = ugls[0]; // Fallback si no encuentra coincidencia exacta
+                }
+
+                nodos.push({
+                    id: agencia,
+                    label: agencia,
+                    level: 2,
+                    size: 6,
+                    color: { background: '#8b5cf6', border: '#7c3aed', highlight: { background: '#f59e0b', border: '#d97706' } },
+                    font: { size: 9, color: '#94a3b8' }
+                });
+
+                if (uglPadre) {
+                    aristas.push({ from: uglPadre, to: agencia });
+                } else {
+                    aristas.push({ from: 'CENTRAL', to: agencia });
+                }
+            });
+
+            document.getElementById('estadisticas').innerText = `${ugls.length} UGLs | ${agenciasCap.length} Agencias y CAPs`;
+
+            const opcionesGrafo = {
+                layout: {
+                    hierarchical: {
+                        enabled: true,
+                        direction: 'UD', // De arriba hacia abajo
+                        sortMethod: 'hubsize',
+                        nodeSpacing: 110,
+                        levelSeparation: 140,
+                        treeSpacing: 180
                     }
-                });
-
-                aristas.push({
-                    from: 'CENTRAL',
-                    to: ugl
-                });
-            }
-
-            document.getElementById('estadisticas').innerText = `${totalUgls} UGLs / Dependencias mapeadas`;
+                },
+                nodes: {
+                    shape: 'dot',
+                    borderWidth: 1.5,
+                    shadow: { enabled: true, color: 'rgba(0,0,0,0.6)', size: 4 }
+                },
+                edges: {
+                    width: 0.8,
+                    color: { color: '#1e293b', highlight: '#3b82f6' },
+                    smooth: { type: 'cubicBezier', roundness: 0.2 }
+                },
+                physics: false,
+                interaction: {
+                    hover: true,
+                    zoomView: true,
+                    dragView: true
+                }
+            };
 
             const contenedor = document.getElementById('contenedor-grafo');
             dataGlobalNodes = new vis.DataSet(nodos);
@@ -299,7 +333,6 @@
             const direccion = info._direccion || "Direcci&oacute;n pendiente de sincronizaci&oacute;n";
             const telefono = info._telefono || "Tel&eacute;fono no disponible";
 
-            // Iconos SVG limpios y profesionales
             const svgPin = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>`;
             const svgPhone = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>`;
 
