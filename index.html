@@ -167,11 +167,11 @@
         #barra-manuales .txt { flex: 1 1 100%; }
 
         /* Organigrama */
-        .sw.org-organo { background: #1e293b; border: 1px solid #64748b; border-radius: 2px; width: 14px; height: 9px; }
-        .sw.org-coordinacion { background: #f7941d; border-radius: 2px; width: 14px; height: 9px; }
-        .sw.org-unidad { background: #3fbfc4; border-radius: 2px; width: 14px; height: 9px; }
-        .sw.org-gerencia { background: #86d6d6; border-radius: 2px; width: 14px; height: 9px; }
-        .sw.org-subgerencia { background: #b39ddb; border-radius: 2px; width: 14px; height: 9px; }
+        .sw.org-organo { background: #60a5fa; border-radius: 50%; width: 10px; height: 10px; }
+        .sw.org-coordinacion { background: #f7941d; border-radius: 50%; width: 10px; height: 10px; }
+        .sw.org-unidad { background: #2dd4bf; border-radius: 50%; width: 10px; height: 10px; }
+        .sw.org-gerencia { background: #5eead4; border-radius: 50%; width: 10px; height: 10px; }
+        .sw.org-subgerencia { background: #a78bfa; border-radius: 50%; width: 10px; height: 10px; }
         .tipo-chip.org { background: rgba(134,214,214,.15); color: #86d6d6; }
         .tipo-chip.org.subgerencia { background: rgba(179,157,219,.15); color: #c4b5fd; }
         .tipo-chip.org.organo { background: rgba(148,163,184,.15); color: #cbd5e1; }
@@ -181,7 +181,9 @@
         .ruta-org a { color: #86d6d6; cursor: pointer; }
         .ruta-org a:hover { text-decoration: underline; }
         #leyenda .sep { border-top: 1px solid var(--border-color); margin: 7px 0 5px; }
-        #leyenda .fila-org { display: flex; gap: 5px; align-items: center; margin: 3px 0 0 22px; flex-wrap: wrap; max-width: 190px; }
+        #leyenda .hint-org { font-size: .72rem; color: #64748b; max-width: 190px; line-height: 1.4; }
+        #leyenda .hint-org b { color: #93c5fd; font-weight: 600; }
+        #leyenda .fila-org { display: flex; gap: 6px; align-items: center; margin: 6px 0 0 0; flex-wrap: wrap; max-width: 190px; }
 
         /* Controles de vista */
         #controles {
@@ -323,20 +325,21 @@
         <label><span class="sw agencia" style="background:#78542a;outline:1px solid var(--c-agencia)"></span>Agencia sin titular vigente</label>
         <label title="Agencias del listado oficial de PAMI que todavía no tuvieron novedades en los boletines"><input type="checkbox" id="chkListado" checked><span class="sw listado"></span>Resto del listado oficial</label>
         <div class="sep"></div>
-        <label title="Estructura del Nivel Central según el organigrama (Anexo I)"><input type="checkbox" id="chkOrg" checked>Organigrama Nivel Central</label>
+        <div class="hint-org">Tocá <b>PAMI Nivel Central</b> para desplegar el organigrama</div>
         <div class="fila-org" title="Órgano de gobierno · Coordinación ejecutiva · Unidad operativa · Gerencia · Subgerencia">
-            <span class="sw org-organo"></span><span class="sw org-coordinacion"></span><span class="sw org-unidad"></span><span class="sw org-gerencia"></span><span class="sw org-subgerencia"></span>
+            <span class="sw org-organo" title="Órgano de gobierno"></span><span class="sw org-coordinacion" title="Coordinación ejecutiva"></span><span class="sw org-unidad" title="Unidad operativa"></span><span class="sw org-gerencia" title="Gerencia"></span><span class="sw org-subgerencia" title="Subgerencia"></span>
         </div>
     </div>
     <div id="controles" aria-label="Controles de vista">
         <button onclick="zoom(1.35)" title="Acercar" aria-label="Acercar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
         <button onclick="zoom(1/1.35)" title="Alejar" aria-label="Alejar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg></button>
-        <button onclick="verTodo()" title="Ver todo" aria-label="Ver todo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        <button onclick="verTodo()" title="Ver todo el grafo" aria-label="Ver todo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button>
+        <button onclick="pantallaCompleta()" id="btn-full" title="Pantalla completa (F)" aria-label="Pantalla completa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
         <hr>
         <button onclick="alternarTodas()" id="btn-colapsar" title="Contraer / expandir todas las agencias" aria-label="Contraer o expandir agencias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="5" r="1.5"/><circle cx="20" cy="5" r="1.5"/><circle cx="4" cy="19" r="1.5"/><circle cx="20" cy="19" r="1.5"/></svg></button>
         <button onclick="reordenar()" title="Restablecer la ubicación de los nodos" aria-label="Restablecer ubicación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button>
     </div>
-    <div id="ayuda-grafo">Arrastrá cualquier nodo para reubicarlo (una UGL arrastra sus agencias) · doble clic en una UGL contrae o expande sus agencias · Esc quita el resaltado</div>
+    <div id="ayuda-grafo">Tocá un nodo para desplegar lo que tiene adentro · doble clic para plegarlo · arrastrá para reubicar · F pantalla completa · Esc quita el resaltado</div>
     <div id="buscador-rapido">
         <div class="caja">
             <svg class="lupa" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
@@ -743,6 +746,13 @@ function construirOrg(m) {
         for (const a of nc[u.id]?.autoridades || []) o.autoridades.set(clave(a.cargo), autoridadDesdeBoletin(a));
         m.org.set(o.id, o);
     }
+    // La Dirección Ejecutiva ES el nodo "PAMI Nivel Central"; la Sindicatura (órgano de control) cuelga de él solo a fines visuales
+    const de = m.org.get('ORG-DE');
+    if (de) { m.org.delete('ORG-DE'); de.id = 'CENTRAL'; m.org.set('CENTRAL', de); }
+    for (const o of m.org.values()) {
+        if (o.padreId === 'ORG-DE') o.padreId = 'CENTRAL';
+        if (!o.padreId && o.orgId !== 'DE') { o.padreId = 'CENTRAL'; o.independiente = true; }
+    }
     for (const o of m.org.values()) if (o.padreId && m.org.has(o.padreId)) { o.padre = m.org.get(o.padreId); o.padre.hijos.push(o); }
     m.orgOtros = DATOS_RAW?.nivel_central_otros || { autoridades: [], historial: [] };
 }
@@ -828,11 +838,11 @@ function nodoUGL(u) {
     const tit = titularDe(u);
     const nAg = u.hijos.size, colapsada = COLAPSADAS.has(u.id);
     return {
-        id: u.id, label: `UGL ${u.num}\n${u.nombre}${colapsada ? `  (+${nAg})` : ''}`, shape: 'dot', size: 16,
-        title: `UGL ${u.num} – ${u.nombre}\n${tit ? 'Titular: ' + tit : 'Titular: sin dato'}\n${nAg} agencia(s) · ${u.autoridades.size} autoridad(es)`,
-        color: { background: col, border: colapsada ? '#fbbf24' : col, highlight: { background: '#34d399', border: '#6ee7b7' }, hover: { background: '#34d399', border: '#6ee7b7' } },
-        borderWidth: colapsada ? 3 : 1.5,
-        font: { color: conDatos ? '#e2e8f0' : '#94a3b8', size: 24, strokeWidth: 5, strokeColor: '#090d16' }
+        id: u.id, label: `UGL ${u.num}${colapsada && nAg ? `  +${nAg}` : ''}\n${u.nombre}`, shape: 'dot', size: 13,
+        title: `UGL ${u.num} – ${u.nombre}\n${tit ? 'Titular: ' + tit : 'Titular: sin dato'}\n${nAg} agencia(s) · ${colapsada ? 'tocá para desplegar' : 'doble clic para plegar'}`,
+        color: { background: col, border: colapsada ? col : '#a7f3d0', highlight: { background: '#34d399', border: '#6ee7b7' }, hover: { background: '#34d399', border: '#6ee7b7' } },
+        borderWidth: colapsada ? 1.5 : 3,
+        font: { color: conDatos ? '#e2e8f0' : '#94a3b8', size: 15, strokeWidth: 4, strokeColor: '#090d16' }
     };
 }
 function nodoAgencia(h) {
@@ -854,72 +864,95 @@ function nodoAgencia(h) {
 }
 
 const ESTILO_ORG = {
-    organo:       { bg: '#1e293b', borde: '#64748b', letra: '#f8fafc', tam: 15, ancho: 200 },
-    coordinacion: { bg: '#f7941d', borde: '#fbbf24', letra: '#111827', tam: 14, ancho: 190 },
-    unidad:       { bg: '#3fbfc4', borde: '#67e8f9', letra: '#0b1220', tam: 12, ancho: 160 },
-    gerencia:     { bg: '#86d6d6', borde: '#a5f3fc', letra: '#0b1220', tam: 11, ancho: 150 },
-    subgerencia:  { bg: '#b39ddb', borde: '#c4b5fd', letra: '#1e1b4b', tam: 10, ancho: 150 }
+    organo:       { color: '#60a5fa', tam: 13, letra: '#e2e8f0', fuente: 14 },
+    coordinacion: { color: '#f7941d', tam: 12, letra: '#fde7c7', fuente: 14 },
+    unidad:       { color: '#2dd4bf', tam: 11, letra: '#ccfbf1', fuente: 13 },
+    gerencia:     { color: '#5eead4', tam: 8,  letra: '#cbd5e1', fuente: 12 },
+    subgerencia:  { color: '#a78bfa', tam: 6,  letra: '#94a3b8', fuente: 11 }
 };
+const EXPANDIDOS = new Set();   // nodos del organigrama con sus dependencias desplegadas
+const titulo = t => t.replace(/\b(De|Del|La|Las|Los|Y|E|En|Con|A)\b/g, w => w.toLowerCase());
+function nodoCentral() {
+    const abierto = EXPANDIDOS.has('CENTRAL');
+    const de = modelo.org?.get('CENTRAL');
+    const n = de ? de.hijos.length : 0;
+    return {
+        id: 'CENTRAL', label: `PAMI\nNivel Central${n && !abierto ? '\n+ organigrama' : ''}`, shape: 'dot', size: 30,
+        title: n ? (abierto ? 'Dirección Ejecutiva · doble clic para plegar el organigrama' : 'Dirección Ejecutiva · tocá para desplegar el organigrama') : 'PAMI – Nivel Central',
+        color: { background: COLORES.central, border: abierto ? '#bfdbfe' : '#60a5fa', highlight: { background: '#60a5fa', border: '#dbeafe' }, hover: { background: '#60a5fa', border: '#dbeafe' } },
+        borderWidth: abierto ? 3 : 2,
+        font: { color: '#f8fafc', size: 26, bold: true, strokeWidth: 4, strokeColor: '#090d16', multi: false }
+    };
+}
 function nodoOrg(o) {
     const e = ESTILO_ORG[o.nivel] || ESTILO_ORG.gerencia;
     const tit = titularDe(o);
-    const n = o.autoridades.size;
+    const cerrado = o.hijos.length && !EXPANDIDOS.has(o.id);
     return {
-        id: o.id, tipo: 'org', label: o.nombre.toUpperCase(), shape: 'box', margin: 8,
-        widthConstraint: { minimum: e.ancho, maximum: e.ancho },
-        title: `${o.nombre}\n${NIVELES_ORG[o.nivel]}${o.padre ? ' · depende de ' + o.padre.nombre : ''}\n${tit ? 'Titular: ' + tit : 'Titular: sin dato en boletines'}${n > (tit ? 1 : 0) ? `\n${n - (tit ? 1 : 0)} área(s) interna(s) con designaciones` : ''}`,
-        color: { background: e.bg, border: tit ? '#f8fafc' : e.borde, highlight: { background: e.bg, border: '#ffffff' }, hover: { background: e.bg, border: '#ffffff' } },
-        borderWidth: tit ? 2 : 1, shapeProperties: { borderRadius: 3 },
-        font: { color: e.letra, size: e.tam, face: 'Segoe UI, Roboto, sans-serif', bold: o.nivel !== 'subgerencia' }
+        id: o.id, tipo: 'org', label: titulo(o.nombre) + (cerrado ? `  (+${o.hijos.length})` : ''), shape: 'dot', size: e.tam,
+        title: `${o.nombre}\n${NIVELES_ORG[o.nivel]}\n${tit ? 'Titular: ' + tit : 'Titular: sin dato en boletines'}${o.hijos.length ? `\n${o.hijos.length} unidad(es) a cargo · ${cerrado ? 'tocá para desplegar' : 'doble clic para plegar'}` : ''}`,
+        color: { background: e.color, border: tit ? '#f8fafc' : e.color, highlight: { background: e.color, border: '#ffffff' }, hover: { background: e.color, border: '#ffffff' } },
+        borderWidth: tit ? 2 : 1,
+        font: { color: e.letra, size: e.fuente, strokeWidth: 3, strokeColor: '#090d16' }
     };
 }
 
-// Organigrama como árbol de arriba hacia abajo en el centro del círculo de UGLs.
+// Organigrama radial dentro del anillo de UGLs: cada unidad recibe una porción del círculo
+// proporcional a la cantidad de dependencias que tiene (así las ramas no se cruzan).
+const RADIOS_ORG = [0, 190, 330, 460, 575];   // todo el organigrama entra dentro del anillo de UGLs
 function layoutOrg() {
     const pos = {};
-    if (!modelo.org?.size) return pos;
-    const g = id => modelo.org.get('ORG-' + id);
-    const CW = 172, GAP = 70, Y = { de: -800, se: -640, cab: -500, ger: -350, paso: 64 };
-    const cabezas = [];
-    const de = g('DE');
-    const especiales = new Set(['ULT', 'JGA', 'UTM', 'SE', 'CE']);
-    if (de) cabezas.push({ head: null, hijos: de.hijos.filter(h => !especiales.has(h.orgId)) });
-    for (const id of ['JGA', 'UTM', 'UGTO', 'CE']) if (g(id)) cabezas.push({ head: g(id), hijos: g(id).hijos });
-    const cols = [];
-    cabezas.forEach((c, ci) => {
-        c.cols = [];
-        const hojas = c.hijos.filter(h => !h.hijos.length), ramas = c.hijos.filter(h => h.hijos.length);
-        if (hojas.length) c.cols.push({ header: null, items: hojas, grupo: ci });
-        for (const r of ramas) c.cols.push({ header: r, items: r.hijos, grupo: ci });
-        cols.push(...c.cols);
-    });
-    let x = 0; const xs = [];
-    cols.forEach((c, i) => { if (i && c.grupo !== cols[i - 1].grupo) x += GAP; xs.push(x); x += CW; });
-    const ancho = x - CW, off = -ancho / 2;
-    cols.forEach((c, i) => {
-        const cx = xs[i] + off;
-        let y = Y.ger;
-        if (c.header) { pos[c.header.id] = { x: cx, y }; y += Y.paso + 18; }
-        c.items.forEach(it => { pos[it.id] = { x: cx, y }; y += Y.paso; });
-    });
-    cabezas.forEach(c => {
-        if (!c.head) return;
-        const idx = c.cols.map(cc => cols.indexOf(cc));
-        const cx = (xs[idx[0]] + xs[idx[idx.length - 1]]) / 2 + off;
-        pos[c.head.id] = { x: cx, y: c.head.orgId === 'CE' ? Y.se : Y.cab };
-    });
-    if (g('SE') && pos['ORG-UGTO']) pos['ORG-SE'] = { x: pos['ORG-UGTO'].x, y: Y.se };
-    if (de) pos[de.id] = { x: 0, y: Y.de };
-    if (g('ULT')) pos['ORG-ULT'] = { x: -330, y: Y.de + 20 };
-    if (g('SG')) {
-        pos['ORG-SG'] = { x: ancho / 2 - 60, y: Y.de };
-        g('SG').hijos.forEach((h, i) => { pos[h.id] = { x: ancho / 2 - 150 + i * 180, y: Y.de + 80 }; });
-    }
+    const raiz = modelo.org?.get('CENTRAL');
+    if (!raiz) return pos;
+    // peso = hojas + 1.5: las unidades chicas también reciben espacio para su etiqueta
+    const hojas = o => (o.hijos.length ? o.hijos.reduce((t, h) => t + hojas(h), 0) : 1) + (o.padre && o.padre.id === 'CENTRAL' ? 3 : 0);
+    const ubicar = (o, a0, a1, prof) => {
+        const total = o.hijos.reduce((t, h) => t + hojas(h), 0);
+        let a = a0;
+        for (const h of o.hijos) {
+            const cuña = (a1 - a0) * hojas(h) / total;
+            const ang = a + cuña / 2;
+            const r = RADIOS_ORG[Math.min(prof, RADIOS_ORG.length - 1)];
+            pos[h.id] = { x: Math.cos(ang) * r, y: Math.sin(ang) * r };
+            ubicar(h, a + cuña * 0.04, a + cuña * 0.96, prof + 1);
+            a += cuña;
+        }
+    };
+    ubicar(raiz, -Math.PI / 2, 1.5 * Math.PI, 1);
     return pos;
 }
 
+function visibleOrg(o) {
+    for (let p = o.padre; p; p = p.padre) if (!EXPANDIDOS.has(p.id)) return false;
+    return true;
+}
+function orgVisible() { return EXPANDIDOS.has('CENTRAL'); }
+
+// Despliega las dependencias de una unidad con una pequeña animación desde el nodo padre
+function expandir(id, animar = true) {
+    const o = modelo.org?.get(id);
+    if (!o || !o.hijos.length || EXPANDIDOS.has(id)) return;
+    EXPANDIDOS.add(id);
+    const origen = red.getPositions([id])[id];
+    const lay = layoutOrg();
+    const destinos = o.hijos.map(h => ({ id: h.id, fin: posicionDe(h.id, lay) }));
+    nodosDS.update([id === 'CENTRAL' ? nodoCentral() : nodoOrg(o), ...o.hijos.map(h => ({ ...nodoOrg(h), hidden: false }))]);
+    if (!animar) { destinos.forEach(d => red.moveNode(d.id, d.fin.x, d.fin.y)); return; }
+    animarDesde(origen, destinos);
+}
+function contraer(id) {
+    const o = modelo.org?.get(id);
+    if (!o || !EXPANDIDOS.has(id)) return;
+    const ocultar = x => x.hijos.forEach(h => { EXPANDIDOS.delete(h.id); ocultar(h); });
+    EXPANDIDOS.delete(id);
+    ocultar(o);
+    const ids = []; const junta = x => x.hijos.forEach(h => { ids.push(h.id); junta(h); }); junta(o);
+    nodosDS.update([id === 'CENTRAL' ? nodoCentral() : nodoOrg(o), ...ids.map(i => ({ ...nodoOrg(modelo.org.get(i)), hidden: true }))]);
+    if (resaltado && !indice.get(resaltado)?.tipo) resaltar(null);
+}
+
 /* ---------- Ubicación de nodos: radial + posiciones guardadas ---------- */
-const CLAVE_POS = 'graffo_posiciones_v1';
+const CLAVE_POS = 'graffo_posiciones_v3';
 const COLAPSADAS = new Set();
 let POS_GUARDADAS = {};
 try { POS_GUARDADAS = JSON.parse(localStorage.getItem(CLAVE_POS)) || {}; } catch (e) { POS_GUARDADAS = {}; }
@@ -929,24 +962,22 @@ function guardarPosiciones() {
 
 // Árbol radial: cada UGL recibe una "porción" del círculo proporcional a su cantidad de agencias,
 // y sus agencias se ubican en anillos dentro de esa porción (así no se mezclan con las de otra UGL).
+const R_UGL = 700;
 function layoutRadial() {
     const pos = { CENTRAL: { x: 0, y: 0 } };
-    const R = modelo.org?.size ? 2250 : 1100, SEP = 52, PRIMER = 230, PASO = 64;
-    const pesos = modelo.ugls.map(u => 4 + u.hijos.size);
-    const total = pesos.reduce((a, b) => a + b, 0);
-    let acum = -Math.PI / 2;
+    const R = R_UGL, SEP = 46, PRIMER = 170, PASO = 56, SPAN_MAX = 1.15;
+    const n = modelo.ugls.length;
     modelo.ugls.forEach((u, i) => {
-        const cuña = (2 * Math.PI * pesos[i]) / total;
-        const ang = acum + cuña / 2;
-        acum += cuña;
+        const ang = -Math.PI / 2 + (2 * Math.PI * i) / n;
         pos[u.id] = { x: Math.cos(ang) * R, y: Math.sin(ang) * R };
+        // Las agencias se abren en abanico hacia afuera de su UGL, en anillos
         const hijos = [...u.hijos.values()].sort((a, b) => (!!a.soloListado - !!b.soloListado) || a.nombre.localeCompare(b.nombre));
         let k = 0, anillo = 0;
         while (k < hijos.length) {
             const radio = R + PRIMER + anillo * PASO;
-            const cap = Math.max(1, Math.floor((cuña * 0.92 * radio) / SEP));
+            const cap = Math.max(1, Math.floor((SPAN_MAX * radio) / SEP) + 1);
             const grupo = hijos.slice(k, k + cap);
-            const span = Math.min(cuña * 0.92, ((grupo.length - 1) * SEP) / radio);
+            const span = ((grupo.length - 1) * SEP) / radio;
             grupo.forEach((h, j) => {
                 const a = ang + (grupo.length === 1 ? 0 : -span / 2 + (span * j) / (grupo.length - 1));
                 pos[h.id] = { x: Math.cos(a) * radio, y: Math.sin(a) * radio };
@@ -974,23 +1005,20 @@ function reindexar() {
     indice.clear();
     indice.set('CENTRAL', { tipo: 'central' });
     for (const u of modelo.ugls) { indice.set(u.id, u); for (const h of u.hijos.values()) indice.set(h.id, h); }
-    for (const o of modelo.org?.values() || []) indice.set(o.id, o);
+    for (const o of modelo.org?.values() || []) indice.set(o.id, o);   // incluye 'CENTRAL' = Dirección Ejecutiva
 }
 
 function dibujar() {
+    modelo.ugls.forEach(u => COLAPSADAS.add(u.id));      // todo empieza plegado
     const lay = layoutRadial();
     const nodos = [], aristas = [];
-    nodos.push({
-        id: 'CENTRAL', label: 'PAMI\nNivel Central', shape: 'dot', size: 30, ...posicionDe('CENTRAL', lay),
-        title: 'PAMI – Nivel Central',
-        color: { background: COLORES.central, border: '#60a5fa', highlight: { background: '#60a5fa', border: '#93c5fd' } },
-        font: { color: '#f8fafc', size: 26, bold: true, strokeWidth: 4, strokeColor: '#090d16' }
-    });
+    nodos.push({ ...nodoCentral(), ...posicionDe('CENTRAL', lay) });
     const layOrg = layoutOrg();
     for (const o of modelo.org?.values() || []) {
-        nodos.push({ ...nodoOrg(o), ...posicionDe(o.id, layOrg) });
-        if (o.padre) aristas.push({ id: 'e-' + o.id, from: o.padre.id, to: o.id, org: true, dashes: o.staff, width: 1.2,
-            smooth: { enabled: true, type: 'cubicBezier', forceDirection: 'vertical', roundness: 0.45 }, color: { color: '#475569' } });
+        if (o.id === 'CENTRAL') continue;
+        nodos.push({ ...nodoOrg(o), ...posicionDe(o.id, layOrg), hidden: !visibleOrg(o) });
+        if (o.padre) aristas.push({ id: 'e-' + o.id, from: o.padre.id, to: o.id, org: true, dashes: o.staff || o.independiente,
+            width: 1.2, color: { color: '#3b4a63' } });
     }
     for (const u of modelo.ugls) {
         nodos.push({ ...nodoUGL(u), ...posicionDe(u.id, lay) });
@@ -1013,17 +1041,6 @@ function dibujar() {
         interaction: { hover: true, tooltipDelay: 250, dragNodes: true, hideEdgesOnDrag: false, zoomSpeed: 0.8 }
     });
     red.once('afterDrawing', () => { intro.listo(); red.fit({ animation: false }); });
-    red.on('beforeDrawing', ctx => {
-        if (!orgVisible()) return;
-        const R = 2250;
-        ctx.save();
-        ctx.setLineDash([14, 12]); ctx.lineWidth = 2; ctx.strokeStyle = 'rgba(16,185,129,.28)';
-        ctx.beginPath(); ctx.arc(0, 0, R, 0, 2 * Math.PI); ctx.stroke();
-        ctx.setLineDash([]);
-        ctx.font = '600 34px Segoe UI, Roboto, sans-serif'; ctx.fillStyle = 'rgba(16,185,129,.55)'; ctx.textAlign = 'center';
-        ctx.fillText('RED TERRITORIAL · 38 UGL · dependen de la Unidad de Gestión Técnico Operativa', 0, -R - 40);
-        ctx.restore();
-    });
     aplicarFiltros();
     conectarInteracciones();
 }
@@ -1032,12 +1049,29 @@ function dibujar() {
 let arrastre = null;   // { id, inicio, hijos: {id: {x,y}} }
 function conectarInteracciones() {
     red.on('click', p => {
-        if (p.nodes.length) { seleccionar(p.nodes[0], false); resaltar(p.nodes[0]); }
+        const id = p.nodes[0];
+        if (id) {
+            const o = modelo.org?.get(id);
+            if (o && o.hijos.length && !EXPANDIDOS.has(id)) {
+                expandir(id);
+                aplicarFiltros();
+                acercarA([id, ...o.hijos.map(h => h.id)], 1.2);
+            }
+            const u = indice.get(id);
+            if (u?.tipo === 'ugl' && COLAPSADAS.has(id) && u.hijos.size && document.getElementById('chkAgencias').checked) {
+                alternarColapso(id, true);
+                acercarA([id, ...[...u.hijos.values()].filter(h => !nodosDS.get(h.id)?.hidden).map(h => h.id)], 1.3);
+            }
+            seleccionar(id, false); resaltar(id);
+        }
         else if (!p.edges.length) resaltar(null);
     });
     red.on('doubleClick', p => {
         const id = p.nodes[0];
-        if (id && indice.get(id)?.tipo === 'ugl') alternarColapso(id);
+        if (id && indice.get(id)?.tipo === 'ugl') {
+            if (!COLAPSADAS.has(id)) { alternarColapso(id); red.focus(id, { scale: Math.min(red.getScale(), 0.9), animation: { duration: 450 } }); }
+        }
+        else if (id && modelo.org?.has(id)) { contraer(id); aplicarFiltros(); red.focus(id, { scale: Math.min(red.getScale(), 1), animation: { duration: 450 } }); }
         else if (!id) verTodo();
     });
     // Arrastrar una UGL mueve también sus agencias
@@ -1071,7 +1105,7 @@ function resaltar(id) {
     if (id) {
         const o = indice.get(id);
         vivos.add(id); vivos.add('CENTRAL');
-        if (o?.tipo === 'ugl') { o.hijos.forEach(h => vivos.add(h.id)); if (orgVisible()) ['ORG-UGTO', 'ORG-SE', 'ORG-DE'].forEach(x => vivos.add(x)); }
+        if (o?.tipo === 'ugl') { o.hijos.forEach(h => vivos.add(h.id)); if (orgVisible()) ['ORG-UGTO', 'ORG-SE'].forEach(x => vivos.add(x)); }
         else if (o?.tipo === 'agencia') { vivos.add(o.ugl.id); o.ugl.hijos.forEach(h => vivos.add(h.id)); }
         else if (o?.tipo === 'org') {
             for (let p = o.padre; p; p = p.padre) vivos.add(p.id);
@@ -1088,10 +1122,38 @@ function resaltar(id) {
     aristasDS.update(aristasDS.get().map(e => ({ id: e.id, color: { ...e.color, opacity: !id || (vivos.has(e.from) && vivos.has(e.to)) ? 1 : 0.08 } })));
 }
 
-function alternarColapso(uid) {
-    COLAPSADAS.has(uid) ? COLAPSADAS.delete(uid) : COLAPSADAS.add(uid);
-    nodosDS.update(nodoUGL(indice.get(uid)));
-    aplicarFiltros();
+function alternarColapso(uid, animar = false) {
+    const u = indice.get(uid);
+    if (COLAPSADAS.has(uid)) {
+        COLAPSADAS.delete(uid);
+        nodosDS.update(nodoUGL(u));
+        aplicarFiltros();
+        if (animar) {
+            const origen = red.getPositions([uid])[uid];
+            const lay = layoutRadial();
+            const destinos = [...u.hijos.values()].map(h => ({ id: h.id, fin: posicionDe(h.id, lay) }));
+            animarDesde(origen, destinos);
+        }
+    } else {
+        COLAPSADAS.add(uid);
+        nodosDS.update(nodoUGL(u));
+        aplicarFiltros();
+    }
+}
+// Mueve nodos desde un punto de origen hasta su destino (efecto "se despliega")
+function animarDesde(origen, destinos, dur = 380) {
+    destinos.forEach(d => red.moveNode(d.id, origen.x, origen.y));
+    const t0 = performance.now();
+    const paso = t => {
+        const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+        destinos.forEach(d => red.moveNode(d.id, origen.x + (d.fin.x - origen.x) * e, origen.y + (d.fin.y - origen.y) * e));
+        if (k < 1) requestAnimationFrame(paso);
+    };
+    requestAnimationFrame(paso);
+}
+// Acerca la vista a un nodo y lo que acaba de desplegar
+function acercarA(ids, maxZoom = 1.3) {
+    setTimeout(() => red.fit({ nodes: ids, maxZoomLevel: maxZoom, animation: { duration: 650, easingFunction: 'easeInOutCubic' } }), 330);
 }
 function alternarTodas() {
     const todas = COLAPSADAS.size < modelo.ugls.length;
@@ -1101,6 +1163,26 @@ function alternarTodas() {
     aplicarFiltros();
     verTodo();
 }
+const ICONO_FULL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>';
+const ICONO_SALIR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>';
+function pantallaCompleta() {
+    const el = document.documentElement;
+    const activo = document.fullscreenElement || document.webkitFullscreenElement;
+    try {
+        if (activo) (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+        else (el.requestFullscreen || el.webkitRequestFullscreen).call(el);
+    } catch (e) { console.warn('Pantalla completa no disponible', e); }
+}
+['fullscreenchange', 'webkitfullscreenchange'].forEach(ev => document.addEventListener(ev, () => {
+    const activo = !!(document.fullscreenElement || document.webkitFullscreenElement);
+    const b = document.getElementById('btn-full');
+    b.innerHTML = activo ? ICONO_SALIR : ICONO_FULL;
+    b.title = activo ? 'Salir de pantalla completa (F)' : 'Pantalla completa (F)';
+    setTimeout(() => { if (red) { red.redraw(); red.fit({ animation: { duration: 400 } }); } }, 150);
+}));
+document.addEventListener('keydown', e => {
+    if ((e.key === 'f' || e.key === 'F') && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && !e.ctrlKey && !e.metaKey) pantallaCompleta();
+});
 function zoom(f) { red.moveTo({ scale: red.getScale() * f, animation: { duration: 250, easingFunction: 'easeOutQuad' } }); }
 function verTodo() { red.fit({ animation: { duration: 500, easingFunction: 'easeInOutQuad' } }); }
 function reordenar() {
@@ -1133,7 +1215,7 @@ function refrescarGrafo() {
             }
         }
     }
-    for (const o of modelo.org?.values() || []) { vivos.add(o.id); nodosDS.update(nodoOrg(o)); }
+    for (const o of modelo.org?.values() || []) { vivos.add(o.id); nodosDS.update(o.id === 'CENTRAL' ? nodoCentral() : nodoOrg(o)); }
     for (const n of nodosDS.getIds()) if (!vivos.has(n)) { nodosDS.remove(n); aristasDS.remove('e-' + n); }
     reindexar();
     renderBadges();
@@ -1148,15 +1230,20 @@ function seleccionar(id, enfocar = true) {
     if (enfocar && red) {
         const o0 = indice.get(id);
         if (o0?.tipo === 'agencia' && COLAPSADAS.has(o0.ugl.id)) alternarColapso(o0.ugl.id);
-        if (o0?.tipo === 'org' && !orgVisible()) { document.getElementById('chkOrg').checked = true; aplicarFiltros(); }
+        if (o0?.tipo === 'org') {
+            const cadena = []; for (let p = o0.padre; p; p = p.padre) cadena.unshift(p.id);
+            cadena.forEach(c => expandir(c, false));
+            aplicarFiltros();
+        }
         resaltar(id);
         red.selectNodes([id]);
         if (obj.tipo === 'org') {
-            const desc = x => x.hijos.flatMap(h => [h.id, ...desc(h)]);
-            const ids = [id, ...desc(obj)];
-            if (ids.length > 1) red.fit({ nodes: ids, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+            const ids = [id, ...(EXPANDIDOS.has(id) ? obj.hijos.map(h => h.id) : [])];
+            if (ids.length > 1) red.fit({ nodes: ids, maxZoomLevel: 1.2, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
             else red.focus(id, { scale: 1.1, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
         }
+        else if (obj.tipo === 'ugl' && obj.hijos.size && COLAPSADAS.has(id) && document.getElementById('chkAgencias').checked && (alternarColapso(id, true), true))
+            acercarA([id, ...[...obj.hijos.values()].filter(h => !nodosDS.get(h.id)?.hidden).map(h => h.id)], 1.3);
         else if (obj.tipo === 'ugl' && obj.hijos.size && !COLAPSADAS.has(id))
             red.fit({ nodes: [id, ...[...obj.hijos.values()].filter(h => !nodosDS.get(h.id)?.hidden).map(h => h.id)], animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
         else red.focus(id, { scale: obj.tipo === 'ugl' ? 0.9 : 1.5, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
@@ -1249,12 +1336,12 @@ function mostrarUGL(u) {
 
 function mostrarOrg(o) {
     const ruta = [];
-    for (let p = o.padre; p; p = p.padre) ruta.unshift(`<a onclick="seleccionar('${p.id}')">${esc(p.nombre)}</a>`);
+    if (!o.independiente) for (let p = o.padre; p; p = p.padre) ruta.unshift(`<a onclick="seleccionar('${p.id}')">${esc(p.nombre)}</a>`);
     const tit = new Map([...o.autoridades].filter(([, a]) => a.cargo === 'Titular' || a.fuente === 'manual' && /^titular$/i.test(a.cargo)));
     const areas = new Map([...o.autoridades].filter(([k]) => !tit.has(k)));
     const hijos = o.hijos.map(h => {
         const t = titularDe(h);
-        return `<div class="item-hijo" onclick="seleccionar('${h.id}')"><span class="sw org-${h.nivel}"></span>${esc(h.nombre)}
+        return `<div class="item-hijo" onclick="seleccionar('${h.id}', true)"><span class="sw org-${h.nivel}"></span>${esc(h.nombre)}
                 <span class="n">${t ? esc(t) : 'sin dato'}</span></div>`;
     }).join('');
     const red = o.redUgl ? modelo.ugls.map(u => {
@@ -1268,7 +1355,8 @@ function mostrarOrg(o) {
                 <div class="cargo-nombre">${esc(a.persona)}</div><div class="cargo-meta">Desde el ${fechaCorta(a.desde)} &middot; ${esc((a.norma || '').replace(/-INSSJP.*$/, ''))}</div></div>`).join('')}
         </details>` : '';
     document.getElementById('contenido-detalles').innerHTML = `
-        ${cabeceraFicha(o, NIVELES_ORG[o.nivel], 'org ' + o.nivel, o.nombre, `Nivel Central${o.siglas.length ? ' &middot; sigla ' + esc(o.siglas[0]) : ''}${o.staff ? ' &middot; unidad de staff' : ''}`)}
+        ${cabeceraFicha(o, o.id === 'CENTRAL' ? 'PAMI Nivel Central' : NIVELES_ORG[o.nivel], 'org ' + o.nivel, o.nombre, `Nivel Central${o.siglas.length ? ' &middot; sigla ' + esc(o.siglas[0]) : ''}${o.staff ? ' &middot; unidad de staff' : ''}${o.independiente ? ' &middot; órgano de control, independiente de la Dirección Ejecutiva' : ''}`)}
+        ${o.hijos.length ? `<p class="cargo-meta" style="margin:-8px 0 14px">${EXPANDIDOS.has(o.id) ? 'Doble clic en el nodo para plegar sus dependencias.' : 'Tocá el nodo para desplegar sus dependencias.'}</p>` : ''}
         ${ruta.length ? `<div class="ruta-org">${ruta.join(' &rsaquo; ')}</div>` : ''}
         ${o.direccion || o.telefono ? htmlContacto(o) : ''}
         <div class="seccion-titulo">Titular</div>
@@ -1495,14 +1583,13 @@ document.getElementById('buscador').addEventListener('input', e => {
 });
 
 /* ---------- Filtros de la leyenda ---------- */
-function orgVisible() { return !!modelo?.org?.size && document.getElementById('chkOrg').checked; }
 function aplicarFiltros() {
     if (!nodosDS) return;
-    const org = orgVisible();
-    const cambiosOrg = [{ id: 'CENTRAL', hidden: org }];
-    for (const o of modelo.org?.values() || []) cambiosOrg.push({ id: o.id, hidden: !org });
+    const cambiosOrg = [];
+    for (const o of modelo.org?.values() || []) if (o.id !== 'CENTRAL') cambiosOrg.push({ id: o.id, hidden: !visibleOrg(o) });
     nodosDS.update(cambiosOrg);
-    aristasDS.update(modelo.ugls.map(u => ({ id: 'e-' + u.id, hidden: org })));
+    // con el organigrama abierto, las líneas a las UGL se atenúan para no competir con él
+    aristasDS.update(modelo.ugls.map(u => ({ id: 'e-' + u.id, color: { color: orgVisible() ? '#131c2e' : '#1e3a5f' } })));
     const verAg = document.getElementById('chkAgencias').checked;
     const verListado = document.getElementById('chkListado').checked;
     const cambios = [];
@@ -1511,16 +1598,6 @@ function aplicarFiltros() {
     nodosDS.update(cambios);
 }
 document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros);
-document.getElementById('chkOrg').addEventListener('change', e => {
-    try { localStorage.setItem('graffo_ver_org', e.target.checked ? '1' : '0'); } catch (_) {}
-    aplicarFiltros(); red.redraw();
-});
-try { if (localStorage.getItem('graffo_ver_org') === '0') document.getElementById('chkOrg').checked = false; } catch (_) {}
-document.getElementById('chkListado').addEventListener('change', e => {
-    try { localStorage.setItem('graffo_ver_listado', e.target.checked ? '1' : '0'); } catch (_) {}
-    aplicarFiltros();
-});
-try { if (localStorage.getItem('graffo_ver_listado') === '0') document.getElementById('chkListado').checked = false; } catch (_) {}
 
 /* ---------- Divisor arrastrable (ancho del panel) ---------- */
 (function () {
