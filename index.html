@@ -147,9 +147,65 @@
             #buscador-rapido { left: 16px; right: 16px; top: auto; bottom: 12px; width: auto; }
             #panel-lateral { width: 100% !important; flex: 1; min-height: 0; border-left: none; border-top: 1px solid var(--border-color); }
         }
+
+        /* ================= INTRO DAR SALUD ================= */
+        #intro {
+            --ds-azul: #0032a1; --ds-azul-osc: #00247a; --ds-turquesa: #00edcf;
+            position: fixed; inset: 0; z-index: 1000;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            background: radial-gradient(ellipse at 50% 42%, var(--ds-azul) 0%, var(--ds-azul-osc) 100%);
+            transition: opacity .7s ease, visibility .7s;
+            cursor: pointer;
+        }
+        #intro.salida { opacity: 0; visibility: hidden; }
+        #intro .logo-wrap { position: relative; display: flex; justify-content: center; }
+        #intro .halo {
+            --d: calc(min(250px, 58vw) * .37); /* diámetro del círculo del ícono */
+            position: absolute; top: 0; left: 50%; width: var(--d); height: var(--d); margin-left: calc(var(--d) / -2);
+            border-radius: 50%; border: 2px solid var(--ds-turquesa); opacity: 0;
+            animation: intro-halo 1.6s .5s ease-out forwards;
+        }
+        #intro img {
+            width: min(250px, 58vw); height: auto; display: block;
+            opacity: 0; transform: translateY(10px) scale(.94); filter: blur(6px);
+            animation: intro-logo 1s .15s cubic-bezier(.2,.7,.2,1) forwards;
+        }
+        #intro .barra {
+            width: 120px; height: 2px; margin-top: 34px; border-radius: 2px;
+            background: rgba(255,255,255,.14); overflow: hidden;
+            opacity: 0; animation: intro-aparecer .4s .9s ease forwards;
+        }
+        #intro .barra i {
+            display: block; height: 100%; width: 100%; background: var(--ds-turquesa);
+            transform: scaleX(0); transform-origin: left;
+            animation: intro-cargar 1.8s 1s cubic-bezier(.6,0,.3,1) forwards;
+        }
+        #intro .credito {
+            position: absolute; bottom: 32px; left: 16px; right: 16px; text-align: center;
+            font-style: italic; font-size: .82rem; letter-spacing: .3px; color: rgba(255,255,255,.72);
+            opacity: 0; animation: intro-aparecer .8s 1.3s ease forwards;
+        }
+        #intro.salida img { transform: scale(1.04); transition: transform .7s ease; }
+        @keyframes intro-logo { to { opacity: 1; transform: none; filter: none; } }
+        @keyframes intro-halo { 0% { opacity: .55; transform: scale(.9); } 100% { opacity: 0; transform: scale(1.9); } }
+        @keyframes intro-cargar { to { transform: scaleX(1); } }
+        @keyframes intro-aparecer { to { opacity: 1; } }
+        @media (prefers-reduced-motion: reduce) {
+            #intro *, #intro { animation-duration: .01s !important; animation-delay: 0s !important; transition-duration: .2s !important; }
+        }
     </style>
 </head>
 <body>
+
+<!-- Intro animada Dar Salud (clic o Esc para saltear) -->
+<div id="intro" role="presentation" aria-hidden="true">
+    <div class="logo-wrap">
+        <span class="halo"></span>
+        <img src="logo_darsalud.png" alt="DarSalud">
+    </div>
+    <div class="barra"><i></i></div>
+    <div class="credito">Dise&ntilde;o y desarrollo: Leandro Sesto - 2026</div>
+</div>
 
 <div id="zona-grafo">
     <div id="contenedor-grafo"></div>
@@ -379,6 +435,7 @@ async function inicializar() {
         dibujar();
     } catch (e) {
         console.error(e);
+        intro.listo();
         document.getElementById('contenido-detalles').innerHTML = `
             <div class="mensaje-vacio" style="color:#ef4444">
                 <b>No se pudo cargar datos_ugl.json.</b><br><br>
@@ -446,6 +503,7 @@ function dibujar() {
         interaction: { hover: true, tooltipDelay: 150 }
     });
     red.once('stabilizationIterationsDone', () => {
+        intro.listo();
         red.setOptions({ physics: false }); // congela el layout para que no "baile" al hacer foco
         red.fit({ animation: { duration: 500 } });
     });
@@ -671,6 +729,24 @@ document.getElementById('chkCaps').addEventListener('change', aplicarFiltros);
     document.addEventListener('keydown', e => {
         if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); input.focus(); }
     });
+})();
+
+/* ---------- Intro: se cierra cuando pasó la animación Y el grafo está listo ---------- */
+const intro = (function () {
+    const el = document.getElementById('intro');
+    const DURACION_MIN = 3000, DURACION_MAX = 7000;
+    let animacionLista = false, grafoListo = false, cerrado = false;
+    const cerrar = () => {
+        if (cerrado) return; cerrado = true;
+        el.classList.add('salida');
+        setTimeout(() => el.remove(), 800);
+    };
+    const probar = () => { if (animacionLista && grafoListo) cerrar(); };
+    setTimeout(() => { animacionLista = true; probar(); }, DURACION_MIN);
+    setTimeout(cerrar, DURACION_MAX);                       // por si falla la carga
+    el.addEventListener('click', cerrar);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrar(); });
+    return { listo: () => { grafoListo = true; probar(); } };
 })();
 
 window.onload = inicializar;
