@@ -1,0 +1,5 @@
+selenium
+groq
+pymupdf
+requests
+openpyxl
