@@ -17,7 +17,6 @@
             --c-central: #3b82f6;
             --c-ugl: #10b981;
             --c-agencia: #f59e0b;
-            --c-cap: #a78bfa;
             --c-vacio: #475569;
             --c-alerta: #f87171;
         }
@@ -42,7 +41,6 @@
         .sw.central { background: var(--c-central); border-radius: 50%; }
         .sw.ugl { background: var(--c-ugl); border-radius: 50%; }
         .sw.agencia { background: var(--c-agencia); transform: rotate(45deg) scale(.85); }
-        .sw.cap { width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 11px solid var(--c-cap); }
         .sw.vacio { background: var(--c-vacio); border-radius: 50%; }
 
         #panel-lateral {
@@ -60,7 +58,6 @@
         .badge { font-size: .72rem; padding: 3px 9px; border-radius: 10px; font-weight: 600; border: 1px solid; }
         .badge.ugl { color: var(--c-ugl); border-color: rgba(16,185,129,.35); background: rgba(16,185,129,.1); }
         .badge.agencia { color: var(--c-agencia); border-color: rgba(245,158,11,.35); background: rgba(245,158,11,.1); }
-        .badge.cap { color: var(--c-cap); border-color: rgba(167,139,250,.35); background: rgba(167,139,250,.1); }
         .badge.alerta { color: var(--c-alerta); border-color: rgba(248,113,113,.35); background: rgba(248,113,113,.1); cursor: pointer; }
 
         #contenido-detalles { padding: 20px; overflow-y: auto; flex: 1; }
@@ -71,7 +68,6 @@
         .tipo-chip { display: inline-block; font-size: .66rem; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; }
         .tipo-chip.ugl { background: rgba(16,185,129,.15); color: var(--c-ugl); }
         .tipo-chip.agencia { background: rgba(245,158,11,.15); color: var(--c-agencia); }
-        .tipo-chip.cap { background: rgba(167,139,250,.15); color: var(--c-cap); }
         .titulo-nodo { font-size: 1.2rem; font-weight: 600; margin: 0 0 4px; }
         .subtitulo-nodo { font-size: .82rem; color: var(--text-muted); margin: 0 0 18px; }
         .subtitulo-nodo a { color: var(--c-ugl); cursor: pointer; text-decoration: none; }
@@ -80,12 +76,14 @@
         .seccion-titulo { font-size: .72rem; text-transform: uppercase; letter-spacing: .9px; color: var(--text-muted); margin: 18px 0 8px; font-weight: 700; }
         .datos-contacto { background: var(--bg-card); border: 1px solid var(--border-color); border-left: 3px solid var(--c-central); padding: 10px 14px; border-radius: 6px; }
         .datos-contacto p { margin: 6px 0; font-size: .85rem; color: #cbd5e1; display: flex; align-items: flex-start; }
+        .datos-contacto .enlace-mapa { color: #60a5fa; text-decoration: none; }
+        .datos-contacto .enlace-mapa:hover { text-decoration: underline; }
+        .datos-contacto .dato-oficial { font-size: .7rem !important; color: var(--text-muted) !important; margin-top: 8px !important; border-top: 1px solid var(--border-color); padding-top: 7px; }
         .datos-contacto .pendiente { color: var(--text-muted); font-style: italic; }
         .icon-svg { width: 15px; height: 15px; margin-right: 8px; flex-shrink: 0; margin-top: 2px; }
 
         .tarjeta-cargo { background: var(--bg-card); border: 1px solid var(--border-color); border-left: 3px solid var(--c-ugl); padding: 10px 12px; margin-bottom: 8px; border-radius: 6px; }
         .tarjeta-cargo.agencia { border-left-color: var(--c-agencia); }
-        .tarjeta-cargo.cap { border-left-color: var(--c-cap); }
         .cargo-titulo { font-size: .7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 3px; letter-spacing: .4px; }
         .cargo-nombre { font-size: .95rem; font-weight: 600; margin: 0; }
         .cargo-alerta { font-size: .72rem; color: var(--c-alerta); margin-top: 4px; }
@@ -214,7 +212,6 @@
         <label><span class="sw ugl"></span>UGL con datos</label>
         <label><span class="sw vacio"></span>UGL sin datos</label>
         <label><input type="checkbox" id="chkAgencias" checked><span class="sw agencia"></span>Agencias</label>
-        <label><input type="checkbox" id="chkCaps" checked><span class="sw cap"></span>CAPs</label>
     </div>
     <div id="buscador-rapido">
         <div class="caja">
@@ -230,11 +227,11 @@
 <div id="panel-lateral">
     <div class="cabecera-panel">
         <h2>Red Federal UGLs y Agencias</h2>
-        <input type="text" id="buscador" class="buscador-input" placeholder="Buscar UGL, Agencia, CAP o persona..." autocomplete="off">
+        <input type="text" id="buscador" class="buscador-input" placeholder="Buscar UGL, Agencia o persona..." autocomplete="off">
         <div class="badges" id="estadisticas"><span class="badge ugl">Cargando...</span></div>
     </div>
     <div id="contenido-detalles">
-        <div class="mensaje-vacio">Seleccion&aacute; una UGL en el grafo para desplegar sus datos, autoridades y sus Agencias/CAPs asociadas.</div>
+        <div class="mensaje-vacio">Seleccion&aacute; una UGL en el grafo para desplegar sus datos, autoridades y sus Agencias asociadas.</div>
     </div>
 </div>
 
@@ -285,8 +282,8 @@ const CATALOGO_UGL = [
     { num: 'XXXVIII', nombre: 'Chivilcoy',           alias: ['CHIVILCOY'] }
 ];
 
-/* Claves del JSON que en realidad son la localidad de un CAP/Agencia (el LLM las
-   cargó como si fueran UGL). Se cuelgan de su UGL real y se tratan como CAP.
+/* Claves del JSON que en realidad son la localidad de una Agencia (el LLM las
+   cargó como si fueran UGL). Se cuelgan de su UGL real como Agencia.
    Agregar acá cualquier localidad nueva que aparezca como "Sin clasificar". */
 const LOCALIDAD_A_UGL = {
     'PUERTO DESEADO': 'XXVIII', 'GOBERNADOR GREGORES': 'XXVIII', 'CALETA OLIVIA': 'XXVIII',
@@ -295,11 +292,11 @@ const LOCALIDAD_A_UGL = {
     'FRIAS': 'XIX', 'CAMPO GALLO': 'XIX', 'ANATUYA': 'XIX', 'LA BANDA': 'XIX'
 };
 
-/* Cargos genéricos: si la misma persona ya figura en una Agencia/CAP de esa UGL, se descartan */
+/* Cargos genéricos: si la misma persona ya figura en una Agencia de esa UGL, se descartan */
 const CARGOS_GENERICOS = /^(titular|designad[ao]|prestar servicios|prestador(a)? de servicios|desempe[nñ]ar tareas)$/i;
 
 /* =====================================================================
-   2. NORMALIZACIÓN: datos_ugl.json (plano) -> árbol UGL > Agencias / CAPs
+   2. NORMALIZACIÓN: datos_ugl.json (plano) -> árbol UGL > Agencias (los CAP también se tratan como Agencia)
    ===================================================================== */
 const sinTildes = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
 const clave = s => sinTildes(String(s)).toUpperCase().replace(/[“”"'«»]/g, '').replace(/\s+/g, ' ').trim();
@@ -328,11 +325,11 @@ function resolverUGL(claveJson) {
     return { ugl: null, localidad: limpia };
 }
 
-// Detecta si un cargo pertenece a una Agencia o CAP. Devuelve {tipo, nombre, rol} o null.
+// Detecta si un cargo pertenece a una Agencia (incluye CAP y Bocas de Atención). Devuelve {tipo, nombre, rol} o null.
 function clasificarCargo(cargo) {
     const txt = cargo.replace(/\s+/g, ' ').trim();
     let m = txt.match(/^(.*?)\b(?:CAP|Centro de Atenci[oó]n Personalizada)\b(?:\s+Cabecera)?\s*(.*)$/i);
-    if (m) return { tipo: 'cap', nombre: cortarNombre(m[2]), rol: limpiarRol(m[1]) };
+    if (m) return { tipo: 'agencia', nombre: cortarNombre(m[2]), rol: limpiarRol(m[1]) };
     m = txt.match(/^(.*?)\b(?:Agencia|Boca de Atenci[oó]n)\b(?:\s+PAMI)?\s*(.*)$/i);
     if (m && m[2]) return { tipo: 'agencia', nombre: cortarNombre(m[2]), rol: limpiarRol(m[1]), boca: /boca/i.test(txt) };
     return null;
@@ -388,8 +385,8 @@ function construirModelo(datos) {
             if (cargo.startsWith('_') || !valor) continue;
 
             let c = clasificarCargo(cargo);
-            // Clave-localidad (ej. "BANDERA") con cargo genérico -> es un CAP de esa localidad
-            if (!c?.nombre && localidad) c = { tipo: 'cap', nombre: localidad, rol: c?.rol || limpiarRol(cargo) };
+            // Clave-localidad (ej. "BANDERA") con cargo genérico -> es la Agencia de esa localidad
+            if (!c?.nombre && localidad) c = { tipo: 'agencia', nombre: localidad, rol: c?.rol || limpiarRol(cargo) };
             if (c && c.nombre) {
                 const hijo = obtenerHijo(ugl, c.tipo, c.nombre);
                 if (c.boca) hijo.subtipo = 'Boca de Atención';
@@ -400,7 +397,7 @@ function construirModelo(datos) {
         }
     }
 
-    // Limpieza: cargos genéricos de UGL cuya persona ya está en una Agencia/CAP
+    // Limpieza: cargos genéricos de UGL cuya persona ya está en una Agencia
     for (const ugl of ugls.values()) {
         const enHijos = new Set();
         ugl.hijos.forEach(h => h.autoridades.forEach(a => a.personas.forEach(p => enHijos.add(clave(p)))));
@@ -414,11 +411,66 @@ function construirModelo(datos) {
     return { ugls: [...ugls.values()], sinClasificar };
 }
 
+
+/* =====================================================================
+   2b. CRUCE CON EL LISTADO OFICIAL DE AGENCIAS (directorio_agencias.json)
+   Se genera con importar_listado_agencias.py a partir del Excel de PAMI.
+   Solo completa datos que faltan: nunca pisa lo que ya viene de datos_ugl.json.
+   ===================================================================== */
+const ABREVIATURAS = [[/\bPTO\b/g, 'PUERTO'], [/\bGOB\b/g, 'GOBERNADOR'], [/\bGRAL\b/g, 'GENERAL'],
+                      [/\bCNEL\b/g, 'CORONEL'], [/\bSTA\b/g, 'SANTA'], [/\bSTGO\b/g, 'SANTIAGO']];
+function claveLugar(s) {
+    let k = clave(s)
+        .replace(/^UGL\s+[IVXL]+\s*[-–]\s*/, '')
+        .replace(/^(AGENCIA|BOCA DE ATENCION|BOCA COMPLEMENTARIA|BOCA|C\.?\s?A\.?\s?P\.?|CENTRO DE ATENCION PERSONALIZADA)\s*/, '')
+        .replace(/\bPAMI\b/g, '');
+    for (const [re, rep] of ABREVIATURAS) k = k.replace(re, rep);
+    return k.replace(/Z/g, 'S').replace(/[^A-Z0-9]/g, '');   // Gonzalez/Gonzales, Chavez/Chaves
+}
+
+function buscarEnDirectorio(lista, hijo) {
+    const k = claveLugar(hijo.nombre);
+    if (!k) return null;
+    const candidatos = lista.filter(e => e.tipo !== 'ugl');
+    const ordenar = arr => arr.sort((a, b) => (b.tipo === 'agencia') - (a.tipo === 'agencia'))[0] || null;
+    // 1) nombre exacto  2) localidad exacta  3) uno contiene al otro (mín. 5 letras)
+    return ordenar(candidatos.filter(e => claveLugar(e.nombre) === k))
+        || ordenar(candidatos.filter(e => claveLugar(e.localidad) === k))
+        || (k.length >= 5 ? ordenar(candidatos.filter(e => {
+                const n = claveLugar(e.nombre);
+                return n.length >= 5 && (n.includes(k) || k.includes(n));
+            })) : null);
+}
+
+function copiarUbicacion(destino, e) {
+    if (!destino.direccion && e.domicilio) destino.direccion = e.domicilio;
+    destino.localidad = destino.localidad || e.localidad;
+    if (destino.lat == null && e.lat != null) { destino.lat = e.lat; destino.lon = e.lon; }
+    destino.codigoPami = e.codigo;
+    destino.nombreOficial = e.nombre;
+}
+
+function enriquecerConDirectorio(modelo, dir) {
+    const reporte = { completadas: [], sinCoincidencia: [] };
+    for (const u of modelo.ugls) {
+        const lista = dir[u.num] || [];
+        const sede = lista.find(e => e.tipo === 'ugl');
+        if (sede) copiarUbicacion(u, sede);
+        for (const h of u.hijos.values()) {
+            const e = buscarEnDirectorio(lista, h);
+            if (e) { copiarUbicacion(h, e); reporte.completadas.push(`UGL ${u.num} · ${h.nombre} → ${e.nombre}`); }
+            else reporte.sinCoincidencia.push(`UGL ${u.num} · ${h.tipo.toUpperCase()} ${h.nombre}`);
+        }
+    }
+    modelo.reporteDirectorio = reporte;
+    if (reporte.sinCoincidencia.length) console.info('Sin coincidencia en el listado oficial:', reporte.sinCoincidencia);
+}
+
 /* =====================================================================
    3. GRAFO
    ===================================================================== */
 const COLORES = {
-    central: '#3b82f6', ugl: '#10b981', uglVacia: '#475569', agencia: '#f59e0b', cap: '#a78bfa'
+    central: '#3b82f6', ugl: '#10b981', uglVacia: '#475569', agencia: '#f59e0b'
 };
 let red = null, nodosDS = null, aristasDS = null, modelo = null;
 const indice = new Map(); // id -> objeto del modelo
@@ -431,6 +483,11 @@ async function inicializar() {
         const r = await fetch('datos_ugl.json', { cache: 'no-store' });
         if (!r.ok) throw new Error('No se pudo leer datos_ugl.json');
         modelo = construirModelo(await r.json());
+        // Listado oficial de agencias (opcional): completa domicilio/localidad/ubicación
+        try {
+            const rd = await fetch('directorio_agencias.json', { cache: 'no-store' });
+            if (rd.ok) enriquecerConDirectorio(modelo, await rd.json());
+        } catch (err) { console.warn('Sin directorio_agencias.json:', err); }
         window.modeloPAMI = modelo; // útil para depurar desde la consola
         dibujar();
     } catch (e) {
@@ -447,7 +504,7 @@ async function inicializar() {
 
 function dibujar() {
     const nodos = [], aristas = [];
-    let nAg = 0, nCap = 0;
+    let nAg = 0;
 
     nodos.push({
         id: 'CENTRAL', label: 'PAMI\nNivel Central', shape: 'dot', size: 22, mass: 4,
@@ -469,12 +526,12 @@ function dibujar() {
 
         for (const h of u.hijos.values()) {
             indice.set(h.id, h);
-            h.tipo === 'agencia' ? nAg++ : nCap++;
+            nAg++;
             const c = COLORES[h.tipo];
             nodos.push({
                 id: h.id, tipo: h.tipo, label: h.nombre,
-                shape: h.tipo === 'agencia' ? 'diamond' : 'triangle',
-                size: h.tipo === 'agencia' ? 8 : 6,
+                shape: 'diamond',
+                size: 8,
                 color: { background: c, border: c, highlight: { background: '#fde68a', border: '#fbbf24' } },
                 font: { color: '#94a3b8', size: 9 }
             });
@@ -484,8 +541,7 @@ function dibujar() {
 
     const badges = [
         `<span class="badge ugl">${modelo.ugls.length} UGLs</span>`,
-        `<span class="badge agencia">${nAg} Agencias</span>`,
-        `<span class="badge cap">${nCap} CAPs</span>`
+        `<span class="badge agencia">${nAg} Agencias</span>`
     ];
     if (modelo.sinClasificar.length) badges.push(`<span class="badge alerta" onclick="mostrarSinClasificar()">${modelo.sinClasificar.length} sin clasificar</span>`);
     document.getElementById('estadisticas').innerHTML = badges.join('');
@@ -536,18 +592,27 @@ function htmlAutoridades(mapa, clase) {
     return h;
 }
 
-function htmlContacto(direccion, telefono) {
+const svgMapa = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>`;
+
+function htmlContacto(o) {
+    const dir = o.direccion
+        ? esc(o.direccion) + (o.localidad ? `, ${esc(o.localidad)}` : '')
+        : '<span class="pendiente">pendiente de sincronizaci&oacute;n</span>';
+    let mapa = '';
+    if (o.lat != null && o.lon != null) mapa = `https://www.google.com/maps/search/?api=1&query=${o.lat},${o.lon}`;
+    else if (o.direccion) mapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${o.direccion}, ${o.localidad || ''}, Argentina`)}`;
     return `<div class="seccion-titulo">Ubicaci&oacute;n y Contacto</div>
         <div class="datos-contacto">
-            <p>${svgPin}<strong>Direcci&oacute;n:</strong>&nbsp;${direccion ? esc(direccion) : '<span class="pendiente">pendiente de sincronizaci&oacute;n</span>'}</p>
-            <p>${svgPhone}<strong>Tel&eacute;fono:</strong>&nbsp;${telefono ? esc(telefono) : '<span class="pendiente">no disponible</span>'}</p>
+            <p>${svgPin}<span><strong>Direcci&oacute;n:</strong>&nbsp;${dir}</span></p>
+            <p>${svgPhone}<strong>Tel&eacute;fono:</strong>&nbsp;${o.telefono ? esc(o.telefono) : '<span class="pendiente">no disponible</span>'}</p>
+            ${mapa ? `<p>${svgMapa}<a class="enlace-mapa" href="${mapa}" target="_blank" rel="noopener">Ver en Google Maps</a></p>` : ''}
+            ${o.codigoPami ? `<p class="dato-oficial">Listado oficial PAMI &middot; c&oacute;d. ${esc(o.codigoPami)} &middot; ${esc(o.nombreOficial)}</p>` : ''}
         </div>`;
 }
 
 function mostrarUGL(u) {
     const hijos = [...u.hijos.values()];
     const ag = hijos.filter(h => h.tipo === 'agencia').sort((a, b) => a.nombre.localeCompare(b.nombre));
-    const caps = hijos.filter(h => h.tipo === 'cap').sort((a, b) => a.nombre.localeCompare(b.nombre));
     const lista = (arr, tipo) => arr.length
         ? `<div class="lista-hijos">${arr.map(h => `<div class="item-hijo" onclick="seleccionar('${esc(h.id)}')">
                 <span class="sw ${tipo}"></span>${esc(h.nombre)}${h.subtipo ? ` <small style="color:var(--text-muted)">(${h.subtipo})</small>` : ''}
@@ -557,23 +622,21 @@ function mostrarUGL(u) {
     document.getElementById('contenido-detalles').innerHTML = `
         <span class="tipo-chip ugl">UGL ${esc(u.num)}</span>
         <h3 class="titulo-nodo">${esc(u.nombre)}</h3>
-        <p class="subtitulo-nodo">Unidad de Gesti&oacute;n Local &middot; ${ag.length} agencia(s) &middot; ${caps.length} CAP(s)</p>
-        ${htmlContacto(u.direccion, u.telefono)}
+        <p class="subtitulo-nodo">Unidad de Gesti&oacute;n Local &middot; ${ag.length} agencia(s)</p>
+        ${htmlContacto(u)}
         <div class="seccion-titulo">Autoridades de la UGL</div>
         ${htmlAutoridades(u.autoridades, '')}
         <div class="seccion-titulo">Agencias (${ag.length})</div>
-        ${lista(ag, 'agencia')}
-        <div class="seccion-titulo">Centros de Atenci&oacute;n Personalizada (${caps.length})</div>
-        ${lista(caps, 'cap')}`;
+        ${lista(ag, 'agencia')}`;
 }
 
 function mostrarDependencia(h) {
-    const etiqueta = h.tipo === 'agencia' ? (h.subtipo || 'Agencia') : 'CAP';
+    const etiqueta = h.subtipo || 'Agencia';
     document.getElementById('contenido-detalles').innerHTML = `
         <span class="tipo-chip ${h.tipo}">${etiqueta}</span>
         <h3 class="titulo-nodo">${esc(h.nombre)}</h3>
         <p class="subtitulo-nodo">Depende de <a onclick="seleccionar('${esc(h.ugl.id)}')">UGL ${esc(h.ugl.num)} &ndash; ${esc(h.ugl.nombre)}</a></p>
-        ${htmlContacto(h.direccion, h.telefono)}
+        ${htmlContacto(h)}
         <div class="seccion-titulo">Autoridades</div>
         ${htmlAutoridades(h.autoridades, h.tipo)}`;
 }
@@ -589,7 +652,7 @@ function mostrarSinClasificar() {
         </div>`).join('')}`;
 }
 
-/* ---------- Buscador: lista de resultados (UGL, Agencia, CAP o persona) ---------- */
+/* ---------- Buscador: lista de resultados (UGL, Agencia o persona) ---------- */
 document.getElementById('buscador').addEventListener('input', e => {
     const q = clave(e.target.value);
     if (q.length < 2) return;
@@ -598,11 +661,11 @@ document.getElementById('buscador').addEventListener('input', e => {
         if (o.tipo === 'central') continue;
         const nombre = o.tipo === 'ugl' ? `UGL ${o.num} ${o.nombre}` : o.nombre;
         let motivo = null;
-        if (clave(nombre).includes(q)) motivo = o.tipo === 'ugl' ? 'UGL' : (o.tipo === 'agencia' ? 'Agencia' : 'CAP');
+        if (clave(nombre).includes(q)) motivo = o.tipo === 'ugl' ? 'UGL' : 'Agencia';
         else for (const a of o.autoridades.values()) if (a.personas.some(p => clave(p).includes(q))) { motivo = 'Persona'; break; }
         if (motivo) res.push({ id, o, nombre, motivo });
     }
-    const orden = { UGL: 0, Agencia: 1, CAP: 2, Persona: 3 };
+    const orden = { UGL: 0, Agencia: 1, Persona: 2 };
     res.sort((a, b) => orden[a.motivo] - orden[b.motivo]);
     document.getElementById('contenido-detalles').innerHTML = res.length
         ? `<div class="seccion-titulo">${res.length} resultado(s)</div>` + res.slice(0, 60).map(r => `
@@ -616,11 +679,9 @@ document.getElementById('buscador').addEventListener('input', e => {
 /* ---------- Filtros de la leyenda ---------- */
 function aplicarFiltros() {
     const verAg = document.getElementById('chkAgencias').checked;
-    const verCap = document.getElementById('chkCaps').checked;
-    nodosDS.update(nodosDS.get({ filter: n => n.tipo }).map(n => ({ id: n.id, hidden: n.tipo === 'agencia' ? !verAg : !verCap })));
+    nodosDS.update(nodosDS.get({ filter: n => n.tipo }).map(n => ({ id: n.id, hidden: !verAg })));
 }
 document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros);
-document.getElementById('chkCaps').addEventListener('change', aplicarFiltros);
 
 /* ---------- Divisor arrastrable (ancho del panel) ---------- */
 (function () {
@@ -651,7 +712,7 @@ document.getElementById('chkCaps').addEventListener('change', aplicarFiltros);
     window.addEventListener('resize', () => { if (panel.style.width) aplicar(parseInt(panel.style.width, 10)); });
 })();
 
-/* ---------- Buscador rápido: UGL, localidad, Agencia o CAP -> zoom al nodo ---------- */
+/* ---------- Buscador rápido: UGL, localidad o Agencia -> zoom al nodo ---------- */
 (function () {
     const input = document.getElementById('busquedaRapida');
     const caja = document.getElementById('sugerencias');
@@ -673,7 +734,7 @@ document.getElementById('chkCaps').addEventListener('change', aplicarFiltros);
                 }
             } else {
                 texto = o.nombre;
-                extra = (o.tipo === 'agencia' ? 'Agencia' : 'CAP') + ' · UGL ' + o.ugl.num;
+                extra = (o.subtipo || 'Agencia') + ' · UGL ' + o.ugl.num;
                 const k = clave(o.nombre);
                 if (k === q) puntos = 0.5; else if (k.startsWith(q)) puntos = 2; else if (k.includes(q)) puntos = 4;
             }
@@ -698,7 +759,6 @@ document.getElementById('chkCaps').addEventListener('change', aplicarFiltros);
         if (!it) return;
         // Si el tipo está oculto por el filtro de la leyenda, lo volvemos a mostrar
         if (it.o.tipo === 'agencia' && !document.getElementById('chkAgencias').checked) { document.getElementById('chkAgencias').checked = true; aplicarFiltros(); }
-        if (it.o.tipo === 'cap' && !document.getElementById('chkCaps').checked) { document.getElementById('chkCaps').checked = true; aplicarFiltros(); }
         seleccionar(it.id, true);
         input.value = it.texto;
         caja.classList.remove('visible');
