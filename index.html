@@ -101,12 +101,51 @@
         .resultado { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 6px; cursor: pointer; font-size: .86rem; }
         .resultado:hover { background: var(--bg-card); }
         .resultado small { color: var(--text-muted); margin-left: auto; font-size: .72rem; white-space: nowrap; }
+
+        /* Divisor arrastrable entre grafo y panel */
+        #divisor {
+            width: 6px; margin: 0 -3px; cursor: col-resize; z-index: 20; position: relative; flex-shrink: 0;
+            background: transparent; transition: background .15s;
+        }
+        #divisor::after {
+            content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 2px; height: 36px; border-radius: 2px; background: #334155; transition: background .15s;
+        }
+        #divisor:hover, #divisor.activo { background: rgba(59,130,246,.25); }
+        #divisor:hover::after, #divisor.activo::after { background: var(--c-central); }
+        body.redimensionando { cursor: col-resize; user-select: none; }
+        body.redimensionando #contenedor-grafo { pointer-events: none; }
+
+        /* Buscador rápido sobre el grafo */
+        #buscador-rapido { position: absolute; top: 16px; right: 16px; z-index: 6; width: 260px; }
+        #buscador-rapido .caja {
+            display: flex; align-items: center; gap: 8px; background: rgba(15,20,32,.92);
+            border: 1px solid var(--border-color); border-radius: 8px; padding: 7px 10px; transition: border-color .2s;
+        }
+        #buscador-rapido .caja:focus-within { border-color: var(--c-central); }
+        #buscador-rapido input { flex: 1; min-width: 0; background: transparent; border: none; outline: none; color: var(--text-main); font-size: .82rem; font-family: inherit; }
+        #buscador-rapido input::placeholder { color: #64748b; }
+        #buscador-rapido .lupa { width: 14px; height: 14px; flex-shrink: 0; }
+        #sugerencias {
+            display: none; margin-top: 6px; max-height: 320px; overflow-y: auto; background: rgba(15,20,32,.97);
+            border: 1px solid var(--border-color); border-radius: 8px; padding: 4px; box-shadow: 0 10px 30px rgba(0,0,0,.5);
+        }
+        #sugerencias.visible { display: block; }
+        #sugerencias::-webkit-scrollbar { width: 5px; }
+        #sugerencias::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+        .sug { display: flex; align-items: center; gap: 9px; padding: 7px 8px; border-radius: 5px; cursor: pointer; font-size: .82rem; }
+        .sug:hover, .sug.activa { background: var(--bg-card); }
+        .sug .txt { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .sug small { margin-left: auto; color: var(--text-muted); font-size: .7rem; white-space: nowrap; padding-left: 6px; }
+        .sug-vacio { padding: 8px; font-size: .8rem; color: var(--text-muted); font-style: italic; }
         code { background: var(--bg-card); padding: 1px 5px; border-radius: 3px; font-size: .8rem; }
 
         @media (max-width: 800px) {
             body { flex-direction: column; }
             #zona-grafo { height: 50vh; flex: none; }
-            #panel-lateral { width: 100%; flex: 1; min-height: 0; border-left: none; border-top: 1px solid var(--border-color); }
+            #divisor { display: none; }
+            #buscador-rapido { left: 16px; right: 16px; top: auto; bottom: 12px; width: auto; }
+            #panel-lateral { width: 100% !important; flex: 1; min-height: 0; border-left: none; border-top: 1px solid var(--border-color); }
         }
     </style>
 </head>
@@ -121,7 +160,16 @@
         <label><input type="checkbox" id="chkAgencias" checked><span class="sw agencia"></span>Agencias</label>
         <label><input type="checkbox" id="chkCaps" checked><span class="sw cap"></span>CAPs</label>
     </div>
+    <div id="buscador-rapido">
+        <div class="caja">
+            <svg class="lupa" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+            <input type="text" id="busquedaRapida" placeholder="Ir a UGL, localidad o agencia..." autocomplete="off" spellcheck="false">
+        </div>
+        <div id="sugerencias"></div>
+    </div>
 </div>
+
+<div id="divisor" title="Arrastr&aacute; para cambiar el ancho"></div>
 
 <div id="panel-lateral">
     <div class="cabecera-panel">
@@ -515,6 +563,115 @@ function aplicarFiltros() {
 }
 document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros);
 document.getElementById('chkCaps').addEventListener('change', aplicarFiltros);
+
+/* ---------- Divisor arrastrable (ancho del panel) ---------- */
+(function () {
+    const divisor = document.getElementById('divisor');
+    const panel = document.getElementById('panel-lateral');
+    const MIN = 300, maxAncho = () => Math.max(MIN, window.innerWidth * 0.7);
+    const aplicar = w => { panel.style.width = Math.min(maxAncho(), Math.max(MIN, w)) + 'px'; if (red) red.redraw(); };
+    try { const g = parseInt(localStorage.getItem('anchoPanel'), 10); if (g) aplicar(g); } catch (e) {}
+
+    divisor.addEventListener('pointerdown', e => {
+        e.preventDefault();
+        divisor.setPointerCapture(e.pointerId);
+        divisor.classList.add('activo'); document.body.classList.add('redimensionando');
+    });
+    divisor.addEventListener('pointermove', e => {
+        if (!divisor.classList.contains('activo')) return;
+        aplicar(window.innerWidth - e.clientX);
+    });
+    const soltar = e => {
+        if (!divisor.classList.contains('activo')) return;
+        divisor.classList.remove('activo'); document.body.classList.remove('redimensionando');
+        try { divisor.releasePointerCapture(e.pointerId); } catch (_) {}
+        try { localStorage.setItem('anchoPanel', parseInt(panel.style.width, 10)); } catch (_) {}
+    };
+    divisor.addEventListener('pointerup', soltar);
+    divisor.addEventListener('pointercancel', soltar);
+    divisor.addEventListener('dblclick', () => { panel.style.width = '420px'; if (red) red.redraw(); try { localStorage.removeItem('anchoPanel'); } catch (_) {} });
+    window.addEventListener('resize', () => { if (panel.style.width) aplicar(parseInt(panel.style.width, 10)); });
+})();
+
+/* ---------- Buscador rápido: UGL, localidad, Agencia o CAP -> zoom al nodo ---------- */
+(function () {
+    const input = document.getElementById('busquedaRapida');
+    const caja = document.getElementById('sugerencias');
+    let items = [], activa = -1;
+
+    function candidatos(q) {
+        const res = [];
+        for (const [id, o] of indice) {
+            if (o.tipo === 'central') continue;
+            let texto, extra = '', puntos = null;
+            if (o.tipo === 'ugl') {
+                texto = `UGL ${o.num} – ${o.nombre}`;
+                const terminos = [o.nombre, 'UGL ' + o.num, ...o.claves];
+                for (const t of terminos) {
+                    const k = clave(t);
+                    if (k === q || ('UGL ' + clave(o.num)) === q) { puntos = 0; break; }
+                    if (k.startsWith(q)) puntos = Math.min(puntos ?? 9, 1);
+                    else if (k.includes(q)) puntos = Math.min(puntos ?? 9, 3);
+                }
+            } else {
+                texto = o.nombre;
+                extra = (o.tipo === 'agencia' ? 'Agencia' : 'CAP') + ' · UGL ' + o.ugl.num;
+                const k = clave(o.nombre);
+                if (k === q) puntos = 0.5; else if (k.startsWith(q)) puntos = 2; else if (k.includes(q)) puntos = 4;
+            }
+            if (puntos !== null) res.push({ id, o, texto, extra: extra || 'UGL', puntos });
+        }
+        return res.sort((a, b) => a.puntos - b.puntos || a.texto.localeCompare(b.texto)).slice(0, 12);
+    }
+
+    function pintar() {
+        const q = clave(input.value);
+        if (!q || !modelo) { caja.classList.remove('visible'); return; }
+        items = candidatos(q); activa = items.length ? 0 : -1;
+        caja.innerHTML = items.length
+            ? items.map((it, i) => `<div class="sug${i === activa ? ' activa' : ''}" data-i="${i}">
+                    <span class="sw ${it.o.tipo}"></span><span class="txt">${esc(it.texto)}</span><small>${esc(it.extra)}</small></div>`).join('')
+            : '<div class="sug-vacio">Sin coincidencias</div>';
+        caja.classList.add('visible');
+    }
+
+    function ir(i) {
+        const it = items[i];
+        if (!it) return;
+        // Si el tipo está oculto por el filtro de la leyenda, lo volvemos a mostrar
+        if (it.o.tipo === 'agencia' && !document.getElementById('chkAgencias').checked) { document.getElementById('chkAgencias').checked = true; aplicarFiltros(); }
+        if (it.o.tipo === 'cap' && !document.getElementById('chkCaps').checked) { document.getElementById('chkCaps').checked = true; aplicarFiltros(); }
+        seleccionar(it.id, true);
+        input.value = it.texto;
+        caja.classList.remove('visible');
+        input.blur();
+    }
+
+    function marcar(n) {
+        if (!items.length) return;
+        activa = (n + items.length) % items.length;
+        caja.querySelectorAll('.sug').forEach((el, i) => el.classList.toggle('activa', i === activa));
+        caja.querySelector('.sug.activa')?.scrollIntoView({ block: 'nearest' });
+    }
+
+    input.addEventListener('input', pintar);
+    input.addEventListener('focus', () => { if (input.value) { input.select(); pintar(); } });
+    input.addEventListener('keydown', e => {
+        if (e.key === 'ArrowDown') { e.preventDefault(); marcar(activa + 1); }
+        else if (e.key === 'ArrowUp') { e.preventDefault(); marcar(activa - 1); }
+        else if (e.key === 'Enter') { e.preventDefault(); ir(activa); }
+        else if (e.key === 'Escape') { caja.classList.remove('visible'); input.blur(); }
+    });
+    caja.addEventListener('mousedown', e => {           // mousedown: se dispara antes del blur
+        const el = e.target.closest('.sug');
+        if (el) { e.preventDefault(); ir(+el.dataset.i); }
+    });
+    input.addEventListener('blur', () => setTimeout(() => caja.classList.remove('visible'), 120));
+    // Atajo: "/" enfoca el buscador rápido
+    document.addEventListener('keydown', e => {
+        if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); input.focus(); }
+    });
+})();
 
 window.onload = inicializar;
 </script>
