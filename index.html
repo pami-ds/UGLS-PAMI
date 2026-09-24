@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Federal UGLs y Agencias - PAMI</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+    <style>
+        :root {
+            --bg-canvas: #090d16;
+            --bg-sidebar: #0f1420;
+            --bg-card: #161c2e;
+            --bg-input: #070a10;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #1e293b;
+            --c-central: #3b82f6;
+            --c-ugl: #10b981;
+            --c-agencia: #f59e0b;
+            --c-vacio: #475569;
+            --c-alerta: #f87171;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            margin: 0; display: flex; height: 100vh;
+            background: var(--bg-canvas); color: var(--text-main); overflow: hidden;
+        }
+        #zona-grafo { flex: 1; position: relative; min-width: 0; }
+        #contenedor-grafo { width: 100%; height: 100%; }
+
+        /* Leyenda + filtros */
+        #leyenda {
+            position: absolute; left: 16px; top: 16px; z-index: 5;
+            background: rgba(15, 20, 32, 0.92); border: 1px solid var(--border-color);
+            border-radius: 8px; padding: 10px 12px; font-size: 0.78rem; color: var(--text-muted);
+        }
+        #leyenda label { display: flex; align-items: center; gap: 8px; margin: 4px 0; cursor: pointer; user-select: none; }
+        #leyenda input { accent-color: var(--c-central); margin: 0; }
+        .sw { width: 11px; height: 11px; display: inline-block; flex-shrink: 0; }
+        .sw.central { background: var(--c-central); border-radius: 50%; }
+        .sw.ugl { background: var(--c-ugl); border-radius: 50%; }
+        .sw.agencia { background: var(--c-agencia); transform: rotate(45deg) scale(.85); }
+        .sw.vacio { background: var(--c-vacio); border-radius: 50%; }
+
+        #panel-lateral {
+            width: 420px; background: var(--bg-sidebar); border-left: 1px solid var(--border-color);
+            display: flex; flex-direction: column; z-index: 10; box-shadow: -10px 0 30px rgba(0,0,0,.5);
+        }
+        .cabecera-panel { padding: 22px 20px 16px; border-bottom: 1px solid var(--border-color); }
+        .cabecera-panel h2 { margin: 0 0 12px; font-size: 1.15rem; font-weight: 600; }
+        .buscador-input {
+            width: 100%; padding: 9px 14px; background: var(--bg-input); border: 1px solid var(--border-color);
+            border-radius: 6px; font-size: .88rem; color: var(--text-main); outline: none;
+        }
+        .buscador-input:focus { border-color: var(--c-central); }
+        .badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+        .badge { font-size: .72rem; padding: 3px 9px; border-radius: 10px; font-weight: 600; border: 1px solid; }
+        .badge.ugl { color: var(--c-ugl); border-color: rgba(16,185,129,.35); background: rgba(16,185,129,.1); }
+        .badge.agencia { color: var(--c-agencia); border-color: rgba(245,158,11,.35); background: rgba(245,158,11,.1); }
+        .badge.alerta { color: var(--c-alerta); border-color: rgba(248,113,113,.35); background: rgba(248,113,113,.1); cursor: pointer; }
+
+        #contenido-detalles { padding: 20px; overflow-y: auto; flex: 1; }
+        #contenido-detalles::-webkit-scrollbar { width: 5px; }
+        #contenido-detalles::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+
+        .mensaje-vacio { color: var(--text-muted); font-style: italic; text-align: center; margin-top: 60px; font-size: .88rem; line-height: 1.6; }
+        .tipo-chip { display: inline-block; font-size: .66rem; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; }
+        .tipo-chip.ugl { background: rgba(16,185,129,.15); color: var(--c-ugl); }
+        .tipo-chip.agencia { background: rgba(245,158,11,.15); color: var(--c-agencia); }
+        .titulo-nodo { font-size: 1.2rem; font-weight: 600; margin: 0 0 4px; }
+        .subtitulo-nodo { font-size: .82rem; color: var(--text-muted); margin: 0 0 18px; }
+        .subtitulo-nodo a { color: var(--c-ugl); cursor: pointer; text-decoration: none; }
+        .subtitulo-nodo a:hover { text-decoration: underline; }
+
+        .seccion-titulo { font-size: .72rem; text-transform: uppercase; letter-spacing: .9px; color: var(--text-muted); margin: 18px 0 8px; font-weight: 700; }
+        .datos-contacto { background: var(--bg-card); border: 1px solid var(--border-color); border-left: 3px solid var(--c-central); padding: 10px 14px; border-radius: 6px; }
+        .datos-contacto p { margin: 6px 0; font-size: .85rem; color: #cbd5e1; display: flex; align-items: flex-start; }
+        .datos-contacto .enlace-mapa { color: #60a5fa; text-decoration: none; }
+        .datos-contacto .enlace-mapa:hover { text-decoration: underline; }
+        .datos-contacto .dato-oficial { font-size: .7rem !important; color: var(--text-muted) !important; margin-top: 8px !important; border-top: 1px solid var(--border-color); padding-top: 7px; }
+        .datos-contacto .pendiente { color: var(--text-muted); font-style: italic; }
+        .icon-svg { width: 15px; height: 15px; margin-right: 8px; flex-shrink: 0; margin-top: 2px; }
+
+        .tarjeta-cargo { background: var(--bg-card); border: 1px solid var(--border-color); border-left: 3px solid var(--c-ugl); padding: 10px 12px; margin-bottom: 8px; border-radius: 6px; }
+        .tarjeta-cargo.agencia { border-left-color: var(--c-agencia); }
+        .cargo-titulo { font-size: .7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 3px; letter-spacing: .4px; }
+        .cargo-nombre { font-size: .95rem; font-weight: 600; margin: 0; }
+        .cargo-alerta { font-size: .72rem; color: var(--c-alerta); margin-top: 4px; }
+        .cargo-antiguo { font-size: .68rem; color: var(--text-muted); margin-top: 4px; font-style: italic; opacity: .85; }
+        .tarjeta-cargo.antiguo { opacity: .82; }
+
+        .lista-hijos { display: flex; flex-direction: column; gap: 6px; }
+        .item-hijo {
+            display: flex; align-items: center; gap: 10px; background: var(--bg-card); border: 1px solid var(--border-color);
+            border-radius: 6px; padding: 8px 12px; cursor: pointer; font-size: .86rem; transition: border-color .15s;
+        }
+        .item-hijo:hover { border-color: #334155; }
+        .item-hijo .n { color: var(--text-muted); font-size: .75rem; margin-left: auto; white-space: nowrap; }
+
+        .resultado { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 6px; cursor: pointer; font-size: .86rem; }
+        .resultado:hover { background: var(--bg-card); }
+        .resultado small { color: var(--text-muted); margin-left: auto; font-size: .72rem; white-space: nowrap; }
+
+        /* Fecha / norma de cada designación */
+        .cargo-meta { font-size: .7rem; color: var(--text-muted); margin-top: 4px; }
+        .chip-manual {
+            display: inline-block; font-size: .6rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+            color: #a5b4fc; background: rgba(129,140,248,.14); border: 1px solid rgba(129,140,248,.3);
+            padding: 0 6px; border-radius: 4px; margin-left: 6px; vertical-align: 1px;
+        }
+        .tarjeta-cargo.manual { border-left-color: #818cf8; }
+        .aviso-vacante { font-size: .8rem; color: var(--text-muted); font-style: italic; }
+
+        /* Encabezado de ficha con botón Editar */
+        .cabecera-ficha { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+        .btn {
+            font: inherit; font-size: .76rem; font-weight: 600; border-radius: 6px; padding: 6px 11px; cursor: pointer;
+            border: 1px solid var(--border-color); background: var(--bg-card); color: #cbd5e1;
+            display: inline-flex; align-items: center; gap: 6px; transition: border-color .15s, background .15s; white-space: nowrap;
+        }
+        .btn:hover { border-color: #334155; background: #1b2338; }
+        .btn:focus-visible { outline: 2px solid var(--c-central); outline-offset: 1px; }
+        .btn.primario { background: var(--c-central); border-color: var(--c-central); color: #fff; }
+        .btn.primario:hover { background: #2563eb; }
+        .btn.peligro { color: var(--c-alerta); }
+        .btn.chico { padding: 3px 8px; font-size: .72rem; }
+        .btn svg { width: 13px; height: 13px; }
+
+        /* Historial */
+        details.historial { margin-top: 18px; }
+        details.historial summary {
+            font-size: .72rem; text-transform: uppercase; letter-spacing: .9px; color: var(--text-muted); font-weight: 700;
+            cursor: pointer; list-style: none; display: flex; align-items: center; gap: 6px;
+        }
+        details.historial summary::-webkit-details-marker { display: none; }
+        details.historial summary::before { content: '▸'; transition: transform .15s; }
+        details.historial[open] summary::before { transform: rotate(90deg); }
+        .evento { display: grid; grid-template-columns: 74px 1fr; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--border-color); font-size: .78rem; }
+        .evento:last-child { border-bottom: none; }
+        .evento .f { color: var(--text-muted); font-variant-numeric: tabular-nums; }
+        .evento .a { font-weight: 700; font-size: .66rem; text-transform: uppercase; letter-spacing: .4px; margin-right: 4px; }
+        .evento .a.alta { color: var(--c-ugl); }
+        .evento .a.baja { color: var(--c-alerta); }
+        .evento .a.crea { color: var(--c-agencia); }
+        .evento .n { color: var(--text-muted); font-size: .68rem; }
+
+        /* Editor manual */
+        .editor .campo { margin-bottom: 10px; }
+        .editor label { display: block; font-size: .7rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: .4px; margin-bottom: 4px; }
+        .editor input {
+            width: 100%; padding: 8px 11px; background: var(--bg-input); border: 1px solid var(--border-color);
+            border-radius: 6px; font-size: .85rem; color: var(--text-main); outline: none; font-family: inherit;
+        }
+        .editor input:focus { border-color: var(--c-central); }
+        .editor .fila-aut { display: grid; grid-template-columns: 1fr 1fr 30px; gap: 6px; margin-bottom: 6px; align-items: center; }
+        .editor .fila-aut.eliminada input { opacity: .4; text-decoration: line-through; }
+        .editor .btn-x {
+            width: 30px; height: 34px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-card);
+            color: var(--text-muted); cursor: pointer; font-size: 1rem; line-height: 1;
+        }
+        .editor .btn-x:hover { color: var(--c-alerta); border-color: rgba(248,113,113,.4); }
+        .editor .acciones { display: flex; gap: 8px; margin-top: 18px; position: sticky; bottom: -20px; background: var(--bg-sidebar); padding: 12px 0; border-top: 1px solid var(--border-color); }
+        .editor .ayuda { font-size: .74rem; color: var(--text-muted); line-height: 1.5; margin: 0 0 14px; }
+
+        /* Barra de cambios manuales */
+        #barra-manuales { display: none; margin-top: 10px; font-size: .74rem; color: #a5b4fc; align-items: center; gap: 6px; flex-wrap: wrap; }
+        #barra-manuales.visible { display: flex; }
+        #barra-manuales .txt { flex: 1 1 100%; }
+
+        /* Organigrama */
+        .sw.org-organo { background: #60a5fa; border-radius: 50%; width: 10px; height: 10px; }
+        .sw.org-coordinacion { background: #f7941d; border-radius: 50%; width: 10px; height: 10px; }
+        .sw.org-unidad { background: #2dd4bf; border-radius: 50%; width: 10px; height: 10px; }
+        .sw.org-gerencia { background: #5eead4; border-radius: 50%; width: 10px; height: 10px; }
+        .sw.org-subgerencia { background: #a78bfa; border-radius: 50%; width: 10px; height: 10px; }
+        .tipo-chip.org { background: rgba(134,214,214,.15); color: #86d6d6; }
+        .tipo-chip.org.subgerencia { background: rgba(179,157,219,.15); color: #c4b5fd; }
+        .tipo-chip.org.organo { background: rgba(148,163,184,.15); color: #cbd5e1; }
+        .tipo-chip.org.coordinacion { background: rgba(247,148,29,.15); color: #fbbf24; }
+        .tarjeta-cargo.org { border-left-color: #86d6d6; }
+        .ruta-org { font-size: .74rem; color: var(--text-muted); margin: -12px 0 16px; line-height: 1.6; }
+        .ruta-org a { color: #86d6d6; cursor: pointer; }
+        .ruta-org a:hover { text-decoration: underline; }
+        #leyenda .sep { border-top: 1px solid var(--border-color); margin: 7px 0 5px; }
+        #leyenda .hint-org { font-size: .72rem; color: #64748b; max-width: 190px; line-height: 1.4; }
+        #leyenda .hint-org b { color: #93c5fd; font-weight: 600; }
+        #leyenda .fila-org { display: flex; gap: 6px; align-items: center; margin: 6px 0 0 0; flex-wrap: wrap; max-width: 190px; }
+
+        /* Controles de vista */
+        #controles {
+            position: absolute; left: 16px; bottom: 16px; z-index: 5; display: flex; flex-direction: column; gap: 4px;
+            background: rgba(15,20,32,.92); border: 1px solid var(--border-color); border-radius: 8px; padding: 4px;
+        }
+        #controles button {
+            width: 32px; height: 32px; border: none; border-radius: 6px; background: transparent; color: #cbd5e1;
+            cursor: pointer; display: grid; place-items: center; font: inherit;
+        }
+        #controles button:hover { background: var(--bg-card); color: #fff; }
+        #controles button:focus-visible { outline: 2px solid var(--c-central); }
+        #controles svg { width: 16px; height: 16px; }
+        #controles hr { border: none; border-top: 1px solid var(--border-color); margin: 2px 4px; }
+        #ayuda-grafo {
+            position: absolute; left: 60px; bottom: 16px; z-index: 5; font-size: .72rem; color: #64748b;
+            background: rgba(15,20,32,.85); border: 1px solid var(--border-color); border-radius: 6px; padding: 6px 10px; max-width: 420px;
+        }
+        .sw.listado { background: transparent; border: 1.5px solid #a16207; transform: rotate(45deg) scale(.8); }
+        div.vis-tooltip {
+            background: #0f1420 !important; color: #e2e8f0 !important; border: 1px solid var(--border-color) !important;
+            border-radius: 6px !important; font-family: inherit !important; font-size: .78rem !important; padding: 7px 10px !important;
+            box-shadow: 0 8px 24px rgba(0,0,0,.5) !important; white-space: pre-line !important; max-width: 280px;
+        }
+        @media (max-width: 800px) { #ayuda-grafo { display: none; } }
+
+        /* Divisor arrastrable entre grafo y panel */
+        #divisor {
+            width: 6px; margin: 0 -3px; cursor: col-resize; z-index: 20; position: relative; flex-shrink: 0;
+            background: transparent; transition: background .15s;
+        }
+        #divisor::after {
+            content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 2px; height: 36px; border-radius: 2px; background: #334155; transition: background .15s;
+        }
+        #divisor:hover, #divisor.activo { background: rgba(59,130,246,.25); }
+        #divisor:hover::after, #divisor.activo::after { background: var(--c-central); }
+        body.redimensionando { cursor: col-resize; user-select: none; }
+        body.redimensionando #contenedor-grafo { pointer-events: none; }
+
+        /* Buscador rápido sobre el grafo */
+        #buscador-rapido { position: absolute; top: 16px; right: 16px; z-index: 6; width: 260px; }
+        #buscador-rapido .caja {
+            display: flex; align-items: center; gap: 8px; background: rgba(15,20,32,.92);
+            border: 1px solid var(--border-color); border-radius: 8px; padding: 7px 10px; transition: border-color .2s;
+        }
+        #buscador-rapido .caja:focus-within { border-color: var(--c-central); }
+        #buscador-rapido input { flex: 1; min-width: 0; background: transparent; border: none; outline: none; color: var(--text-main); font-size: .82rem; font-family: inherit; }
+        #buscador-rapido input::placeholder { color: #64748b; }
+        #buscador-rapido .lupa { width: 14px; height: 14px; flex-shrink: 0; }
+        #sugerencias {
+            display: none; margin-top: 6px; max-height: 320px; overflow-y: auto; background: rgba(15,20,32,.97);
+            border: 1px solid var(--border-color); border-radius: 8px; padding: 4px; box-shadow: 0 10px 30px rgba(0,0,0,.5);
+        }
+        #sugerencias.visible { display: block; }
+        #sugerencias::-webkit-scrollbar { width: 5px; }
+        #sugerencias::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+        .sug { display: flex; align-items: center; gap: 9px; padding: 7px 8px; border-radius: 5px; cursor: pointer; font-size: .82rem; }
+        .sug:hover, .sug.activa { background: var(--bg-card); }
+        .sug .txt { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .sug small { margin-left: auto; color: var(--text-muted); font-size: .7rem; white-space: nowrap; padding-left: 6px; }
+        .sug-vacio { padding: 8px; font-size: .8rem; color: var(--text-muted); font-style: italic; }
+        code { background: var(--bg-card); padding: 1px 5px; border-radius: 3px; font-size: .8rem; }
+
+        @media (max-width: 800px) {
+            body { flex-direction: column; }
+            #zona-grafo { height: 50vh; flex: none; }
+            #divisor { display: none; }
+            #buscador-rapido { left: 16px; right: 16px; top: auto; bottom: 12px; width: auto; }
+            #panel-lateral { width: 100% !important; flex: 1; min-height: 0; border-left: none; border-top: 1px solid var(--border-color); }
+        }
+
+        /* ================= INTRO DAR SALUD ================= */
+        #intro {
+            --ds-azul: #0032a1; --ds-azul-osc: #00247a; --ds-turquesa: #00edcf;
+            position: fixed; inset: 0; z-index: 1000;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            background: radial-gradient(ellipse at 50% 42%, var(--ds-azul) 0%, var(--ds-azul-osc) 100%);
+            transition: opacity .7s ease, visibility .7s;
+            cursor: pointer;
+        }
+        #intro.salida { opacity: 0; visibility: hidden; }
+        #intro .logo-wrap { position: relative; display: flex; justify-content: center; }
+        #intro .halo {
+            --d: calc(min(250px, 58vw) * .37); /* diámetro del círculo del ícono */
+            position: absolute; top: 0; left: 50%; width: var(--d); height: var(--d); margin-left: calc(var(--d) / -2);
+            border-radius: 50%; border: 2px solid var(--ds-turquesa); opacity: 0;
+            animation: intro-halo 1.6s .5s ease-out forwards;
+        }
+        #intro img {
+            width: min(250px, 58vw); height: auto; display: block;
+            opacity: 0; transform: translateY(10px) scale(.94); filter: blur(6px);
+            animation: intro-logo 1s .15s cubic-bezier(.2,.7,.2,1) forwards;
+        }
+        #intro .barra {
+            width: 120px; height: 2px; margin-top: 34px; border-radius: 2px;
+            background: rgba(255,255,255,.14); overflow: hidden;
+            opacity: 0; animation: intro-aparecer .4s .9s ease forwards;
+        }
+        #intro .barra i {
+            display: block; height: 100%; width: 100%; background: var(--ds-turquesa);
+            transform: scaleX(0); transform-origin: left;
+            animation: intro-cargar 1.8s 1s cubic-bezier(.6,0,.3,1) forwards;
+        }
+        #intro .credito {
+            position: absolute; bottom: 32px; left: 16px; right: 16px; text-align: center;
+            font-style: italic; font-size: .82rem; letter-spacing: .3px; color: rgba(255,255,255,.72);
+            opacity: 0; animation: intro-aparecer .8s 1.3s ease forwards;
+        }
+        #intro.salida img { transform: scale(1.04); transition: transform .7s ease; }
+        @keyframes intro-logo { to { opacity: 1; transform: none; filter: none; } }
+        @keyframes intro-halo { 0% { opacity: .55; transform: scale(.9); } 100% { opacity: 0; transform: scale(1.9); } }
+        @keyframes intro-cargar { to { transform: scaleX(1); } }
+        @keyframes intro-aparecer { to { opacity: 1; } }
+        @media (prefers-reduced-motion: reduce) {
+            #intro *, #intro { animation-duration: .01s !important; animation-delay: 0s !important; transition-duration: .2s !important; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Intro animada Dar Salud (clic o Esc para saltear) -->
+<div id="intro" role="presentation" aria-hidden="true">
+    <div class="logo-wrap">
+        <span class="halo"></span>
+        <img src="logo_darsalud.png" alt="DarSalud">
+    </div>
+    <div class="barra"><i></i></div>
+    <div class="credito">Dise&ntilde;o y desarrollo: Leandro Sesto - 2026</div>
+</div>
+
+<div id="zona-grafo">
+    <div id="contenedor-grafo"></div>
+    <div id="leyenda">
+        <label><span class="sw central"></span>PAMI Nivel Central</label>
+        <label><span class="sw ugl"></span>UGL con datos</label>
+        <label><span class="sw vacio"></span>UGL sin datos</label>
+        <label><input type="checkbox" id="chkAgencias" checked><span class="sw agencia"></span>Agencias</label>
+        <label><span class="sw agencia" style="background:#78542a;outline:1px solid var(--c-agencia)"></span>Agencia sin titular vigente</label>
+        <label title="Agencias del listado oficial de PAMI que todavía no tuvieron novedades en los boletines"><input type="checkbox" id="chkListado" checked><span class="sw listado"></span>Resto del listado oficial</label>
+        <div class="sep"></div>
+        <div class="hint-org">Tocá <b>PAMI Nivel Central</b> para desplegar el organigrama</div>
+        <div class="fila-org" title="Órgano de gobierno · Coordinación ejecutiva · Unidad operativa · Gerencia · Subgerencia">
+            <span class="sw org-organo" title="Órgano de gobierno"></span><span class="sw org-coordinacion" title="Coordinación ejecutiva"></span><span class="sw org-unidad" title="Unidad operativa"></span><span class="sw org-gerencia" title="Gerencia"></span><span class="sw org-subgerencia" title="Subgerencia"></span>
+        </div>
+    </div>
+    <div id="controles" aria-label="Controles de vista">
+        <button onclick="zoom(1.35)" title="Acercar" aria-label="Acercar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <button onclick="zoom(1/1.35)" title="Alejar" aria-label="Alejar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg></button>
+        <button onclick="verTodo()" title="Ver todo el grafo" aria-label="Ver todo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button>
+        <button onclick="pantallaCompleta()" id="btn-full" title="Pantalla completa (F)" aria-label="Pantalla completa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        <hr>
+        <button onclick="alternarTodas()" id="btn-colapsar" title="Contraer / expandir todas las agencias" aria-label="Contraer o expandir agencias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="5" r="1.5"/><circle cx="20" cy="5" r="1.5"/><circle cx="4" cy="19" r="1.5"/><circle cx="20" cy="19" r="1.5"/></svg></button>
+        <button onclick="reordenar()" title="Restablecer la ubicación de los nodos" aria-label="Restablecer ubicación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button>
+    </div>
+    <div id="ayuda-grafo">Tocá un nodo para desplegar lo que tiene adentro · doble clic para plegarlo · arrastrá para reubicar · F pantalla completa · Esc quita el resaltado</div>
+    <div id="buscador-rapido">
+        <div class="caja">
+            <svg class="lupa" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+            <input type="text" id="busquedaRapida" placeholder="Ir a UGL, localidad o agencia..." autocomplete="off" spellcheck="false">
+        </div>
+        <div id="sugerencias"></div>
+    </div>
+</div>
+
+<div id="divisor" title="Arrastr&aacute; para cambiar el ancho"></div>
+
+<div id="panel-lateral">
+    <div class="cabecera-panel">
+        <h2>Red Federal UGLs y Agencias</h2>
+        <input type="text" id="buscador" class="buscador-input" placeholder="Buscar UGL, Agencia o persona..." autocomplete="off">
+        <div class="badges" id="estadisticas"><span class="badge ugl">Cargando...</span></div>
+        <div id="barra-manuales">
+            <span class="txt" id="txt-manuales"></span>
+            <button class="btn chico" onclick="exportarManuales()" title="Descarga datos_manuales.json para subirlo al repositorio">Exportar</button>
+            <button class="btn chico" onclick="document.getElementById('archivo-manuales').click()" title="Cargar un datos_manuales.json">Importar</button>
+            <button class="btn chico peligro" onclick="descartarManuales()" title="Borra los cambios guardados en este navegador">Descartar</button>
+            <input type="file" id="archivo-manuales" accept="application/json,.json" hidden>
+        </div>
+    </div>
+    <div id="contenido-detalles">
+        <div class="mensaje-vacio">Seleccion&aacute; una UGL en el grafo para desplegar sus datos, autoridades y sus Agencias asociadas.</div>
+    </div>
+</div>
+
+<script>
+/* =====================================================================
+   1. CATÁLOGO OFICIAL DE UGLs
+   Fuente: institucional.pami.org.ar/files/programaDesarrolloPrestadores/contactos_UGL.pdf
+   "alias" = variantes con que aparecen en datos_ugl.json (sin tildes, en mayúsculas).
+   ===================================================================== */
+const CATALOGO_UGL = [
+    { num: 'I',       nombre: 'Tucumán',             alias: ['TUCUMAN'] },
+    { num: 'II',      nombre: 'Corrientes',          alias: ['CORRIENTES'] },
+    { num: 'III',     nombre: 'Córdoba',             alias: ['CORDOBA'] },
+    { num: 'IV',      nombre: 'Mendoza',             alias: ['MENDOZA'] },
+    { num: 'V',       nombre: 'Bahía Blanca',        alias: ['BAHIA BLANCA'] },
+    { num: 'VI',      nombre: 'Capital Federal',     alias: ['CAPITAL FEDERAL', 'CIUDAD AUTONOMA DE BUENOS AIRES', 'CABA'] },
+    { num: 'VII',     nombre: 'La Plata',            alias: ['LA PLATA'] },
+    { num: 'VIII',    nombre: 'San Martín',          alias: ['SAN MARTIN'] },
+    { num: 'IX',      nombre: 'Rosario',             alias: ['ROSARIO'] },
+    { num: 'X',       nombre: 'Lanús',               alias: ['LANUS'] },
+    { num: 'XI',      nombre: 'Mar del Plata',       alias: ['MAR DEL PLATA'] },
+    { num: 'XII',     nombre: 'Salta',               alias: ['SALTA'] },
+    { num: 'XIII',    nombre: 'Chaco',               alias: ['CHACO'] },
+    { num: 'XIV',     nombre: 'Entre Ríos',          alias: ['ENTRE RIOS', 'PARANA'] },
+    { num: 'XV',      nombre: 'Santa Fe',            alias: ['SANTA FE'] },
+    { num: 'XVI',     nombre: 'Neuquén',             alias: ['NEUQUEN'] },
+    { num: 'XVII',    nombre: 'Chubut',              alias: ['CHUBUT'] },
+    { num: 'XVIII',   nombre: 'Misiones',            alias: ['MISIONES'] },
+    { num: 'XIX',     nombre: 'Santiago del Estero', alias: ['SANTIAGO DEL ESTERO'] },
+    { num: 'XX',      nombre: 'La Pampa',            alias: ['LA PAMPA'] },
+    { num: 'XXI',     nombre: 'San Juan',            alias: ['SAN JUAN'] },
+    { num: 'XXII',    nombre: 'Jujuy',               alias: ['JUJUY'] },
+    { num: 'XXIII',   nombre: 'Formosa',             alias: ['FORMOSA'] },
+    { num: 'XXIV',    nombre: 'Catamarca',           alias: ['CATAMARCA'] },
+    { num: 'XXV',     nombre: 'La Rioja',            alias: ['LA RIOJA'] },
+    { num: 'XXVI',    nombre: 'San Luis',            alias: ['SAN LUIS'] },
+    { num: 'XXVII',   nombre: 'Río Negro',           alias: ['RIO NEGRO'] },
+    { num: 'XXVIII',  nombre: 'Santa Cruz',          alias: ['SANTA CRUZ'] },
+    { num: 'XXIX',    nombre: 'Morón',               alias: ['MORON'] },
+    { num: 'XXX',     nombre: 'Azul',                alias: ['AZUL'] },
+    { num: 'XXXI',    nombre: 'Junín',               alias: ['JUNIN'] },
+    { num: 'XXXII',   nombre: 'Luján',               alias: ['LUJAN'] },
+    { num: 'XXXIII',  nombre: 'Tierra del Fuego',    alias: ['TIERRA DEL FUEGO'] },
+    { num: 'XXXIV',   nombre: 'Concordia',           alias: ['CONCORDIA'] },
+    { num: 'XXXV',    nombre: 'San Justo',           alias: ['SAN JUSTO'] },
+    { num: 'XXXVI',   nombre: 'Río Cuarto',          alias: ['RIO CUARTO', 'RIO IV'] },
+    { num: 'XXXVII',  nombre: 'Quilmes',             alias: ['QUILMES'] },
+    { num: 'XXXVIII', nombre: 'Chivilcoy',           alias: ['CHIVILCOY'] }
+];
+
+/* Claves del JSON que en realidad son la localidad de una Agencia (el LLM las
+   cargó como si fueran UGL). Se cuelgan de su UGL real como Agencia.
+   Agregar acá cualquier localidad nueva que aparezca como "Sin clasificar". */
+const LOCALIDAD_A_UGL = {
+    'PUERTO DESEADO': 'XXVIII', 'GOBERNADOR GREGORES': 'XXVIII', 'CALETA OLIVIA': 'XXVIII',
+    'SAN JULIAN': 'XXVIII', 'PUERTO SANTA CRUZ': 'XXVIII',
+    'BANDERA': 'XIX', 'MONTE QUEMADO': 'XIX', 'TINTINA': 'XIX', 'OJO DE AGUA': 'XIX',
+    'FRIAS': 'XIX', 'CAMPO GALLO': 'XIX', 'ANATUYA': 'XIX', 'LA BANDA': 'XIX'
+};
+
+/* Cargos genéricos: si la misma persona ya figura en una Agencia de esa UGL, se descartan */
+const CARGOS_GENERICOS = /^(titular|designad[ao]|prestar servicios|prestador(a)? de servicios|desempe[nñ]ar tareas)$/i;
+
+/* =====================================================================
+   2. NORMALIZACIÓN: datos_ugl.json (plano) -> árbol UGL > Agencias (los CAP también se tratan como Agencia)
+   ===================================================================== */
+const sinTildes = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+const clave = s => sinTildes(String(s)).toUpperCase().replace(/[“”"'«»]/g, '').replace(/\s+/g, ' ').trim();
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const CONECTORES = new Set(['de', 'del', 'la', 'las', 'los', 'y', 'e']);
+const nombreBonito = s => {
+    // "Natalia Ivana CLEPPE" -> "Natalia Ivana Cleppe"; "OJO DE AGUA" -> "Ojo de Agua"
+    return String(s).trim().split(/\s+/).map((p, i) => {
+        if (p !== p.toUpperCase() || !/[A-ZÁÉÍÓÚÑ]/.test(p)) return p;          // ya viene en formato mixto
+        const low = p.toLowerCase();
+        if (i > 0 && CONECTORES.has(low)) return low;
+        return low.charAt(0).toUpperCase() + low.slice(1);
+    }).join(' ');
+};
+const tieneTildes = s => s !== sinTildes(s);
+const valorBasura = v => !v || /^EN CABA$/i.test(v.trim()) || /^\(?0\)?\s*0?$/.test(v.trim());
+
+function resolverUGL(claveJson) {
+    // Quita prefijos "UGLXI – ", "XXVIII - ", "UGL VI - "
+    const limpia = clave(claveJson).replace(/^(UGL\s*)?[IVXL]+\s*[-–—]\s*/, '').trim();
+    for (const u of CATALOGO_UGL) if (u.alias.includes(limpia)) return { ugl: u, localidad: null };
+    if (LOCALIDAD_A_UGL[limpia]) {
+        const u = CATALOGO_UGL.find(x => x.num === LOCALIDAD_A_UGL[limpia]);
+        return { ugl: u, localidad: limpia };
+    }
+    return { ugl: null, localidad: limpia };
+}
+
+// Detecta si un cargo pertenece a una Agencia (incluye CAP y Bocas de Atención). Devuelve {tipo, nombre, rol} o null.
+function clasificarCargo(cargo) {
+    const txt = cargo.replace(/\s+/g, ' ').trim();
+    let m = txt.match(/^(.*?)\b(?:CAP|Centro de Atenci[oó]n Personalizada)\b(?:\s+Cabecera)?\s*(.*)$/i);
+    if (m) return { tipo: 'agencia', nombre: cortarNombre(m[2]), rol: limpiarRol(m[1]) };
+    m = txt.match(/^(.*?)\b(?:Agencia|Boca de Atenci[oó]n)\b(?:\s+PAMI)?\s*(.*)$/i);
+    if (m && m[2]) return { tipo: 'agencia', nombre: cortarNombre(m[2]), rol: limpiarRol(m[1]), boca: /boca/i.test(txt) };
+    return null;
+}
+function cortarNombre(s) {
+    return s.replace(/\(.*?\)/g, '').split(/[,;]/)[0].replace(/[“”"]/g, '').trim();
+}
+function limpiarRol(s) {
+    let r = s.replace(/[\s,\-–]+$/, '').replace(/\s+(de la|del|de|en el|en la|en)$/i, '').trim();
+    if (!r || /^titular$/i.test(r)) return 'Titular';
+    return r.charAt(0).toUpperCase() + r.slice(1);
+}
+
+function construirModelo(datos) {
+    const ugls = new Map();   // num -> nodo UGL
+    const sinClasificar = []; // claves que no pudimos ubicar
+    const obtenerUgl = u => {
+        if (!ugls.has(u.num)) ugls.set(u.num, {
+            id: 'UGL-' + u.num, tipo: 'ugl', num: u.num, nombre: u.nombre,
+            direccion: null, telefono: null, autoridades: new Map(), hijos: new Map(), claves: []
+        });
+        return ugls.get(u.num);
+    };
+    // Registra persona en un mapa cargo -> [personas únicas]
+    const agregarPersona = (mapa, cargo, persona) => {
+        const k = clave(cargo);
+        if (!mapa.has(k)) mapa.set(k, { cargo, personas: [] });
+        const e = mapa.get(k);
+        if (!e.personas.some(p => clave(p) === clave(persona))) e.personas.push(nombreBonito(persona));
+    };
+    const obtenerHijo = (ugl, tipo, nombre) => {
+        const k = tipo + ':' + clave(nombre);
+        if (!ugl.hijos.has(k)) ugl.hijos.set(k, {
+            id: ugl.id + '|' + k, tipo, nombre: nombreBonito(nombre), ugl, autoridades: new Map()
+        });
+        const h = ugl.hijos.get(k);
+        if (tieneTildes(nombre) && !tieneTildes(h.nombre)) h.nombre = nombreBonito(nombre); // "Pigue" -> "Pigué"
+        return h;
+    };
+
+    // Todas las UGLs del catálogo aparecen, aunque no tengan datos
+    CATALOGO_UGL.forEach(obtenerUgl);
+
+    for (const [claveJson, info] of Object.entries(datos)) {
+        const { ugl: u, localidad } = resolverUGL(claveJson);
+        if (!u) { sinClasificar.push({ clave: claveJson, info }); continue; }
+        const ugl = obtenerUgl(u);
+        ugl.claves.push(claveJson);
+
+        for (const [cargo, valor] of Object.entries(info || {})) {
+            if (cargo === '_direccion') { if (!valorBasura(valor) && !localidad) ugl.direccion = valor; continue; }
+            if (cargo === '_telefono')  { if (!valorBasura(valor) && !localidad) ugl.telefono = valor; continue; }
+            if (cargo.startsWith('_') || !valor) continue;
+
+            let c = clasificarCargo(cargo);
+            // Clave-localidad (ej. "BANDERA") con cargo genérico -> es la Agencia de esa localidad
+            if (!c?.nombre && localidad) c = { tipo: 'agencia', nombre: localidad, rol: c?.rol || limpiarRol(cargo) };
+            if (c && c.nombre) {
+                const hijo = obtenerHijo(ugl, c.tipo, c.nombre);
+                if (c.boca) hijo.subtipo = 'Boca de Atención';
+                agregarPersona(hijo.autoridades, c.rol, valor);
+            } else {
+                agregarPersona(ugl.autoridades, cargo.charAt(0).toUpperCase() + cargo.slice(1), valor);
+            }
+        }
+    }
+
+    // Limpieza: cargos genéricos de UGL cuya persona ya está en una Agencia
+    for (const ugl of ugls.values()) {
+        const enHijos = new Set();
+        ugl.hijos.forEach(h => h.autoridades.forEach(a => a.personas.forEach(p => enHijos.add(clave(p)))));
+        for (const [k, a] of [...ugl.autoridades]) {
+            if (CARGOS_GENERICOS.test(a.cargo.trim())) {
+                a.personas = a.personas.filter(p => !enHijos.has(clave(p)));
+                if (!a.personas.length) ugl.autoridades.delete(k);
+            }
+        }
+    }
+    return { ugls: [...ugls.values()], sinClasificar };
+}
+
+
+/* =====================================================================
+   2b. CRUCE CON EL LISTADO OFICIAL DE AGENCIAS (directorio_agencias.json)
+   Se genera con importar_listado_agencias.py a partir del Excel de PAMI.
+   Solo completa datos que faltan: nunca pisa lo que ya viene de datos_ugl.json.
+   ===================================================================== */
+const ABREVIATURAS = [[/\bPTO\b/g, 'PUERTO'], [/\bGOB\b/g, 'GOBERNADOR'], [/\bGRAL\b/g, 'GENERAL'],
+                      [/\bCNEL\b/g, 'CORONEL'], [/\bSTA\b/g, 'SANTA'], [/\bSTGO\b/g, 'SANTIAGO']];
+function claveLugar(s) {
+    let k = clave(s)
+        .replace(/^UGL\s+[IVXL]+\s*[-–]\s*/, '')
+        .replace(/^(AGENCIA|BOCA DE ATENCION|BOCA COMPLEMENTARIA|BOCA|C\.?\s?A\.?\s?P\.?|CENTRO DE ATENCION PERSONALIZADA)\s*/, '')
+        .replace(/\bPAMI\b/g, '');
+    for (const [re, rep] of ABREVIATURAS) k = k.replace(re, rep);
+    return k.replace(/Z/g, 'S').replace(/[^A-Z0-9]/g, '');   // Gonzalez/Gonzales, Chavez/Chaves
+}
+
+function buscarEnDirectorio(lista, hijo) {
+    const k = claveLugar(hijo.nombre);
+    if (!k) return null;
+    const candidatos = lista.filter(e => e.tipo !== 'ugl');
+    const ordenar = arr => arr.sort((a, b) => (b.tipo === 'agencia') - (a.tipo === 'agencia'))[0] || null;
+    // 1) nombre exacto  2) localidad exacta  3) uno contiene al otro (mín. 5 letras)
+    return ordenar(candidatos.filter(e => claveLugar(e.nombre) === k))
+        || ordenar(candidatos.filter(e => claveLugar(e.localidad) === k))
+        || (k.length >= 5 ? ordenar(candidatos.filter(e => {
+                const n = claveLugar(e.nombre);
+                return n.length >= 5 && (n.includes(k) || k.includes(n));
+            })) : null);
+}
+
+function copiarUbicacion(destino, e) {
+    if (!destino.direccion && e.domicilio) destino.direccion = e.domicilio;
+    destino.localidad = destino.localidad || e.localidad;
+    if (destino.lat == null && e.lat != null) { destino.lat = e.lat; destino.lon = e.lon; }
+    destino.codigoPami = e.codigo;
+    destino.nombreOficial = e.nombre;
+}
+
+function enriquecerConDirectorio(modelo, dir) {
+    const reporte = { completadas: [], sinCoincidencia: [] };
+    for (const u of modelo.ugls) {
+        const lista = dir[u.num] || [];
+        const sede = lista.find(e => e.tipo === 'ugl');
+        if (sede) copiarUbicacion(u, sede);
+        for (const h of u.hijos.values()) {
+            const e = buscarEnDirectorio(lista, h);
+            if (e) { copiarUbicacion(h, e); reporte.completadas.push(`UGL ${u.num} · ${h.nombre} → ${e.nombre}`); }
+            else reporte.sinCoincidencia.push(`UGL ${u.num} · ${h.tipo.toUpperCase()} ${h.nombre}`);
+        }
+    }
+    modelo.reporteDirectorio = reporte;
+    if (reporte.sinCoincidencia.length) console.info('Sin coincidencia en el listado oficial:', reporte.sinCoincidencia);
+}
+
+/* =====================================================================
+   2c. FORMATO 2 (procesar_boletines.py): autoridades vigentes con fecha
+   ===================================================================== */
+function nuevaUGL(u) {
+    return { id: 'UGL-' + u.num, tipo: 'ugl', num: u.num, nombre: u.nombre, direccion: null, telefono: null,
+             autoridades: new Map(), hijos: new Map(), historial: [], claves: [], manual: {} };
+}
+function nuevaAgencia(ugl, nombre) {
+    const k = 'agencia:' + claveLugar(nombre);
+    return { id: ugl.id + '|' + k, clave: k, tipo: 'agencia', nombre, ugl, autoridades: new Map(), historial: [], manual: {} };
+}
+function autoridadDesdeBoletin(a) {
+    return { cargo: a.cargo, personas: [a.persona], desde: a.desde, norma: a.norma, fuente: 'boletin' };
+}
+
+function construirModeloV2(datos) {
+    const ugls = CATALOGO_UGL.map(nuevaUGL);
+    for (const u of ugls) {
+        const d = datos.ugls?.[u.num];
+        if (!d) continue;
+        u.claves.push(u.num);
+        for (const a of d.autoridades || []) u.autoridades.set(clave(a.cargo), autoridadDesdeBoletin(a));
+        u.historial = d.historial || [];
+        for (const [nombre, ag] of Object.entries(d.agencias || {})) {
+            const h = nuevaAgencia(u, nombre);
+            if (ag.tipo_original === 'Boca de Atención') h.subtipo = 'Boca de Atención';
+            h.tipoOriginal = ag.tipo_original;
+            for (const a of ag.autoridades || []) h.autoridades.set(clave(a.cargo), autoridadDesdeBoletin(a));
+            const kl = claveLugar(nombre);
+            h.historial = u.historial.filter(e => e.agencia && claveLugar(e.agencia) === kl);
+            u.hijos.set(h.clave, h);
+        }
+    }
+    return { ugls, sinClasificar: [], meta: datos._meta || {} };
+}
+
+/* =====================================================================
+   2d. DATOS CARGADOS A MANO
+   Se guardan en este navegador (localStorage) y se pueden exportar como
+   datos_manuales.json. Si ese archivo está en el repositorio, lo ven todos.
+   Prioridad: manual > boletines > listado oficial de agencias.
+   ===================================================================== */
+const CLAVE_LOCAL = 'graffo_datos_manuales_v1';
+let MANUALES_REPO = { ugls: {} }, MANUALES_LOCAL = { ugls: {} };
+let DATOS_RAW = null, DIR_RAW = null;
+
+function leerLocal() {
+    try { return JSON.parse(localStorage.getItem(CLAVE_LOCAL)) || { ugls: {} }; } catch (e) { return { ugls: {} }; }
+}
+function guardarLocal() {
+    try { localStorage.setItem(CLAVE_LOCAL, JSON.stringify(MANUALES_LOCAL)); } catch (e) { console.warn('No se pudo guardar en el navegador', e); }
+}
+function fusionarManuales(base, extra) {
+    // extra pisa a base, campo por campo y autoridad por autoridad
+    const out = JSON.parse(JSON.stringify(base || { ugls: {} }));
+    out.ugls = out.ugls || {};
+    for (const [num, e] of Object.entries(extra?.ugls || {})) {
+        const d = out.ugls[num] = out.ugls[num] || {};
+        const mezclar = (dst, src) => {
+            for (const f of ['direccion', 'localidad', 'telefono', 'nueva', 'eliminada']) if (src[f] !== undefined) dst[f] = src[f];
+            if (src.autoridades) {
+                const m = new Map((dst.autoridades || []).map(a => [clave(a.cargo), a]));
+                for (const a of src.autoridades) m.set(clave(a.cargo), a);
+                dst.autoridades = [...m.values()];
+            }
+        };
+        mezclar(d, e);
+        for (const [nom, ag] of Object.entries(e.agencias || {})) {
+            d.agencias = d.agencias || {};
+            const k = Object.keys(d.agencias).find(x => claveLugar(x) === claveLugar(nom)) || nom;
+            d.agencias[k] = d.agencias[k] || {};
+            mezclar(d.agencias[k], ag);
+        }
+    }
+    out.central = out.central || {};
+    for (const [id, e] of Object.entries(extra?.central || {})) {
+        const d = out.central[id] = out.central[id] || {};
+        for (const f of ['direccion', 'localidad', 'telefono']) if (e[f] !== undefined) d[f] = e[f];
+        if (e.autoridades) {
+            const mm = new Map((d.autoridades || []).map(a => [clave(a.cargo), a]));
+            for (const a of e.autoridades) mm.set(clave(a.cargo), a);
+            d.autoridades = [...mm.values()];
+        }
+    }
+    return out;
+}
+function contarCambios(m) {
+    let n = 0;
+    for (const u of Object.values(m.ugls || {})) {
+        n += ['direccion', 'localidad', 'telefono'].filter(f => u[f] !== undefined).length + (u.autoridades || []).length;
+        for (const a of Object.values(u.agencias || {}))
+            n += ['direccion', 'localidad', 'telefono', 'nueva'].filter(f => a[f] !== undefined).length + (a.autoridades || []).length;
+    }
+    for (const c of Object.values(m.central || {}))
+        n += ['direccion', 'localidad', 'telefono'].filter(f => c[f] !== undefined).length + (c.autoridades || []).length;
+    return n;
+}
+
+function aplicarManuales(modelo, man) {
+    const aplicar = (obj, m) => {
+        for (const f of ['direccion', 'localidad', 'telefono']) {
+            if (m[f] !== undefined && m[f] !== null) { obj[f] = m[f] || null; obj.manual[f] = true; if (f === 'direccion') { obj.lat = obj.lon = null; } }
+        }
+        for (const a of m.autoridades || []) {
+            const k = clave(a.cargo);
+            if (a.eliminado) obj.autoridades.delete(k);
+            else obj.autoridades.set(k, { cargo: a.cargo, personas: [a.persona], desde: a.fecha || null, fuente: 'manual' });
+        }
+    };
+    for (const [oid, mc] of Object.entries(man.central || {})) {
+        const o = modelo.org?.get('ORG-' + oid);
+        if (o) aplicar(o, mc);
+    }
+    for (const u of modelo.ugls) {
+        const m = man.ugls?.[u.num];
+        if (!m) continue;
+        aplicar(u, m);
+        for (const [nom, ma] of Object.entries(m.agencias || {})) {
+            let h = u.hijos.get('agencia:' + claveLugar(nom));
+            if (ma.eliminada) { if (h && h.manualNueva) u.hijos.delete(h.clave); continue; }
+            if (!h) {
+                if (!ma.nueva) continue;
+                h = nuevaAgencia(u, nom); h.manualNueva = true;
+                u.hijos.set(h.clave, h);
+            }
+            aplicar(h, ma);
+        }
+    }
+}
+
+/* =====================================================================
+   2e. ORGANIGRAMA DEL NIVEL CENTRAL (organigrama.json + autoridades de los boletines)
+   ===================================================================== */
+let ORG_RAW = null;
+const NIVELES_ORG = { organo: 'Órgano de gobierno', coordinacion: 'Coordinación ejecutiva', unidad: 'Unidad operativa', gerencia: 'Nivel gerencial', subgerencia: 'Nivel subgerencial' };
+function construirOrg(m) {
+    m.org = new Map();
+    if (!ORG_RAW) return;
+    const nc = DATOS_RAW?.nivel_central || {};
+    for (const u of ORG_RAW.unidades) {
+        const o = { id: 'ORG-' + u.id, orgId: u.id, tipo: 'org', nivel: u.nivel, nombre: u.nombre, staff: !!u.staff, redUgl: !!u.red_ugl,
+                    siglas: u.siglas || [], padreId: u.padre ? 'ORG-' + u.padre : null, hijos: [], autoridades: new Map(),
+                    historial: nc[u.id]?.historial || [], manual: {} };
+        for (const a of nc[u.id]?.autoridades || []) o.autoridades.set(clave(a.cargo), autoridadDesdeBoletin(a));
+        m.org.set(o.id, o);
+    }
+    // La Dirección Ejecutiva ES el nodo "PAMI Nivel Central"; la Sindicatura (órgano de control) cuelga de él solo a fines visuales
+    const de = m.org.get('ORG-DE');
+    if (de) { m.org.delete('ORG-DE'); de.id = 'CENTRAL'; m.org.set('CENTRAL', de); }
+    for (const o of m.org.values()) {
+        if (o.padreId === 'ORG-DE') o.padreId = 'CENTRAL';
+        if (!o.padreId && o.orgId !== 'DE') { o.padreId = 'CENTRAL'; o.independiente = true; }
+    }
+    for (const o of m.org.values()) if (o.padreId && m.org.has(o.padreId)) { o.padre = m.org.get(o.padreId); o.padre.hijos.push(o); }
+    m.orgOtros = DATOS_RAW?.nivel_central_otros || { autoridades: [], historial: [] };
+}
+
+function construirTodo() {
+    const m = DATOS_RAW && DATOS_RAW._formato === 2 ? construirModeloV2(DATOS_RAW) : construirModelo(DATOS_RAW || {});
+    for (const u of m.ugls) { u.manual = u.manual || {}; u.historial = u.historial || []; for (const h of u.hijos.values()) { h.manual = h.manual || {}; h.historial = h.historial || []; } }
+    if (DIR_RAW) enriquecerConDirectorio(m, DIR_RAW);
+    for (const u of m.ugls) for (const h of u.hijos.values()) if (h.manualNueva === undefined) h.manualNueva = false;
+    construirOrg(m);
+    aplicarManuales(m, fusionarManuales(MANUALES_REPO, MANUALES_LOCAL));
+    // Agencias del listado oficial que no tuvieron novedades en los boletines
+    if (DIR_RAW) for (const u of m.ugls) {
+        const usados = new Set([...u.hijos.values()].map(h => h.codigoPami).filter(Boolean));
+        for (const e of DIR_RAW[u.num] || []) {
+            if (e.tipo === 'ugl' || usados.has(e.codigo)) continue;
+            const nombre = (e.nombre.replace(/^(AGENCIA|BOCA DE ATENCI[OÓ]N|BOCA COMPLEMENTARIA|BOCA|C\.?A\.?P\.?)\s*/i, '').trim().toLowerCase().replace(/(^|[\s.])\S/g, c => c.toUpperCase()).replace(/\b(De|Del|La|Las|Los|Y)\b/g, w => w.toLowerCase()));
+            const h = nuevaAgencia(u, nombre);
+            if (u.hijos.has(h.clave)) continue;
+            h.soloListado = true; h.manualNueva = false;
+            if (e.tipo === 'boca') h.subtipo = 'Boca de Atención';
+            copiarUbicacion(h, e);
+            u.hijos.set(h.clave, h);
+        }
+    }
+    // Las agencias nuevas cargadas a mano también buscan domicilio en el listado oficial
+    if (DIR_RAW) for (const u of m.ugls) for (const h of u.hijos.values())
+        if (h.manualNueva && !h.direccion) { const e = buscarEnDirectorio(DIR_RAW[u.num] || [], h); if (e) copiarUbicacion(h, e); }
+    return m;
+}
+
+/* =====================================================================
+   3. GRAFO
+   ===================================================================== */
+const COLORES = {
+    central: '#3b82f6', ugl: '#10b981', uglVacia: '#475569', agencia: '#f59e0b'
+};
+let red = null, nodosDS = null, aristasDS = null, modelo = null;
+const indice = new Map(); // id -> objeto del modelo
+
+const svgPin = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>`;
+const svgPhone = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>`;
+
+async function leerJSON(url) {
+    try { const r = await fetch(url, { cache: 'no-store' }); return r.ok ? await r.json() : null; } catch (e) { return null; }
+}
+
+async function inicializar() {
+    DATOS_RAW = await leerJSON('datos_ugl.json');
+    if (!DATOS_RAW) {
+        intro.listo();
+        document.getElementById('contenido-detalles').innerHTML = `
+            <div class="mensaje-vacio" style="color:#ef4444">
+                <b>No se pudo cargar datos_ugl.json.</b><br><br>
+                Si lo abr&iacute;s localmente, ejecut&aacute;:<br><code>python -m http.server 8000</code><br>
+                y entr&aacute; a <b>http://localhost:8000</b>
+            </div>`;
+        return;
+    }
+    DIR_RAW = await leerJSON('directorio_agencias.json');           // listado oficial (opcional)
+    ORG_RAW = await leerJSON('organigrama.json');                   // organigrama del Nivel Central (opcional)
+    MANUALES_REPO = (await leerJSON('datos_manuales.json')) || { ugls: {} };  // cargas manuales publicadas (opcional)
+    MANUALES_LOCAL = leerLocal();                                   // cargas manuales de este navegador
+    modelo = construirTodo();
+    window.modeloPAMI = modelo; // útil para depurar desde la consola
+    dibujar();
+    actualizarBarraManuales();
+}
+
+function fechaCorta(iso) {
+    if (!iso) return '';
+    const [y, m, d] = iso.split('-');
+    return `${d}/${m}/${y}`;
+}
+
+function titularDe(o) {
+    const a = [...o.autoridades.values()].find(x => x.cargo === 'Titular' || x.cargo.startsWith('Titular de la UGL'));
+    return a ? a.personas[0] : null;
+}
+function nodoUGL(u) {
+    const conDatos = u.autoridades.size || [...u.hijos.values()].some(h => !h.soloListado) || u.telefono;
+    const col = conDatos ? COLORES.ugl : COLORES.uglVacia;
+    const tit = titularDe(u);
+    const nAg = u.hijos.size, colapsada = COLAPSADAS.has(u.id);
+    return {
+        id: u.id, label: `UGL ${u.num}${colapsada && nAg ? `  +${nAg}` : ''}\n${u.nombre}`, shape: 'dot', size: 13,
+        title: `UGL ${u.num} – ${u.nombre}\n${tit ? 'Titular: ' + tit : 'Titular: sin dato'}\n${nAg} agencia(s) · ${colapsada ? 'tocá para desplegar' : 'doble clic para plegar'}`,
+        color: { background: col, border: colapsada ? col : '#a7f3d0', highlight: { background: '#34d399', border: '#6ee7b7' }, hover: { background: '#34d399', border: '#6ee7b7' } },
+        borderWidth: colapsada ? 1.5 : 3,
+        font: { color: conDatos ? '#e2e8f0' : '#94a3b8', size: 15, strokeWidth: 4, strokeColor: '#090d16' }
+    };
+}
+function nodoAgencia(h) {
+    const c = COLORES.agencia;
+    const tit = titularDe(h);
+    if (h.soloListado) return {
+        id: h.id, tipo: 'agencia', listado: true, label: h.nombre, shape: 'diamond', size: 6,
+        title: `${h.subtipo || 'Agencia'} ${h.nombre} · UGL ${h.ugl.num}\n${h.direccion ? h.direccion + (h.localidad ? ', ' + h.localidad : '') : ''}\nSin novedades en los boletines analizados`,
+        color: { background: '#0b1220', border: '#a16207', highlight: { background: '#fde68a', border: '#fbbf24' }, hover: { background: '#3b2a10', border: '#f59e0b' } },
+        font: { color: '#64748b', size: 10 }
+    };
+    const vacante = !h.autoridades.size;
+    return {
+        id: h.id, tipo: 'agencia', label: h.nombre, shape: 'diamond', size: 8,
+        title: `${h.subtipo || 'Agencia'} ${h.nombre} · UGL ${h.ugl.num}\n${tit ? 'Titular: ' + tit : vacante ? 'Sin titular vigente' : h.autoridades.size + ' autoridad(es)'}`,
+        color: { background: vacante ? '#78542a' : c, border: c, highlight: { background: '#fde68a', border: '#fbbf24' }, hover: { background: '#fcd34d', border: '#fbbf24' } },
+        font: { color: '#94a3b8', size: 11 }
+    };
+}
+
+const ESTILO_ORG = {
+    organo:       { color: '#60a5fa', tam: 13, letra: '#e2e8f0', fuente: 14 },
+    coordinacion: { color: '#f7941d', tam: 12, letra: '#fde7c7', fuente: 14 },
+    unidad:       { color: '#2dd4bf', tam: 11, letra: '#ccfbf1', fuente: 13 },
+    gerencia:     { color: '#5eead4', tam: 8,  letra: '#cbd5e1', fuente: 12 },
+    subgerencia:  { color: '#a78bfa', tam: 6,  letra: '#94a3b8', fuente: 11 }
+};
+const EXPANDIDOS = new Set();   // nodos del organigrama con sus dependencias desplegadas
+const titulo = t => t.replace(/\b(De|Del|La|Las|Los|Y|E|En|Con|A)\b/g, w => w.toLowerCase());
+function nodoCentral() {
+    const abierto = EXPANDIDOS.has('CENTRAL');
+    const de = modelo.org?.get('CENTRAL');
+    const n = de ? de.hijos.length : 0;
+    return {
+        id: 'CENTRAL', label: `PAMI\nNivel Central${n && !abierto ? '\n+ organigrama' : ''}`, shape: 'dot', size: 30,
+        title: n ? (abierto ? 'Dirección Ejecutiva · doble clic para plegar el organigrama' : 'Dirección Ejecutiva · tocá para desplegar el organigrama') : 'PAMI – Nivel Central',
+        color: { background: COLORES.central, border: abierto ? '#bfdbfe' : '#60a5fa', highlight: { background: '#60a5fa', border: '#dbeafe' }, hover: { background: '#60a5fa', border: '#dbeafe' } },
+        borderWidth: abierto ? 3 : 2,
+        font: { color: '#f8fafc', size: 26, bold: true, strokeWidth: 4, strokeColor: '#090d16', multi: false }
+    };
+}
+function nodoOrg(o) {
+    const e = ESTILO_ORG[o.nivel] || ESTILO_ORG.gerencia;
+    const tit = titularDe(o);
+    const cerrado = o.hijos.length && !EXPANDIDOS.has(o.id);
+    return {
+        id: o.id, tipo: 'org', label: titulo(o.nombre) + (cerrado ? `  (+${o.hijos.length})` : ''), shape: 'dot', size: e.tam,
+        title: `${o.nombre}\n${NIVELES_ORG[o.nivel]}\n${tit ? 'Titular: ' + tit : 'Titular: sin dato en boletines'}${o.hijos.length ? `\n${o.hijos.length} unidad(es) a cargo · ${cerrado ? 'tocá para desplegar' : 'doble clic para plegar'}` : ''}`,
+        color: { background: e.color, border: tit ? '#f8fafc' : e.color, highlight: { background: e.color, border: '#ffffff' }, hover: { background: e.color, border: '#ffffff' } },
+        borderWidth: tit ? 2 : 1,
+        font: { color: e.letra, size: e.fuente, strokeWidth: 3, strokeColor: '#090d16' }
+    };
+}
+
+// Organigrama radial dentro del anillo de UGLs: cada unidad recibe una porción del círculo
+// proporcional a la cantidad de dependencias que tiene (así las ramas no se cruzan).
+const RADIOS_ORG = [0, 240, 390, 510, 610];   // todo el organigrama entra dentro del anillo de UGLs
+function layoutOrg() {
+    const pos = {};
+    const raiz = modelo.org?.get('CENTRAL');
+    if (!raiz) return pos;
+    // peso = hojas + 1.5: las unidades chicas también reciben espacio para su etiqueta
+    const hojas = o => (o.hijos.length ? o.hijos.reduce((t, h) => t + hojas(h), 0) : 1) + (o.padre && o.padre.id === 'CENTRAL' ? 3 : 0);
+    const ubicar = (o, a0, a1, prof) => {
+        const total = o.hijos.reduce((t, h) => t + hojas(h), 0);
+        let a = a0;
+        for (const h of o.hijos) {
+            const cuña = (a1 - a0) * hojas(h) / total;
+            const ang = a + cuña / 2;
+            const r = RADIOS_ORG[Math.min(prof, RADIOS_ORG.length - 1)];
+            pos[h.id] = { x: Math.cos(ang) * r, y: Math.sin(ang) * r };
+            ubicar(h, a + cuña * 0.04, a + cuña * 0.96, prof + 1);
+            a += cuña;
+        }
+    };
+    ubicar(raiz, -Math.PI / 2, 1.5 * Math.PI, 1);
+    return pos;
+}
+
+function visibleOrg(o) {
+    for (let p = o.padre; p; p = p.padre) if (!EXPANDIDOS.has(p.id)) return false;
+    return true;
+}
+function orgVisible() { return EXPANDIDOS.has('CENTRAL'); }
+
+// Despliega las dependencias de una unidad con una pequeña animación desde el nodo padre
+function expandir(id, animar = true) {
+    const o = modelo.org?.get(id);
+    if (!o || !o.hijos.length || EXPANDIDOS.has(id)) return;
+    EXPANDIDOS.add(id);
+    const origen = red.getPositions([id])[id];
+    const lay = layoutOrg();
+    const destinos = o.hijos.map(h => ({ id: h.id, fin: posicionDe(h.id, lay) }));
+    nodosDS.update([id === 'CENTRAL' ? nodoCentral() : nodoOrg(o), ...o.hijos.map(h => ({ ...nodoOrg(h), hidden: false }))]);
+    if (!animar) { destinos.forEach(d => red.moveNode(d.id, d.fin.x, d.fin.y)); return; }
+    animarDesde(origen, destinos);
+}
+function contraer(id) {
+    const o = modelo.org?.get(id);
+    if (!o || !EXPANDIDOS.has(id)) return;
+    const ocultar = x => x.hijos.forEach(h => { EXPANDIDOS.delete(h.id); ocultar(h); });
+    EXPANDIDOS.delete(id);
+    ocultar(o);
+    const ids = []; const junta = x => x.hijos.forEach(h => { ids.push(h.id); junta(h); }); junta(o);
+    nodosDS.update([id === 'CENTRAL' ? nodoCentral() : nodoOrg(o), ...ids.map(i => ({ ...nodoOrg(modelo.org.get(i)), hidden: true }))]);
+    if (resaltado && !indice.get(resaltado)?.tipo) resaltar(null);
+}
+
+/* ---------- Ubicación de nodos: radial + posiciones guardadas ---------- */
+const CLAVE_POS = 'graffo_posiciones_v3';
+const COLAPSADAS = new Set();
+let POS_GUARDADAS = {};
+try { POS_GUARDADAS = JSON.parse(localStorage.getItem(CLAVE_POS)) || {}; } catch (e) { POS_GUARDADAS = {}; }
+function guardarPosiciones() {
+    try { localStorage.setItem(CLAVE_POS, JSON.stringify(red.getPositions(nodosDS.getIds()))); } catch (e) {}
+}
+
+// Árbol radial: cada UGL recibe una "porción" del círculo proporcional a su cantidad de agencias,
+// y sus agencias se ubican en anillos dentro de esa porción (así no se mezclan con las de otra UGL).
+const R_UGL = 700;
+function layoutRadial() {
+    const pos = { CENTRAL: { x: 0, y: 0 } };
+    const R = R_UGL, SEP = 46, PRIMER = 170, PASO = 56, SPAN_MAX = 1.15;
+    const n = modelo.ugls.length;
+    modelo.ugls.forEach((u, i) => {
+        const ang = -Math.PI / 2 + (2 * Math.PI * i) / n;
+        pos[u.id] = { x: Math.cos(ang) * R, y: Math.sin(ang) * R };
+        // Las agencias se abren en abanico hacia afuera de su UGL, en anillos
+        const hijos = [...u.hijos.values()].sort((a, b) => (!!a.soloListado - !!b.soloListado) || a.nombre.localeCompare(b.nombre));
+        let k = 0, anillo = 0;
+        while (k < hijos.length) {
+            const radio = R + PRIMER + anillo * PASO;
+            const cap = Math.max(1, Math.floor((SPAN_MAX * radio) / SEP) + 1);
+            const grupo = hijos.slice(k, k + cap);
+            const span = ((grupo.length - 1) * SEP) / radio;
+            grupo.forEach((h, j) => {
+                const a = ang + (grupo.length === 1 ? 0 : -span / 2 + (span * j) / (grupo.length - 1));
+                pos[h.id] = { x: Math.cos(a) * radio, y: Math.sin(a) * radio };
+            });
+            k += cap; anillo++;
+        }
+    });
+    return pos;
+}
+function posicionDe(id, lay) { return POS_GUARDADAS[id] || lay[id] || { x: 0, y: 0 }; }
+
+function renderBadges() {
+    let nAg = 0, nNov = 0;
+    for (const u of modelo.ugls) for (const h of u.hijos.values()) { nAg++; if (!h.soloListado) nNov++; }
+    const badges = [
+        `<span class="badge ugl">${modelo.ugls.length} UGLs</span>`,
+        `<span class="badge agencia" title="${nNov} con novedades en los boletines · ${nAg - nNov} solo en el listado oficial">${nAg} Agencias</span>`
+    ];
+    if (modelo.sinClasificar.length) badges.push(`<span class="badge alerta" onclick="mostrarSinClasificar()">${modelo.sinClasificar.length} sin clasificar</span>`);
+    if (modelo.meta?.hasta) badges.push(`<span class="badge" style="color:var(--text-muted);border-color:var(--border-color)" title="${modelo.meta.boletines} boletines analizados desde ${fechaCorta(modelo.meta.desde)}">Boletines al ${fechaCorta(modelo.meta.hasta)}</span>`);
+    document.getElementById('estadisticas').innerHTML = badges.join('');
+}
+
+function reindexar() {
+    indice.clear();
+    indice.set('CENTRAL', { tipo: 'central' });
+    for (const u of modelo.ugls) { indice.set(u.id, u); for (const h of u.hijos.values()) indice.set(h.id, h); }
+    for (const o of modelo.org?.values() || []) indice.set(o.id, o);   // incluye 'CENTRAL' = Dirección Ejecutiva
+}
+
+function dibujar() {
+    modelo.ugls.forEach(u => COLAPSADAS.add(u.id));      // todo empieza plegado
+    const lay = layoutRadial();
+    const nodos = [], aristas = [];
+    nodos.push({ ...nodoCentral(), ...posicionDe('CENTRAL', lay) });
+    const layOrg = layoutOrg();
+    for (const o of modelo.org?.values() || []) {
+        if (o.id === 'CENTRAL') continue;
+        nodos.push({ ...nodoOrg(o), ...posicionDe(o.id, layOrg), hidden: !visibleOrg(o) });
+        if (o.padre) aristas.push({ id: 'e-' + o.id, from: o.padre.id, to: o.id, org: true, dashes: o.staff || o.independiente,
+            width: 1.2, color: { color: '#3b4a63' } });
+    }
+    for (const u of modelo.ugls) {
+        nodos.push({ ...nodoUGL(u), ...posicionDe(u.id, lay) });
+        aristas.push({ id: 'e-' + u.id, from: 'CENTRAL', to: u.id, color: { color: '#1e3a5f' } });
+        for (const h of u.hijos.values()) {
+            nodos.push({ ...nodoAgencia(h), ...posicionDe(h.id, lay) });
+            aristas.push({ id: 'e-' + h.id, from: u.id, to: h.id, dashes: !!h.soloListado, color: { color: '#1e293b' } });
+        }
+    }
+    reindexar();
+    renderBadges();
+
+    nodosDS = new vis.DataSet(nodos);
+    aristasDS = new vis.DataSet(aristas);
+    red = new vis.Network(document.getElementById('contenedor-grafo'), { nodes: nodosDS, edges: aristasDS }, {
+        nodes: { borderWidth: 1.5, shadow: { enabled: true, color: 'rgba(0,0,0,.6)', size: 4 },
+                 scaling: { label: { drawThreshold: 5 } } },          // oculta textos diminutos al alejar
+        edges: { width: 0.8, smooth: false, color: { highlight: '#3b82f6', hover: '#3b82f6' }, selectionWidth: 1.5 },
+        physics: false,
+        interaction: { hover: true, tooltipDelay: 250, dragNodes: true, hideEdgesOnDrag: false, zoomSpeed: 0.8 }
+    });
+    red.once('afterDrawing', () => { intro.listo(); red.fit({ animation: false }); });
+    aplicarFiltros();
+    conectarInteracciones();
+}
+
+/* ---------- Interacciones del grafo ---------- */
+let arrastre = null;   // { id, inicio, hijos: {id: {x,y}} }
+function conectarInteracciones() {
+    red.on('click', p => {
+        const id = p.nodes[0];
+        if (id) {
+            const o = modelo.org?.get(id);
+            if (o && o.hijos.length && !EXPANDIDOS.has(id)) {
+                expandir(id);
+                aplicarFiltros();
+                acercarA([id, ...o.hijos.map(h => h.id)], 1.2);
+            }
+            const u = indice.get(id);
+            if (u?.tipo === 'ugl' && COLAPSADAS.has(id) && u.hijos.size && document.getElementById('chkAgencias').checked) {
+                alternarColapso(id, true);
+                acercarA([id, ...[...u.hijos.values()].filter(h => !nodosDS.get(h.id)?.hidden).map(h => h.id)], 1.3);
+            }
+            seleccionar(id, false); resaltar(id);
+        }
+        else if (!p.edges.length) resaltar(null);
+    });
+    red.on('doubleClick', p => {
+        const id = p.nodes[0];
+        if (id && indice.get(id)?.tipo === 'ugl') {
+            if (!COLAPSADAS.has(id)) { alternarColapso(id); red.focus(id, { scale: Math.min(red.getScale(), 0.9), animation: { duration: 450 } }); }
+        }
+        else if (id && modelo.org?.has(id)) { contraer(id); aplicarFiltros(); red.focus(id, { scale: Math.min(red.getScale(), 1), animation: { duration: 450 } }); }
+        else if (!id) verTodo();
+    });
+    // Arrastrar una UGL mueve también sus agencias
+    red.on('dragStart', p => {
+        const id = p.nodes[0];
+        const o = id && indice.get(id);
+        if (!o || (o.tipo !== 'ugl' && o.tipo !== 'org')) { arrastre = null; return; }
+        const desc = x => x.hijos.flatMap(h => [h.id, ...desc(h)]);
+        const ids = o.tipo === 'ugl' ? [...o.hijos.values()].map(h => h.id) : desc(o);
+        if (!ids.length) { arrastre = null; return; }
+        arrastre = { id, inicio: red.getPositions([id])[id], hijos: red.getPositions(ids) };
+    });
+    red.on('dragging', () => {
+        if (!arrastre) return;
+        const actual = red.getPositions([arrastre.id])[arrastre.id];
+        const dx = actual.x - arrastre.inicio.x, dy = actual.y - arrastre.inicio.y;
+        for (const [hid, p0] of Object.entries(arrastre.hijos)) red.moveNode(hid, p0.x + dx, p0.y + dy);
+    });
+    red.on('dragEnd', p => {
+        arrastre = null;
+        if (p.nodes.length) { guardarPosiciones(); POS_GUARDADAS = red.getPositions(nodosDS.getIds()); }
+    });
+    red.on('hoverNode', () => { document.getElementById('contenedor-grafo').style.cursor = 'grab'; });
+    red.on('blurNode', () => { document.getElementById('contenedor-grafo').style.cursor = ''; });
+}
+
+let resaltado = null;
+function resaltar(id) {
+    resaltado = id;
+    const vivos = new Set();
+    if (id) {
+        const o = indice.get(id);
+        vivos.add(id); vivos.add('CENTRAL');
+        if (o?.tipo === 'ugl') { o.hijos.forEach(h => vivos.add(h.id)); if (orgVisible()) ['ORG-UGTO', 'ORG-SE'].forEach(x => vivos.add(x)); }
+        else if (o?.tipo === 'agencia') { vivos.add(o.ugl.id); o.ugl.hijos.forEach(h => vivos.add(h.id)); }
+        else if (o?.tipo === 'org') {
+            for (let p = o.padre; p; p = p.padre) vivos.add(p.id);
+            const baja = x => x.hijos.forEach(h => { vivos.add(h.id); baja(h); });
+            baja(o);
+            if (o.redUgl) modelo.ugls.forEach(u => vivos.add(u.id));
+        }
+    }
+    nodosDS.update(nodosDS.get().map(n => {
+        const fc = n.fc || n.font?.color || '#94a3b8';
+        const on = !id || vivos.has(n.id);
+        return { id: n.id, fc, opacity: on ? 1 : 0.12, font: { ...n.font, color: on ? fc : 'rgba(100,116,139,0.12)', strokeWidth: on ? (n.font?.strokeWidth || 0) : 0 } };
+    }));
+    aristasDS.update(aristasDS.get().map(e => ({ id: e.id, color: { ...e.color, opacity: !id || (vivos.has(e.from) && vivos.has(e.to)) ? 1 : 0.08 } })));
+}
+
+function alternarColapso(uid, animar = false) {
+    const u = indice.get(uid);
+    if (COLAPSADAS.has(uid)) {
+        COLAPSADAS.delete(uid);
+        nodosDS.update(nodoUGL(u));
+        aplicarFiltros();
+        if (animar) {
+            const origen = red.getPositions([uid])[uid];
+            const lay = layoutRadial();
+            const destinos = [...u.hijos.values()].map(h => ({ id: h.id, fin: posicionDe(h.id, lay) }));
+            animarDesde(origen, destinos);
+        }
+    } else {
+        COLAPSADAS.add(uid);
+        nodosDS.update(nodoUGL(u));
+        aplicarFiltros();
+    }
+}
+// Mueve nodos desde un punto de origen hasta su destino (efecto "se despliega")
+function animarDesde(origen, destinos, dur = 380) {
+    destinos.forEach(d => red.moveNode(d.id, origen.x, origen.y));
+    const t0 = performance.now();
+    const paso = t => {
+        const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+        destinos.forEach(d => red.moveNode(d.id, origen.x + (d.fin.x - origen.x) * e, origen.y + (d.fin.y - origen.y) * e));
+        if (k < 1) requestAnimationFrame(paso);
+    };
+    requestAnimationFrame(paso);
+}
+// Acerca la vista a un nodo y lo que acaba de desplegar
+function acercarA(ids, maxZoom = 1.3) {
+    setTimeout(() => red.fit({ nodes: ids, maxZoomLevel: maxZoom, animation: { duration: 650, easingFunction: 'easeInOutCubic' } }), 330);
+}
+function alternarTodas() {
+    const todas = COLAPSADAS.size < modelo.ugls.length;
+    COLAPSADAS.clear();
+    if (todas) modelo.ugls.forEach(u => COLAPSADAS.add(u.id));
+    nodosDS.update(modelo.ugls.map(nodoUGL));
+    aplicarFiltros();
+    verTodo();
+}
+const ICONO_FULL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>';
+const ICONO_SALIR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>';
+function pantallaCompleta() {
+    const el = document.documentElement;
+    const activo = document.fullscreenElement || document.webkitFullscreenElement;
+    try {
+        if (activo) (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+        else (el.requestFullscreen || el.webkitRequestFullscreen).call(el);
+    } catch (e) { console.warn('Pantalla completa no disponible', e); }
+}
+['fullscreenchange', 'webkitfullscreenchange'].forEach(ev => document.addEventListener(ev, () => {
+    const activo = !!(document.fullscreenElement || document.webkitFullscreenElement);
+    const b = document.getElementById('btn-full');
+    b.innerHTML = activo ? ICONO_SALIR : ICONO_FULL;
+    b.title = activo ? 'Salir de pantalla completa (F)' : 'Pantalla completa (F)';
+    setTimeout(() => { if (red) { red.redraw(); red.fit({ animation: { duration: 400 } }); } }, 150);
+}));
+document.addEventListener('keydown', e => {
+    if ((e.key === 'f' || e.key === 'F') && !/INPUT|TEXTAREA/.test(document.activeElement.tagName) && !e.ctrlKey && !e.metaKey) pantallaCompleta();
+});
+function zoom(f) { red.moveTo({ scale: red.getScale() * f, animation: { duration: 250, easingFunction: 'easeOutQuad' } }); }
+function verTodo() { red.fit({ animation: { duration: 500, easingFunction: 'easeInOutQuad' } }); }
+function reordenar() {
+    try { localStorage.removeItem(CLAVE_POS); } catch (e) {}
+    POS_GUARDADAS = {};
+    const lay = layoutRadial();
+    for (const [id, p] of Object.entries(lay)) if (nodosDS.get(id)) red.moveNode(id, p.x, p.y);
+    verTodo();
+}
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && resaltado && document.activeElement.tagName !== 'INPUT') { resaltar(null); red.unselectAll(); }
+});
+
+/* Reconstruye el modelo (tras una edición manual) sin mover los nodos existentes */
+function refrescarGrafo() {
+    modelo = construirTodo();
+    window.modeloPAMI = modelo;
+    const vivos = new Set(['CENTRAL']);
+    for (const u of modelo.ugls) {
+        vivos.add(u.id);
+        nodosDS.update(nodoUGL(u));
+        const base = red.getPositions([u.id])[u.id] || { x: 0, y: 0 };
+        for (const h of u.hijos.values()) {
+            vivos.add(h.id);
+            if (nodosDS.get(h.id)) { nodosDS.update(nodoAgencia(h)); aristasDS.update({ id: 'e-' + h.id, dashes: !!h.soloListado }); }
+            else {
+                const ang = Math.atan2(base.y, base.x) + (Math.random() - 0.5) * 0.3;
+                nodosDS.add({ ...nodoAgencia(h), x: base.x + Math.cos(ang) * 200, y: base.y + Math.sin(ang) * 200 });
+                aristasDS.add({ id: 'e-' + h.id, from: u.id, to: h.id, dashes: !!h.soloListado, color: { color: '#1e293b' } });
+            }
+        }
+    }
+    for (const o of modelo.org?.values() || []) { vivos.add(o.id); nodosDS.update(o.id === 'CENTRAL' ? nodoCentral() : nodoOrg(o)); }
+    for (const n of nodosDS.getIds()) if (!vivos.has(n)) { nodosDS.remove(n); aristasDS.remove('e-' + n); }
+    reindexar();
+    renderBadges();
+    actualizarBarraManuales();
+    aplicarFiltros();
+    if (resaltado) resaltar(indice.has(resaltado) ? resaltado : null);
+}
+
+function seleccionar(id, enfocar = true) {
+    const obj = indice.get(id);
+    if (!obj) return;
+    if (enfocar && red) {
+        const o0 = indice.get(id);
+        if (o0?.tipo === 'agencia' && COLAPSADAS.has(o0.ugl.id)) alternarColapso(o0.ugl.id);
+        if (o0?.tipo === 'org') {
+            const cadena = []; for (let p = o0.padre; p; p = p.padre) cadena.unshift(p.id);
+            cadena.forEach(c => expandir(c, false));
+            aplicarFiltros();
+        }
+        resaltar(id);
+        red.selectNodes([id]);
+        if (obj.tipo === 'org') {
+            const ids = [id, ...(EXPANDIDOS.has(id) ? obj.hijos.map(h => h.id) : [])];
+            if (ids.length > 1) red.fit({ nodes: ids, maxZoomLevel: 1.2, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+            else red.focus(id, { scale: 1.1, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+        }
+        else if (obj.tipo === 'ugl' && obj.hijos.size && COLAPSADAS.has(id) && document.getElementById('chkAgencias').checked && (alternarColapso(id, true), true))
+            acercarA([id, ...[...obj.hijos.values()].filter(h => !nodosDS.get(h.id)?.hidden).map(h => h.id)], 1.3);
+        else if (obj.tipo === 'ugl' && obj.hijos.size && !COLAPSADAS.has(id))
+            red.fit({ nodes: [id, ...[...obj.hijos.values()].filter(h => !nodosDS.get(h.id)?.hidden).map(h => h.id)], animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+        else red.focus(id, { scale: obj.tipo === 'ugl' ? 0.9 : 1.5, animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+    }
+    if (obj.tipo === 'central') {
+        document.getElementById('contenido-detalles').innerHTML = '<div class="mensaje-vacio">Nivel Central institucional seleccionado.</div>';
+    } else if (obj.tipo === 'ugl') mostrarUGL(obj);
+    else if (obj.tipo === 'org') mostrarOrg(obj);
+    else mostrarDependencia(obj);
+}
+
+function htmlAutoridades(mapa, clase) {
+    if (!mapa.size) return `<div class="mensaje-vacio" style="margin-top:8px">Sin autoridades vigentes registradas.</div>`;
+    const lista = [...mapa.values()].sort((a, b) => (b.cargo.startsWith('Titular de la UGL') - a.cargo.startsWith('Titular de la UGL')) || (a.cargo === 'Titular' ? -1 : b.cargo === 'Titular' ? 1 : a.cargo.localeCompare(b.cargo)));
+    let h = '';
+    for (const a of lista) {
+        const manual = a.fuente === 'manual';
+        const antiguo = !manual && a.desde && a.desde < '2024-01-01';
+        const meta = manual ? 'Cargado a mano' : a.desde ? `Desde el ${fechaCorta(a.desde)}${a.norma ? ' &middot; ' + esc(a.norma.replace(/-INSSJP.*$/, '')) : ''}` : '';
+        h += `<div class="tarjeta-cargo ${clase} ${manual ? 'manual' : ''} ${antiguo ? 'antiguo' : ''}">
+                <div class="cargo-titulo">${esc(a.cargo)}${manual ? '<span class="chip-manual">manual</span>' : ''}</div>
+                ${a.personas.map(p => `<div class="cargo-nombre">${esc(p)}</div>`).join('')}
+                ${meta ? `<div class="cargo-meta">${meta}</div>` : ''}
+                ${antiguo ? `<div class="cargo-antiguo">Designaci&oacute;n de ${a.desde.slice(0, 4)} sin cambios publicados desde entonces: conviene verificar que siga vigente.</div>` : ''}
+                ${a.personas.length > 1 ? `<div class="cargo-alerta">Hay ${a.personas.length} designaciones distintas para este cargo: verificar cu&aacute;l est&aacute; vigente.</div>` : ''}
+              </div>`;
+    }
+    return h;
+}
+
+const ACCIONES = { alta: 'Designación', baja: 'Cese', crea: 'Creación' };
+function htmlHistorial(eventos, mostrarAgencia) {
+    if (!eventos || !eventos.length) return '';
+    const filas = eventos.slice(0, 80).map(e => `
+        <div class="evento">
+            <span class="f">${fechaCorta(e.fecha)}</span>
+            <span><span class="a ${e.accion}">${ACCIONES[e.accion] || e.accion}</span>
+                ${e.persona ? esc(e.persona) : ''}${e.cargo ? ' &middot; ' + esc(e.cargo) : ''}${mostrarAgencia && e.agencia ? ' &middot; <b>' + esc(e.agencia) + '</b>' : ''}
+                <div class="n">${esc((e.norma || '').replace(/-INSSJP.*$/, ''))}</div></span>
+        </div>`).join('');
+    return `<details class="historial"><summary>Historial en boletines (${eventos.length})</summary><div style="margin-top:8px">${filas}</div>
+            ${eventos.length > 80 ? '<div class="cargo-meta">Se muestran los 80 más recientes.</div>' : ''}</details>`;
+}
+
+const svgLapiz = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
+function cabeceraFicha(o, chip, chipClase, titulo, subtitulo) {
+    return `<div class="cabecera-ficha">
+            <div><span class="tipo-chip ${chipClase}">${chip}</span>
+                 <h3 class="titulo-nodo">${esc(titulo)}${o.manualNueva ? '<span class="chip-manual">manual</span>' : ''}</h3></div>
+            <button class="btn" onclick="abrirEditor('${esc(o.id)}')" title="Agregar o corregir datos a mano">${svgLapiz}Editar</button>
+        </div>
+        <p class="subtitulo-nodo">${subtitulo}</p>`;
+}
+
+const svgMapa = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>`;
+
+function htmlContacto(o) {
+    const dir = o.direccion
+        ? esc(o.direccion) + (o.localidad ? `, ${esc(o.localidad)}` : '')
+        : '<span class="pendiente">pendiente de sincronizaci&oacute;n</span>';
+    let mapa = '';
+    if (o.lat != null && o.lon != null) mapa = `https://www.google.com/maps/search/?api=1&query=${o.lat},${o.lon}`;
+    else if (o.direccion) mapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${o.direccion}, ${o.localidad || ''}, Argentina`)}`;
+    return `<div class="seccion-titulo">Ubicaci&oacute;n y Contacto</div>
+        <div class="datos-contacto">
+            <p>${svgPin}<span><strong>Direcci&oacute;n:</strong>&nbsp;${dir}${o.manual?.direccion || o.manual?.localidad ? '<span class="chip-manual">manual</span>' : ''}</span></p>
+            <p>${svgPhone}<span><strong>Tel&eacute;fono:</strong>&nbsp;${o.telefono ? esc(o.telefono) : '<span class="pendiente">no disponible</span>'}${o.manual?.telefono ? '<span class="chip-manual">manual</span>' : ''}</span></p>
+            ${mapa ? `<p>${svgMapa}<a class="enlace-mapa" href="${mapa}" target="_blank" rel="noopener">Ver en Google Maps</a></p>` : ''}
+            ${o.codigoPami ? `<p class="dato-oficial">Listado oficial PAMI &middot; c&oacute;d. ${esc(o.codigoPami)} &middot; ${esc(o.nombreOficial)}</p>` : ''}
+        </div>`;
+}
+
+function mostrarUGL(u) {
+    const ag = [...u.hijos.values()].sort((a, b) => (a.soloListado - b.soloListado) || a.nombre.localeCompare(b.nombre));
+    const lista = arr => arr.length
+        ? `<div class="lista-hijos">${arr.map(h => {
+                const tit = [...h.autoridades.values()].find(a => a.cargo === 'Titular');
+                return `<div class="item-hijo" onclick="seleccionar('${esc(h.id)}')">
+                <span class="sw agencia"></span>${esc(h.nombre)}${h.subtipo ? ` <small style="color:var(--text-muted)">(${h.subtipo})</small>` : ''}${h.manualNueva ? '<span class="chip-manual">manual</span>' : ''}
+                <span class="n">${tit ? esc(tit.personas[0]) : h.autoridades.size ? h.autoridades.size + ' autoridad(es)' : h.soloListado ? 'solo en listado oficial' : 'sin titular vigente'}</span></div>`; }).join('')}</div>`
+        : `<div class="mensaje-vacio" style="margin-top:8px">Sin registros.</div>`;
+
+    document.getElementById('contenido-detalles').innerHTML = `
+        ${cabeceraFicha(u, 'UGL ' + esc(u.num), 'ugl', u.nombre, `Unidad de Gesti&oacute;n Local &middot; ${ag.length} agencia(s)${modelo.org?.has('ORG-UGTO') ? ` &middot; depende de la <a onclick="seleccionar('ORG-UGTO')">UGTO</a>` : ''}`)}
+        ${htmlContacto(u)}
+        <div class="seccion-titulo">Autoridades de la UGL</div>
+        ${htmlAutoridades(u.autoridades, '')}
+        <div class="seccion-titulo">Agencias (${ag.length})</div>
+        ${lista(ag)}
+        ${htmlHistorial(u.historial, true)}`;
+}
+
+function mostrarOrg(o) {
+    const ruta = [];
+    if (!o.independiente) for (let p = o.padre; p; p = p.padre) ruta.unshift(`<a onclick="seleccionar('${p.id}')">${esc(p.nombre)}</a>`);
+    const tit = new Map([...o.autoridades].filter(([, a]) => a.cargo === 'Titular' || a.fuente === 'manual' && /^titular$/i.test(a.cargo)));
+    const areas = new Map([...o.autoridades].filter(([k]) => !tit.has(k)));
+    const hijos = o.hijos.map(h => {
+        const t = titularDe(h);
+        return `<div class="item-hijo" onclick="seleccionar('${h.id}', true)"><span class="sw org-${h.nivel}"></span>${esc(h.nombre)}
+                <span class="n">${t ? esc(t) : 'sin dato'}</span></div>`;
+    }).join('');
+    const red = o.redUgl ? modelo.ugls.map(u => {
+        const t = titularDe(u);
+        return `<div class="item-hijo" onclick="seleccionar('${u.id}')"><span class="sw ugl"></span>UGL ${esc(u.num)} &ndash; ${esc(u.nombre)}<span class="n">${t ? esc(t) : ''}</span></div>`;
+    }).join('') : '';
+    const otros = o.orgId === 'DE' && modelo.orgOtros?.autoridades?.length ? `
+        <details class="historial"><summary>Otras designaciones del Nivel Central (${modelo.orgOtros.autoridades.length})</summary>
+            <p class="cargo-meta" style="margin:8px 0">Áreas que los boletines nombran pero que no figuran en el organigrama o no se pudieron ubicar con certeza.</p>
+            ${modelo.orgOtros.autoridades.map(a => `<div class="tarjeta-cargo org"><div class="cargo-titulo">${esc(a.cargo)}</div>
+                <div class="cargo-nombre">${esc(a.persona)}</div><div class="cargo-meta">Desde el ${fechaCorta(a.desde)} &middot; ${esc((a.norma || '').replace(/-INSSJP.*$/, ''))}</div></div>`).join('')}
+        </details>` : '';
+    document.getElementById('contenido-detalles').innerHTML = `
+        ${cabeceraFicha(o, o.id === 'CENTRAL' ? 'PAMI Nivel Central' : NIVELES_ORG[o.nivel], 'org ' + o.nivel, o.nombre, `Nivel Central${o.siglas.length ? ' &middot; sigla ' + esc(o.siglas[0]) : ''}${o.staff ? ' &middot; unidad de staff' : ''}${o.independiente ? ' &middot; órgano de control, independiente de la Dirección Ejecutiva' : ''}`)}
+        ${o.hijos.length ? `<p class="cargo-meta" style="margin:-8px 0 14px">${EXPANDIDOS.has(o.id) ? 'Doble clic en el nodo para plegar sus dependencias.' : 'Tocá el nodo para desplegar sus dependencias.'}</p>` : ''}
+        ${ruta.length ? `<div class="ruta-org">${ruta.join(' &rsaquo; ')}</div>` : ''}
+        ${o.direccion || o.telefono ? htmlContacto(o) : ''}
+        <div class="seccion-titulo">Titular</div>
+        ${tit.size ? htmlAutoridades(tit, 'org') : '<div class="mensaje-vacio" style="margin-top:8px">Sin designación de titular en los boletines analizados. Podés cargarla con Editar.</div>'}
+        ${areas.size ? `<div class="seccion-titulo">Áreas internas con designaciones (${areas.size})</div>${htmlAutoridades(areas, 'org')}` : ''}
+        ${o.hijos.length ? `<div class="seccion-titulo">Unidades que dependen (${o.hijos.length})</div><div class="lista-hijos">${hijos}</div>` : ''}
+        ${red ? `<div class="seccion-titulo">Red territorial (${modelo.ugls.length} UGL)</div><div class="lista-hijos">${red}</div>` : ''}
+        ${otros}
+        ${htmlHistorial(o.historial, false)}`;
+}
+
+function mostrarDependencia(h) {
+    const etiqueta = h.subtipo || 'Agencia';
+    const origen = h.soloListado ? ' &middot; sin novedades en los boletines analizados'
+        : h.tipoOriginal && h.tipoOriginal !== 'Agencia' && h.tipoOriginal !== etiqueta ? ` &middot; figura como ${esc(h.tipoOriginal)} en los boletines` : '';
+    document.getElementById('contenido-detalles').innerHTML = `
+        ${cabeceraFicha(h, etiqueta, 'agencia', h.nombre, `Depende de <a onclick="seleccionar('${esc(h.ugl.id)}')">UGL ${esc(h.ugl.num)} &ndash; ${esc(h.ugl.nombre)}</a>${origen}`)}
+        ${htmlContacto(h)}
+        <div class="seccion-titulo">Autoridades</div>
+        ${htmlAutoridades(h.autoridades, h.tipo)}
+        ${htmlHistorial(h.historial, false)}`;
+}
+
+/* ---------- Editor de datos manuales ---------- */
+let edicion = null;   // { id, filas: [{cargoOrig, personaOrig, cargo, persona, eliminada}] }
+
+function abrirEditor(id) {
+    const o = indice.get(id);
+    if (!o) return;
+    const filas = [...o.autoridades.values()].map(a => ({ cargoOrig: a.cargo, personaOrig: a.personas[0], cargo: a.cargo, persona: a.personas[0], eliminada: false }));
+    edicion = { id, filas };
+    const esUGL = o.tipo === 'ugl';
+    const titulo = esUGL ? `UGL ${o.num} – ${o.nombre}` : o.nombre;
+    document.getElementById('contenido-detalles').innerHTML = `
+        <div class="editor">
+            <span class="tipo-chip ${esUGL ? 'ugl' : 'agencia'}">Editar datos</span>
+            <h3 class="titulo-nodo">${esc(titulo)}</h3>
+            <p class="ayuda">Los cambios se guardan en este navegador y tienen prioridad sobre los boletines.
+               Para que los vea todo el mundo, usá <b>Exportar</b> y subí <code>datos_manuales.json</code> al repositorio.</p>
+            <div class="seccion-titulo">Ubicación y contacto</div>
+            <div class="campo"><label for="ed-dir">Dirección</label><input id="ed-dir" value="${esc(o.direccion || '')}" placeholder="Calle y número"></div>
+            <div class="campo"><label for="ed-loc">Localidad</label><input id="ed-loc" value="${esc(o.localidad || '')}" placeholder="Localidad"></div>
+            <div class="campo"><label for="ed-tel">Teléfono</label><input id="ed-tel" value="${esc(o.telefono || '')}" placeholder="(0223) 000-0000" inputmode="tel"></div>
+            <div class="seccion-titulo">Autoridades</div>
+            <div id="ed-filas"></div>
+            <button class="btn chico" onclick="agregarFila()">+ Agregar autoridad</button>
+            ${esUGL ? `<div class="seccion-titulo">Nueva agencia</div>
+                <div class="campo"><label for="ed-nueva">Nombre de la agencia (opcional)</label><input id="ed-nueva" placeholder="Ej.: Miramar"></div>` : ''}
+            ${!esUGL && o.manualNueva ? `<div style="margin-top:14px"><button class="btn chico peligro" onclick="eliminarAgenciaManual()">Eliminar esta agencia cargada a mano</button></div>` : ''}
+            <div class="acciones">
+                <button class="btn primario" onclick="guardarEditor()">Guardar</button>
+                <button class="btn" onclick="seleccionar(edicion.id, false)">Cancelar</button>
+            </div>
+        </div>`;
+    pintarFilas();
+    document.getElementById('ed-dir').focus();
+}
+
+function pintarFilas() {
+    document.getElementById('ed-filas').innerHTML = edicion.filas.map((f, i) => `
+        <div class="fila-aut ${f.eliminada ? 'eliminada' : ''}">
+            <input aria-label="Cargo" value="${esc(f.cargo)}" placeholder="Cargo (ej.: Titular)" oninput="edicion.filas[${i}].cargo=this.value" ${f.eliminada ? 'disabled' : ''}>
+            <input aria-label="Persona" value="${esc(f.persona)}" placeholder="Nombre y apellido" oninput="edicion.filas[${i}].persona=this.value" ${f.eliminada ? 'disabled' : ''}>
+            <button class="btn-x" title="${f.eliminada ? 'Restaurar' : 'Quitar'}" onclick="alternarFila(${i})">${f.eliminada ? '↺' : '×'}</button>
+        </div>`).join('') || '<div class="cargo-meta" style="margin-bottom:8px">Sin autoridades. Agregá una con el botón de abajo.</div>';
+}
+function agregarFila() {
+    edicion.filas.push({ cargoOrig: null, personaOrig: null, cargo: indice.get(edicion.id).tipo === 'ugl' ? '' : 'Titular', persona: '', eliminada: false });
+    pintarFilas();
+    const ins = document.querySelectorAll('#ed-filas .fila-aut:last-child input');
+    if (ins.length) ins[ins[0].value ? 1 : 0].focus();
+}
+function alternarFila(i) {
+    const f = edicion.filas[i];
+    if (!f.cargoOrig) edicion.filas.splice(i, 1); else f.eliminada = !f.eliminada;
+    pintarFilas();
+}
+
+function destinoManual(o, crear = true) {
+    if (o.tipo === 'org') {
+        MANUALES_LOCAL.central = MANUALES_LOCAL.central || {};
+        return MANUALES_LOCAL.central[o.orgId] = MANUALES_LOCAL.central[o.orgId] || {};
+    }
+    const num = o.tipo === 'ugl' ? o.num : o.ugl.num;
+    const u = MANUALES_LOCAL.ugls[num] = MANUALES_LOCAL.ugls[num] || {};
+    if (o.tipo === 'ugl') return u;
+    u.agencias = u.agencias || {};
+    const k = Object.keys(u.agencias).find(x => claveLugar(x) === claveLugar(o.nombre)) || o.nombre;
+    return u.agencias[k] = u.agencias[k] || (crear ? {} : undefined);
+}
+
+function guardarEditor() {
+    const o = indice.get(edicion.id);
+    const dst = destinoManual(o);
+    const val = id => document.getElementById(id).value.trim();
+    const campos = { direccion: val('ed-dir'), localidad: val('ed-loc'), telefono: val('ed-tel') };
+    for (const [f, v] of Object.entries(campos)) if (v !== (o[f] || '')) dst[f] = v;
+    const cambios = [];
+    for (const f of edicion.filas) {
+        const cargo = f.cargo.trim(), persona = f.persona.trim();
+        if (f.cargoOrig && (f.eliminada || clave(cargo) !== clave(f.cargoOrig))) cambios.push({ cargo: f.cargoOrig, eliminado: true });
+        if (!f.eliminada && cargo && persona && (clave(cargo) !== clave(f.cargoOrig || '') || persona !== f.personaOrig))
+            cambios.push({ cargo, persona, fecha: new Date().toISOString().slice(0, 10) });
+    }
+    if (cambios.length) {
+        const m = new Map((dst.autoridades || []).map(a => [clave(a.cargo), a]));
+        for (const c of cambios) m.set(clave(c.cargo), c);
+        dst.autoridades = [...m.values()];
+    }
+    let irA = edicion.id;
+    const nueva = o.tipo === 'ugl' ? val('ed-nueva') : '';
+    if (nueva) {
+        const u = MANUALES_LOCAL.ugls[o.num];
+        u.agencias = u.agencias || {};
+        u.agencias[nueva] = Object.assign(u.agencias[nueva] || {}, { nueva: true });
+        irA = o.id + '|agencia:' + claveLugar(nueva);
+    }
+    guardarLocal();
+    refrescarGrafo();
+    edicion = null;
+    seleccionar(indice.has(irA) ? irA : o.id, true);
+}
+
+function eliminarAgenciaManual() {
+    const o = indice.get(edicion.id);
+    const u = MANUALES_LOCAL.ugls[o.ugl.num];
+    const k = u && u.agencias && Object.keys(u.agencias).find(x => claveLugar(x) === claveLugar(o.nombre));
+    if (k) delete u.agencias[k];
+    else destinoManual(o).eliminada = true;          // estaba publicada en datos_manuales.json
+    guardarLocal();
+    const padre = o.ugl.id;
+    edicion = null;
+    refrescarGrafo();
+    seleccionar(padre, true);
+}
+
+function actualizarBarraManuales() {
+    const n = contarCambios(MANUALES_LOCAL), nRepo = contarCambios(MANUALES_REPO);
+    const barra = document.getElementById('barra-manuales');
+    barra.classList.add('visible');
+    document.getElementById('txt-manuales').textContent = n
+        ? `${n} cambio(s) manuales en este navegador`
+        : nRepo ? `${nRepo} dato(s) cargados a mano publicados` : 'Datos manuales: sin cambios';
+    barra.querySelector('.peligro').style.display = n ? '' : 'none';
+    barra.querySelector('[onclick^="exportar"]').style.display = (n || nRepo) ? '' : 'none';
+}
+
+function exportarManuales() {
+    const datos = fusionarManuales(MANUALES_REPO, MANUALES_LOCAL);
+    datos._actualizado = new Date().toISOString();
+    const blob = new Blob([JSON.stringify(datos, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'datos_manuales.json';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+function descartarManuales() {
+    const n = contarCambios(MANUALES_LOCAL);
+    const barra = document.getElementById('txt-manuales');
+    if (barra.dataset.confirmar !== '1') {        // confirmación en dos clics, sin diálogos del navegador
+        barra.dataset.confirmar = '1';
+        barra.textContent = `¿Descartar ${n} cambio(s)? Tocá Descartar de nuevo`;
+        setTimeout(() => { barra.dataset.confirmar = ''; actualizarBarraManuales(); }, 4000);
+        return;
+    }
+    barra.dataset.confirmar = '';
+    MANUALES_LOCAL = { ugls: {} };
+    guardarLocal();
+    refrescarGrafo();
+    document.getElementById('contenido-detalles').innerHTML = '<div class="mensaje-vacio">Se descartaron los cambios manuales de este navegador.</div>';
+}
+
+document.getElementById('archivo-manuales').addEventListener('change', async e => {
+    const f = e.target.files[0];
+    if (!f) return;
+    try {
+        const datos = JSON.parse(await f.text());
+        if (!datos || typeof datos.ugls !== 'object') throw new Error('Formato inválido');
+        MANUALES_LOCAL = fusionarManuales(MANUALES_LOCAL, datos);
+        guardarLocal();
+        refrescarGrafo();
+        document.getElementById('contenido-detalles').innerHTML = `<div class="mensaje-vacio">Se importaron ${contarCambios(datos)} dato(s) desde ${esc(f.name)}.</div>`;
+    } catch (err) {
+        document.getElementById('contenido-detalles').innerHTML = `<div class="mensaje-vacio" style="color:var(--c-alerta)">No se pudo importar el archivo: ${esc(err.message)}</div>`;
+    }
+    e.target.value = '';
+});
+
+function mostrarSinClasificar() {
+    document.getElementById('contenido-detalles').innerHTML = `
+        <div class="seccion-titulo">Claves sin UGL asignada</div>
+        <p class="subtitulo-nodo">Estas entradas de <code>datos_ugl.json</code> no coinciden con ninguna UGL del cat&aacute;logo.
+        Agreg&aacute; su localidad a <code>LOCALIDAD_A_UGL</code> en index.html.</p>
+        ${modelo.sinClasificar.map(s => `<div class="tarjeta-cargo" style="border-left-color:var(--c-alerta)">
+            <div class="cargo-titulo">${esc(s.clave)}</div>
+            ${Object.entries(s.info || {}).filter(([k]) => !k.startsWith('_')).map(([k, v]) => `<div style="font-size:.82rem;margin-top:4px">${esc(k)}: <b>${esc(v)}</b></div>`).join('')}
+        </div>`).join('')}`;
+}
+
+/* ---------- Buscador: lista de resultados (UGL, Agencia o persona) ---------- */
+document.getElementById('buscador').addEventListener('input', e => {
+    const q = clave(e.target.value);
+    if (q.length < 2) return;
+    const res = [];
+    for (const [id, o] of indice) {
+        if (o.tipo === 'central') continue;
+        const nombre = o.tipo === 'ugl' ? `UGL ${o.num} ${o.nombre}` : o.nombre;
+        let motivo = null;
+        if (clave(nombre).includes(q) || (o.siglas || []).some(x => x.toUpperCase() === q)) motivo = o.tipo === 'ugl' ? 'UGL' : o.tipo === 'org' ? 'Nivel Central' : 'Agencia';
+        else for (const a of o.autoridades.values()) if (a.personas.some(p => clave(p).includes(q))) { motivo = 'Persona'; break; }
+        if (motivo) res.push({ id, o, nombre, motivo });
+    }
+    const orden = { UGL: 0, 'Nivel Central': 1, Agencia: 2, Persona: 3 };
+    res.sort((a, b) => orden[a.motivo] - orden[b.motivo]);
+    document.getElementById('contenido-detalles').innerHTML = res.length
+        ? `<div class="seccion-titulo">${res.length} resultado(s)</div>` + res.slice(0, 60).map(r => `
+            <div class="resultado" onclick="seleccionar('${esc(r.id)}')">
+                <span class="sw ${r.o.tipo === 'org' ? 'org-' + r.o.nivel : r.o.tipo}"></span>${esc(r.nombre)}
+                <small>${r.motivo}${r.o.tipo === 'agencia' ? ' &middot; UGL ' + esc(r.o.ugl.num) : r.o.tipo === 'org' && r.motivo === 'Persona' ? ' &middot; Nivel Central' : ''}</small>
+            </div>`).join('')
+        : '<div class="mensaje-vacio">Sin coincidencias.</div>';
+});
+
+/* ---------- Filtros de la leyenda ---------- */
+function aplicarFiltros() {
+    if (!nodosDS) return;
+    const cambiosOrg = [];
+    for (const o of modelo.org?.values() || []) if (o.id !== 'CENTRAL') cambiosOrg.push({ id: o.id, hidden: !visibleOrg(o) });
+    nodosDS.update(cambiosOrg);
+    // con el organigrama abierto, las líneas a las UGL se atenúan para no competir con él
+    aristasDS.update(modelo.ugls.map(u => ({ id: 'e-' + u.id, color: { color: orgVisible() ? '#131c2e' : '#1e3a5f' } })));
+    const verAg = document.getElementById('chkAgencias').checked;
+    const verListado = document.getElementById('chkListado').checked;
+    const cambios = [];
+    for (const u of modelo.ugls) for (const h of u.hijos.values())
+        cambios.push({ id: h.id, hidden: !!(!verAg || COLAPSADAS.has(u.id) || (h.soloListado && !verListado)) });
+    nodosDS.update(cambios);
+}
+document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros);
+
+/* ---------- Divisor arrastrable (ancho del panel) ---------- */
+(function () {
+    const divisor = document.getElementById('divisor');
+    const panel = document.getElementById('panel-lateral');
+    const MIN = 300, maxAncho = () => Math.max(MIN, window.innerWidth * 0.7);
+    const aplicar = w => { panel.style.width = Math.min(maxAncho(), Math.max(MIN, w)) + 'px'; if (red) red.redraw(); };
+    try { const g = parseInt(localStorage.getItem('anchoPanel'), 10); if (g) aplicar(g); } catch (e) {}
+
+    divisor.addEventListener('pointerdown', e => {
+        e.preventDefault();
+        divisor.setPointerCapture(e.pointerId);
+        divisor.classList.add('activo'); document.body.classList.add('redimensionando');
+    });
+    divisor.addEventListener('pointermove', e => {
+        if (!divisor.classList.contains('activo')) return;
+        aplicar(window.innerWidth - e.clientX);
+    });
+    const soltar = e => {
+        if (!divisor.classList.contains('activo')) return;
+        divisor.classList.remove('activo'); document.body.classList.remove('redimensionando');
+        try { divisor.releasePointerCapture(e.pointerId); } catch (_) {}
+        try { localStorage.setItem('anchoPanel', parseInt(panel.style.width, 10)); } catch (_) {}
+    };
+    divisor.addEventListener('pointerup', soltar);
+    divisor.addEventListener('pointercancel', soltar);
+    divisor.addEventListener('dblclick', () => { panel.style.width = '420px'; if (red) red.redraw(); try { localStorage.removeItem('anchoPanel'); } catch (_) {} });
+    window.addEventListener('resize', () => { if (panel.style.width) aplicar(parseInt(panel.style.width, 10)); });
+})();
+
+/* ---------- Buscador rápido: UGL, localidad o Agencia -> zoom al nodo ---------- */
+(function () {
+    const input = document.getElementById('busquedaRapida');
+    const caja = document.getElementById('sugerencias');
+    let items = [], activa = -1;
+
+    function candidatos(q) {
+        const res = [];
+        for (const [id, o] of indice) {
+            if (o.tipo === 'central') continue;
+            let texto, extra = '', puntos = null;
+            if (o.tipo === 'ugl') {
+                texto = `UGL ${o.num} – ${o.nombre}`;
+                const terminos = [o.nombre, 'UGL ' + o.num, ...o.claves];
+                for (const t of terminos) {
+                    const k = clave(t);
+                    if (k === q || ('UGL ' + clave(o.num)) === q) { puntos = 0; break; }
+                    if (k.startsWith(q)) puntos = Math.min(puntos ?? 9, 1);
+                    else if (k.includes(q)) puntos = Math.min(puntos ?? 9, 3);
+                }
+            } else if (o.tipo === 'org') {
+                texto = o.nombre;
+                extra = 'Nivel Central';
+                const k = clave(o.nombre);
+                if ((o.siglas || []).some(x => x.toUpperCase() === q)) puntos = 0.2;
+                else if (k.startsWith(q)) puntos = 2.5; else if (k.includes(q)) puntos = 4.2;
+            } else {
+                texto = o.nombre;
+                extra = (o.subtipo || 'Agencia') + ' · UGL ' + o.ugl.num;
+                const k = clave(o.nombre);
+                const kk = k.replace(/[^A-Z0-9]/g, ''), qq = q.replace(/[^A-Z0-9]/g, '');
+                const loc = clave(o.localidad || '');
+                if (k === q) puntos = 0.5; else if (k.startsWith(q)) puntos = 2; else if (k.includes(q)) puntos = 4;
+                else if (qq.length > 2 && kk.includes(qq)) puntos = 4.5;
+                else if (loc && loc.includes(q)) { puntos = 5; extra += ' · ' + o.localidad; }
+            }
+            if (puntos !== null) res.push({ id, o, texto, extra: extra || 'UGL', puntos });
+        }
+        return res.sort((a, b) => a.puntos - b.puntos || a.texto.localeCompare(b.texto)).slice(0, 12);
+    }
+
+    function pintar() {
+        const q = clave(input.value);
+        if (!q || !modelo) { caja.classList.remove('visible'); return; }
+        items = candidatos(q); activa = items.length ? 0 : -1;
+        caja.innerHTML = items.length
+            ? items.map((it, i) => `<div class="sug${i === activa ? ' activa' : ''}" data-i="${i}">
+                    <span class="sw ${it.o.tipo === 'org' ? 'org-' + it.o.nivel : it.o.tipo}"></span><span class="txt">${esc(it.texto)}</span><small>${esc(it.extra)}</small></div>`).join('')
+            : '<div class="sug-vacio">Sin coincidencias</div>';
+        caja.classList.add('visible');
+    }
+
+    function ir(i) {
+        const it = items[i];
+        if (!it) return;
+        // Si el tipo está oculto por el filtro de la leyenda, lo volvemos a mostrar
+        if (it.o.tipo === 'agencia' && !document.getElementById('chkAgencias').checked) { document.getElementById('chkAgencias').checked = true; aplicarFiltros(); }
+        seleccionar(it.id, true);
+        input.value = it.texto;
+        caja.classList.remove('visible');
+        input.blur();
+    }
+
+    function marcar(n) {
+        if (!items.length) return;
+        activa = (n + items.length) % items.length;
+        caja.querySelectorAll('.sug').forEach((el, i) => el.classList.toggle('activa', i === activa));
+        caja.querySelector('.sug.activa')?.scrollIntoView({ block: 'nearest' });
+    }
+
+    input.addEventListener('input', pintar);
+    input.addEventListener('focus', () => { if (input.value) { input.select(); pintar(); } });
+    input.addEventListener('keydown', e => {
+        if (e.key === 'ArrowDown') { e.preventDefault(); marcar(activa + 1); }
+        else if (e.key === 'ArrowUp') { e.preventDefault(); marcar(activa - 1); }
+        else if (e.key === 'Enter') { e.preventDefault(); ir(activa); }
+        else if (e.key === 'Escape') { caja.classList.remove('visible'); input.blur(); }
+    });
+    caja.addEventListener('mousedown', e => {           // mousedown: se dispara antes del blur
+        const el = e.target.closest('.sug');
+        if (el) { e.preventDefault(); ir(+el.dataset.i); }
+    });
+    input.addEventListener('blur', () => setTimeout(() => caja.classList.remove('visible'), 120));
+    // Atajo: "/" enfoca el buscador rápido
+    document.addEventListener('keydown', e => {
+        if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); input.focus(); }
+    });
+})();
+
+/* ---------- Intro: se cierra cuando pasó la animación Y el grafo está listo ---------- */
+const intro = (function () {
+    const el = document.getElementById('intro');
+    const DURACION_MIN = 3000, DURACION_MAX = 7000;
+    let animacionLista = false, grafoListo = false, cerrado = false;
+    const cerrar = () => {
+        if (cerrado) return; cerrado = true;
+        el.classList.add('salida');
+        setTimeout(() => el.remove(), 800);
+    };
+    const probar = () => { if (animacionLista && grafoListo) cerrar(); };
+    setTimeout(() => { animacionLista = true; probar(); }, DURACION_MIN);
+    setTimeout(cerrar, DURACION_MAX);                       // por si falla la carga
+    el.addEventListener('click', cerrar);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrar(); });
+    return { listo: () => { grafoListo = true; probar(); } };
+})();
+
+window.onload = inicializar;
+</script>
+</body>
+</html>
