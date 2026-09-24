@@ -18,13 +18,14 @@ Una página web estática (publicada con GitHub Pages) que muestra la estructura
 ```
 PAMI Nivel Central
  └── UGL (38)          ● círculo verde  (gris si todavía no tiene datos)
-      └── Agencias     ◆ rombo naranja  (incluye CAPs y Bocas de Atención)
+      └── Agencias     ◆ rombo naranja  (incluye CAPs y Bocas de Atención; más oscuro si no tiene titular vigente)
 ```
 
 Al hacer clic en un nodo, el panel lateral muestra:
 
 - **Ubicación y contacto:** dirección, localidad, teléfono y enlace a Google Maps.
-- **Autoridades:** los cargos y las personas designadas según el Boletín Oficial de PAMI.
+- **Autoridades vigentes:** cargo, persona, fecha desde la que ocupa el cargo y norma que la designó.
+- **Historial:** todas las designaciones, ceses y creaciones de dependencias publicadas en los boletines, con fecha.
 - **Agencias de la UGL:** lista navegable; cada una abre su propia ficha.
 
 Los datos de las autoridades se extraen automáticamente de los boletines oficiales y los domicilios salen del listado oficial de agencias de PAMI.
@@ -41,8 +42,10 @@ Los datos de las autoridades se extraen automáticamente de los boletines oficia
 | **Buscador rápido** (sobre el grafo) | Busca por UGL, número romano, localidad o Agencia y acerca la vista al nodo. Se navega con ↑ ↓ y Enter; la tecla `/` pone el cursor en el buscador. |
 | **Buscador del panel** | Además de UGLs y Agencias, encuentra **personas** por nombre. |
 | **Panel redimensionable** | Arrastrá el borde entre el grafo y el panel para cambiar el ancho. El navegador lo recuerda; con doble clic vuelve al tamaño original. |
+| **Autoridades con fecha** | Cada cargo muestra desde cuándo está vigente y la resolución que lo designó. |
+| **Historial** | Sección desplegable con todas las novedades de la UGL o de la Agencia, de la más reciente a la más antigua. |
+| **Carga manual de datos** | Botón **Editar** en cada ficha para agregar o corregir dirección, teléfono, autoridades y agencias nuevas (ver más abajo). |
 | **Filtro de la leyenda** | Muestra u oculta las Agencias. |
-| **Alertas de designaciones** | Si un cargo tiene más de una persona registrada, se muestra un aviso para verificar cuál está vigente. |
 | **Responsive** | En el celular, el grafo queda arriba y el panel abajo. |
 
 ---
@@ -51,56 +54,82 @@ Los datos de las autoridades se extraen automáticamente de los boletines oficia
 
 ```mermaid
 flowchart LR
-    BO[Boletín Oficial PAMI<br/>PDFs diarios] -->|grafico.py / bot_diario_graffo.py<br/>PyMuPDF + LLM Groq| D1[(datos_ugl.json<br/>autoridades)]
-    WEB[pami.org.ar/agencias-ugls] -->|bot_directorio.py<br/>Selenium| D1
-    XLS[listado-de-agencias.xlsx<br/>listado oficial] -->|importar_listado_agencias.py| D2[(directorio_agencias.json<br/>domicilios)]
+    BO[Boletines PAMI<br/>boletines_historicos/<br/>boletines_diarios/] -->|procesar_boletines.py<br/>lee el índice de cada PDF| D1[(datos_ugl.json<br/>autoridades vigentes<br/>+ historial)]
+    XLS[listado-de-agencias.xlsx] -->|importar_listado_agencias.py| D2[(directorio_agencias.json<br/>domicilios)]
+    ED[Botón Editar<br/>en la página] -->|Exportar| D3[(datos_manuales.json<br/>correcciones a mano)]
     D1 --> IDX[index.html]
     D2 --> IDX
-    IDX -->|normaliza y cruza<br/>en el navegador| G((Grafo<br/>vis-network))
+    D3 --> IDX
+    IDX --> G((Grafo))
 ```
 
-### 1. Recolección de datos (Python)
+### 1. Autoridades: `procesar_boletines.py`
 
-| Script | Qué hace | Cuándo se usa |
-|---|---|---|
-| `grafico.py` | Descarga los boletines históricos (hasta 24 meses), extrae los párrafos con palabras clave (*designa*, *cese*, *titular*, *UGL*…) y un LLM (Groq) los convierte en registros `{UGL, persona, función, estado}`. Guarda en `pdfs_procesados.txt` cuáles ya analizó, así puede retomar donde quedó. | Carga inicial, una sola vez. |
-| `bot_diario_graffo.py` | Hace lo mismo pero solo con el boletín del día, en modo invisible (*headless*). | Todos los días, desde el programador de tareas. |
-| `bot_directorio.py` | Recorre el buscador de agencias de pami.org.ar provincia por provincia y guarda teléfono y dirección. Anota su avance en `progreso_directorio.json`. | Ocasional. |
-| `importar_listado_agencias.py` | Convierte el Excel oficial de agencias en `directorio_agencias.json` (686 dependencias: UGLs, agencias, bocas y CAPs con domicilio, localidad y coordenadas). | Cada vez que PAMI publique un listado nuevo. |
+Cada boletín de PAMI empieza con un **índice** donde cada resolución trae un resumen de una línea con formato fijo:
 
-### 2. Visualización (`index.html`)
+> *Designa y asigna al señor Esteban Maximiliano Herrera, las funciones de titular de la Agencia La Banda. UGL XIX - Santiago del Estero.*
 
-La página no necesita servidor ni base de datos: lee los dos JSON y arma el grafo en el navegador. Como los bots guardan los datos **en forma plana y con nombres inconsistentes**, el index los ordena antes de dibujar:
+El script lee **solo ese índice** (sin IA ni claves de API) y de cada resumen obtiene la acción, la persona, el cargo, la Agencia y la UGL. Después aplica todos los eventos **en orden cronológico**:
 
-1. **Catálogo oficial de UGLs:** las 38 UGLs con su número romano están fijas en `CATALOGO_UGL`. Las variantes de nombre que aparecen en el JSON (`BAHÍA BLANCA`, `BAHIA BLANCA`, `UGLV – BAHÍA BLANCA`, `PARANA` → Entre Ríos, etc.) se unifican mediante alias.
-2. **Localidades cargadas como UGL:** a veces el LLM guarda como UGL la localidad de una agencia (por ejemplo `BANDERA` o `PUERTO DESEADO`). La tabla `LOCALIDAD_A_UGL` las cuelga de su UGL real.
-3. **Agencias detectadas en el texto del cargo:** en *"Titular del Centro de Atención Personalizada Villa Elisa"* se reconoce la dependencia *Villa Elisa* y el rol *Titular*. CAPs, Agencias y Bocas de Atención se unifican como **Agencia**.
-4. **Duplicados:** se unen los cargos repetidos, con o sin tilde y en mayúsculas o minúsculas (`Natalia Ivana CLEPPE` = `Natalia Ivana Cleppe`). Se descartan los cargos genéricos (*"Titular"*, *"prestar servicios"*) cuando la persona ya figura en una Agencia.
-5. **Cruce con el listado oficial:** cada UGL toma el domicilio de su sede y cada Agencia se busca en `directorio_agencias.json` dentro de su UGL. La búsqueda tolera abreviaturas (`PTO`, `GRAL`, `GOB`) y variantes de escritura (`Gonzalez`/`Gonzales`, `Chaves`/`Chavez`). **Solo completa datos faltantes**: nunca pisa lo que viene de `datos_ugl.json`.
-6. **Valores inválidos:** se descartan valores basura del scraping, como `"EN CABA"` o `"(0) 0"`.
+| Resumen del boletín | Efecto |
+|---|---|
+| *Designa y asigna / Asigna / Limita y asigna / Traslada y asigna ... las funciones de ...* | La persona pasa a ocupar el cargo. Si ya había alguien, lo reemplaza. |
+| *Limita a ... las funciones de ...* | Cese: el cargo queda vacante. |
+| *Limita y traslada a ...* | La persona deja todos sus cargos en esa UGL. |
+| *Delega en ... la firma de ... la UGL* | Se registra como "Firma delegada de la UGL". |
+| *Crea la Boca de Atención ...* | Se agrega la dependencia. |
+| *Deja sin efecto la RESOL-...* | Se anula el evento de esa resolución. |
 
-Para depurar: abrí la consola del navegador y escribí `modeloPAMI` para ver el árbol ya normalizado, o `modeloPAMI.reporteDirectorio` para ver qué Agencias se cruzaron con el listado oficial y cuáles no.
+Reglas importantes:
+
+- **La fecha es la del boletín** (nombre del archivo `dd-mm-aa.pdf`). Así la información siempre refleja la última publicación.
+- Si una persona pasa a ser titular de otra Agencia de la misma UGL, deja la anterior (traslado).
+- "Titular de la UGL" y "Titular de la Dirección Ejecutiva Local" se consideran el mismo cargo.
+- El resultado se **recalcula completo** en cada corrida, así que es seguro correrlo las veces que haga falta. `cache_indices.json` guarda los índices ya leídos para que sea rápido.
+- No se toman como autoridades las designaciones de personal ("para prestar servicios", "desempeñar tareas"), las ampliaciones de carga horaria ni las contrataciones.
+
+### 2. Domicilios: `importar_listado_agencias.py`
+
+Convierte el Excel oficial de agencias de PAMI en `directorio_agencias.json` (686 dependencias con domicilio, localidad y coordenadas). El index cruza cada Agencia con ese listado para completar su dirección y el enlace a Google Maps.
+
+### 3. Datos cargados a mano: `datos_manuales.json`
+
+Para lo que no figura en los boletines (teléfonos, un titular que todavía no salió publicado, una agencia nueva):
+
+1. Abrí la ficha de la UGL o Agencia y tocá **Editar**.
+2. Completá dirección, localidad, teléfono o autoridades; desde una UGL también podés **agregar una agencia**. Tocá **Guardar**.
+3. El cambio se ve al instante y queda guardado **en tu navegador** (aparece con la etiqueta *manual*).
+4. Para que lo vea todo el mundo, tocá **Exportar** (arriba, en el panel), y subí el archivo `datos_manuales.json` descargado al repositorio, reemplazando el anterior.
+
+Los datos manuales tienen prioridad sobre los boletines y el listado oficial. **Importar** permite cargar un `datos_manuales.json` de otra persona y **Descartar** borra los cambios que todavía no exportaste.
+
+### 4. Visualización: `index.html`
+
+Página estática que lee los tres JSON y arma el grafo en el navegador con [vis-network](https://visjs.github.io/vis-network/docs/network/). Para depurar, en la consola del navegador: `modeloPAMI` muestra el árbol ya armado.
 
 ---
 
 ## Estructura del repositorio
 
 ```
-├── index.html                    # Página: intro, grafo, buscadores y panel
-├── logo_darsalud.png             # Logo con fondo transparente (usado en la intro)
-├── datos_ugl.json                # Autoridades por UGL (lo escriben los bots)
-├── directorio_agencias.json      # Domicilios oficiales (lo genera el importador)
+├── index.html                    # Página: intro, grafo, buscadores, panel y editor
+├── logo_darsalud.png             # Logo (intro)
+├── datos_ugl.json                # Autoridades vigentes + historial (lo genera procesar_boletines.py)
+├── directorio_agencias.json      # Domicilios oficiales (lo genera importar_listado_agencias.py)
+├── datos_manuales.json           # Correcciones y agregados a mano (se exporta desde la página)
 │
-├── grafico.py                    # Bot histórico de boletines
-├── bot_diario_graffo.py          # Bot diario de boletines
-├── bot_directorio.py             # Scraper del buscador de agencias
+├── procesar_boletines.py         # Lee los boletines y genera datos_ugl.json
+├── bot_diario_graffo.py          # Descarga el boletín del día y ejecuta procesar_boletines.py
 ├── importar_listado_agencias.py  # Excel oficial -> directorio_agencias.json
+├── bot_directorio.py             # Scraper del buscador de agencias (opcional)
 ├── requirements.txt
 │
-├── pdfs_procesados.txt           # Control de avance de grafico.py
-├── progreso_directorio.json      # Control de avance de bot_directorio.py
-└── organigrama_2025.pdf          # Organigrama de referencia
+├── boletines_historicos/         # PDFs dd-mm-aa.pdf (no hace falta subirlos al repo)
+├── boletines_diarios/            # PDFs que descarga el bot diario
+└── cache_indices.json            # Caché de lectura (se puede borrar sin problema)
 ```
+
+`grafico.py` y `pdfs_procesados.txt` quedaron reemplazados por `procesar_boletines.py` y ya no se usan.
 
 ---
 
@@ -120,27 +149,15 @@ Después entrá a **http://localhost:8000**.
 
 *Settings → Pages → Branch: `main` / carpeta `root`*. Cada `push` con JSON actualizados se refleja en la web.
 
-### Correr los bots
+### Actualizar los datos
 
-Requiere **Python 3.10 o superior** y **Google Chrome** instalado (Selenium usa Chrome).
+Requiere **Python 3.10 o superior**; el bot diario además usa **Google Chrome**.
 
 ```bash
 pip install -r requirements.txt
-```
 
-Los bots de boletines necesitan una clave de la API de [Groq](https://console.groq.com). **Nunca la escribas en el código**: definila como variable de entorno.
-
-```bash
-# Windows (PowerShell)
-$env:GROQ_API_KEY = "tu_clave"
-# Linux / macOS
-export GROQ_API_KEY="tu_clave"
-```
-
-```bash
-python grafico.py                 # carga histórica (única vez)
-python bot_diario_graffo.py       # actualización del día
-python bot_directorio.py          # teléfonos y direcciones desde la web de PAMI
+python procesar_boletines.py          # recalcula datos_ugl.json con todos los PDFs de las carpetas
+python bot_diario_graffo.py           # descarga el boletín de hoy y recalcula
 python importar_listado_agencias.py listado-de-agencias-.xlsx
 ```
 
@@ -152,22 +169,23 @@ Para que la actualización sea diaria, programá `bot_diario_graffo.py` en el **
 
 | Situación | Qué hacer |
 |---|---|
-| Aparece el aviso rojo **"sin clasificar"** | Una clave del JSON no coincide con ninguna UGL. Agregá esa localidad a `LOCALIDAD_A_UGL` en `index.html`, con el número romano de su UGL. |
-| Una Agencia no muestra domicilio | No se encontró en el listado oficial con ese nombre. Revisá `modeloPAMI.reporteDirectorio.sinCoincidencia` en la consola. |
+| Falta un dato que no sale en los boletines | Cargalo con **Editar** y exportá `datos_manuales.json`. |
+| Una Agencia no muestra domicilio | No se encontró en el listado oficial con ese nombre. Cargalo a mano con **Editar**. |
 | PAMI publicó un listado de agencias nuevo | Descargá el Excel y corré `importar_listado_agencias.py`. |
-| Aviso **"designaciones distintas para este cargo"** | Hay dos personas registradas para el mismo cargo y los datos no guardan la fecha de cada designación. Verificar en el boletín. |
+| Agregaste boletines viejos a la carpeta | Corré `procesar_boletines.py`: reordena todo por fecha solo. |
 
 ### Limitaciones conocidas
 
-- **Teléfonos incompletos:** el listado oficial de agencias no trae teléfono, y `bot_directorio.py` hoy guarda un solo teléfono por UGL: el de la última agencia que recorrió.
-- **Orden de los boletines:** los boletines se procesan según la fecha de descarga, no la de publicación, así que ante designaciones contradictorias no se puede saber automáticamente cuál es la más reciente.
-- **Posibles errores del LLM:** la extracción con LLM puede equivocarse al interpretar un cargo o una UGL. Por eso el index normaliza y avisa de las inconsistencias en lugar de ocultarlas.
+- **Teléfonos:** ni los boletines ni el listado oficial traen teléfonos; se cargan a mano.
+- **Normas en bloque:** las resoluciones que asignan funciones "a los empleados de la UGL ..." traen el detalle en un anexo y no en el índice, por eso no se leen automáticamente.
+- **Fecha de vigencia:** se usa la fecha de publicación del boletín, que puede diferir unos días de la fecha "a partir de" de la resolución.
+- **Errores de tipeo en los boletines:** se toleran variantes comunes de escritura, pero un nombre muy mal escrito puede generar una agencia duplicada. Se corrige a mano.
 
 ---
 
 ## Tecnologías
 
-[vis-network](https://visjs.github.io/vis-network/docs/network/) · HTML/CSS/JS sin frameworks · Python · Selenium · PyMuPDF · Groq API · openpyxl
+[vis-network](https://visjs.github.io/vis-network/docs/network/) · HTML/CSS/JS sin frameworks · Python · PyMuPDF · Selenium · openpyxl
 
 ---
 

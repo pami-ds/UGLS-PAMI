@@ -1,0 +1,6252 @@
+{
+ "I": [
+  {
+   "codigo": "10000",
+   "nombre": "UGL I - TUCUMAN",
+   "tipo": "ugl",
+   "domicilio": "Cordoba 987",
+   "localidad": "San Miguel de Tucuman",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "10001",
+   "nombre": "AGENCIA CONCEPCION",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 161",
+   "localidad": "Concepcion",
+   "lat": -27.351876,
+   "lon": -65.598077
+  },
+  {
+   "codigo": "10002",
+   "nombre": "AGENCIA BANDA RIO SALI",
+   "tipo": "agencia",
+   "domicilio": "San Martin 514",
+   "localidad": "Banda del Rio Sali",
+   "lat": -26.84382,
+   "lon": -65.156569
+  },
+  {
+   "codigo": "10003",
+   "nombre": "AGENCIA FAMAILLA",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 285",
+   "localidad": "Famailla",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "10004",
+   "nombre": "AGENCIA MONTEROS",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 244",
+   "localidad": "Monteros",
+   "lat": -27.169682,
+   "lon": -65.498719
+  },
+  {
+   "codigo": "10005",
+   "nombre": "AGENCIA AGUILARES",
+   "tipo": "agencia",
+   "domicilio": "Alberdi esq. Pellegrini 494",
+   "localidad": "Aguilares",
+   "lat": -27.425955,
+   "lon": -65.616027
+  },
+  {
+   "codigo": "10006",
+   "nombre": "AGENCIA YERBA BUENA",
+   "tipo": "agencia",
+   "domicilio": "Av. Aconquija 1315",
+   "localidad": "Yerba Buena",
+   "lat": -26.814578,
+   "lon": -65.286519
+  },
+  {
+   "codigo": "10050",
+   "nombre": "AGENCIA TAFI DEL VALLE",
+   "tipo": "agencia",
+   "domicilio": "Los Palenques S/N",
+   "localidad": "Tafi del Valle",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "10052",
+   "nombre": "AGENCIA JUAN B ALBERDI",
+   "tipo": "agencia",
+   "domicilio": "Lidoro Quinteros 423",
+   "localidad": "Juan Bautista Alberdi",
+   "lat": -27.5883,
+   "lon": -65.616286
+  },
+  {
+   "codigo": "10053",
+   "nombre": "AGENCIA SIMOCA",
+   "tipo": "agencia",
+   "domicilio": "Av.belgrano 554",
+   "localidad": "Simoca",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "10054",
+   "nombre": "AGENCIA TAFI VIEJO",
+   "tipo": "agencia",
+   "domicilio": "Avd. Leandro Alem 743",
+   "localidad": "Tafi Viejo",
+   "lat": -26.733751,
+   "lon": -65.258205
+  },
+  {
+   "codigo": "10055",
+   "nombre": "AGENCIA TACO RALO",
+   "tipo": "agencia",
+   "domicilio": "Florida 470",
+   "localidad": "Taco Ralo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "10056",
+   "nombre": "AGENCIA TRANCAS",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 614",
+   "localidad": "Trancas",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "10057",
+   "nombre": "AGENCIA RANCHILLOS",
+   "tipo": "agencia",
+   "domicilio": "Avd. San Martin 480",
+   "localidad": "Ranchillos",
+   "lat": -26.95,
+   "lon": -65.05
+  },
+  {
+   "codigo": "10058",
+   "nombre": "AGENCIA SANTA ROSA DE LEALES",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 250",
+   "localidad": "Araoz",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "10059",
+   "nombre": "AGENCIA BURRUYACU",
+   "tipo": "agencia",
+   "domicilio": "Av. Legislador Mariano Ramos 523",
+   "localidad": "Alta Gracia",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "10060",
+   "nombre": "AGENCIA LULES",
+   "tipo": "agencia",
+   "domicilio": "Zoilo Dominguez 21",
+   "localidad": "Lules",
+   "lat": -26.922784,
+   "lon": -65.338286
+  },
+  {
+   "codigo": "10061",
+   "nombre": "AGENCIA LA COCHA",
+   "tipo": "agencia",
+   "domicilio": "San Martin Norte-b°hipotecario S/nº",
+   "localidad": "San Ignacio",
+   "lat": -27.766667,
+   "lon": -65.616667
+  },
+  {
+   "codigo": "10062",
+   "nombre": "AGENCIA AMAICHA DEL VALLE",
+   "tipo": "agencia",
+   "domicilio": "San Martin S/nº",
+   "localidad": "Amaicha del Valle",
+   "lat": -26.55,
+   "lon": -65.916667
+  },
+  {
+   "codigo": "10063",
+   "nombre": "AGENCIA BELLA VISTA",
+   "tipo": "agencia",
+   "domicilio": "Marconi 250",
+   "localidad": "Bella Vista",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "10064",
+   "nombre": "BOCA COMPLEMENTARIA SUR",
+   "tipo": "boca",
+   "domicilio": "Av. Nestor Kirchner 2310",
+   "localidad": "San Miguel de Tucuman",
+   "lat": -26.791901,
+   "lon": -65.238223
+  },
+  {
+   "codigo": "10065",
+   "nombre": "BOCA COMPLEMENTARIA VILLA MARIANO MORENO",
+   "tipo": "boca",
+   "domicilio": "Calle 4 275",
+   "localidad": "Tafi Viejo",
+   "lat": -26.776569,
+   "lon": -65.209804
+  }
+ ],
+ "II": [
+  {
+   "codigo": "20000",
+   "nombre": "UGL II - CORRIENTES",
+   "tipo": "ugl",
+   "domicilio": "Jujuy 1140",
+   "localidad": "Corrientes",
+   "lat": -27.470681,
+   "lon": -58.826718
+  },
+  {
+   "codigo": "20001",
+   "nombre": "AGENCIA GOYA",
+   "tipo": "agencia",
+   "domicilio": "Colon 1587",
+   "localidad": "Goya",
+   "lat": -29.148647,
+   "lon": -59.280286
+  },
+  {
+   "codigo": "20002",
+   "nombre": "AGENCIA PASO DE LOS LIBRES",
+   "tipo": "agencia",
+   "domicilio": "Bartolome Mitre 1067",
+   "localidad": "Paso de los Libres",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "20003",
+   "nombre": "AGENCIA SANTO TOME",
+   "tipo": "agencia",
+   "domicilio": "Bartolome Mitre 768",
+   "localidad": "Santo Tome",
+   "lat": -28.55,
+   "lon": -56.033333
+  },
+  {
+   "codigo": "20004",
+   "nombre": "AGENCIA MONTE CASEROS",
+   "tipo": "agencia",
+   "domicilio": "España 460",
+   "localidad": "Monte Caseros",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "20005",
+   "nombre": "AGENCIA MERCEDES",
+   "tipo": "agencia",
+   "domicilio": "Juan Pujol 874",
+   "localidad": "Mercedes",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "20006",
+   "nombre": "AGENCIA CURUZU CUATIA",
+   "tipo": "agencia",
+   "domicilio": "Castillo 1086",
+   "localidad": "Curuzu Cuatia",
+   "lat": -29.791928,
+   "lon": -58.059312
+  },
+  {
+   "codigo": "20007",
+   "nombre": "AGENCIA BELLA VISTA",
+   "tipo": "agencia",
+   "domicilio": "Salta 1019",
+   "localidad": "Bella Vista",
+   "lat": -28.516667,
+   "lon": -59.033333
+  },
+  {
+   "codigo": "20008",
+   "nombre": "AGENCIA GOBERNADOR VIRASORO",
+   "tipo": "agencia",
+   "domicilio": "Lavalle y Mocito Acuña 2311",
+   "localidad": "Gob Ing Valentin Virasoro",
+   "lat": -28.052566,
+   "lon": -56.023355
+  },
+  {
+   "codigo": "20009",
+   "nombre": "AGENCIA ESQUINA",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 640",
+   "localidad": "Esquina",
+   "lat": -29.14547,
+   "lon": -59.266245
+  },
+  {
+   "codigo": "20010",
+   "nombre": "AGENCIA ITUZAINGO",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 1628",
+   "localidad": "Ituzaingo",
+   "lat": -27.583333,
+   "lon": -56.683333
+  },
+  {
+   "codigo": "20050",
+   "nombre": "AGENCIA GRAL PAZ",
+   "tipo": "agencia",
+   "domicilio": "Itati 410",
+   "localidad": "Gral Paz",
+   "lat": -27.75,
+   "lon": -57.616667
+  },
+  {
+   "codigo": "20051",
+   "nombre": "AGENCIA SALADAS",
+   "tipo": "agencia",
+   "domicilio": "Alvear 1107",
+   "localidad": "Saladas",
+   "lat": -28.25,
+   "lon": -58.633333
+  },
+  {
+   "codigo": "20052",
+   "nombre": "AGENCIA SAN COSME",
+   "tipo": "agencia",
+   "domicilio": "San Martin E/ Irigoyen 12 Feb S/nº",
+   "localidad": "San Cosme",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "20053",
+   "nombre": "AGENCIA SAUCE",
+   "tipo": "agencia",
+   "domicilio": "B.mitre 1047",
+   "localidad": "Sauce",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "20054",
+   "nombre": "AGENCIA LA CRUZ",
+   "tipo": "agencia",
+   "domicilio": "Union 1021",
+   "localidad": "La Cruz",
+   "lat": -29.166667,
+   "lon": -56.633333
+  },
+  {
+   "codigo": "20055",
+   "nombre": "AGENCIA ALVEAR",
+   "tipo": "agencia",
+   "domicilio": "Centenario 480",
+   "localidad": "Alvear",
+   "lat": -29.1,
+   "lon": -56.55
+  },
+  {
+   "codigo": "20056",
+   "nombre": "AGENCIA ITATI",
+   "tipo": "agencia",
+   "domicilio": "Desiderio Sosa 755",
+   "localidad": "Itati",
+   "lat": -27.266667,
+   "lon": -58.25
+  },
+  {
+   "codigo": "20057",
+   "nombre": "AGENCIA MBURUCUYA",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 834",
+   "localidad": "Mburucuya",
+   "lat": -28.05,
+   "lon": -58.216667
+  },
+  {
+   "codigo": "20058",
+   "nombre": "AGENCIA SANTA ROSA",
+   "tipo": "agencia",
+   "domicilio": "Tucuman 244",
+   "localidad": "Santa Rosa",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "20059",
+   "nombre": "MOCORETA",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 245",
+   "localidad": "Colonia Mocoreta",
+   "lat": -30.55,
+   "lon": -57.916667
+  }
+ ],
+ "III": [
+  {
+   "codigo": "30000",
+   "nombre": "UGL III - CORDOBA",
+   "tipo": "ugl",
+   "domicilio": "Av. Gral Paz 370",
+   "localidad": "Cordoba",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30001",
+   "nombre": "AGENCIA LA CALERA",
+   "tipo": "agencia",
+   "domicilio": "Genari esq. Olcesse 510",
+   "localidad": "Santa Rosa de Calamuchita",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30004",
+   "nombre": "AGENCIA VILLA DOLORES",
+   "tipo": "agencia",
+   "domicilio": "Jose Manuel Estrada 138",
+   "localidad": "Villa Dolores",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30005",
+   "nombre": "AGENCIA DEAN FUNES",
+   "tipo": "agencia",
+   "domicilio": "Ramon Iribarne 131",
+   "localidad": "Dean Funes",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30012",
+   "nombre": "AGENCIA VILLA DE MARIA DE RIO",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia esq. Uruguay .",
+   "localidad": "Campo Grande",
+   "lat": -30.05,
+   "lon": -63.616667
+  },
+  {
+   "codigo": "30014",
+   "nombre": "AGENCIA SANTA ROSA DEL RIO PRIMERO",
+   "tipo": "agencia",
+   "domicilio": "Corrientes 346",
+   "localidad": "Atahona",
+   "lat": -30.907847,
+   "lon": -63.661037
+  },
+  {
+   "codigo": "30015",
+   "nombre": "AGENCIA VILLA DEL ROSARIO",
+   "tipo": "agencia",
+   "domicilio": "Catamarca 635",
+   "localidad": "Villa del Rosario",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30022",
+   "nombre": "AGENCIA JESUS MARIA",
+   "tipo": "agencia",
+   "domicilio": "Paseo del Huerto Eq 25 de Mayo S/N",
+   "localidad": "Jesus Maria",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30024",
+   "nombre": "AGENCIA VILLA CARLOS PAZ",
+   "tipo": "agencia",
+   "domicilio": "Sargento Cabral y San Lorenzo 126",
+   "localidad": "Villa Carlos Paz",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30030",
+   "nombre": "AGENCIA RIO CEBALLOS",
+   "tipo": "agencia",
+   "domicilio": "Lestache esq. Serrano S/nº",
+   "localidad": "Rio Ceballos",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30031",
+   "nombre": "AGENCIA UNQUILLO",
+   "tipo": "agencia",
+   "domicilio": "Rio Negro 451",
+   "localidad": "Unquillo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30050",
+   "nombre": "AGENCIA ALTA GRACIA",
+   "tipo": "agencia",
+   "domicilio": "Intendente Martinez 141",
+   "localidad": "Unquillo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30060",
+   "nombre": "AGENCIA MINA CLAVERO",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 146",
+   "localidad": "Mina Clavero",
+   "lat": -31.716667,
+   "lon": -65.016667
+  },
+  {
+   "codigo": "30061",
+   "nombre": "AGENCIA SAN JOSE DE LA DORMIDA",
+   "tipo": "agencia",
+   "domicilio": "Jose Navergo esq. Quiroga S/N",
+   "localidad": "Santa Rosa de Calamuchita",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30062",
+   "nombre": "AGENCIA RIO SEGUNDO",
+   "tipo": "agencia",
+   "domicilio": "Leandro N. Alem 1951",
+   "localidad": "Rio Segundo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30090",
+   "nombre": "BOCA DE ATENCION HOSPITAL DE CLINICAS",
+   "tipo": "boca",
+   "domicilio": "Santa Rosa 1564",
+   "localidad": "Cordoba",
+   "lat": -31.40644,
+   "lon": -64.203694
+  },
+  {
+   "codigo": "30101",
+   "nombre": "AGENCIA PANAMERICANO",
+   "tipo": "agencia",
+   "domicilio": "Roberto J. Pairo 4662",
+   "localidad": "Cordoba",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30102",
+   "nombre": "AGENCIA VILLA EL LIBERTADOR",
+   "tipo": "agencia",
+   "domicilio": "Belardinelli 3150 Local 9",
+   "localidad": "Cordoba",
+   "lat": -31.44741,
+   "lon": -64.194227
+  },
+  {
+   "codigo": "30103",
+   "nombre": "AGENCIA MATIENZO",
+   "tipo": "agencia",
+   "domicilio": "Fuerza Area Argentina 4800",
+   "localidad": "Cordoba",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30104",
+   "nombre": "AGENCIA SAN VICENTE",
+   "tipo": "agencia",
+   "domicilio": "Av. San Jeronimo 2933",
+   "localidad": "Cordoba",
+   "lat": -31.423496,
+   "lon": -64.146337
+  },
+  {
+   "codigo": "30200",
+   "nombre": "AGENCIA BELL VILLE",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 21",
+   "localidad": "Bell Ville",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30217",
+   "nombre": "AGENCIA MARCOS JUAREZ",
+   "tipo": "agencia",
+   "domicilio": "San Martin 772",
+   "localidad": "Gral Roca",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30218",
+   "nombre": "AGENCIA CORRAL DE BUSTOS",
+   "tipo": "agencia",
+   "domicilio": "Independencia 44",
+   "localidad": "Corral de Bustos",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30229",
+   "nombre": "AGENCIA LABORDE",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 534",
+   "localidad": "Laborde",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30231",
+   "nombre": "AGENCIA CRUZ ALTA",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 1269",
+   "localidad": "Cruz Alta",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30232",
+   "nombre": "AGENCIA JUSTINIANO POSSE",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 913",
+   "localidad": "Justiniano Posse",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30254",
+   "nombre": "AGENCIA NOETINGER",
+   "tipo": "agencia",
+   "domicilio": "Intendente Fernando Moreno 271",
+   "localidad": "Noetinger",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30300",
+   "nombre": "AGENCIA SAN FRANCISCO",
+   "tipo": "agencia",
+   "domicilio": "Iturraspe 2350",
+   "localidad": "San Francisco",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30313",
+   "nombre": "AGENCIA MORTEROS",
+   "tipo": "agencia",
+   "domicilio": "Boulevard Illia 696",
+   "localidad": "Morteros",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30316",
+   "nombre": "AGENCIA LAS VARILLAS",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 72",
+   "localidad": "Las Varillas",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30327",
+   "nombre": "AGENCIA ARROYITO",
+   "tipo": "agencia",
+   "domicilio": "Velez Sarfield 943",
+   "localidad": "Arroyito",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30328",
+   "nombre": "AGENCIA BALNEARIA",
+   "tipo": "agencia",
+   "domicilio": "Avda. Belgrano 235",
+   "localidad": "Balnearia",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30357",
+   "nombre": "AGENCIA PORTEÑA",
+   "tipo": "agencia",
+   "domicilio": "San Martin 230",
+   "localidad": "Porteña",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30358",
+   "nombre": "AGENCIA SATURNINO M. LASPIUR",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 201",
+   "localidad": "Saturnino Maria Laspiur",
+   "lat": -31.7,
+   "lon": -62.466667
+  },
+  {
+   "codigo": "30400",
+   "nombre": "AGENCIA VILLA MARIA",
+   "tipo": "agencia",
+   "domicilio": "Leandro N Alem 433",
+   "localidad": "Villa Maria",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30452",
+   "nombre": "AGENCIA OLIVA",
+   "tipo": "agencia",
+   "domicilio": "Colon 180",
+   "localidad": "Oliva",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30500",
+   "nombre": "AGENCIA COSQUIN",
+   "tipo": "agencia",
+   "domicilio": "Pte. Peron 778",
+   "localidad": "Cosquin",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30523",
+   "nombre": "AGENCIA CRUZ DEL EJE",
+   "tipo": "agencia",
+   "domicilio": "Avda Eva Peron esq A. Herrera S/N",
+   "localidad": "Cruz del Eje",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30525",
+   "nombre": "AGENCIA LA FALDA",
+   "tipo": "agencia",
+   "domicilio": "Dr Meinken 38",
+   "localidad": "La Falda",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30553",
+   "nombre": "AGENCIA CAPILLA DEL MONTE",
+   "tipo": "agencia",
+   "domicilio": "Bartolome Mitre 682 Local 1",
+   "localidad": "Capilla del Monte",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30558",
+   "nombre": "AGENCIA LA CUMBRE",
+   "tipo": "agencia",
+   "domicilio": "Lopez y Planes 345",
+   "localidad": "La Cumbre",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30600",
+   "nombre": "AGENCIA RIO TERCERO",
+   "tipo": "agencia",
+   "domicilio": "Martin Marotto esq. Uruguay 288",
+   "localidad": "Rio Tercero",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30621",
+   "nombre": "AGENCIA SANTA ROSA DE CALAMUCHITA",
+   "tipo": "agencia",
+   "domicilio": "Av. Jose Maria Gomez 571",
+   "localidad": "Santa Rosa de Calamuchita",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30659",
+   "nombre": "AGENCIA HERNANDO",
+   "tipo": "agencia",
+   "domicilio": "Matheu 166",
+   "localidad": "Hernando",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "30661",
+   "nombre": "BOCA DE ATENCION HOSPITAL ITALIANO",
+   "tipo": "boca",
+   "domicilio": "Roma 550",
+   "localidad": "Cordoba",
+   "lat": -31.409447,
+   "lon": -64.164802
+  },
+  {
+   "codigo": "30662",
+   "nombre": "BOCA DE ATENCION VILLA ALLENDE",
+   "tipo": "boca",
+   "domicilio": "Rivadavia 120",
+   "localidad": "Villa Allende",
+   "lat": -31.294022,
+   "lon": -64.297492
+  }
+ ],
+ "IV": [
+  {
+   "codigo": "40000",
+   "nombre": "UGL IV - MENDOZA",
+   "tipo": "ugl",
+   "domicilio": "Belgrano 1236",
+   "localidad": "Mendoza",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "40001",
+   "nombre": "AGENCIA GUAYMALLEN",
+   "tipo": "agencia",
+   "domicilio": "Bra. los Andes 3909",
+   "localidad": "Guaymallen",
+   "lat": -32.900991,
+   "lon": -68.792346
+  },
+  {
+   "codigo": "40002",
+   "nombre": "AGENCIA SAN MARTIN",
+   "tipo": "agencia",
+   "domicilio": "Leandro Alem 593",
+   "localidad": "San Martin",
+   "lat": -33.086488,
+   "lon": -68.464311
+  },
+  {
+   "codigo": "40003",
+   "nombre": "AGENCIA TUNUYAN",
+   "tipo": "agencia",
+   "domicilio": "Hipolito Irigoyen 888",
+   "localidad": "Tunuyan",
+   "lat": -33.574348,
+   "lon": -69.019993
+  },
+  {
+   "codigo": "40004",
+   "nombre": "AGENCIA LAS HERAS",
+   "tipo": "agencia",
+   "domicilio": "San Martin 516",
+   "localidad": "Las Heras",
+   "lat": -32.860008,
+   "lon": -68.833232
+  },
+  {
+   "codigo": "40005",
+   "nombre": "AGENCIA MAIPU",
+   "tipo": "agencia",
+   "domicilio": "Mitre 278",
+   "localidad": "Barcala",
+   "lat": -33.033333,
+   "lon": -68.6
+  },
+  {
+   "codigo": "40006",
+   "nombre": "AGENCIA LUJAN DE CUYO",
+   "tipo": "agencia",
+   "domicilio": "Roque Saenz Peña 529",
+   "localidad": "Agrelo",
+   "lat": -33.116667,
+   "lon": -68.9
+  },
+  {
+   "codigo": "40007",
+   "nombre": "AGENCIA 6TA. SECCION CAPITAL",
+   "tipo": "agencia",
+   "domicilio": "Juan B. Justo 415",
+   "localidad": "Mendoza",
+   "lat": -32.883648,
+   "lon": -68.854948
+  },
+  {
+   "codigo": "40050",
+   "nombre": "AGENCIA LAVALLE",
+   "tipo": "agencia",
+   "domicilio": "Las Heras 22",
+   "localidad": "Tulumaya O Lavalle",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "40051",
+   "nombre": "AGENCIA LA CONSULTA",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 235",
+   "localidad": "La Consulta",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "40053",
+   "nombre": "AGENCIA LA PAZ",
+   "tipo": "agencia",
+   "domicilio": "Caligniana 151",
+   "localidad": "La Paz",
+   "lat": -32.833333,
+   "lon": -67.3
+  },
+  {
+   "codigo": "40054",
+   "nombre": "AGENCIA LAS CATITAS",
+   "tipo": "agencia",
+   "domicilio": "Francisco Cirot 85",
+   "localidad": "Las Catitas",
+   "lat": -33.300598,
+   "lon": -68.045113
+  },
+  {
+   "codigo": "40055",
+   "nombre": "AGENCIA RIVADAVIA",
+   "tipo": "agencia",
+   "domicilio": "Wenceslao Nuñez 232",
+   "localidad": "Rivadavia",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "40056",
+   "nombre": "AGENCIA USPALLATA",
+   "tipo": "agencia",
+   "domicilio": "Las Heras y las Calandrias 246",
+   "localidad": "Capdeville",
+   "lat": -32.75,
+   "lon": -68.816667
+  },
+  {
+   "codigo": "40057",
+   "nombre": "AGENCIA TUPUNGATO",
+   "tipo": "agencia",
+   "domicilio": "Almirante Brown 290",
+   "localidad": "La Arboleda",
+   "lat": -33.366667,
+   "lon": -69.133333
+  },
+  {
+   "codigo": "40062",
+   "nombre": "AGENCIA JUNIN",
+   "tipo": "agencia",
+   "domicilio": "Ladislao Segura 123",
+   "localidad": "Junin",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "40100",
+   "nombre": "AGENCIA - SAN RAFAEL",
+   "tipo": "agencia",
+   "domicilio": "Av. Rivadavia 40",
+   "localidad": "San Rafael",
+   "lat": -34.608985,
+   "lon": -68.326902
+  },
+  {
+   "codigo": "40104",
+   "nombre": "AGENCIA GENERAL ALVEAR",
+   "tipo": "agencia",
+   "domicilio": "Roque Saens Peña 675",
+   "localidad": "Canalejas",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "40152",
+   "nombre": "AGENCIA MALARGUE",
+   "tipo": "agencia",
+   "domicilio": "Rufino Ortega 778",
+   "localidad": "Malargue",
+   "lat": -35.474616,
+   "lon": -69.579923
+  },
+  {
+   "codigo": "40158",
+   "nombre": "AGENCIA VILLA ATUEL",
+   "tipo": "agencia",
+   "domicilio": "Bartolome Mitre 299",
+   "localidad": "Jaime Prats",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "40159",
+   "nombre": "AGENCIA BOWEN",
+   "tipo": "agencia",
+   "domicilio": "Colon y San Martin 555",
+   "localidad": "Bowen",
+   "lat": -35.0,
+   "lon": -67.533333
+  },
+  {
+   "codigo": "40160",
+   "nombre": "AGENCIA MONTE COMAN",
+   "tipo": "agencia",
+   "domicilio": "Av Mendoza 149",
+   "localidad": "Colonia Elena",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "40161",
+   "nombre": "CAP GODOY CRUZ",
+   "tipo": "cap",
+   "domicilio": "Avenida San Martin 189",
+   "localidad": "Godoy Cruz",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "V": [
+  {
+   "codigo": "50000",
+   "nombre": "UGL V - BAHIA BLANCA",
+   "tipo": "ugl",
+   "domicilio": "San Martín 261",
+   "localidad": "Bahia Blanca",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "50001",
+   "nombre": "AGENCIA SAAVEDRA",
+   "tipo": "agencia",
+   "domicilio": "Cecilio Lopez 316",
+   "localidad": "Saavedra",
+   "lat": -37.766667,
+   "lon": -62.35
+  },
+  {
+   "codigo": "50100",
+   "nombre": "AGENCIA CORONEL ROSALES",
+   "tipo": "agencia",
+   "domicilio": "Humberto Primo 202",
+   "localidad": "Carhue",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "50101",
+   "nombre": "AGENCIA TRES ARROYOS",
+   "tipo": "agencia",
+   "domicilio": "Istilart 86",
+   "localidad": "Tres Arroyos",
+   "lat": -38.378796,
+   "lon": -60.2713
+  },
+  {
+   "codigo": "50102",
+   "nombre": "AGENCIA CORONEL PRINGLES",
+   "tipo": "agencia",
+   "domicilio": "Stegman 557",
+   "localidad": "Cnel Pringles",
+   "lat": -37.966667,
+   "lon": -61.366667
+  },
+  {
+   "codigo": "50103",
+   "nombre": "AGENCIA CORONEL DORREGO",
+   "tipo": "agencia",
+   "domicilio": "San Martin 548",
+   "localidad": "Cnel Dorrego",
+   "lat": -38.715823,
+   "lon": -61.291224
+  },
+  {
+   "codigo": "50104",
+   "nombre": "AGENCIA TORNQUIST",
+   "tipo": "agencia",
+   "domicilio": "Rawson 240",
+   "localidad": "Tornquist",
+   "lat": -38.1,
+   "lon": -62.233333
+  },
+  {
+   "codigo": "50150",
+   "nombre": "AGENCIA ORENSE",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 198",
+   "localidad": "Orense",
+   "lat": -38.683333,
+   "lon": -59.783333
+  },
+  {
+   "codigo": "50200",
+   "nombre": "AGENCIA CORONEL SUAREZ",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 1029",
+   "localidad": "Cnel Suarez",
+   "lat": -37.459256,
+   "lon": -61.930652
+  },
+  {
+   "codigo": "50205",
+   "nombre": "AGENCIA MONTE HERMOSO",
+   "tipo": "agencia",
+   "domicilio": "Traful Bis, Galeria Fenizi Local 268 S/N",
+   "localidad": "Monte Hermoso",
+   "lat": -38.983333,
+   "lon": -61.3
+  },
+  {
+   "codigo": "50206",
+   "nombre": "AGENCIA CARMEN DE PATAGONES",
+   "tipo": "agencia",
+   "domicilio": "7 de Marzo 150",
+   "localidad": "Carmen de Patagones",
+   "lat": -40.800926,
+   "lon": -62.985386
+  },
+  {
+   "codigo": "50207",
+   "nombre": "AGENCIA MEDANOS",
+   "tipo": "agencia",
+   "domicilio": "Bartolome Mitre 400",
+   "localidad": "Medanos",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "50209",
+   "nombre": "AGENCIA GUAMINI",
+   "tipo": "agencia",
+   "domicilio": "Av. M. Freire 105",
+   "localidad": "Guamini",
+   "lat": -37.033333,
+   "lon": -62.6
+  },
+  {
+   "codigo": "50210",
+   "nombre": "AGENCIA CARHUE",
+   "tipo": "agencia",
+   "domicilio": "Laprida 960",
+   "localidad": "Carhue",
+   "lat": -37.183333,
+   "lon": -62.75
+  },
+  {
+   "codigo": "50211",
+   "nombre": "AGENCIA PIGUE",
+   "tipo": "agencia",
+   "domicilio": "Moseñor Durban 701",
+   "localidad": "Pigüe",
+   "lat": -37.683333,
+   "lon": -62.4
+  },
+  {
+   "codigo": "50212",
+   "nombre": "AGENCIA PUAN",
+   "tipo": "agencia",
+   "domicilio": "San Martin 498",
+   "localidad": "Puan",
+   "lat": -37.55,
+   "lon": -62.766667
+  },
+  {
+   "codigo": "50250",
+   "nombre": "AGENCIA HUANGUELEN",
+   "tipo": "agencia",
+   "domicilio": "Calle 12 558",
+   "localidad": "Huanguelen",
+   "lat": -37.066667,
+   "lon": -61.95
+  },
+  {
+   "codigo": "50251",
+   "nombre": "AGENCIA PEDRO LURO",
+   "tipo": "agencia",
+   "domicilio": "Calle Nro. 24 262",
+   "localidad": "Pedro Luro",
+   "lat": -39.5,
+   "lon": -62.7
+  },
+  {
+   "codigo": "50252",
+   "nombre": "AGENCIA DARRAGUEIRA",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 143",
+   "localidad": "Darregueira",
+   "lat": -37.7,
+   "lon": -63.166667
+  },
+  {
+   "codigo": "50253",
+   "nombre": "AGENCIA CASBAS",
+   "tipo": "agencia",
+   "domicilio": "San Martin 936",
+   "localidad": "Casbas",
+   "lat": -36.766667,
+   "lon": -62.516667
+  },
+  {
+   "codigo": "50255",
+   "nombre": "AGENCIA STROEDER",
+   "tipo": "agencia",
+   "domicilio": "7 de Marzo 411",
+   "localidad": "Stroeder",
+   "lat": -40.183333,
+   "lon": -62.616667
+  },
+  {
+   "codigo": "50258",
+   "nombre": "AGENCIA VILLA MITRE",
+   "tipo": "agencia",
+   "domicilio": "Caseros 1581",
+   "localidad": "Bahia Blanca",
+   "lat": -38.730597,
+   "lon": -62.246907
+  },
+  {
+   "codigo": "50259",
+   "nombre": "AGENCIA INGENIERO WHITE",
+   "tipo": "agencia",
+   "domicilio": "Siches 3937",
+   "localidad": "Ing White",
+   "lat": -38.784803,
+   "lon": -62.267013
+  },
+  {
+   "codigo": "50260",
+   "nombre": "AGENCIA GENERAL DANIEL CERRI",
+   "tipo": "agencia",
+   "domicilio": "Jose Maria Gutierrez 379",
+   "localidad": "Gral Daniel Cerri",
+   "lat": -38.720366,
+   "lon": -62.391802
+  }
+ ],
+ "VI": [
+  {
+   "codigo": "60000",
+   "nombre": "UGL VI - CAPITAL FEDERAL",
+   "tipo": "ugl",
+   "domicilio": "Tucuman 753 Piso 6º",
+   "localidad": "Capital Federal",
+   "lat": -34.601053,
+   "lon": -58.37767
+  },
+  {
+   "codigo": "60001",
+   "nombre": "BOCA DE ATENCION HOSPITAL DE CLINICAS",
+   "tipo": "boca",
+   "domicilio": "Avda. Córdoba 2351",
+   "localidad": "Capital Federal",
+   "lat": -34.5995,
+   "lon": -58.400162
+  },
+  {
+   "codigo": "60002",
+   "nombre": "BOCA DE ATENCION HOSPITAL ESPAÑOL",
+   "tipo": "boca",
+   "domicilio": "Av Belgrano 2975",
+   "localidad": "Capital Federal",
+   "lat": -34.614925,
+   "lon": -58.407627
+  },
+  {
+   "codigo": "60100",
+   "nombre": "AGENCIA PAMI 1",
+   "tipo": "agencia",
+   "domicilio": "Juan Bautista Alberdi 5834",
+   "localidad": "Capital Federal",
+   "lat": -34.651866,
+   "lon": -58.502433
+  },
+  {
+   "codigo": "60200",
+   "nombre": "AGENCIA PAMI 2",
+   "tipo": "agencia",
+   "domicilio": "Avenida Rivadavia 8999",
+   "localidad": "Capital Federal",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "60300",
+   "nombre": "AGENCIA PAMI 3",
+   "tipo": "agencia",
+   "domicilio": "Avenida Francisco Beiro 3572",
+   "localidad": "Capital Federal",
+   "lat": -34.600803,
+   "lon": -58.503377
+  },
+  {
+   "codigo": "60301",
+   "nombre": "BOCA DE ATENCION MONTE CASTRO",
+   "tipo": "boca",
+   "domicilio": "Avenida Lope de Vega 2102",
+   "localidad": "Capital Federal",
+   "lat": -34.621227,
+   "lon": -58.516087
+  },
+  {
+   "codigo": "60400",
+   "nombre": "AGENCIA PAMI 4",
+   "tipo": "agencia",
+   "domicilio": "Vidal 2322",
+   "localidad": "Capital Federal",
+   "lat": -34.561889,
+   "lon": -58.462134
+  },
+  {
+   "codigo": "60500",
+   "nombre": "AGENCIA PAMI 5",
+   "tipo": "agencia",
+   "domicilio": "Ecuador 650",
+   "localidad": "Capital Federal",
+   "lat": -34.602235,
+   "lon": -58.406857
+  },
+  {
+   "codigo": "60600",
+   "nombre": "AGENCIA PAMI 6",
+   "tipo": "agencia",
+   "domicilio": "Av. Rivadavia 7358",
+   "localidad": "Capital Federal",
+   "lat": -34.630297,
+   "lon": -58.469094
+  },
+  {
+   "codigo": "60700",
+   "nombre": "AGENCIA PAMI 7",
+   "tipo": "agencia",
+   "domicilio": "Avenida Corrientes 5165",
+   "localidad": "Capital Federal",
+   "lat": -34.599774,
+   "lon": -58.438223
+  },
+  {
+   "codigo": "60800",
+   "nombre": "AGENCIA PAMI 8",
+   "tipo": "agencia",
+   "domicilio": "Avenida Belgrano 3880",
+   "localidad": "Capital Federal",
+   "lat": -34.615694,
+   "lon": -58.420925
+  },
+  {
+   "codigo": "60801",
+   "nombre": "BOCA DE ATENCION PARQUE PATRICIOS",
+   "tipo": "boca",
+   "domicilio": "Avenida Caseros 3401",
+   "localidad": "Capital Federal",
+   "lat": -34.638255,
+   "lon": -58.413045
+  },
+  {
+   "codigo": "60802",
+   "nombre": "BOCA DE ATENCION SAN CRISTOBAL",
+   "tipo": "boca",
+   "domicilio": "Jujuy 1171",
+   "localidad": "Capital Federal",
+   "lat": -34.623359,
+   "lon": -58.402275
+  },
+  {
+   "codigo": "60900",
+   "nombre": "AGENCIA PAMI 9",
+   "tipo": "agencia",
+   "domicilio": "Avenida Paseo Colon 975",
+   "localidad": "Capital Federal",
+   "lat": -34.618949,
+   "lon": -58.369269
+  },
+  {
+   "codigo": "60901",
+   "nombre": "BOCA DE ATENCION BARRACAS",
+   "tipo": "boca",
+   "domicilio": "Avenida Montes de Oca 223",
+   "localidad": "Capital Federal",
+   "lat": -34.63097,
+   "lon": -58.376644
+  },
+  {
+   "codigo": "61000",
+   "nombre": "AGENCIA PAMI 10",
+   "tipo": "agencia",
+   "domicilio": "Moreno 1202",
+   "localidad": "Capital Federal",
+   "lat": -34.612189,
+   "lon": -58.383199
+  }
+ ],
+ "VII": [
+  {
+   "codigo": "70000",
+   "nombre": "UGL VII - LA PLATA",
+   "tipo": "ugl",
+   "domicilio": "Calle 7 170",
+   "localidad": "La Plata",
+   "lat": -34.903465,
+   "lon": -57.965078
+  },
+  {
+   "codigo": "70001",
+   "nombre": "AGENCIA LOBOS",
+   "tipo": "agencia",
+   "domicilio": "Bartolome Mitre 368",
+   "localidad": "Lobos",
+   "lat": -35.188826,
+   "lon": -59.092546
+  },
+  {
+   "codigo": "70003",
+   "nombre": "AGENCIA CHASCOMUS",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 115",
+   "localidad": "Chascomus",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "70004",
+   "nombre": "AGENCIA ALEJANDRO KORN",
+   "tipo": "agencia",
+   "domicilio": "Av. Pte. Peron y Mitre 4964",
+   "localidad": "Alejandro Korn",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "70005",
+   "nombre": "AGENCIA MONTE",
+   "tipo": "agencia",
+   "domicilio": "Santos Molina 765",
+   "localidad": "San Miguel del Monte",
+   "lat": -35.439299,
+   "lon": -58.801501
+  },
+  {
+   "codigo": "70006",
+   "nombre": "AGENCIA GENERAL BELGRANO",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 64",
+   "localidad": "Gral Belgrano",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "70007",
+   "nombre": "AGENCIA CAÑUELAS",
+   "tipo": "agencia",
+   "domicilio": "Basavilbaso 480",
+   "localidad": "Cañuelas",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "70008",
+   "nombre": "AGENCIA RANCHOS",
+   "tipo": "agencia",
+   "domicilio": "Hipolito Yrigoyen 3247",
+   "localidad": "Ranchos",
+   "lat": -35.533333,
+   "lon": -58.816667
+  },
+  {
+   "codigo": "70009",
+   "nombre": "AGENCIA CORONEL BRANSEN",
+   "tipo": "agencia",
+   "domicilio": "Alberti 965",
+   "localidad": "Brandsen",
+   "lat": -35.169678,
+   "lon": -58.233392
+  },
+  {
+   "codigo": "70011",
+   "nombre": "AGENCIA ENSENADA",
+   "tipo": "agencia",
+   "domicilio": "Ferella 593",
+   "localidad": "Ensenada",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "70012",
+   "nombre": "AGENCIA BERISSO",
+   "tipo": "agencia",
+   "domicilio": "Calle 161 esq. 8 606 Pb",
+   "localidad": "Berisso",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "70013",
+   "nombre": "AGENCIA MAGDALENA",
+   "tipo": "agencia",
+   "domicilio": "Goenaga 882",
+   "localidad": "Magdalena",
+   "lat": -35.079764,
+   "lon": -57.519378
+  },
+  {
+   "codigo": "70051",
+   "nombre": "AGENCIA CITY BELL",
+   "tipo": "agencia",
+   "domicilio": "Camino Centenario 76",
+   "localidad": "City Bell",
+   "lat": -34.867958,
+   "lon": -58.039089
+  },
+  {
+   "codigo": "70052",
+   "nombre": "AGENCIA LOS HORNOS",
+   "tipo": "agencia",
+   "domicilio": "Calle 66 2342",
+   "localidad": "Los Hornos",
+   "lat": -34.958875,
+   "lon": -57.970866
+  },
+  {
+   "codigo": "70053",
+   "nombre": "AGENCIA MELCHOR ROMERO",
+   "tipo": "agencia",
+   "domicilio": "169 entre 518 y 519 1376",
+   "localidad": "Melchor Romero",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "70054",
+   "nombre": "AGENCIA VILLA ELISA",
+   "tipo": "agencia",
+   "domicilio": "Centenario 450",
+   "localidad": "Villa Elisa",
+   "lat": -34.855742,
+   "lon": -58.0752
+  },
+  {
+   "codigo": "70055",
+   "nombre": "AGENCIA MANUEL J. COBO",
+   "tipo": "agencia",
+   "domicilio": "Presidente Peron 165",
+   "localidad": "Cobo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "70056",
+   "nombre": "AGENCIA PILA",
+   "tipo": "agencia",
+   "domicilio": "Maxima Planes de Casco 240",
+   "localidad": "Pila",
+   "lat": -36.016667,
+   "lon": -58.15
+  },
+  {
+   "codigo": "70057",
+   "nombre": "AGENCIA CASTELLI",
+   "tipo": "agencia",
+   "domicilio": "Av 25 de Mayo 308",
+   "localidad": "Castelli",
+   "lat": -36.1,
+   "lon": -57.816667
+  },
+  {
+   "codigo": "70058",
+   "nombre": "AGENCIA VERONICA",
+   "tipo": "agencia",
+   "domicilio": "Calle 30 1606",
+   "localidad": "Punta Indio",
+   "lat": -35.276375,
+   "lon": -57.246468
+  },
+  {
+   "codigo": "70059",
+   "nombre": "AGENCIA VILLA ELVIRA",
+   "tipo": "agencia",
+   "domicilio": "Avenida 122 2431",
+   "localidad": "Villa Elvira",
+   "lat": -34.915668,
+   "lon": -57.944541
+  },
+  {
+   "codigo": "70060",
+   "nombre": "CAP LA PLATA CENTRO",
+   "tipo": "cap",
+   "domicilio": "Avenida 51 E/ 8 y 9 662",
+   "localidad": "La Plata",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "VIII": [
+  {
+   "codigo": "80000",
+   "nombre": "UGL VIII - SAN MARTIN",
+   "tipo": "ugl",
+   "domicilio": "Ricardo Balbin 1954",
+   "localidad": "San Martin",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "80001",
+   "nombre": "AGENCIA CASEROS",
+   "tipo": "agencia",
+   "domicilio": "Juan B. Alberdi 4665",
+   "localidad": "Caseros",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "80002",
+   "nombre": "AGENCIA VILLA BALLESTER",
+   "tipo": "agencia",
+   "domicilio": "Profesor Aguer 4977",
+   "localidad": "Villa Ballester",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "80100",
+   "nombre": "AGENCIA SAN ISIDRO",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 336",
+   "localidad": "San Isidro",
+   "lat": -34.470059,
+   "lon": -58.510597
+  },
+  {
+   "codigo": "80102",
+   "nombre": "AGENCIA MUNRO",
+   "tipo": "agencia",
+   "domicilio": "Bernardino Rivadavia 2534",
+   "localidad": "Munro",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "80103",
+   "nombre": "AGENCIA VICENTE LOPEZ",
+   "tipo": "agencia",
+   "domicilio": "Av. Maipu 2124",
+   "localidad": "Vicente Lopez",
+   "lat": -34.517334,
+   "lon": -58.486567
+  },
+  {
+   "codigo": "80200",
+   "nombre": "AGENCIA SAN MIGUEL",
+   "tipo": "agencia",
+   "domicilio": "Muñoz 1563",
+   "localidad": "San Miguel",
+   "lat": -34.540612,
+   "lon": -58.708547
+  },
+  {
+   "codigo": "80201",
+   "nombre": "AGENCIA MALVINAS ARGENTINAS",
+   "tipo": "agencia",
+   "domicilio": "Francisco Segui 1371",
+   "localidad": "Grand Bourg",
+   "lat": -34.486795,
+   "lon": -58.723132
+  },
+  {
+   "codigo": "80202",
+   "nombre": "AGENCIA JOSE C. PAZ",
+   "tipo": "agencia",
+   "domicilio": "Pte. Peron 3832",
+   "localidad": "Jose C Paz",
+   "lat": -34.526231,
+   "lon": -58.733968
+  },
+  {
+   "codigo": "80300",
+   "nombre": "AGENCIA TIGRE",
+   "tipo": "agencia",
+   "domicilio": "Avda Cazon 966",
+   "localidad": "Tigre",
+   "lat": -34.428183,
+   "lon": -58.573619
+  },
+  {
+   "codigo": "80301",
+   "nombre": "AGENCIA SAN FERNANDO",
+   "tipo": "agencia",
+   "domicilio": "Av. Constitucion 1452",
+   "localidad": "San Fernando",
+   "lat": -34.443688,
+   "lon": -58.553151
+  },
+  {
+   "codigo": "80304",
+   "nombre": "AGENCIA GRAL. PACHECO",
+   "tipo": "agencia",
+   "domicilio": "Hipolito Yrigoyen 1795",
+   "localidad": "Gral Pacheco",
+   "lat": -34.468062,
+   "lon": -58.647382
+  },
+  {
+   "codigo": "80305",
+   "nombre": "CAP CIUDADELA",
+   "tipo": "cap",
+   "domicilio": "25 de Mayo 128",
+   "localidad": "Ciudadela",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "IX": [
+  {
+   "codigo": "90000",
+   "nombre": "UGL IX - ROSARIO",
+   "tipo": "ugl",
+   "domicilio": "San Lorenzo 926",
+   "localidad": "Rosario",
+   "lat": -32.94518,
+   "lon": -60.63519
+  },
+  {
+   "codigo": "90001",
+   "nombre": "AGENCIA ARROYO SECO",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 434",
+   "localidad": "Arroyo Seco",
+   "lat": -33.158611,
+   "lon": -60.510291
+  },
+  {
+   "codigo": "90010",
+   "nombre": "BOCA DE ATENCION ROSARIO SUR",
+   "tipo": "boca",
+   "domicilio": "San Martin 4816",
+   "localidad": "Rosario",
+   "lat": -32.993055,
+   "lon": -60.64719
+  },
+  {
+   "codigo": "90011",
+   "nombre": "BOCA DE ATENCION ROSARIO NORTE",
+   "tipo": "boca",
+   "domicilio": "Genova 1732",
+   "localidad": "Rosario",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "90100",
+   "nombre": "AGENCIA CASILDA",
+   "tipo": "agencia",
+   "domicilio": "Buenos Aires 2722",
+   "localidad": "Casilda",
+   "lat": -33.048387,
+   "lon": -61.17352
+  },
+  {
+   "codigo": "90101",
+   "nombre": "AGENCIA VENADO TUERTO",
+   "tipo": "agencia",
+   "domicilio": "Lisandro de la Torre 841",
+   "localidad": "Venado Tuerto",
+   "lat": -33.748452,
+   "lon": -61.972935
+  },
+  {
+   "codigo": "90102",
+   "nombre": "AGENCIA RUFINO",
+   "tipo": "agencia",
+   "domicilio": "Bernabé Ferreyra 151",
+   "localidad": "Rufino",
+   "lat": -34.265277,
+   "lon": -62.714132
+  },
+  {
+   "codigo": "90103",
+   "nombre": "AGENCIA SAN LORENZO",
+   "tipo": "agencia",
+   "domicilio": "Boulevar Urquiza 556",
+   "localidad": "San Lorenzo",
+   "lat": -32.747695,
+   "lon": -60.733334
+  },
+  {
+   "codigo": "90104",
+   "nombre": "AGENCIA VILLA CONSTITUCION",
+   "tipo": "agencia",
+   "domicilio": "Lisandro de la Torre 444",
+   "localidad": "Villa Constitucion",
+   "lat": -33.227478,
+   "lon": -60.331
+  },
+  {
+   "codigo": "90105",
+   "nombre": "AGENCIA CAÑADA DE GOMEZ",
+   "tipo": "agencia",
+   "domicilio": "España 164",
+   "localidad": "Cañada de Gomez",
+   "lat": -32.819811,
+   "lon": -61.393248
+  },
+  {
+   "codigo": "90106",
+   "nombre": "AGENCIA CHAÑAR LADEADO",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 220",
+   "localidad": "Chañar Ladeado",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "90107",
+   "nombre": "AGENCIA LAS ROSAS",
+   "tipo": "agencia",
+   "domicilio": "Italia 116",
+   "localidad": "Las Rosas",
+   "lat": -32.477051,
+   "lon": -61.577972
+  },
+  {
+   "codigo": "90108",
+   "nombre": "AGENCIA FIRMAT",
+   "tipo": "agencia",
+   "domicilio": "Avellaneda esq French S/N",
+   "localidad": "Firmat",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "90150",
+   "nombre": "AGENCIA ALCORTA",
+   "tipo": "agencia",
+   "domicilio": "España 838",
+   "localidad": "Alcorta",
+   "lat": -33.55,
+   "lon": -61.133333
+  },
+  {
+   "codigo": "90151",
+   "nombre": "AGENCIA TOTORAS",
+   "tipo": "agencia",
+   "domicilio": "Carlos Pellegrini 845",
+   "localidad": "Totoras",
+   "lat": -32.586994,
+   "lon": -61.171145
+  },
+  {
+   "codigo": "90152",
+   "nombre": "AGENCIA SAN GREGORIO",
+   "tipo": "agencia",
+   "domicilio": "San Martin 797",
+   "localidad": "San Gregorio",
+   "lat": -34.324815,
+   "lon": -62.036118
+  },
+  {
+   "codigo": "90153",
+   "nombre": "AGENCIA WHEELWRIGHT",
+   "tipo": "agencia",
+   "domicilio": "Gral. Lopez 434",
+   "localidad": "Wheelwright",
+   "lat": -33.791988,
+   "lon": -61.211751
+  },
+  {
+   "codigo": "90154",
+   "nombre": "AGENCIA VILLA CAÑAS",
+   "tipo": "agencia",
+   "domicilio": "Calle 53 315",
+   "localidad": "Villa Cañas",
+   "lat": -34.004967,
+   "lon": -61.604249
+  },
+  {
+   "codigo": "90155",
+   "nombre": "AGENCIA CARCARAÑA",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 1418",
+   "localidad": "Carcaraña",
+   "lat": -32.857241,
+   "lon": -61.150139
+  },
+  {
+   "codigo": "90156",
+   "nombre": "AGENCIA VILLA GOBERNADOR GALVEZ",
+   "tipo": "agencia",
+   "domicilio": "Libertad 697",
+   "localidad": "Villa Gob Galvez",
+   "lat": -33.020744,
+   "lon": -60.617989
+  },
+  {
+   "codigo": "90157",
+   "nombre": "AGENCIA FUNES",
+   "tipo": "agencia",
+   "domicilio": "Santa Fe 1750",
+   "localidad": "Funes",
+   "lat": -32.918076,
+   "lon": -60.812135
+  },
+  {
+   "codigo": "90158",
+   "nombre": "AGENCIA GRANADERO BAIGORRIA",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia y Pueyrredon S/N",
+   "localidad": "Granadero Baigorria",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "90159",
+   "nombre": "AGENCIA PEREZ",
+   "tipo": "agencia",
+   "domicilio": "Av. Belgrano 1897",
+   "localidad": "Perez",
+   "lat": -32.963114,
+   "lon": -60.620833
+  },
+  {
+   "codigo": "90162",
+   "nombre": "BOCA DE ATENCION CAPITAN BERMUDEZ",
+   "tipo": "boca",
+   "domicilio": "Av. San Lorenzo 1701",
+   "localidad": "CAP Bermudez",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "90163",
+   "nombre": "BOCA DE ATENCION LAS PAREJAS",
+   "tipo": "boca",
+   "domicilio": "Avenida 17 669",
+   "localidad": "Las Parejas",
+   "lat": -32.682737,
+   "lon": -61.570137
+  }
+ ],
+ "X": [
+  {
+   "codigo": "100000",
+   "nombre": "UGL X - LANUS",
+   "tipo": "ugl",
+   "domicilio": "Hipolito Yrigoyen 6247",
+   "localidad": "Remedios de Escalada",
+   "lat": -34.728724,
+   "lon": -58.395456
+  },
+  {
+   "codigo": "100002",
+   "nombre": "AGENCIA VALENTIN ALSINA",
+   "tipo": "agencia",
+   "domicilio": "Pte. Peron 3872",
+   "localidad": "Valentin Alsina",
+   "lat": -34.725651,
+   "lon": -58.35721
+  },
+  {
+   "codigo": "100003",
+   "nombre": "AGENCIA LANUS CENTRO",
+   "tipo": "agencia",
+   "domicilio": "Arturo Illia 1173",
+   "localidad": "Gerli",
+   "lat": -34.705494,
+   "lon": -58.38611
+  },
+  {
+   "codigo": "100004",
+   "nombre": "AGENCIA MONTE CHINGOLO",
+   "tipo": "agencia",
+   "domicilio": "Av. Eva Peron 3269",
+   "localidad": "Monte Chingolo",
+   "lat": -34.720982,
+   "lon": -58.363314
+  },
+  {
+   "codigo": "100100",
+   "nombre": "AGENCIA LOMAS DE ZAMORA",
+   "tipo": "agencia",
+   "domicilio": "Av. Alsina 1923",
+   "localidad": "Lomas de Zamora",
+   "lat": -34.759568,
+   "lon": -58.395471
+  },
+  {
+   "codigo": "100101",
+   "nombre": "AGENCIA MONTE GRANDE",
+   "tipo": "agencia",
+   "domicilio": "Maximo Paz 11",
+   "localidad": "Monte Grande",
+   "lat": -34.81443,
+   "lon": -58.469673
+  },
+  {
+   "codigo": "100102",
+   "nombre": "AGENCIA ADROGUE",
+   "tipo": "agencia",
+   "domicilio": "Canale 967",
+   "localidad": "Almte Brown",
+   "lat": -34.80368,
+   "lon": -58.404116
+  },
+  {
+   "codigo": "100103",
+   "nombre": "AGENCIA VILLA FIORITO",
+   "tipo": "agencia",
+   "domicilio": "El Plumerillo 2148",
+   "localidad": "Lomas de Zamora",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "100104",
+   "nombre": "AGENCIA EZEIZA",
+   "tipo": "agencia",
+   "domicilio": "Conquista de Desierto 372",
+   "localidad": "Ezeiza",
+   "lat": -34.855569,
+   "lon": -58.52283
+  },
+  {
+   "codigo": "100200",
+   "nombre": "AGENCIA AVELLANEDA",
+   "tipo": "agencia",
+   "domicilio": "Bereguestein 30",
+   "localidad": "Avellaneda",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "100202",
+   "nombre": "AGENCIA GLEW",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 195",
+   "localidad": "Glew",
+   "lat": -34.891025,
+   "lon": -58.386246
+  },
+  {
+   "codigo": "100304",
+   "nombre": "AGENCIA BANFIELD",
+   "tipo": "agencia",
+   "domicilio": "Hipólito Yrigoyen 6922",
+   "localidad": "Banfield",
+   "lat": -34.735992,
+   "lon": -58.396842
+  },
+  {
+   "codigo": "100305",
+   "nombre": "AGENCIA WILDE",
+   "tipo": "agencia",
+   "domicilio": "Avenida Fabián Onzari 184",
+   "localidad": "Wilde",
+   "lat": -34.706431,
+   "lon": -58.31899
+  },
+  {
+   "codigo": "100306",
+   "nombre": "AGENCIA GUERNICA",
+   "tipo": "agencia",
+   "domicilio": "Ruta 210 esq 24 2409",
+   "localidad": "Guernica",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "100307",
+   "nombre": "AGENCIA LAVALLOL",
+   "tipo": "agencia",
+   "domicilio": "Antartida Argentina 1657",
+   "localidad": "Llavallol",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "XI": [
+  {
+   "codigo": "110000",
+   "nombre": "UGL XI - MAR DEL PLATA",
+   "tipo": "ugl",
+   "domicilio": "Balcarce 3296",
+   "localidad": "Mar del Plata",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110002",
+   "nombre": "AGENCIA BALCARCE",
+   "tipo": "agencia",
+   "domicilio": "Calle 15 401",
+   "localidad": "Balcarce",
+   "lat": -37.842456,
+   "lon": -58.258142
+  },
+  {
+   "codigo": "110003",
+   "nombre": "AGENCIA NECOCHEA",
+   "tipo": "agencia",
+   "domicilio": "Calle 62 3143",
+   "localidad": "Necochea",
+   "lat": -38.554909,
+   "lon": -58.743934
+  },
+  {
+   "codigo": "110004",
+   "nombre": "AGENCIA SANTA TERESITA",
+   "tipo": "agencia",
+   "domicilio": "Calle 35 801",
+   "localidad": "Santa Teresita",
+   "lat": -36.537553,
+   "lon": -56.700199
+  },
+  {
+   "codigo": "110005",
+   "nombre": "AGENCIA SAN CAYETANO",
+   "tipo": "agencia",
+   "domicilio": "Belgrano y Justo Girado S/N",
+   "localidad": "San Cayetano",
+   "lat": -38.35,
+   "lon": -59.616667
+  },
+  {
+   "codigo": "110006",
+   "nombre": "AGENCIA LOBERIA",
+   "tipo": "agencia",
+   "domicilio": "Alem 169",
+   "localidad": "Loberia",
+   "lat": -38.166667,
+   "lon": -58.766667
+  },
+  {
+   "codigo": "110007",
+   "nombre": "AGENCIA MIRAMAR",
+   "tipo": "agencia",
+   "domicilio": "Calle 28 1127",
+   "localidad": "Miramar",
+   "lat": -38.2696,
+   "lon": -57.839461
+  },
+  {
+   "codigo": "110008",
+   "nombre": "AGENCIA VILLA GESELL",
+   "tipo": "agencia",
+   "domicilio": "Calle 105 365",
+   "localidad": "Villa Gesell",
+   "lat": -37.256546,
+   "lon": -56.969529
+  },
+  {
+   "codigo": "110009",
+   "nombre": "AGENCIA GENERAL MADARIAGA",
+   "tipo": "agencia",
+   "domicilio": "Hipolito Irigoyen 122",
+   "localidad": "Gral Juan Madariaga",
+   "lat": -36.996385,
+   "lon": -57.139607
+  },
+  {
+   "codigo": "110010",
+   "nombre": "AGENCIA CORONEL VIDAL",
+   "tipo": "agencia",
+   "domicilio": "Avellaneda 40",
+   "localidad": "Cnel Vidal",
+   "lat": -37.45,
+   "lon": -57.733333
+  },
+  {
+   "codigo": "110011",
+   "nombre": "AGENCIA MAIPU",
+   "tipo": "agencia",
+   "domicilio": "Julian Lynch 641",
+   "localidad": "Maipu",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110013",
+   "nombre": "AGENCIA DOLORES",
+   "tipo": "agencia",
+   "domicilio": "Castelli 152",
+   "localidad": "Dolores",
+   "lat": -36.314441,
+   "lon": -57.674897
+  },
+  {
+   "codigo": "110014",
+   "nombre": "BOCA DE ATENCION FORTUNATO DE LA PLAZA",
+   "tipo": "boca",
+   "domicilio": "Vidal 1990",
+   "localidad": "Mar del Plata",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110015",
+   "nombre": "BOCA DE ATENCION SANATORIO MAR DEL PLATA",
+   "tipo": "boca",
+   "domicilio": "Av Juan B. Justo 1774",
+   "localidad": "Mar del Plata",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110016",
+   "nombre": "BOCA DE ATENCION HOSPITAL DR. BERNARDO A.HOUSSAY",
+   "tipo": "boca",
+   "domicilio": "Av. Juan B. Justo 1774",
+   "localidad": "Mar del Plata",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110017",
+   "nombre": "BOCA DE ATENCION H.I.G.A.",
+   "tipo": "boca",
+   "domicilio": "Avenida Juan B. Justo 6701",
+   "localidad": "Mar del Plata",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110018",
+   "nombre": "BOCA DE ATENCION HOSPITAL ESPAÑOL",
+   "tipo": "boca",
+   "domicilio": "San Luis 2562",
+   "localidad": "Mar del Plata",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110052",
+   "nombre": "AGENCIA PINAMAR",
+   "tipo": "agencia",
+   "domicilio": "Marco Polo esq. Jason 54",
+   "localidad": "Pinamar",
+   "lat": -37.112039,
+   "lon": -56.8659
+  },
+  {
+   "codigo": "110053",
+   "nombre": "AGENCIA GENERAL GUIDO",
+   "tipo": "agencia",
+   "domicilio": "Anselmo Cepeda 150",
+   "localidad": "Gral Guido",
+   "lat": -36.65,
+   "lon": -57.8
+  },
+  {
+   "codigo": "110054",
+   "nombre": "AGENCIA MAR DE AJO",
+   "tipo": "agencia",
+   "domicilio": "San Juan 1263",
+   "localidad": "Mar de Ajo",
+   "lat": -36.703446,
+   "lon": -56.677315
+  },
+  {
+   "codigo": "110055",
+   "nombre": "AGENCIA ZONA PUERTO MAR DEL PLATA",
+   "tipo": "agencia",
+   "domicilio": "Rondeau 520",
+   "localidad": "Mar del Plata",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110056",
+   "nombre": "AGENCIA QUEQUEN",
+   "tipo": "agencia",
+   "domicilio": "Calle 521 2399",
+   "localidad": "Quequen",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110057",
+   "nombre": "AGENCIA SAN CLEMENTE DEL TUYU",
+   "tipo": "agencia",
+   "domicilio": "Calle 4 2303",
+   "localidad": "San Clemente del Tuyu",
+   "lat": -36.359163,
+   "lon": -56.719747
+  },
+  {
+   "codigo": "110058",
+   "nombre": "AGENCIA GENERAL PIRAN",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 351",
+   "localidad": "Gral Piran",
+   "lat": -37.283333,
+   "lon": -57.783333
+  },
+  {
+   "codigo": "110059",
+   "nombre": "AGENCIA COMANDANTE NICANOR OTAMENDI",
+   "tipo": "agencia",
+   "domicilio": "Pueyrredon 2565",
+   "localidad": "Cmdte Nicanor Otamendi",
+   "lat": -38.133333,
+   "lon": -57.85
+  },
+  {
+   "codigo": "110060",
+   "nombre": "AGENCIA JUAN N. FERNANDEZ",
+   "tipo": "agencia",
+   "domicilio": "Calle 35 y 20 S/nº",
+   "localidad": "Juan N Fernandez",
+   "lat": -38.016667,
+   "lon": -59.266667
+  },
+  {
+   "codigo": "110061",
+   "nombre": "AGENCIA LA DULCE",
+   "tipo": "agencia",
+   "domicilio": "Calle 33 65",
+   "localidad": "La Dulce",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110062",
+   "nombre": "AGENCIA SANTA CLARA DEL MAR",
+   "tipo": "agencia",
+   "domicilio": "Lastres 174",
+   "localidad": "Santa Clara del Mar",
+   "lat": -37.887845,
+   "lon": -57.523454
+  },
+  {
+   "codigo": "110063",
+   "nombre": "AGENCIA BATAN",
+   "tipo": "agencia",
+   "domicilio": "Calle 136, esq. 155 9895",
+   "localidad": "Batan",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110064",
+   "nombre": "AGENCIA GENERAL LAVALLE",
+   "tipo": "agencia",
+   "domicilio": "Mitre (palacio Municipal) 861",
+   "localidad": "Gral Lavalle",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110090",
+   "nombre": "BOCA DE ATENCION TUCUMAN",
+   "tipo": "boca",
+   "domicilio": "Tucuman 2271",
+   "localidad": "Mar del Plata",
+   "lat": -38.007391,
+   "lon": -57.544095
+  },
+  {
+   "codigo": "110091",
+   "nombre": "BOCA DE ATENCION CONSTITUCION",
+   "tipo": "boca",
+   "domicilio": "Constitucion 5988",
+   "localidad": "Mar del Plata",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110100",
+   "nombre": "AGENCIA TANDIL",
+   "tipo": "agencia",
+   "domicilio": "Pinto 869",
+   "localidad": "Tandil",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "110101",
+   "nombre": "AGENCIA AYACUCHO",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 737",
+   "localidad": "Ayacucho",
+   "lat": -37.15,
+   "lon": -58.483333
+  },
+  {
+   "codigo": "110104",
+   "nombre": "AGENCIA GONZALEZ CHAVEZ",
+   "tipo": "agencia",
+   "domicilio": "Lavalle 65",
+   "localidad": "Adolfo Gonzales Chaves",
+   "lat": -38.030511,
+   "lon": -60.098817
+  }
+ ],
+ "XII": [
+  {
+   "codigo": "120000",
+   "nombre": "UGL XII - SALTA",
+   "tipo": "ugl",
+   "domicilio": "Zuviria 20",
+   "localidad": "Salta",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "120001",
+   "nombre": "AGENCIA TARTAGAL",
+   "tipo": "agencia",
+   "domicilio": "España 2",
+   "localidad": "Tartagal",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "120002",
+   "nombre": "AGENCIA ORAN",
+   "tipo": "agencia",
+   "domicilio": "Bolivia esq Pasaje El Milagro S/N",
+   "localidad": "San Ramon de la Nueva Oran",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "120003",
+   "nombre": "AGENCIA METAN",
+   "tipo": "agencia",
+   "domicilio": "Jose Ignacio Sierra 198",
+   "localidad": "Metan",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "120004",
+   "nombre": "AGENCIA JOAQUIN V. GONZALEZ",
+   "tipo": "agencia",
+   "domicilio": "Yrigoyen 174",
+   "localidad": "Ceibalito",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "120005",
+   "nombre": "AGENCIA CERRILLOS",
+   "tipo": "agencia",
+   "domicilio": "Egidio Bonato 201",
+   "localidad": "Cerrillos",
+   "lat": -24.916667,
+   "lon": -65.483333
+  },
+  {
+   "codigo": "120010",
+   "nombre": "BOCA DE ATENCION CENTRO CÍVICO MUNICIPAL",
+   "tipo": "boca",
+   "domicilio": "Avenida Paraguay 1240",
+   "localidad": "Salta",
+   "lat": -24.782039,
+   "lon": -65.448657
+  },
+  {
+   "codigo": "120050",
+   "nombre": "AGENCIA GENERAL GUEMES",
+   "tipo": "agencia",
+   "domicilio": "Leandro N Alem 180",
+   "localidad": "Gral Güemes",
+   "lat": -24.682176,
+   "lon": -65.033376
+  },
+  {
+   "codigo": "120052",
+   "nombre": "AGENCIA CAFAYATE",
+   "tipo": "agencia",
+   "domicilio": "Sebastian Arias 50",
+   "localidad": "Cafayate",
+   "lat": -26.1,
+   "lon": -65.95
+  },
+  {
+   "codigo": "120053",
+   "nombre": "AGENCIA ROSARIO DE LA FRONTE",
+   "tipo": "agencia",
+   "domicilio": "Heroes de la Patria Exterminal S/N",
+   "localidad": "Rosario de la Frontera",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "120054",
+   "nombre": "AGENCIA EL CARRIL",
+   "tipo": "agencia",
+   "domicilio": "Islas Malvinas 318",
+   "localidad": "El Carril",
+   "lat": -25.062432,
+   "lon": -65.493383
+  },
+  {
+   "codigo": "120055",
+   "nombre": "AGENCIA ROSARIO DE LERMA",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 156 Local 1",
+   "localidad": "Rosario de Lerma",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "120056",
+   "nombre": "AGENCIA CACHI",
+   "tipo": "agencia",
+   "domicilio": "Ruiz de los Llanos S/nº",
+   "localidad": "Cachi",
+   "lat": -25.116667,
+   "lon": -66.2
+  },
+  {
+   "codigo": "120057",
+   "nombre": "AGENCIA EMBARCACION",
+   "tipo": "agencia",
+   "domicilio": "España 24",
+   "localidad": "Embarcacion",
+   "lat": -23.216667,
+   "lon": -64.116667
+  },
+  {
+   "codigo": "120058",
+   "nombre": "AGENCIA APOLINARIO SARAVIA",
+   "tipo": "agencia",
+   "domicilio": "Pasaje Peyrotty 70",
+   "localidad": "Apolinario Saravia",
+   "lat": -24.416667,
+   "lon": -64.033333
+  }
+ ],
+ "XIII": [
+  {
+   "codigo": "130000",
+   "nombre": "UGL XIII - CHACO",
+   "tipo": "ugl",
+   "domicilio": "Avda 9 de Julio 155",
+   "localidad": "Resistencia",
+   "lat": -27.452318,
+   "lon": -58.985053
+  },
+  {
+   "codigo": "130001",
+   "nombre": "AGENCIA ROQUE SAENZ PEÑA",
+   "tipo": "agencia",
+   "domicilio": "Lopez y Planes (calle 21) 526",
+   "localidad": "Presidencia Roque Saenz Peña",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "130002",
+   "nombre": "AGENCIA VILLA ANGELA",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio esq. Lavalle S/N",
+   "localidad": "Villa Angela",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "130003",
+   "nombre": "AGENCIA GENERAL SAN MARTIN",
+   "tipo": "agencia",
+   "domicilio": "12 de Octubre 660",
+   "localidad": "Gral Jose de San Martin",
+   "lat": -26.533333,
+   "lon": -59.35
+  },
+  {
+   "codigo": "130004",
+   "nombre": "AGENCIA LAS BREÑAS",
+   "tipo": "agencia",
+   "domicilio": "Gral. Jones 367",
+   "localidad": "Las Breñas",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "130005",
+   "nombre": "AGENCIA CHARATA",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 857",
+   "localidad": "Charata",
+   "lat": -27.216667,
+   "lon": -61.2
+  },
+  {
+   "codigo": "130006",
+   "nombre": "AGENCIA JUAN JOSE CASTELLI",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 940",
+   "localidad": "Juan Jose Castelli",
+   "lat": -25.95,
+   "lon": -60.616667
+  },
+  {
+   "codigo": "130050",
+   "nombre": "AGENCIA LAS PALMAS",
+   "tipo": "agencia",
+   "domicilio": "Peron esq San Martin S/N",
+   "localidad": "Las Palmas",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "130052",
+   "nombre": "AGENCIA TRES ISLETAS",
+   "tipo": "agencia",
+   "domicilio": "Moreno esq Pradier S/N",
+   "localidad": "Tres Isletas",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "130053",
+   "nombre": "AGENCIA GENERAL PINEDO",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 357",
+   "localidad": "Gral Pinedo",
+   "lat": -27.3,
+   "lon": -61.283333
+  },
+  {
+   "codigo": "130054",
+   "nombre": "AGENCIA SANTA SYLVINA",
+   "tipo": "agencia",
+   "domicilio": "Granadero Baigorria 541",
+   "localidad": "Santa Sylvina",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "130055",
+   "nombre": "AGENCIA SAN BERNARDO",
+   "tipo": "agencia",
+   "domicilio": "Moreno y 25 de Mayo 563",
+   "localidad": "San Bernardo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "130056",
+   "nombre": "AGENCIA CORZUELA",
+   "tipo": "agencia",
+   "domicilio": "Pres. Roca 337",
+   "localidad": "Corzuela",
+   "lat": -26.95,
+   "lon": -60.983333
+  },
+  {
+   "codigo": "130057",
+   "nombre": "AGENCIA MACHAGAI",
+   "tipo": "agencia",
+   "domicilio": "Teodolinda Ermacora 101",
+   "localidad": "Las Palmas",
+   "lat": -27.066667,
+   "lon": -58.683333
+  },
+  {
+   "codigo": "130058",
+   "nombre": "AGENCIA PAMPA DEL INFIERNO",
+   "tipo": "agencia",
+   "domicilio": "Avda San Martín 551",
+   "localidad": "Pampa del Infierno",
+   "lat": -26.516667,
+   "lon": -61.166667
+  },
+  {
+   "codigo": "130059",
+   "nombre": "AGENCIA VILLA BERTHET",
+   "tipo": "agencia",
+   "domicilio": "Mitre entre Pelegrini y Lavall S/nº",
+   "localidad": "Villa Berthet",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "130060",
+   "nombre": "AGENCIA TACO POZO",
+   "tipo": "agencia",
+   "domicilio": "Moreno S/nro. S/nº",
+   "localidad": "Taco Pozo",
+   "lat": -25.616667,
+   "lon": -63.283333
+  },
+  {
+   "codigo": "130061",
+   "nombre": "AGENCIA PAMPA DEL INDIO",
+   "tipo": "agencia",
+   "domicilio": "Bobuena Valdez 571",
+   "localidad": "Pampa del Indio",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "130062",
+   "nombre": "AGENCIA BARRANQUERAS",
+   "tipo": "agencia",
+   "domicilio": "Avda. Laprida 5440",
+   "localidad": "Barranqueras",
+   "lat": -27.488076,
+   "lon": -58.930525
+  },
+  {
+   "codigo": "130063",
+   "nombre": "AGENCIA QUITILIPI",
+   "tipo": "agencia",
+   "domicilio": "Av San Martin 740",
+   "localidad": "Quitilipi",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "130064",
+   "nombre": "AGENCIA EL SAUZALITO",
+   "tipo": "agencia",
+   "domicilio": "Onolho S/nro. (mz. 75 Pc. 9) N/n",
+   "localidad": "El Sauzalito",
+   "lat": -24.466475,
+   "lon": -61.685955
+  }
+ ],
+ "XIV": [
+  {
+   "codigo": "140000",
+   "nombre": "UGL XIV - ENTRE RIOS",
+   "tipo": "ugl",
+   "domicilio": "Venezuela 100",
+   "localidad": "Parana",
+   "lat": -31.734773,
+   "lon": -60.53165
+  },
+  {
+   "codigo": "140001",
+   "nombre": "BOCA HOSPITAL LA BAXADA",
+   "tipo": "boca",
+   "domicilio": "Alvarado 2250",
+   "localidad": "Parana",
+   "lat": -31.753139,
+   "lon": -60.531829
+  },
+  {
+   "codigo": "140003",
+   "nombre": "AGENCIA NOGOYA",
+   "tipo": "agencia",
+   "domicilio": "Centenario 1090",
+   "localidad": "Betbeder",
+   "lat": -32.383333,
+   "lon": -59.95
+  },
+  {
+   "codigo": "140005",
+   "nombre": "AGENCIA GUALEGUAY",
+   "tipo": "agencia",
+   "domicilio": "Federacion 21",
+   "localidad": "Gualeguay",
+   "lat": -33.144754,
+   "lon": -59.314001
+  },
+  {
+   "codigo": "140006",
+   "nombre": "AGENCIA LA PAZ",
+   "tipo": "agencia",
+   "domicilio": "Echagüe 985",
+   "localidad": "La Paz",
+   "lat": -30.740221,
+   "lon": -59.644453
+  },
+  {
+   "codigo": "140052",
+   "nombre": "AGENCIA ROSARIO DEL TALA",
+   "tipo": "agencia",
+   "domicilio": "Saenz Peña 453",
+   "localidad": "Altamirano Sur",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "140055",
+   "nombre": "AGENCIA VICTORIA",
+   "tipo": "agencia",
+   "domicilio": "España 261",
+   "localidad": "Antelo",
+   "lat": -32.533333,
+   "lon": -60.083333
+  },
+  {
+   "codigo": "140057",
+   "nombre": "AGENCIA SANTA ELENA",
+   "tipo": "agencia",
+   "domicilio": "Primer Maestro 298",
+   "localidad": "Santa Elena",
+   "lat": -30.95,
+   "lon": -59.783333
+  },
+  {
+   "codigo": "140059",
+   "nombre": "AGENCIA DIAMANTE",
+   "tipo": "agencia",
+   "domicilio": "Av. Colon 447",
+   "localidad": "Aldea Brasilera",
+   "lat": -31.883333,
+   "lon": -60.583333
+  },
+  {
+   "codigo": "140060",
+   "nombre": "AGENCIA HERNANDARIAS",
+   "tipo": "agencia",
+   "domicilio": "Tucuman 368",
+   "localidad": "La Paz",
+   "lat": -31.225425,
+   "lon": -59.986349
+  },
+  {
+   "codigo": "140062",
+   "nombre": "AGENCIA GENERAL GALARZA",
+   "tipo": "agencia",
+   "domicilio": "Av. Ramirez (ex Estación de Tren) S/n°",
+   "localidad": "Aldea Asuncion",
+   "lat": -32.816667,
+   "lon": -59.233333
+  },
+  {
+   "codigo": "140064",
+   "nombre": "AGENCIA LUCAS GONZALEZ",
+   "tipo": "agencia",
+   "domicilio": "Supremo Entrerriano 298",
+   "localidad": "La Llave",
+   "lat": -32.45,
+   "lon": -59.616667
+  },
+  {
+   "codigo": "140065",
+   "nombre": "AGENCIA MACIA",
+   "tipo": "agencia",
+   "domicilio": "Elias Loiber 20",
+   "localidad": "Macia",
+   "lat": -32.183333,
+   "lon": -59.4
+  },
+  {
+   "codigo": "140066",
+   "nombre": "AGENCIA CERRITO",
+   "tipo": "agencia",
+   "domicilio": "Diagonal Industria 245",
+   "localidad": "Aldea Santa Maria",
+   "lat": -31.616667,
+   "lon": -60.0
+  },
+  {
+   "codigo": "140067",
+   "nombre": "AGENCIA CRESPO",
+   "tipo": "agencia",
+   "domicilio": "Estrada 1322",
+   "localidad": "Crespo",
+   "lat": -32.033333,
+   "lon": -60.316667
+  },
+  {
+   "codigo": "140068",
+   "nombre": "AGENCIA MARIA GRANDE",
+   "tipo": "agencia",
+   "domicilio": "Av. Urquiza (ex Estación de Tren) S/n°",
+   "localidad": "Parana",
+   "lat": -31.664617,
+   "lon": -59.900635
+  },
+  {
+   "codigo": "140069",
+   "nombre": "AGENCIA HASENKAMP",
+   "tipo": "agencia",
+   "domicilio": "Ramirez 473",
+   "localidad": "Hasenkamp",
+   "lat": -31.516667,
+   "lon": -59.833333
+  },
+  {
+   "codigo": "140071",
+   "nombre": "BOCA DE ATENCION VIALE",
+   "tipo": "boca",
+   "domicilio": "Martin Panutto 267",
+   "localidad": "Viale",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "XV": [
+  {
+   "codigo": "150000",
+   "nombre": "UGL XV - SANTA FE",
+   "tipo": "ugl",
+   "domicilio": "1 de Mayo 2269",
+   "localidad": "Santa Fe",
+   "lat": -31.648518,
+   "lon": -60.711421
+  },
+  {
+   "codigo": "150001",
+   "nombre": "AGENCIA RAFAELA",
+   "tipo": "agencia",
+   "domicilio": "Bvard. Pte Julio A Roca 255",
+   "localidad": "Rafaela",
+   "lat": -31.252314,
+   "lon": -61.494525
+  },
+  {
+   "codigo": "150002",
+   "nombre": "AGENCIA EL TREBOL",
+   "tipo": "agencia",
+   "domicilio": "Santa Fe 951",
+   "localidad": "El Trebol",
+   "lat": -32.056584,
+   "lon": -61.603384
+  },
+  {
+   "codigo": "150003",
+   "nombre": "AGENCIA RECONQUISTA",
+   "tipo": "agencia",
+   "domicilio": "Roca 1032",
+   "localidad": "Reconquista",
+   "lat": -29.148105,
+   "lon": -59.643999
+  },
+  {
+   "codigo": "150004",
+   "nombre": "AGENCIA ESPERANZA",
+   "tipo": "agencia",
+   "domicilio": "Av. Cordoba 1982",
+   "localidad": "Esperanza",
+   "lat": -31.44785,
+   "lon": -60.934785
+  },
+  {
+   "codigo": "150005",
+   "nombre": "AGENCIA CORONDA",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 2001",
+   "localidad": "Coronda",
+   "lat": -31.976154,
+   "lon": -60.922514
+  },
+  {
+   "codigo": "150006",
+   "nombre": "AGENCIA CERES",
+   "tipo": "agencia",
+   "domicilio": "Moreno 185",
+   "localidad": "Ceres",
+   "lat": -29.879628,
+   "lon": -61.94525
+  },
+  {
+   "codigo": "150007",
+   "nombre": "AGENCIA VERA",
+   "tipo": "agencia",
+   "domicilio": "Colon 1635",
+   "localidad": "Vera",
+   "lat": -29.457295,
+   "lon": -60.20923
+  },
+  {
+   "codigo": "150008",
+   "nombre": "AGENCIA SAN JAVIER",
+   "tipo": "agencia",
+   "domicilio": "Alvear 2056",
+   "localidad": "San Javier",
+   "lat": -30.579959,
+   "lon": -59.928021
+  },
+  {
+   "codigo": "150009",
+   "nombre": "AGENCIA SAN JUSTO",
+   "tipo": "agencia",
+   "domicilio": "San Martín 2353",
+   "localidad": "San Justo",
+   "lat": -30.786494,
+   "lon": -60.589698
+  },
+  {
+   "codigo": "150010",
+   "nombre": "AGENCIA SAN CARLOS",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 1555",
+   "localidad": "San Carlos Centro",
+   "lat": -31.737116,
+   "lon": -61.094017
+  },
+  {
+   "codigo": "150011",
+   "nombre": "AGENCIA VILLA OCAMPO",
+   "tipo": "agencia",
+   "domicilio": "Padre Angel Tibaldo 1003",
+   "localidad": "Villa Ocampo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "150012",
+   "nombre": "AGENCIA GALVEZ",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 853",
+   "localidad": "Galvez",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "150013",
+   "nombre": "AGENCIA SANTO TOME",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 2351",
+   "localidad": "Santo Tome",
+   "lat": -31.661259,
+   "lon": -60.764346
+  },
+  {
+   "codigo": "150052",
+   "nombre": "AGENCIA SAN JORGE",
+   "tipo": "agencia",
+   "domicilio": "Jorge Ortiz 1834",
+   "localidad": "San Jorge",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "150053",
+   "nombre": "AGENCIA SAN CRISTOBAL",
+   "tipo": "agencia",
+   "domicilio": "Hipolito Yrigoyen 783",
+   "localidad": "San Cristobal",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "150054",
+   "nombre": "AGENCIA TOSTADO",
+   "tipo": "agencia",
+   "domicilio": "Independencia 1773",
+   "localidad": "Tostado",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "150055",
+   "nombre": "AGENCIA SAN GUILLERMO",
+   "tipo": "agencia",
+   "domicilio": "San Martin 730",
+   "localidad": "San Guillermo",
+   "lat": -30.359889,
+   "lon": -61.916367
+  },
+  {
+   "codigo": "150056",
+   "nombre": "AGENCIA SUNCHALES",
+   "tipo": "agencia",
+   "domicilio": "Ameghino 27",
+   "localidad": "Sunchales",
+   "lat": -30.95,
+   "lon": -61.583333
+  },
+  {
+   "codigo": "150057",
+   "nombre": "AGENCIA MARIA JUANA",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 64",
+   "localidad": "Maria Juana",
+   "lat": -31.675812,
+   "lon": -61.751121
+  },
+  {
+   "codigo": "150058",
+   "nombre": "AGENCIA HELVECIA",
+   "tipo": "agencia",
+   "domicilio": "Senador Antille 750",
+   "localidad": "Helvecia",
+   "lat": -31.107132,
+   "lon": -60.090261
+  },
+  {
+   "codigo": "150059",
+   "nombre": "AGENCIA LAGUNA PAIVA",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 1103",
+   "localidad": "Laguna Paiva",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "150060",
+   "nombre": "AGENCIA SAN JOSE DEL RINCON",
+   "tipo": "agencia",
+   "domicilio": "Castañeda y Republica S/N",
+   "localidad": "San Jose del Rincon",
+   "lat": -31.60191,
+   "lon": -60.582363
+  },
+  {
+   "codigo": "150061",
+   "nombre": "AGENCIA LAS TOSCAS",
+   "tipo": "agencia",
+   "domicilio": "Calle 6 E/ 13 y 15 748",
+   "localidad": "Las Toscas",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "XVI": [
+  {
+   "codigo": "160000",
+   "nombre": "UGL XVI - NEUQUEN",
+   "tipo": "ugl",
+   "domicilio": "Hipolito Yrigoyen 55",
+   "localidad": "Neuquen",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "160001",
+   "nombre": "AGENCIA CUTRAL-CO",
+   "tipo": "agencia",
+   "domicilio": "Av Olascoaga 570",
+   "localidad": "Cutral Co",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "160002",
+   "nombre": "AGENCIA ZAPALA",
+   "tipo": "agencia",
+   "domicilio": "Ejercito Argentino 201",
+   "localidad": "Covunco Centro",
+   "lat": -38.733086,
+   "lon": -70.019861
+  },
+  {
+   "codigo": "160003",
+   "nombre": "AGENCIA SAN MARTIN DE LOS ANDES",
+   "tipo": "agencia",
+   "domicilio": "Teniente Ramayon 660",
+   "localidad": "San Martin de los Andes",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "160004",
+   "nombre": "AGENCIA RINCÓN DE LOS SAUCES",
+   "tipo": "agencia",
+   "domicilio": "San Martin 1047",
+   "localidad": "Rincon de los Sauces",
+   "lat": -37.391135,
+   "lon": -68.92396
+  },
+  {
+   "codigo": "160050",
+   "nombre": "AGENCIA CENTENARIO",
+   "tipo": "agencia",
+   "domicilio": "Paraguay 235",
+   "localidad": "Auca Mahuida",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "160051",
+   "nombre": "AGENCIA CHOS-MALAL",
+   "tipo": "agencia",
+   "domicilio": "Roca 171",
+   "localidad": "Chos Malal",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "160052",
+   "nombre": "AGENCIA PLOTTIER",
+   "tipo": "agencia",
+   "domicilio": "Martelotta 96",
+   "localidad": "Arroyito",
+   "lat": -38.953895,
+   "lon": -68.227148
+  },
+  {
+   "codigo": "160053",
+   "nombre": "AGENCIA JUNIN DE LOS ANDES",
+   "tipo": "agencia",
+   "domicilio": "Coronel Suarez 59",
+   "localidad": "Junin de los Andes",
+   "lat": -39.95,
+   "lon": -71.083333
+  },
+  {
+   "codigo": "160054",
+   "nombre": "AGENCIA LONCOPUE",
+   "tipo": "agencia",
+   "domicilio": "David Almendra S/nº",
+   "localidad": "Loncopue",
+   "lat": -38.066667,
+   "lon": -70.616667
+  },
+  {
+   "codigo": "160055",
+   "nombre": "AGENCIA ALUMINE",
+   "tipo": "agencia",
+   "domicilio": "Conrado Villegas 201",
+   "localidad": "Alumine",
+   "lat": -39.25,
+   "lon": -70.916667
+  },
+  {
+   "codigo": "160056",
+   "nombre": "AGENCIA VILLA LA ANGOSTURA",
+   "tipo": "agencia",
+   "domicilio": "Cacique Sayhueque 179",
+   "localidad": "Villa la Angostura",
+   "lat": -40.758897,
+   "lon": -71.645933
+  },
+  {
+   "codigo": "160057",
+   "nombre": "AGENCIA PLAZA HUINCUL",
+   "tipo": "agencia",
+   "domicilio": "San Martin. Local N° 2 773",
+   "localidad": "Plaza Huincul",
+   "lat": -38.916667,
+   "lon": -69.2
+  },
+  {
+   "codigo": "160058",
+   "nombre": "AGENCIA PIEDRA DEL AGUILA",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 90",
+   "localidad": "Piedra del Aguila",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "XVII": [
+  {
+   "codigo": "170000",
+   "nombre": "UGL XVII - CHUBUT",
+   "tipo": "ugl",
+   "domicilio": "Saavedra 935",
+   "localidad": "Cmdro Rivadavia",
+   "lat": -45.860798,
+   "lon": -67.495591
+  },
+  {
+   "codigo": "170001",
+   "nombre": "AGENCIA ESQUEL",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 725",
+   "localidad": "Esquel",
+   "lat": -42.9157,
+   "lon": -71.324534
+  },
+  {
+   "codigo": "170002",
+   "nombre": "AGENCIA TRELEW",
+   "tipo": "agencia",
+   "domicilio": "Paraguay 88",
+   "localidad": "Trelew",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "170006",
+   "nombre": "AGENCIA PUERTO MADRYN",
+   "tipo": "agencia",
+   "domicilio": "Marcos A. Zar 455",
+   "localidad": "Puerto Madryn",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "170050",
+   "nombre": "AGENCIA SARMIENTO",
+   "tipo": "agencia",
+   "domicilio": "Perito Moreno 351",
+   "localidad": "Sarmiento",
+   "lat": -45.583333,
+   "lon": -69.066667
+  },
+  {
+   "codigo": "170051",
+   "nombre": "AGENCIA EL MAITEN",
+   "tipo": "agencia",
+   "domicilio": "San Martin 1025",
+   "localidad": "El Maiten",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "170052",
+   "nombre": "AGENCIA GAIMAN",
+   "tipo": "agencia",
+   "domicilio": "Hipolito Yrigoyen 152",
+   "localidad": "Gaiman",
+   "lat": -43.283333,
+   "lon": -65.5
+  },
+  {
+   "codigo": "170053",
+   "nombre": "AGENCIA RAWSON",
+   "tipo": "agencia",
+   "domicilio": "Pasaje Garzon 74",
+   "localidad": "Rawson",
+   "lat": -43.296829,
+   "lon": -65.102259
+  },
+  {
+   "codigo": "170054",
+   "nombre": "AGENCIA RIO MAYO",
+   "tipo": "agencia",
+   "domicilio": "Belgrano esq. Irigoyen S/N",
+   "localidad": "Rio Mayo",
+   "lat": -45.683333,
+   "lon": -70.266667
+  },
+  {
+   "codigo": "170055",
+   "nombre": "AGENCIA RIO SENGUER",
+   "tipo": "agencia",
+   "domicilio": "San Juan Bosco (htal Rural Rio Senguer) S/N",
+   "localidad": "Alto Rio Senguer",
+   "lat": -45.05,
+   "lon": -70.833333
+  },
+  {
+   "codigo": "170056",
+   "nombre": "AGENCIA GOBERNADOR COSTA",
+   "tipo": "agencia",
+   "domicilio": "Julio A. Roca y Jose Aguado S/N",
+   "localidad": "Jose de San Martin",
+   "lat": -44.05,
+   "lon": -70.566667
+  },
+  {
+   "codigo": "170057",
+   "nombre": "AGENCIA DOLAVON",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo y Maipu Norte S/N",
+   "localidad": "Dolavon",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "170058",
+   "nombre": "AGENCIA DON BOSCO",
+   "tipo": "agencia",
+   "domicilio": "Km 8 Barrio Parque 112",
+   "localidad": "Cmdro Rivadavia",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "170059",
+   "nombre": "AGENCIA TREVELIN",
+   "tipo": "agencia",
+   "domicilio": "San Martin 719",
+   "localidad": "Trevelin",
+   "lat": -43.066667,
+   "lon": -71.483333
+  },
+  {
+   "codigo": "170060",
+   "nombre": "BOCA DE ATENCION RADA TILLY",
+   "tipo": "boca",
+   "domicilio": "Av.aut.club Arg.y.colhue Huapi S/N",
+   "localidad": "Rada Tilly",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "170061",
+   "nombre": "BOCA DE ATENCION EL HOYO",
+   "tipo": "boca",
+   "domicilio": "Los Guindos y los Nogales S/N",
+   "localidad": "El Maiten",
+   "lat": -42.05,
+   "lon": -71.516667
+  }
+ ],
+ "XVIII": [
+  {
+   "codigo": "180000",
+   "nombre": "UGL XVIII - MISIONES",
+   "tipo": "ugl",
+   "domicilio": "Salta 1744",
+   "localidad": "Posadas",
+   "lat": -27.371669,
+   "lon": -55.893755
+  },
+  {
+   "codigo": "180001",
+   "nombre": "AGENCIA OBERA",
+   "tipo": "agencia",
+   "domicilio": "Av. Libertad 455",
+   "localidad": "Obera",
+   "lat": -27.487606,
+   "lon": -55.113642
+  },
+  {
+   "codigo": "180002",
+   "nombre": "AGENCIA EL DORADO",
+   "tipo": "agencia",
+   "domicilio": "Christiansen esq. A Malvinas 110",
+   "localidad": "Eldorado",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "180003",
+   "nombre": "AGENCIA APOSTOLES",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 447",
+   "localidad": "Apostoles",
+   "lat": -27.9,
+   "lon": -55.75
+  },
+  {
+   "codigo": "180004",
+   "nombre": "AGENCIA JARDIN AMERICA",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 135",
+   "localidad": "Jardin America",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "180005",
+   "nombre": "AGENCIA PUERTO RICO",
+   "tipo": "agencia",
+   "domicilio": "Av. 9 de Julio y Andresito Sn",
+   "localidad": "Puerto Rico",
+   "lat": -26.8,
+   "lon": -55.033333
+  },
+  {
+   "codigo": "180006",
+   "nombre": "AGENCIA MONTECARLO",
+   "tipo": "agencia",
+   "domicilio": "H Quiroga y Carlos Culmey S/nº",
+   "localidad": "Montecarlo",
+   "lat": -26.55,
+   "lon": -54.783333
+  },
+  {
+   "codigo": "180007",
+   "nombre": "AGENCIA PUERTO IGUAZU",
+   "tipo": "agencia",
+   "domicilio": "Guatambu 4 y los Cedros 4",
+   "localidad": "Puerto Iguazu",
+   "lat": -25.603011,
+   "lon": -54.573904
+  },
+  {
+   "codigo": "180008",
+   "nombre": "AGENCIA LEANDRO N ALEM",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 25",
+   "localidad": "Leandro N Alem",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "180009",
+   "nombre": "AGENCIA SAN VICENTE",
+   "tipo": "agencia",
+   "domicilio": "J.b.alberdi S/N",
+   "localidad": "San Vicente",
+   "lat": -26.987666,
+   "lon": -54.502599
+  },
+  {
+   "codigo": "180050",
+   "nombre": "AGENCIA BERNARDO DE IRIGOYEN",
+   "tipo": "agencia",
+   "domicilio": "Av. de las Americas (hospital) 190",
+   "localidad": "Bernardo de Irigoyen",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "180051",
+   "nombre": "AGENCIA SAN JAVIER",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento y Jacobo Lenuza Manzana 116 81",
+   "localidad": "San Javier",
+   "lat": -27.883333,
+   "lon": -55.133333
+  },
+  {
+   "codigo": "180052",
+   "nombre": "AGENCIA SAN PEDRO",
+   "tipo": "agencia",
+   "domicilio": "Chubut 785",
+   "localidad": "San Pedro",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "180053",
+   "nombre": "AGENCIA PUERTO ESPERANZA",
+   "tipo": "agencia",
+   "domicilio": "Entre Rios 150",
+   "localidad": "Puerto Esperanza",
+   "lat": -26.016667,
+   "lon": -54.65
+  },
+  {
+   "codigo": "180054",
+   "nombre": "AGENCIA SAN IGNACIO",
+   "tipo": "agencia",
+   "domicilio": "San Martin 253",
+   "localidad": "San Ignacio",
+   "lat": -27.283333,
+   "lon": -55.533333
+  },
+  {
+   "codigo": "180055",
+   "nombre": "AGENCIA EL SOBERBIO",
+   "tipo": "agencia",
+   "domicilio": "Moreno 433",
+   "localidad": "El Soberbio",
+   "lat": -27.3,
+   "lon": -54.2
+  },
+  {
+   "codigo": "180056",
+   "nombre": "AGENCIA ARISTOBULO DEL VALLE",
+   "tipo": "agencia",
+   "domicilio": "Padre Fiege 1074",
+   "localidad": "Aristobulo del Valle",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "180057",
+   "nombre": "AGENCIA SAN JOSE",
+   "tipo": "agencia",
+   "domicilio": "Avda. Centenario y Don Bosco S/N",
+   "localidad": "San Jose",
+   "lat": -27.766667,
+   "lon": -55.783333
+  },
+  {
+   "codigo": "180058",
+   "nombre": "AGENCIA 25 DE MAYO",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 320",
+   "localidad": "25 de Mayo",
+   "lat": -27.383333,
+   "lon": -54.733333
+  },
+  {
+   "codigo": "180059",
+   "nombre": "AGENCIA CANDELARIA",
+   "tipo": "agencia",
+   "domicilio": "Avda. Roque Gonzalez 974",
+   "localidad": "Candelaria",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "180060",
+   "nombre": "AGENCIA SANTA ANA",
+   "tipo": "agencia",
+   "domicilio": "Timbo y Av. San Martin S/nº",
+   "localidad": "Santa Ana",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "180061",
+   "nombre": "AGENCIA PUERTO PIRAY",
+   "tipo": "agencia",
+   "domicilio": "Marcos Paz 2400",
+   "localidad": "Puerto Piray",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "XIX": [
+  {
+   "codigo": "190000",
+   "nombre": "UGL XIX - SANTIAGO DEL ESTERO",
+   "tipo": "ugl",
+   "domicilio": "Pellegrini 335",
+   "localidad": "Santiago del Estero",
+   "lat": -27.78522,
+   "lon": -64.258948
+  },
+  {
+   "codigo": "190001",
+   "nombre": "AGENCIA AÑATUYA",
+   "tipo": "agencia",
+   "domicilio": "Dr. Stemberg 117",
+   "localidad": "Añatuya",
+   "lat": -28.462662,
+   "lon": -62.834338
+  },
+  {
+   "codigo": "190002",
+   "nombre": "AGENCIA FRIAS",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 57",
+   "localidad": "Frias",
+   "lat": -28.637723,
+   "lon": -65.130053
+  },
+  {
+   "codigo": "190003",
+   "nombre": "AGENCIA TERMAS DE RIO HONDO",
+   "tipo": "agencia",
+   "domicilio": "Dorrego 27",
+   "localidad": "Termas de Rio Hondo",
+   "lat": -27.500279,
+   "lon": -64.878565
+  },
+  {
+   "codigo": "190004",
+   "nombre": "AGENCIA FERNANDEZ",
+   "tipo": "agencia",
+   "domicilio": "Independencia 126",
+   "localidad": "Fernandez",
+   "lat": -27.916667,
+   "lon": -63.9
+  },
+  {
+   "codigo": "190005",
+   "nombre": "AGENCIA LORETO",
+   "tipo": "agencia",
+   "domicilio": "Eduardo Miguel 47 Pb Local 1",
+   "localidad": "Villa San Martin",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "190006",
+   "nombre": "AGENCIA OJO DE AGUA",
+   "tipo": "agencia",
+   "domicilio": "San Martín 571",
+   "localidad": "Ojo de Agua",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "190007",
+   "nombre": "AGENCIA QUIMILI",
+   "tipo": "agencia",
+   "domicilio": "Moreno 220",
+   "localidad": "Quimili",
+   "lat": -27.65,
+   "lon": -62.416667
+  },
+  {
+   "codigo": "190008",
+   "nombre": "AGENCIA LA BANDA",
+   "tipo": "agencia",
+   "domicilio": "Av. Belgrano 158",
+   "localidad": "La Banda",
+   "lat": -27.73431,
+   "lon": -64.241102
+  },
+  {
+   "codigo": "190050",
+   "nombre": "AGENCIA CLODOMIRA",
+   "tipo": "agencia",
+   "domicilio": "Republica 634",
+   "localidad": "Clodomira",
+   "lat": -27.583333,
+   "lon": -64.133333
+  },
+  {
+   "codigo": "190051",
+   "nombre": "AGENCIA SELVA",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia Esquina Italia 202",
+   "localidad": "Selva",
+   "lat": -29.783333,
+   "lon": -62.05
+  },
+  {
+   "codigo": "190052",
+   "nombre": "AGENCIA BANDERA",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia entre Calle Moreno y Sarmiento S/N",
+   "localidad": "Bandera",
+   "lat": -28.883333,
+   "lon": -62.266667
+  },
+  {
+   "codigo": "190053",
+   "nombre": "AGENCIA PINTO",
+   "tipo": "agencia",
+   "domicilio": "Ramon Carrillo 444",
+   "localidad": "Pinto",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "190054",
+   "nombre": "AGENCIA SUNCHO CORRAL",
+   "tipo": "agencia",
+   "domicilio": "Calle 9 de Julio entre Calle Belgrano y Mitre S/N",
+   "localidad": "Suncho Corral",
+   "lat": -27.933333,
+   "lon": -63.433333
+  },
+  {
+   "codigo": "190055",
+   "nombre": "AGENCIA VILLA ATAMISQUI",
+   "tipo": "agencia",
+   "domicilio": "La Rioja entre Calle San Martin y Alvarado Null",
+   "localidad": "Villa Atamisqui",
+   "lat": -28.483333,
+   "lon": -63.816667
+  },
+  {
+   "codigo": "190056",
+   "nombre": "AGENCIA MONTE QUEMADO",
+   "tipo": "agencia",
+   "domicilio": "San Martin 724",
+   "localidad": "Monte Quemado",
+   "lat": -25.8,
+   "lon": -62.883333
+  },
+  {
+   "codigo": "190057",
+   "nombre": "AGENCIA CAMPO GALLO",
+   "tipo": "agencia",
+   "domicilio": "Irigoyen E/rivadavia y Lavalle B° Centro S/N",
+   "localidad": "Campo Gallo",
+   "lat": -26.583333,
+   "lon": -62.866667
+  },
+  {
+   "codigo": "190058",
+   "nombre": "AGENCIA TINTINA",
+   "tipo": "agencia",
+   "domicilio": "San Juan E/ Rivadavia y Farath 253",
+   "localidad": "Tintina",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "190059",
+   "nombre": "AGENCIA POZO HONDO",
+   "tipo": "agencia",
+   "domicilio": "Gaspar Juarez entre Calle Maximo Ruiz y Andres Chazarreta S/N",
+   "localidad": "Pozo Hondo",
+   "lat": -27.166667,
+   "lon": -64.5
+  },
+  {
+   "codigo": "190060",
+   "nombre": "AGENCIA NUEVA ESPERANZA",
+   "tipo": "agencia",
+   "domicilio": "Cnel. Borges entre Calle Belgrano y Pedro Leon Gallo S/N",
+   "localidad": "Nueva Esperanza",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "190061",
+   "nombre": "AGENCIA SAN PEDRO DE GUASATAN",
+   "tipo": "agencia",
+   "domicilio": "Maipu 46",
+   "localidad": "San Pedro",
+   "lat": -27.883333,
+   "lon": -64.85
+  },
+  {
+   "codigo": "190062",
+   "nombre": "AGENCIA LOS JURIES",
+   "tipo": "agencia",
+   "domicilio": "Pte Peron y Sarmiento S/N",
+   "localidad": "Los Juries",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "190063",
+   "nombre": "AGENCIA PAMPA DE LOS GUANACOS",
+   "tipo": "agencia",
+   "domicilio": "Belgrano esq. Salta Barrio Pro-vi-ru S/N",
+   "localidad": "Pampa de los Guanacos",
+   "lat": -26.233333,
+   "lon": -61.866667
+  },
+  {
+   "codigo": "190064",
+   "nombre": "AGENCIA LA CAÑADA",
+   "tipo": "agencia",
+   "domicilio": "Independencia 128",
+   "localidad": "La Banda",
+   "lat": -27.716667,
+   "lon": -63.783333
+  },
+  {
+   "codigo": "190065",
+   "nombre": "AGENCIA SUMAMPA",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 143",
+   "localidad": "Sumampa",
+   "lat": -29.366667,
+   "lon": -63.483333
+  },
+  {
+   "codigo": "190066",
+   "nombre": "AGENCIA BANDERA BAJADA",
+   "tipo": "agencia",
+   "domicilio": "Avda Belgrano 150",
+   "localidad": "Bandera Bajada",
+   "lat": -27.266667,
+   "lon": -63.516667
+  },
+  {
+   "codigo": "190067",
+   "nombre": "AGENCIA BREA POZO",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo y Juan D Peron .",
+   "localidad": "Brea Pozo",
+   "lat": -28.25,
+   "lon": -63.95
+  },
+  {
+   "codigo": "190068",
+   "nombre": "AGENCIA LAVALLE",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 290",
+   "localidad": "Lavalle",
+   "lat": -28.194483,
+   "lon": -65.116234
+  },
+  {
+   "codigo": "190069",
+   "nombre": "AGENCIA COLONIA DORA",
+   "tipo": "agencia",
+   "domicilio": "Corrientes entre Calle Mitre y Suispacha S/N",
+   "localidad": "Colonia Dora",
+   "lat": -28.616667,
+   "lon": -62.95
+  },
+  {
+   "codigo": "190070",
+   "nombre": "AGENCIA BELTRAN",
+   "tipo": "agencia",
+   "domicilio": "Juan Xxiii entre Av. San Martin y Uriarte S/N",
+   "localidad": "Beltran",
+   "lat": -27.833333,
+   "lon": -64.066667
+  },
+  {
+   "codigo": "190071",
+   "nombre": "AGENCIA LOS TELARES",
+   "tipo": "agencia",
+   "domicilio": "San Martin S/nº",
+   "localidad": "Los Telares",
+   "lat": -29.0,
+   "lon": -63.45
+  }
+ ],
+ "XX": [
+  {
+   "codigo": "200000",
+   "nombre": "UGL XX - LA PAMPA",
+   "tipo": "ugl",
+   "domicilio": "Av. San Martin Oeste 106",
+   "localidad": "Santa Rosa",
+   "lat": -36.624575,
+   "lon": -64.295935
+  },
+  {
+   "codigo": "200001",
+   "nombre": "AGENCIA GRAL PICO",
+   "tipo": "agencia",
+   "domicilio": "Calle 5 996",
+   "localidad": "Gral Pico",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "200002",
+   "nombre": "AGENCIA GRAL ACHA",
+   "tipo": "agencia",
+   "domicilio": "Gral.campos 532",
+   "localidad": "Gral Acha",
+   "lat": -37.366667,
+   "lon": -64.6
+  },
+  {
+   "codigo": "200003",
+   "nombre": "AGENCIA REALICO",
+   "tipo": "agencia",
+   "domicilio": "Av. Mullally 1714",
+   "localidad": "Realico",
+   "lat": -35.040889,
+   "lon": -64.245139
+  },
+  {
+   "codigo": "200050",
+   "nombre": "AGENCIA MACACHIN",
+   "tipo": "agencia",
+   "domicilio": "San Luis 344",
+   "localidad": "Macachin",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "200051",
+   "nombre": "AGENCIA GENERAL SAN MARTIN",
+   "tipo": "agencia",
+   "domicilio": "Juan Adagas 120",
+   "localidad": "Gral San Martin",
+   "lat": -37.983333,
+   "lon": -63.616667
+  },
+  {
+   "codigo": "200052",
+   "nombre": "AGENCIA GUATRACHE",
+   "tipo": "agencia",
+   "domicilio": "Av. Zeballos 496",
+   "localidad": "Guatrache",
+   "lat": -37.666879,
+   "lon": -63.538971
+  },
+  {
+   "codigo": "200053",
+   "nombre": "AGENCIA QUEMU-QUEMU",
+   "tipo": "agencia",
+   "domicilio": "Mitre 567",
+   "localidad": "Quemu Quemu",
+   "lat": -36.05492,
+   "lon": -63.565121
+  },
+  {
+   "codigo": "200054",
+   "nombre": "AGENCIA COLONIA BARON",
+   "tipo": "agencia",
+   "domicilio": "Don Bosco 1141",
+   "localidad": "Colonia Baron",
+   "lat": -36.15,
+   "lon": -63.85
+  },
+  {
+   "codigo": "200055",
+   "nombre": "AGENCIA CATRILO",
+   "tipo": "agencia",
+   "domicilio": "Av. Miglione 186",
+   "localidad": "Catrilo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "200056",
+   "nombre": "AGENCIA EDUARDO CASTEX",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 771",
+   "localidad": "Eduardo Castex",
+   "lat": -35.916797,
+   "lon": -64.29816
+  },
+  {
+   "codigo": "200057",
+   "nombre": "AGENCIA VICTORICA",
+   "tipo": "agencia",
+   "domicilio": "Calle 16 705",
+   "localidad": "Victorica",
+   "lat": -36.233333,
+   "lon": -65.4
+  },
+  {
+   "codigo": "200058",
+   "nombre": "AGENCIA INTENDENTE ALVEAR",
+   "tipo": "agencia",
+   "domicilio": "Juan J. Paso 135",
+   "localidad": "Int Alvear",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "200059",
+   "nombre": "AGENCIA INGENIERO LUGGI",
+   "tipo": "agencia",
+   "domicilio": "Tucuman 612",
+   "localidad": "Ing Luiggi",
+   "lat": -35.416667,
+   "lon": -64.483333
+  },
+  {
+   "codigo": "200060",
+   "nombre": "AGENCIA COLONIA 25 DE MAYO",
+   "tipo": "agencia",
+   "domicilio": "Toay 214",
+   "localidad": "Colonia 25 de Mayo",
+   "lat": -37.783333,
+   "lon": -67.7
+  }
+ ],
+ "XXI": [
+  {
+   "codigo": "210000",
+   "nombre": "UGL XXI - SAN JUAN",
+   "tipo": "ugl",
+   "domicilio": "Avenida Cordoba Este 5",
+   "localidad": "San Juan",
+   "lat": -31.540408,
+   "lon": -68.525383
+  },
+  {
+   "codigo": "210001",
+   "nombre": "AGENCIA CAUCETE",
+   "tipo": "agencia",
+   "domicilio": "Rawson 767",
+   "localidad": "Caucete",
+   "lat": -31.65505,
+   "lon": -68.276913
+  },
+  {
+   "codigo": "210002",
+   "nombre": "AGENCIA JACHAL",
+   "tipo": "agencia",
+   "domicilio": "Av Caseros esq. Laprida 265",
+   "localidad": "Villa Mercedes",
+   "lat": -30.243468,
+   "lon": -68.74454
+  },
+  {
+   "codigo": "210003",
+   "nombre": "AGENCIA RAWSON",
+   "tipo": "agencia",
+   "domicilio": "Boulevard Sarmiento Oeste 18",
+   "localidad": "Rawson",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "210050",
+   "nombre": "AGENCIA VILLA MEDIA AGUA",
+   "tipo": "agencia",
+   "domicilio": "Jose Arez, entre Calles Rivadavia y Barboza 70",
+   "localidad": "Villa Media Agua",
+   "lat": -31.983333,
+   "lon": -68.4
+  },
+  {
+   "codigo": "210051",
+   "nombre": "AGENCIA BARREAL",
+   "tipo": "agencia",
+   "domicilio": "Cordillera de Ansilta esq. Soler S/N",
+   "localidad": "Barreal",
+   "lat": -31.633333,
+   "lon": -69.466667
+  },
+  {
+   "codigo": "210052",
+   "nombre": "AGENCIA VALLE FERTIL",
+   "tipo": "agencia",
+   "domicilio": "General Acha Norte 84",
+   "localidad": "San Agustin de Valle Fertil",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "210053",
+   "nombre": "AGENCIA 9 DE JULIO",
+   "tipo": "agencia",
+   "domicilio": "Diagonal San Martin S/N",
+   "localidad": "9 de Julio",
+   "lat": -31.669102,
+   "lon": -68.390356
+  },
+  {
+   "codigo": "210054",
+   "nombre": "AGENCIA CHIMBAS",
+   "tipo": "agencia",
+   "domicilio": "Rodriguez 168",
+   "localidad": "Chimbas",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "210055",
+   "nombre": "AGENCIA VILLA SANTA ROSA",
+   "tipo": "agencia",
+   "domicilio": "Ruta Nro. 270, entre Calles 4 y 5 S/N",
+   "localidad": "Villa Santa Rosa",
+   "lat": -31.74408,
+   "lon": -68.320561
+  },
+  {
+   "codigo": "210056",
+   "nombre": "AGENCIA POCITO",
+   "tipo": "agencia",
+   "domicilio": "R. Vidart y Sta. Mº de Oro 1073",
+   "localidad": "Villa Aberastain",
+   "lat": -31.655716,
+   "lon": -68.580558
+  }
+ ],
+ "XXII": [
+  {
+   "codigo": "220000",
+   "nombre": "UGL XXII - JUJUY",
+   "tipo": "ugl",
+   "domicilio": "Lavalle 376",
+   "localidad": "San Salvador de Jujuy",
+   "lat": -24.184293,
+   "lon": -65.302894
+  },
+  {
+   "codigo": "220001",
+   "nombre": "AGENCIA LA QUIACA",
+   "tipo": "agencia",
+   "domicilio": "San Juan 67",
+   "localidad": "La Quiaca",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "220002",
+   "nombre": "AGENCIA SAN PEDRO",
+   "tipo": "agencia",
+   "domicilio": "Gobernador Tello 135",
+   "localidad": "San Pedro",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "220003",
+   "nombre": "AGENCIA HUMAHUACA",
+   "tipo": "agencia",
+   "domicilio": "Buenos Aires Esq.san Juan 900",
+   "localidad": "Humahuaca",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "220004",
+   "nombre": "AGENCIA LIBERTADOR GRAL SAN MARTIN",
+   "tipo": "agencia",
+   "domicilio": "Avda. Libertad 592",
+   "localidad": "Lib Gral San Martin",
+   "lat": -23.813441,
+   "lon": -64.789708
+  },
+  {
+   "codigo": "220005",
+   "nombre": "AGENCIA PALPALA",
+   "tipo": "agencia",
+   "domicilio": "Avda. Rio de la Plata 150",
+   "localidad": "Palpala",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "220050",
+   "nombre": "AGENCIA PERICO",
+   "tipo": "agencia",
+   "domicilio": "Exodo 63",
+   "localidad": "Los Alisos",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "220051",
+   "nombre": "AGENCIA EL CARMEN",
+   "tipo": "agencia",
+   "domicilio": "Av.ejercito del Norte 83",
+   "localidad": "El Carmen",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "220052",
+   "nombre": "AGENCIA TILCARA",
+   "tipo": "agencia",
+   "domicilio": "Jujuy 551",
+   "localidad": "Tilcara",
+   "lat": -23.566667,
+   "lon": -65.383333
+  },
+  {
+   "codigo": "220053",
+   "nombre": "AGENCIA ABRA PAMPA",
+   "tipo": "agencia",
+   "domicilio": "Ruta 9 Av Juan Domingo Peron S/N",
+   "localidad": "Abra Pampa",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "XXIII": [
+  {
+   "codigo": "230000",
+   "nombre": "UGL XXIII - FORMOSA",
+   "tipo": "ugl",
+   "domicilio": "Moreno 1193",
+   "localidad": "Formosa",
+   "lat": -26.187209,
+   "lon": -58.165581
+  },
+  {
+   "codigo": "230001",
+   "nombre": "AGENCIA CLORINDA",
+   "tipo": "agencia",
+   "domicilio": "Avda San Martin 829",
+   "localidad": "Clorinda",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "230002",
+   "nombre": "AGENCIA IBARRETA",
+   "tipo": "agencia",
+   "domicilio": "San Martin 629",
+   "localidad": "Ibarreta",
+   "lat": -25.216667,
+   "lon": -59.85
+  },
+  {
+   "codigo": "230003",
+   "nombre": "AGENCIA EL COLORADO",
+   "tipo": "agencia",
+   "domicilio": "Santa Fe 148",
+   "localidad": "El Colorado",
+   "lat": -26.3,
+   "lon": -59.366667
+  },
+  {
+   "codigo": "230005",
+   "nombre": "AGENCIA LAS LOMITAS",
+   "tipo": "agencia",
+   "domicilio": "Libertad 240",
+   "localidad": "Las Lomitas",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "230050",
+   "nombre": "AGENCIA LAGUNA BLANCA",
+   "tipo": "agencia",
+   "domicilio": "Leando N. Alen y San Martin S/N",
+   "localidad": "Laguna Blanca",
+   "lat": -25.133333,
+   "lon": -58.25
+  },
+  {
+   "codigo": "230051",
+   "nombre": "AGENCIA INGENIERO JUAREZ",
+   "tipo": "agencia",
+   "domicilio": "Avda. Deguen S/N",
+   "localidad": "Ing Guillermo N Juarez",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "230052",
+   "nombre": "AGENCIA PIRANE",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento y Gral. Paz S/N",
+   "localidad": "Pirane",
+   "lat": -25.733333,
+   "lon": -59.116667
+  },
+  {
+   "codigo": "230053",
+   "nombre": "AGENCIA GENERAL BELGRANO",
+   "tipo": "agencia",
+   "domicilio": "Av Libertador esq J.d. Peron S/N",
+   "localidad": "Gral Manuel Belgrano",
+   "lat": -24.948858,
+   "lon": -58.985095
+  },
+  {
+   "codigo": "230054",
+   "nombre": "AGENCIA VILLA GENERAL GUEMES",
+   "tipo": "agencia",
+   "domicilio": "Fontana y Av. Belgrano S/nº",
+   "localidad": "Villa Gral Güemes",
+   "lat": -24.754299,
+   "lon": -59.488682
+  }
+ ],
+ "XXIV": [
+  {
+   "codigo": "240000",
+   "nombre": "UGL XXIV - CATAMARCA",
+   "tipo": "ugl",
+   "domicilio": "San Martin 680",
+   "localidad": "San Fdo del Valle de Catamarca",
+   "lat": -28.469866,
+   "lon": -65.777718
+  },
+  {
+   "codigo": "240001",
+   "nombre": "AGENCIA BELEN",
+   "tipo": "agencia",
+   "domicilio": "Cubas S/N",
+   "localidad": "Belen",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "240002",
+   "nombre": "AGENCIA SANTA MARIA",
+   "tipo": "agencia",
+   "domicilio": "San Martin 380",
+   "localidad": "Santa Maria",
+   "lat": -26.7,
+   "lon": -66.033333
+  },
+  {
+   "codigo": "240003",
+   "nombre": "AGENCIA TINOGASTA",
+   "tipo": "agencia",
+   "domicilio": "Copiapo 459",
+   "localidad": "Tinogasta",
+   "lat": -28.067708,
+   "lon": -67.565339
+  },
+  {
+   "codigo": "240004",
+   "nombre": "AGENCIA ANDALGALA",
+   "tipo": "agencia",
+   "domicilio": "Barcena 468",
+   "localidad": "Andalgala",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "240005",
+   "nombre": "AGENCIA RECREO",
+   "tipo": "agencia",
+   "domicilio": "Moreno 145",
+   "localidad": "Recreo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "240006",
+   "nombre": "AGENCIA POMAN",
+   "tipo": "agencia",
+   "domicilio": "Pte. Castillo S/N",
+   "localidad": "Poman",
+   "lat": -28.416667,
+   "lon": -66.216667
+  },
+  {
+   "codigo": "240007",
+   "nombre": "AGENCIA VALLE VIEJO",
+   "tipo": "agencia",
+   "domicilio": "Padre Esquiu 33",
+   "localidad": "Villa Dolores",
+   "lat": -28.45,
+   "lon": -65.716667
+  },
+  {
+   "codigo": "240008",
+   "nombre": "AGENCIA PIEDRA BLANCA",
+   "tipo": "agencia",
+   "domicilio": "La Callecita Ruta 41 S/N",
+   "localidad": "Piedra Blanca",
+   "lat": -28.357408,
+   "lon": -65.711496
+  },
+  {
+   "codigo": "240053",
+   "nombre": "AGENCIA BAÑADO DE OVANTA",
+   "tipo": "agencia",
+   "domicilio": "Avda. Nestor Kirchner S/n° - Ruta Nac. 64 S/N",
+   "localidad": "Bañado de Ovanta",
+   "lat": -28.116667,
+   "lon": -65.3
+  },
+  {
+   "codigo": "240055",
+   "nombre": "AGENCIA CHUMBICHA",
+   "tipo": "agencia",
+   "domicilio": "Belgrano esq Catamarca S/N",
+   "localidad": "Chumbicha",
+   "lat": -28.866667,
+   "lon": -66.3
+  },
+  {
+   "codigo": "240056",
+   "nombre": "AGENCIA FIAMBALA",
+   "tipo": "agencia",
+   "domicilio": "Diego Carrizo de Frites S/N",
+   "localidad": "Fiambala",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "240059",
+   "nombre": "AGENCIA LA MERCED",
+   "tipo": "agencia",
+   "domicilio": "Matias Aredes S/N",
+   "localidad": "La Merced",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "240060",
+   "nombre": "AGENCIA LA PUERTA",
+   "tipo": "agencia",
+   "domicilio": "Calle Principal Barrio El Talar S/N",
+   "localidad": "La Puerta",
+   "lat": -28.166667,
+   "lon": -65.8
+  },
+  {
+   "codigo": "240061",
+   "nombre": "AGENCIA LA PUERTA DEL CORRAL QUEMADO",
+   "tipo": "agencia",
+   "domicilio": "Calle Principal Barrio San Roque S/N",
+   "localidad": "Corral Quemado",
+   "lat": -27.166667,
+   "lon": -66.95
+  }
+ ],
+ "XXV": [
+  {
+   "codigo": "250000",
+   "nombre": "UGL XXV - LA RIOJA",
+   "tipo": "ugl",
+   "domicilio": "Avda. Facundo Quiroga 53",
+   "localidad": "La Rioja",
+   "lat": -29.41733,
+   "lon": -66.848283
+  },
+  {
+   "codigo": "250001",
+   "nombre": "AGENCIA CHILECITO",
+   "tipo": "agencia",
+   "domicilio": "Joaquin V. Gonzalez 221",
+   "localidad": "Chilecito",
+   "lat": -29.166667,
+   "lon": -67.5
+  },
+  {
+   "codigo": "250002",
+   "nombre": "AGENCIA CHAMICAL",
+   "tipo": "agencia",
+   "domicilio": "San Martin 150",
+   "localidad": "Chamical",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "250003",
+   "nombre": "AGENCIA CHEPES",
+   "tipo": "agencia",
+   "domicilio": "Juan Domingo Peron y Roque Saenz Peña S/N",
+   "localidad": "Chepes",
+   "lat": -31.35,
+   "lon": -66.616667
+  },
+  {
+   "codigo": "250004",
+   "nombre": "AGENCIA AIMOGASTA",
+   "tipo": "agencia",
+   "domicilio": "20 de Mayo 265",
+   "localidad": "Aimogasta",
+   "lat": -28.55,
+   "lon": -66.816667
+  },
+  {
+   "codigo": "250050",
+   "nombre": "AGENCIA MILAGRO",
+   "tipo": "agencia",
+   "domicilio": "Estac. Ferrocarril Gral. Belgrano-avda 9 de Julio S/N",
+   "localidad": "El Milagro",
+   "lat": -31.016667,
+   "lon": -66.016667
+  },
+  {
+   "codigo": "250052",
+   "nombre": "AGENCIA VILLA UNION",
+   "tipo": "agencia",
+   "domicilio": "J. V. Gonzalez esq. Hipolito Irigoyen S/N",
+   "localidad": "Villa Union",
+   "lat": -29.3,
+   "lon": -68.2
+  },
+  {
+   "codigo": "250053",
+   "nombre": "AGENCIA SAN BLAS DE LOS SAUCES",
+   "tipo": "agencia",
+   "domicilio": "Calle Principal S/nro.sobre Ruta Nac. 40 S/N",
+   "localidad": "San Blas",
+   "lat": -28.4,
+   "lon": -67.1
+  },
+  {
+   "codigo": "250054",
+   "nombre": "AGENCIA VINCHINA",
+   "tipo": "agencia",
+   "domicilio": "San Martin S/N",
+   "localidad": "Vinchina",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "250055",
+   "nombre": "AGENCIA TAMA",
+   "tipo": "agencia",
+   "domicilio": "San Martin S/N S/N",
+   "localidad": "Tama",
+   "lat": -30.516667,
+   "lon": -66.533333
+  },
+  {
+   "codigo": "250056",
+   "nombre": "AGENCIA ANILLACO",
+   "tipo": "agencia",
+   "domicilio": "Catamarca Oeste S/N",
+   "localidad": "Anillaco",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "250057",
+   "nombre": "AGENCIA FAMATINA",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio S/N",
+   "localidad": "Famatina",
+   "lat": -28.9,
+   "lon": -67.516667
+  },
+  {
+   "codigo": "250058",
+   "nombre": "AGENCIA NONOGASTA",
+   "tipo": "agencia",
+   "domicilio": "Av. El Libertador S/N",
+   "localidad": "Nonogasta",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "250059",
+   "nombre": "AGENCIA OLTA",
+   "tipo": "agencia",
+   "domicilio": "Jose S. Salinas y Victoria Rom S/N",
+   "localidad": "Olta",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "XXVI": [
+  {
+   "codigo": "260000",
+   "nombre": "UGL XXVI - SAN LUIS",
+   "tipo": "ugl",
+   "domicilio": "San Martin e L.heras y T.jofre 1233",
+   "localidad": "San Luis",
+   "lat": -33.295283,
+   "lon": -66.343892
+  },
+  {
+   "codigo": "260001",
+   "nombre": "AGENCIA VILLA MERCEDES",
+   "tipo": "agencia",
+   "domicilio": "Dagnillo 27",
+   "localidad": "Villa Mercedes",
+   "lat": -33.682637,
+   "lon": -65.465883
+  },
+  {
+   "codigo": "260002",
+   "nombre": "AGENCIA MERLO",
+   "tipo": "agencia",
+   "domicilio": "Av. los Almendros 66",
+   "localidad": "Merlo",
+   "lat": -32.35,
+   "lon": -65.033333
+  },
+  {
+   "codigo": "260003",
+   "nombre": "AGENCIA BUENA ESPERANZA",
+   "tipo": "agencia",
+   "domicilio": "Pedernera y 25 de Mayo S/nº",
+   "localidad": "Buena Esperanza",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "260004",
+   "nombre": "AGENCIA SAN FCO.DEL MONTE DE ORO",
+   "tipo": "agencia",
+   "domicilio": "Belgrano S/nº",
+   "localidad": "San Francisco del Monte de Oro",
+   "lat": -32.6,
+   "lon": -66.133333
+  },
+  {
+   "codigo": "260005",
+   "nombre": "AGENCIA CONCARAN",
+   "tipo": "agencia",
+   "domicilio": "Urquiza S/nº",
+   "localidad": "Concaran",
+   "lat": -32.566667,
+   "lon": -65.25
+  },
+  {
+   "codigo": "260006",
+   "nombre": "AGENCIA JUANA KOSLAY",
+   "tipo": "agencia",
+   "domicilio": "Av.viento Chorrillero Esq.los Pejes S/nº",
+   "localidad": "El Chorrillo",
+   "lat": -33.283333,
+   "lon": -66.266667
+  },
+  {
+   "codigo": "260051",
+   "nombre": "AGENCIA UNION",
+   "tipo": "agencia",
+   "domicilio": "Granaderos Puntanos 430",
+   "localidad": "Union",
+   "lat": -35.15,
+   "lon": -65.95
+  },
+  {
+   "codigo": "260052",
+   "nombre": "AGENCIA LA TOMA",
+   "tipo": "agencia",
+   "domicilio": "Moreno 170",
+   "localidad": "La Toma",
+   "lat": -33.070803,
+   "lon": -65.591938
+  },
+  {
+   "codigo": "260053",
+   "nombre": "AGENCIA QUINES",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento y Granadero Figueroa S/nº",
+   "localidad": "Quines",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "260054",
+   "nombre": "AGENCIA JUSTO DARACT",
+   "tipo": "agencia",
+   "domicilio": "Hipolito Irigoyen 369",
+   "localidad": "Justo Daract",
+   "lat": -33.866667,
+   "lon": -65.183333
+  },
+  {
+   "codigo": "260055",
+   "nombre": "AGENCIA TILISARAO",
+   "tipo": "agencia",
+   "domicilio": "Av. Cordoba 460",
+   "localidad": "Tilisarao",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "260056",
+   "nombre": "AGENCIA ANCHORENA",
+   "tipo": "agencia",
+   "domicilio": "Avda Wust 455",
+   "localidad": "Anchorena",
+   "lat": -35.683333,
+   "lon": -65.45
+  },
+  {
+   "codigo": "260057",
+   "nombre": "AGENCIA LA PUNTA",
+   "tipo": "agencia",
+   "domicilio": "Av.serrana-mz127-lote16-local 2 S/nº",
+   "localidad": "Desconocida",
+   "lat": -33.180795,
+   "lon": -66.315676
+  },
+  {
+   "codigo": "260058",
+   "nombre": "AGENCIA NASCHEL",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 433",
+   "localidad": "Naschel",
+   "lat": -32.933333,
+   "lon": -65.466667
+  }
+ ],
+ "XXVII": [
+  {
+   "codigo": "270000",
+   "nombre": "UGL XXVII - RIO NEGRO",
+   "tipo": "ugl",
+   "domicilio": "9 de Julio y Belgrano 499",
+   "localidad": "Gral Roca",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "270001",
+   "nombre": "AGENCIA VIEDMA",
+   "tipo": "agencia",
+   "domicilio": "Irigoyen 171",
+   "localidad": "Viedma",
+   "lat": -40.811688,
+   "lon": -62.98998
+  },
+  {
+   "codigo": "270002",
+   "nombre": "AGENCIA BARILOCHE",
+   "tipo": "agencia",
+   "domicilio": "Vicealte O Connor 847",
+   "localidad": "San Carlos de Bariloche",
+   "lat": -41.13486,
+   "lon": -71.297878
+  },
+  {
+   "codigo": "270003",
+   "nombre": "AGENCIA CIPOLETTI",
+   "tipo": "agencia",
+   "domicilio": "Irigoyen 1045",
+   "localidad": "Cipolletti",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "270004",
+   "nombre": "AGENCIA VILLA REGINA",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 87",
+   "localidad": "Villa Regina",
+   "lat": -39.1,
+   "lon": -67.083333
+  },
+  {
+   "codigo": "270050",
+   "nombre": "AGENCIA SAN ANTONIO OESTE",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 1580",
+   "localidad": "San Antonio Oeste",
+   "lat": -40.730652,
+   "lon": -64.952327
+  },
+  {
+   "codigo": "270051",
+   "nombre": "AGENCIA EL BOLSON",
+   "tipo": "agencia",
+   "domicilio": "San Martin 3431",
+   "localidad": "El Bolson",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "270052",
+   "nombre": "AGENCIA CINCO SALTOS",
+   "tipo": "agencia",
+   "domicilio": "Avda Sarmiento 346",
+   "localidad": "Cinco Saltos",
+   "lat": -38.826992,
+   "lon": -68.069581
+  },
+  {
+   "codigo": "270053",
+   "nombre": "AGENCIA CHOELE-CHOEL",
+   "tipo": "agencia",
+   "domicilio": "San Martin 129",
+   "localidad": "Choele Choel",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "270054",
+   "nombre": "AGENCIA RIO COLORADO",
+   "tipo": "agencia",
+   "domicilio": "Roca 122",
+   "localidad": "Rio Colorado",
+   "lat": -39.00037,
+   "lon": -64.072228
+  },
+  {
+   "codigo": "270055",
+   "nombre": "AGENCIA INGENIERO JACOBACCI",
+   "tipo": "agencia",
+   "domicilio": "San Martin 291",
+   "localidad": "Ing Jacobacci",
+   "lat": -41.3,
+   "lon": -69.6
+  },
+  {
+   "codigo": "270056",
+   "nombre": "AGENCIA ALLEN",
+   "tipo": "agencia",
+   "domicilio": "Juan B. Justo 42",
+   "localidad": "Allen",
+   "lat": -38.983333,
+   "lon": -67.816667
+  },
+  {
+   "codigo": "270057",
+   "nombre": "AGENCIACATRIEL",
+   "tipo": "agencia",
+   "domicilio": "Roca 497",
+   "localidad": "Catriel",
+   "lat": -37.866667,
+   "lon": -67.85
+  },
+  {
+   "codigo": "270058",
+   "nombre": "AGENCIA INGENIERO HUERGO",
+   "tipo": "agencia",
+   "domicilio": "San Martin 703",
+   "localidad": "Ing Luis A Huergo",
+   "lat": -39.083333,
+   "lon": -67.233333
+  },
+  {
+   "codigo": "270059",
+   "nombre": "AGENCIA GENERAL CONESA",
+   "tipo": "agencia",
+   "domicilio": "Roca 627",
+   "localidad": "Gral Conesa",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "270060",
+   "nombre": "AGENCIA SIERRA GRANDE",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 99",
+   "localidad": "Sierra Grande",
+   "lat": -41.616667,
+   "lon": -65.4
+  },
+  {
+   "codigo": "270061",
+   "nombre": "AGENCIA VALCHETA",
+   "tipo": "agencia",
+   "domicilio": "Vicente Lopez y Gob. Pagano S/N",
+   "localidad": "Valcheta",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "270062",
+   "nombre": "AGENCIA EL ALTO BARILOCHE",
+   "tipo": "agencia",
+   "domicilio": "Brown 1071",
+   "localidad": "San Carlos de Bariloche",
+   "lat": -41.149429,
+   "lon": -71.297332
+  },
+  {
+   "codigo": "270063",
+   "nombre": "AGENCIA LOS MENUCOS",
+   "tipo": "agencia",
+   "domicilio": "La Pampa 1144",
+   "localidad": "Los Menucos",
+   "lat": -40.85,
+   "lon": -68.133333
+  },
+  {
+   "codigo": "270064",
+   "nombre": "AGENCIA CAMPO GRANDE",
+   "tipo": "agencia",
+   "domicilio": "Coronel Dorrego 67",
+   "localidad": "Gral Roca",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "270065",
+   "nombre": "AGENCIA GENERAL FERNANDEZ ORO",
+   "tipo": "agencia",
+   "domicilio": "Mariano Moreno 263",
+   "localidad": "Gral Fernandez Oro",
+   "lat": -38.95,
+   "lon": -67.916667
+  },
+  {
+   "codigo": "270066",
+   "nombre": "AGENCIA LAS GRUTAS",
+   "tipo": "agencia",
+   "domicilio": "Av. Currú Leuvú y Ruta Acce 2 S/N",
+   "localidad": "Las Grutas",
+   "lat": -40.803176,
+   "lon": -65.080932
+  },
+  {
+   "codigo": "270067",
+   "nombre": "AGENCIA MAQUINCHAO",
+   "tipo": "agencia",
+   "domicilio": "Independencia 786",
+   "localidad": "Maquinchao",
+   "lat": -41.25,
+   "lon": -68.733333
+  },
+  {
+   "codigo": "270068",
+   "nombre": "AGENCIA CERVANTES",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 452",
+   "localidad": "Cervantes",
+   "lat": -39.066667,
+   "lon": -67.4
+  }
+ ],
+ "XXVIII": [
+  {
+   "codigo": "280000",
+   "nombre": "UGL XXVIII - SANTA CRUZ",
+   "tipo": "ugl",
+   "domicilio": "Perito Moreno 467",
+   "localidad": "Rio Gallegos",
+   "lat": -51.619923,
+   "lon": -69.233234
+  },
+  {
+   "codigo": "280001",
+   "nombre": "AGENCIA CALETA OLIVIA",
+   "tipo": "agencia",
+   "domicilio": "Av. Eva Peron 232",
+   "localidad": "Caleta Olivia",
+   "lat": -46.433333,
+   "lon": -67.533333
+  },
+  {
+   "codigo": "280002",
+   "nombre": "AGENCIA PUERTO SAN JULIAN",
+   "tipo": "agencia",
+   "domicilio": "Avda Piedra Buena 669",
+   "localidad": "Puerto San Julian",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "280003",
+   "nombre": "AGENCIA RIO TURBIO",
+   "tipo": "agencia",
+   "domicilio": "Pellegrini 19",
+   "localidad": "El Turbio",
+   "lat": -51.582418,
+   "lon": -72.141062
+  },
+  {
+   "codigo": "280004",
+   "nombre": "AGENCIA GOBERNADOR GREGORES",
+   "tipo": "agencia",
+   "domicilio": "Avenida San Martin 409",
+   "localidad": "Gob Gregores",
+   "lat": -48.766667,
+   "lon": -70.266667
+  },
+  {
+   "codigo": "280050",
+   "nombre": "AGENCIA PTO SANTA CRUZ",
+   "tipo": "agencia",
+   "domicilio": "Mariano Moreno 316",
+   "localidad": "Puerto Santa Cruz",
+   "lat": -50.03091,
+   "lon": -68.524171
+  },
+  {
+   "codigo": "280051",
+   "nombre": "AGENCIA PUERTO DESEADO",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 237",
+   "localidad": "Puerto Deseado",
+   "lat": -47.75,
+   "lon": -65.9
+  },
+  {
+   "codigo": "280052",
+   "nombre": "AGENCIA LAS HERAS",
+   "tipo": "agencia",
+   "domicilio": "28 de Noviembre y El Calafate S/N",
+   "localidad": "Las Heras",
+   "lat": -46.533333,
+   "lon": -68.933333
+  },
+  {
+   "codigo": "280054",
+   "nombre": "AGENCIA EL CALAFATE",
+   "tipo": "agencia",
+   "domicilio": "Av. Gral. Peron 1711",
+   "localidad": "El Calafate",
+   "lat": -50.333333,
+   "lon": -72.266667
+  },
+  {
+   "codigo": "280055",
+   "nombre": "AGENCIA PERITO MORENO",
+   "tipo": "agencia",
+   "domicilio": "Av. San Martin 1063",
+   "localidad": "Perito Moreno",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "280056",
+   "nombre": "AGENCIA PICO TRUNCADO",
+   "tipo": "agencia",
+   "domicilio": "Saavedra 507",
+   "localidad": "Pico Truncado",
+   "lat": -46.8,
+   "lon": -67.95
+  },
+  {
+   "codigo": "280057",
+   "nombre": "AGENCIA PIEDRA BUENA",
+   "tipo": "agencia",
+   "domicilio": "Simon Bolivar 381",
+   "localidad": "Cmdte Luis Piedrabuena",
+   "lat": -49.962526,
+   "lon": -68.811662
+  },
+  {
+   "codigo": "280058",
+   "nombre": "AGENCIA 28 DE NOVIEMBRE",
+   "tipo": "agencia",
+   "domicilio": "Teniente del Castillo 281",
+   "localidad": "28 de Noviembre",
+   "lat": -51.65,
+   "lon": -72.3
+  }
+ ],
+ "XXIX": [
+  {
+   "codigo": "290000",
+   "nombre": "UGL XXIX - MORON",
+   "tipo": "ugl",
+   "domicilio": "25 de Mayo 330",
+   "localidad": "Moron",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "290003",
+   "nombre": "AGENCIA HURLINGHAM",
+   "tipo": "agencia",
+   "domicilio": "Juan Diaz de Solis 1308",
+   "localidad": "Hurlingham",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "290004",
+   "nombre": "AGENCIA ITUZAINGO",
+   "tipo": "agencia",
+   "domicilio": "Los Pozos 126",
+   "localidad": "Ituzaingo Norte",
+   "lat": -34.662114,
+   "lon": -58.667458
+  },
+  {
+   "codigo": "290010",
+   "nombre": "BOCA DE ATENCION MORON SUR",
+   "tipo": "boca",
+   "domicilio": "Baradero 1340",
+   "localidad": "Moron",
+   "lat": -34.690041,
+   "lon": -58.635694
+  },
+  {
+   "codigo": "290011",
+   "nombre": "BOCA DE ATENCION LA TORCACITA",
+   "tipo": "boca",
+   "domicilio": "Santos Vega y Quiroga S/N",
+   "localidad": "Ituzaingo Norte",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "290012",
+   "nombre": "BOCA DE ATENCION SAN ALBERTO",
+   "tipo": "boca",
+   "domicilio": "Coronel Pringles 2740",
+   "localidad": "Ituzaingo Norte",
+   "lat": -34.653519,
+   "lon": -58.695474
+  },
+  {
+   "codigo": "290300",
+   "nombre": "AGENCIA - MERLO",
+   "tipo": "agencia",
+   "domicilio": "Avda Argentina 1245",
+   "localidad": "Merlo",
+   "lat": -34.673969,
+   "lon": -58.723455
+  },
+  {
+   "codigo": "290302",
+   "nombre": "AGENCIA MORENO",
+   "tipo": "agencia",
+   "domicilio": "Avda Alcorta 2454",
+   "localidad": "Moreno",
+   "lat": -34.652362,
+   "lon": -58.785136
+  }
+ ],
+ "XXX": [
+  {
+   "codigo": "300000",
+   "nombre": "UGL XXX - AZUL",
+   "tipo": "ugl",
+   "domicilio": "San Martín esq Uriburu 500",
+   "localidad": "Azul",
+   "lat": -36.779106,
+   "lon": -59.861953
+  },
+  {
+   "codigo": "300002",
+   "nombre": "AGENCIA LAS FLORES",
+   "tipo": "agencia",
+   "domicilio": "San Martin 623",
+   "localidad": "Las Flores",
+   "lat": -36.016498,
+   "lon": -59.098115
+  },
+  {
+   "codigo": "300006",
+   "nombre": "AGENCIA SALADILLO",
+   "tipo": "agencia",
+   "domicilio": "Moreno 2971",
+   "localidad": "Saladillo",
+   "lat": -35.640003,
+   "lon": -59.776635
+  },
+  {
+   "codigo": "300008",
+   "nombre": "AGENCIA ROQUE PEREZ",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 1266",
+   "localidad": "Roque Perez",
+   "lat": -35.4,
+   "lon": -59.3
+  },
+  {
+   "codigo": "300009",
+   "nombre": "AGENCIA GENERAL ALVEAR",
+   "tipo": "agencia",
+   "domicilio": "Peron 627",
+   "localidad": "Gral Alvear",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "300010",
+   "nombre": "AGENCIA TAPALQUE",
+   "tipo": "agencia",
+   "domicilio": "Pedro Bloy 102",
+   "localidad": "Tapalque",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "300050",
+   "nombre": "AGENCIA CHILLAR",
+   "tipo": "agencia",
+   "domicilio": "Cortazar 734",
+   "localidad": "Chillar",
+   "lat": -37.316667,
+   "lon": -59.983333
+  },
+  {
+   "codigo": "300055",
+   "nombre": "AGENCIA CACHARI",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia y Sarmiento S/N",
+   "localidad": "Cachari",
+   "lat": -36.383333,
+   "lon": -59.5
+  },
+  {
+   "codigo": "300100",
+   "nombre": "AGENCIA OLAVARRIA",
+   "tipo": "agencia",
+   "domicilio": "Dorrego 2625",
+   "localidad": "Olavarria",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "300103",
+   "nombre": "AGENCIA LAPRIDA",
+   "tipo": "agencia",
+   "domicilio": "Avda. Pedro Pereyra 1339",
+   "localidad": "Laprida",
+   "lat": -37.55,
+   "lon": -60.8
+  },
+  {
+   "codigo": "300104",
+   "nombre": "AGENCIA DAIREAUX",
+   "tipo": "agencia",
+   "domicilio": "Pellegrini 389",
+   "localidad": "Daireaux",
+   "lat": -36.616667,
+   "lon": -61.75
+  },
+  {
+   "codigo": "300105",
+   "nombre": "AGENCIA SALAZAR",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 353",
+   "localidad": "Salazar",
+   "lat": -36.3,
+   "lon": -62.2
+  },
+  {
+   "codigo": "300107",
+   "nombre": "AGENCIA BOLIVAR",
+   "tipo": "agencia",
+   "domicilio": "Olavarria 262",
+   "localidad": "Bolivar",
+   "lat": -36.233333,
+   "lon": -61.116667
+  },
+  {
+   "codigo": "300153",
+   "nombre": "AGENCIA GENERAL LAMADRID",
+   "tipo": "agencia",
+   "domicilio": "Moreno 614",
+   "localidad": "Gral la Madrid",
+   "lat": -37.25,
+   "lon": -61.266667
+  },
+  {
+   "codigo": "300156",
+   "nombre": "AGENCIA SIERRAS BAYAS",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 2204",
+   "localidad": "Sierras Bayas",
+   "lat": -36.933333,
+   "lon": -60.133333
+  },
+  {
+   "codigo": "300157",
+   "nombre": "C.A.P. RAUCH",
+   "tipo": "cap",
+   "domicilio": "Garralda 294",
+   "localidad": "Azul",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "300158",
+   "nombre": "C.A.P. BENITO JUAREZ",
+   "tipo": "cap",
+   "domicilio": "Cordoba 95",
+   "localidad": "Vicente Pereda",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "XXXI": [
+  {
+   "codigo": "310000",
+   "nombre": "UGL XXXI - JUNIN",
+   "tipo": "ugl",
+   "domicilio": "Alvarez Rodriguez 320",
+   "localidad": "Junin",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "310001",
+   "nombre": "AGENCIA GENERAL PINTO",
+   "tipo": "agencia",
+   "domicilio": "Alsina 464",
+   "localidad": "Gral Pinto",
+   "lat": -34.783333,
+   "lon": -61.9
+  },
+  {
+   "codigo": "310002",
+   "nombre": "AGENCIA LINCOLN",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 521",
+   "localidad": "Lincoln",
+   "lat": -34.866667,
+   "lon": -61.55
+  },
+  {
+   "codigo": "310004",
+   "nombre": "AGENCIA GENERAL VILLEGAS",
+   "tipo": "agencia",
+   "domicilio": "Arenales 359",
+   "localidad": "Gral Villegas",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "310005",
+   "nombre": "AGENCIA GENERAL ARENALES",
+   "tipo": "agencia",
+   "domicilio": "Avda. Alvear 161",
+   "localidad": "Gral Arenales",
+   "lat": -34.316667,
+   "lon": -61.3
+  },
+  {
+   "codigo": "310006",
+   "nombre": "AGENCIA GENERAL VIAMONTE",
+   "tipo": "agencia",
+   "domicilio": "Coliqueo 130",
+   "localidad": "Gral Viamonte",
+   "lat": -35.0,
+   "lon": -61.05
+  },
+  {
+   "codigo": "310007",
+   "nombre": "AGENCIA VEDIA",
+   "tipo": "agencia",
+   "domicilio": "Lavalle 90",
+   "localidad": "Vedia",
+   "lat": -34.5,
+   "lon": -61.533333
+  },
+  {
+   "codigo": "310008",
+   "nombre": "AGENCIA ROJAS",
+   "tipo": "agencia",
+   "domicilio": "Eva Peron (ex Uruguay) 544",
+   "localidad": "Rojas",
+   "lat": -34.2,
+   "lon": -60.733333
+  },
+  {
+   "codigo": "310009",
+   "nombre": "AGENCIA AMEGHINO",
+   "tipo": "agencia",
+   "domicilio": "Calle 9 esq. 30 S/N",
+   "localidad": "Ameghino",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "310010",
+   "nombre": "BOCA DE ATENCION BARRIO BELGRANO",
+   "tipo": "boca",
+   "domicilio": "Avda. Libertad 534",
+   "localidad": "Junin",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "310200",
+   "nombre": "AGENCIA PERGAMINO",
+   "tipo": "agencia",
+   "domicilio": "9 de Julio 850",
+   "localidad": "Pergamino",
+   "lat": -33.896673,
+   "lon": -60.574962
+  },
+  {
+   "codigo": "310206",
+   "nombre": "AGENCIA COLON",
+   "tipo": "agencia",
+   "domicilio": "Cale 47 759",
+   "localidad": "Colon",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "310300",
+   "nombre": "AGENCIA SAN NICOLAS",
+   "tipo": "agencia",
+   "domicilio": "Mitre 381",
+   "localidad": "San Nicolas de los Arroyos",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "310301",
+   "nombre": "AGENCIA RAMALLO",
+   "tipo": "agencia",
+   "domicilio": "Av Mitre 1599",
+   "localidad": "Ramallo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "310350",
+   "nombre": "AGENCIA PEREZ MILLAN",
+   "tipo": "agencia",
+   "domicilio": "Av Raul Manfredi 571",
+   "localidad": "Perez Millan",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "310352",
+   "nombre": "AGENCIA ROBERTS",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 1232",
+   "localidad": "Roberts",
+   "lat": -35.15,
+   "lon": -61.983333
+  },
+  {
+   "codigo": "310353",
+   "nombre": "BOCA DE ATENCION LA EMILIA",
+   "tipo": "boca",
+   "domicilio": "E. Ferreira 308",
+   "localidad": "La Emilia",
+   "lat": -33.366667,
+   "lon": -60.3
+  }
+ ],
+ "XXXII": [
+  {
+   "codigo": "320000",
+   "nombre": "UGL XXXII - LUJAN",
+   "tipo": "ugl",
+   "domicilio": "Lavalle 522",
+   "localidad": "Lujan",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "320001",
+   "nombre": "AGENCIA SAN ANDRES DE GILES",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 401",
+   "localidad": "San Andres de Giles",
+   "lat": -34.441994,
+   "lon": -59.444995
+  },
+  {
+   "codigo": "320002",
+   "nombre": "AGENCIA GENERAL RODRIGUEZ",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 576",
+   "localidad": "Gral Rodriguez",
+   "lat": -34.605707,
+   "lon": -58.954706
+  },
+  {
+   "codigo": "320003",
+   "nombre": "AGENCIA CABECERA MERCEDES",
+   "tipo": "agencia",
+   "domicilio": "Calle 25 esq. 16 369",
+   "localidad": "Mercedes",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "320004",
+   "nombre": "AGENCIA PILAR",
+   "tipo": "agencia",
+   "domicilio": "Pedro Lagrave 342",
+   "localidad": "Pilar",
+   "lat": -34.457349,
+   "lon": -58.909337
+  },
+  {
+   "codigo": "320005",
+   "nombre": "AGENCIA SAN ANTONIO DE ARECO",
+   "tipo": "agencia",
+   "domicilio": "Alvear 557",
+   "localidad": "San Antonio de Areco",
+   "lat": -34.24719,
+   "lon": -59.467775
+  },
+  {
+   "codigo": "320006",
+   "nombre": "AGENCIA CABECERA MARCOS PAZ",
+   "tipo": "agencia",
+   "domicilio": "Moreno 2124",
+   "localidad": "Marcos Paz",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "320008",
+   "nombre": "AGENCIA CAPILLA DEL SEÑOR",
+   "tipo": "agencia",
+   "domicilio": "Jose Manuel Estrada 405",
+   "localidad": "Capilla del Señor",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "320010",
+   "nombre": "AGENCIA NAVARRO",
+   "tipo": "agencia",
+   "domicilio": "Calle Nro. 7 Esq.26 92",
+   "localidad": "Navarro",
+   "lat": -35.012086,
+   "lon": -59.277997
+  },
+  {
+   "codigo": "320011",
+   "nombre": "AGENCIA GENERAL LAS HERAS",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 1048",
+   "localidad": "Gral las Heras",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "320012",
+   "nombre": "AGENCIA GARIN",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 306",
+   "localidad": "Garin",
+   "lat": -34.419146,
+   "lon": -58.733855
+  },
+  {
+   "codigo": "320051",
+   "nombre": "AGENCIA DEL VISO",
+   "tipo": "agencia",
+   "domicilio": "Lisandro de la Torre 7031",
+   "localidad": "Del Viso",
+   "lat": -34.451394,
+   "lon": -58.794618
+  },
+  {
+   "codigo": "320100",
+   "nombre": "AGENCIA ZARATE",
+   "tipo": "agencia",
+   "domicilio": "19 de Marzo 630",
+   "localidad": "Zarate",
+   "lat": -34.100507,
+   "lon": -59.019736
+  },
+  {
+   "codigo": "320102",
+   "nombre": "AGENCIA BARADERO",
+   "tipo": "agencia",
+   "domicilio": "Laprida 929",
+   "localidad": "Baradero",
+   "lat": -33.80762,
+   "lon": -59.500673
+  },
+  {
+   "codigo": "320150",
+   "nombre": "AGENCIA LIMA",
+   "tipo": "agencia",
+   "domicilio": "Calle Nro. 6 63",
+   "localidad": "Lima",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "320252",
+   "nombre": "AGENCIA DERQUI",
+   "tipo": "agencia",
+   "domicilio": "San Martin 404",
+   "localidad": "Pilar",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "320253",
+   "nombre": "AGENCIA MAQUINISTA SAVIO",
+   "tipo": "agencia",
+   "domicilio": "Republica del Paraguay 377",
+   "localidad": "Gral Savio",
+   "lat": -34.403319,
+   "lon": -58.775039
+  },
+  {
+   "codigo": "320254",
+   "nombre": "AGENCIA JAUREGUI",
+   "tipo": "agencia",
+   "domicilio": "Avenida Flandes 541",
+   "localidad": "Jauregui",
+   "lat": -34.594913,
+   "lon": -59.177729
+  },
+  {
+   "codigo": "320255",
+   "nombre": "AGENCIA CAMPANA",
+   "tipo": "agencia",
+   "domicilio": "Moreno 331",
+   "localidad": "Gral Rodriguez",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "320256",
+   "nombre": "AGENCIA ESCOBAR",
+   "tipo": "agencia",
+   "domicilio": "Spadaccini 1078",
+   "localidad": "Gral Rodriguez",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "XXXIII": [
+  {
+   "codigo": "330000",
+   "nombre": "UGL XXXIII - TIERRA DEL FUEGO",
+   "tipo": "ugl",
+   "domicilio": "Akanik 587",
+   "localidad": "Ushuaia",
+   "lat": -54.814056,
+   "lon": -68.338719
+  },
+  {
+   "codigo": "330001",
+   "nombre": "AGENCIA RIO GRANDE",
+   "tipo": "agencia",
+   "domicilio": "Espora 781",
+   "localidad": "Rio Grande",
+   "lat": -53.788771,
+   "lon": -67.69855
+  }
+ ],
+ "XXXIV": [
+  {
+   "codigo": "340000",
+   "nombre": "UGL XXXIV - CONCORDIA",
+   "tipo": "ugl",
+   "domicilio": "Tucuman Esq.urquiza 67",
+   "localidad": "Concordia",
+   "lat": -31.388276,
+   "lon": -58.014353
+  },
+  {
+   "codigo": "340001",
+   "nombre": "AGENCIA GUALEGUAYCHU",
+   "tipo": "agencia",
+   "domicilio": "Av. Rocamora 202",
+   "localidad": "Gualeguaychu",
+   "lat": -33.012037,
+   "lon": -58.521397
+  },
+  {
+   "codigo": "340002",
+   "nombre": "AGENCIA CONCEPCION DEL URUGUAY",
+   "tipo": "agencia",
+   "domicilio": "San Martin 547",
+   "localidad": "Concepcion del Uruguay",
+   "lat": -32.485049,
+   "lon": -58.229548
+  },
+  {
+   "codigo": "340003",
+   "nombre": "AGENCIA COLON",
+   "tipo": "agencia",
+   "domicilio": "Urquiza 308",
+   "localidad": "Colon",
+   "lat": -32.22229,
+   "lon": -58.1384
+  },
+  {
+   "codigo": "340050",
+   "nombre": "AGENCIA FEDERAL",
+   "tipo": "agencia",
+   "domicilio": "Belgrano e Irigoyen S/N",
+   "localidad": "Federal",
+   "lat": -30.916667,
+   "lon": -58.766667
+  },
+  {
+   "codigo": "340051",
+   "nombre": "AGENCIA CHAJARI",
+   "tipo": "agencia",
+   "domicilio": "Urquiza 1296",
+   "localidad": "Chajari",
+   "lat": -30.76033,
+   "lon": -57.983537
+  },
+  {
+   "codigo": "340052",
+   "nombre": "AGENCIA VILLAGUAY",
+   "tipo": "agencia",
+   "domicilio": "Colon y Castelli S/N",
+   "localidad": "Villaguay",
+   "lat": -31.866667,
+   "lon": -59.016667
+  },
+  {
+   "codigo": "340053",
+   "nombre": "AGENCIA VILLA ELISA",
+   "tipo": "agencia",
+   "domicilio": "San Martin 1188",
+   "localidad": "Villa Elisa",
+   "lat": -32.166667,
+   "lon": -58.4
+  },
+  {
+   "codigo": "340054",
+   "nombre": "AGENCIA SAN JOSE",
+   "tipo": "agencia",
+   "domicilio": "Moreno 1432",
+   "localidad": "San Jose",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "340055",
+   "nombre": "AGENCIA SAN JOSE DE FELICIANO",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 286",
+   "localidad": "San Jose de Feliciano",
+   "lat": -30.383333,
+   "lon": -58.75
+  },
+  {
+   "codigo": "340056",
+   "nombre": "AGENCIA SAN SALVADOR",
+   "tipo": "agencia",
+   "domicilio": "Francisco Ramirez 74",
+   "localidad": "San Salvador",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "340057",
+   "nombre": "AGENCIA URDINARDAIN",
+   "tipo": "agencia",
+   "domicilio": "Libertad 475",
+   "localidad": "Urdinarrain",
+   "lat": -32.683333,
+   "lon": -58.883333
+  },
+  {
+   "codigo": "340058",
+   "nombre": "AGENCIA LARROQUE",
+   "tipo": "agencia",
+   "domicilio": "Jose Virue 235",
+   "localidad": "Larroque",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "340059",
+   "nombre": "AGENCIA FEDERACION",
+   "tipo": "agencia",
+   "domicilio": "Av. entre Rios 27",
+   "localidad": "Federacion",
+   "lat": -31.0,
+   "lon": -57.883333
+  },
+  {
+   "codigo": "340060",
+   "nombre": "AGENCIA BASAVILBASO",
+   "tipo": "agencia",
+   "domicilio": "Baron Hirch 297",
+   "localidad": "Basavilbaso",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "340061",
+   "nombre": "AGENCIA SAN JAIME DE LA FRONTERA",
+   "tipo": "agencia",
+   "domicilio": "República Argentina (entre Cuchilla de Montiel y Av. Corrientes) S/N",
+   "localidad": "San Jaime",
+   "lat": -30.35,
+   "lon": -58.3
+  },
+  {
+   "codigo": "340062",
+   "nombre": "AGENCIA GRAL CAMPOS",
+   "tipo": "agencia",
+   "domicilio": "Concepcion del Uruguay y 25 de Mayo S/N",
+   "localidad": "San Salvador",
+   "lat": -31.516667,
+   "lon": -58.4
+  },
+  {
+   "codigo": "340063",
+   "nombre": "AGENCIA VILLA PARANACITO",
+   "tipo": "agencia",
+   "domicilio": "Av.entre Rios 265",
+   "localidad": "Paranacito",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "340064",
+   "nombre": "BOCA DE ATENCION ISLAS IBICUY",
+   "tipo": "boca",
+   "domicilio": "Pasaje Houssay 831",
+   "localidad": "Ibicuy",
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "XXXV": [
+  {
+   "codigo": "350000",
+   "nombre": "UGL XXXV - SAN JUSTO",
+   "tipo": "ugl",
+   "domicilio": "Peru 2559",
+   "localidad": "San Justo",
+   "lat": -34.680016,
+   "lon": -58.559616
+  },
+  {
+   "codigo": "350001",
+   "nombre": "AGENCIA GONZALEZ CATAN",
+   "tipo": "agencia",
+   "domicilio": "Patagonia 578",
+   "localidad": "Gonzalez Catan",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "350002",
+   "nombre": "AGENCIA ISIDRO CASANOVA",
+   "tipo": "agencia",
+   "domicilio": "Asuncion 5777",
+   "localidad": "Isidro Casanova",
+   "lat": -34.702043,
+   "lon": -58.583389
+  },
+  {
+   "codigo": "350003",
+   "nombre": "AGENCIA TAPIALES",
+   "tipo": "agencia",
+   "domicilio": "Boulogne Sur Mer 1508",
+   "localidad": "Tapiales",
+   "lat": -34.699375,
+   "lon": -58.504611
+  },
+  {
+   "codigo": "350004",
+   "nombre": "AGENCIA GREGORIO DE LA FERRERE",
+   "tipo": "agencia",
+   "domicilio": "Monseñor López May 2955",
+   "localidad": "Gregorio de Laferrere",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "350005",
+   "nombre": "AGENCIA RAMOS MEJIA",
+   "tipo": "agencia",
+   "domicilio": "Av. de Mayo 1270",
+   "localidad": "Ramos Mejia",
+   "lat": -34.653903,
+   "lon": -58.562478
+  }
+ ],
+ "XXXVI": [
+  {
+   "codigo": "360000",
+   "nombre": "UGL XXXVI - RIO CUARTO",
+   "tipo": "ugl",
+   "domicilio": "Alvear 842",
+   "localidad": "Rio Cuarto",
+   "lat": -33.123872,
+   "lon": -64.349727
+  },
+  {
+   "codigo": "360001",
+   "nombre": "AGENCIA LABOULAYE",
+   "tipo": "agencia",
+   "domicilio": "Tomas Scott 14/16",
+   "localidad": "Laboulaye",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "360002",
+   "nombre": "AGENCIA HUINCA RENANCO",
+   "tipo": "agencia",
+   "domicilio": "Guemes 84",
+   "localidad": "Huinca Renanco",
+   "lat": -34.85,
+   "lon": -64.366667
+  },
+  {
+   "codigo": "360003",
+   "nombre": "AGENCIA VICUÑA MACKENA",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento 224",
+   "localidad": "Vicuña Mackenna",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "360004",
+   "nombre": "AGENCIA CORONEL MOLDES",
+   "tipo": "agencia",
+   "domicilio": "09 de Julio 548",
+   "localidad": "Cnel Moldes",
+   "lat": -33.633333,
+   "lon": -64.55
+  },
+  {
+   "codigo": "360005",
+   "nombre": "AGENCIA CANALS",
+   "tipo": "agencia",
+   "domicilio": "Buenos Aires esq. Italia 202",
+   "localidad": "Canals",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "360006",
+   "nombre": "AGENCIA LA CARLOTA",
+   "tipo": "agencia",
+   "domicilio": "Leandro N Alem 185",
+   "localidad": "Villa Reduccion",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "360007",
+   "nombre": "AGENCIA GENERAL CABRERA",
+   "tipo": "agencia",
+   "domicilio": "Rioja 934",
+   "localidad": "Villa Reduccion",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "360008",
+   "nombre": "AGENCIA UCACHA",
+   "tipo": "agencia",
+   "domicilio": "Misiones 159",
+   "localidad": "Villa Reduccion",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "360050",
+   "nombre": "AGENCIA SAMPACHO",
+   "tipo": "agencia",
+   "domicilio": "19 de Noviembre esq Lamadrid S/N",
+   "localidad": "Sampacho",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "360051",
+   "nombre": "AGENCIA ELENA",
+   "tipo": "agencia",
+   "domicilio": "San Juan y Concejal Serena S/N",
+   "localidad": "Elena",
+   "lat": -32.566667,
+   "lon": -64.366667
+  }
+ ],
+ "XXXVII": [
+  {
+   "codigo": "370000",
+   "nombre": "UGL XXXVII - QUILMES",
+   "tipo": "ugl",
+   "domicilio": "Andres Baranda 1265",
+   "localidad": "Quilmes Oeste",
+   "lat": -34.728093,
+   "lon": -58.267048
+  },
+  {
+   "codigo": "370300",
+   "nombre": "AGENCIA QUILMES",
+   "tipo": "agencia",
+   "domicilio": "Lavalle 683",
+   "localidad": "Quilmes",
+   "lat": -34.723811,
+   "lon": -58.255777
+  },
+  {
+   "codigo": "370301",
+   "nombre": "AGENCIA FLORENCIO VARELA",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 78",
+   "localidad": "Florencio Varela",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "370302",
+   "nombre": "AGENCIA BERAZATEGUI",
+   "tipo": "agencia",
+   "domicilio": "Calle 146 1253",
+   "localidad": "Berazategui",
+   "lat": -34.761982,
+   "lon": -58.212319
+  },
+  {
+   "codigo": "370303",
+   "nombre": "AGENCIA SAN FRANCISCO SOLANO",
+   "tipo": "agencia",
+   "domicilio": "Calle 895 4552",
+   "localidad": "San Francisco Solano",
+   "lat": -34.780932,
+   "lon": -58.309663
+  },
+  {
+   "codigo": "370304",
+   "nombre": "AGENCIA EL CRUCE DE VARELA",
+   "tipo": "agencia",
+   "domicilio": "Hipolito Irigoyen 1213",
+   "localidad": "Florencio Varela",
+   "lat": -37.233333,
+   "lon": -59.816667
+  },
+  {
+   "codigo": "370305",
+   "nombre": "AGENCIA HUDSON",
+   "tipo": "agencia",
+   "domicilio": "Calle 52 E/ 133 y 131 3125",
+   "localidad": "Florencio Varela",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "370306",
+   "nombre": "AGENCIA BOSQUES",
+   "tipo": "agencia",
+   "domicilio": "Av Lujan 1420",
+   "localidad": "Bosques",
+   "lat": -34.827545,
+   "lon": -58.226027
+  }
+ ],
+ "XXXVIII": [
+  {
+   "codigo": "380000",
+   "nombre": "UGL XXXVIII - CHIVILCOY",
+   "tipo": "ugl",
+   "domicilio": "Av. Villarino 345",
+   "localidad": "Chivilcoy",
+   "lat": -34.901474,
+   "lon": -60.024707
+  },
+  {
+   "codigo": "380001",
+   "nombre": "AGENCIA RIVADAVIA",
+   "tipo": "agencia",
+   "domicilio": "General Rodriguez 71",
+   "localidad": "Rivadavia",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "380002",
+   "nombre": "AGENCIA TRENQUE LAUQUEN",
+   "tipo": "agencia",
+   "domicilio": "San Martin 80",
+   "localidad": "Trenque Lauquen",
+   "lat": -35.966667,
+   "lon": -62.733333
+  },
+  {
+   "codigo": "380003",
+   "nombre": "AGENCIA 25 DE MAYO",
+   "tipo": "agencia",
+   "domicilio": "Calle 30 1004",
+   "localidad": "25 de Mayo",
+   "lat": -35.416667,
+   "lon": -60.183333
+  },
+  {
+   "codigo": "380004",
+   "nombre": "AGENCIA NORBERTO DE LA RIESTRA",
+   "tipo": "agencia",
+   "domicilio": "Sargento Cabral 425",
+   "localidad": "Ernestina",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "380005",
+   "nombre": "AGENCIA CHACABUCO",
+   "tipo": "agencia",
+   "domicilio": "Zapiola 177",
+   "localidad": "Chacabuco",
+   "lat": -34.640454,
+   "lon": -60.467282
+  },
+  {
+   "codigo": "380006",
+   "nombre": "AGENCIA 9 DE JULIO",
+   "tipo": "agencia",
+   "domicilio": "Av. Vedia 564",
+   "localidad": "9 de Julio",
+   "lat": -35.448095,
+   "lon": -60.872818
+  },
+  {
+   "codigo": "380007",
+   "nombre": "AGENCIA BRAGADO",
+   "tipo": "agencia",
+   "domicilio": "Belgrano 1238",
+   "localidad": "Bragado",
+   "lat": -35.116667,
+   "lon": -60.5
+  },
+  {
+   "codigo": "380008",
+   "nombre": "AGENCIA PEHUAJO",
+   "tipo": "agencia",
+   "domicilio": "Artigas 465",
+   "localidad": "Pehuajo",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "380009",
+   "nombre": "AGENCIA CARLOS CASARES",
+   "tipo": "agencia",
+   "domicilio": "Cecilia Borja 131",
+   "localidad": "Carlos Casares",
+   "lat": -35.616667,
+   "lon": -61.366667
+  },
+  {
+   "codigo": "380010",
+   "nombre": "AGENCIA CARLOS TEJEDOR",
+   "tipo": "agencia",
+   "domicilio": "San Martin y Garre 190",
+   "localidad": "Carlos Tejedor",
+   "lat": -35.383333,
+   "lon": -62.416667
+  },
+  {
+   "codigo": "380011",
+   "nombre": "AGENCIA HENDERSON",
+   "tipo": "agencia",
+   "domicilio": "Colon 716",
+   "localidad": "Henderson",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "380012",
+   "nombre": "AGENCIA FACUNDO QUIROGA",
+   "tipo": "agencia",
+   "domicilio": "Av. San Luis 569",
+   "localidad": "9 de Julio",
+   "lat": -35.448046,
+   "lon": -60.87293
+  },
+  {
+   "codigo": "380013",
+   "nombre": "AGENCIA MOQUEHUA",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 116",
+   "localidad": "Moquehua",
+   "lat": -35.083333,
+   "lon": -59.766667
+  },
+  {
+   "codigo": "380014",
+   "nombre": "AGENCIA ALBERTI",
+   "tipo": "agencia",
+   "domicilio": "Vergara 101",
+   "localidad": "Alberti",
+   "lat": -35.033333,
+   "lon": -60.266667
+  },
+  {
+   "codigo": "380015",
+   "nombre": "AGENCIA GENERAL O'BRIEN",
+   "tipo": "agencia",
+   "domicilio": "Rivadavia 395",
+   "localidad": "Gral O'brien",
+   "lat": -34.9,
+   "lon": -60.766667
+  },
+  {
+   "codigo": "380016",
+   "nombre": "AGENCIA TRES ALGARROBOS",
+   "tipo": "agencia",
+   "domicilio": "Av. Jose Balbiani 258",
+   "localidad": "Tres Algarrobos",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "380017",
+   "nombre": "AGENCIA ARRECIFES",
+   "tipo": "agencia",
+   "domicilio": "Dr. Carlos Merlassino 700",
+   "localidad": "Arrecifes",
+   "lat": -34.066667,
+   "lon": -60.116667
+  },
+  {
+   "codigo": "380018",
+   "nombre": "AGENCIA SALTO",
+   "tipo": "agencia",
+   "domicilio": "Sarmiento y Moreno S/nº",
+   "localidad": "Salto",
+   "lat": -34.3,
+   "lon": -60.25
+  },
+  {
+   "codigo": "380019",
+   "nombre": "AGENCIA CAPITAN SARMIENTO",
+   "tipo": "agencia",
+   "domicilio": "Lopez y Planes 746",
+   "localidad": "CAP Sarmiento",
+   "lat": -34.17183,
+   "lon": -59.792517
+  },
+  {
+   "codigo": "380020",
+   "nombre": "AGENCIA SAN PEDRO",
+   "tipo": "agencia",
+   "domicilio": "25 de Mayo 856",
+   "localidad": "San Pedro",
+   "lat": -33.678546,
+   "lon": -59.666585
+  },
+  {
+   "codigo": "380021",
+   "nombre": "AGENCIA SANTA LUCIA",
+   "tipo": "agencia",
+   "domicilio": "San Martin 154",
+   "localidad": "Santa Lucia",
+   "lat": -33.866667,
+   "lon": -59.883333
+  },
+  {
+   "codigo": "380022",
+   "nombre": "AGENCIA CARMEN DE ARECO",
+   "tipo": "agencia",
+   "domicilio": "San Martin 486",
+   "localidad": "Carmen de Areco",
+   "lat": -34.376217,
+   "lon": -59.821682
+  },
+  {
+   "codigo": "380023",
+   "nombre": "AGENCIA SUIPACHA",
+   "tipo": "agencia",
+   "domicilio": "1 de Mayo 250",
+   "localidad": "Suipacha",
+   "lat": -34.771784,
+   "lon": -59.686871
+  },
+  {
+   "codigo": "380024",
+   "nombre": "C.A.P. TRES LOMAS",
+   "tipo": "cap",
+   "domicilio": "San Martín 362",
+   "localidad": "Rivadavia",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "380025",
+   "nombre": "C.A.P. SALLIQUELO",
+   "tipo": "cap",
+   "domicilio": "Hugo Stroeder Oeste 516",
+   "localidad": "Trenque Lauquen",
+   "lat": null,
+   "lon": null
+  },
+  {
+   "codigo": "380026",
+   "nombre": "C.A.P. CARLOS PELLEGRINI",
+   "tipo": "cap",
+   "domicilio": "Marconi 437",
+   "localidad": "Pellegrini",
+   "lat": null,
+   "lon": null
+  }
+ ]
+}
