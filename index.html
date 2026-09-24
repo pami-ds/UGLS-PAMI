@@ -100,6 +100,72 @@
         .resultado:hover { background: var(--bg-card); }
         .resultado small { color: var(--text-muted); margin-left: auto; font-size: .72rem; white-space: nowrap; }
 
+        /* Fecha / norma de cada designación */
+        .cargo-meta { font-size: .7rem; color: var(--text-muted); margin-top: 4px; }
+        .chip-manual {
+            display: inline-block; font-size: .6rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+            color: #a5b4fc; background: rgba(129,140,248,.14); border: 1px solid rgba(129,140,248,.3);
+            padding: 0 6px; border-radius: 4px; margin-left: 6px; vertical-align: 1px;
+        }
+        .tarjeta-cargo.manual { border-left-color: #818cf8; }
+        .aviso-vacante { font-size: .8rem; color: var(--text-muted); font-style: italic; }
+
+        /* Encabezado de ficha con botón Editar */
+        .cabecera-ficha { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+        .btn {
+            font: inherit; font-size: .76rem; font-weight: 600; border-radius: 6px; padding: 6px 11px; cursor: pointer;
+            border: 1px solid var(--border-color); background: var(--bg-card); color: #cbd5e1;
+            display: inline-flex; align-items: center; gap: 6px; transition: border-color .15s, background .15s; white-space: nowrap;
+        }
+        .btn:hover { border-color: #334155; background: #1b2338; }
+        .btn:focus-visible { outline: 2px solid var(--c-central); outline-offset: 1px; }
+        .btn.primario { background: var(--c-central); border-color: var(--c-central); color: #fff; }
+        .btn.primario:hover { background: #2563eb; }
+        .btn.peligro { color: var(--c-alerta); }
+        .btn.chico { padding: 3px 8px; font-size: .72rem; }
+        .btn svg { width: 13px; height: 13px; }
+
+        /* Historial */
+        details.historial { margin-top: 18px; }
+        details.historial summary {
+            font-size: .72rem; text-transform: uppercase; letter-spacing: .9px; color: var(--text-muted); font-weight: 700;
+            cursor: pointer; list-style: none; display: flex; align-items: center; gap: 6px;
+        }
+        details.historial summary::-webkit-details-marker { display: none; }
+        details.historial summary::before { content: '▸'; transition: transform .15s; }
+        details.historial[open] summary::before { transform: rotate(90deg); }
+        .evento { display: grid; grid-template-columns: 74px 1fr; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--border-color); font-size: .78rem; }
+        .evento:last-child { border-bottom: none; }
+        .evento .f { color: var(--text-muted); font-variant-numeric: tabular-nums; }
+        .evento .a { font-weight: 700; font-size: .66rem; text-transform: uppercase; letter-spacing: .4px; margin-right: 4px; }
+        .evento .a.alta { color: var(--c-ugl); }
+        .evento .a.baja { color: var(--c-alerta); }
+        .evento .a.crea { color: var(--c-agencia); }
+        .evento .n { color: var(--text-muted); font-size: .68rem; }
+
+        /* Editor manual */
+        .editor .campo { margin-bottom: 10px; }
+        .editor label { display: block; font-size: .7rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: .4px; margin-bottom: 4px; }
+        .editor input {
+            width: 100%; padding: 8px 11px; background: var(--bg-input); border: 1px solid var(--border-color);
+            border-radius: 6px; font-size: .85rem; color: var(--text-main); outline: none; font-family: inherit;
+        }
+        .editor input:focus { border-color: var(--c-central); }
+        .editor .fila-aut { display: grid; grid-template-columns: 1fr 1fr 30px; gap: 6px; margin-bottom: 6px; align-items: center; }
+        .editor .fila-aut.eliminada input { opacity: .4; text-decoration: line-through; }
+        .editor .btn-x {
+            width: 30px; height: 34px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-card);
+            color: var(--text-muted); cursor: pointer; font-size: 1rem; line-height: 1;
+        }
+        .editor .btn-x:hover { color: var(--c-alerta); border-color: rgba(248,113,113,.4); }
+        .editor .acciones { display: flex; gap: 8px; margin-top: 18px; position: sticky; bottom: -20px; background: var(--bg-sidebar); padding: 12px 0; border-top: 1px solid var(--border-color); }
+        .editor .ayuda { font-size: .74rem; color: var(--text-muted); line-height: 1.5; margin: 0 0 14px; }
+
+        /* Barra de cambios manuales */
+        #barra-manuales { display: none; margin-top: 10px; font-size: .74rem; color: #a5b4fc; align-items: center; gap: 6px; flex-wrap: wrap; }
+        #barra-manuales.visible { display: flex; }
+        #barra-manuales .txt { flex: 1 1 100%; }
+
         /* Divisor arrastrable entre grafo y panel */
         #divisor {
             width: 6px; margin: 0 -3px; cursor: col-resize; z-index: 20; position: relative; flex-shrink: 0;
@@ -212,6 +278,7 @@
         <label><span class="sw ugl"></span>UGL con datos</label>
         <label><span class="sw vacio"></span>UGL sin datos</label>
         <label><input type="checkbox" id="chkAgencias" checked><span class="sw agencia"></span>Agencias</label>
+        <label><span class="sw agencia" style="background:#78542a;outline:1px solid var(--c-agencia)"></span>Agencia sin titular vigente</label>
     </div>
     <div id="buscador-rapido">
         <div class="caja">
@@ -229,6 +296,13 @@
         <h2>Red Federal UGLs y Agencias</h2>
         <input type="text" id="buscador" class="buscador-input" placeholder="Buscar UGL, Agencia o persona..." autocomplete="off">
         <div class="badges" id="estadisticas"><span class="badge ugl">Cargando...</span></div>
+        <div id="barra-manuales">
+            <span class="txt" id="txt-manuales"></span>
+            <button class="btn chico" onclick="exportarManuales()" title="Descarga datos_manuales.json para subirlo al repositorio">Exportar</button>
+            <button class="btn chico" onclick="document.getElementById('archivo-manuales').click()" title="Cargar un datos_manuales.json">Importar</button>
+            <button class="btn chico peligro" onclick="descartarManuales()" title="Borra los cambios guardados en este navegador">Descartar</button>
+            <input type="file" id="archivo-manuales" accept="application/json,.json" hidden>
+        </div>
     </div>
     <div id="contenido-detalles">
         <div class="mensaje-vacio">Seleccion&aacute; una UGL en el grafo para desplegar sus datos, autoridades y sus Agencias asociadas.</div>
@@ -467,6 +541,132 @@ function enriquecerConDirectorio(modelo, dir) {
 }
 
 /* =====================================================================
+   2c. FORMATO 2 (procesar_boletines.py): autoridades vigentes con fecha
+   ===================================================================== */
+function nuevaUGL(u) {
+    return { id: 'UGL-' + u.num, tipo: 'ugl', num: u.num, nombre: u.nombre, direccion: null, telefono: null,
+             autoridades: new Map(), hijos: new Map(), historial: [], claves: [], manual: {} };
+}
+function nuevaAgencia(ugl, nombre) {
+    const k = 'agencia:' + claveLugar(nombre);
+    return { id: ugl.id + '|' + k, clave: k, tipo: 'agencia', nombre, ugl, autoridades: new Map(), historial: [], manual: {} };
+}
+function autoridadDesdeBoletin(a) {
+    return { cargo: a.cargo, personas: [a.persona], desde: a.desde, norma: a.norma, fuente: 'boletin' };
+}
+
+function construirModeloV2(datos) {
+    const ugls = CATALOGO_UGL.map(nuevaUGL);
+    for (const u of ugls) {
+        const d = datos.ugls?.[u.num];
+        if (!d) continue;
+        u.claves.push(u.num);
+        for (const a of d.autoridades || []) u.autoridades.set(clave(a.cargo), autoridadDesdeBoletin(a));
+        u.historial = d.historial || [];
+        for (const [nombre, ag] of Object.entries(d.agencias || {})) {
+            const h = nuevaAgencia(u, nombre);
+            if (ag.tipo_original === 'Boca de Atención') h.subtipo = 'Boca de Atención';
+            h.tipoOriginal = ag.tipo_original;
+            for (const a of ag.autoridades || []) h.autoridades.set(clave(a.cargo), autoridadDesdeBoletin(a));
+            const kl = claveLugar(nombre);
+            h.historial = u.historial.filter(e => e.agencia && claveLugar(e.agencia) === kl);
+            u.hijos.set(h.clave, h);
+        }
+    }
+    return { ugls, sinClasificar: [], meta: datos._meta || {} };
+}
+
+/* =====================================================================
+   2d. DATOS CARGADOS A MANO
+   Se guardan en este navegador (localStorage) y se pueden exportar como
+   datos_manuales.json. Si ese archivo está en el repositorio, lo ven todos.
+   Prioridad: manual > boletines > listado oficial de agencias.
+   ===================================================================== */
+const CLAVE_LOCAL = 'graffo_datos_manuales_v1';
+let MANUALES_REPO = { ugls: {} }, MANUALES_LOCAL = { ugls: {} };
+let DATOS_RAW = null, DIR_RAW = null;
+
+function leerLocal() {
+    try { return JSON.parse(localStorage.getItem(CLAVE_LOCAL)) || { ugls: {} }; } catch (e) { return { ugls: {} }; }
+}
+function guardarLocal() {
+    try { localStorage.setItem(CLAVE_LOCAL, JSON.stringify(MANUALES_LOCAL)); } catch (e) { console.warn('No se pudo guardar en el navegador', e); }
+}
+function fusionarManuales(base, extra) {
+    // extra pisa a base, campo por campo y autoridad por autoridad
+    const out = JSON.parse(JSON.stringify(base || { ugls: {} }));
+    out.ugls = out.ugls || {};
+    for (const [num, e] of Object.entries(extra?.ugls || {})) {
+        const d = out.ugls[num] = out.ugls[num] || {};
+        const mezclar = (dst, src) => {
+            for (const f of ['direccion', 'localidad', 'telefono', 'nueva', 'eliminada']) if (src[f] !== undefined) dst[f] = src[f];
+            if (src.autoridades) {
+                const m = new Map((dst.autoridades || []).map(a => [clave(a.cargo), a]));
+                for (const a of src.autoridades) m.set(clave(a.cargo), a);
+                dst.autoridades = [...m.values()];
+            }
+        };
+        mezclar(d, e);
+        for (const [nom, ag] of Object.entries(e.agencias || {})) {
+            d.agencias = d.agencias || {};
+            const k = Object.keys(d.agencias).find(x => claveLugar(x) === claveLugar(nom)) || nom;
+            d.agencias[k] = d.agencias[k] || {};
+            mezclar(d.agencias[k], ag);
+        }
+    }
+    return out;
+}
+function contarCambios(m) {
+    let n = 0;
+    for (const u of Object.values(m.ugls || {})) {
+        n += ['direccion', 'localidad', 'telefono'].filter(f => u[f] !== undefined).length + (u.autoridades || []).length;
+        for (const a of Object.values(u.agencias || {}))
+            n += ['direccion', 'localidad', 'telefono', 'nueva'].filter(f => a[f] !== undefined).length + (a.autoridades || []).length;
+    }
+    return n;
+}
+
+function aplicarManuales(modelo, man) {
+    const aplicar = (obj, m) => {
+        for (const f of ['direccion', 'localidad', 'telefono']) {
+            if (m[f] !== undefined && m[f] !== null) { obj[f] = m[f] || null; obj.manual[f] = true; if (f === 'direccion') { obj.lat = obj.lon = null; } }
+        }
+        for (const a of m.autoridades || []) {
+            const k = clave(a.cargo);
+            if (a.eliminado) obj.autoridades.delete(k);
+            else obj.autoridades.set(k, { cargo: a.cargo, personas: [a.persona], desde: a.fecha || null, fuente: 'manual' });
+        }
+    };
+    for (const u of modelo.ugls) {
+        const m = man.ugls?.[u.num];
+        if (!m) continue;
+        aplicar(u, m);
+        for (const [nom, ma] of Object.entries(m.agencias || {})) {
+            let h = u.hijos.get('agencia:' + claveLugar(nom));
+            if (ma.eliminada) { if (h && h.manualNueva) u.hijos.delete(h.clave); continue; }
+            if (!h) {
+                if (!ma.nueva) continue;
+                h = nuevaAgencia(u, nom); h.manualNueva = true;
+                u.hijos.set(h.clave, h);
+            }
+            aplicar(h, ma);
+        }
+    }
+}
+
+function construirTodo() {
+    const m = DATOS_RAW && DATOS_RAW._formato === 2 ? construirModeloV2(DATOS_RAW) : construirModelo(DATOS_RAW || {});
+    for (const u of m.ugls) { u.manual = u.manual || {}; u.historial = u.historial || []; for (const h of u.hijos.values()) { h.manual = h.manual || {}; h.historial = h.historial || []; } }
+    if (DIR_RAW) enriquecerConDirectorio(m, DIR_RAW);
+    for (const u of m.ugls) for (const h of u.hijos.values()) if (h.manualNueva === undefined) h.manualNueva = false;
+    aplicarManuales(m, fusionarManuales(MANUALES_REPO, MANUALES_LOCAL));
+    // Las agencias nuevas cargadas a mano también buscan domicilio en el listado oficial
+    if (DIR_RAW) for (const u of m.ugls) for (const h of u.hijos.values())
+        if (h.manualNueva && !h.direccion) { const e = buscarEnDirectorio(DIR_RAW[u.num] || [], h); if (e) copiarUbicacion(h, e); }
+    return m;
+}
+
+/* =====================================================================
    3. GRAFO
    ===================================================================== */
 const COLORES = {
@@ -478,20 +678,13 @@ const indice = new Map(); // id -> objeto del modelo
 const svgPin = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>`;
 const svgPhone = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>`;
 
+async function leerJSON(url) {
+    try { const r = await fetch(url, { cache: 'no-store' }); return r.ok ? await r.json() : null; } catch (e) { return null; }
+}
+
 async function inicializar() {
-    try {
-        const r = await fetch('datos_ugl.json', { cache: 'no-store' });
-        if (!r.ok) throw new Error('No se pudo leer datos_ugl.json');
-        modelo = construirModelo(await r.json());
-        // Listado oficial de agencias (opcional): completa domicilio/localidad/ubicación
-        try {
-            const rd = await fetch('directorio_agencias.json', { cache: 'no-store' });
-            if (rd.ok) enriquecerConDirectorio(modelo, await rd.json());
-        } catch (err) { console.warn('Sin directorio_agencias.json:', err); }
-        window.modeloPAMI = modelo; // útil para depurar desde la consola
-        dibujar();
-    } catch (e) {
-        console.error(e);
+    DATOS_RAW = await leerJSON('datos_ugl.json');
+    if (!DATOS_RAW) {
         intro.listo();
         document.getElementById('contenido-detalles').innerHTML = `
             <div class="mensaje-vacio" style="color:#ef4444">
@@ -499,52 +692,77 @@ async function inicializar() {
                 Si lo abr&iacute;s localmente, ejecut&aacute;:<br><code>python -m http.server 8000</code><br>
                 y entr&aacute; a <b>http://localhost:8000</b>
             </div>`;
+        return;
     }
+    DIR_RAW = await leerJSON('directorio_agencias.json');           // listado oficial (opcional)
+    MANUALES_REPO = (await leerJSON('datos_manuales.json')) || { ugls: {} };  // cargas manuales publicadas (opcional)
+    MANUALES_LOCAL = leerLocal();                                   // cargas manuales de este navegador
+    modelo = construirTodo();
+    window.modeloPAMI = modelo; // útil para depurar desde la consola
+    dibujar();
+    actualizarBarraManuales();
 }
 
-function dibujar() {
-    const nodos = [], aristas = [];
+function fechaCorta(iso) {
+    if (!iso) return '';
+    const [y, m, d] = iso.split('-');
+    return `${d}/${m}/${y}`;
+}
+
+function nodoUGL(u) {
+    const conDatos = u.autoridades.size || u.hijos.size || u.telefono || u.direccion;
+    const col = conDatos ? COLORES.ugl : COLORES.uglVacia;
+    return {
+        id: u.id, label: `UGL ${u.num}\n${u.nombre}`, shape: 'dot', size: 13, mass: 2 + u.hijos.size * 0.3,
+        color: { background: col, border: col, highlight: { background: '#34d399', border: '#6ee7b7' } },
+        font: { color: conDatos ? '#e2e8f0' : '#64748b', size: 11 }
+    };
+}
+function nodoAgencia(h) {
+    const c = COLORES.agencia;
+    const vacante = !h.autoridades.size;
+    return {
+        id: h.id, tipo: 'agencia', label: h.nombre, shape: 'diamond', size: 8,
+        color: { background: vacante ? '#78542a' : c, border: c, highlight: { background: '#fde68a', border: '#fbbf24' } },
+        font: { color: '#94a3b8', size: 9 }
+    };
+}
+
+function renderBadges() {
     let nAg = 0;
-
-    nodos.push({
-        id: 'CENTRAL', label: 'PAMI\nNivel Central', shape: 'dot', size: 22, mass: 4,
-        color: { background: COLORES.central, border: '#60a5fa', highlight: { background: '#60a5fa', border: '#93c5fd' } },
-        font: { color: '#f8fafc', size: 13, bold: true }
-    });
-    indice.set('CENTRAL', { tipo: 'central' });
-
-    for (const u of modelo.ugls) {
-        indice.set(u.id, u);
-        const conDatos = u.autoridades.size || u.hijos.size || u.telefono || u.direccion;
-        const col = conDatos ? COLORES.ugl : COLORES.uglVacia;
-        nodos.push({
-            id: u.id, label: `UGL ${u.num}\n${u.nombre}`, shape: 'dot', size: 13, mass: 2 + u.hijos.size * 0.3,
-            color: { background: col, border: col, highlight: { background: '#34d399', border: '#6ee7b7' } },
-            font: { color: conDatos ? '#e2e8f0' : '#64748b', size: 11 }
-        });
-        aristas.push({ from: 'CENTRAL', to: u.id, length: 260, color: { color: '#1e3a5f' } });
-
-        for (const h of u.hijos.values()) {
-            indice.set(h.id, h);
-            nAg++;
-            const c = COLORES[h.tipo];
-            nodos.push({
-                id: h.id, tipo: h.tipo, label: h.nombre,
-                shape: 'diamond',
-                size: 8,
-                color: { background: c, border: c, highlight: { background: '#fde68a', border: '#fbbf24' } },
-                font: { color: '#94a3b8', size: 9 }
-            });
-            aristas.push({ from: u.id, to: h.id, length: 60, color: { color: '#1e293b' } });
-        }
-    }
-
+    for (const u of modelo.ugls) nAg += u.hijos.size;
     const badges = [
         `<span class="badge ugl">${modelo.ugls.length} UGLs</span>`,
         `<span class="badge agencia">${nAg} Agencias</span>`
     ];
     if (modelo.sinClasificar.length) badges.push(`<span class="badge alerta" onclick="mostrarSinClasificar()">${modelo.sinClasificar.length} sin clasificar</span>`);
+    if (modelo.meta?.hasta) badges.push(`<span class="badge" style="color:var(--text-muted);border-color:var(--border-color)" title="${modelo.meta.boletines} boletines analizados desde ${fechaCorta(modelo.meta.desde)}">Boletines al ${fechaCorta(modelo.meta.hasta)}</span>`);
     document.getElementById('estadisticas').innerHTML = badges.join('');
+}
+
+function reindexar() {
+    indice.clear();
+    indice.set('CENTRAL', { tipo: 'central' });
+    for (const u of modelo.ugls) { indice.set(u.id, u); for (const h of u.hijos.values()) indice.set(h.id, h); }
+}
+
+function dibujar() {
+    const nodos = [], aristas = [];
+    nodos.push({
+        id: 'CENTRAL', label: 'PAMI\nNivel Central', shape: 'dot', size: 22, mass: 4,
+        color: { background: COLORES.central, border: '#60a5fa', highlight: { background: '#60a5fa', border: '#93c5fd' } },
+        font: { color: '#f8fafc', size: 13, bold: true }
+    });
+    for (const u of modelo.ugls) {
+        nodos.push(nodoUGL(u));
+        aristas.push({ id: 'e-' + u.id, from: 'CENTRAL', to: u.id, length: 260, color: { color: '#1e3a5f' } });
+        for (const h of u.hijos.values()) {
+            nodos.push(nodoAgencia(h));
+            aristas.push({ id: 'e-' + h.id, from: u.id, to: h.id, length: 60, color: { color: '#1e293b' } });
+        }
+    }
+    reindexar();
+    renderBadges();
 
     nodosDS = new vis.DataSet(nodos);
     aristasDS = new vis.DataSet(aristas);
@@ -566,6 +784,32 @@ function dibujar() {
     red.on('click', p => { if (p.nodes.length) seleccionar(p.nodes[0], false); });
 }
 
+/* Reconstruye el modelo (tras una edición manual) sin mover los nodos existentes */
+function refrescarGrafo() {
+    modelo = construirTodo();
+    window.modeloPAMI = modelo;
+    const vivos = new Set(['CENTRAL']);
+    for (const u of modelo.ugls) {
+        vivos.add(u.id);
+        nodosDS.update(nodoUGL(u));
+        const base = red.getPositions([u.id])[u.id] || { x: 0, y: 0 };
+        for (const h of u.hijos.values()) {
+            vivos.add(h.id);
+            if (nodosDS.get(h.id)) nodosDS.update(nodoAgencia(h));
+            else {
+                const ang = Math.random() * Math.PI * 2;
+                nodosDS.add({ ...nodoAgencia(h), x: base.x + Math.cos(ang) * 70, y: base.y + Math.sin(ang) * 70 });
+                aristasDS.add({ id: 'e-' + h.id, from: u.id, to: h.id, length: 60, color: { color: '#1e293b' } });
+            }
+        }
+    }
+    for (const n of nodosDS.getIds()) if (!vivos.has(n)) { nodosDS.remove(n); aristasDS.remove('e-' + n); }
+    reindexar();
+    renderBadges();
+    actualizarBarraManuales();
+    aplicarFiltros();
+}
+
 function seleccionar(id, enfocar = true) {
     const obj = indice.get(id);
     if (!obj) return;
@@ -580,16 +824,44 @@ function seleccionar(id, enfocar = true) {
 }
 
 function htmlAutoridades(mapa, clase) {
-    if (!mapa.size) return `<div class="mensaje-vacio" style="margin-top:8px">Sin registros de autoridades en los boletines analizados.</div>`;
+    if (!mapa.size) return `<div class="mensaje-vacio" style="margin-top:8px">Sin autoridades vigentes registradas.</div>`;
+    const lista = [...mapa.values()].sort((a, b) => (b.cargo.startsWith('Titular de la UGL') - a.cargo.startsWith('Titular de la UGL')) || (a.cargo === 'Titular' ? -1 : b.cargo === 'Titular' ? 1 : a.cargo.localeCompare(b.cargo)));
     let h = '';
-    for (const a of mapa.values()) {
-        h += `<div class="tarjeta-cargo ${clase}">
-                <div class="cargo-titulo">${esc(a.cargo)}</div>
+    for (const a of lista) {
+        const manual = a.fuente === 'manual';
+        const meta = manual ? 'Cargado a mano' : a.desde ? `Desde el ${fechaCorta(a.desde)}${a.norma ? ' &middot; ' + esc(a.norma.replace(/-INSSJP.*$/, '')) : ''}` : '';
+        h += `<div class="tarjeta-cargo ${clase} ${manual ? 'manual' : ''}">
+                <div class="cargo-titulo">${esc(a.cargo)}${manual ? '<span class="chip-manual">manual</span>' : ''}</div>
                 ${a.personas.map(p => `<div class="cargo-nombre">${esc(p)}</div>`).join('')}
+                ${meta ? `<div class="cargo-meta">${meta}</div>` : ''}
                 ${a.personas.length > 1 ? `<div class="cargo-alerta">Hay ${a.personas.length} designaciones distintas para este cargo: verificar cu&aacute;l est&aacute; vigente.</div>` : ''}
               </div>`;
     }
     return h;
+}
+
+const ACCIONES = { alta: 'Designación', baja: 'Cese', crea: 'Creación' };
+function htmlHistorial(eventos, mostrarAgencia) {
+    if (!eventos || !eventos.length) return '';
+    const filas = eventos.slice(0, 80).map(e => `
+        <div class="evento">
+            <span class="f">${fechaCorta(e.fecha)}</span>
+            <span><span class="a ${e.accion}">${ACCIONES[e.accion] || e.accion}</span>
+                ${e.persona ? esc(e.persona) : ''}${e.cargo ? ' &middot; ' + esc(e.cargo) : ''}${mostrarAgencia && e.agencia ? ' &middot; <b>' + esc(e.agencia) + '</b>' : ''}
+                <div class="n">${esc((e.norma || '').replace(/-INSSJP.*$/, ''))}</div></span>
+        </div>`).join('');
+    return `<details class="historial"><summary>Historial en boletines (${eventos.length})</summary><div style="margin-top:8px">${filas}</div>
+            ${eventos.length > 80 ? '<div class="cargo-meta">Se muestran los 80 más recientes.</div>' : ''}</details>`;
+}
+
+const svgLapiz = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
+function cabeceraFicha(o, chip, chipClase, titulo, subtitulo) {
+    return `<div class="cabecera-ficha">
+            <div><span class="tipo-chip ${chipClase}">${chip}</span>
+                 <h3 class="titulo-nodo">${esc(titulo)}${o.manualNueva ? '<span class="chip-manual">manual</span>' : ''}</h3></div>
+            <button class="btn" onclick="abrirEditor('${esc(o.id)}')" title="Agregar o corregir datos a mano">${svgLapiz}Editar</button>
+        </div>
+        <p class="subtitulo-nodo">${subtitulo}</p>`;
 }
 
 const svgMapa = `<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>`;
@@ -603,43 +875,206 @@ function htmlContacto(o) {
     else if (o.direccion) mapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${o.direccion}, ${o.localidad || ''}, Argentina`)}`;
     return `<div class="seccion-titulo">Ubicaci&oacute;n y Contacto</div>
         <div class="datos-contacto">
-            <p>${svgPin}<span><strong>Direcci&oacute;n:</strong>&nbsp;${dir}</span></p>
-            <p>${svgPhone}<strong>Tel&eacute;fono:</strong>&nbsp;${o.telefono ? esc(o.telefono) : '<span class="pendiente">no disponible</span>'}</p>
+            <p>${svgPin}<span><strong>Direcci&oacute;n:</strong>&nbsp;${dir}${o.manual?.direccion || o.manual?.localidad ? '<span class="chip-manual">manual</span>' : ''}</span></p>
+            <p>${svgPhone}<span><strong>Tel&eacute;fono:</strong>&nbsp;${o.telefono ? esc(o.telefono) : '<span class="pendiente">no disponible</span>'}${o.manual?.telefono ? '<span class="chip-manual">manual</span>' : ''}</span></p>
             ${mapa ? `<p>${svgMapa}<a class="enlace-mapa" href="${mapa}" target="_blank" rel="noopener">Ver en Google Maps</a></p>` : ''}
             ${o.codigoPami ? `<p class="dato-oficial">Listado oficial PAMI &middot; c&oacute;d. ${esc(o.codigoPami)} &middot; ${esc(o.nombreOficial)}</p>` : ''}
         </div>`;
 }
 
 function mostrarUGL(u) {
-    const hijos = [...u.hijos.values()];
-    const ag = hijos.filter(h => h.tipo === 'agencia').sort((a, b) => a.nombre.localeCompare(b.nombre));
-    const lista = (arr, tipo) => arr.length
-        ? `<div class="lista-hijos">${arr.map(h => `<div class="item-hijo" onclick="seleccionar('${esc(h.id)}')">
-                <span class="sw ${tipo}"></span>${esc(h.nombre)}${h.subtipo ? ` <small style="color:var(--text-muted)">(${h.subtipo})</small>` : ''}
-                <span class="n">${[...h.autoridades.values()].reduce((s, a) => s + a.personas.length, 0)} autoridad(es)</span></div>`).join('')}</div>`
+    const ag = [...u.hijos.values()].sort((a, b) => a.nombre.localeCompare(b.nombre));
+    const lista = arr => arr.length
+        ? `<div class="lista-hijos">${arr.map(h => {
+                const tit = [...h.autoridades.values()].find(a => a.cargo === 'Titular');
+                return `<div class="item-hijo" onclick="seleccionar('${esc(h.id)}')">
+                <span class="sw agencia"></span>${esc(h.nombre)}${h.subtipo ? ` <small style="color:var(--text-muted)">(${h.subtipo})</small>` : ''}${h.manualNueva ? '<span class="chip-manual">manual</span>' : ''}
+                <span class="n">${tit ? esc(tit.personas[0]) : h.autoridades.size ? h.autoridades.size + ' autoridad(es)' : 'sin titular vigente'}</span></div>`; }).join('')}</div>`
         : `<div class="mensaje-vacio" style="margin-top:8px">Sin registros.</div>`;
 
     document.getElementById('contenido-detalles').innerHTML = `
-        <span class="tipo-chip ugl">UGL ${esc(u.num)}</span>
-        <h3 class="titulo-nodo">${esc(u.nombre)}</h3>
-        <p class="subtitulo-nodo">Unidad de Gesti&oacute;n Local &middot; ${ag.length} agencia(s)</p>
+        ${cabeceraFicha(u, 'UGL ' + esc(u.num), 'ugl', u.nombre, `Unidad de Gesti&oacute;n Local &middot; ${ag.length} agencia(s)`)}
         ${htmlContacto(u)}
         <div class="seccion-titulo">Autoridades de la UGL</div>
         ${htmlAutoridades(u.autoridades, '')}
         <div class="seccion-titulo">Agencias (${ag.length})</div>
-        ${lista(ag, 'agencia')}`;
+        ${lista(ag)}
+        ${htmlHistorial(u.historial, true)}`;
 }
 
 function mostrarDependencia(h) {
     const etiqueta = h.subtipo || 'Agencia';
+    const origen = h.tipoOriginal && h.tipoOriginal !== 'Agencia' && h.tipoOriginal !== etiqueta ? ` &middot; figura como ${esc(h.tipoOriginal)} en los boletines` : '';
     document.getElementById('contenido-detalles').innerHTML = `
-        <span class="tipo-chip ${h.tipo}">${etiqueta}</span>
-        <h3 class="titulo-nodo">${esc(h.nombre)}</h3>
-        <p class="subtitulo-nodo">Depende de <a onclick="seleccionar('${esc(h.ugl.id)}')">UGL ${esc(h.ugl.num)} &ndash; ${esc(h.ugl.nombre)}</a></p>
+        ${cabeceraFicha(h, etiqueta, 'agencia', h.nombre, `Depende de <a onclick="seleccionar('${esc(h.ugl.id)}')">UGL ${esc(h.ugl.num)} &ndash; ${esc(h.ugl.nombre)}</a>${origen}`)}
         ${htmlContacto(h)}
         <div class="seccion-titulo">Autoridades</div>
-        ${htmlAutoridades(h.autoridades, h.tipo)}`;
+        ${htmlAutoridades(h.autoridades, h.tipo)}
+        ${htmlHistorial(h.historial, false)}`;
 }
+
+/* ---------- Editor de datos manuales ---------- */
+let edicion = null;   // { id, filas: [{cargoOrig, personaOrig, cargo, persona, eliminada}] }
+
+function abrirEditor(id) {
+    const o = indice.get(id);
+    if (!o) return;
+    const filas = [...o.autoridades.values()].map(a => ({ cargoOrig: a.cargo, personaOrig: a.personas[0], cargo: a.cargo, persona: a.personas[0], eliminada: false }));
+    edicion = { id, filas };
+    const esUGL = o.tipo === 'ugl';
+    const titulo = esUGL ? `UGL ${o.num} – ${o.nombre}` : o.nombre;
+    document.getElementById('contenido-detalles').innerHTML = `
+        <div class="editor">
+            <span class="tipo-chip ${esUGL ? 'ugl' : 'agencia'}">Editar datos</span>
+            <h3 class="titulo-nodo">${esc(titulo)}</h3>
+            <p class="ayuda">Los cambios se guardan en este navegador y tienen prioridad sobre los boletines.
+               Para que los vea todo el mundo, usá <b>Exportar</b> y subí <code>datos_manuales.json</code> al repositorio.</p>
+            <div class="seccion-titulo">Ubicación y contacto</div>
+            <div class="campo"><label for="ed-dir">Dirección</label><input id="ed-dir" value="${esc(o.direccion || '')}" placeholder="Calle y número"></div>
+            <div class="campo"><label for="ed-loc">Localidad</label><input id="ed-loc" value="${esc(o.localidad || '')}" placeholder="Localidad"></div>
+            <div class="campo"><label for="ed-tel">Teléfono</label><input id="ed-tel" value="${esc(o.telefono || '')}" placeholder="(0223) 000-0000" inputmode="tel"></div>
+            <div class="seccion-titulo">Autoridades</div>
+            <div id="ed-filas"></div>
+            <button class="btn chico" onclick="agregarFila()">+ Agregar autoridad</button>
+            ${esUGL ? `<div class="seccion-titulo">Nueva agencia</div>
+                <div class="campo"><label for="ed-nueva">Nombre de la agencia (opcional)</label><input id="ed-nueva" placeholder="Ej.: Miramar"></div>` : ''}
+            ${!esUGL && o.manualNueva ? `<div style="margin-top:14px"><button class="btn chico peligro" onclick="eliminarAgenciaManual()">Eliminar esta agencia cargada a mano</button></div>` : ''}
+            <div class="acciones">
+                <button class="btn primario" onclick="guardarEditor()">Guardar</button>
+                <button class="btn" onclick="seleccionar(edicion.id, false)">Cancelar</button>
+            </div>
+        </div>`;
+    pintarFilas();
+    document.getElementById('ed-dir').focus();
+}
+
+function pintarFilas() {
+    document.getElementById('ed-filas').innerHTML = edicion.filas.map((f, i) => `
+        <div class="fila-aut ${f.eliminada ? 'eliminada' : ''}">
+            <input aria-label="Cargo" value="${esc(f.cargo)}" placeholder="Cargo (ej.: Titular)" oninput="edicion.filas[${i}].cargo=this.value" ${f.eliminada ? 'disabled' : ''}>
+            <input aria-label="Persona" value="${esc(f.persona)}" placeholder="Nombre y apellido" oninput="edicion.filas[${i}].persona=this.value" ${f.eliminada ? 'disabled' : ''}>
+            <button class="btn-x" title="${f.eliminada ? 'Restaurar' : 'Quitar'}" onclick="alternarFila(${i})">${f.eliminada ? '↺' : '×'}</button>
+        </div>`).join('') || '<div class="cargo-meta" style="margin-bottom:8px">Sin autoridades. Agregá una con el botón de abajo.</div>';
+}
+function agregarFila() {
+    edicion.filas.push({ cargoOrig: null, personaOrig: null, cargo: indice.get(edicion.id).tipo === 'ugl' ? '' : 'Titular', persona: '', eliminada: false });
+    pintarFilas();
+    const ins = document.querySelectorAll('#ed-filas .fila-aut:last-child input');
+    if (ins.length) ins[ins[0].value ? 1 : 0].focus();
+}
+function alternarFila(i) {
+    const f = edicion.filas[i];
+    if (!f.cargoOrig) edicion.filas.splice(i, 1); else f.eliminada = !f.eliminada;
+    pintarFilas();
+}
+
+function destinoManual(o, crear = true) {
+    const num = o.tipo === 'ugl' ? o.num : o.ugl.num;
+    const u = MANUALES_LOCAL.ugls[num] = MANUALES_LOCAL.ugls[num] || {};
+    if (o.tipo === 'ugl') return u;
+    u.agencias = u.agencias || {};
+    const k = Object.keys(u.agencias).find(x => claveLugar(x) === claveLugar(o.nombre)) || o.nombre;
+    return u.agencias[k] = u.agencias[k] || (crear ? {} : undefined);
+}
+
+function guardarEditor() {
+    const o = indice.get(edicion.id);
+    const dst = destinoManual(o);
+    const val = id => document.getElementById(id).value.trim();
+    const campos = { direccion: val('ed-dir'), localidad: val('ed-loc'), telefono: val('ed-tel') };
+    for (const [f, v] of Object.entries(campos)) if (v !== (o[f] || '')) dst[f] = v;
+    const cambios = [];
+    for (const f of edicion.filas) {
+        const cargo = f.cargo.trim(), persona = f.persona.trim();
+        if (f.cargoOrig && (f.eliminada || clave(cargo) !== clave(f.cargoOrig))) cambios.push({ cargo: f.cargoOrig, eliminado: true });
+        if (!f.eliminada && cargo && persona && (clave(cargo) !== clave(f.cargoOrig || '') || persona !== f.personaOrig))
+            cambios.push({ cargo, persona, fecha: new Date().toISOString().slice(0, 10) });
+    }
+    if (cambios.length) {
+        const m = new Map((dst.autoridades || []).map(a => [clave(a.cargo), a]));
+        for (const c of cambios) m.set(clave(c.cargo), c);
+        dst.autoridades = [...m.values()];
+    }
+    let irA = edicion.id;
+    const nueva = o.tipo === 'ugl' ? val('ed-nueva') : '';
+    if (nueva) {
+        const u = MANUALES_LOCAL.ugls[o.num];
+        u.agencias = u.agencias || {};
+        u.agencias[nueva] = Object.assign(u.agencias[nueva] || {}, { nueva: true });
+        irA = o.id + '|agencia:' + claveLugar(nueva);
+    }
+    guardarLocal();
+    refrescarGrafo();
+    edicion = null;
+    seleccionar(indice.has(irA) ? irA : o.id, true);
+}
+
+function eliminarAgenciaManual() {
+    const o = indice.get(edicion.id);
+    const u = MANUALES_LOCAL.ugls[o.ugl.num];
+    const k = u && u.agencias && Object.keys(u.agencias).find(x => claveLugar(x) === claveLugar(o.nombre));
+    if (k) delete u.agencias[k];
+    else destinoManual(o).eliminada = true;          // estaba publicada en datos_manuales.json
+    guardarLocal();
+    const padre = o.ugl.id;
+    edicion = null;
+    refrescarGrafo();
+    seleccionar(padre, true);
+}
+
+function actualizarBarraManuales() {
+    const n = contarCambios(MANUALES_LOCAL), nRepo = contarCambios(MANUALES_REPO);
+    const barra = document.getElementById('barra-manuales');
+    barra.classList.add('visible');
+    document.getElementById('txt-manuales').textContent = n
+        ? `${n} cambio(s) manuales en este navegador`
+        : nRepo ? `${nRepo} dato(s) cargados a mano publicados` : 'Datos manuales: sin cambios';
+    barra.querySelector('.peligro').style.display = n ? '' : 'none';
+    barra.querySelector('[onclick^="exportar"]').style.display = (n || nRepo) ? '' : 'none';
+}
+
+function exportarManuales() {
+    const datos = fusionarManuales(MANUALES_REPO, MANUALES_LOCAL);
+    datos._actualizado = new Date().toISOString();
+    const blob = new Blob([JSON.stringify(datos, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'datos_manuales.json';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+function descartarManuales() {
+    const n = contarCambios(MANUALES_LOCAL);
+    const barra = document.getElementById('txt-manuales');
+    if (barra.dataset.confirmar !== '1') {        // confirmación en dos clics, sin diálogos del navegador
+        barra.dataset.confirmar = '1';
+        barra.textContent = `¿Descartar ${n} cambio(s)? Tocá Descartar de nuevo`;
+        setTimeout(() => { barra.dataset.confirmar = ''; actualizarBarraManuales(); }, 4000);
+        return;
+    }
+    barra.dataset.confirmar = '';
+    MANUALES_LOCAL = { ugls: {} };
+    guardarLocal();
+    refrescarGrafo();
+    document.getElementById('contenido-detalles').innerHTML = '<div class="mensaje-vacio">Se descartaron los cambios manuales de este navegador.</div>';
+}
+
+document.getElementById('archivo-manuales').addEventListener('change', async e => {
+    const f = e.target.files[0];
+    if (!f) return;
+    try {
+        const datos = JSON.parse(await f.text());
+        if (!datos || typeof datos.ugls !== 'object') throw new Error('Formato inválido');
+        MANUALES_LOCAL = fusionarManuales(MANUALES_LOCAL, datos);
+        guardarLocal();
+        refrescarGrafo();
+        document.getElementById('contenido-detalles').innerHTML = `<div class="mensaje-vacio">Se importaron ${contarCambios(datos)} dato(s) desde ${esc(f.name)}.</div>`;
+    } catch (err) {
+        document.getElementById('contenido-detalles').innerHTML = `<div class="mensaje-vacio" style="color:var(--c-alerta)">No se pudo importar el archivo: ${esc(err.message)}</div>`;
+    }
+    e.target.value = '';
+});
 
 function mostrarSinClasificar() {
     document.getElementById('contenido-detalles').innerHTML = `
