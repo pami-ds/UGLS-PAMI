@@ -1,12 +1,12 @@
 {
  "_formato": 2,
  "_meta": {
-  "generado": "2026-09-25T13:24:05",
+  "generado": "2026-09-25T13:40:46",
   "boletines": 2578,
   "desde": "2016-01-04",
   "hasta": "2026-09-23",
-  "eventos": 5319,
-  "eventos_sin_ugl": 1708,
+  "eventos": 5320,
+  "eventos_sin_ugl": 1709,
   "ugl_corregida_por_listado": [
    {
     "fecha": "2016-04-18",
@@ -238,6 +238,9 @@
        "desde": "2025-08-06",
        "norma": "RESOL-2025-1763-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Famailla"
      ]
     },
     "Juan B. Alberdi": {
@@ -2063,6 +2066,9 @@
        "desde": "2024-04-29",
        "norma": "RESOL-2024-1240-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Cruz Del Eje"
      ]
     },
     "Dean Funes": {
@@ -2109,7 +2115,7 @@
       }
      ]
     },
-    "La Caldera": {
+    "La Calera": {
      "tipo_original": "CAP",
      "autoridades": [
       {
@@ -2118,6 +2124,9 @@
        "desde": "2026-05-06",
        "norma": "RESOL-2026-1342-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "La Caldera"
      ]
     },
     "La Falda": {
@@ -2408,7 +2417,7 @@
       }
      ]
     },
-    "Villa Libertador": {
+    "Villa El Libertador": {
      "tipo_original": "CAP",
      "autoridades": [
       {
@@ -2423,6 +2432,9 @@
        "desde": "2024-04-29",
        "norma": "RESOL-2024-1220-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Villa Libertador"
      ]
     },
     "Villa María": {
@@ -3976,6 +3988,9 @@
        "desde": "2026-04-20",
        "norma": "RESOL-2026-1184-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Guaymallen"
      ]
     },
     "Junín": {
@@ -4098,6 +4113,9 @@
        "desde": "2025-03-27",
        "norma": "RESOL-2025-611-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Monte Coman"
      ]
     },
     "Rivadavia": {
@@ -4120,6 +4138,9 @@
        "desde": "2024-07-19",
        "norma": "RESOL-2024-2020-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "San Martin"
      ]
     },
     "San Rafael": {
@@ -5671,6 +5692,9 @@
        "desde": "2024-09-24",
        "norma": "RESOL-2024-2740-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Coronel Suárez"
      ]
     },
     "Darragueira": {
@@ -5781,6 +5805,9 @@
        "desde": "2024-10-18",
        "norma": "RESOL-2024-2945-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Pigué"
      ]
     },
     "Puán": {
@@ -5792,6 +5819,9 @@
        "desde": "2025-04-04",
        "norma": "RESOL-2025-678-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Púan"
      ]
     },
     "Saavedra": {
@@ -7994,6 +8024,9 @@
        "desde": "2024-05-31",
        "norma": "RESOL-2024-1580-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Chascomus"
      ]
     },
     "City Bell": {
@@ -8084,17 +8117,6 @@
       }
      ]
     },
-    "Manuel J": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Alicia Marianela Spalletti",
-       "desde": "2016-04-01",
-       "norma": "RESOL-2016-434-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
     "Manuel J. Cobo": {
      "tipo_original": "CAP",
      "autoridades": [
@@ -8104,6 +8126,9 @@
        "desde": "2024-08-01",
        "norma": "RESOL-2024-2167-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Manuel J"
      ]
     },
     "Melchor Romero": {
@@ -9445,6 +9470,9 @@
        "desde": "2024-07-12",
        "norma": "RESOL-2024-1935-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Pacheco"
      ]
     },
     "José C. Paz": {
@@ -10689,6 +10717,9 @@
        "desde": "2025-10-08",
        "norma": "RESOL-2025-2446-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Carcarañá"
      ]
     },
     "Casilda": {
@@ -10843,6 +10874,9 @@
        "desde": "2025-02-21",
        "norma": "RESOL-2025-337-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Villa Cañas"
      ]
     },
     "Villa Constitución": {
@@ -11857,6 +11891,10 @@
        "desde": "2025-03-31",
        "norma": "RESOL-2025-635-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Adrogué",
+      "Adrogüe"
      ]
     },
     "Agencia Glew": {
@@ -11868,6 +11906,9 @@
        "desde": "2024-09-12",
        "norma": "RESOL-2024-2632-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Glew"
      ]
     },
     "Avellaneda": {
@@ -12010,6 +12051,9 @@
        "desde": "2024-09-12",
        "norma": "RESOL-2024-2634-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Tristán Suarez"
      ]
     },
     "Valentín Alsina": {
@@ -13250,6 +13294,9 @@
        "desde": "2025-04-04",
        "norma": "RESOL-2025-677-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Lobería"
      ]
     },
     "Maipú": {
@@ -13338,6 +13385,10 @@
        "desde": "2024-05-30",
        "norma": "RESOL-2024-1524-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "San Clemente",
+      "San Clemente Del Tuyu"
      ]
     },
     "Santa Clara del Mar": {
@@ -13393,6 +13444,10 @@
        "desde": "2026-06-11",
        "norma": "RESOL-2026-1827-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Zona Puerto Mar Del Plata",
+      "Zona Puerto Mar del Plata"
      ]
     }
    },
@@ -14648,6 +14703,9 @@
        "desde": "2022-07-04",
        "norma": "RESOL-2022-812-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Oran"
      ]
     },
     "Rosario de la Frontera": {
@@ -15496,21 +15554,13 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Mirian Raquel Penayo",
-       "desde": "2020-03-09",
-       "norma": "RESOL-2020-865-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
-    "Machagay": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
        "persona": "Lucas Emanuel Alegre",
        "desde": "2026-03-11",
        "norma": "RESOL-2026-836-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Machagay"
      ]
     },
     "Sauzalito": {
@@ -16288,6 +16338,9 @@
        "desde": "2025-06-17",
        "norma": "RESOL-2025-1363-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Macia"
      ]
     },
     "María Grande": {
@@ -16299,6 +16352,9 @@
        "desde": "2024-03-22",
        "norma": "RESOL-2024-824-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Maria Grande"
      ]
     },
     "Nogoyá": {
@@ -16310,6 +16366,9 @@
        "desde": "2024-04-05",
        "norma": "RESOL-2024-960-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Nogoya"
      ]
     },
     "Paz": {
@@ -18204,7 +18263,7 @@
       }
      ]
     },
-    "Villa Langostura": {
+    "Villa La Angostura": {
      "tipo_original": "CAP",
      "autoridades": [
       {
@@ -18213,6 +18272,9 @@
        "desde": "2024-05-27",
        "norma": "RESOL-2024-1477-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Villa Langostura"
      ]
     },
     "Zapala": {
@@ -19085,6 +19147,9 @@
        "desde": "2024-04-24",
        "norma": "RESOL-2024-1153-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Trevelin"
      ]
     }
    },
@@ -19690,6 +19755,9 @@
        "desde": "2024-12-16",
        "norma": "RESOL-2024-3462-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "ELdorado"
      ]
     },
     "El Soberbio": {
@@ -19745,6 +19813,9 @@
        "desde": "2026-01-12",
        "norma": "RESOL-2026-83-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Obera"
      ]
     },
     "Puerto Esperanza": {
@@ -20807,6 +20878,9 @@
        "desde": "2026-06-03",
        "norma": "RESOL-2026-1713-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Los Juries"
      ]
     },
     "Monte Quemado": {
@@ -20928,6 +21002,9 @@
        "desde": "2026-06-03",
        "norma": "RESOL-2026-1718-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Termas de Río Hondo"
      ]
     },
     "Tintina": {
@@ -20950,6 +21027,9 @@
        "desde": "2026-06-03",
        "norma": "RESOL-2026-1717-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Vlla Atamisqui"
      ]
     }
    },
@@ -21944,6 +22024,9 @@
        "desde": "2025-04-16",
        "norma": "RESOL-2025-761-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Catrilo"
      ]
     },
     "Colonia 25 de Mayo": {
@@ -22010,6 +22093,9 @@
        "desde": "2025-04-16",
        "norma": "RESOL-2025-779-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Guatrache"
      ]
     },
     "Ingeniero Luiggi": {
@@ -22021,6 +22107,9 @@
        "desde": "2025-04-16",
        "norma": "RESOL-2025-776-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Ingeniero Luggi"
      ]
     },
     "Intendente Alvear": {
@@ -22065,6 +22154,9 @@
        "desde": "2020-02-26",
        "norma": "RESOL-2020-676-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Realicó"
      ]
     },
     "Santa Isabel": {
@@ -24398,7 +24490,7 @@
       }
      ]
     },
-    "Bañada de Ovanta": {
+    "Bañado de Ovanta": {
      "tipo_original": "CAP",
      "autoridades": [
       {
@@ -24407,6 +24499,9 @@
        "desde": "2026-03-03",
        "norma": "RESOL-2026-722-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Bañada de Ovanta"
      ]
     },
     "Belén": {
@@ -25827,11 +25922,17 @@
        "desde": "2025-04-16",
        "norma": "RESOL-2025-772-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Concaran"
      ]
     },
     "Juana Koslay": {
      "tipo_original": "CAP",
-     "autoridades": []
+     "autoridades": [],
+     "alias": [
+      "Koslay"
+     ]
     },
     "Justo Daract": {
      "tipo_original": "CAP",
@@ -25910,7 +26011,7 @@
       }
      ]
     },
-    "Tilsarao": {
+    "Tilisarao": {
      "tipo_original": "CAP",
      "autoridades": [
       {
@@ -25919,6 +26020,9 @@
        "desde": "2025-01-20",
        "norma": "RESOL-2025-22-INSSJP-SE#INSSJP"
       }
+     ],
+     "alias": [
+      "Tilsarao"
      ]
     },
     "Unión": {
@@ -26779,6 +26883,17 @@
     }
    ],
    "agencias": {
+    "Bariloche": {
+     "tipo_original": "CAP",
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Ragusa Martina",
+       "desde": "2021-10-18",
+       "norma": "RESOL-2021-133-INSSJP-SE#INSSJP"
+      }
+     ]
+    },
     "Catriel": {
      "tipo_original": "CAP",
      "autoridades": [
@@ -26920,6 +27035,9 @@
        "desde": "2025-06-02",
        "norma": "RESOL-2025-1242-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Rio Colorado"
      ]
     },
     "San Antonio Oeste": {
@@ -26942,6 +27060,9 @@
        "desde": "2026-01-07",
        "norma": "RESOL-2026-30-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Grande"
      ]
     },
     "Viedma": {
@@ -28677,6 +28798,9 @@
        "desde": "2024-04-30",
        "norma": "RESOL-2024-1254-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Ituzaingo"
      ]
     },
     "Merlo": {
@@ -29473,7 +29597,7 @@
       }
      ]
     },
-    "Daireux": {
+    "Daireaux": {
      "tipo_original": "CAP",
      "autoridades": [
       {
@@ -29482,6 +29606,9 @@
        "desde": "2024-10-14",
        "norma": "RESOL-2024-2888-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Daireux"
      ]
     },
     "General Alvear": {
@@ -29504,6 +29631,9 @@
        "desde": "2025-01-16",
        "norma": "RESOL-2025-7-INSSJP-SE#INSSJP"
       }
+     ],
+     "alias": [
+      "Lamadrid"
      ]
     },
     "Laprida": {
@@ -29587,6 +29717,9 @@
        "desde": "2024-08-13",
        "norma": "RESOL-2024-2322-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Tapalque"
      ]
     }
    },
@@ -30393,6 +30526,9 @@
        "desde": "2024-10-14",
        "norma": "RESOL-2024-2908-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Arenales"
      ]
     },
     "General Pinto": {
@@ -30426,6 +30562,9 @@
        "desde": "2024-09-10",
        "norma": "RESOL-2024-2585-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Villegas"
      ]
     },
     "Lincoln": {
@@ -30448,6 +30587,9 @@
        "desde": "2024-08-07",
        "norma": "RESOL-2024-2266-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Pergamino la"
      ]
     },
     "Pérez Millán": {
@@ -31404,6 +31546,9 @@
        "desde": "2025-06-23",
        "norma": "RESOL-2025-1415-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Capilla del señor"
      ]
     },
     "Del Viso": {
@@ -31470,6 +31615,10 @@
        "desde": "2024-05-03",
        "norma": "RESOL-2024-1280-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "General Rodriguez",
+      "general Rodríguez"
      ]
     },
     "Jáuregui": {
@@ -31481,6 +31630,9 @@
        "desde": "2024-04-23",
        "norma": "RESOL-2024-1096-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Jauregui"
      ]
     },
     "Lima": {
@@ -31559,6 +31711,9 @@
        "desde": "2024-08-07",
        "norma": "RESOL-2024-2253-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Derqui"
      ]
     },
     "San Andrés de Giles": {
@@ -32752,6 +32907,9 @@
        "desde": "2026-07-15",
        "norma": "RESOL-2026-2094-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Rio Grande"
      ]
     },
     "Tolhuin": {
@@ -34322,6 +34480,9 @@
        "desde": "2024-10-23",
        "norma": "RESOL-2024-2991-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Gonzalez Catán"
      ]
     },
     "Gregorio de la Ferrere": {
@@ -34333,6 +34494,10 @@
        "desde": "2024-10-23",
        "norma": "RESOL-2024-2990-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Gregorio De Laferrere",
+      "Gregorio de Laferrere"
      ]
     },
     "Isidro Casanova": {
@@ -34361,6 +34526,9 @@
        "desde": "2024-10-23",
        "norma": "RESOL-2024-2989-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Ramos Mejías"
      ]
     },
     "Tapiales": {
@@ -35300,6 +35468,9 @@
        "desde": "2025-12-15",
        "norma": "RESOL-2025-3094-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Cabrera"
      ]
     },
     "Huinca Renanco": {
@@ -35357,7 +35528,7 @@
       }
      ]
     },
-    "Vicuña Makena": {
+    "Vicuña Mackenna": {
      "tipo_original": "CAP",
      "autoridades": [
       {
@@ -35366,6 +35537,10 @@
        "desde": "2026-05-06",
        "norma": "RESOL-2026-1341-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Vicuña Mackena",
+      "Vicuña Makena"
      ]
     }
    },
@@ -35837,12 +36012,23 @@
       }
      ]
     },
-    "El Cruce de Florencia Varela": {
-     "tipo_original": "CAP",
-     "autoridades": []
-    },
     "El Cruce de Florencio Varela": {
      "tipo_original": "CAP",
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Isabel Lorena Rychtun",
+       "desde": "2024-09-13",
+       "norma": "RESOL-2024-2658-INSSJP-DE#INSSJP"
+      }
+     ],
+     "alias": [
+      "Cruce de Florencio Varela",
+      "El Cruce de Florencia Varela"
+     ]
+    },
+    "Florencio Varela": {
+     "tipo_original": "Agencia",
      "autoridades": [
       {
        "cargo": "Titular",
@@ -35850,6 +36036,9 @@
        "desde": "2025-03-27",
        "norma": "RESOL-2025-608-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Florencia Varela"
      ]
     },
     "Hudson": {
@@ -35889,6 +36078,9 @@
        "desde": "2024-09-13",
        "norma": "RESOL-2024-2655-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "San Francisco Solano"
      ]
     }
    },
@@ -36757,6 +36949,9 @@
        "desde": "2025-02-18",
        "norma": "RESOL-2025-272-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Cármen de Areco"
      ]
     },
     "Chacabuco": {
@@ -36794,7 +36989,10 @@
     },
     "Moquehuá": {
      "tipo_original": "CAP",
-     "autoridades": []
+     "autoridades": [],
+     "alias": [
+      "Moquehua"
+     ]
     },
     "Norberto de la Riestra": {
      "tipo_original": "CAP",
@@ -36816,6 +37014,9 @@
        "desde": "2026-02-11",
        "norma": "RESOL-2026-525-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Pehuajo"
      ]
     },
     "Rivadavia": {
@@ -36838,6 +37039,10 @@
        "desde": "2025-03-27",
        "norma": "RESOL-2025-612-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Salliquello",
+      "Salliquelo"
      ]
     },
     "Salto": {
@@ -37733,12 +37938,6 @@
      "norma": "RESOL-2021-952-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Departamento Auditoria Administrativa Contable y Financiera, de la Unidad Auditoría Interna",
-     "persona": "María Inés Annetta",
-     "desde": "2022-09-29",
-     "norma": "RESOL-2022-1186-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Departamento Despacho",
      "persona": "Estefanía Vieitez Ezcurra",
      "desde": "2024-03-08",
@@ -37785,12 +37984,6 @@
      "persona": "Mariela Analía Sorrentino",
      "desde": "2025-06-06",
      "norma": "RESOL-2025-1297-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "División Atención al Beneficiario y Enlace con UGL",
-     "persona": "María Cecilia Mitono",
-     "desde": "2024-08-30",
-     "norma": "RESOL-2024-2489-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "División Gestión Electrónica de Normativa del Departamento Despacho, Unidad Secretaría Administrativa",
@@ -38426,12 +38619,6 @@
      "norma": "RESOL-2022-1532-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Jefe del Departamento Enlace Territorial de la Subgerencia de Seguimiento de Observaciones y Enlace Territorial de la Gerencia de Auditoria Prestacional",
-     "persona": "Gerardo Matías Morales",
-     "desde": "2022-03-11",
-     "norma": "RESOL-2022-264-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "L Dto Auditoria de Prestaciones Médicas y Salud Mental",
      "persona": "Alejandra Beatriz Sansostri",
      "desde": "2026-07-08",
@@ -38748,12 +38935,6 @@
      "norma": "RESOL-2026-753-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Jefa de la División Coordinación de Litigios Laborales, de la Gerencia de Asuntos Jurídicos",
-     "persona": "María Gabriela Carmona",
-     "desde": "2024-01-30",
-     "norma": "RESOL-2024-270-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Jefe de la División de Patrocinio Jurídico Gratuito, de la Gerencia de Asuntos Jurídicos",
      "persona": "Nazareno Emmanuel Gangemi",
      "desde": "2024-01-26",
@@ -38897,13 +39078,6 @@
      "accion": "alta",
      "persona": "Jorgelina Mariana Poncet",
      "cargo": "Departamento Coordinación y Control de Gestión, Gerencia de Asuntos Jurídicos"
-    },
-    {
-     "fecha": "2024-01-30",
-     "norma": "RESOL-2024-270-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "María Gabriela Carmona",
-     "cargo": "Jefa de la División Coordinación de Litigios Laborales, de la Gerencia de Asuntos Jurídicos"
     },
     {
      "fecha": "2024-01-26",
@@ -39268,10 +39442,10 @@
      "norma": "RESOL-2022-464-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "División Coordinación de Litigios Laborales, Departamento de Litigios Laborales, Subgerencia de Asuntos Jurídicos, Gerencia de Asuntos Jurídicos",
-     "persona": "Carla Constanza María del Rosario Bottino",
-     "desde": "2019-10-30",
-     "norma": "RESOL-2019-1749-INSSJP-DE#INSSJP"
+     "cargo": "Jefa de la División Coordinación de Litigios Laborales, de la Gerencia de Asuntos Jurídicos",
+     "persona": "María Gabriela Carmona",
+     "desde": "2024-01-30",
+     "norma": "RESOL-2024-270-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Jefe del Departamento de Litigios Laborales, Subgerencia de Asuntos Jurídicos, Gerencia de Asuntos Jurídicos",
@@ -39293,6 +39467,13 @@
      "accion": "alta",
      "persona": "Ángela Yanina Davila",
      "cargo": "Asesora Jurídica en el Departamento Penalidades de la Subgerencia de Asuntos Jurídicos"
+    },
+    {
+     "fecha": "2024-01-30",
+     "norma": "RESOL-2024-270-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Gabriela Carmona",
+     "cargo": "Jefa de la División Coordinación de Litigios Laborales, de la Gerencia de Asuntos Jurídicos"
     },
     {
      "fecha": "2022-05-02",
@@ -39379,12 +39560,6 @@
      "norma": "RESOL-2024-26-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Departamento de Seguimiento de Proyectos Institucionales, Subgerencia de Seguimiento y Control de Proyectos Institucionales, Gerencia de Proyectos Institucionales, Jefatura de Gabinete de Asesores",
-     "persona": "Sabrina Giselle Gomez",
-     "desde": "2019-06-07",
-     "norma": "RESOL-2019-1086-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "División Asistencia Informativa a Provincias",
      "persona": "Noelia Natalia Tobia",
      "desde": "2025-02-17",
@@ -39425,12 +39600,6 @@
      "persona": "Aranza María Pila",
      "desde": "2024-01-10",
      "norma": "RESOL-2024-25-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "División Soporte Estratégico, Gerencia de Planificación Estratégica, Jefatura de Gabinete de Asesores",
-     "persona": "Sofía Hansen",
-     "desde": "2019-05-15",
-     "norma": "RESOL-2019-906-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "División Técnica Operativa",
@@ -39834,12 +40003,6 @@
      "norma": "RESOL-2024-168-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Departamento de Gestión de la Demanda",
-     "persona": "Bianca Antonella de Lucia",
-     "desde": "2025-12-05",
-     "norma": "RESOL-2025-3019-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Departamento de Prensa, Gerencia de Comunicación y Relaciones Institucionales",
      "persona": "Nicolás Segovia",
      "desde": "2024-01-19",
@@ -39994,13 +40157,6 @@
      "accion": "baja",
      "persona": "Carla Betina Gesualdo",
      "cargo": "División Control de Gestión y Presupuesto"
-    },
-    {
-     "fecha": "2025-12-05",
-     "norma": "RESOL-2025-3019-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Bianca Antonella de Lucia",
-     "cargo": "Departamento de Gestión de la Demanda"
     },
     {
      "fecha": "2025-12-05",
@@ -40219,10 +40375,10 @@
      "norma": "RESOL-2021-1092-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Departamento de Gestión de la Demanda, Subgerencia de Pami Escucha y Responde",
-     "persona": "Ariel Néstor Ionno",
-     "desde": "2021-08-03",
-     "norma": "RESOL-2021-1095-INSSJP-DE#INSSJP"
+     "cargo": "Departamento de Gestión de la Demanda",
+     "persona": "Bianca Antonella de Lucia",
+     "desde": "2025-12-05",
+     "norma": "RESOL-2025-3019-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento de Servicios Adicionales de la Subgerencia de Pami Escucha y Responde, Gerencia de Escucha y Respuesta Activa a Personas Afiliadas",
@@ -40238,6 +40394,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2025-12-05",
+     "norma": "RESOL-2025-3019-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Bianca Antonella de Lucia",
+     "cargo": "Departamento de Gestión de la Demanda"
+    },
     {
      "fecha": "2025-11-20",
      "norma": "RESOL-2025-2873-INSSJP-DE#INSSJP",
@@ -41214,12 +41377,6 @@
      "persona": "Florencia Lara Biscardi",
      "desde": "2026-08-13",
      "norma": "RESOL-2026-2468-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "División Asesoría Jurídica de la Gerencia de Efectores Sanitarios Propios, Coordinación General de Prestaciones Médicas y Efectores Sanitarios Propios",
-     "persona": "Lorena Marina Gorosito",
-     "desde": "2022-05-27",
-     "norma": "RESOL-2022-616-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "División Clínica Médica PPI",
@@ -42835,12 +42992,6 @@
      "norma": "RESOL-2019-1064-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Departamento Atención Domiciliaria, Subgerencia de Administración de Prestaciones Médicas, Gerencia de Prestaciones Médicas",
-     "persona": "Mariana Nadal",
-     "desde": "2020-04-17",
-     "norma": "RESOL-2020-1276-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Departamento Gestión de Compra y Licitación de Insumos Médicos de la Subgerencia de Administración de Provisiones Médicas, Gerencia de Prestaciones Médicas",
      "persona": "Rosario Oulton",
      "desde": "2019-03-20",
@@ -42857,18 +43008,6 @@
      "persona": "Micaela Natalia Berna",
      "desde": "2026-01-12",
      "norma": "RESOL-2026-89-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Departamento de Antención Domiciliaria",
-     "persona": "Gabriela Fernanda Alfano",
-     "desde": "2026-08-11",
-     "norma": "RESOL-2026-2440-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Departamento de Análisis Estadístico y Control de Gestión, del Centro Operativo Derivador CODE, Gerencia de Prestaciones Médicas",
-     "persona": "Santiago Treyssac",
-     "desde": "2024-01-25",
-     "norma": "RESOL-2024-211-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento de Trasplantes, Subgerencia de Administración de Prestaciones Médicas, Gerencia de Prestaciones Médicas",
@@ -42961,12 +43100,6 @@
      "norma": "RESOL-2019-1067-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Subgerencia de Administración de Provisiones Medicas, Gerencia de Prestaciones Médicas",
-     "persona": "Victoria del Pilar Araoz",
-     "desde": "2019-08-29",
-     "norma": "RESOL-2019-1455-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Subgerencia de Administración de Provisiones Médicas, Gerencia de Prestaciones Médicas, Secretaría de Políticas Sanitarias",
      "persona": "Diego Ignacio Navarro",
      "desde": "2024-01-15",
@@ -42980,20 +43113,6 @@
     }
    ],
    "historial": [
-    {
-     "fecha": "2026-08-11",
-     "norma": "RESOL-2026-2437-INSSJP-DE#INSSJP",
-     "accion": "baja",
-     "persona": "María Alejandra Carrizo",
-     "cargo": "Departamento de Atención Domiciliaria"
-    },
-    {
-     "fecha": "2026-08-11",
-     "norma": "RESOL-2026-2440-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Gabriela Fernanda Alfano",
-     "cargo": "Departamento de Antención Domiciliaria"
-    },
     {
      "fecha": "2026-04-14",
      "norma": "RESOL-2026-1127-INSSJP-DE#INSSJP",
@@ -43468,19 +43587,46 @@
   "GPM-PM": {
    "autoridades": [
     {
-     "cargo": "Departamento de Atención Domiciliaria, Subgerencia de Prestaciones Médicas",
-     "persona": "María Alejandra Carrizo",
-     "desde": "2025-03-25",
-     "norma": "RESOL-2025-585-INSSJP-DE#INSSJP"
+     "cargo": "Coordinadora (tareas) del Departamento de Atención Domiciliaria",
+     "persona": "Mónica Graciela Oliva",
+     "desde": "2024-02-01",
+     "norma": "RESOL-2024-284-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Departamento de Atención Domiciliaria",
+     "persona": "Gabriela Fernanda Alfano",
+     "desde": "2026-08-11",
+     "norma": "RESOL-2026-2440-INSSJP-DE#INSSJP"
     }
    ],
    "historial": [
+    {
+     "fecha": "2026-08-11",
+     "norma": "RESOL-2026-2437-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "María Alejandra Carrizo",
+     "cargo": "Departamento de Atención Domiciliaria"
+    },
+    {
+     "fecha": "2026-08-11",
+     "norma": "RESOL-2026-2440-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Gabriela Fernanda Alfano",
+     "cargo": "Departamento de Atención Domiciliaria"
+    },
     {
      "fecha": "2025-03-25",
      "norma": "RESOL-2025-585-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "María Alejandra Carrizo",
      "cargo": "Departamento de Atención Domiciliaria, Subgerencia de Prestaciones Médicas"
+    },
+    {
+     "fecha": "2024-02-01",
+     "norma": "RESOL-2024-284-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mónica Graciela Oliva",
+     "cargo": "Coordinadora (tareas) del Departamento de Atención Domiciliaria"
     }
    ]
   },
@@ -43754,12 +43900,6 @@
      "persona": "Facundo Rodrigo Pontoni",
      "desde": "2017-09-20",
      "norma": "RESOL-2017-926-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Jefe del Departamento de Recursos Humanos de la Dirección de Atención Médica No Programada y Programada, Gerencia Operativa y Coordinación",
-     "persona": "Mario Alberto Fare",
-     "desde": "2016-08-16",
-     "norma": "RESOL-2016-1520-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Jefe del Sector Ambulancia VI, División Ambulancia, Departamento Logística, de la Unidad Logística Operativa, Dirección de Atención Médica No Programada y Programada, Gerencia Operativa y Coordinación",
@@ -44540,18 +44680,6 @@
      "norma": "RESOL-2026-494-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Coordinación de UGL F, de la Subgerencia Operativa de UGL Zona 2",
-     "persona": "Jimena Jouliana Almiron",
-     "desde": "2025-09-03",
-     "norma": "RESOL-2025-2048-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Coordinación de UGL K",
-     "persona": "Anabel Acosta Ramos",
-     "desde": "2026-06-03",
-     "norma": "RESOL-2026-1687-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Departamento de Asesoramiento y Soporte Continuo",
      "persona": "María Celeste Mandich",
      "desde": "2025-12-16",
@@ -44610,20 +44738,6 @@
      "cargo": "Div. de Relación con las Org. JyP"
     },
     {
-     "fecha": "2026-06-03",
-     "norma": "RESOL-2026-1679-INSSJP-DE#INSSJP",
-     "accion": "baja",
-     "persona": "Víctor Manuel Cuevas",
-     "cargo": "Coordinación de UGL K"
-    },
-    {
-     "fecha": "2026-06-03",
-     "norma": "RESOL-2026-1687-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Anabel Acosta Ramos",
-     "cargo": "Coordinación de UGL K"
-    },
-    {
      "fecha": "2026-05-21",
      "norma": "RESOL-2026-1568-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -44678,13 +44792,6 @@
      "accion": "alta",
      "persona": "Liliana Carol Acosta",
      "cargo": "Sector Apoyo y Gestión a UGL"
-    },
-    {
-     "fecha": "2025-09-03",
-     "norma": "RESOL-2025-2048-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Jimena Jouliana Almiron",
-     "cargo": "Coordinación de UGL F, de la Subgerencia Operativa de UGL Zona 2"
     }
    ]
   },
@@ -44695,12 +44802,6 @@
      "persona": "Sergio Gabriel Castedo Gonzalez",
      "desde": "2016-08-23",
      "norma": "RESOL-2016-1555-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Departamento Operativo y de Administración, Subgerencia de Administración y Coordinación de UGL, Gerencia de Planificación y Administración de UGL",
-     "persona": "María Isabel Rivas Morgade",
-     "desde": "2017-09-21",
-     "norma": "RESOL-2017-931-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento de Gestión de Vehículos, Subgerencia de Administración y Coordinación de UGL",
@@ -44957,10 +45058,10 @@
   "UGTO-Z2": {
    "autoridades": [
     {
-     "cargo": "Coordinación de UGL F, Subgerencia Operativa de UGL Zona 2",
-     "persona": "Julián Córdoba Pivotto",
-     "desde": "2024-04-08",
-     "norma": "RESOL-2024-980-INSSJP-DE#INSSJP"
+     "cargo": "Coordinación de UGL F, de la Subgerencia Operativa de UGL Zona 2",
+     "persona": "Jimena Jouliana Almiron",
+     "desde": "2025-09-03",
+     "norma": "RESOL-2025-2048-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Coordinación de UGL G, Subgerencia Operativa de UGL Zona 2",
@@ -44975,10 +45076,10 @@
      "norma": "RESOL-2024-929-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Coordinación de UGL K, Subgerencia Operativa de UGL Zona 2, Secretaría General Técnico Operativa",
-     "persona": "Víctor Miguel Cuevas",
-     "desde": "2024-03-01",
-     "norma": "RESOL-2024-588-INSSJP-DE#INSSJP"
+     "cargo": "Coordinación de UGL K",
+     "persona": "Anabel Acosta Ramos",
+     "desde": "2026-06-03",
+     "norma": "RESOL-2026-1687-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Coordinación de UGL Zona G, perteneciente a la Subgerencia Operativa de UGL Zona 2, Gerencia Operativa y Coordinación de UGL",
@@ -44994,6 +45095,27 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2026-06-03",
+     "norma": "RESOL-2026-1679-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Víctor Manuel Cuevas",
+     "cargo": "Coordinación de UGL K"
+    },
+    {
+     "fecha": "2026-06-03",
+     "norma": "RESOL-2026-1687-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Anabel Acosta Ramos",
+     "cargo": "Coordinación de UGL K"
+    },
+    {
+     "fecha": "2025-09-03",
+     "norma": "RESOL-2025-2048-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Jimena Jouliana Almiron",
+     "cargo": "Coordinación de UGL F, de la Subgerencia Operativa de UGL Zona 2"
+    },
     {
      "fecha": "2024-04-08",
      "norma": "RESOL-2024-980-INSSJP-DE#INSSJP",
@@ -45287,12 +45409,6 @@
      "norma": "RESOL-2025-2863-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Jefa del Sector Casa de la Cultura, Departamento de Cultura, de la Subgerencia de Turismo y Cultura, Gerencia de Promoción Social y Comunitaria",
-     "persona": "María Victoria Pardo",
-     "desde": "2019-11-01",
-     "norma": "RESOL-2019-1781-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Jefe del Departamento Atención en Domicilio, de la Subgerencia de Atención a la Dependencia, de la Gerencia de Promoción Social y Comunitaria",
      "persona": "Gustavo Antonio Soruco",
      "desde": "2016-08-24",
@@ -45407,13 +45523,6 @@
      "accion": "baja",
      "persona": "Sandra María Teresa Rosales",
      "cargo": "Departamento Unidad Administrativa"
-    },
-    {
-     "fecha": "2026-01-22",
-     "norma": "RESOL-2026-242-INSSJP-DE#INSSJP",
-     "accion": "baja",
-     "persona": "Mónica Gladys Ibarra",
-     "cargo": "Departamento de Prevención Sociocomunitaria"
     },
     {
      "fecha": "2026-01-22",
@@ -45748,12 +45857,6 @@
      "norma": "RESOL-2020-1945-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Departamento de Prevención Sociocomunitaria, Subgerencia de Prevención y Participación Comunitaria, Gerencia de Promoción Social y Comunitaria",
-     "persona": "Mónica Gladys Ibarra",
-     "desde": "2019-02-21",
-     "norma": "RESOL-2019-335-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "División Despacho, Subgerencia de Prevención y Participación Comunitaria, Gerencia de Promoción Social y Comunitaria",
      "persona": "Andrea Mariel Ciliberti",
      "desde": "2019-05-20",
@@ -45773,6 +45876,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2026-01-22",
+     "norma": "RESOL-2026-242-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Mónica Gladys Ibarra",
+     "cargo": "Departamento de Prevención Sociocomunitaria"
+    },
     {
      "fecha": "2025-05-23",
      "norma": "RESOL-2025-1095-INSSJP-DE#INSSJP",
@@ -47827,12 +47937,6 @@
      "norma": "RESOL-2016-2195-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Departamento Administración de Legajos",
-     "persona": "Vanina Florencia del Valle Albornoz",
-     "desde": "2026-09-02",
-     "norma": "RESOL-2026-2743-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Departamento de Sumarios de la Gerencia de Recursos Humanos",
      "persona": "María Fernanda Sanchez",
      "desde": "2024-01-15",
@@ -47876,13 +47980,6 @@
     }
    ],
    "historial": [
-    {
-     "fecha": "2026-09-02",
-     "norma": "RESOL-2026-2743-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Vanina Florencia del Valle Albornoz",
-     "cargo": "Departamento Administración de Legajos"
-    },
     {
      "fecha": "2026-07-27",
      "norma": "RESOL-2026-2241-INSSJP-DE#INSSJP",
@@ -48048,12 +48145,6 @@
      "norma": "RESOL-2023-411-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Departamento Relaciones Laborales de la Subgerencia de Asesoramiento Jurídico y Relaciones Laborales, Gerencia de Recursos Humanos",
-     "persona": "Carolina María Olivera",
-     "desde": "2020-01-06",
-     "norma": "RESOL-2020-22-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Departamento Relaciones Laborales de la Subgerencia de Asesoramiento Jurídico y Relaciones Laborales, Secretaría General de Administración",
      "persona": "Silvina Guevara Griffouliére",
      "desde": "2024-01-15",
@@ -48115,10 +48206,10 @@
   "GRRHH-ARH": {
    "autoridades": [
     {
-     "cargo": "Departamento Administración de Legajos de la Subgerencia de Administración de Recursos Humanos",
-     "persona": "Adriana Nora Romano",
-     "desde": "2024-01-11",
-     "norma": "RESOL-2024-51-INSSJP-DE#INSSJP"
+     "cargo": "Departamento Administración de Legajos",
+     "persona": "Vanina Florencia del Valle Albornoz",
+     "desde": "2026-09-02",
+     "norma": "RESOL-2026-2743-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "División Relevamientos y Auditorías del Departamento Seguridad e Higiene, Subgerencia de Administración de Recursos Humanos de la Gerencia de Recursos Humanos",
@@ -48128,6 +48219,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2026-09-02",
+     "norma": "RESOL-2026-2743-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Vanina Florencia del Valle Albornoz",
+     "cargo": "Departamento Administración de Legajos"
+    },
     {
      "fecha": "2026-07-24",
      "norma": "RESOL-2026-2224-INSSJP-DE#INSSJP",
@@ -48660,12 +48758,6 @@
     "norma": "RESOL-2020-1885-INSSJP-DE#INSSJP"
    },
    {
-    "cargo": "Departamento Unidad Administrativa",
-    "persona": "Sandra María Teresa Rosales",
-    "desde": "2024-05-13",
-    "norma": "RESOL-2024-1350-INSSJP-DE#INSSJP"
-   },
-   {
     "cargo": "Departamento de Acción Social, Subgerencia de Inclusión Social, Gerencia de Participación e Inclusión Social",
     "persona": "Florencia Sanchez Panique",
     "desde": "2022-07-12",
@@ -48714,22 +48806,10 @@
     "norma": "RESOL-2019-1297-INSSJP-DE#INSSJP"
    },
    {
-    "cargo": "Departamento de Asesoramiento y Soporte Continuo",
-    "persona": "Debora Gisele Barrera",
-    "desde": "2022-05-16",
-    "norma": "RESOL-2022-575-INSSJP-DE#INSSJP"
-   },
-   {
     "cargo": "Departamento de Atención a la Comunidad",
     "persona": "Emiliano Pratt",
     "desde": "2025-02-12",
     "norma": "RESOL-2025-217-INSSJP-DE#INSSJP"
-   },
-   {
-    "cargo": "Departamento de Atención a la Comunidad, de la Subgerencia de Cuidados a la Comunidad, Gerencia de Políticas de Cuidado",
-    "persona": "Emiliano Pratt",
-    "desde": "2024-02-14",
-    "norma": "RESOL-2024-406-INSSJP-DE#INSSJP"
    },
    {
     "cargo": "Departamento de Auditoria de Tecnología Informática",
@@ -49066,18 +49146,6 @@
     "persona": "Héctor Ureta",
     "desde": "2019-10-15",
     "norma": "RESOL-2019-1677-INSSJP-DE#INSSJP"
-   },
-   {
-    "cargo": "División Enlace Externo",
-    "persona": "Claudio Marcelo Tundis",
-    "desde": "2023-04-20",
-    "norma": "RESOL-2023-525-INSSJP-DE#INSSJP"
-   },
-   {
-    "cargo": "División Enlace Operativo",
-    "persona": "Miguel Ángel Blasi",
-    "desde": "2024-05-13",
-    "norma": "RESOL-2024-1351-INSSJP-DE#INSSJP"
    },
    {
     "cargo": "División Enlace con Defensorías",
@@ -50208,12 +50276,6 @@
     "norma": "RESOL-2020-286-INSSJP-DE#INSSJP"
    },
    {
-    "cargo": "Subgerencia de Participación Social, Gerencia de Participación e Inclusión Social",
-    "persona": "Tatiana Estefanía Dure",
-    "desde": "2023-05-11",
-    "norma": "RESOL-2023-627-INSSJP-DE#INSSJP"
-   },
-   {
     "cargo": "Subgerencia de Relaciones Institucionales, de la Gerencia de Asuntos Público - Gubernamentales",
     "persona": "Guido Baistrocchi",
     "desde": "2016-06-16",
@@ -50230,12 +50292,6 @@
     "persona": "Pablo Andrés Ghibaudi",
     "desde": "2024-01-10",
     "norma": "RESOL-2024-24-INSSJP-DE#INSSJP"
-   },
-   {
-    "cargo": "Subgerencia de Soluciones de Salud",
-    "persona": "Damián Yamil Gonzalez Gonzalez",
-    "desde": "2024-05-14",
-    "norma": "RESOL-2024-1369-INSSJP-DE#INSSJP"
    },
    {
     "cargo": "Subgerencia de Tecnología, de la Gerencia de Infraestructura Tecnológica, de la Secretaría General de Administración",

@@ -1813,6 +1813,21 @@
    "boletin": "21-01-26.pdf",
    "norma": "RESOL-2026-207-INSSJP-DE#INSSJP",
    "detalle": "Designar, a la señora Carolina Daniela NOVARESE, para desempeñar funciones de Médica en el Departamento Médico, de la Unidad de Gestión Local IX - Rosario, dependiente de la"
+  },
+  {
+   "fecha": "2024-02-01",
+   "boletin": "01-02-24.pdf",
+   "norma": "RESOL-2024-284-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Designó a la doctora Mónica Graciela OLIVA para desempeñar tareas como Coordinadora en el Departamento de Atención Domiciliaria, Subgerencia de Administración de Prestaciones Médicas, Gerencia de Prestaciones Médicas.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mónica Graciela Oliva",
+    "cargo": "Coordinadora (tareas) del Departamento de Atención Domiciliaria",
+    "unidad": "GPM-PM",
+    "ugl": null,
+    "dependencia": null
+   }
   }
  ]
 }

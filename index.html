@@ -678,20 +678,47 @@ function claveLugar(s) {
         .replace(/^(AGENCIA|BOCA DE ATENCION|BOCA COMPLEMENTARIA|BOCA|C\.?\s?A\.?\s?P\.?|CENTRO DE ATENCION PERSONALIZADA)\s*/, '')
         .replace(/\bPAMI\b/g, '');
     for (const [re, rep] of ABREVIATURAS) k = k.replace(re, rep);
-    return k.replace(/Z/g, 'S').replace(/[^A-Z0-9]/g, '');   // Gonzalez/Gonzales, Chavez/Chaves
+    k = k.replace(/Z/g, 'S').replace(/[^A-Z0-9]/g, '');   // Gonzalez/Gonzales, Chavez/Chaves
+    return EQUIVALENTES[k] || k;
 }
+// Lugares con nombres muy distintos entre el boletín y el listado oficial
+const EQUIVALENTES = { ELCRUCEDEFLORENCIOVARELA: 'ELCRUCEDEVARELA', ELCRUCEDEFLORENCIAVARELA: 'ELCRUCEDEVARELA', CRUCEDEFLORENCIOVARELA: 'ELCRUCEDEVARELA',
+                       VILLAMARIADELRIO: 'VILLADEMARIADERIO', MANUELJ: 'MANUELJCOBO' };
+
+// Parecido entre dos claves (1 = iguales), para variantes de escritura: 'Daireux'/'Daireaux', 'Tilsarao'/'Tilisarao'
+function parecido(a, b) {
+    if (a === b) return 1;
+    const m = a.length, n = b.length; if (!m || !n) return 0;
+    let prev = Array.from({ length: n + 1 }, (_, j) => j);
+    for (let i = 1; i <= m; i++) {
+        const cur = [i];
+        for (let j = 1; j <= n; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        prev = cur;
+    }
+    return 1 - prev[n] / Math.max(m, n);
+}
+// Lugares que se escriben parecido pero son distintos
+const LUGARES_DISTINTOS = new Set(['VILLAELISA|VILLAELVIRA', 'PAMPADELINFIERNO|PAMPADELINDIO', 'LABANDA|LACANADA', 'VILLAMARIA|VILLAMARIADELRIO',
+    'ELCRUCEDEFLORENCIOVARELA|FLORENCIOVARELA', 'ELCRUCEDEFLORENCIAVARELA|FLORENCIOVARELA', 'BARILOCHE|ELALTOBARILOCHE', 'NEUQUEN|NEUQUENOESTE']);
+const distintos = (a, b) => LUGARES_DISTINTOS.has([a, b].sort().join('|'));
 
 function buscarEnDirectorio(lista, hijo) {
     const k = claveLugar(hijo.nombre);
     if (!k) return null;
     const candidatos = lista.filter(e => e.tipo !== 'ugl');
     const ordenar = arr => arr.sort((a, b) => (b.tipo === 'agencia') - (a.tipo === 'agencia'))[0] || null;
-    // 1) nombre exacto  2) localidad exacta  3) uno contiene al otro (mín. 5 letras)
+    // 1) nombre exacto  2) localidad exacta  3) variante de escritura  4) uno contiene al otro
     return ordenar(candidatos.filter(e => claveLugar(e.nombre) === k))
         || ordenar(candidatos.filter(e => claveLugar(e.localidad) === k))
+        // 3) variantes de escritura (una o dos letras distintas)
         || (k.length >= 5 ? ordenar(candidatos.filter(e => {
                 const n = claveLugar(e.nombre);
-                return n.length >= 5 && (n.includes(k) || k.includes(n));
+                return !distintos(n, k) && parecido(n, k) >= 0.8;
+            })) : null)
+        // 4) uno contiene al otro (mín. 5 letras)
+        || (k.length >= 5 ? ordenar(candidatos.filter(e => {
+                const n = claveLugar(e.nombre);
+                return n.length >= 5 && !distintos(n, k) && (n.includes(k) || k.includes(n));
             })) : null);
 }
 
@@ -748,8 +775,9 @@ function construirModeloV2(datos) {
             h.tipoOriginal = ag.tipo_original;
             if (ag.creada) h.creada = ag.creada;
             for (const a of ag.autoridades || []) h.autoridades.set(clave(a.cargo), autoridadDesdeBoletin(a));
-            const kl = claveLugar(nombre);
-            h.historial = u.historial.filter(e => e.agencia && claveLugar(e.agencia) === kl);
+            h.alias = ag.alias || [];
+            const kls = new Set([nombre, ...h.alias].map(claveLugar));
+            h.historial = u.historial.filter(e => e.agencia && kls.has(claveLugar(e.agencia)));
             u.hijos.set(h.clave, h);
         }
     }
@@ -1029,12 +1057,28 @@ function layoutOrg() {
     // peso = hojas + 1.5: las unidades chicas también reciben espacio para su etiqueta
     const hojas = o => (o.hijos.length ? o.hijos.reduce((t, h) => t + hojas(h), 0) : 1) + (o.padre && o.padre.id === 'CENTRAL' ? 3 : 0);
     const ubicar = (o, a0, a1, prof) => {
+        // Desde el tercer nivel, las dependencias se apilan en una columna al costado de su unidad:
+        // en el abanico radial no hay lugar y los nombres (que son largos) quedaban encimados.
+        if (prof >= 3 && pos[o.id] && o.hijos.length) {
+            const base = pos[o.id], ref = (o.padre && pos[o.padre.id]) || { x: 0 }, dir = base.x >= ref.x ? 1 : -1, SEP_Y = 44, DX = 270;
+            const n = o.hijos.length;
+            // la columna se corre hacia el centro si se mete en el anillo de las UGL
+            let dy = 0;
+            const lejos = d => Math.max(...o.hijos.map((_, i) => Math.hypot(base.x + dir * DX, base.y + (i - (n - 1) / 2) * SEP_Y + d)));
+            for (let k = 0; k < 30 && lejos(dy) > R_UGL - 90; k++) dy += base.y > 0 ? -20 : 20;
+            o.hijos.forEach((h, i) => {
+                pos[h.id] = { x: base.x + dir * DX, y: base.y + (i - (n - 1) / 2) * SEP_Y + dy };
+                ubicar(h, 0, 0, prof + 1);
+            });
+            return;
+        }
         const total = o.hijos.reduce((t, h) => t + hojas(h), 0);
         let a = a0;
-        for (const h of o.hijos) {
+        for (const [i, h] of o.hijos.entries()) {
             const cuña = (a1 - a0) * hojas(h) / total;
             const ang = a + cuña / 2;
-            const r = RADIOS_ORG[Math.min(prof, RADIOS_ORG.length - 1)];
+            // en el segundo nivel se alternan dos radios para que las etiquetas vecinas no se pisen
+            const r = RADIOS_ORG[Math.min(prof, RADIOS_ORG.length - 1)] + (prof === 2 && o.hijos.length > 2 ? (i % 2) * 70 : 0);
             pos[h.id] = { x: Math.cos(ang) * r, y: Math.sin(ang) * r };
             ubicar(h, a + cuña * 0.04, a + cuña * 0.96, prof + 1);
             a += cuña;
@@ -1078,6 +1122,14 @@ const CLAVE_POS = 'graffo_posiciones_v3';
 const COLAPSADAS = new Set();
 let POS_GUARDADAS = {};
 try { POS_GUARDADAS = JSON.parse(localStorage.getItem(CLAVE_POS)) || {}; } catch (e) { POS_GUARDADAS = {}; }
+// El organigrama cambió de disposición: se descartan las posiciones viejas de sus nodos (una sola vez)
+try {
+    if (!localStorage.getItem('graffo_org_layout_v4')) {
+        for (const k of Object.keys(POS_GUARDADAS)) if (k.startsWith('ORG-')) delete POS_GUARDADAS[k];
+        localStorage.setItem(CLAVE_POS, JSON.stringify(POS_GUARDADAS));
+        localStorage.setItem('graffo_org_layout_v4', '1');
+    }
+} catch (e) {}
 function guardarPosiciones() {
     try { localStorage.setItem(CLAVE_POS, JSON.stringify(red.getPositions(nodosDS.getIds()))); } catch (e) {}
 }
@@ -1456,14 +1508,19 @@ function extraDe(num, dep) {
     const e = EXTRA_RAW?.ugls?.[num];
     if (!e) return { estructura: [], inmuebles: [], personal: [] };
     if (!dep) return e;
-    const k = claveLugar(dep.nombre);
-    const coincide = x => x.dep && (claveLugar(x.dep) === k || (k.length > 4 && claveLugar(x.dep).startsWith(k)));
+    const ks = [dep.nombre, ...(dep.alias || []), dep.nombreOficial || ''].map(claveLugar).filter(Boolean);
+    const coincide = x => {
+        if (!x.dep) return false;
+        const kx = claveLugar(x.dep);
+        return ks.some(k => kx === k || (k.length > 4 && kx.startsWith(k)) || (k.length >= 5 && !distintos(k, kx) && parecido(k, kx) >= 0.86));
+    };
     return { estructura: e.estructura.filter(coincide), inmuebles: e.inmuebles.filter(coincide), personal: e.personal.filter(coincide) };
 }
 function itemExtra(x, ugl, conDep) {
     let depLink = '';
     if (conDep && x.dep && ugl) {
-        const h = [...ugl.hijos.values()].find(h => claveLugar(h.nombre) === claveLugar(x.dep));
+        const kx = claveLugar(x.dep);
+        const h = [...ugl.hijos.values()].find(h => claveLugar(h.nombre) === kx) || [...ugl.hijos.values()].find(h => !distintos(claveLugar(h.nombre), kx) && parecido(claveLugar(h.nombre), kx) >= 0.86);
         depLink = h ? `<a onclick="seleccionar('${esc(h.id)}')">${esc(h.nombre)}</a>` : `<span>${esc(x.tipo_dep || '')} ${esc(x.dep)}</span>`;
     }
     const titulo = x.persona ? `<b>${esc(x.persona)}</b>` : x.direccion ? `<b>${esc(x.direccion)}</b>` : '';
@@ -1542,6 +1599,11 @@ function mostrarUGL(u) {
         ${htmlHistorial(u.historial, true)}`;
 }
 
+// Aclaraciones sobre unidades puntuales (lo que se sabe aunque no haya designación publicada)
+const NOTAS_ORG = {
+    'GPM-ID': `La designación de su titular no aparece en ningún boletín de 2016 a 2026 ni en el buscador de PAMI, aunque una resolución de abril de 2025 menciona a "la titular de la Subgerencia". Desde 2024 se publican contrataciones de personal para esta Subgerencia y en agosto de 2026 pidió reestructurar el <a onclick="seleccionar('ORG-GPM-PM')">Departamento de Atención Domiciliaria</a>, hoy a cargo de Gabriela Fernanda Alfano.`
+};
+
 function mostrarOrg(o) {
     const ruta = [];
     if (!o.independiente) for (let p = o.padre; p; p = p.padre) ruta.unshift(`<a onclick="seleccionar('${p.id}')">${esc(p.nombre)}</a>`);
@@ -1567,6 +1629,7 @@ function mostrarOrg(o) {
         ${o.hijos.length ? `<p class="cargo-meta" style="margin:-8px 0 14px">${EXPANDIDOS.has(o.id) ? 'Doble clic en el nodo para plegar sus dependencias.' : 'Tocá el nodo para desplegar sus dependencias.'}</p>` : ''}
         ${ruta.length ? `<div class="ruta-org">${ruta.join(' &rsaquo; ')}</div>` : ''}
         ${o.direccion || o.telefono ? htmlContacto(o) : ''}
+        ${NOTAS_ORG[o.orgId] ? `<div class="tarjeta-cargo org" style="border-left-color:#fbbf24"><div class="cargo-titulo">Nota</div><div class="cargo-meta" style="font-size:.8rem;line-height:1.45">${NOTAS_ORG[o.orgId]}</div></div>` : ''}
         <div class="seccion-titulo">Titular</div>
         ${tit.size ? htmlAutoridades(tit, 'org') : '<div class="mensaje-vacio" style="margin-top:8px">Sin designación de titular en los boletines analizados. Podés cargarla con Editar.</div>'}
         ${areas.size ? `<div class="seccion-titulo">Áreas internas con designaciones (${areas.size})</div>${htmlAutoridades(areas, 'org')}` : ''}
@@ -2052,17 +2115,17 @@ const FX = (() => {
             cands.push(e);
         }
         const ambiente = pulsos.reduce((t, p) => t + (p.onda ? 0 : 1), 0);
-        const objetivo = Math.min(34, Math.ceil(cands.length * 0.2));
+        const objetivo = Math.min(10, Math.ceil(cands.length * 0.05));
         if (ambiente < objetivo && cands.length) {
             const e = cands[(Math.random() * cands.length) | 0];
-            pulsos.push({ from: e.from, to: e.to, t0: ahora, dur: 1500 + Math.random() * 1400, col: colorDe(e.to), ancho: 1.8, fuerza: 0.7 });
+            pulsos.push({ from: e.from, to: e.to, t0: ahora, dur: 5200 + Math.random() * 3000, col: colorDe(e.to), ancho: 1.1, fuerza: 0.32 });
         }
     }
 
     // Cadena de pulsos por un camino (lista de ids), uno detrás del otro
-    function cadena(ids, t0, col, paso = 230, ancho = 3) {
+    function cadena(ids, t0, col, paso = 520, ancho = 1.8) {
         for (let i = 0; i < ids.length - 1; i++)
-            pulsos.push({ from: ids[i], to: ids[i + 1], t0: t0 + i * paso, dur: paso * 1.9, col: col || colorDe(ids[i + 1]), ancho, fuerza: 1, onda: true });
+            pulsos.push({ from: ids[i], to: ids[i + 1], t0: t0 + i * paso, dur: paso * 1.8, col: col || colorDe(ids[i + 1]), ancho, fuerza: 0.6, onda: true });
         return t0 + (ids.length - 1) * paso;
     }
 
@@ -2070,12 +2133,12 @@ const FX = (() => {
         if (!red || !id) return;
         const ahora = performance.now();
         const fin = cadena(caminoDesdeCentral(id), ahora, col);
-        anillos.push({ id, t0: fin, dur: 950, col: col || colorDe(id) });
+        anillos.push({ id, t0: fin, dur: 1400, col: col || colorDe(id) });
         // se reparte a lo que el nodo tiene adentro (espera a que termine de desplegarse)
         setTimeout(() => {
             const t = performance.now();
-            hijosVisibles(id).slice(0, 80).forEach(h => pulsos.push({ from: id, to: h, t0: t + Math.random() * 220, dur: 650 + Math.random() * 250,
-                col: colorDe(h), ancho: 2.4, fuerza: 1, onda: true }));
+            hijosVisibles(id).slice(0, 80).forEach(h => pulsos.push({ from: id, to: h, t0: t + Math.random() * 400, dur: 1500 + Math.random() * 500,
+                col: colorDe(h), ancho: 1.4, fuerza: 0.5, onda: true }));
         }, Math.max(0, fin - ahora) + 120);
         despertar();
     }
@@ -2091,9 +2154,9 @@ const FX = (() => {
             const a = nodo(p.from), b = nodo(p.to);
             if (k >= 1 || !a || !b) { pulsos.splice(i, 1); continue; }
             if (k < 0) continue;
-            const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+            const e = 0.5 - Math.cos(Math.PI * k) / 2;
             const x = a.x + (b.x - a.x) * e, y = a.y + (b.y - a.y) * e;
-            const e0 = Math.max(0, e - 0.16), tx = a.x + (b.x - a.x) * e0, ty = a.y + (b.y - a.y) * e0;
+            const e0 = Math.max(0, e - 0.08), tx = a.x + (b.x - a.x) * e0, ty = a.y + (b.y - a.y) * e0;
             const al = Math.sin(Math.PI * k) * p.fuerza;
             const [r, g, bl] = p.col;
             const gr = ctx.createLinearGradient(tx, ty, x, y);
@@ -2101,9 +2164,9 @@ const FX = (() => {
             gr.addColorStop(1, `rgba(${r},${g},${bl},${al * 0.85})`);
             ctx.strokeStyle = gr; ctx.lineWidth = p.ancho / s; ctx.lineCap = 'round';
             ctx.beginPath(); ctx.moveTo(tx, ty); ctx.lineTo(x, y); ctx.stroke();
-            const rad = (p.ancho * 2.6) / s;
+            const rad = (p.ancho * 1.8) / s;
             const rg = ctx.createRadialGradient(x, y, 0, x, y, rad);
-            rg.addColorStop(0, `rgba(255,255,255,${al})`);
+            rg.addColorStop(0, `rgba(${Math.min(255, r + 60)},${Math.min(255, g + 60)},${Math.min(255, bl + 60)},${al * 0.9})`);
             rg.addColorStop(0.35, `rgba(${r},${g},${bl},${al * 0.75})`);
             rg.addColorStop(1, `rgba(${r},${g},${bl},0)`);
             ctx.fillStyle = rg; ctx.beginPath(); ctx.arc(x, y, rad, 0, Math.PI * 2); ctx.fill();
@@ -2116,9 +2179,9 @@ const FX = (() => {
             if (k < 0) continue;
             const e = 1 - Math.pow(1 - k, 3), [r, g, b] = an.col;
             const base = (n.options.size || 10) + 2 / s;
-            ctx.strokeStyle = `rgba(${r},${g},${b},${(1 - k) * 0.9})`;
+            ctx.strokeStyle = `rgba(${r},${g},${b},${(1 - k) * 0.5})`;
             ctx.lineWidth = (2.2 * (1 - k) + 0.4) / s;
-            ctx.beginPath(); ctx.arc(n.x, n.y, base + e * 34 / s, 0, Math.PI * 2); ctx.stroke();
+            ctx.beginPath(); ctx.arc(n.x, n.y, base + e * 18 / s, 0, Math.PI * 2); ctx.stroke();
         }
     }
     function pintarCamino(ctx, s) {

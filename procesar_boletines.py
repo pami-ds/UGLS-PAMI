@@ -468,7 +468,7 @@ def interpretar(txt):
     """Devuelve lista de eventos (sin fecha) a partir del resumen de una norma."""
     t = re.sub(r"\s+", " ", txt).strip()
     t = re.sub(r"([a-záéíóúñ])-\s+([a-záéíóúñ])", r"\1\2", t)      # 'Teso- rería' -> 'Tesorería'
-    t = t.replace("titulardel", "titular del")
+    t = t.replace("titulardel", "titular del").replace("Antención", "Atención")
     t = re.sub(r"\bUGLocal\b", "UGL", t)
     # títulos profesionales -> señor/señora ('al doctor X', 'al CPN. X', 'a la licenciada X')
     t = re.sub(r"\b(al|del)\s+(?:doctor|Dr\.|licenciado|Lic\.|contador|Cdor\.|C\.?P\.?N\.?|ingeniero|Ing\.|arquitecto|Arq\.|abogado|"
@@ -559,6 +559,21 @@ NOMBRES_GENERICOS = {"SANTA ROSA", "SUR", "NORTE", "CENTRO", "OESTE", "ESTE", "S
                      "SAN JUAN", "SAN PEDRO", "SAN ANTONIO", "SAN LORENZO", "LA PAZ", "VILLA NUEVA", "CONCEPCION"}
 
 
+# Pares de lugares que se escriben parecido pero son distintos, y pares iguales que el parecido no detecta
+LUGARES_DISTINTOS = {frozenset(("VILLAELISA", "VILLAELVIRA")), frozenset(("PAMPADELINFIERNO", "PAMPADELINDIO")),
+                     frozenset(("LABANDA", "LACANADA")), frozenset(("VILLAMARIA", "VILLAMARIADELRIO")),
+                     frozenset(("FLORENCIOVARELA", "ELCRUCEDEFLORENCIOVARELA")), frozenset(("FLORENCIAVARELA", "ELCRUCEDEFLORENCIOVARELA")),
+                     frozenset(("FLORENCIOVARELA", "ELCRUCEDEFLORENCIAVARELA")), frozenset(("FLORENCIOVARELA", "CRUCEDEFLORENCIOVARELA")),
+                     frozenset(("BARILOCHE", "ELALTOBARILOCHE")), frozenset(("NEUQUEN", "NEUQUENOESTE"))}
+LUGARES_IGUALES = {frozenset(("MANUELJ", "MANUELJCOBO"))}
+# Nombres corregidos a mano cuando el boletín usa una grafía equivocada (UGL, clave) -> nombre
+NOMBRE_CORRECTO = {("III", "LACALDERA"): "La Calera", ("XXX", "DAIREUX"): "Daireaux", ("XXVI", "TILSARAO"): "Tilisarao",
+                   ("XVI", "VILLALANGOSTURA"): "Villa La Angostura", ("XXXVI", "VICUNAMAKENA"): "Vicuña Mackenna",
+                   ("XXXVI", "VICUNAMACKENA"): "Vicuña Mackenna", ("XXIV", "BANADADEOVANTA"): "Bañado de Ovanta",
+                   ("VII", "CORONELBRANSEN"): "Coronel Brandsen", ("XIII", "MACHAGAI"): "Machagai",
+                   ("III", "VILLALIBERTADOR"): "Villa El Libertador", ("XXXI", "PERGAMINOLA"): "Pergamino"}
+
+
 def construir(eventos, meta):
     dir_idx = cargar_directorio()
     dir_por_ugl = {}
@@ -575,6 +590,8 @@ def construir(eventos, meta):
         if k not in u["agencias"]:
             # Variantes de escritura: 'Daireux'/'Daireaux', 'Lamadrid'/'General Lamadrid'
             for k2 in u["agencias"]:
+                if frozenset((k, k2)) in LUGARES_DISTINTOS:
+                    continue
                 corto, largo = sorted((k, k2), key=len)
                 if (len(k) >= 6 and len(k2) >= 6 and (k.endswith(k2) or k2.endswith(k))) or \
                         (len(corto) >= 9 and largo.startswith(corto) and
@@ -582,7 +599,8 @@ def construir(eventos, meta):
                         difflib.SequenceMatcher(None, k, k2).ratio() >= 0.88:
                     k = k2
                     break
-        a = u["agencias"].setdefault(k, {"nombre": nombre, "tipo_original": tipo or "Agencia", "autoridades": {}})
+        a = u["agencias"].setdefault(k, {"nombre": nombre, "tipo_original": tipo or "Agencia", "autoridades": {}, "alias": set()})
+        a["alias"].add(nombre)
         if not (len(a["nombre"]) > len(nombre) and clave_lugar(a["nombre"]).endswith(clave_lugar(nombre))):
             a["nombre"] = nombre                         # la grafía más reciente (salvo que sea una versión recortada)
         if tipo and a["tipo_original"] == "Agencia" and tipo != "Agencia":
@@ -649,6 +667,43 @@ def construir(eventos, meta):
                         del aut[kc]
         u["historial"].append(hist)
 
+    # Unificación final de agencias escritas de dos formas en la misma UGL ('Machagai'/'Machagay',
+    # 'Manuel J'/'Manuel J. Cobo'): se juntan sus cargos quedándose con la designación más reciente.
+    for u in ugls.values():
+        claves = list(u["agencias"])
+        for i, k1 in enumerate(claves):
+            for k2 in claves[i + 1:]:
+                if k1 not in u["agencias"] or k2 not in u["agencias"]:
+                    continue
+                par = frozenset((k1, k2))
+                if par in LUGARES_DISTINTOS:
+                    continue
+                if not (par in LUGARES_IGUALES or difflib.SequenceMatcher(None, k1, k2).ratio() >= 0.86):
+                    continue
+                a, b = u["agencias"][k1], u["agencias"][k2]
+                reciente = lambda x: max([v["desde"] for v in x["autoridades"].values()] + [""])
+                queda, sale, kq, ks = (a, b, k1, k2) if reciente(a) >= reciente(b) else (b, a, k2, k1)
+                for kc, v in sale["autoridades"].items():
+                    if kc not in queda["autoridades"] or v["desde"] > queda["autoridades"][kc]["desde"]:
+                        queda["autoridades"][kc] = v
+                queda["alias"] |= sale["alias"]
+                if queda["tipo_original"] == "Agencia" and sale["tipo_original"] != "Agencia":
+                    queda["tipo_original"] = sale["tipo_original"]
+                if "creada" in sale and "creada" not in queda:
+                    queda["creada"] = sale["creada"]
+                del u["agencias"][ks]
+                if ks in claves:
+                    pass
+
+    for num, u in ugls.items():
+        for a in u["agencias"].values():
+            for al in list(a["alias"]) + [a["nombre"]]:
+                nuevo = NOMBRE_CORRECTO.get((num, clave_lugar(al)))
+                if nuevo:
+                    a["alias"].add(a["nombre"])
+                    a["nombre"] = nuevo
+                    break
+
     # Salida
     salida = {"_formato": 2, "_meta": meta, "ugls": {}}
     for num, u in ugls.items():
@@ -657,7 +712,8 @@ def construir(eventos, meta):
             "autoridades": sorted(u["autoridades"].values(), key=lambda a: (a["cargo"] != CARGO_JEFE, a["cargo"])),
             "agencias": {a["nombre"]: {"tipo_original": a["tipo_original"],
                                        "autoridades": sorted(a["autoridades"].values(), key=lambda x: x["cargo"]),
-                                       **({"creada": a["creada"]} if "creada" in a else {})}
+                                       **({"creada": a["creada"]} if "creada" in a else {}),
+                                       **({"alias": sorted(a["alias"] - {a["nombre"]})} if len(a["alias"]) > 1 else {})}
                          for a in sorted(u["agencias"].values(), key=lambda a: a["nombre"])},
             "historial": sorted(u["historial"], key=lambda h: h["fecha"], reverse=True),
         }
@@ -727,8 +783,31 @@ def ubicar_central(cargo, unidades):
     return None, visible
 
 
+def nucleo_cargo(c):
+    """'Departamento de Atención Domiciliaria, Subgerencia de ...' -> 'DEPARTAMENTO ATENCION DOMICILIARIA'"""
+    k = clave(re.split(r",|\.|\s+(?:de\s+la|del)\s+(?:Subgerencia|Gerencia|Coordinaci|Direcci|Unidad|Secretar)", c or "", flags=re.I)[0])
+    k = k.replace("ANTENCION", "ATENCION")
+    k = re.sub(r"^(TITULAR|JEFE|JEFA)\s+(DE LA|DEL|DE)\s+", "", k)
+    return " ".join(w for w in k.split() if w not in ("DE", "LA", "DEL", "EL", "LOS", "LAS", "Y"))
+
+
+def misma_rama(a, b):
+    return a == b or a.startswith(b + "-") or b.startswith(a + "-")
+
+
+def mismo_puesto(c1, c2):
+    """Dos textos de cargo que nombran el mismo puesto aunque estén escritos distinto."""
+    n1 = nucleo_cargo(c1)
+    if len(n1.split()) < 3 or n1 != nucleo_cargo(c2):
+        return False
+    sub = lambda c: clave(m.group(1)) if (m := re.search(r"Subgerencia\s+(?:de\s+|del\s+)?(.+?)(?:,|\.|$|\s+de\s+la\s+Gerencia)", c or "")) else ""
+    s1, s2 = sub(c1), sub(c2)
+    return not (s1 and s2 and s1 not in s2 and s2 not in s1)
+
+
 def construir_central(eventos):
     unidades = cargar_organigrama()
+    uid_por_nucleo = {}
     anuladas = {e["ref"] for e in eventos if e["accion"] == "anula"}
     estado = {u["id"]: {} for u in unidades}
     historial = {u["id"]: [] for u in unidades}
@@ -740,16 +819,32 @@ def construir_central(eventos):
         cargo = re.sub(r"^(L|Tutlar del|Titular del?)\s+(?=[A-Z])", "", cargo)
         e = dict(e, persona=re.sub(r"^(Al|A la)\s+Se[ñn]or(a)?\s+", "", e["persona"], flags=re.I))
         uid, visible = ubicar_central(cargo, unidades) if cargo else (None, "")
+        if e.get("unidad"):                                   # evento cargado a mano con su unidad
+            uid, visible = e["unidad"], e.get("cargo") or visible
+        visible = (visible or "").replace("Antención", "Atención")
+        nuc = nucleo_cargo(visible) if visible else ""
+        # si el cargo ya se conoce en una unidad más específica (GPM -> GPM-PM), se usa esa
+        especifico = len(nuc.split()) >= 3
+        if uid and especifico and uid_por_nucleo.get(nuc, ("", ""))[0].startswith(uid + "-") and mismo_puesto(visible, uid_por_nucleo[nuc][1]):
+            uid = uid_por_nucleo[nuc][0]
+        if uid and especifico and e["accion"] == "alta":
+            uid_por_nucleo[nuc] = (uid, visible)
         destino = estado[uid] if uid else otros
         h = {"fecha": e["fecha"], "norma": e["norma"], "accion": e["accion"], "persona": e["persona"], "cargo": visible or None}
         (historial[uid] if uid else otros_hist).append(h)
         if e["accion"] == "alta" and visible:
+            # el mismo cargo escrito de otra forma (o cargado en otra unidad) lo pierde quien lo tenía antes
+            for uid2, aut in estado.items():
+                if not (uid and misma_rama(uid, uid2)):
+                    continue
+                for kc in [k for k, v in aut.items() if mismo_puesto(visible, v["cargo"])]:
+                    del aut[kc]
             destino[clave_cargo(visible) or "TITULAR"] = {"cargo": visible[:1].upper() + visible[1:], "persona": e["persona"], "desde": e["fecha"], "norma": e["norma"]}
         elif e["accion"] == "baja":
             kp = clave(e["persona"])
             for aut in list(estado.values()) + [otros]:
                 for kc in list(aut):
-                    if clave(aut[kc]["persona"]) == kp and (not visible or aut is destino):
+                    if clave(aut[kc]["persona"]) == kp and (not visible or aut is destino or mismo_puesto(visible, aut[kc]["cargo"])):
                         del aut[kc]
     salida = {}
     for u in unidades:
@@ -830,7 +925,7 @@ def main():
             txt = adaptar_articulo(t)
             if nf["fecha"] not in fechas:
                 fechas.append(nf["fecha"])
-            for ev in interpretar(txt):
+            for ev in ([dict(nf["evento"])] if nf.get("evento") else interpretar(txt)):
                 mnum = re.match(r"^[A-Z]+-\d{4}-(\d+)", nf["norma"])
                 ev.update({"fecha": nf["fecha"], "orden": (int(mnum.group(1)) if mnum else 0, i),
                            "norma": nf["norma"], "norma_n": normalizar_norma(nf["norma"]),
