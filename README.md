@@ -216,3 +216,19 @@ Para que la actualización sea diaria, programá `bot_diario_graffo.py` en el **
 
 ### Boletines que faltan en el servidor de PAMI
 A veces PAMI publica en la dirección de un día el boletín de otro (p. ej. `08-03-24.pdf` trae el del 08/04/2024). El procesador detecta la fecha real por las fechas de firma de las normas y descarta las copias repetidas. Las normas de esos boletines perdidos se cargan en `normas_faltantes.json`, con los resúmenes del buscador de [pami.org.ar/boletin-oficial](https://www.pami.org.ar/boletin-oficial).
+
+### Cargos y búsqueda de personas
+- La ficha de cada UGL muestra todos sus cargos agrupados (Dirección, Coordinaciones, Departamentos y divisiones, Equipos y referentes, Otros) y una tabla con todos los cargos de sus agencias.
+- Los dos buscadores encuentran personas por nombre o apellido (en cualquier orden). Al elegir una persona se abre su UGL o agencia y se resalta su tarjeta.
+
+### Estructura, sedes y personal (`datos_extra.json`)
+Además de los cargos, la ficha de cada UGL y de cada agencia muestra tres secciones sacadas del buscador de [pami.org.ar/boletin-oficial](https://www.pami.org.ar/boletin-oficial):
+- **Estructura:** creación y cierre de agencias, CAPs y bocas, y otros cambios en la estructura de la UGL.
+- **Sede e inmuebles:** alquileres, renovaciones, búsquedas de local y obras, con la dirección cuando figura.
+- **Personal:** personas que ingresan a trabajar (sin cargo de conducción), traslados y egresos. El buscador también las encuentra.
+
+Para actualizar:
+```
+python descargar_catalogo.py        # baja los resúmenes a catalogo_pami.json (necesita acceso a pami.org.ar)
+python procesar_catalogo.py         # genera datos_extra.json
+```

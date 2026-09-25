@@ -110,6 +110,7 @@ CONECTORES = {"de", "del", "la", "las", "los", "y", "e", "el"}
 
 
 def nombre_propio(s):
+    s = re.sub(r"^(?:Licencia(?:d[oa])?|Lic\.?|Doctor(?:a)?|Dra?\.?|Contador(?:a)?|Ingenier[oa]|Se[ñn]ora?)\s+", "", s.strip(), flags=re.I)
     out = []
     for i, p in enumerate(re.sub(r"\s+", " ", s).strip().split(" ")):
         low = p.lower()
@@ -443,9 +444,10 @@ def separar_dependencia(cargo):
     t = sin_tildes(m.group(1)).lower()
     tipo = "Boca de Atención" if t.startswith("boca") else "Agencia" if t.startswith("ag") else "CAP"
     dep = re.split(r"\s*(?:,|\s-\s|\s–\s)|" + PUNTO, m.group(2))[0]
+    dep = re.split(r"\s+(?:de la|del|dependiente de la)\s+(?:Coordinaci[oó]n General|Unidad de Gesti|UGL\b|Gerencia)", dep, flags=re.I)[0]
     dep = re.sub(r"\s+(de la|del|de)$", "", dep.strip(" .,;"), flags=re.I).strip()
     rol = limpiar_cargo(base[:m.start()])
-    if rol.lower() in ("titular", "titular en", ""):
+    if rol.lower() in ("titular", "titular en", "") or re.fullmatch(r"(?i)(jef[ea]|responsable|encargad[oa])(\s+(de la|del|de))?", rol.strip()):
         rol = "Titular"
     else:
         rol = re.sub(r"^titular\s+(de la|del|de)\s+", "", rol, flags=re.I)
@@ -467,6 +469,12 @@ def interpretar(txt):
     t = re.sub(r"\s+", " ", txt).strip()
     t = re.sub(r"([a-záéíóúñ])-\s+([a-záéíóúñ])", r"\1\2", t)      # 'Teso- rería' -> 'Tesorería'
     t = t.replace("titulardel", "titular del")
+    t = re.sub(r"\bUGLocal\b", "UGL", t)
+    # títulos profesionales -> señor/señora ('al doctor X', 'al CPN. X', 'a la licenciada X')
+    t = re.sub(r"\b(al|del)\s+(?:doctor|Dr\.|licenciado|Lic\.|contador|Cdor\.|C\.?P\.?N\.?|ingeniero|Ing\.|arquitecto|Arq\.|abogado|"
+               r"escribano|kinesi[oó]logo|odont[oó]logo|psic[oó]logo|profesor|Prof\.|empleado)\s+", r"\1 señor ", t, flags=re.I)
+    t = re.sub(r"\b(a la|de la)\s+(?:doctora|Dra\.|licenciada|Lic\.|contadora|Cdora\.|C\.?P\.?N\.?|ingeniera|Ing\.|arquitecta|Arq\.|abogada|"
+               r"escribana|kinesi[oó]loga|odont[oó]loga|psic[oó]loga|profesora|Prof\.|empleada)\s+", r"\1 señora ", t, flags=re.I)
     b = sin_tildes(t).lower()
     ev = []
 
@@ -496,7 +504,7 @@ def interpretar(txt):
     if len(persona.split()) < 2 or len(persona) > 60:
         return ev
 
-    es_alta = bool(re.search(r"\basign(a|ar|an|ase)?\b", b)) and "funcion" in b
+    es_alta = bool(re.search(r"\basign(a|ar|an|ase)?\b", b) or b.startswith("designa")) and "funcion" in b
     es_baja = b.startswith("limit") and not es_alta
     es_firma = b.startswith("delega") and ("firma" in b or "fima" in b) and ugl is not None
 
@@ -567,7 +575,10 @@ def construir(eventos, meta):
         if k not in u["agencias"]:
             # Variantes de escritura: 'Daireux'/'Daireaux', 'Lamadrid'/'General Lamadrid'
             for k2 in u["agencias"]:
+                corto, largo = sorted((k, k2), key=len)
                 if (len(k) >= 6 and len(k2) >= 6 and (k.endswith(k2) or k2.endswith(k))) or \
+                        (len(corto) >= 9 and largo.startswith(corto) and
+                         largo[len(corto):] in (clave_lugar(u["nombre"]), "DELTUYU")) or \
                         difflib.SequenceMatcher(None, k, k2).ratio() >= 0.88:
                     k = k2
                     break
@@ -614,12 +625,21 @@ def construir(eventos, meta):
             # Traslado implícito: si la persona ya era titular de OTRA agencia de esta UGL, deja ese cargo
             if e.get("dependencia") and e["cargo"] == "Titular" or "traslad" in e["resumen"].lower():
                 kp = clave(e["persona"])
+                mismo = lambda q: q == kp or (q.split()[:1] == kp.split()[:1] and len(q) > 10 and
+                                              difflib.SequenceMatcher(None, q, kp).ratio() >= 0.92)
                 for a in u["agencias"].values():
                     if a["autoridades"] is destino:
                         continue
-                    for kc2 in [x for x, v in a["autoridades"].items() if clave(v["persona"]) == kp]:
+                    for kc2 in [x for x, v in a["autoridades"].items() if clave(v["persona"]) == kp or (v["cargo"] == "Titular" and mismo(clave(v["persona"])))]:
                         del a["autoridades"][kc2]
             destino[kc] = {"cargo": e["cargo"], "persona": e["persona"], "desde": e["fecha"], "norma": e["norma"]}
+            # al asumir un director, caduca la firma delegada anterior
+            if kc == "JEFEUGL" and destino is u["autoridades"]:
+                for k2 in [k for k, v in u["autoridades"].items() if v["cargo"] == "Firma delegada de la UGL"]:
+                    del u["autoridades"][k2]
+            # 'delega la firma ... hasta la cobertura de la titularidad': la Dirección Ejecutiva Local queda vacante
+            if e["cargo"] == "Firma delegada de la UGL" and re.search(r"cobertura de la titularidad", e["resumen"], re.I):
+                u["autoridades"].pop("JEFEUGL", None)
         elif e["accion"] == "baja":
             kp = clave(e["persona"])
             objetivos = [u["autoridades"]] + [a["autoridades"] for a in u["agencias"].values()]
@@ -802,7 +822,7 @@ def main():
             faltantes = json.load(f).get("normas", [])
         ya = {e["norma"] for e in eventos}
         for i, nf in enumerate(faltantes):
-            if nf["norma"] in ya:
+            if nf["norma"] in ya and not nf.get("forzar"):
                 continue
             t = re.sub(r"\s*EX-\d{4}.*$", "", nf["detalle"])
             t = re.sub(r"^Design[oó] y asign[oó],?", "Designar y asignar,", t)

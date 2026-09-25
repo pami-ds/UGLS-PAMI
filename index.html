@@ -42,6 +42,7 @@
         .sw.ugl { background: var(--c-ugl); border-radius: 50%; }
         .sw.agencia { background: var(--c-agencia); transform: rotate(45deg) scale(.85); }
         .sw.vacio { background: var(--c-vacio); border-radius: 50%; }
+        .sw.persona { background: #f472b6; border-radius: 50% 50% 3px 3px; width: 10px; height: 11px; }
 
         #panel-lateral {
             width: 420px; background: var(--bg-sidebar); border-left: 1px solid var(--border-color);
@@ -101,6 +102,34 @@
         .resultado { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 6px; cursor: pointer; font-size: .86rem; }
         .resultado:hover { background: var(--bg-card); }
         .resultado small { color: var(--text-muted); margin-left: auto; font-size: .72rem; white-space: nowrap; }
+        .resultado .res-txt { display: flex; flex-direction: column; min-width: 0; }
+        .resultado .res-sub { color: var(--text-muted); font-size: .74rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .grupo-cargos { margin-top: 6px; }
+        .grupo-cargos > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px; padding: 7px 2px; font-size: .78rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--text-muted); border-bottom: 1px solid var(--border-color); margin-bottom: 8px; }
+        .grupo-cargos > summary::-webkit-details-marker { display: none; }
+        .grupo-cargos > summary::before { content: '▸'; transition: transform .15s; }
+        .grupo-cargos[open] > summary::before { transform: rotate(90deg); }
+        .grupo-cargos > summary .cnt { margin-left: auto; font-weight: 500; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 0 7px; }
+        .tabla-personal { width: 100%; border-collapse: collapse; font-size: .8rem; }
+        .tabla-personal td { padding: 6px 4px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
+        .tabla-personal tr { cursor: pointer; }
+        .tabla-personal tr:hover td { background: var(--bg-card); }
+        .tabla-personal .dep { color: var(--text-muted); font-size: .74rem; }
+        .tabla-personal .antiguo-txt { color: #d9a441; font-size: .72rem; }
+        .resaltado-busqueda { outline: 2px solid #38bdf8; outline-offset: 2px; }
+        .extra-item { padding: 8px 2px; border-bottom: 1px solid var(--border-color); font-size: .8rem; }
+        .extra-item:last-child { border-bottom: none; }
+        .extra-item .cab { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+        .extra-item .f { color: var(--text-muted); font-size: .74rem; white-space: nowrap; margin-left: auto; }
+        .extra-item .etq { font-size: .68rem; font-weight: 600; padding: 1px 6px; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border-color); white-space: nowrap; }
+        .extra-item .etq.crea, .extra-item .etq.ingreso { color: #34d399; border-color: #065f46; }
+        .extra-item .etq.suprime, .extra-item .etq.egreso { color: #f87171; border-color: #7f1d1d; }
+        .extra-item .etq.traslado, .extra-item .etq.renovacion, .extra-item .etq.alquiler { color: #60a5fa; border-color: #1e3a8a; }
+        .extra-item .etq.busqueda, .extra-item .etq.obra, .extra-item .etq.modifica, .extra-item .etq.renombra { color: #fbbf24; border-color: #78350f; }
+        .extra-item .txt { color: var(--text-muted); margin-top: 3px; line-height: 1.35; }
+        .extra-item .n { color: var(--text-muted); font-size: .7rem; margin-top: 2px; }
+        .extra-item a { cursor: pointer; }
+        .extra-nota { font-size: .72rem; color: var(--text-muted); margin: 2px 0 8px; }
 
         /* Fecha / norma de cada designación */
         .cargo-meta { font-size: .7rem; color: var(--text-muted); margin-top: 4px; }
@@ -295,7 +324,9 @@
         body.redimensionando #contenedor-grafo { pointer-events: none; }
 
         /* Buscador rápido sobre el grafo */
-        #buscador-rapido { position: absolute; top: 16px; right: 16px; z-index: 6; width: 260px; }
+        #buscador-rapido { position: absolute; top: 16px; right: 16px; z-index: 6; width: 300px; }
+        .sug .txt2 { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+        .sug .txt2 small { margin-left: 0; padding-left: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         #buscador-rapido .caja {
             display: flex; align-items: center; gap: 8px; background: rgba(15,20,32,.92);
             border: 1px solid var(--border-color); border-radius: 8px; padding: 7px 10px; transition: border-color .2s;
@@ -392,7 +423,7 @@
         <label><span class="sw ugl"></span>UGL con datos</label>
         <label><span class="sw vacio"></span>UGL sin datos</label>
         <label><input type="checkbox" id="chkAgencias" checked><span class="sw agencia"></span>Agencias</label>
-        <label><span class="sw agencia" style="background:#78542a;outline:1px solid var(--c-agencia)"></span>Agencia sin titular vigente</label>
+        <label><span class="sw agencia" style="background:#78542a;outline:1px solid var(--c-agencia)"></span>Agencia o CAP sin titular vigente</label>
         <label title="Agencias del listado oficial de PAMI que todavía no tuvieron novedades en los boletines"><input type="checkbox" id="chkListado" checked><span class="sw listado"></span>Resto del listado oficial</label>
         <div class="sep"></div>
         <div class="hint-org">Tocá <b>PAMI Nivel Central</b> para desplegar el organigrama</div>
@@ -431,7 +462,7 @@
     <div id="buscador-rapido">
         <div class="caja">
             <svg class="lupa" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
-            <input type="text" id="busquedaRapida" placeholder="Ir a UGL, localidad o agencia..." autocomplete="off" spellcheck="false">
+            <input type="text" id="busquedaRapida" placeholder="Ir a UGL, localidad, agencia o persona..." autocomplete="off" spellcheck="false">
         </div>
         <div id="sugerencias"></div>
     </div>
@@ -715,6 +746,7 @@ function construirModeloV2(datos) {
             const h = nuevaAgencia(u, nombre);
             if (ag.tipo_original === 'Boca de Atención') h.subtipo = 'Boca de Atención';
             h.tipoOriginal = ag.tipo_original;
+            if (ag.creada) h.creada = ag.creada;
             for (const a of ag.autoridades || []) h.autoridades.set(clave(a.cargo), autoridadDesdeBoletin(a));
             const kl = claveLugar(nombre);
             h.historial = u.historial.filter(e => e.agencia && claveLugar(e.agencia) === kl);
@@ -732,7 +764,7 @@ function construirModeloV2(datos) {
    ===================================================================== */
 const CLAVE_LOCAL = 'graffo_datos_manuales_v1';
 let MANUALES_REPO = { ugls: {} }, MANUALES_LOCAL = { ugls: {} };
-let DATOS_RAW = null, DIR_RAW = null;
+let DATOS_RAW = null, DIR_RAW = null, EXTRA_RAW = null;
 
 function leerLocal() {
     try { return JSON.parse(localStorage.getItem(CLAVE_LOCAL)) || { ugls: {} }; } catch (e) { return { ugls: {} }; }
@@ -901,6 +933,7 @@ async function inicializar() {
         return;
     }
     DIR_RAW = await leerJSON('directorio_agencias.json');           // listado oficial (opcional)
+    EXTRA_RAW = await leerJSON('datos_extra.json');                 // estructura, sedes y personal (opcional, procesar_catalogo.py)
     ORG_RAW = await leerJSON('organigrama.json');                   // organigrama del Nivel Central (opcional)
     MANUALES_REPO = (await leerJSON('datos_manuales.json')) || { ugls: {} };  // cargas manuales publicadas (opcional)
     MANUALES_LOCAL = leerLocal();                                   // cargas manuales de este navegador
@@ -942,10 +975,11 @@ function nodoAgencia(h) {
         color: { background: '#0b1220', border: '#a16207', highlight: { background: '#fde68a', border: '#fbbf24' }, hover: { background: '#3b2a10', border: '#f59e0b' } },
         font: { color: '#64748b', size: 10 }
     };
-    const vacante = !h.autoridades.size;
+    const boca = esBoca(h);
+    const vacante = !boca && ![...h.autoridades.values()].some(a => /^(titular|jef[ea]|responsable|encargad[oa])$/i.test(a.cargo));
     return {
         id: h.id, tipo: 'agencia', label: h.nombre, shape: 'diamond', size: 8,
-        tip: `${h.subtipo || 'Agencia'} ${h.nombre} · UGL ${h.ugl.num}\n${tit ? 'Titular: ' + tit : vacante ? 'Sin titular vigente' : h.autoridades.size + ' autoridad(es)'}`,
+        tip: `${h.subtipo || 'Agencia'} ${h.nombre} · UGL ${h.ugl.num}\n${tit ? 'Titular: ' + tit : boca ? 'Atención rápida · personal administrativo, sin jefatura' : vacante ? 'Sin titular vigente' : h.autoridades.size + ' autoridad(es)'}`,
         color: { background: vacante ? '#78542a' : c, border: c, highlight: { background: '#fde68a', border: '#fbbf24' }, hover: { background: '#fcd34d', border: '#fbbf24' } },
         font: { color: '#94a3b8', size: 11 }
     };
@@ -1411,6 +1445,81 @@ function htmlContacto(o) {
         </div>`;
 }
 
+/* Las Bocas de Atención son puestos de atención rápida con personal administrativo: no tienen jefatura */
+const esBoca = h => h?.subtipo === 'Boca de Atención' || /^boca/i.test(h?.tipoOriginal || '');
+
+/* ---------- Estructura, sedes y personal (datos_extra.json) ---------- */
+const ETQ_EXTRA = { crea: 'Creación', suprime: 'Cierre', renombra: 'Cambio de nombre', modifica: 'Cambio en la estructura',
+    busqueda: 'Búsqueda de sede', renovacion: 'Renovación de alquiler', alquiler: 'Alquiler', obra: 'Obra',
+    ingreso: 'Ingreso', egreso: 'Egreso', traslado: 'Traslado' };
+function extraDe(num, dep) {
+    const e = EXTRA_RAW?.ugls?.[num];
+    if (!e) return { estructura: [], inmuebles: [], personal: [] };
+    if (!dep) return e;
+    const k = claveLugar(dep.nombre);
+    const coincide = x => x.dep && (claveLugar(x.dep) === k || (k.length > 4 && claveLugar(x.dep).startsWith(k)));
+    return { estructura: e.estructura.filter(coincide), inmuebles: e.inmuebles.filter(coincide), personal: e.personal.filter(coincide) };
+}
+function itemExtra(x, ugl, conDep) {
+    let depLink = '';
+    if (conDep && x.dep && ugl) {
+        const h = [...ugl.hijos.values()].find(h => claveLugar(h.nombre) === claveLugar(x.dep));
+        depLink = h ? `<a onclick="seleccionar('${esc(h.id)}')">${esc(h.nombre)}</a>` : `<span>${esc(x.tipo_dep || '')} ${esc(x.dep)}</span>`;
+    }
+    const titulo = x.persona ? `<b>${esc(x.persona)}</b>` : x.direccion ? `<b>${esc(x.direccion)}</b>` : '';
+    return `<div class="extra-item"><div class="cab"><span class="etq ${x.accion}">${ETQ_EXTRA[x.accion] || x.accion}</span>${titulo}${depLink}<span class="f">${fechaCorta(x.fecha)}</span></div>
+        <div class="txt">${esc(x.texto.length > 260 ? x.texto.slice(0, 258) + '…' : x.texto)}</div><div class="n">${esc(x.norma)}</div></div>`;
+}
+function htmlExtra(ugl, dep) {
+    if (!EXTRA_RAW) return '';
+    const e = extraDe(ugl.num, dep);
+    const conDep = !dep;
+    const bloque = (titulo, lista, nota, abierto) => lista.length ? `<details class="grupo-cargos"${abierto ? ' open' : ''}><summary>${titulo}<span class="cnt">${lista.length}</span></summary>
+        ${nota ? `<div class="extra-nota">${nota}</div>` : ''}${lista.slice(0, 120).map(x => itemExtra(x, ugl, conDep)).join('')}
+        ${lista.length > 120 ? '<div class="extra-nota">Se muestran los 120 más recientes.</div>' : ''}</details>` : '';
+    const creada = dep?.creada ? [{ fecha: dep.creada.fecha, norma: dep.creada.norma.replace(/-INSSJP.*$/, ''), accion: 'crea', texto: 'Creación registrada en el boletín.' }] : [];
+    const estructura = [...e.estructura, ...creada.filter(c => !e.estructura.some(x => x.norma === c.norma))];
+    return bloque('Estructura (aperturas y cierres)', estructura, '', !!dep) +
+        bloque('Sede e inmuebles', e.inmuebles, 'Alquileres, renovaciones, búsquedas de local y obras publicadas en el boletín.', false) +
+        bloque('Personal (ingresos, traslados y egresos)', e.personal, 'Personas que ingresaron a trabajar, fueron trasladadas o dejaron el Instituto. No son cargos de conducción y pueden no estar vigentes.', false);
+}
+
+/* ---------- Autoridades de la UGL agrupadas por área ---------- */
+const GRUPOS_CARGO = [
+    ['Dirección', /^(Titular de la UGL|Firma delegada|Director|Subdirector)/i],
+    ['Coordinaciones', /Coordinaci[oó]n|Coordinador/i],
+    ['Departamentos y divisiones', /Departamento|Divisi[oó]n|Sector|Unidad|[AÁ]rea|Secci[oó]n|Oficina/i],
+    ['Equipos y referentes', /Equipo|Referente/i],
+];
+function htmlAutoridadesAgrupadas(mapa) {
+    if (!mapa.size) return htmlAutoridades(mapa, '');
+    const grupos = new Map(GRUPOS_CARGO.map(([n]) => [n, new Map()]));
+    grupos.set('Otros cargos', new Map());
+    for (const [k, a] of mapa) {
+        const g = GRUPOS_CARGO.find(([, rx]) => rx.test(a.cargo));
+        grupos.get(g ? g[0] : 'Otros cargos').set(k, a);
+    }
+    let h = '';
+    for (const [nombre, m] of grupos) {
+        if (!m.size) continue;
+        const abierto = nombre === 'Dirección' || mapa.size <= 8;
+        h += `<details class="grupo-cargos"${abierto ? ' open' : ''}><summary>${nombre}<span class="cnt">${m.size}</span></summary>${htmlAutoridades(m, '')}</details>`;
+    }
+    return h;
+}
+/* ---------- Todos los cargos de las agencias de una UGL ---------- */
+function htmlPersonalAgencias(ag) {
+    const filas = [];
+    for (const h of ag) for (const a of h.autoridades.values()) for (const p of a.personas)
+        filas.push({ h, a, p });
+    if (!filas.length) return '';
+    filas.sort((x, y) => x.h.nombre.localeCompare(y.h.nombre) || (x.a.cargo !== 'Titular') - (y.a.cargo !== 'Titular') || x.a.cargo.localeCompare(y.a.cargo));
+    return `<details class="grupo-cargos"><summary>Cargos en agencias<span class="cnt">${filas.length}</span></summary>
+        <table class="tabla-personal">${filas.map(({ h, a, p }) => `<tr onclick="seleccionar('${esc(h.id)}')">
+            <td><b>${esc(p)}</b><div class="dep">${esc(a.cargo)}${a.desde ? ' &middot; desde ' + fechaCorta(a.desde) : ''}${a.desde && a.desde < '2024-01-01' && a.fuente !== 'manual' ? ' <span class="antiguo-txt">(verificar)</span>' : ''}</div></td>
+            <td class="dep" style="text-align:right">${esc(h.subtipo || 'Agencia')}<br>${esc(h.nombre)}</td></tr>`).join('')}</table></details>`;
+}
+
 function mostrarUGL(u) {
     const ag = [...u.hijos.values()].sort((a, b) => (a.soloListado - b.soloListado) || a.nombre.localeCompare(b.nombre));
     const lista = arr => arr.length
@@ -1418,16 +1527,18 @@ function mostrarUGL(u) {
                 const tit = [...h.autoridades.values()].find(a => a.cargo === 'Titular');
                 return `<div class="item-hijo" onclick="seleccionar('${esc(h.id)}')">
                 <span class="sw agencia"></span>${esc(h.nombre)}${h.subtipo ? ` <small style="color:var(--text-muted)">(${h.subtipo})</small>` : ''}${h.manualNueva ? '<span class="chip-manual">manual</span>' : ''}
-                <span class="n">${tit ? esc(tit.personas[0]) : h.autoridades.size ? h.autoridades.size + ' autoridad(es)' : h.soloListado ? 'solo en listado oficial' : 'sin titular vigente'}</span></div>`; }).join('')}</div>`
+                <span class="n">${tit ? esc(tit.personas[0]) + (h.autoridades.size > 1 ? ` <small>+${h.autoridades.size - 1}</small>` : '') : h.autoridades.size ? h.autoridades.size + ' autoridad(es)' : esBoca(h) ? 'boca de atención' : h.soloListado ? 'solo en listado oficial' : 'sin titular vigente'}</span></div>`; }).join('')}</div>`
         : `<div class="mensaje-vacio" style="margin-top:8px">Sin registros.</div>`;
 
     document.getElementById('contenido-detalles').innerHTML = `
         ${cabeceraFicha(u, 'UGL ' + esc(u.num), 'ugl', u.nombre, `Unidad de Gesti&oacute;n Local &middot; ${ag.length} agencia(s)${modelo.org?.has('ORG-UGTO') ? ` &middot; depende de la <a onclick="seleccionar('ORG-UGTO')">UGTO</a>` : ''}`)}
         ${htmlContacto(u)}
-        <div class="seccion-titulo">Autoridades de la UGL</div>
-        ${htmlAutoridades(u.autoridades, '')}
+        <div class="seccion-titulo">Autoridades de la UGL (${u.autoridades.size})</div>
+        ${htmlAutoridadesAgrupadas(u.autoridades)}
         <div class="seccion-titulo">Agencias (${ag.length})</div>
         ${lista(ag)}
+        ${htmlPersonalAgencias(ag)}
+        ${htmlExtra(u, null)}
         ${htmlHistorial(u.historial, true)}`;
 }
 
@@ -1472,8 +1583,10 @@ function mostrarDependencia(h) {
     document.getElementById('contenido-detalles').innerHTML = `
         ${cabeceraFicha(h, etiqueta, 'agencia', h.nombre, `Depende de <a onclick="seleccionar('${esc(h.ugl.id)}')">UGL ${esc(h.ugl.num)} &ndash; ${esc(h.ugl.nombre)}</a>${origen}`)}
         ${htmlContacto(h)}
-        <div class="seccion-titulo">Autoridades</div>
-        ${htmlAutoridades(h.autoridades, h.tipo)}
+        <div class="seccion-titulo">${esBoca(h) ? 'Personal a cargo' : 'Autoridades'}</div>
+        ${esBoca(h) && !h.autoridades.size ? '<div class="mensaje-vacio" style="margin-top:8px">Boca de atención rápida: la atiende personal administrativo de la UGL, no tiene jefatura propia.</div>' : htmlAutoridades(h.autoridades, h.tipo)}
+        ${esBoca(h) && h.autoridades.size ? '<div class="extra-nota">Las bocas de atención no tienen jefatura: se muestra la persona que el boletín designó a cargo.</div>' : ''}
+        ${htmlExtra(h.ugl, h)}
         ${htmlHistorial(h.historial, false)}`;
 }
 
@@ -1655,6 +1768,20 @@ function mostrarSinClasificar() {
         </div>`).join('')}`;
 }
 
+/* ---------- Resalta en el panel la tarjeta de una persona buscada ---------- */
+function resaltarPersona(nombre) {
+    setTimeout(() => {
+        const k = clave(nombre);
+        const el = [...document.querySelectorAll('#contenido-detalles .cargo-nombre, #contenido-detalles .tabla-personal b, #contenido-detalles .extra-item b')].find(e => clave(e.textContent) === k);
+        if (!el) return;
+        el.closest('details')?.setAttribute('open', '');
+        const box = el.closest('.tarjeta-cargo, tr, .extra-item') || el;
+        box.classList.add('resaltado-busqueda');
+        box.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        setTimeout(() => box.classList.remove('resaltado-busqueda'), 2500);
+    }, 80);
+}
+
 /* ---------- Buscador: lista de resultados (UGL, Agencia o persona) ---------- */
 document.getElementById('buscador').addEventListener('input', e => {
     const q = clave(e.target.value);
@@ -1665,16 +1792,25 @@ document.getElementById('buscador').addEventListener('input', e => {
         const nombre = o.tipo === 'ugl' ? `UGL ${o.num} ${o.nombre}` : o.nombre;
         let motivo = null;
         if (clave(nombre).includes(q) || (o.siglas || []).some(x => x.toUpperCase() === q)) motivo = o.tipo === 'ugl' ? 'UGL' : o.tipo === 'org' ? 'Nivel Central' : 'Agencia';
-        else for (const a of o.autoridades.values()) if (a.personas.some(p => clave(p).includes(q))) { motivo = 'Persona'; break; }
         if (motivo) res.push({ id, o, nombre, motivo });
+        for (const a of o.autoridades.values()) for (const p of a.personas)
+            if (clave(p).includes(q)) res.push({ id, o, nombre: p, motivo: 'Persona', sub: `${a.cargo} · ${nombre}${o.tipo === 'agencia' ? ' (UGL ' + o.ugl.num + ')' : ''}` });
     }
-    const orden = { UGL: 0, 'Nivel Central': 1, Agencia: 2, Persona: 3 };
+    // personal registrado (ingresos, traslados, egresos)
+    for (const u of modelo.ugls) for (const x of EXTRA_RAW?.ugls?.[u.num]?.personal || []) {
+        if (!clave(x.persona).includes(q)) continue;
+        const h = x.dep ? [...u.hijos.values()].find(h => claveLugar(h.nombre) === claveLugar(x.dep)) : null;
+        const o = h || u;
+        res.push({ id: o.id, o, nombre: x.persona, motivo: 'Personal', sub: `${ETQ_EXTRA[x.accion]} ${fechaCorta(x.fecha)} · ${h ? h.nombre + ' (UGL ' + u.num + ')' : 'UGL ' + u.num + ' ' + u.nombre}` });
+    }
+    const orden = { UGL: 0, 'Nivel Central': 1, Agencia: 2, Persona: 3, Personal: 4 };
     res.sort((a, b) => orden[a.motivo] - orden[b.motivo]);
     document.getElementById('contenido-detalles').innerHTML = res.length
         ? `<div class="seccion-titulo">${res.length} resultado(s)</div>` + res.slice(0, 60).map(r => `
-            <div class="resultado" onclick="seleccionar('${esc(r.id)}')">
-                <span class="sw ${r.o.tipo === 'org' ? 'org-' + r.o.nivel : r.o.tipo}"></span>${esc(r.nombre)}
-                <small>${r.motivo}${r.o.tipo === 'agencia' ? ' &middot; UGL ' + esc(r.o.ugl.num) : r.o.tipo === 'org' && r.motivo === 'Persona' ? ' &middot; Nivel Central' : ''}</small>
+            <div class="resultado" data-persona="${r.motivo === 'Persona' || r.motivo === 'Personal' ? esc(r.nombre) : ''}" onclick="seleccionar('${esc(r.id)}');if(this.dataset.persona)resaltarPersona(this.dataset.persona)">
+                <span class="sw ${r.motivo === 'Persona' || r.motivo === 'Personal' ? 'persona' : r.o.tipo === 'org' ? 'org-' + r.o.nivel : r.o.tipo}"></span>
+                <span class="res-txt"><span>${esc(r.nombre)}</span>${r.sub ? `<span class="res-sub">${esc(r.sub)}</span>` : ''}</span>
+                <small>${r.motivo}${r.motivo !== 'Persona' && r.motivo !== 'Personal' && r.o.tipo === 'agencia' ? ' &middot; UGL ' + esc(r.o.ugl.num) : ''}</small>
             </div>`).join('')
         : '<div class="mensaje-vacio">Sin coincidencias.</div>';
 });
@@ -1762,8 +1898,31 @@ document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros
                 else if (loc && loc.includes(q)) { puntos = 5; extra += ' · ' + o.localidad; }
             }
             if (puntos !== null) res.push({ id, o, texto, extra: extra || 'UGL', puntos });
+            // personas: nombre y apellido en cualquier orden
+            if (q.length >= 3) {
+                const partes = q.split(' ').filter(Boolean);
+                for (const a of o.autoridades.values()) for (const p of a.personas) {
+                    const kp = clave(p);
+                    if (!partes.every(x => kp.includes(x))) continue;
+                    const lugar = o.tipo === 'ugl' ? `UGL ${o.num} ${o.nombre}` : o.tipo === 'org' ? o.nombre : `${o.nombre} · UGL ${o.ugl.num}`;
+                    res.push({ id, o, texto: p, extra: `${a.cargo.length > 34 ? a.cargo.slice(0, 33) + '…' : a.cargo} · ${lugar}`, puntos: kp.startsWith(q) ? 1.5 : 3.5, persona: true });
+                }
+            }
         }
-        return res.sort((a, b) => a.puntos - b.puntos || a.texto.localeCompare(b.texto)).slice(0, 12);
+        // personal registrado (menor prioridad que los cargos)
+        if (q.length >= 3 && EXTRA_RAW) {
+            const partes = q.split(' ').filter(Boolean);
+            const ya = new Set(res.filter(r => r.persona).map(r => clave(r.texto)));
+            for (const u of modelo.ugls) for (const x of EXTRA_RAW.ugls?.[u.num]?.personal || []) {
+                const kp = clave(x.persona);
+                if (ya.has(kp) || !partes.every(t => kp.includes(t))) continue;
+                ya.add(kp);
+                const h = x.dep ? [...u.hijos.values()].find(h => claveLugar(h.nombre) === claveLugar(x.dep)) : null;
+                const o = h || u;
+                res.push({ id: o.id, o, texto: x.persona, extra: `Personal · ${h ? h.nombre + ' · ' : ''}UGL ${u.num}`, puntos: 6, persona: true });
+            }
+        }
+        return res.sort((a, b) => a.puntos - b.puntos || a.texto.localeCompare(b.texto)).slice(0, 15);
     }
 
     function pintar() {
@@ -1772,7 +1931,7 @@ document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros
         items = candidatos(q); activa = items.length ? 0 : -1;
         caja.innerHTML = items.length
             ? items.map((it, i) => `<div class="sug${i === activa ? ' activa' : ''}" data-i="${i}">
-                    <span class="sw ${it.o.tipo === 'org' ? 'org-' + it.o.nivel : it.o.tipo}"></span><span class="txt">${esc(it.texto)}</span><small>${esc(it.extra)}</small></div>`).join('')
+                    <span class="sw ${it.persona ? 'persona' : it.o.tipo === 'org' ? 'org-' + it.o.nivel : it.o.tipo}"></span>${it.persona ? `<span class="txt2"><span>${esc(it.texto)}</span><small>${esc(it.extra)}</small></span>` : `<span class="txt">${esc(it.texto)}</span><small>${esc(it.extra)}</small>`}</div>`).join('')
             : '<div class="sug-vacio">Sin coincidencias</div>';
         caja.classList.add('visible');
     }
@@ -1784,6 +1943,7 @@ document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros
         if (it.o.tipo === 'agencia' && !document.getElementById('chkAgencias').checked) { document.getElementById('chkAgencias').checked = true; aplicarFiltros(); }
         seleccionar(it.id, true);
         input.value = it.texto;
+        if (it.persona) resaltarPersona(it.texto);
         caja.classList.remove('visible');
         input.blur();
     }
@@ -2067,7 +2227,7 @@ const Tarjeta = (() => {
             pie = COLAPSADAS.has(o.id) ? 'Clic para desplegar sus agencias' : 'Clic para ver la ficha · doble clic para plegar';
         } else if (o.tipo === 'agencia') {
             chip = o.subtipo || 'Agencia'; nombre = o.nombre;
-            filas = filaTit('Titular', tit) || `<div class="th-et">Titular</div><div class="th-sub">${o.soloListado ? 'Sin novedades en los boletines' : 'Sin titular vigente'}</div>`;
+            filas = filaTit('Titular', tit) || `<div class="th-et">Titular</div><div class="th-sub">${esBoca(o) ? 'Boca de atención: sin jefatura' : o.soloListado ? 'Sin novedades en los boletines' : 'Sin titular vigente'}</div>`;
             if (o.direccion) filas += `<div class="th-et">Dirección</div><div class="th-val">${esc(o.direccion)}${o.localidad ? ', ' + esc(o.localidad) : ''}</div>`;
             if (o.telefono) filas += `<div class="th-et">Teléfono</div><div class="th-val">${esc(o.telefono)}</div>`;
             pie = 'Clic para ver la ficha completa';

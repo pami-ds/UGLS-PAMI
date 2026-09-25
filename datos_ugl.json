@@ -1,12 +1,12 @@
 {
  "_formato": 2,
  "_meta": {
-  "generado": "2026-09-25T12:56:02",
+  "generado": "2026-09-25T13:24:05",
   "boletines": 2578,
   "desde": "2016-01-04",
   "hasta": "2026-09-23",
-  "eventos": 5122,
-  "eventos_sin_ugl": 1696,
+  "eventos": 5319,
+  "eventos_sin_ugl": 1708,
   "ugl_corregida_por_listado": [
    {
     "fecha": "2016-04-18",
@@ -56,6 +56,20 @@
     "agencia": "Campana",
     "boletin_decia": "VIII",
     "corregida_a": "XXXII"
+   },
+   {
+    "fecha": "2019-01-07",
+    "norma": "RESOL-2019-33-INSSJP-DE#INSSJP",
+    "agencia": "Río Grande",
+    "boletin_decia": "X",
+    "corregida_a": "XXXIII"
+   },
+   {
+    "fecha": "2020-02-28",
+    "norma": "RESOL-2020-710-INSSJP-DE#INSSJP",
+    "agencia": "Villa Gobernador Gálvez",
+    "boletin_decia": "XV",
+    "corregida_a": "IX"
    },
    {
     "fecha": "2020-05-08",
@@ -134,9 +148,9 @@
     },
     {
      "cargo": "Titular de la Coordinación Médica",
-     "persona": "Roque Augusto Dip",
-     "desde": "2020-03-30",
-     "norma": "RESOL-2020-1094-INSSJP-DE#INSSJP"
+     "persona": "Guillermo Octavio Brito",
+     "desde": "2024-06-13",
+     "norma": "RESOL-2024-1680-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la División Moeit",
@@ -182,6 +196,17 @@
     }
    ],
    "agencias": {
+    "Banda Río Sali": {
+     "tipo_original": "Agencia",
+     "autoridades": [
+      {
+       "cargo": "Unidad orgánica Referente Políticas Sociales",
+       "persona": "Rita Liseth Huesen",
+       "desde": "2025-09-15",
+       "norma": "RESOL-2025-2159-INSSJP-DE#INSSJP"
+      }
+     ]
+    },
     "Bella Vista": {
      "tipo_original": "CAP",
      "autoridades": [
@@ -193,7 +218,7 @@
       }
      ]
     },
-    "Burruyacu de la Coordinación General Ejecutiva Local I": {
+    "Burruyacu": {
      "tipo_original": "CAP",
      "autoridades": [
       {
@@ -226,7 +251,7 @@
       }
      ]
     },
-    "Juan Bautista Alberdi de la Coordinación General Ejecutiva Local I": {
+    "Juan Bautista Alberdi": {
      "tipo_original": "CAP",
      "autoridades": [
       {
@@ -250,7 +275,14 @@
     },
     "Ranchillos": {
      "tipo_original": "CAP",
-     "autoridades": []
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Luciana Gabriela Ybarra",
+       "desde": "2025-09-15",
+       "norma": "RESOL-2025-2160-INSSJP-DE#INSSJP"
+      }
+     ]
     },
     "Trancas": {
      "tipo_original": "CAP",
@@ -267,7 +299,7 @@
      "tipo_original": "Boca de Atención",
      "autoridades": [
       {
-       "cargo": "Responsable",
+       "cargo": "Titular",
        "persona": "Luciano Agustín Porta",
        "desde": "2025-05-20",
        "norma": "RESOL-2025-1057-INSSJP-DE#INSSJP"
@@ -365,6 +397,22 @@
      "agencia": "Ranchillos"
     },
     {
+     "fecha": "2025-09-15",
+     "norma": "RESOL-2025-2159-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Rita Liseth Huesen",
+     "cargo": "Unidad orgánica Referente Políticas Sociales",
+     "agencia": "Banda Río Sali"
+    },
+    {
+     "fecha": "2025-09-15",
+     "norma": "RESOL-2025-2160-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Luciana Gabriela Ybarra",
+     "cargo": "Titular",
+     "agencia": "Ranchillos"
+    },
+    {
      "fecha": "2025-09-10",
      "norma": "RESOL-2025-2102-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -433,7 +481,7 @@
      "norma": "RESOL-2025-1057-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Luciano Agustín Porta",
-     "cargo": "Responsable",
+     "cargo": "Titular",
      "agencia": "Villa Mariano Moreno"
     },
     {
@@ -442,6 +490,14 @@
      "accion": "alta",
      "persona": "Belén Caram Vallejo",
      "cargo": "Titular de la División Operativa del Departamento Médico",
+     "agencia": null
+    },
+    {
+     "fecha": "2025-04-01",
+     "norma": "RESOL-2025-648-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Belén Caram Vallejo",
+     "cargo": "Titular de la División Operativa, Departamento Médico",
      "agencia": null
     },
     {
@@ -501,6 +557,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-06-13",
+     "norma": "RESOL-2024-1680-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Guillermo Octavio Brito",
+     "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
      "fecha": "2024-05-13",
      "norma": "RESOL-2024-1338-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -513,6 +577,14 @@
      "norma": "RESOL-2024-1343-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Martín Domingo Fernández González",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-02-23",
+     "norma": "RESOL-2024-513-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mariano Usandivaras",
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
@@ -618,7 +690,7 @@
      "accion": "alta",
      "persona": "Orlando Eduardo Alzogaray",
      "cargo": "Titular",
-     "agencia": "Burruyacu de la Coordinación General Ejecutiva Local I"
+     "agencia": "Burruyacu"
     },
     {
      "fecha": "2019-11-07",
@@ -626,7 +698,7 @@
      "accion": "alta",
      "persona": "Roxana Elizabeth Soraire",
      "cargo": "Titular",
-     "agencia": "Juan Bautista Alberdi de la Coordinación General Ejecutiva Local I"
+     "agencia": "Juan Bautista Alberdi"
     },
     {
      "fecha": "2019-09-06",
@@ -744,10 +816,16 @@
      "norma": "RESOL-2019-1285-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Titular de la Coordinación Administrativa Contable",
-     "persona": "Alejandro Agustín Acosta",
-     "desde": "2020-02-21",
-     "norma": "RESOL-2020-634-INSSJP-DE#INSSJP"
+     "cargo": "Referente del Equipo Jurídico",
+     "persona": "María de la Paz Gonzalez Barea",
+     "desde": "2024-05-06",
+     "norma": "RESOL-2024-1302-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "persona": "Jorge Javier Cendoya",
+     "desde": "2024-05-06",
+     "norma": "RESOL-2024-1301-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación General Ejecutiva Local II",
@@ -1037,6 +1115,14 @@
     },
     {
      "fecha": "2025-10-17",
+     "norma": "RESOL-2025-2123-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Flavia Beatriz Barbieri",
+     "cargo": "Titular de la División Operativa, Departamento Médico",
+     "agencia": null
+    },
+    {
+     "fecha": "2025-10-17",
      "norma": "RESOL-2025-2523-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Flavia Beatriz Barbieri",
@@ -1308,6 +1394,22 @@
      "agencia": "Curuzú Cuatiá"
     },
     {
+     "fecha": "2024-05-06",
+     "norma": "RESOL-2024-1301-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Jorge Javier Cendoya",
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-05-06",
+     "norma": "RESOL-2024-1302-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María de la Paz Gonzalez Barea",
+     "cargo": "Referente del Equipo Jurídico",
+     "agencia": null
+    },
+    {
      "fecha": "2024-03-27",
      "norma": "RESOL-2024-927-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -1389,6 +1491,14 @@
     },
     {
      "fecha": "2024-02-23",
+     "norma": "RESOL-2024-529-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Esther Espindola",
+     "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-02-23",
      "norma": "RESOL-2024-530-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Cinthia Elizabet Almiron",
@@ -1401,6 +1511,14 @@
      "accion": "baja",
      "persona": "Lilian Ruth Jara",
      "cargo": null,
+     "agencia": null
+    },
+    {
+     "fecha": "2024-01-12",
+     "norma": "RESOL-2024-60-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "David Oscar Moulin",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
     {
@@ -1668,6 +1786,14 @@
      "agencia": null
     },
     {
+     "fecha": "2019-05-16",
+     "norma": "RESOL-2019-928-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "María Inés Vidales",
+     "cargo": "Titular",
+     "agencia": "Monte Caseros"
+    },
+    {
      "fecha": "2018-04-09",
      "norma": "RESOL-2018-291-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -1709,12 +1835,6 @@
      "persona": "Eduardo Rubén Frayre",
      "desde": "2025-11-04",
      "norma": "RESOL-2025-2690-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Firma delegada de la UGL",
-     "persona": "Eduardo Rubén Frayre",
-     "desde": "2025-09-08",
-     "norma": "RESOL-2025-2093-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Jefa de la División Derechos Humanos, Gerontología Comunitaria, Género y Políticas de Cuidado de la Coordinación General Ejecutiva Local III",
@@ -1759,6 +1879,12 @@
      "norma": "RESOL-2019-1648-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "persona": "Eduardo Rubén Frayre",
+     "desde": "2024-03-27",
+     "norma": "RESOL-2024-933-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Titular de la Coordinación Ejecutiva Local",
      "persona": "Adrián Pablo Orelia",
      "desde": "2017-11-17",
@@ -1801,6 +1927,12 @@
      "norma": "RESOL-2024-2005-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Titular de la División de Auditoría Prestacional",
+     "persona": "Viviana Mercedes Parnisari",
+     "desde": "2024-03-14",
+     "norma": "RESOL-2024-709-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Titular de la unidad Pami Escucha",
      "persona": "María Isabel Sarmiento",
      "desde": "2026-02-04",
@@ -1811,6 +1943,12 @@
      "persona": "María Cecilia Martin",
      "desde": "2025-06-24",
      "norma": "RESOL-2025-1419-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular de la unidad orgánica Referente Pami Escucha, División MOEIT del Departamento Médico",
+     "persona": "María Isabel Sarmiento",
+     "desde": "2026-02-04",
+     "norma": "RESOL-2026-347-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular del Departamento Contable",
@@ -1853,12 +1991,6 @@
     "Alta Gracia": {
      "tipo_original": "Agencia",
      "autoridades": [
-      {
-       "cargo": "Jefe",
-       "persona": "Miguel Lucas Cantarini",
-       "desde": "2017-03-14",
-       "norma": "RESOL-2017-329-INSSJP-DE#INSSJP"
-      },
       {
        "cargo": "Titular",
        "persona": "Duilio Andrés Cabanillas",
@@ -2276,9 +2408,15 @@
       }
      ]
     },
-    "Villa El Libertador": {
+    "Villa Libertador": {
      "tipo_original": "CAP",
      "autoridades": [
+      {
+       "cargo": "División Administrativo Contable",
+       "persona": "Mara Stella Contrera",
+       "desde": "2025-10-27",
+       "norma": "RESOL-2025-2603-INSSJP-DE#INSSJP"
+      },
       {
        "cargo": "Titular",
        "persona": "Marta Haydee Lunello",
@@ -2485,6 +2623,14 @@
     },
     {
      "fecha": "2026-02-04",
+     "norma": "RESOL-2026-347-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Isabel Sarmiento",
+     "cargo": "Titular de la unidad orgánica Referente Pami Escucha, División MOEIT del Departamento Médico",
+     "agencia": null
+    },
+    {
+     "fecha": "2026-02-04",
      "norma": "RESOL-2026-437-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "María Isabel Sarmiento",
@@ -2538,6 +2684,14 @@
      "persona": "Eduardo Rubén Frayre",
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
+    },
+    {
+     "fecha": "2025-10-27",
+     "norma": "RESOL-2025-2603-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mara Stella Contrera",
+     "cargo": "División Administrativo Contable",
+     "agencia": "Villa Libertador"
     },
     {
      "fecha": "2025-10-27",
@@ -2610,6 +2764,14 @@
      "persona": "Carlos Centeno",
      "cargo": "Titular del Equipo Jurídico",
      "agencia": null
+    },
+    {
+     "fecha": "2024-10-23",
+     "norma": "RESOL-2024-2879-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Florencia Ambroggio",
+     "cargo": "Titular",
+     "agencia": "Morteros"
     },
     {
      "fecha": "2024-10-23",
@@ -2924,6 +3086,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-03-27",
+     "norma": "RESOL-2024-933-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Eduardo Rubén Frayre",
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
      "fecha": "2024-03-20",
      "norma": "RESOL-2024-781-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -2997,6 +3167,14 @@
     },
     {
      "fecha": "2024-03-14",
+     "norma": "RESOL-2024-709-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Viviana Mercedes Parnisari",
+     "cargo": "Titular de la División de Auditoría Prestacional",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-03-14",
      "norma": "RESOL-2024-722-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Roberto Daniel Chacon",
@@ -3028,11 +3206,19 @@
      "agencia": null
     },
     {
+     "fecha": "2024-02-15",
+     "norma": "RESOL-2024-422-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Marcos Brizuela Patiño",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2023-05-10",
      "norma": "RESOL-2023-621-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Verónica Analía Fabro",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "La Falda"
     },
     {
@@ -3266,6 +3452,14 @@
      "persona": "Elba Amelia Costantino",
      "cargo": "Titular",
      "agencia": "San Francisco"
+    },
+    {
+     "fecha": "2020-06-02",
+     "norma": "RESOL-2020-1549-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Franco Torres",
+     "cargo": "Titular de la Coordinación MAP",
+     "agencia": null
     },
     {
      "fecha": "2020-06-02",
@@ -3512,7 +3706,7 @@
      "norma": "RESOL-2017-329-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Miguel Lucas Cantarini",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Alta Gracia"
     },
     {
@@ -3520,7 +3714,15 @@
      "norma": "RESOL-2016-1189-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Daniel Oscar Ojea",
-     "cargo": "Jefe",
+     "cargo": "Titular",
+     "agencia": "San Vicente"
+    },
+    {
+     "fecha": "2016-07-13",
+     "norma": "RESOL-2016-1190-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Tomás Diez",
+     "cargo": "Titular",
      "agencia": "San Vicente"
     },
     {
@@ -3544,7 +3746,7 @@
      "norma": "RESOL-2016-261-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Marcos Patricio Amante",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Matienzo"
     }
    ]
@@ -3552,6 +3754,12 @@
   "IV": {
    "nombre": "Mendoza",
    "autoridades": [
+    {
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "persona": "David Miguel Litvinchuk",
+     "desde": "2024-06-07",
+     "norma": "RESOL-2024-1654-INSSJP-DE#INSSJP"
+    },
     {
      "cargo": "División Adminostrativo Contable",
      "persona": "Antonio Andrés Angelone",
@@ -3577,6 +3785,12 @@
      "norma": "RESOL-2022-1444-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Médica",
+     "persona": "María Virginia Flores",
+     "desde": "2026-02-13",
+     "norma": "RESOL-2026-558-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Referente Administrativo Contable",
      "persona": "Nelson David Fliguer",
      "desde": "2019-08-05",
@@ -3595,10 +3809,10 @@
      "norma": "RESOL-2022-1435-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Titular de la Coordinación Administrativa Contable",
-     "persona": "Analia Verónica Rodriguez",
-     "desde": "2020-02-20",
-     "norma": "RESOL-2020-608-INSSJP-DE#INSSJP"
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "persona": "Alejandro Omar Zapata",
+     "desde": "2024-05-17",
+     "norma": "RESOL-2024-1403-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación Médica",
@@ -3801,16 +4015,10 @@
      "tipo_original": "Boca de Atención",
      "autoridades": [
       {
-       "cargo": "Responsable",
+       "cargo": "Titular",
        "persona": "Agustina Rocío Rocha",
        "desde": "2026-01-13",
        "norma": "RESOL-2026-91-INSSJP-DE#INSSJP"
-      },
-      {
-       "cargo": "Titular",
-       "persona": "Rosa Sandra Abraham",
-       "desde": "2024-07-18",
-       "norma": "RESOL-2024-1999-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -4084,6 +4292,14 @@
      "agencia": "Bowen"
     },
     {
+     "fecha": "2026-02-13",
+     "norma": "RESOL-2026-558-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Virginia Flores",
+     "cargo": "Médica",
+     "agencia": null
+    },
+    {
      "fecha": "2026-02-02",
      "norma": "RESOL-2026-403-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -4112,7 +4328,7 @@
      "norma": "RESOL-2026-91-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Agustina Rocío Rocha",
-     "cargo": "Responsable",
+     "cargo": "Titular",
      "agencia": "Las Catitas"
     },
     {
@@ -4237,10 +4453,26 @@
     },
     {
      "fecha": "2025-08-08",
+     "norma": "RESOL-2025-1788-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Tomás Iván Echazarreta Davies",
+     "cargo": "Titular de División Auditoría Prestacional",
+     "agencia": null
+    },
+    {
+     "fecha": "2025-08-08",
      "norma": "RESOL-2025-1789-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Tomás Iván Echazarreta Davies",
      "cargo": "Titular de División Auditoría Prestacional",
+     "agencia": null
+    },
+    {
+     "fecha": "2025-07-22",
+     "norma": "RESOL-2025-1619-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Cristian Andrés Ongaro",
+     "cargo": "Titular del Sector Afiliaciones",
      "agencia": null
     },
     {
@@ -4828,6 +5060,14 @@
      "agencia": "Lavalle"
     },
     {
+     "fecha": "2024-06-07",
+     "norma": "RESOL-2024-1654-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "David Miguel Litvinchuk",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2024-05-17",
      "norma": "RESOL-2024-1401-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -4836,11 +5076,19 @@
      "agencia": null
     },
     {
+     "fecha": "2024-05-17",
+     "norma": "RESOL-2024-1403-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Alejandro Omar Zapata",
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
      "fecha": "2024-03-20",
      "norma": "RESOL-2024-791-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Enrique Daniel Giordano",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Guaymallén"
     },
     {
@@ -4848,7 +5096,7 @@
      "norma": "RESOL-2024-792-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Romina Verónica Flores Cerezo",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Las Heras"
     },
     {
@@ -4866,6 +5114,14 @@
      "persona": "Franco Daniel Ramirez",
      "cargo": "Titular",
      "agencia": "Las Heras"
+    },
+    {
+     "fecha": "2024-03-05",
+     "norma": "RESOL-2024-616-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carlos Patricio Soloa Vacas",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
     },
     {
      "fecha": "2023-08-28",
@@ -4888,7 +5144,7 @@
      "norma": "RESOL-2022-1459-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Alexis Nicolás Castro Salvaneschi",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Las Heras"
     },
     {
@@ -5172,6 +5428,14 @@
      "agencia": "Maipú"
     },
     {
+     "fecha": "2019-01-04",
+     "norma": "RESOL-2019-19-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "José Luis Ramos",
+     "cargo": "Referente PAMI Escucha y Responde, Coordinación MAP",
+     "agencia": null
+    },
+    {
      "fecha": "2018-05-04",
      "norma": "RESOL-2018-405-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -5185,6 +5449,14 @@
      "accion": "alta",
      "persona": "Laura Elizabeth Domínguez",
      "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
+     "fecha": "2017-10-11",
+     "norma": "RESOL-2017-994-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Oscar Hugo Bolero",
+     "cargo": "Coordinador Médico",
      "agencia": null
     },
     {
@@ -5804,6 +6076,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-08-23",
+     "norma": "RESOL-2024-2421-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Franca Grippo",
+     "cargo": "Titular",
+     "agencia": "General Daniel Cerri"
+    },
+    {
      "fecha": "2024-08-07",
      "norma": "RESOL-2024-2250-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -5856,7 +6136,7 @@
      "norma": "RESOL-2024-2096-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Dino Caivano",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Guaminí"
     },
     {
@@ -5864,7 +6144,7 @@
      "norma": "RESOL-2024-2097-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "María Laura Blanco",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Coronel Dorrego"
     },
     {
@@ -5872,7 +6152,7 @@
      "norma": "RESOL-2024-2098-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Emanuel Araque",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Púan"
     },
     {
@@ -6028,6 +6308,14 @@
      "agencia": "Ingeniero White"
     },
     {
+     "fecha": "2024-01-15",
+     "norma": "RESOL-2024-100-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Graciela Julia Gonzalez Prieto",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2022-11-02",
      "norma": "RESOL-2022-1329-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -6164,6 +6452,14 @@
      "agencia": null
     },
     {
+     "fecha": "2020-01-07",
+     "norma": "RESOL-2020-71-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Paola Estefanía Buedo",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2019-05-23",
      "norma": "RESOL-2019-961-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -6172,12 +6468,44 @@
      "agencia": "Guaminí"
     },
     {
+     "fecha": "2019-02-13",
+     "norma": "RESOL-2019-276-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Julián Vilche",
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
      "fecha": "2019-01-15",
      "norma": "RESOL-2019-82-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Anabella Chcair",
      "cargo": "Titular de la Coordinación de Promoción y Prestaciones Sociales",
      "agencia": null
+    },
+    {
+     "fecha": "2018-11-20",
+     "norma": "RESOL-2018-966-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Adrián Rubén Jouglard",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
+     "fecha": "2018-05-11",
+     "norma": "RESOL-2018-436-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Silvia Liliana Ciaccio",
+     "cargo": "Titular de la Coordinación de Promoción y Prestaciones Sociales",
+     "agencia": null
+    },
+    {
+     "fecha": "2018-03-13",
+     "norma": "RESOL-2018-217-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Alberto Gabino Blanco",
+     "cargo": "Titular",
+     "agencia": "Médanos"
     },
     {
      "fecha": "2017-08-17",
@@ -6256,7 +6584,7 @@
      "norma": "RESOL-2016-517-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Hilda Adriana Merlo",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Tres Arroyos"
     },
     {
@@ -6395,6 +6723,12 @@
      "persona": "Juan Pablo Scalese",
      "desde": "2025-12-30",
      "norma": "RESOL-2025-3255-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular del Equipo Recursos Humanos",
+     "persona": "Natalia Jacqueline Sanchez",
+     "desde": "2024-03-25",
+     "norma": "RESOL-2024-885-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular del Sector Intendencia",
@@ -6561,9 +6895,9 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Pablo Saieg",
-       "desde": "2020-02-18",
-       "norma": "RESOL-2020-537-INSSJP-DE#INSSJP"
+       "persona": "Guillermo Javier Raimundo",
+       "desde": "2021-11-25",
+       "norma": "RESOL-2021-1401-INSSJP-DE#INSSJP"
       }
      ]
     }
@@ -6970,6 +7304,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-03-25",
+     "norma": "RESOL-2024-885-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Natalia Jacqueline Sanchez",
+     "cargo": "Titular del Equipo Recursos Humanos",
+     "agencia": null
+    },
+    {
      "fecha": "2024-03-20",
      "norma": "RESOL-2024-801-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -7030,7 +7372,7 @@
      "norma": "RESOL-2022-1219-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Juan Rodolfo Benitez",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "PAMI 3"
     },
     {
@@ -7059,6 +7401,14 @@
     },
     {
      "fecha": "2021-11-25",
+     "norma": "RESOL-2021-1401-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Guillermo Javier Raimundo",
+     "cargo": "Titular",
+     "agencia": "PAMI 9"
+    },
+    {
+     "fecha": "2021-11-25",
      "norma": "RESOL-2021-1406-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Pablo Miguel Saieg",
@@ -7072,6 +7422,14 @@
      "persona": "Fabio Daniel Pedro Arcuri",
      "cargo": "Titular",
      "agencia": "PAMI 2"
+    },
+    {
+     "fecha": "2021-05-06",
+     "norma": "RESOL-2021-629-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Nicolás Javier Calvo",
+     "cargo": "Titular de la Coordinación MAP",
+     "agencia": null
     },
     {
      "fecha": "2021-05-06",
@@ -7298,6 +7656,30 @@
      "agencia": null
     },
     {
+     "fecha": "2018-04-09",
+     "norma": "RESOL-2018-290-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Roberto Vila",
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2018-03-12",
+     "norma": "RESOL-2018-209-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Ana María Leonardi",
+     "cargo": "Referente Prestadores fuera de Convenio de la Coordinación Médica",
+     "agencia": null
+    },
+    {
+     "fecha": "2018-02-16",
+     "norma": "RESOL-2018-130-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Norma Slabovik",
+     "cargo": "Referente Administrativo Contable",
+     "agencia": "PAMI 3"
+    },
+    {
      "fecha": "2017-11-29",
      "norma": "RESOL-2017-1172-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -7440,9 +7822,9 @@
    "autoridades": [
     {
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
-     "persona": "Marina Beatriz Ocampos",
-     "desde": "2021-10-12",
-     "norma": "RESOL-2021-103-INSSJP-SE#INSSJP"
+     "persona": "Rodrigo Héctor Vallejo",
+     "desde": "2024-06-03",
+     "norma": "RESOL-2024-1616-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Jefa de la División Inclusión Social de la Coordinación de Políticas Sociales",
@@ -7493,12 +7875,6 @@
      "norma": "RESOL-2019-1732-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Referente de la unidad orgánica Prestaciones Fuera de Convenio de la Coordinación Médica",
-     "persona": "Armando Claudio Cardoso",
-     "desde": "2023-02-22",
-     "norma": "RESOL-2023-238-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Titular de la Coordinación Administrativo Contable",
      "persona": "Betiana Mariel Salas Ruiz",
      "desde": "2024-06-03",
@@ -7545,6 +7921,12 @@
      "persona": "Sofía Berterretche",
      "desde": "2024-09-20",
      "norma": "RESOL-2024-2720-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular del Departamento Médico",
+     "persona": "Fernando Fabrega",
+     "desde": "2024-11-05",
+     "norma": "RESOL-2024-3136-INSSJP-DE#INSSJP"
     }
    ],
    "agencias": {
@@ -7695,12 +8077,6 @@
      "tipo_original": "CAP",
      "autoridades": [
       {
-       "cargo": "Jefe",
-       "persona": "Analía Verónica Lopez",
-       "desde": "2016-02-02",
-       "norma": "RESOL-2016-108-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
        "persona": "Cinthya Giselle Ferreira",
        "desde": "2024-09-12",
@@ -7779,21 +8155,15 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Nicolás Alejandro Solerno",
-       "desde": "2019-01-15",
-       "norma": "RESOL-2019-83-INSSJP-DE#INSSJP"
+       "persona": "Guillermo Oscar Gadea",
+       "desde": "2020-03-11",
+       "norma": "RESOL-2020-934-INSSJP-DE#INSSJP"
       }
      ]
     },
     "Villa Elisa": {
      "tipo_original": "CAP",
      "autoridades": [
-      {
-       "cargo": "Jefe",
-       "persona": "Eliana Ocampo Zagnoni",
-       "desde": "2019-06-05",
-       "norma": "RESOL-2019-1066-INSSJP-DE#INSSJP"
-      },
       {
        "cargo": "Titular",
        "persona": "Carla Andrea Racedo",
@@ -7913,6 +8283,14 @@
      "norma": "RESOL-2024-3135-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Octavio Gastón Fontana",
+     "cargo": "Titular del Departamento Médico",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-11-05",
+     "norma": "RESOL-2024-3136-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Fernando Fabrega",
      "cargo": "Titular del Departamento Médico",
      "agencia": null
     },
@@ -8150,6 +8528,14 @@
     },
     {
      "fecha": "2024-06-03",
+     "norma": "RESOL-2024-1616-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Rodrigo Héctor Vallejo",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-06-03",
      "norma": "RESOL-2024-1617-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Betiana Mariel Salas Ruiz",
@@ -8221,6 +8607,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-03-11",
+     "norma": "RESOL-2024-665-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Armando Claudio Cardoso",
+     "cargo": "Jefe de la División Auditoría Prestacional",
+     "agencia": null
+    },
+    {
      "fecha": "2024-02-14",
      "norma": "RESOL-2024-405-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -8241,8 +8635,16 @@
      "norma": "RESOL-2024-279-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Paula Analía Pereyra",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Alejandro Korn"
+    },
+    {
+     "fecha": "2024-01-15",
+     "norma": "RESOL-2024-99-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Raúl Carlos Simonetto",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
     },
     {
      "fecha": "2023-03-10",
@@ -8329,7 +8731,7 @@
      "norma": "RESOL-2022-1451-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Cristian Ricardo Aristegui",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Cañuelas"
     },
     {
@@ -8605,6 +9007,14 @@
      "agencia": "City Bell"
     },
     {
+     "fecha": "2020-03-11",
+     "norma": "RESOL-2020-934-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Guillermo Oscar Gadea",
+     "cargo": "Titular",
+     "agencia": "Verónica"
+    },
+    {
      "fecha": "2020-02-20",
      "norma": "RESOL-2020-607-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -8657,7 +9067,7 @@
      "norma": "RESOL-2019-1066-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Eliana Ocampo Zagnoni",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Villa Elisa"
     },
     {
@@ -8675,6 +9085,14 @@
      "persona": "Nicolás Alejandro Solerno",
      "cargo": "Titular",
      "agencia": "Verónica"
+    },
+    {
+     "fecha": "2018-12-11",
+     "norma": "RESOL-2018-1077-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Emilio Eladio Lorenzo",
+     "cargo": "Referente del Equipo Jurídico",
+     "agencia": null
     },
     {
      "fecha": "2017-11-27",
@@ -8753,7 +9171,7 @@
      "norma": "RESOL-2016-1536-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Enrique Luján Rescinito",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Ranchos"
     },
     {
@@ -8841,7 +9259,7 @@
      "norma": "RESOL-2016-108-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Analía Verónica Lopez",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Magdalena"
     },
     {
@@ -9022,12 +9440,6 @@
        "norma": "RESOL-2025-1225-INSSJP-DE#INSSJP"
       },
       {
-       "cargo": "Jefe",
-       "persona": "Matías Casaretto",
-       "desde": "2016-10-27",
-       "norma": "RESOL-2016-1909-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
        "persona": "Guillermo Marcelo de Luca",
        "desde": "2024-07-12",
@@ -9056,12 +9468,6 @@
      "tipo_original": "Agencia",
      "autoridades": [
       {
-       "cargo": "Jefe",
-       "persona": "Luciana Analía Valle",
-       "desde": "2016-12-23",
-       "norma": "RESOL-2016-2306-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
        "persona": "María Fernanda Orcajada",
        "desde": "2024-04-23",
@@ -9072,6 +9478,12 @@
     "Munro": {
      "tipo_original": "Agencia",
      "autoridades": [
+      {
+       "cargo": "Referente Administrativo Contable",
+       "persona": "Rodolfo Matías Pereyra",
+       "desde": "2019-01-25",
+       "norma": "RESOL-2019-198-INSSJP-DE#INSSJP"
+      },
       {
        "cargo": "Titular",
        "persona": "Ana Lucía Glavic",
@@ -9123,12 +9535,6 @@
      "tipo_original": "Agencia",
      "autoridades": [
       {
-       "cargo": "Jefe",
-       "persona": "Maximiliano Carlos Picco",
-       "desde": "2016-04-05",
-       "norma": "RESOL-2016-449-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
        "persona": "Ximena Eleonora Guzman",
        "desde": "2024-08-06",
@@ -9150,12 +9556,6 @@
     "Villa Ballester": {
      "tipo_original": "Agencia",
      "autoridades": [
-      {
-       "cargo": "Jefe",
-       "persona": "Diana Iovine",
-       "desde": "2016-12-26",
-       "norma": "RESOL-2016-2353-INSSJP-DE#INSSJP"
-      },
       {
        "cargo": "Titular",
        "persona": "Matías Gabriel Strajilevich",
@@ -9587,7 +9987,7 @@
      "norma": "RESOL-2024-1112-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Hernán Daniel Ortiz",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Ciudadela"
     },
     {
@@ -9595,7 +9995,7 @@
      "norma": "RESOL-2024-1114-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Flavia Lorena Ramirez",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "José C. Paz"
     },
     {
@@ -9603,7 +10003,7 @@
      "norma": "RESOL-2024-1115-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "María José Guevara",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "San Fernando"
     },
     {
@@ -9611,7 +10011,7 @@
      "norma": "RESOL-2024-1116-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Ciro Hernán Ebi",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "San Miguel"
     },
     {
@@ -9619,7 +10019,7 @@
      "norma": "RESOL-2024-1117-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Federico Daniel Weinzettel",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Vicente López"
     },
     {
@@ -9627,7 +10027,7 @@
      "norma": "RESOL-2024-995-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Nicolás Ezequiel Seibelt",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "General Pacheco"
     },
     {
@@ -9635,7 +10035,7 @@
      "norma": "RESOL-2024-996-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Gustavo Damián Abraham",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Malvinas Argentinas"
     },
     {
@@ -9643,7 +10043,7 @@
      "norma": "RESOL-2024-997-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Oscar Ramón Zacca",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Tigre"
     },
     {
@@ -9661,6 +10061,14 @@
      "persona": "Patricia María Alais Agrelo",
      "cargo": "Titular",
      "agencia": "San Isidro"
+    },
+    {
+     "fecha": "2024-03-01",
+     "norma": "RESOL-2024-598-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Lucas Matías Accardo",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
     },
     {
      "fecha": "2023-09-08",
@@ -9815,6 +10223,14 @@
      "agencia": "San Fernando"
     },
     {
+     "fecha": "2020-02-19",
+     "norma": "RESOL-2020-592-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Lucas Matías Boyanovsky",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2019-12-30",
      "norma": "RESOL-2019-2069-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -9887,6 +10303,14 @@
      "agencia": null
     },
     {
+     "fecha": "2019-01-25",
+     "norma": "RESOL-2019-198-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Rodolfo Matías Pereyra",
+     "cargo": "Referente Administrativo Contable",
+     "agencia": "Munro"
+    },
+    {
      "fecha": "2018-06-05",
      "norma": "RESOL-2018-537-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -9939,7 +10363,7 @@
      "norma": "RESOL-2017-983-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Daniel Oscar Fraboschi",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Munro"
     },
     {
@@ -9955,7 +10379,7 @@
      "norma": "RESOL-2017-960-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Nancy Elba Pelizza",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Munro"
     },
     {
@@ -10043,7 +10467,7 @@
      "norma": "RESOL-2016-2353-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Diana Iovine",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Villa Ballester"
     },
     {
@@ -10051,7 +10475,7 @@
      "norma": "RESOL-2016-2305-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "María Cristina Soubelet",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Malvinas Argentinas"
     },
     {
@@ -10059,7 +10483,7 @@
      "norma": "RESOL-2016-2306-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Luciana Analía Valle",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Malvinas Argentinas"
     },
     {
@@ -10083,7 +10507,7 @@
      "norma": "RESOL-2016-1909-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Matías Casaretto",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "General Pacheco"
     },
     {
@@ -10115,7 +10539,7 @@
      "norma": "RESOL-2016-448-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Maximiliano Carlos Picco",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Tigre"
     },
     {
@@ -10123,7 +10547,7 @@
      "norma": "RESOL-2016-449-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Maximiliano Carlos Picco",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Tigre"
     }
    ]
@@ -10154,6 +10578,12 @@
      "persona": "Gustavo Anselmo Volpe",
      "desde": "2024-03-14",
      "norma": "RESOL-2024-702-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Médica en el Departamento Médico",
+     "persona": "María Sofía Pochettino",
+     "desde": "2026-02-09",
+     "norma": "RESOL-2026-476-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Referente Pami Escucha y Responde",
@@ -10190,6 +10620,12 @@
      "persona": "Antonella D’arpino",
      "desde": "2024-01-25",
      "norma": "RESOL-2024-212-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular de la Coordinación Médica",
+     "persona": "Maria Florencia Rossi",
+     "desde": "2024-01-25",
+     "norma": "RESOL-2024-213-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación de Políticas Sociales",
@@ -10242,14 +10678,7 @@
     },
     "Arroyo Seco": {
      "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Julián Andrés Polinesi",
-       "desde": "2020-02-28",
-       "norma": "RESOL-2020-714-INSSJP-DE#INSSJP"
-      }
-     ]
+     "autoridades": []
     },
     "Carcaraña": {
      "tipo_original": "CAP",
@@ -10278,9 +10707,9 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Luciano Omar Bigoglio",
-       "desde": "2021-06-24",
-       "norma": "RESOL-2021-856-INSSJP-DE#INSSJP"
+       "persona": "Carlos Alberto Saire",
+       "desde": "2024-02-19",
+       "norma": "RESOL-2024-452-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -10309,12 +10738,6 @@
     "Funes": {
      "tipo_original": "CAP",
      "autoridades": [
-      {
-       "cargo": "Jefe",
-       "persona": "Sebastián Aragon",
-       "desde": "2016-03-11",
-       "norma": "RESOL-2016-294-INSSJP-DE#INSSJP"
-      },
       {
        "cargo": "Titular",
        "persona": "Raquel Laura Carletti",
@@ -10479,6 +10902,22 @@
      "agencia": "Arroyo Seco"
     },
     {
+     "fecha": "2026-02-09",
+     "norma": "RESOL-2026-476-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Sofía Pochettino",
+     "cargo": "Médica en el Departamento Médico",
+     "agencia": null
+    },
+    {
+     "fecha": "2026-01-21",
+     "norma": "RESOL-2026-207-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carolina Daniela Novarese",
+     "cargo": "Médica en el Departamento Médico",
+     "agencia": null
+    },
+    {
      "fecha": "2025-10-08",
      "norma": "RESOL-2025-2433-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -10613,6 +11052,14 @@
      "persona": "Eduardo Juan Amatta",
      "cargo": "Titular",
      "agencia": "Chañar Ladeado"
+    },
+    {
+     "fecha": "2025-02-21",
+     "norma": "RESOL-2025-325-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Carina Lorena Cabrera",
+     "cargo": "Titular",
+     "agencia": "San Lorenzo"
     },
     {
      "fecha": "2025-02-21",
@@ -10775,11 +11222,35 @@
      "agencia": null
     },
     {
+     "fecha": "2024-02-19",
+     "norma": "RESOL-2024-452-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carlos Alberto Saire",
+     "cargo": "Titular",
+     "agencia": "Cañada de Gómez"
+    },
+    {
+     "fecha": "2024-02-19",
+     "norma": "RESOL-2024-453-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Fabio Blas Catena",
+     "cargo": "Titular",
+     "agencia": "Arroyo Seco"
+    },
+    {
      "fecha": "2024-01-25",
      "norma": "RESOL-2024-212-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Antonella D’arpino",
      "cargo": "Titular de la Coordinación MAP",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-01-25",
+     "norma": "RESOL-2024-213-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Maria Florencia Rossi",
+     "cargo": "Titular de la Coordinación Médica",
      "agencia": null
     },
     {
@@ -10789,6 +11260,14 @@
      "persona": "Guido Carlos Orlandi",
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
+    },
+    {
+     "fecha": "2023-09-08",
+     "norma": "RESOL-2023-1212-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Graciela Itatí Gauto",
+     "cargo": "Titular",
+     "agencia": "Las Rosas"
     },
     {
      "fecha": "2023-05-17",
@@ -10837,6 +11316,22 @@
      "persona": "Gabriel Luis Parnisari",
      "cargo": "Titular de la Coordinación del Modelo de Atención Personalizada",
      "agencia": null
+    },
+    {
+     "fecha": "2020-06-02",
+     "norma": "RESOL-2020-1546-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Marisa Maldonado",
+     "cargo": "Titular",
+     "agencia": "Venado Tuerto"
+    },
+    {
+     "fecha": "2020-06-02",
+     "norma": "RESOL-2020-1547-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Daniela Cecilia Scaglia",
+     "cargo": "Titular",
+     "agencia": "Rufino"
     },
     {
      "fecha": "2020-06-02",
@@ -10952,6 +11447,14 @@
     },
     {
      "fecha": "2020-02-28",
+     "norma": "RESOL-2020-710-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Natalia Mercedes Meneces",
+     "cargo": "Titular",
+     "agencia": "Villa Gobernador Gálvez"
+    },
+    {
+     "fecha": "2020-02-28",
      "norma": "RESOL-2020-713-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Carla Nerea Farias",
@@ -11029,6 +11532,14 @@
      "persona": "Gustavo Anselmo Volpe",
      "cargo": "Referente Relación con las Organizaciones",
      "agencia": null
+    },
+    {
+     "fecha": "2019-01-25",
+     "norma": "RESOL-2019-199-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Liliana Ester Bessone",
+     "cargo": "Titular",
+     "agencia": "Villa Cañas"
     },
     {
      "fecha": "2018-04-20",
@@ -11147,7 +11658,7 @@
      "norma": "RESOL-2016-817-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Héctor Daniel Zuker",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Casilda"
     },
     {
@@ -11235,7 +11746,7 @@
      "norma": "RESOL-2016-294-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Sebastián Aragon",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Funes"
     },
     {
@@ -11352,12 +11863,6 @@
      "tipo_original": "Agencia",
      "autoridades": [
       {
-       "cargo": "Jefe",
-       "persona": "Carlos Alberto Cejas",
-       "desde": "2016-03-04",
-       "norma": "RESOL-2016-249-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
        "persona": "Luisa Enriqueta Chate Uta",
        "desde": "2024-09-12",
@@ -11428,9 +11933,9 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Sebastián Ismael Santachiara Gonzalez",
-       "desde": "2019-09-02",
-       "norma": "RESOL-2019-1479-INSSJP-DE#INSSJP"
+       "persona": "Romina Paola Di Giovanni",
+       "desde": "2024-03-01",
+       "norma": "RESOL-2024-579-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -11793,7 +12298,7 @@
      "norma": "RESOL-2024-2608-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Yanina Vanesa Salvatierra",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Lomas de Zamora"
     },
     {
@@ -11929,7 +12434,7 @@
      "norma": "RESOL-2024-1303-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Gabriela Melisa Arranz",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Guernica"
     },
     {
@@ -11937,7 +12442,7 @@
      "norma": "RESOL-2024-699-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Ana Cerda",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Lavallol"
     },
     {
@@ -12001,7 +12506,7 @@
      "norma": "RESOL-2024-633-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Natalia Nancy Navarrete",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Glew"
     },
     {
@@ -12017,8 +12522,16 @@
      "norma": "RESOL-2024-642-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Lorena Valeria Stazzonelli",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Adrogüe"
+    },
+    {
+     "fecha": "2024-03-01",
+     "norma": "RESOL-2024-579-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Romina Paola Di Giovanni",
+     "cargo": "Titular",
+     "agencia": "Lanús Centro"
     },
     {
      "fecha": "2024-02-19",
@@ -12042,6 +12555,14 @@
      "accion": "alta",
      "persona": "Hugo Fernando Lares",
      "cargo": "Titular de la Coordinación Medica",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-01-15",
+     "norma": "RESOL-2024-98-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Daniel Roberto Lafonte",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
     {
@@ -12105,7 +12626,7 @@
      "norma": "RESOL-2020-1061-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Mónica Laura Aguirre",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Guernica"
     },
     {
@@ -12181,6 +12702,14 @@
      "agencia": null
     },
     {
+     "fecha": "2020-02-21",
+     "norma": "RESOL-2020-643-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Romina Andrea Solazzi",
+     "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
      "fecha": "2020-01-30",
      "norma": "RESOL-2020-334-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -12209,6 +12738,14 @@
      "norma": "RESOL-2019-1504-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Weimar Omar Sempertegui Catalán",
+     "cargo": "Titular",
+     "agencia": "Wilde"
+    },
+    {
+     "fecha": "2019-09-02",
+     "norma": "RESOL-2019-1474-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Federico David Sass",
      "cargo": "Titular",
      "agencia": "Wilde"
     },
@@ -12285,6 +12822,14 @@
      "agencia": "Glew"
     },
     {
+     "fecha": "2018-06-08",
+     "norma": "RESOL-2018-579-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Silvia Viviana Loto",
+     "cargo": "Titular",
+     "agencia": "Lanús Centro"
+    },
+    {
      "fecha": "2018-03-14",
      "norma": "RESOL-2018-221-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -12322,6 +12867,14 @@
      "accion": "alta",
      "persona": "Walter Matías Sagardoy",
      "cargo": "Titular de la Coordinación de Promoción y Prestaciones Sociales",
+     "agencia": null
+    },
+    {
+     "fecha": "2018-02-01",
+     "norma": "RESOL-2018-82-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Magdalena Escobio Ionna",
+     "cargo": "Titular de la Coordinación General Ejecutiva Local",
      "agencia": null
     },
     {
@@ -12473,7 +13026,7 @@
      "norma": "RESOL-2016-248-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Solange Gonzalez Seipel",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Adrogüe"
     },
     {
@@ -12481,7 +13034,7 @@
      "norma": "RESOL-2016-249-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Carlos Alberto Cejas",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Glew"
     }
    ]
@@ -12489,6 +13042,12 @@
   "XI": {
    "nombre": "Mar del Plata",
    "autoridades": [
+    {
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "persona": "Carlos Javier Vallejos",
+     "desde": "2024-01-15",
+     "norma": "RESOL-2024-114-INSSJP-DE#INSSJP"
+    },
     {
      "cargo": "Referente Afiliaciones, Coordinación MAP",
      "persona": "Gilda Bianchi",
@@ -12610,14 +13169,7 @@
     },
     "Constitución": {
      "tipo_original": "Boca de Atención",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Marcelo Francisco Veneziano",
-       "desde": "2024-08-01",
-       "norma": "RESOL-2024-2169-INSSJP-DE#INSSJP"
-      }
-     ]
+     "autoridades": []
     },
     "Coronel Vidal": {
      "tipo_original": "CAP",
@@ -12638,17 +13190,6 @@
        "persona": "Jorge Ezequiel Dominguez",
        "desde": "2024-05-30",
        "norma": "RESOL-2024-1525-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
-    "Dolores de la Coordinación General Ejecutiva Local XI": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Agustín Etchevest",
-       "desde": "2020-03-16",
-       "norma": "RESOL-2020-1005-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -12766,17 +13307,6 @@
       }
      ]
     },
-    "Pinamar de la Coordinación General Ejecutiva Local XI": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Horacio Héctor Errasquin",
-       "desde": "2020-03-17",
-       "norma": "RESOL-2020-1032-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
     "Quequén": {
      "tipo_original": "CAP",
      "autoridades": [
@@ -12796,17 +13326,6 @@
        "persona": "Luciano David San Martin",
        "desde": "2025-06-23",
        "norma": "RESOL-2025-1418-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
-    "San Clemente": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Luciana Gisela Scarnato",
-       "desde": "2020-04-02",
-       "norma": "RESOL-2020-1136-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -12843,17 +13362,6 @@
       }
      ]
     },
-    "Santa Teresita de la Coordinación General Ejecutiva Local XI": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "María Elena Miletti",
-       "desde": "2020-03-16",
-       "norma": "RESOL-2020-1008-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
     "Tandil": {
      "tipo_original": "Agencia",
      "autoridades": [
@@ -12870,9 +13378,9 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Jorge Luis Darquibel",
-       "desde": "2019-09-23",
-       "norma": "RESOL-2019-1556-INSSJP-DE#INSSJP"
+       "persona": "Omar Javier Russo",
+       "desde": "2024-05-31",
+       "norma": "RESOL-2024-1595-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -12884,17 +13392,6 @@
        "persona": "Emiliano Fernando Carnalli",
        "desde": "2026-06-11",
        "norma": "RESOL-2026-1827-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
-    "Zona Puerto Mar del Plata": {
-     "tipo_original": "Agencia",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Tomás Alberto Amato",
-       "desde": "2024-05-31",
-       "norma": "RESOL-2024-1602-INSSJP-DE#INSSJP"
       }
      ]
     }
@@ -12987,6 +13484,14 @@
      "persona": "Luciano David San Martin",
      "cargo": "Titular",
      "agencia": "San Cayetano"
+    },
+    {
+     "fecha": "2025-04-21",
+     "norma": "RESOL-2025-800-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Emiliano Fernando Cardinalli",
+     "cargo": "Titular",
+     "agencia": "Constitución"
     },
     {
      "fecha": "2025-04-04",
@@ -13238,6 +13743,14 @@
     },
     {
      "fecha": "2024-05-31",
+     "norma": "RESOL-2024-1595-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Omar Javier Russo",
+     "cargo": "Titular",
+     "agencia": "Villa Gesell"
+    },
+    {
+     "fecha": "2024-05-31",
      "norma": "RESOL-2024-1596-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Albertina Siri",
@@ -13357,11 +13870,19 @@
      "agencia": null
     },
     {
+     "fecha": "2024-01-15",
+     "norma": "RESOL-2024-114-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carlos Javier Vallejos",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2023-04-04",
      "norma": "RESOL-2023-423-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Luciana Gisela Scarnato",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "San Clemente Del Tuyu"
     },
     {
@@ -13419,6 +13940,14 @@
      "persona": "Carmiña Macías",
      "cargo": "Titular",
      "agencia": "Lobería"
+    },
+    {
+     "fecha": "2022-02-25",
+     "norma": "RESOL-2022-209-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Jorge Luis Darquibel",
+     "cargo": "Titular",
+     "agencia": "Villa Gesell"
     },
     {
      "fecha": "2021-12-20",
@@ -13546,7 +14075,7 @@
      "accion": "alta",
      "persona": "Horacio Héctor Errasquin",
      "cargo": "Titular",
-     "agencia": "Pinamar de la Coordinación General Ejecutiva Local XI"
+     "agencia": "Pinamar"
     },
     {
      "fecha": "2020-03-17",
@@ -13562,7 +14091,7 @@
      "accion": "alta",
      "persona": "Agustín Etchevest",
      "cargo": "Titular",
-     "agencia": "Dolores de la Coordinación General Ejecutiva Local XI"
+     "agencia": "Dolores"
     },
     {
      "fecha": "2020-03-16",
@@ -13570,7 +14099,7 @@
      "accion": "alta",
      "persona": "María Elena Miletti",
      "cargo": "Titular",
-     "agencia": "Santa Teresita de la Coordinación General Ejecutiva Local XI"
+     "agencia": "Santa Teresita"
     },
     {
      "fecha": "2020-03-09",
@@ -13669,6 +14198,14 @@
      "agencia": null
     },
     {
+     "fecha": "2019-08-22",
+     "norma": "RESOL-2019-1428-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Camilo Emeterio D’onofrio",
+     "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
      "fecha": "2019-06-10",
      "norma": "RESOL-2019-1106-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -13693,6 +14230,14 @@
      "agencia": null
     },
     {
+     "fecha": "2019-05-15",
+     "norma": "RESOL-2019-905-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Irma Cristina Mendoza",
+     "cargo": "Titular",
+     "agencia": "Santa Teresita"
+    },
+    {
      "fecha": "2019-04-08",
      "norma": "RESOL-2019-671-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -13713,6 +14258,14 @@
      "norma": "RESOL-2019-259-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Camilo Emeterio D´onofrio",
+     "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
+     "fecha": "2019-01-29",
+     "norma": "RESOL-2019-203-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Liliana Velis",
      "cargo": "Titular de la Coordinación Médica",
      "agencia": null
     },
@@ -13912,6 +14465,12 @@
      "norma": "RESOL-2023-1792-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Jefe de la División de Derechos Humanos, Gerontología Comunitaria, Género y Políticas de Cuidado",
+     "persona": "Matías Scalabrini",
+     "desde": "2024-03-25",
+     "norma": "RESOL-2024-884-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Titular de la Coordinación M.A.P",
      "persona": "Marcelo Daniel Lopez",
      "desde": "2024-02-15",
@@ -13952,6 +14511,12 @@
      "persona": "José Blas Posadas Saravia",
      "desde": "2024-02-14",
      "norma": "RESOL-2024-410-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular del Equipo Mesa de Entradas, Salidas y Despacho",
+     "persona": "Raúl Gabriel Benavente",
+     "desde": "2024-03-25",
+     "norma": "RESOL-2024-880-INSSJP-DE#INSSJP"
     }
    ],
    "agencias": {
@@ -13960,9 +14525,9 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Laura Haydee Iradis",
-       "desde": "2020-03-02",
-       "norma": "RESOL-2020-763-INSSJP-DE#INSSJP"
+       "persona": "Roberto Enrique Larran Fernandez",
+       "desde": "2024-03-25",
+       "norma": "RESOL-2024-878-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -13974,17 +14539,6 @@
        "persona": "Matías Federico Rodriguez Romero",
        "desde": "2022-12-19",
        "norma": "RESOL-2022-1561-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
-    "Cachi de la Coordinación General Ejecutiva Local XII": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Federico Miguel Cañizares",
-       "desde": "2020-02-28",
-       "norma": "RESOL-2020-704-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -14001,16 +14555,23 @@
     },
     "Cerrillos": {
      "tipo_original": "CAP",
-     "autoridades": []
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "María Mercedes Aranda",
+       "desde": "2024-03-25",
+       "norma": "RESOL-2024-879-INSSJP-DE#INSSJP"
+      }
+     ]
     },
     "El Carril": {
      "tipo_original": "CAP",
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Emilia Fabiana Juarez",
-       "desde": "2020-03-02",
-       "norma": "RESOL-2020-738-INSSJP-DE#INSSJP"
+       "persona": "Nancy del Valle Franco",
+       "desde": "2024-03-27",
+       "norma": "RESOL-2024-905-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -14019,9 +14580,9 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Javier Eduardo Navarreta",
-       "desde": "2020-03-09",
-       "norma": "RESOL-2020-867-INSSJP-DE#INSSJP"
+       "persona": "Carlos Manuel Romano",
+       "desde": "2024-03-27",
+       "norma": "RESOL-2024-906-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -14057,7 +14618,14 @@
     },
     "Metán": {
      "tipo_original": "CAP",
-     "autoridades": []
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Jesica del Carmen Santillan",
+       "desde": "2024-03-25",
+       "norma": "RESOL-2024-883-INSSJP-DE#INSSJP"
+      }
+     ]
     },
     "Orán": {
      "tipo_original": "Agencia",
@@ -14084,7 +14652,14 @@
     },
     "Rosario de la Frontera": {
      "tipo_original": "CAP",
-     "autoridades": []
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Nicolás Esteban Poliche Huerga",
+       "desde": "2024-03-25",
+       "norma": "RESOL-2024-881-INSSJP-DE#INSSJP"
+      }
+     ]
     },
     "Tartagal": {
      "tipo_original": "Agencia",
@@ -14201,6 +14776,22 @@
     },
     {
      "fecha": "2024-03-27",
+     "norma": "RESOL-2024-905-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Nancy del Valle Franco",
+     "cargo": "Titular",
+     "agencia": "El Carril"
+    },
+    {
+     "fecha": "2024-03-27",
+     "norma": "RESOL-2024-906-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carlos Manuel Romano",
+     "cargo": "Titular",
+     "agencia": "Embarcación"
+    },
+    {
+     "fecha": "2024-03-27",
      "norma": "RESOL-2024-911-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Adriana Cecilia Perez Aguilar",
@@ -14230,6 +14821,54 @@
      "persona": "Vanesa Daniela Chaud Daniel",
      "cargo": "Titular",
      "agencia": "Rosario de la Frontera"
+    },
+    {
+     "fecha": "2024-03-25",
+     "norma": "RESOL-2024-878-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Roberto Enrique Larran Fernandez",
+     "cargo": "Titular",
+     "agencia": "Apolinario Saravia"
+    },
+    {
+     "fecha": "2024-03-25",
+     "norma": "RESOL-2024-879-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Mercedes Aranda",
+     "cargo": "Titular",
+     "agencia": "Cerrillos"
+    },
+    {
+     "fecha": "2024-03-25",
+     "norma": "RESOL-2024-880-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Raúl Gabriel Benavente",
+     "cargo": "Titular del Equipo Mesa de Entradas, Salidas y Despacho",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-03-25",
+     "norma": "RESOL-2024-881-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Nicolás Esteban Poliche Huerga",
+     "cargo": "Titular",
+     "agencia": "Rosario de la Frontera"
+    },
+    {
+     "fecha": "2024-03-25",
+     "norma": "RESOL-2024-883-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Jesica del Carmen Santillan",
+     "cargo": "Titular",
+     "agencia": "Metán"
+    },
+    {
+     "fecha": "2024-03-25",
+     "norma": "RESOL-2024-884-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Matías Scalabrini",
+     "cargo": "Jefe de la División de Derechos Humanos, Gerontología Comunitaria, Género y Políticas de Cuidado",
+     "agencia": null
     },
     {
      "fecha": "2024-03-13",
@@ -14312,6 +14951,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-01-12",
+     "norma": "RESOL-2024-62-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sergio Dante Lope Alcobendas",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2023-11-14",
      "norma": "RESOL-2023-1792-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -14332,7 +14979,7 @@
      "norma": "RESOL-2023-1146-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "María Luz Biurrun",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Metán"
     },
     {
@@ -14356,7 +15003,7 @@
      "norma": "RESOL-2022-1560-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Federico Miguel Cañizares",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Cachi"
     },
     {
@@ -14509,7 +15156,7 @@
      "accion": "alta",
      "persona": "Federico Miguel Cañizares",
      "cargo": "Titular",
-     "agencia": "Cachi de la Coordinación General Ejecutiva Local XII"
+     "agencia": "Cachi"
     },
     {
      "fecha": "2020-02-28",
@@ -14581,6 +15228,14 @@
      "accion": "baja",
      "persona": "Hugo Alberto Kairuz",
      "cargo": "Referente MOEIT de la Coordinación MAP",
+     "agencia": null
+    },
+    {
+     "fecha": "2018-04-25",
+     "norma": "RESOL-2018-377-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "María Inés Derendinger",
+     "cargo": "Referente del Equipo RRHH",
      "agencia": null
     },
     {
@@ -15404,6 +16059,14 @@
      "agencia": "Barranqueras"
     },
     {
+     "fecha": "2018-07-25",
+     "norma": "RESOL-2018-764-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Silvia Clelia Lastape",
+     "cargo": "Referente Afiliaciones de la Coordinación MAP",
+     "agencia": null
+    },
+    {
      "fecha": "2017-11-29",
      "norma": "RESOL-2017-1174-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -15482,9 +16145,9 @@
    "autoridades": [
     {
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
-     "persona": "Claudio Vicente Ledesma",
-     "desde": "2020-01-29",
-     "norma": "RESOL-2020-325-INSSJP-DE#INSSJP"
+     "persona": "José Julio Barci",
+     "desde": "2024-02-15",
+     "norma": "RESOL-2024-423-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Coordinador Médico",
@@ -15576,7 +16239,7 @@
      "tipo_original": "Boca de Atención",
      "autoridades": [
       {
-       "cargo": "Responsable",
+       "cargo": "Titular",
        "persona": "Mariela Carolina Schmukler",
        "desde": "2024-08-06",
        "norma": "RESOL-2024-2218-INSSJP-DE#INSSJP"
@@ -15613,17 +16276,6 @@
        "persona": "Osvaldo Ramón Medina",
        "desde": "2024-03-27",
        "norma": "RESOL-2024-915-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
-    "Macia de la Coordinación General Ejecutiva Local XIV": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "María Evangelina Gutierrez",
-       "desde": "2020-03-12",
-       "norma": "RESOL-2020-961-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -15778,7 +16430,7 @@
      "norma": "RESOL-2024-2218-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Mariela Carolina Schmukler",
-     "cargo": "Responsable",
+     "cargo": "Titular",
      "agencia": "Hasenkamp"
     },
     {
@@ -15966,6 +16618,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-02-15",
+     "norma": "RESOL-2024-423-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "José Julio Barci",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2023-07-28",
      "norma": "RESOL-2023-1023-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -15987,7 +16647,7 @@
      "accion": "alta",
      "persona": "María Evangelina Gutierrez",
      "cargo": "Titular",
-     "agencia": "Macia de la Coordinación General Ejecutiva Local XIV"
+     "agencia": "Macia"
     },
     {
      "fecha": "2020-03-12",
@@ -16051,7 +16711,7 @@
      "accion": "alta",
      "persona": "María Cecilia Brasseur",
      "cargo": "Titular",
-     "agencia": "Crespo de la Coordinación General Ejecutiva Local XIV"
+     "agencia": "Crespo"
     },
     {
      "fecha": "2020-03-09",
@@ -16194,6 +16854,12 @@
   "XV": {
    "nombre": "Santa Fe",
    "autoridades": [
+    {
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "persona": "Miguel Antonio Velazco",
+     "desde": "2024-02-19",
+     "norma": "RESOL-2024-461-INSSJP-DE#INSSJP"
+    },
     {
      "cargo": "Jefa de la División Tesorería, de la Coordinación Administrativo Contable",
      "persona": "Alida Rita Cudini",
@@ -16338,12 +17004,6 @@
      "tipo_original": "CAP",
      "autoridades": [
       {
-       "cargo": "Jefe",
-       "persona": "María Victoria Weiss Ackerley",
-       "desde": "2019-11-29",
-       "norma": "RESOL-2019-1931-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
        "persona": "Cecilia Trinidad Martinez",
        "desde": "2020-04-22",
@@ -16421,17 +17081,6 @@
       }
      ]
     },
-    "San Cristóbal de la Coordinación General Ejecutiva Local XV": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Ricardo Esteban Gutman",
-       "desde": "2020-02-28",
-       "norma": "RESOL-2020-712-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
     "San Guillermo": {
      "tipo_original": "CAP",
      "autoridades": [
@@ -16451,17 +17100,6 @@
        "persona": "Germán Darío Ricca",
        "desde": "2025-02-21",
        "norma": "RESOL-2025-331-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
-    "San Javier de la Coordinación General Ejecutiva Local XV": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Martina Soledad Questa",
-       "desde": "2020-02-28",
-       "norma": "RESOL-2020-717-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -16528,17 +17166,6 @@
        "persona": "Eduardo Antonio Perez",
        "desde": "2026-06-03",
        "norma": "RESOL-2026-1692-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
-    "Villa Gobernador Gálvez de la Coordinación General Ejecutiva Local XV": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Natalia Mercedes Meneces",
-       "desde": "2020-02-28",
-       "norma": "RESOL-2020-710-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -16900,6 +17527,22 @@
      "agencia": null
     },
     {
+     "fecha": "2024-02-19",
+     "norma": "RESOL-2024-461-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Miguel Antonio Velazco",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
+     "fecha": "2023-09-13",
+     "norma": "RESOL-2023-1291-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Marcela Alejandra Garciarogido",
+     "cargo": "Referente de Afiliaciones, Coordinación MAP",
+     "agencia": null
+    },
+    {
      "fecha": "2023-07-04",
      "norma": "RESOL-2023-870-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -17081,15 +17724,7 @@
      "accion": "alta",
      "persona": "Darío Cesar Lopez",
      "cargo": "Titular",
-     "agencia": "Las Toscas de la Coordinación General Ejecutiva Local XV"
-    },
-    {
-     "fecha": "2020-02-28",
-     "norma": "RESOL-2020-710-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Natalia Mercedes Meneces",
-     "cargo": "Titular",
-     "agencia": "Villa Gobernador Gálvez de la Coordinación General Ejecutiva Local XV"
+     "agencia": "Las Toscas"
     },
     {
      "fecha": "2020-02-28",
@@ -17105,7 +17740,7 @@
      "accion": "alta",
      "persona": "Ricardo Esteban Gutman",
      "cargo": "Titular",
-     "agencia": "San Cristóbal de la Coordinación General Ejecutiva Local XV"
+     "agencia": "San Cristóbal"
     },
     {
      "fecha": "2020-02-28",
@@ -17113,7 +17748,7 @@
      "accion": "alta",
      "persona": "Martina Soledad Questa",
      "cargo": "Titular",
-     "agencia": "San Javier de la Coordinación General Ejecutiva Local XV"
+     "agencia": "San Javier"
     },
     {
      "fecha": "2020-01-13",
@@ -17136,7 +17771,7 @@
      "norma": "RESOL-2019-1931-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "María Victoria Weiss Ackerley",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Helvecia"
     },
     {
@@ -17507,12 +18142,6 @@
      "tipo_original": "Agencia",
      "autoridades": [
       {
-       "cargo": "Jefe",
-       "persona": "Lucas Nicolás Fittipaldi",
-       "desde": "2024-08-27",
-       "norma": "RESOL-2024-2456-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
        "persona": "María Patricia Matus Carrillo",
        "desde": "2025-12-11",
@@ -17566,16 +18195,23 @@
     },
     "San Martín de los Andes": {
      "tipo_original": "CAP",
-     "autoridades": []
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Cintia Natalia Zamora",
+       "desde": "2024-05-27",
+       "norma": "RESOL-2024-1478-INSSJP-DE#INSSJP"
+      }
+     ]
     },
     "Villa Langostura": {
      "tipo_original": "CAP",
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Alejo Andrés Silva Grecchi",
-       "desde": "2020-05-11",
-       "norma": "RESOL-2020-1429-INSSJP-DE#INSSJP"
+       "persona": "Pablo Alfredo Javes",
+       "desde": "2024-05-27",
+       "norma": "RESOL-2024-1477-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -17746,6 +18382,14 @@
     },
     {
      "fecha": "2025-11-04",
+     "norma": "RESOL-2025-2689-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Justo Maximiliano Isaguirre Guiñazu",
+     "cargo": "Titular del Sector Intendencia, Departamento Administrativo",
+     "agencia": null
+    },
+    {
+     "fecha": "2025-11-04",
      "norma": "RESOL-2025-2691-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Gustavo Augusto Capdevila Fuentes",
@@ -17845,7 +18489,7 @@
      "norma": "RESOL-2024-2456-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Lucas Nicolás Fittipaldi",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Neuquén"
     },
     {
@@ -17954,6 +18598,30 @@
     },
     {
      "fecha": "2024-05-27",
+     "norma": "RESOL-2024-1476-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Nahuel Gonzalo Godoy",
+     "cargo": "Titular",
+     "agencia": "Junín de los Andes"
+    },
+    {
+     "fecha": "2024-05-27",
+     "norma": "RESOL-2024-1477-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pablo Alfredo Javes",
+     "cargo": "Titular",
+     "agencia": "Villa Langostura"
+    },
+    {
+     "fecha": "2024-05-27",
+     "norma": "RESOL-2024-1478-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Cintia Natalia Zamora",
+     "cargo": "Titular",
+     "agencia": "San Martín de los Andes"
+    },
+    {
+     "fecha": "2024-05-27",
      "norma": "RESOL-2024-1479-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Natalia Andrea Díaz",
@@ -17998,6 +18666,14 @@
      "accion": "alta",
      "persona": "Nadia Verónica Bassignani",
      "cargo": "Intendente de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-02-19",
+     "norma": "RESOL-2024-465-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mario Valentín Landeiro",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
     {
@@ -18145,6 +18821,22 @@
      "agencia": null
     },
     {
+     "fecha": "2019-02-13",
+     "norma": "RESOL-2019-275-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Susana Elizabeth Tanuz",
+     "cargo": "Titular",
+     "agencia": "Centenario"
+    },
+    {
+     "fecha": "2018-03-13",
+     "norma": "RESOL-2018-218-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Gloria Victoria Roger",
+     "cargo": "Titular",
+     "agencia": "Neuquén"
+    },
+    {
      "fecha": "2017-12-12",
      "norma": "RESOL-2017-1236-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -18242,12 +18934,6 @@
      "persona": "Cristina Beatriz Blanco",
      "desde": "2024-04-24",
      "norma": "RESOL-2024-1157-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Titular de la Coordinación General Ejecutiva Local XVII",
-     "persona": "Lidia del Valle Cordoba",
-     "desde": "2017-03-20",
-     "norma": "RESOL-2017-360-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación Médica",
@@ -18464,7 +19150,7 @@
      "norma": "RESOL-2024-1148-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Nicolás José Aused",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Trevelín"
     },
     {
@@ -18701,6 +19387,14 @@
     },
     {
      "fecha": "2020-01-22",
+     "norma": "RESOL-2020-262-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Lidia del Valle Cordoba",
+     "cargo": "Jefa de la Dirección Ejecutiva Local",
+     "agencia": null
+    },
+    {
+     "fecha": "2020-01-22",
      "norma": "RESOL-2020-266-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "María Eva D´urzo",
@@ -18732,6 +19426,14 @@
      "agencia": null
     },
     {
+     "fecha": "2018-12-11",
+     "norma": "RESOL-2018-1070-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Lidia del Valle Cordoba",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2017-03-20",
      "norma": "RESOL-2017-360-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -18752,7 +19454,7 @@
      "norma": "RESOL-2016-1401-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Mónica Susana Romanut",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Rawson"
     },
     {
@@ -18976,12 +19678,6 @@
     "El Dorado": {
      "tipo_original": "Agencia",
      "autoridades": [
-      {
-       "cargo": "Jefe",
-       "persona": "Silvina Portillo",
-       "desde": "2016-07-21",
-       "norma": "RESOL-2016-1278-INSSJP-DE#INSSJP"
-      },
       {
        "cargo": "Referente Moeit",
        "persona": "Tamaris Elizabet Weller",
@@ -19577,6 +20273,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-06-07",
+     "norma": "RESOL-2024-1655-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Ninfa Zunilda Alvarenga",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2024-03-27",
      "norma": "RESOL-2024-916-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -19598,6 +20302,14 @@
      "accion": "alta",
      "persona": "Ricardo Néstor Zacarias",
      "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-02-19",
+     "norma": "RESOL-2024-469-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Paulo César Zarate Minamango",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
     {
@@ -19861,7 +20573,7 @@
      "norma": "RESOL-2016-1278-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Silvina Portillo",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "El Dorado"
     },
     {
@@ -19956,6 +20668,12 @@
      "norma": "RESOL-2020-396-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Titular del Departamento Administrativo",
+     "persona": "Martín Manzur",
+     "desde": "2024-12-09",
+     "norma": "RESOL-2024-3399-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Titular del Equipo Tecnología de la Información y Comunicaciones",
      "persona": "Magali del Carmen Pavon",
      "desde": "2019-09-02",
@@ -20038,12 +20756,6 @@
     "Frías": {
      "tipo_original": "CAP",
      "autoridades": [
-      {
-       "cargo": "Jefe",
-       "persona": "Javier Oscar Castillo",
-       "desde": "2022-07-05",
-       "norma": "RESOL-2022-814-INSSJP-DE#INSSJP"
-      },
       {
        "cargo": "Titular",
        "persona": "Cristian Heriberto Mellberg Cheble",
@@ -20207,20 +20919,14 @@
       }
      ]
     },
-    "Termas de Río Hondo": {
+    "Termas de Rio Hondo": {
      "tipo_original": "CAP",
      "autoridades": [
       {
-       "cargo": "Jefe",
-       "persona": "Norma Judit Iñiguez",
-       "desde": "2016-06-23",
-       "norma": "RESOL-2016-1073-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
-       "persona": "Ana Cecilia Carino Banchero",
-       "desde": "2025-03-28",
-       "norma": "RESOL-2025-616-INSSJP-DE#INSSJP"
+       "persona": "Marcelo Emanuel Sosa",
+       "desde": "2026-06-03",
+       "norma": "RESOL-2026-1718-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -20375,6 +21081,14 @@
      "persona": "María Fiorella Chavez Mansilla",
      "cargo": "Titular",
      "agencia": "Vlla Atamisqui"
+    },
+    {
+     "fecha": "2026-06-03",
+     "norma": "RESOL-2026-1718-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Marcelo Emanuel Sosa",
+     "cargo": "Titular",
+     "agencia": "Termas de Rio Hondo"
     },
     {
      "fecha": "2026-02-20",
@@ -20545,6 +21259,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-12-09",
+     "norma": "RESOL-2024-3399-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Martín Manzur",
+     "cargo": "Titular del Departamento Administrativo",
+     "agencia": null
+    },
+    {
      "fecha": "2024-12-02",
      "norma": "RESOL-2024-3314-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -20697,6 +21419,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-05-29",
+     "norma": "RESOL-2024-1513-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Luis Alberto Degano",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2024-03-25",
      "norma": "RESOL-2024-872-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -20719,6 +21449,22 @@
      "persona": "Marcela Elena Coronel",
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
+    },
+    {
+     "fecha": "2023-11-03",
+     "norma": "RESOL-2023-1697-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Zulma Aydee Barreto",
+     "cargo": "Titular",
+     "agencia": "Villa Atamisqui"
+    },
+    {
+     "fecha": "2023-11-03",
+     "norma": "RESOL-2023-1698-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Diego Fabián Gimenez",
+     "cargo": "Titular",
+     "agencia": "Nueva Esperanza"
     },
     {
      "fecha": "2023-08-28",
@@ -20749,7 +21495,7 @@
      "norma": "RESOL-2022-814-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Javier Oscar Castillo",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Frías"
     },
     {
@@ -20913,6 +21659,22 @@
      "agencia": null
     },
     {
+     "fecha": "2019-11-14",
+     "norma": "RESOL-2019-1875-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Marta Griselda Bonahora",
+     "cargo": "Titular",
+     "agencia": "Monte Quemado"
+    },
+    {
+     "fecha": "2019-10-23",
+     "norma": "RESOL-2019-1717-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Francisco Orlando Gerez",
+     "cargo": "Titular",
+     "agencia": "Tintina"
+    },
+    {
      "fecha": "2019-10-15",
      "norma": "RESOL-2019-1650-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -20981,8 +21743,16 @@
      "norma": "RESOL-2019-1242-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Víctor Roberto Porfirio",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Loreto"
+    },
+    {
+     "fecha": "2019-06-28",
+     "norma": "RESOL-2019-1199-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Estela Ramona Font",
+     "cargo": "Titular",
+     "agencia": "Quimili"
     },
     {
      "fecha": "2019-06-06",
@@ -21037,7 +21807,7 @@
      "norma": "RESOL-2016-1071-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Antonio Luis de Matos Figueiredo",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Termas de Río Hondo"
     },
     {
@@ -21045,7 +21815,7 @@
      "norma": "RESOL-2016-1073-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Norma Judit Iñiguez",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Termas de Río Hondo"
     },
     {
@@ -21053,7 +21823,7 @@
      "norma": "RESOL-2016-1047-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Omar Simón Blazquez",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "La Banda"
     }
    ]
@@ -21321,7 +22091,14 @@
     },
     "Victorica": {
      "tipo_original": "CAP",
-     "autoridades": []
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "María Geraldine Becerra Torres",
+       "desde": "2025-04-21",
+       "norma": "RESOL-2025-795-INSSJP-DE#INSSJP"
+      }
+     ]
     }
    },
    "historial": [
@@ -21426,6 +22203,14 @@
      "norma": "RESOL-2025-787-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Natalia Belén Perez",
+     "cargo": "Titular",
+     "agencia": "Victorica"
+    },
+    {
+     "fecha": "2025-04-21",
+     "norma": "RESOL-2025-795-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Geraldine Becerra Torres",
      "cargo": "Titular",
      "agencia": "Victorica"
     },
@@ -21726,6 +22511,14 @@
      "agencia": null
     },
     {
+     "fecha": "2019-05-10",
+     "norma": "RESOL-2019-882-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Elsa Beatriz Martin",
+     "cargo": "Titular",
+     "agencia": "Catrilo"
+    },
+    {
      "fecha": "2018-04-24",
      "norma": "RESOL-2018-369-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -21835,16 +22628,22 @@
      "norma": "RESOL-2019-1513-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Titular de la Coordinación Medica",
-     "persona": "Héctor Gastón Pedraza",
-     "desde": "2024-02-19",
-     "norma": "RESOL-2024-460-INSSJP-DE#INSSJP"
+     "cargo": "Titular de la Coordinación Médica",
+     "persona": "Juan Alberto Ortiz Ruiz",
+     "desde": "2024-04-25",
+     "norma": "RESOL-2024-1172-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la División Recursos Humanos, Departamento Administrativo",
      "persona": "Alejandro Javier Viglino Binia",
      "desde": "2025-05-28",
      "norma": "RESOL-2025-1148-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular del Equipo Jurídico",
+     "persona": "Mariano Andrés Aguilar",
+     "desde": "2024-02-05",
+     "norma": "RESOL-2024-321-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular del Equipo de Tecnología de la Información y Comunicaciones",
@@ -21898,6 +22697,14 @@
      "agencia": null
     },
     {
+     "fecha": "2026-02-11",
+     "norma": "RESOL-2026-499-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Juan Alberto Ortiz Ruiz",
+     "cargo": "Firma delegada de la UGL",
+     "agencia": null
+    },
+    {
      "fecha": "2025-05-28",
      "norma": "RESOL-2025-1148-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -21930,6 +22737,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-04-25",
+     "norma": "RESOL-2024-1172-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Juan Alberto Ortiz Ruiz",
+     "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
      "fecha": "2024-02-28",
      "norma": "RESOL-2024-558-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -21951,6 +22766,22 @@
      "accion": "alta",
      "persona": "Héctor Gastón Pedraza",
      "cargo": "Titular de la Coordinación Medica",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-02-05",
+     "norma": "RESOL-2024-321-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mariano Andrés Aguilar",
+     "cargo": "Titular del Equipo Jurídico",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-01-15",
+     "norma": "RESOL-2024-105-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "José Rafael Claros",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
     {
@@ -22135,22 +22966,16 @@
    "nombre": "Jujuy",
    "autoridades": [
     {
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "persona": "Evaristo Bautisto",
+     "desde": "2024-03-04",
+     "norma": "RESOL-2024-609-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Jefe de la División Tesorería de la Coordinación Administrativo Contable",
      "persona": "Leonor Alejandra de Tezanos Pinto",
      "desde": "2017-01-23",
      "norma": "RESOL-2017-79-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Referente Fuera de Convenio, Coordinación Médica",
-     "persona": "Alicia Beatriz Jose",
-     "desde": "2016-05-30",
-     "norma": "RESOL-2016-877-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Referente del Equipo Jurídico",
-     "persona": "María Soledad Cufi",
-     "desde": "2021-10-18",
-     "norma": "RESOL-2021-122-INSSJP-SE#INSSJP"
     },
     {
      "cargo": "Referente del Equipo Mesa de Entradas, Salidas y Despacho",
@@ -22184,15 +23009,21 @@
     },
     {
      "cargo": "Titular de la Coordinación Médica",
-     "persona": "Adolfo Enrique Pestoni",
-     "desde": "2016-05-30",
-     "norma": "RESOL-2016-876-INSSJP-DE#INSSJP"
+     "persona": "Gerardo Felipe Alvarez",
+     "desde": "2024-03-20",
+     "norma": "RESOL-2024-789-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación de Políticas Sociales",
      "persona": "Juan Manuel Madrid",
      "desde": "2024-03-27",
      "norma": "RESOL-2024-932-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular del Equipo Jurídico",
+     "persona": "Gisela Alejandra Martin",
+     "desde": "2024-12-18",
+     "norma": "RESOL-2024-3475-INSSJP-DE#INSSJP"
     }
    ],
    "agencias": {
@@ -22266,6 +23097,14 @@
      "agencia": "Humahuaca"
     },
     {
+     "fecha": "2024-12-18",
+     "norma": "RESOL-2024-3475-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Gisela Alejandra Martin",
+     "cargo": "Titular del Equipo Jurídico",
+     "agencia": null
+    },
+    {
      "fecha": "2024-08-27",
      "norma": "RESOL-2024-2454-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -22315,6 +23154,14 @@
     },
     {
      "fecha": "2024-03-20",
+     "norma": "RESOL-2024-789-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Gerardo Felipe Alvarez",
+     "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-03-20",
      "norma": "RESOL-2024-799-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Leticia Natalia Paredes",
@@ -22334,6 +23181,14 @@
      "norma": "RESOL-2024-632-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Francisco Daniel Rodriguez",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-03-04",
+     "norma": "RESOL-2024-609-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Evaristo Bautisto",
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
@@ -22522,11 +23377,27 @@
      "agencia": "San Pedro"
     },
     {
+     "fecha": "2019-05-16",
+     "norma": "RESOL-2019-929-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Alicia Beatriz Jose",
+     "cargo": "Referente Prestaciones Fuera de Convenio, Coordinación Médica",
+     "agencia": null
+    },
+    {
      "fecha": "2018-06-05",
      "norma": "RESOL-2018-547-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Agustina Beller",
      "cargo": "Referente del Equipo Jurídico",
+     "agencia": null
+    },
+    {
+     "fecha": "2018-01-18",
+     "norma": "RESOL-2018-46-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Marta Magdalena Cruz",
+     "cargo": "Referente de Afiliaciones, Coordinación MAP",
      "agencia": null
     },
     {
@@ -23461,6 +24332,12 @@
      "norma": "RESOL-2024-913-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Jefa del Departamento Médico",
+     "persona": "Andrea María Lobos",
+     "desde": "2024-09-23",
+     "norma": "RESOL-2024-2709-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Referente de Pami Escucha y Responde, de la Coordinación del Modelo de Atención Personalizada",
      "persona": "Laura Elizabeth Aguirre",
      "desde": "2023-07-19",
@@ -23495,6 +24372,12 @@
      "persona": "Roxana Gabriela Godoy",
      "desde": "2024-09-19",
      "norma": "RESOL-2024-2711-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular del Departamento Contable",
+     "persona": "Enzo Darío Avellaneda",
+     "desde": "2024-09-19",
+     "norma": "RESOL-2024-2708-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular del Equipo Jurídico",
@@ -23589,7 +24472,7 @@
      "tipo_original": "CAP",
      "autoridades": [
       {
-       "cargo": "Jefe",
+       "cargo": "Titular",
        "persona": "Sonia del Valle Maturano",
        "desde": "2016-08-22",
        "norma": "RESOL-2016-1553-INSSJP-DE#INSSJP"
@@ -23693,6 +24576,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-09-23",
+     "norma": "RESOL-2024-2709-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Andrea María Lobos",
+     "cargo": "Jefa del Departamento Médico",
+     "agencia": null
+    },
+    {
      "fecha": "2024-09-19",
      "norma": "RESOL-2024-2703-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -23705,6 +24596,14 @@
      "norma": "RESOL-2024-2704-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Luis Miguel Martinez",
+     "cargo": "Titular del Departamento Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-09-19",
+     "norma": "RESOL-2024-2708-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Enzo Darío Avellaneda",
      "cargo": "Titular del Departamento Contable",
      "agencia": null
     },
@@ -23817,6 +24716,14 @@
      "norma": "RESOL-2024-418-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Silvia Adriana Lopez",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-02-15",
+     "norma": "RESOL-2024-421-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Alberto Horacio Almada",
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
@@ -23961,7 +24868,7 @@
      "norma": "RESOL-2016-1553-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Sonia del Valle Maturano",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Santa María"
     },
     {
@@ -23982,12 +24889,6 @@
      "persona": "Iván Ezequiel Luna Diaz",
      "desde": "2026-09-14",
      "norma": "RESOL-2026-2856-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Firma delegada de la UGL",
-     "persona": "Iván Ezequiel Luna Diaz",
-     "desde": "2026-09-03",
-     "norma": "RESOL-2026-2767-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Jefa de la División de Derechos Humanos, Gerontología Comunitaria, Género y Políticas de Cuidado, de la Coordinación de Políticas Sociales, Coordinación General Ejecutiva Local XXV",
@@ -24051,9 +24952,9 @@
     },
     {
      "cargo": "Titular de la Coordinación Médica",
-     "persona": "Cesar Miguel Carrizo",
-     "desde": "2017-12-28",
-     "norma": "RESOL-2017-1318-INSSJP-DE#INSSJP"
+     "persona": "Iván Exequiel Luna Díaz",
+     "desde": "2024-01-23",
+     "norma": "RESOL-2024-198-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación de Promoción y Prestaciones Sociales",
@@ -24165,8 +25066,8 @@
      "tipo_original": "CAP",
      "autoridades": [
       {
-       "cargo": "Jefa",
-       "persona": "Licencia Laura Analía Robador",
+       "cargo": "Titular",
+       "persona": "Laura Analía Robador",
        "desde": "2024-05-23",
        "norma": "RESOL-2024-1439-INSSJP-DE#INSSJP"
       }
@@ -24202,6 +25103,17 @@
        "persona": "María Silvia Moyano",
        "desde": "2024-05-08",
        "norma": "RESOL-2024-1312-INSSJP-DE#INSSJP"
+      }
+     ]
+    },
+    "San Blas de los Sauces": {
+     "tipo_original": "Boca de Atención",
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Nicolasa Ana María del Cul",
+       "desde": "2024-11-08",
+       "norma": "RESOL-2024-3162-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -24297,6 +25209,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-11-08",
+     "norma": "RESOL-2024-3162-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Nicolasa Ana María del Cul",
+     "cargo": "Titular",
+     "agencia": "San Blas de los Sauces"
+    },
+    {
      "fecha": "2024-10-30",
      "norma": "RESOL-2024-3061-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -24349,15 +25269,15 @@
      "norma": "RESOL-2024-1438-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Marcela del Valle Mercado",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Chilecito"
     },
     {
      "fecha": "2024-05-23",
      "norma": "RESOL-2024-1439-INSSJP-DE#INSSJP",
      "accion": "alta",
-     "persona": "Licencia Laura Analía Robador",
-     "cargo": "Jefa",
+     "persona": "Laura Analía Robador",
+     "cargo": "Titular",
      "agencia": "Chilecito"
     },
     {
@@ -24471,6 +25391,22 @@
      "persona": "María Rosana Tejada",
      "cargo": "Titular",
      "agencia": "Villa Unión"
+    },
+    {
+     "fecha": "2024-01-23",
+     "norma": "RESOL-2024-198-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Iván Exequiel Luna Díaz",
+     "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-01-12",
+     "norma": "RESOL-2024-63-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Amado Omar Menem",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
     },
     {
      "fecha": "2023-07-19",
@@ -24589,7 +25525,7 @@
      "norma": "RESOL-2019-1510-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "José Ignacio Gonzalez",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Anillaco"
     },
     {
@@ -24681,6 +25617,22 @@
      "agencia": null
     },
     {
+     "fecha": "2018-02-21",
+     "norma": "RESOL-2018-140-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Juan Carlos Castro",
+     "cargo": "Referente de PAMI Escucha y Responde, Coordinación MAP",
+     "agencia": null
+    },
+    {
+     "fecha": "2018-02-21",
+     "norma": "RESOL-2018-141-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Juan Carlos Castro",
+     "cargo": "Referente de PAMI Escucha y Responde, Coordinación MAP",
+     "agencia": null
+    },
+    {
      "fecha": "2017-12-28",
      "norma": "RESOL-2017-1317-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -24714,12 +25666,6 @@
      "persona": "Ada Valeria Salinas",
      "desde": "2026-08-19",
      "norma": "RESOL-2026-2542-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Firma delegada de la UGL",
-     "persona": "Emma Bárbara Guadalupe Torres Moreno",
-     "desde": "2026-08-18",
-     "norma": "RESOL-2026-2480-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Jefa del Equipo Jurídico",
@@ -24768,6 +25714,12 @@
      "persona": "Silvana Mariela Castro",
      "desde": "2021-10-25",
      "norma": "RESOL-2021-176-INSSJP-SE#INSSJP"
+    },
+    {
+     "cargo": "Titular de la Coordinación Médica Coordinación General Ejecutivo Local XXVI",
+     "persona": "Pamela Gisela Palacio",
+     "desde": "2024-03-25",
+     "norma": "RESOL-2024-848-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación de Políticas Sociales",
@@ -25300,11 +26252,27 @@
     },
     {
      "fecha": "2024-03-25",
+     "norma": "RESOL-2024-839-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Leandro Raúl Bianchi",
+     "cargo": "Titular",
+     "agencia": "Merlo"
+    },
+    {
+     "fecha": "2024-03-25",
      "norma": "RESOL-2024-840-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "María de los Angeles Castañeda",
      "cargo": "Titular",
      "agencia": "Buena Esperanza"
+    },
+    {
+     "fecha": "2024-03-25",
+     "norma": "RESOL-2024-848-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pamela Gisela Palacio",
+     "cargo": "Titular de la Coordinación Médica Coordinación General Ejecutivo Local XXVI",
+     "agencia": null
     },
     {
      "fecha": "2024-03-25",
@@ -25726,6 +26694,12 @@
      "norma": "RESOL-2022-763-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Médico",
+     "persona": "Luis Eduardo Zuran",
+     "desde": "2026-03-03",
+     "norma": "RESOL-2026-730-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Titular de la Coordinación Administrativo Contable",
      "persona": "Karina Elizabeth Eggers",
      "desde": "2024-03-25",
@@ -25810,9 +26784,9 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Alberto Alfredo Ariaudo",
-       "desde": "2020-02-27",
-       "norma": "RESOL-2020-694-INSSJP-DE#INSSJP"
+       "persona": "Silvia Ester Lucuman",
+       "desde": "2022-06-27",
+       "norma": "RESOL-2022-762-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -26040,6 +27014,22 @@
      "accion": "alta",
      "persona": "María Antonella Blanchini",
      "cargo": "Titular de la División Liquidaciones",
+     "agencia": null
+    },
+    {
+     "fecha": "2026-03-03",
+     "norma": "RESOL-2026-730-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Luis Eduardo Zuran",
+     "cargo": "Médico",
+     "agencia": null
+    },
+    {
+     "fecha": "2026-03-02",
+     "norma": "RESOL-2026-678-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Matías Sebastián García Ortiz",
+     "cargo": "Médico",
      "agencia": null
     },
     {
@@ -26276,6 +27266,14 @@
     },
     {
      "fecha": "2024-05-27",
+     "norma": "RESOL-2024-1470-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Darío Gabriel Gajewski",
+     "cargo": "Titular",
+     "agencia": "Cipolletti"
+    },
+    {
+     "fecha": "2024-05-27",
      "norma": "RESOL-2024-1471-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Leonela Yamila Andreoli",
@@ -26295,6 +27293,14 @@
      "norma": "RESOL-2024-1393-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Carlos Eduardo Montenegro",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-05-17",
+     "norma": "RESOL-2024-1402-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Juan Ignacio Viñals",
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
@@ -26417,6 +27423,14 @@
      "persona": "Cristian Fernandez Pizarro",
      "cargo": "Titular de la Coordinación del Modelo de Atención Personalizada",
      "agencia": null
+    },
+    {
+     "fecha": "2022-06-27",
+     "norma": "RESOL-2022-762-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Silvia Ester Lucuman",
+     "cargo": "Titular",
+     "agencia": "Catriel"
     },
     {
      "fecha": "2022-06-27",
@@ -26585,6 +27599,22 @@
      "persona": "Oscar Alberto Alvarez",
      "cargo": "Titular de la Coordinación General Ejecutiva Local",
      "agencia": null
+    },
+    {
+     "fecha": "2019-10-30",
+     "norma": "RESOL-2019-1768-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Raúl Eduardo Blanco",
+     "cargo": "Titular",
+     "agencia": "El Bolsón"
+    },
+    {
+     "fecha": "2019-07-18",
+     "norma": "RESOL-2019-1272-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Luis Néstor Mendoza",
+     "cargo": "Titular",
+     "agencia": "Catriel"
     },
     {
      "fecha": "2019-06-10",
@@ -27455,6 +28485,14 @@
      "agencia": null
     },
     {
+     "fecha": "2018-05-23",
+     "norma": "RESOL-2018-485-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Mario Eduardo Muro",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2017-10-04",
      "norma": "RESOL-2017-973-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -27576,6 +28614,12 @@
      "norma": "RESOL-2025-922-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Titular de la unidad orgánica Referente PAMI Escucha, División MOEIT, del Departamento Médico",
+     "persona": "Vanesa Verónica Alejandra",
+     "desde": "2026-09-07",
+     "norma": "RESOL-2026-2801-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Titular del Departamento de Políticas Sociales",
      "persona": "Diego Lopez Garrigo",
      "desde": "2024-11-22",
@@ -27662,6 +28706,12 @@
        "norma": "RESOL-2017-24-INSSJP-DE#INSSJP"
       },
       {
+       "cargo": "Referente Administrativo Contable",
+       "persona": "Karina Baldassini",
+       "desde": "2024-07-08",
+       "norma": "RESOL-2024-1873-INSSJP-DE#INSSJP"
+      },
+      {
        "cargo": "Titular",
        "persona": "Axel Leonel Almada las",
        "desde": "2024-04-23",
@@ -27703,11 +28753,27 @@
     },
     {
      "fecha": "2026-09-07",
+     "norma": "RESOL-2026-2801-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Vanesa Verónica Alejandra",
+     "cargo": "Titular de la unidad orgánica Referente PAMI Escucha, División MOEIT, del Departamento Médico",
+     "agencia": null
+    },
+    {
+     "fecha": "2026-09-07",
      "norma": "ESOL-2026-2802-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Solange Betiana Gonzalez",
      "cargo": "Titular de la unidad Pami Escucha.Traslada Agencia Merlo",
      "agencia": null
+    },
+    {
+     "fecha": "2026-09-07",
+     "norma": "RESOL-2026-2802-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Solange Betiana Gonzalez",
+     "cargo": "Unidad orgánica Referente PAMI Escucha y la trasladó a la",
+     "agencia": "Merlo"
     },
     {
      "fecha": "2026-03-09",
@@ -27870,6 +28936,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-07-08",
+     "norma": "RESOL-2024-1873-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Karina Baldassini",
+     "cargo": "Referente Administrativo Contable",
+     "agencia": "Moreno"
+    },
+    {
      "fecha": "2024-04-30",
      "norma": "RESOL-2024-1254-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -27900,6 +28974,14 @@
      "persona": "Diego Lopez Garrido",
      "cargo": "Titular",
      "agencia": "Morón Sur"
+    },
+    {
+     "fecha": "2024-04-23",
+     "norma": "RESOL-2024-1095-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Camila Vadillo",
+     "cargo": "Titular",
+     "agencia": "William Morris"
     },
     {
      "fecha": "2024-04-23",
@@ -27946,7 +29028,7 @@
      "norma": "RESOL-2024-522-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Yesica Daiana Escobar",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Moreno"
     },
     {
@@ -28018,7 +29100,7 @@
      "norma": "RESOL-2021-363-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Paula Angelone",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Hurlingham"
     },
     {
@@ -28098,7 +29180,7 @@
      "norma": "RESOL-2020-1060-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Sebastián Obdulio Achucarro",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Merlo"
     },
     {
@@ -28116,6 +29198,14 @@
      "persona": "Valeria María Zalazar",
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
+    },
+    {
+     "fecha": "2019-10-30",
+     "norma": "RESOL-2019-1769-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Mariana Celia Iarzabal",
+     "cargo": "Referente Administrativo Contable",
+     "agencia": "Moreno"
     },
     {
      "fecha": "2019-10-11",
@@ -28174,6 +29264,14 @@
      "agencia": null
     },
     {
+     "fecha": "2019-02-21",
+     "norma": "RESOL-2019-327-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Jorge Alberto Gianfrancesco",
+     "cargo": "Referente de Recursos Humanos",
+     "agencia": null
+    },
+    {
      "fecha": "2018-04-20",
      "norma": "RESOL-2018-336-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -28202,7 +29300,7 @@
      "norma": "RESOL-2016-2269-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Liliana Isabel Alfaya",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Merlo"
     },
     {
@@ -28210,7 +29308,7 @@
      "norma": "RESOL-2016-2270-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Andrés Christiansen",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Merlo"
     },
     {
@@ -28242,7 +29340,7 @@
      "norma": "RESOL-2016-518-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Graciela María Prieto",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Ituzaingó"
     }
    ]
@@ -28255,12 +29353,6 @@
      "persona": "Rosana D’Acunto",
      "desde": "2025-09-22",
      "norma": "RESOL-2025-2226-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Firma delegada de la UGL",
-     "persona": "Rosana D’Acunto",
-     "desde": "2025-09-17",
-     "norma": "RESOL-2025-2195-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Jefe de la División Tesorería de la Coordinación Administrativo Contable",
@@ -28303,6 +29395,12 @@
      "persona": "Juan José Zurro",
      "desde": "2022-08-02",
      "norma": "RESOL-2022-961-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular de la Coordinación Médica",
+     "persona": "Antonio Pedro Agosta",
+     "desde": "2024-02-19",
+     "norma": "RESOL-2024-471-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación de Políticas Sociales",
@@ -28791,6 +29889,14 @@
     },
     {
      "fecha": "2024-02-19",
+     "norma": "RESOL-2024-471-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Antonio Pedro Agosta",
+     "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-02-19",
      "norma": "RESOL-2024-472-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Santiago Zaffora",
@@ -28844,6 +29950,14 @@
      "persona": "Claudio Oscar Losardo",
      "cargo": "Referente de la unidad orgánica Prestaciones Fuera de Convenio, de la Coordinación Médica",
      "agencia": null
+    },
+    {
+     "fecha": "2023-02-22",
+     "norma": "RESOL-2023-239-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Jorgelina Poveda",
+     "cargo": "Titular",
+     "agencia": "Daireaux"
     },
     {
      "fecha": "2022-12-28",
@@ -28982,6 +30096,30 @@
      "agencia": "Las Flores"
     },
     {
+     "fecha": "2020-02-18",
+     "norma": "RESOL-2020-569-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Laura Aloisi",
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2020-02-18",
+     "norma": "RESOL-2020-571-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Juan José Zurro",
+     "cargo": "Titular de la Coordinación MAP",
+     "agencia": null
+    },
+    {
+     "fecha": "2020-02-18",
+     "norma": "RESOL-2020-572-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Hernán Combessies",
+     "cargo": "Titular de la Coordinación Médica",
+     "agencia": null
+    },
+    {
      "fecha": "2020-01-16",
      "norma": "RESOL-2020-162-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -29082,7 +30220,7 @@
      "norma": "RESOL-2016-1490-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Andrea Marcela Gutierrez",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Lamadrid"
     },
     {
@@ -29877,6 +31015,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-01-15",
+     "norma": "RESOL-2024-96-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Nicolás Esteban Cornaglia",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2023-01-04",
      "norma": "RESOL-2023-5-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -30085,6 +31231,30 @@
      "agencia": "Vedia"
     },
     {
+     "fecha": "2019-01-07",
+     "norma": "RESOL-2019-42-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Ramiro Iván Rojas",
+     "cargo": "Titular de la Coordinación de Promoción y Prestaciones Sociales",
+     "agencia": null
+    },
+    {
+     "fecha": "2018-12-20",
+     "norma": "RESOL-2018-1106-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Javier Federico Genoud",
+     "cargo": "Titular",
+     "agencia": "Pergamino la"
+    },
+    {
+     "fecha": "2018-05-15",
+     "norma": "RESOL-2018-452-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Liliana Elsa Loguzzo",
+     "cargo": "Titular de la Coordinación de Promoción y Prestaciones Sociales",
+     "agencia": null
+    },
+    {
      "fecha": "2018-05-15",
      "norma": "RESOL-2018-453-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -30109,11 +31279,19 @@
      "agencia": "Villegas"
     },
     {
+     "fecha": "2017-07-25",
+     "norma": "RESOL-2017-730-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Elena Maffeo",
+     "cargo": "Titular",
+     "agencia": "General Viamonte"
+    },
+    {
      "fecha": "2016-08-12",
      "norma": "RESOL-2016-1494-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Liliana Graciela Crespi",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Arenales"
     }
    ]
@@ -30123,9 +31301,9 @@
    "autoridades": [
     {
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
-     "persona": "Martín Hernán Boragno",
-     "desde": "2023-01-04",
-     "norma": "RESOL-2023-9-INSSJP-DE#INSSJP"
+     "persona": "Pablo Sebastián Litardo",
+     "desde": "2024-05-17",
+     "norma": "RESOL-2024-1404-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Jefa de la División Derechos Humanos, Gerontología Comunitaria, Género y Políticas de Cuidado de la Coordinación General Ejecutiva Local",
@@ -30150,6 +31328,12 @@
      "persona": "Aldana Leonela Ponti",
      "desde": "2024-03-18",
      "norma": "RESOL-2024-738-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Titular de la Coordinación General Ejecutiva Local",
+     "persona": "Agustín Pedro Jaureguiberry",
+     "desde": "2019-03-18",
+     "norma": "RESOL-2019-524-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación General Ejecutiva Local XXXII",
@@ -30259,12 +31443,6 @@
      "tipo_original": "CAP",
      "autoridades": [
       {
-       "cargo": "Jefe",
-       "persona": "Agustín Canepa",
-       "desde": "2016-09-16",
-       "norma": "RESOL-2016-1722-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
        "persona": "Sonia Noemí Beckman",
        "desde": "2025-06-26",
@@ -30343,12 +31521,6 @@
      "tipo_original": "CAP",
      "autoridades": [
       {
-       "cargo": "Jefe",
-       "persona": "Nicolás Alejandro Farias",
-       "desde": "2016-04-05",
-       "norma": "RESOL-2016-450-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
        "persona": "María Daniela Canziani",
        "desde": "2025-03-14",
@@ -30414,12 +31586,6 @@
     "Zárate": {
      "tipo_original": "Agencia",
      "autoridades": [
-      {
-       "cargo": "Jefe",
-       "persona": "Norberto Fernando Toncovich",
-       "desde": "2017-07-26",
-       "norma": "RESOL-2017-740-INSSJP-DE#INSSJP"
-      },
       {
        "cargo": "Referente MOEIT de la División Médica",
        "persona": "Sebastián Salvador Acuista",
@@ -30619,6 +31785,14 @@
      "persona": "Roberto Ariel Rodriguez",
      "cargo": "Titular",
      "agencia": "San Antonio de Areco"
+    },
+    {
+     "fecha": "2024-05-17",
+     "norma": "RESOL-2024-1404-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pablo Sebastián Litardo",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
     },
     {
      "fecha": "2024-05-03",
@@ -30877,6 +32051,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-01-15",
+     "norma": "RESOL-2024-97-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pablo Andrés Carnevale",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2023-03-09",
      "norma": "RESOL-2023-314-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -31041,7 +32223,7 @@
      "norma": "RESOL-2021-9-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Omar Osvaldo Burgos",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Presidente Derqui"
     },
     {
@@ -31213,10 +32395,26 @@
      "agencia": "Garín"
     },
     {
+     "fecha": "2019-03-26",
+     "norma": "RESOL-2019-617-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Ramón Alejandro Mambrin Motta Bittencourt",
+     "cargo": "Titular",
+     "agencia": "Garín"
+    },
+    {
      "fecha": "2019-03-19",
      "norma": "RESOL-2019-537-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Federico Sencio",
+     "cargo": "Titular de la Coordinación General Ejecutiva Local",
+     "agencia": null
+    },
+    {
+     "fecha": "2019-03-18",
+     "norma": "RESOL-2019-524-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Agustín Pedro Jaureguiberry",
      "cargo": "Titular de la Coordinación General Ejecutiva Local",
      "agencia": null
     },
@@ -31227,6 +32425,14 @@
      "persona": "Sergio Rodolfo Lorda",
      "cargo": "Prestaciones Fuera de Convenio de la Coordinación Médica",
      "agencia": null
+    },
+    {
+     "fecha": "2018-11-26",
+     "norma": "RESOL-2018-1026-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Victoria Semeria Olmos",
+     "cargo": "Titular",
+     "agencia": "Lima"
     },
     {
      "fecha": "2018-06-26",
@@ -31305,7 +32511,7 @@
      "norma": "RESOL-2017-740-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Norberto Fernando Toncovich",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Zárate"
     },
     {
@@ -31353,7 +32559,7 @@
      "norma": "RESOL-2016-1720-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "María José Azcarate",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Zárate"
     },
     {
@@ -31361,7 +32567,7 @@
      "norma": "RESOL-2016-1722-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Agustín Canepa",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Garín"
     },
     {
@@ -31377,7 +32583,7 @@
      "norma": "RESOL-2016-1395-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Mariela Di Carlo",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "San Antonio de Areco"
     },
     {
@@ -31409,7 +32615,7 @@
      "norma": "RESOL-2016-532-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Diana Mabel Lelez",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Escobar"
     },
     {
@@ -31441,7 +32647,7 @@
      "norma": "RESOL-2016-501-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Norma Antonia Salvoni",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Capilla del señor"
     },
     {
@@ -31449,7 +32655,7 @@
      "norma": "RESOL-2016-450-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Nicolás Alejandro Farias",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Mercedes"
     }
    ]
@@ -31462,18 +32668,6 @@
      "persona": "Roque Alberto Belmar",
      "desde": "2026-06-02",
      "norma": "RESOL-2026-1676-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Firma delegada de la UGL",
-     "persona": "Sonia Lorenzo",
-     "desde": "2026-05-06",
-     "norma": "RESOL-2026-1346-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Jefa de la Coordinación de Políticas Sociales",
-     "persona": "Ignacia Beatriz Duarte",
-     "desde": "2022-07-12",
-     "norma": "RESOL-2022-859-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Jefa de la División de Organización de la Coordinación de Políticas Sociales",
@@ -31624,6 +32818,14 @@
      "accion": "alta",
      "persona": "Elvio Julio Romeo",
      "cargo": "Titular de la División Presupuesto",
+     "agencia": null
+    },
+    {
+     "fecha": "2025-11-14",
+     "norma": "RESOL-2025-2792-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Ignacia Beatriz Duarte",
+     "cargo": "Titular del Departamento de Políticas Sociales",
      "agencia": null
     },
     {
@@ -31875,6 +33077,14 @@
      "agencia": "Río Grande"
     },
     {
+     "fecha": "2019-09-02",
+     "norma": "RESOL-2019-1488-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Joaquín Roberto",
+     "cargo": "Titular",
+     "agencia": "Rio Grande"
+    },
+    {
      "fecha": "2019-07-30",
      "norma": "RESOL-2019-1318-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -31920,6 +33130,22 @@
      "accion": "alta",
      "persona": "Hernán Raúl Monti",
      "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2019-01-07",
+     "norma": "RESOL-2019-33-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Joaquín Roberto Randon Salgado",
+     "cargo": "Titular",
+     "agencia": "Río Grande"
+    },
+    {
+     "fecha": "2019-01-07",
+     "norma": "RESOL-2019-34-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Fernando Ariel Polizzi",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
     {
@@ -31972,6 +33198,18 @@
      "persona": "Karina Paola Bernardi",
      "desde": "2024-08-09",
      "norma": "RESOL-2024-2297-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Abogada",
+     "persona": "Daniela Agustina Maciel",
+     "desde": "2026-02-26",
+     "norma": "RESOL-2026-641-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Médica en el Departamento Médico",
+     "persona": "María Candelaria Quintana",
+     "desde": "2026-01-28",
+     "norma": "RESOL-2026-366-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Referente Prestaciones Fuera de Convenio de la Coordinación Médica",
@@ -32066,6 +33304,12 @@
     "Colón": {
      "tipo_original": "CAP",
      "autoridades": [
+      {
+       "cargo": "Médica",
+       "persona": "Laura Viviana Rodriguez",
+       "desde": "2026-01-28",
+       "norma": "RESOL-2026-372-INSSJP-DE#INSSJP"
+      },
       {
        "cargo": "Titular",
        "persona": "Eduardo Martín Vienny",
@@ -32265,6 +33509,14 @@
      "agencia": null
     },
     {
+     "fecha": "2026-02-26",
+     "norma": "RESOL-2026-641-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Daniela Agustina Maciel",
+     "cargo": "Abogada",
+     "agencia": null
+    },
+    {
      "fecha": "2026-02-13",
      "norma": "RESOL-2026-536-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -32279,6 +33531,22 @@
      "persona": "María Lucía Vales",
      "cargo": "Titular del Departamento Administrativo",
      "agencia": null
+    },
+    {
+     "fecha": "2026-01-28",
+     "norma": "RESOL-2026-366-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Candelaria Quintana",
+     "cargo": "Médica en el Departamento Médico",
+     "agencia": null
+    },
+    {
+     "fecha": "2026-01-28",
+     "norma": "RESOL-2026-372-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Laura Viviana Rodriguez",
+     "cargo": "Médica",
+     "agencia": "Colón"
     },
     {
      "fecha": "2025-10-03",
@@ -32573,7 +33841,7 @@
      "norma": "RESOL-2024-640-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Fernando Barron Sastre",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Concepción del Uruguay"
     },
     {
@@ -32753,6 +34021,14 @@
      "agencia": null
     },
     {
+     "fecha": "2019-04-03",
+     "norma": "RESOL-2019-650-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Lucas Aníbal Larraz",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2019-04-01",
      "norma": "RESOL-2019-627-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -32775,6 +34051,14 @@
      "persona": "María Belén Bordagaray",
      "cargo": "De Referente Administrativo Contable",
      "agencia": "Gualeguaychú"
+    },
+    {
+     "fecha": "2018-02-16",
+     "norma": "RESOL-2018-125-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Norberto Horacio Cis",
+     "cargo": "Titular",
+     "agencia": "Federal"
     },
     {
      "fecha": "2018-02-07",
@@ -32845,7 +34129,7 @@
      "norma": "RESOL-2016-1492-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Viviana Edith Rearte",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Concepción del Uruguay"
     },
     {
@@ -32951,9 +34235,9 @@
     },
     {
      "cargo": "Titular de la Coordinación Médica",
-     "persona": "Noelia Valenta",
-     "desde": "2020-04-01",
-     "norma": "RESOL-2020-1129-INSSJP-DE#INSSJP"
+     "persona": "Zaida Estefanía Arias Gimenez",
+     "desde": "2024-02-20",
+     "norma": "RESOL-2024-485-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación de Políticas Sociales",
@@ -32993,9 +34277,15 @@
     },
     {
      "cargo": "Titular del Departamento Médico",
-     "persona": "Williams Verdezoto Montero",
+     "persona": "Alejandro Antonio Rosell",
+     "desde": "2025-01-16",
+     "norma": "RESOL-2025-2-INSSJP-SE#INSSJP"
+    },
+    {
+     "cargo": "Titular del Departamento Políticas Sociales",
+     "persona": "Marcelo Alejandro Souto",
      "desde": "2025-01-02",
-     "norma": "RESOL-2024-3550-INSSJP-DE#INSSJP"
+     "norma": "RESOL-2024-3549-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular del Equipo Jurídico",
@@ -33157,11 +34447,27 @@
      "agencia": "Tapiales"
     },
     {
+     "fecha": "2025-01-16",
+     "norma": "RESOL-2025-2-INSSJP-SE#INSSJP",
+     "accion": "alta",
+     "persona": "Alejandro Antonio Rosell",
+     "cargo": "Titular del Departamento Médico",
+     "agencia": null
+    },
+    {
      "fecha": "2025-01-02",
      "norma": "RESOL-2024-3548-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Luis Javier Bahamondes",
      "cargo": "Titular del Departamento Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2025-01-02",
+     "norma": "RESOL-2024-3549-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Marcelo Alejandro Souto",
+     "cargo": "Titular del Departamento Políticas Sociales",
      "agencia": null
     },
     {
@@ -33337,7 +34643,7 @@
      "norma": "RESOL-2024-631-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Mariana Soledad Lovatto",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "González Catán"
     },
     {
@@ -33345,7 +34651,7 @@
      "norma": "RESOL-2024-620-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Matías Angel Alvarracin",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Isidro Casanova"
     },
     {
@@ -33353,7 +34659,7 @@
      "norma": "RESOL-2024-621-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Andrea Beatriz Mendoza",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Tapiales"
     },
     {
@@ -33361,7 +34667,7 @@
      "norma": "RESOL-2024-622-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Elena Cecilia Ruiz Duran",
-     "cargo": "Jefa",
+     "cargo": "Titular",
      "agencia": "Ramos Mejías"
     },
     {
@@ -33369,7 +34675,15 @@
      "norma": "RESOL-2024-623-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Matías Ernesto Sanchez",
-     "cargo": "Jefe",
+     "cargo": "Titular",
+     "agencia": "Gregorio de la Ferrere"
+    },
+    {
+     "fecha": "2024-03-06",
+     "norma": "RESOL-2024-625-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Rubén Darío Varela",
+     "cargo": "Titular",
      "agencia": "Gregorio de la Ferrere"
     },
     {
@@ -33389,6 +34703,22 @@
      "agencia": "Ramos Mejía"
     },
     {
+     "fecha": "2024-03-06",
+     "norma": "RESOL-2024-626-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Gonzalo Javier Battilana",
+     "cargo": "Titular",
+     "agencia": "Ramos Mejía"
+    },
+    {
+     "fecha": "2024-03-06",
+     "norma": "RESOL-2024-627-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sandra Cristina Losardo",
+     "cargo": "Titular",
+     "agencia": "Isidro Casanova"
+    },
+    {
      "fecha": "2024-02-21",
      "norma": "RESOL-2024-497-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -33402,6 +34732,14 @@
      "accion": "baja",
      "persona": "Sergio Gustavo Padilla",
      "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-02-20",
+     "norma": "RESOL-2024-485-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Zaida Estefanía Arias Gimenez",
+     "cargo": "Titular de la Coordinación Médica",
      "agencia": null
     },
     {
@@ -33499,6 +34837,14 @@
      "persona": "Mariana Soledad Lovatto",
      "cargo": "Titular",
      "agencia": "Gonzalez Catán"
+    },
+    {
+     "fecha": "2021-06-09",
+     "norma": "RESOL-2021-777-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Pedro Ignacio Guerrico",
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
     },
     {
      "fecha": "2021-06-09",
@@ -33629,12 +34975,44 @@
      "agencia": null
     },
     {
+     "fecha": "2020-02-18",
+     "norma": "RESOL-2020-573-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pedro Ignacio Guerrico",
+     "cargo": "Titular de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2020-02-18",
+     "norma": "RESOL-2020-574-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Diego Marcelo Carivenc",
+     "cargo": "Titular de la Coordinación de Promoción y Prestaciones Sociales",
+     "agencia": null
+    },
+    {
+     "fecha": "2020-02-18",
+     "norma": "RESOL-2020-575-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mariana Pérez",
+     "cargo": "Referente Equipo Jurídico",
+     "agencia": null
+    },
+    {
      "fecha": "2020-01-07",
      "norma": "RESOL-2020-70-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Roberto Esteban Bessone",
      "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
+    },
+    {
+     "fecha": "2019-11-20",
+     "norma": "RESOL-2019-1888-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Héctor Daniel Fraind",
+     "cargo": "Titular",
+     "agencia": "González Catán"
     },
     {
      "fecha": "2019-10-15",
@@ -33841,7 +35219,7 @@
     },
     {
      "cargo": "Titular de la Coordinación de Políticas Sociales",
-     "persona": "Licenciada Marcela Alejandra Giachero",
+     "persona": "Marcela Alejandra Giachero",
      "desde": "2024-05-31",
      "norma": "RESOL-2024-1577-INSSJP-DE#INSSJP"
     },
@@ -34116,7 +35494,7 @@
      "fecha": "2024-05-31",
      "norma": "RESOL-2024-1577-INSSJP-DE#INSSJP",
      "accion": "alta",
-     "persona": "Licenciada Marcela Alejandra Giachero",
+     "persona": "Marcela Alejandra Giachero",
      "cargo": "Titular de la Coordinación de Políticas Sociales",
      "agencia": null
     },
@@ -34142,6 +35520,14 @@
      "accion": "alta",
      "persona": "Hugo Fernando Bossio",
      "cargo": "Intendente de la Coordinación Administrativo Contable",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-03-20",
+     "norma": "RESOL-2024-800-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Ricardo José Scattolini",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
     {
@@ -34341,7 +35727,7 @@
      "norma": "RESOL-2017-78-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Javier Eduardo Ramón Paulucci",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Ucacha"
     }
    ]
@@ -34458,12 +35844,6 @@
     "El Cruce de Florencio Varela": {
      "tipo_original": "CAP",
      "autoridades": [
-      {
-       "cargo": "Jefe",
-       "persona": "Gisela Estefanía Roggieri",
-       "desde": "2017-03-06",
-       "norma": "RESOL-2017-260-INSSJP-DE#INSSJP"
-      },
       {
        "cargo": "Titular",
        "persona": "Daniela Belén Ramirez",
@@ -34778,6 +36158,14 @@
      "agencia": null
     },
     {
+     "fecha": "2024-06-07",
+     "norma": "RESOL-2024-1653-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Norberto Modesto Moldes",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
+     "agencia": null
+    },
+    {
      "fecha": "2024-03-08",
      "norma": "RESOL-2024-648-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -34799,6 +36187,14 @@
      "accion": "baja",
      "persona": "Facundo Maximiliano Rivero",
      "cargo": "Coordinador de Políticas Sociales",
+     "agencia": null
+    },
+    {
+     "fecha": "2024-01-15",
+     "norma": "RESOL-2024-104-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Miguel Angel Lezcano",
+     "cargo": "Titular de la UGL (Dirección Ejecutiva Local)",
      "agencia": null
     },
     {
@@ -35042,6 +36438,14 @@
      "agencia": "Quilmes"
     },
     {
+     "fecha": "2018-06-29",
+     "norma": "RESOL-2018-646-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Miriam Alicia Tella",
+     "cargo": "Referente del Equipo Recursos Humanos",
+     "agencia": null
+    },
+    {
      "fecha": "2018-03-09",
      "norma": "RESOL-2018-203-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -35110,7 +36514,7 @@
      "norma": "RESOL-2017-260-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Gisela Estefanía Roggieri",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Florencia Varela"
     },
     {
@@ -35261,9 +36665,9 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Carolina Inés Guillermon",
-       "desde": "2020-10-30",
-       "norma": "RESOL-2020-2141-INSSJP-DE#INSSJP"
+       "persona": "Daniela Alejandra Puma",
+       "desde": "2024-10-24",
+       "norma": "RESOL-2024-3005-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -35281,12 +36685,6 @@
     "Alberti": {
      "tipo_original": "CAP",
      "autoridades": [
-      {
-       "cargo": "Jefe",
-       "persona": "María Luz Livolsi",
-       "desde": "2017-07-24",
-       "norma": "RESOL-2017-728-INSSJP-DE#INSSJP"
-      },
       {
        "cargo": "Titular",
        "persona": "Ernesto Manuel Gomez",
@@ -35719,6 +37117,14 @@
      "agencia": "Facundo Quiroga"
     },
     {
+     "fecha": "2024-10-24",
+     "norma": "RESOL-2024-3005-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Daniela Alejandra Puma",
+     "cargo": "Titular",
+     "agencia": "25 de Mayo"
+    },
+    {
      "fecha": "2024-09-10",
      "norma": "RESOL-2024-2565-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -35907,7 +37313,7 @@
      "norma": "RESOL-2024-2088-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Etiel Gutierrez",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Salliqueló"
     },
     {
@@ -36235,7 +37641,7 @@
      "norma": "RESOL-2017-921-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Natalia Abbott",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Carmen de Areco"
     },
     {
@@ -36243,7 +37649,7 @@
      "norma": "RESOL-2017-731-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Gladys Beatriz Rapachi",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Arrecifes"
     },
     {
@@ -36251,7 +37657,7 @@
      "norma": "RESOL-2017-728-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "María Luz Livolsi",
-     "cargo": "Jefe",
+     "cargo": "Titular",
      "agencia": "Alberti"
     },
     {
@@ -36405,6 +37811,12 @@
      "norma": "RESOL-2024-50-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Subgerencia de Auditoría a Prestadores",
+     "persona": "Rodolfo José Leon",
+     "desde": "2024-02-15",
+     "norma": "RESOL-2024-425-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Subgerencia de Información de Personas Afiliadas de la Gerencia de Escucha y Respuesta Activa a Personas Afiliadas",
      "persona": "Marcelo Villani Guevara Lynch",
      "desde": "2024-01-23",
@@ -36510,6 +37922,13 @@
      "cargo": "Departamento Despacho"
     },
     {
+     "fecha": "2024-02-15",
+     "norma": "RESOL-2024-425-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Rodolfo José Leon",
+     "cargo": "Subgerencia de Auditoría a Prestadores"
+    },
+    {
      "fecha": "2024-01-23",
      "norma": "RESOL-2024-183-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -36573,11 +37992,32 @@
      "cargo": "Departamento Despacho de esta Dirección Ejecutiva"
     },
     {
+     "fecha": "2019-05-07",
+     "norma": "RESOL-2019-860-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Gustavo Sebastián Alvarez",
+     "cargo": "Dirección Ejecutiva Local de la Unidad de Gestión"
+    },
+    {
+     "fecha": "2017-07-26",
+     "norma": "RESOL-2017-746-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Fernando Gabriel Zarabozo (Legajo N°",
+     "cargo": "Subgerencia de Pami Escucha de la Coordinación de Asuntos Públicos e Interdisciplinarios"
+    },
+    {
      "fecha": "2017-07-17",
      "norma": "RESOL-2017-698-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Marta Jorgelina Farias",
      "cargo": "Coordinación General Ejecutiva Local IX de la Dirección Ejecutiva Local IX - Rosario, de la Gerencia Operativa y Coordinación de UGL"
+    },
+    {
+     "fecha": "2016-04-19",
+     "norma": "RESOL-2016-530-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Diego Federico Mel",
+     "cargo": "Dirección Ejecutiva Local de la ex UGL XXXIX-Patagonia Norte, las funciones de jefe de agencia General Roca"
     }
    ]
   },
@@ -36664,7 +38104,7 @@
      "fecha": "2026-04-15",
      "norma": "RESOL-2026-1139-INSSJP-DE#INSSJP",
      "accion": "alta",
-     "persona": "Señor Daniel Menendez",
+     "persona": "Daniel Menendez",
      "cargo": "División Análisis Presupuestario"
     },
     {
@@ -37508,6 +38948,13 @@
      "cargo": "Titular"
     },
     {
+     "fecha": "2024-01-02",
+     "norma": "RESOL-2023-2050-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Adrián Gastón Moro",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2022-04-19",
      "norma": "RESOL-2022-411-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -37809,6 +39256,12 @@
   "GAJ-AJ": {
    "autoridades": [
     {
+     "cargo": "Asesora Jurídica en el Departamento Penalidades de la Subgerencia de Asuntos Jurídicos",
+     "persona": "Ángela Yanina Davila",
+     "desde": "2024-08-13",
+     "norma": "RESOL-2024-2325-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Departamento Penalidades, Subgerencia de Asuntos Jurídicos",
      "persona": "Natalia Irene Mayol",
      "desde": "2022-05-02",
@@ -37834,6 +39287,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-08-13",
+     "norma": "RESOL-2024-2325-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Ángela Yanina Davila",
+     "cargo": "Asesora Jurídica en el Departamento Penalidades de la Subgerencia de Asuntos Jurídicos"
+    },
     {
      "fecha": "2022-05-02",
      "norma": "RESOL-2022-464-INSSJP-DE#INSSJP",
@@ -38368,6 +39828,12 @@
      "norma": "RESOL-2026-2746-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Departamento de Comunicación Digital, Gerencia de Comunicación y Relaciones Institucionales",
+     "persona": "Nelson Omar Araujo",
+     "desde": "2024-01-19",
+     "norma": "RESOL-2024-168-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Departamento de Gestión de la Demanda",
      "persona": "Bianca Antonella de Lucia",
      "desde": "2025-12-05",
@@ -38429,7 +39895,7 @@
     },
     {
      "cargo": "División de Redes Sociales del Departamento de Comunicación Digital, Gerencia de Comunicación y Relaciones Institucionales",
-     "persona": "Licenciada Daiana Soledad Perini",
+     "persona": "Daiana Soledad Perini",
      "desde": "2024-01-19",
      "norma": "RESOL-2024-163-INSSJP-DE#INSSJP"
     },
@@ -38568,7 +40034,7 @@
      "fecha": "2024-01-19",
      "norma": "RESOL-2024-163-INSSJP-DE#INSSJP",
      "accion": "alta",
-     "persona": "Licenciada Daiana Soledad Perini",
+     "persona": "Daiana Soledad Perini",
      "cargo": "División de Redes Sociales del Departamento de Comunicación Digital, Gerencia de Comunicación y Relaciones Institucionales"
     },
     {
@@ -38598,6 +40064,13 @@
      "accion": "alta",
      "persona": "Nicolás Segovia",
      "cargo": "Departamento de Prensa, Gerencia de Comunicación y Relaciones Institucionales"
+    },
+    {
+     "fecha": "2024-01-19",
+     "norma": "RESOL-2024-168-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Nelson Omar Araujo",
+     "cargo": "Departamento de Comunicación Digital, Gerencia de Comunicación y Relaciones Institucionales"
     },
     {
      "fecha": "2023-12-29",
@@ -39079,6 +40552,12 @@
      "persona": "Fernanda Folchi",
      "desde": "2026-03-19",
      "norma": "RESOL-2026-919-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Interventora Administradora del Hospital Español de Buenos Aires y el Hogar de Ancianos Elías Romero de la localidad de Temperley",
+     "persona": "Fernanda Folchi",
+     "desde": "2024-06-13",
+     "norma": "RESOL-2024-1679-INSSJP-DE#INSSJP"
     }
    ],
    "historial": [
@@ -39088,6 +40567,13 @@
      "accion": "alta",
      "persona": "Fernanda Folchi",
      "cargo": "Coordinadora del Hospital Español de Buenos Aires"
+    },
+    {
+     "fecha": "2024-06-13",
+     "norma": "RESOL-2024-1679-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Fernanda Folchi",
+     "cargo": "Interventora Administradora del Hospital Español de Buenos Aires y el Hogar de Ancianos Elías Romero de la localidad de Temperley"
     },
     {
      "fecha": "2024-01-31",
@@ -39694,6 +41180,12 @@
      "norma": "RESOL-2026-44-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Dirección Médica del Hospital del Bicentenario de Ituzaingó",
+     "persona": "Christian Ricardo Peralta",
+     "desde": "2024-04-08",
+     "norma": "RESOL-2024-984-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Dirección Médica. HBI",
      "persona": "Carlos Mariano Bernasconi",
      "desde": "2026-01-28",
@@ -39701,7 +41193,7 @@
     },
     {
      "cargo": "Director General del Hospital de Alta Complejidad del Bicentenario Ituzaingó",
-     "persona": "Doctor Santiago Gerardo Spadafora",
+     "persona": "Santiago Gerardo Spadafora",
      "desde": "2023-04-19",
      "norma": "RESOL-2023-507-INSSJP-DE#INSSJP"
     },
@@ -39890,6 +41382,18 @@
      "persona": "Carlos Andrés Meza",
      "desde": "2026-01-28",
      "norma": "RESOL-2026-368-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Policlínico Pami 1",
+     "persona": "Iván Antonio de Mattia",
+     "desde": "2024-12-16",
+     "norma": "RESOL-2024-3455-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Policlínico Pami 2",
+     "persona": "Juan Manuel Eliseo Hueso",
+     "desde": "2024-12-16",
+     "norma": "RESOL-2024-3454-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Sector Anatomía Patológica",
@@ -40455,6 +41959,20 @@
     },
     {
      "fecha": "2024-12-16",
+     "norma": "RESOL-2024-3454-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Juan Manuel Eliseo Hueso",
+     "cargo": "Policlínico Pami 2"
+    },
+    {
+     "fecha": "2024-12-16",
+     "norma": "RESOL-2024-3455-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Iván Antonio de Mattia",
+     "cargo": "Policlínico Pami 1"
+    },
+    {
+     "fecha": "2024-12-16",
      "norma": "RESOL-2024-3456-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Pablo Germán Flores",
@@ -40515,6 +42033,27 @@
      "accion": "baja",
      "persona": "María de Lourdes Acosta",
      "cargo": "Dirección Médica del Hospital del Bicentenario de Ituzaingó, Gerencia de Efectores Sanitarios Propios, Coordinación General de Prestaciones Médicas y de Efectores Sanitarios Propios"
+    },
+    {
+     "fecha": "2024-04-08",
+     "norma": "RESOL-2024-968-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Debora Elizabeth Basile",
+     "cargo": "Dirección Administrativa del Hospital Efector PAMI Hurlingham"
+    },
+    {
+     "fecha": "2024-04-08",
+     "norma": "RESOL-2024-984-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Christian Ricardo Peralta",
+     "cargo": "Dirección Médica del Hospital del Bicentenario de Ituzaingó"
+    },
+    {
+     "fecha": "2024-04-05",
+     "norma": "RESOL-2024-946-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Guillermo Eduardo Roma",
+     "cargo": "Dirección General del Hospital del Bicentenario de Ituzaingó"
     },
     {
      "fecha": "2024-02-02",
@@ -40608,6 +42147,13 @@
      "cargo": "Titular"
     },
     {
+     "fecha": "2024-01-04",
+     "norma": "RESOL-2024-3-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Alejandro Damián Wittenberg",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2023-07-06",
      "norma": "RESOL-2023-895-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -40660,7 +42206,7 @@
      "fecha": "2023-04-19",
      "norma": "RESOL-2023-507-INSSJP-DE#INSSJP",
      "accion": "alta",
-     "persona": "Doctor Santiago Gerardo Spadafora",
+     "persona": "Santiago Gerardo Spadafora",
      "cargo": "Director General del Hospital de Alta Complejidad del Bicentenario Ituzaingó"
     },
     {
@@ -41941,6 +43487,12 @@
   "GPM-DSM": {
    "autoridades": [
     {
+     "cargo": "Titular",
+     "persona": "María Romano Lasfunciones de",
+     "desde": "2024-02-07",
+     "norma": "RESOL-2024-347-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Departamento Discapacidad de la Subgerencia de Discapacidad y Salud Mental de la Gerencia de Prestaciones Médicas, de la Secretaría de Políticas Sanitarias",
      "persona": "Alejandra Daiana Manzi",
      "desde": "2024-02-08",
@@ -41974,6 +43526,13 @@
      "accion": "baja",
      "persona": "Marta Virginia del Barco",
      "cargo": "Subgerencia de Discapacidad y Salud Mental de la Gerencia de Prestaciones Médicas"
+    },
+    {
+     "fecha": "2024-02-07",
+     "norma": "RESOL-2024-347-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Romano Lasfunciones de",
+     "cargo": "Titular"
     },
     {
      "fecha": "2023-08-29",
@@ -46151,6 +47710,13 @@
    "historial": [
     {
      "fecha": "2024-04-15",
+     "norma": "RESOL-2024-130-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Emilia Roxana Dominguez",
+     "cargo": "Sector Soporte a UGL, División Configuración Prestacional, Departamento Transacciones, Coordinación de Planeamiento, de la Gerencia Análisis de Proceso"
+    },
+    {
+     "fecha": "2024-04-15",
      "norma": "RESOL-2024-1030-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Emilia Roxana Dominguez",
@@ -46385,6 +47951,13 @@
      "norma": "RESOL-2023-2039-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Ramiro Aguilar",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2023-12-26",
+     "norma": "RESOL-2023-2031-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Roberto José Guaresti de",
      "cargo": "Titular"
     },
     {
@@ -46829,6 +48402,12 @@
     "norma": "RESOL-2016-1392-INSSJP-DE#INSSJP"
    },
    {
+    "cargo": "Coordinación de Promoción y Prestaciones Sociales, Unidad de Gestión Local XXX – A",
+    "persona": "Arístides Bernabe Leinenn",
+    "desde": "2020-02-18",
+    "norma": "RESOL-2020-570-INSSJP-DE#INSSJP"
+   },
+   {
     "cargo": "Coordinación de Proyectos Especiales",
     "persona": "Natalia Raffo Quintana",
     "desde": "2021-06-15",
@@ -47022,7 +48601,7 @@
    },
    {
     "cargo": "Departamento Médico de la Unidad Asistencial Dr. César Milstein",
-    "persona": "César Milstein",
+    "persona": "Fernando Casal",
     "desde": "2024-05-14",
     "norma": "RESOL-2024-1371-INSSJP-DE#INSSJP"
    },
@@ -47181,6 +48760,12 @@
     "persona": "Camila Montes",
     "desde": "2025-04-28",
     "norma": "RESOL-2025-868-INSSJP-DE#INSSJP"
+   },
+   {
+    "cargo": "Departamento de Licitaciones, Contratos y Convenios",
+    "persona": "Luciana Nahabetian",
+    "desde": "2024-05-28",
+    "norma": "RESOL-2024-1489-INSSJP-DE#INSSJP"
    },
    {
     "cargo": "Departamento de Licitaciones, Contratos y Convenios de la Unidad Secretaría Administrativa",
@@ -49456,6 +51041,13 @@
    },
    {
     "fecha": "2024-05-28",
+    "norma": "RESOL-2024-1489-INSSJP-DE#INSSJP",
+    "accion": "alta",
+    "persona": "Luciana Nahabetian",
+    "cargo": "Departamento de Licitaciones, Contratos y Convenios"
+   },
+   {
+    "fecha": "2024-05-28",
     "norma": "RESOL-2024-1499-INSSJP-DE#INSSJP",
     "accion": "alta",
     "persona": "Gabriela Natalia Lopez",
@@ -49528,7 +51120,7 @@
     "fecha": "2024-05-14",
     "norma": "RESOL-2024-1371-INSSJP-DE#INSSJP",
     "accion": "alta",
-    "persona": "César Milstein",
+    "persona": "Fernando Casal",
     "cargo": "Departamento Médico de la Unidad Asistencial Dr. César Milstein"
    },
    {
@@ -51842,6 +53434,13 @@
     "cargo": "Gerencia de Sistemas"
    },
    {
+    "fecha": "2020-02-18",
+    "norma": "RESOL-2020-570-INSSJP-DE#INSSJP",
+    "accion": "alta",
+    "persona": "Arístides Bernabe Leinenn",
+    "cargo": "Coordinación de Promoción y Prestaciones Sociales, Unidad de Gestión Local XXX – A"
+   },
+   {
     "fecha": "2020-02-14",
     "norma": "RESOL-2020-466-INSSJP-DE#INSSJP",
     "accion": "alta",
@@ -51996,6 +53595,13 @@
     "cargo": "Departamento Despacho"
    },
    {
+    "fecha": "2019-10-23",
+    "norma": "RESOL-2019-1726-INSSJP-DE#INSSJP",
+    "accion": "baja",
+    "persona": "Noemí Lucia Gabriel",
+    "cargo": "Referente de Afiliaciones, Coordinación MAP de la Coordinación General Ejecutiva Local IV, Unidad de"
+   },
+   {
     "fecha": "2019-10-22",
     "norma": "RESOL-2019-1706-INSSJP-DE#INSSJP",
     "accion": "alta",
@@ -52036,6 +53642,13 @@
     "accion": "baja",
     "persona": "Patricia Victoria Ciavatta",
     "cargo": "División Enfermería, Departamento Médico, Dirección Unidad Asistencial del Sistema Por Más Salud “Dr. Cesar Milstein”, Gerencia Efectores Sanitarios Propios"
+   },
+   {
+    "fecha": "2019-10-03",
+    "norma": "RESOL-2019-1600-INSSJP-DE#INSSJP",
+    "accion": "baja",
+    "persona": "Carlos Marcelo Carenzo",
+    "cargo": "Coordinación General Ejecutivo Local, Unidad de"
    },
    {
     "fecha": "2019-09-27",
@@ -52414,6 +54027,13 @@
     "accion": "alta",
     "persona": "Bárbara Carola Baggio",
     "cargo": "División Social Operativa, Departamento Amparos, Excepciones de Prestaciones Sociales y Asesoría Jurídica"
+   },
+   {
+    "fecha": "2018-12-20",
+    "norma": "RESOL-2018-1105-INSSJP-DE#INSSJP",
+    "accion": "baja",
+    "persona": "Marta Jorgelina Farias",
+    "cargo": "Coordinación Administrativo Contable, Unidad de G"
    },
    {
     "fecha": "2018-07-25",
@@ -52883,6 +54503,13 @@
     "accion": "alta",
     "persona": "Silvana Gabriela Stumbo",
     "cargo": "Departamento Administrativo y Operativo de la Unidad Secretaría Administrativa"
+   },
+   {
+    "fecha": "2017-09-21",
+    "norma": "RESOL-2017-929-INSSJP-DE#INSSJP",
+    "accion": "baja",
+    "persona": "Alejandro Franceschelli",
+    "cargo": "Gerencia de Planificación y Administración de UGL"
    },
    {
     "fecha": "2017-09-21",
@@ -53380,6 +55007,13 @@
     "accion": "baja",
     "persona": "Carlos Alberto Barela",
     "cargo": null
+   },
+   {
+    "fecha": "2016-03-15",
+    "norma": "RESOL-2016-303-INSSJP-DE#INSSJP",
+    "accion": "baja",
+    "persona": "Eduardo José Hernandez",
+    "cargo": "Coordinación de Vinculación con Veteranos de Guerra"
    },
    {
     "fecha": "2016-03-15",
