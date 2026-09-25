@@ -7,34 +7,44 @@
    "domicilio": "Cordoba 987",
    "localidad": "San Miguel de Tucuman",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(381) 4101332",
+   "cp": "T4000DGS"
   },
   {
    "codigo": "10001",
    "nombre": "AGENCIA CONCEPCION",
    "tipo": "agencia",
-   "domicilio": "9 de Julio 161",
+   "domicilio": "España 1282",
    "localidad": "Concepcion",
-   "lat": -27.351876,
-   "lon": -65.598077
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "9 de Julio 161",
+   "cp": "4146"
   },
   {
    "codigo": "10002",
    "nombre": "AGENCIA BANDA RIO SALI",
    "tipo": "agencia",
-   "domicilio": "San Martin 514",
+   "domicilio": "Belgrano 12",
    "localidad": "Banda del Rio Sali",
-   "lat": -26.84382,
-   "lon": -65.156569
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "San Martin 514",
+   "telefono": "(381) 4261078",
+   "cp": "T4109AMB"
   },
   {
    "codigo": "10003",
    "nombre": "AGENCIA FAMAILLA",
    "tipo": "agencia",
-   "domicilio": "Rivadavia 285",
+   "domicilio": "Congreso 380",
    "localidad": "Famailla",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Rivadavia 285",
+   "telefono": "(3863) 461152",
+   "cp": "4132"
   },
   {
    "codigo": "10004",
@@ -43,34 +53,44 @@
    "domicilio": "Belgrano 244",
    "localidad": "Monteros",
    "lat": -27.169682,
-   "lon": -65.498719
+   "lon": -65.498719,
+   "telefono": "(3863) 428517",
+   "cp": "T4142ANF"
   },
   {
    "codigo": "10005",
    "nombre": "AGENCIA AGUILARES",
    "tipo": "agencia",
-   "domicilio": "Alberdi esq. Pellegrini 494",
+   "domicilio": "Carlos Pellegrini (esq. Alberdi) 793",
    "localidad": "Aguilares",
-   "lat": -27.425955,
-   "lon": -65.616027
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Alberdi esq. Pellegrini 494",
+   "telefono": "(3865) 483798",
+   "cp": "T4152CBK"
   },
   {
    "codigo": "10006",
    "nombre": "AGENCIA YERBA BUENA",
    "tipo": "agencia",
-   "domicilio": "Av. Aconquija 1315",
+   "domicilio": "Lola Mora (arteria Este) 97",
    "localidad": "Yerba Buena",
-   "lat": -26.814578,
-   "lon": -65.286519
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. Aconquija 1315",
+   "cp": "4107"
   },
   {
    "codigo": "10050",
    "nombre": "AGENCIA TAFI DEL VALLE",
    "tipo": "agencia",
-   "domicilio": "Los Palenques S/N",
+   "domicilio": "Los Palienques 200",
    "localidad": "Tafi del Valle",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Los Palenques S/N",
+   "telefono": "(3867) 421059",
+   "cp": "4137"
   },
   {
    "codigo": "10052",
@@ -79,7 +99,9 @@
    "domicilio": "Lidoro Quinteros 423",
    "localidad": "Juan Bautista Alberdi",
    "lat": -27.5883,
-   "lon": -65.616286
+   "lon": -65.616286,
+   "telefono": "(3865) 472907",
+   "cp": "T4161MPA"
   },
   {
    "codigo": "10053",
@@ -88,7 +110,9 @@
    "domicilio": "Av.belgrano 554",
    "localidad": "Simoca",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3863) 481034",
+   "cp": "T4172AMN"
   },
   {
    "codigo": "10054",
@@ -97,7 +121,9 @@
    "domicilio": "Avd. Leandro Alem 743",
    "localidad": "Tafi Viejo",
    "lat": -26.733751,
-   "lon": -65.258205
+   "lon": -65.258205,
+   "telefono": "(381) 4617885",
+   "cp": "T4103AIH"
   },
   {
    "codigo": "10055",
@@ -106,7 +132,9 @@
    "domicilio": "Florida 470",
    "localidad": "Taco Ralo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3891) 492705",
+   "cp": "4242"
   },
   {
    "codigo": "10056",
@@ -115,7 +143,9 @@
    "domicilio": "25 de Mayo 614",
    "localidad": "Trancas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3862) 427041",
+   "cp": "T4124XBU"
   },
   {
    "codigo": "10057",
@@ -124,34 +154,45 @@
    "domicilio": "Avd. San Martin 480",
    "localidad": "Ranchillos",
    "lat": -26.95,
-   "lon": -65.05
+   "lon": -65.05,
+   "telefono": "(3869) 421022",
+   "cp": "T4179BQR"
   },
   {
    "codigo": "10058",
    "nombre": "AGENCIA SANTA ROSA DE LEALES",
    "tipo": "agencia",
-   "domicilio": "Belgrano 250",
+   "domicilio": "Santa Rosa Lima 150",
    "localidad": "Araoz",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Belgrano 250",
+   "telefono": "(3863) 493045",
+   "cp": "4111"
   },
   {
    "codigo": "10059",
    "nombre": "AGENCIA BURRUYACU",
    "tipo": "agencia",
-   "domicilio": "Av. Legislador Mariano Ramos 523",
+   "domicilio": "Manuel Belgrano 250",
    "localidad": "Alta Gracia",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av. Legislador Mariano Ramos 523",
+   "telefono": "(3894) 421263",
+   "cp": "4119"
   },
   {
    "codigo": "10060",
    "nombre": "AGENCIA LULES",
    "tipo": "agencia",
-   "domicilio": "Zoilo Dominguez 21",
+   "domicilio": "Dean Francisco de Salcedo 388",
    "localidad": "Lules",
-   "lat": -26.922784,
-   "lon": -65.338286
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Zoilo Dominguez 21",
+   "telefono": "(381) 4811464",
+   "cp": "4128"
   },
   {
    "codigo": "10061",
@@ -160,25 +201,33 @@
    "domicilio": "San Martin Norte-b°hipotecario S/nº",
    "localidad": "San Ignacio",
    "lat": -27.766667,
-   "lon": -65.616667
+   "lon": -65.616667,
+   "telefono": "(3865) 496760",
+   "cp": "4162"
   },
   {
    "codigo": "10062",
    "nombre": "AGENCIA AMAICHA DEL VALLE",
    "tipo": "agencia",
-   "domicilio": "San Martin S/nº",
+   "domicilio": "Miguel Araoz S/N",
    "localidad": "Amaicha del Valle",
-   "lat": -26.55,
-   "lon": -65.916667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "San Martin S/nº",
+   "telefono": "(3892) 421002",
+   "cp": "4137"
   },
   {
    "codigo": "10063",
    "nombre": "AGENCIA BELLA VISTA",
    "tipo": "agencia",
-   "domicilio": "Marconi 250",
+   "domicilio": "9 de Julio 165",
    "localidad": "Bella Vista",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Marconi 250",
+   "telefono": "(381) 4821894",
+   "cp": "4168"
   },
   {
    "codigo": "10064",
@@ -187,7 +236,9 @@
    "domicilio": "Av. Nestor Kirchner 2310",
    "localidad": "San Miguel de Tucuman",
    "lat": -26.791901,
-   "lon": -65.238223
+   "lon": -65.238223,
+   "telefono": "(381) 4380649",
+   "cp": "T4000ACX"
   },
   {
    "codigo": "10065",
@@ -196,7 +247,9 @@
    "domicilio": "Calle 4 275",
    "localidad": "Tafi Viejo",
    "lat": -26.776569,
-   "lon": -65.209804
+   "lon": -65.209804,
+   "telefono": "(381) 4374252",
+   "cp": "T4242XCB"
   }
  ],
  "II": [
@@ -207,16 +260,21 @@
    "domicilio": "Jujuy 1140",
    "localidad": "Corrientes",
    "lat": -27.470681,
-   "lon": -58.826718
+   "lon": -58.826718,
+   "telefono": "(3794) 476600",
+   "cp": "W3400CJP"
   },
   {
    "codigo": "20001",
    "nombre": "AGENCIA GOYA",
    "tipo": "agencia",
-   "domicilio": "Colon 1587",
+   "domicilio": "Colon 1583",
    "localidad": "Goya",
-   "lat": -29.148647,
-   "lon": -59.280286
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Colon 1587",
+   "telefono": "(3777) 421004",
+   "cp": "W3450EFE"
   },
   {
    "codigo": "20002",
@@ -225,7 +283,9 @@
    "domicilio": "Bartolome Mitre 1067",
    "localidad": "Paso de los Libres",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3772) 422384",
+   "cp": "3230"
   },
   {
    "codigo": "20003",
@@ -234,16 +294,21 @@
    "domicilio": "Bartolome Mitre 768",
    "localidad": "Santo Tome",
    "lat": -28.55,
-   "lon": -56.033333
+   "lon": -56.033333,
+   "telefono": "(3756) 420047",
+   "cp": "W3340AMP"
   },
   {
    "codigo": "20004",
    "nombre": "AGENCIA MONTE CASEROS",
    "tipo": "agencia",
-   "domicilio": "España 460",
+   "domicilio": "España 360",
    "localidad": "Monte Caseros",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "España 460",
+   "telefono": "(3775) 422695",
+   "cp": "W3220BSH"
   },
   {
    "codigo": "20005",
@@ -252,7 +317,9 @@
    "domicilio": "Juan Pujol 874",
    "localidad": "Mercedes",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3773) 420288",
+   "cp": "W3470CUP"
   },
   {
    "codigo": "20006",
@@ -261,7 +328,9 @@
    "domicilio": "Castillo 1086",
    "localidad": "Curuzu Cuatia",
    "lat": -29.791928,
-   "lon": -58.059312
+   "lon": -58.059312,
+   "telefono": "(3774) 422955",
+   "cp": "W3460BGP"
   },
   {
    "codigo": "20007",
@@ -270,7 +339,9 @@
    "domicilio": "Salta 1019",
    "localidad": "Bella Vista",
    "lat": -28.516667,
-   "lon": -59.033333
+   "lon": -59.033333,
+   "telefono": "(3777) 451626",
+   "cp": "W3432CIU"
   },
   {
    "codigo": "20008",
@@ -279,7 +350,9 @@
    "domicilio": "Lavalle y Mocito Acuña 2311",
    "localidad": "Gob Ing Valentin Virasoro",
    "lat": -28.052566,
-   "lon": -56.023355
+   "lon": -56.023355,
+   "telefono": "(3756) 481046",
+   "cp": "3342"
   },
   {
    "codigo": "20009",
@@ -288,7 +361,9 @@
    "domicilio": "25 de Mayo 640",
    "localidad": "Esquina",
    "lat": -29.14547,
-   "lon": -59.266245
+   "lon": -59.266245,
+   "telefono": "(3777) 460192",
+   "cp": "W3196ABT"
   },
   {
    "codigo": "20010",
@@ -297,16 +372,21 @@
    "domicilio": "Belgrano 1628",
    "localidad": "Ituzaingo",
    "lat": -27.583333,
-   "lon": -56.683333
+   "lon": -56.683333,
+   "telefono": "(3786) 420196",
+   "cp": "W3302AGD"
   },
   {
    "codigo": "20050",
    "nombre": "AGENCIA GRAL PAZ",
    "tipo": "agencia",
-   "domicilio": "Itati 410",
+   "domicilio": "San Martin 563",
    "localidad": "Gral Paz",
-   "lat": -27.75,
-   "lon": -57.616667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Itati 410",
+   "telefono": "(3781) 000000",
+   "cp": "3407"
   },
   {
    "codigo": "20051",
@@ -315,16 +395,21 @@
    "domicilio": "Alvear 1107",
    "localidad": "Saladas",
    "lat": -28.25,
-   "lon": -58.633333
+   "lon": -58.633333,
+   "telefono": "(3782) 421769",
+   "cp": "W3420ADM"
   },
   {
    "codigo": "20052",
    "nombre": "AGENCIA SAN COSME",
    "tipo": "agencia",
-   "domicilio": "San Martin E/ Irigoyen 12 Feb S/nº",
+   "domicilio": "Jujuy 1140",
    "localidad": "San Cosme",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "San Martin E/ Irigoyen 12 Feb S/nº",
+   "telefono": "(3794) 476600",
+   "cp": "3400"
   },
   {
    "codigo": "20053",
@@ -333,7 +418,9 @@
    "domicilio": "B.mitre 1047",
    "localidad": "Sauce",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3774) 480066",
+   "cp": "3463"
   },
   {
    "codigo": "20054",
@@ -342,16 +429,21 @@
    "domicilio": "Union 1021",
    "localidad": "La Cruz",
    "lat": -29.166667,
-   "lon": -56.633333
+   "lon": -56.633333,
+   "telefono": "(3772) 491131",
+   "cp": "3346"
   },
   {
    "codigo": "20055",
    "nombre": "AGENCIA ALVEAR",
    "tipo": "agencia",
-   "domicilio": "Centenario 480",
+   "domicilio": "Isaco Abitbol 895",
    "localidad": "Alvear",
-   "lat": -29.1,
-   "lon": -56.55
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Centenario 480",
+   "telefono": "(3772) 470519",
+   "cp": "W3344AFH"
   },
   {
    "codigo": "20056",
@@ -360,7 +452,9 @@
    "domicilio": "Desiderio Sosa 755",
    "localidad": "Itati",
    "lat": -27.266667,
-   "lon": -58.25
+   "lon": -58.25,
+   "telefono": "(3794) 493190",
+   "cp": "3414"
   },
   {
    "codigo": "20057",
@@ -369,7 +463,9 @@
    "domicilio": "Belgrano 834",
    "localidad": "Mburucuya",
    "lat": -28.05,
-   "lon": -58.216667
+   "lon": -58.216667,
+   "telefono": "(3782) 498004",
+   "cp": "W3427AIR"
   },
   {
    "codigo": "20058",
@@ -378,7 +474,9 @@
    "domicilio": "Tucuman 244",
    "localidad": "Santa Rosa",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3782) 494397",
+   "cp": "3421"
   },
   {
    "codigo": "20059",
@@ -387,7 +485,9 @@
    "domicilio": "25 de Mayo 245",
    "localidad": "Colonia Mocoreta",
    "lat": -30.55,
-   "lon": -57.916667
+   "lon": -57.916667,
+   "telefono": "(3775) 498003",
+   "cp": "W3226ACC"
   }
  ],
  "III": [
@@ -395,10 +495,13 @@
    "codigo": "30000",
    "nombre": "UGL III - CORDOBA",
    "tipo": "ugl",
-   "domicilio": "Av. Gral Paz 370",
+   "domicilio": "Av. General Paz 374",
    "localidad": "Cordoba",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av. Gral Paz 370",
+   "telefono": "(351) 4131600",
+   "cp": "X5000JLQ"
   },
   {
    "codigo": "30001",
@@ -407,7 +510,9 @@
    "domicilio": "Genari esq. Olcesse 510",
    "localidad": "Santa Rosa de Calamuchita",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3543) 460970",
+   "cp": "X5151"
   },
   {
    "codigo": "30004",
@@ -416,7 +521,9 @@
    "domicilio": "Jose Manuel Estrada 138",
    "localidad": "Villa Dolores",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3544) 420692",
+   "cp": "X5870GOD"
   },
   {
    "codigo": "30005",
@@ -425,7 +532,9 @@
    "domicilio": "Ramon Iribarne 131",
    "localidad": "Dean Funes",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3521) 420420",
+   "cp": "X5200BRC"
   },
   {
    "codigo": "30012",
@@ -434,25 +543,32 @@
    "domicilio": "Rivadavia esq. Uruguay .",
    "localidad": "Campo Grande",
    "lat": -30.05,
-   "lon": -63.616667
+   "lon": -63.616667,
+   "telefono": "(3522) 422170",
+   "cp": "X5248"
   },
   {
    "codigo": "30014",
    "nombre": "AGENCIA SANTA ROSA DEL RIO PRIMERO",
    "tipo": "agencia",
-   "domicilio": "Corrientes 346",
+   "domicilio": "9 de Julio 198",
    "localidad": "Atahona",
-   "lat": -30.907847,
-   "lon": -63.661037
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Corrientes 346",
+   "telefono": "(3574) 420243",
+   "cp": "5133"
   },
   {
    "codigo": "30015",
    "nombre": "AGENCIA VILLA DEL ROSARIO",
    "tipo": "agencia",
-   "domicilio": "Catamarca 635",
+   "domicilio": "Paraguay 339",
    "localidad": "Villa del Rosario",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Catamarca 635",
+   "cp": "5963"
   },
   {
    "codigo": "30022",
@@ -461,16 +577,21 @@
    "domicilio": "Paseo del Huerto Eq 25 de Mayo S/N",
    "localidad": "Jesus Maria",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3525) 420114",
+   "cp": "5220"
   },
   {
    "codigo": "30024",
    "nombre": "AGENCIA VILLA CARLOS PAZ",
    "tipo": "agencia",
-   "domicilio": "Sargento Cabral y San Lorenzo 126",
+   "domicilio": "Sargento Cabral 266",
    "localidad": "Villa Carlos Paz",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Sargento Cabral y San Lorenzo 126",
+   "telefono": "(3541) 430089",
+   "cp": "X5152"
   },
   {
    "codigo": "30030",
@@ -479,16 +600,21 @@
    "domicilio": "Lestache esq. Serrano S/nº",
    "localidad": "Rio Ceballos",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3543) 451075",
+   "cp": "X5111"
   },
   {
    "codigo": "30031",
    "nombre": "AGENCIA UNQUILLO",
    "tipo": "agencia",
-   "domicilio": "Rio Negro 451",
+   "domicilio": "Rio Negro 452",
    "localidad": "Unquillo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Rio Negro 451",
+   "telefono": "(3543) 485036",
+   "cp": "5109"
   },
   {
    "codigo": "30050",
@@ -497,16 +623,20 @@
    "domicilio": "Intendente Martinez 141",
    "localidad": "Unquillo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3547) 432750",
+   "cp": "X5186ICC"
   },
   {
    "codigo": "30060",
    "nombre": "AGENCIA MINA CLAVERO",
    "tipo": "agencia",
-   "domicilio": "25 de Mayo 146",
+   "domicilio": "San Martin 87",
    "localidad": "Mina Clavero",
-   "lat": -31.716667,
-   "lon": -65.016667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "25 de Mayo 146",
+   "cp": "5891"
   },
   {
    "codigo": "30061",
@@ -515,16 +645,20 @@
    "domicilio": "Jose Navergo esq. Quiroga S/N",
    "localidad": "Santa Rosa de Calamuchita",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3521) 497701",
+   "cp": "X5244"
   },
   {
    "codigo": "30062",
    "nombre": "AGENCIA RIO SEGUNDO",
    "tipo": "agencia",
-   "domicilio": "Leandro N. Alem 1951",
+   "domicilio": "San Juan 829",
    "localidad": "Rio Segundo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Leandro N. Alem 1951",
+   "cp": "5960"
   },
   {
    "codigo": "30090",
@@ -533,7 +667,8 @@
    "domicilio": "Santa Rosa 1564",
    "localidad": "Cordoba",
    "lat": -31.40644,
-   "lon": -64.203694
+   "lon": -64.203694,
+   "no_figura_web": true
   },
   {
    "codigo": "30101",
@@ -542,7 +677,9 @@
    "domicilio": "Roberto J. Pairo 4662",
    "localidad": "Cordoba",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(351) 4928083",
+   "cp": "X5019DED"
   },
   {
    "codigo": "30102",
@@ -551,16 +688,21 @@
    "domicilio": "Belardinelli 3150 Local 9",
    "localidad": "Cordoba",
    "lat": -31.44741,
-   "lon": -64.194227
+   "lon": -64.194227,
+   "telefono": "(351) 4863039",
+   "cp": "X5850XAA"
   },
   {
    "codigo": "30103",
    "nombre": "AGENCIA MATIENZO",
    "tipo": "agencia",
-   "domicilio": "Fuerza Area Argentina 4800",
+   "domicilio": "Av. Fuerza Aerea 4300",
    "localidad": "Cordoba",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Fuerza Area Argentina 4800",
+   "telefono": "(351) 4650194",
+   "cp": "X5010JLO"
   },
   {
    "codigo": "30104",
@@ -569,7 +711,9 @@
    "domicilio": "Av. San Jeronimo 2933",
    "localidad": "Cordoba",
    "lat": -31.423496,
-   "lon": -64.146337
+   "lon": -64.146337,
+   "telefono": "(351) 4556437",
+   "cp": "X5006IKG"
   },
   {
    "codigo": "30200",
@@ -578,34 +722,43 @@
    "domicilio": "Sarmiento 21",
    "localidad": "Bell Ville",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3537) 425008",
+   "cp": "X2550FOA"
   },
   {
    "codigo": "30217",
    "nombre": "AGENCIA MARCOS JUAREZ",
    "tipo": "agencia",
-   "domicilio": "San Martin 772",
+   "domicilio": "Santiago del Estero 230",
    "localidad": "Gral Roca",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "San Martin 772",
+   "telefono": "(3472) 458160",
+   "cp": "2580"
   },
   {
    "codigo": "30218",
    "nombre": "AGENCIA CORRAL DE BUSTOS",
    "tipo": "agencia",
-   "domicilio": "Independencia 44",
+   "domicilio": "Santa Fe 755",
    "localidad": "Corral de Bustos",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Independencia 44",
+   "cp": "2645"
   },
   {
    "codigo": "30229",
    "nombre": "AGENCIA LABORDE",
    "tipo": "agencia",
-   "domicilio": "Sarmiento 534",
+   "domicilio": "Dr Castiñeiras 210",
    "localidad": "Laborde",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Sarmiento 534",
+   "cp": "2657"
   },
   {
    "codigo": "30231",
@@ -614,25 +767,32 @@
    "domicilio": "Belgrano 1269",
    "localidad": "Cruz Alta",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3467) 421521",
+   "cp": "X2189ANK"
   },
   {
    "codigo": "30232",
    "nombre": "AGENCIA JUSTINIANO POSSE",
    "tipo": "agencia",
-   "domicilio": "9 de Julio 913",
+   "domicilio": "Belgrano 173",
    "localidad": "Justiniano Posse",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "9 de Julio 913",
+   "telefono": "(0353) 7514325",
+   "cp": "2553"
   },
   {
    "codigo": "30254",
    "nombre": "AGENCIA NOETINGER",
    "tipo": "agencia",
-   "domicilio": "Intendente Fernando Moreno 271",
+   "domicilio": "Intendente Fernando Morero 177",
    "localidad": "Noetinger",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Intendente Fernando Moreno 271",
+   "cp": "2563"
   },
   {
    "codigo": "30300",
@@ -641,16 +801,21 @@
    "domicilio": "Iturraspe 2350",
    "localidad": "San Francisco",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3564) 423718",
+   "cp": "X2400CTJ"
   },
   {
    "codigo": "30313",
    "nombre": "AGENCIA MORTEROS",
    "tipo": "agencia",
-   "domicilio": "Boulevard Illia 696",
+   "domicilio": "Boulevard Illia y Marconi 969",
    "localidad": "Morteros",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Boulevard Illia 696",
+   "telefono": "(3562) 422859",
+   "cp": "2421"
   },
   {
    "codigo": "30316",
@@ -659,25 +824,32 @@
    "domicilio": "9 de Julio 72",
    "localidad": "Las Varillas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3533) 420342",
+   "cp": "X5992ABB"
   },
   {
    "codigo": "30327",
    "nombre": "AGENCIA ARROYITO",
    "tipo": "agencia",
-   "domicilio": "Velez Sarfield 943",
+   "domicilio": "Fulvio Salvador Pagani 730",
    "localidad": "Arroyito",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Velez Sarfield 943",
+   "telefono": "(3576) 421070",
+   "cp": "2434"
   },
   {
    "codigo": "30328",
    "nombre": "AGENCIA BALNEARIA",
    "tipo": "agencia",
-   "domicilio": "Avda. Belgrano 235",
+   "domicilio": "Boulevard Jorge Bosco 49",
    "localidad": "Balnearia",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Avda. Belgrano 235",
+   "cp": "5141"
   },
   {
    "codigo": "30357",
@@ -686,7 +858,9 @@
    "domicilio": "San Martin 230",
    "localidad": "Porteña",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3472) 470272",
+   "cp": "2415"
   },
   {
    "codigo": "30358",
@@ -695,7 +869,8 @@
    "domicilio": "9 de Julio 201",
    "localidad": "Saturnino Maria Laspiur",
    "lat": -31.7,
-   "lon": -62.466667
+   "lon": -62.466667,
+   "no_figura_web": true
   },
   {
    "codigo": "30400",
@@ -704,16 +879,20 @@
    "domicilio": "Leandro N Alem 433",
    "localidad": "Villa Maria",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(353) 4526773",
+   "cp": "X5900JAE"
   },
   {
    "codigo": "30452",
    "nombre": "AGENCIA OLIVA",
    "tipo": "agencia",
-   "domicilio": "Colon 180",
+   "domicilio": "Mariano Moreno 117",
    "localidad": "Oliva",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Colon 180",
+   "cp": "5980"
   },
   {
    "codigo": "30500",
@@ -722,7 +901,9 @@
    "domicilio": "Pte. Peron 778",
    "localidad": "Cosquin",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3541) 451919",
+   "cp": "X5166AFL"
   },
   {
    "codigo": "30523",
@@ -731,16 +912,21 @@
    "domicilio": "Avda Eva Peron esq A. Herrera S/N",
    "localidad": "Cruz del Eje",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3549) 423393",
+   "cp": "X5280"
   },
   {
    "codigo": "30525",
    "nombre": "AGENCIA LA FALDA",
    "tipo": "agencia",
-   "domicilio": "Dr Meinken 38",
+   "domicilio": "Dr. Meincke 38",
    "localidad": "La Falda",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Dr Meinken 38",
+   "telefono": "(3548) 427271",
+   "cp": "X5172ABB"
   },
   {
    "codigo": "30553",
@@ -749,7 +935,9 @@
    "domicilio": "Bartolome Mitre 682 Local 1",
    "localidad": "Capilla del Monte",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3548) 481389",
+   "cp": "5184"
   },
   {
    "codigo": "30558",
@@ -758,7 +946,9 @@
    "domicilio": "Lopez y Planes 345",
    "localidad": "La Cumbre",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3548) 451940",
+   "cp": "X5180DCG"
   },
   {
    "codigo": "30600",
@@ -767,7 +957,9 @@
    "domicilio": "Martin Marotto esq. Uruguay 288",
    "localidad": "Rio Tercero",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3571) 431798",
+   "cp": "X5850"
   },
   {
    "codigo": "30621",
@@ -776,16 +968,21 @@
    "domicilio": "Av. Jose Maria Gomez 571",
    "localidad": "Santa Rosa de Calamuchita",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3546) 420365",
+   "cp": "X5196"
   },
   {
    "codigo": "30659",
    "nombre": "AGENCIA HERNANDO",
    "tipo": "agencia",
-   "domicilio": "Matheu 166",
+   "domicilio": "12 de Octubre 127",
    "localidad": "Hernando",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Matheu 166",
+   "telefono": "(353) 4961492",
+   "cp": "5929"
   },
   {
    "codigo": "30661",
@@ -794,7 +991,8 @@
    "domicilio": "Roma 550",
    "localidad": "Cordoba",
    "lat": -31.409447,
-   "lon": -64.164802
+   "lon": -64.164802,
+   "no_figura_web": true
   },
   {
    "codigo": "30662",
@@ -803,7 +1001,9 @@
    "domicilio": "Rivadavia 120",
    "localidad": "Villa Allende",
    "lat": -31.294022,
-   "lon": -64.297492
+   "lon": -64.297492,
+   "telefono": "(3543) 408752",
+   "cp": "X5105ECA"
   }
  ],
  "IV": [
@@ -814,7 +1014,9 @@
    "domicilio": "Belgrano 1236",
    "localidad": "Mendoza",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(261) 4413900",
+   "cp": "5500"
   },
   {
    "codigo": "40001",
@@ -823,7 +1025,9 @@
    "domicilio": "Bra. los Andes 3909",
    "localidad": "Guaymallen",
    "lat": -32.900991,
-   "lon": -68.792346
+   "lon": -68.792346,
+   "telefono": "(261) 4460241",
+   "cp": "M5521AXA"
   },
   {
    "codigo": "40002",
@@ -832,7 +1036,9 @@
    "domicilio": "Leandro Alem 593",
    "localidad": "San Martin",
    "lat": -33.086488,
-   "lon": -68.464311
+   "lon": -68.464311,
+   "telefono": "(0263) 4428745",
+   "cp": "M5570FIK"
   },
   {
    "codigo": "40003",
@@ -841,7 +1047,9 @@
    "domicilio": "Hipolito Irigoyen 888",
    "localidad": "Tunuyan",
    "lat": -33.574348,
-   "lon": -69.019993
+   "lon": -69.019993,
+   "telefono": "(02622) 422541",
+   "cp": "5560"
   },
   {
    "codigo": "40004",
@@ -850,16 +1058,21 @@
    "domicilio": "San Martin 516",
    "localidad": "Las Heras",
    "lat": -32.860008,
-   "lon": -68.833232
+   "lon": -68.833232,
+   "telefono": "(0261) 4372768",
+   "cp": "M5539EGL"
   },
   {
    "codigo": "40005",
    "nombre": "AGENCIA MAIPU",
    "tipo": "agencia",
-   "domicilio": "Mitre 278",
+   "domicilio": "Mitre 351",
    "localidad": "Barcala",
-   "lat": -33.033333,
-   "lon": -68.6
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Mitre 278",
+   "telefono": "(0261) 4975487",
+   "cp": "5515"
   },
   {
    "codigo": "40006",
@@ -868,7 +1081,9 @@
    "domicilio": "Roque Saenz Peña 529",
    "localidad": "Agrelo",
    "lat": -33.116667,
-   "lon": -68.9
+   "lon": -68.9,
+   "telefono": "(0261) 4982317",
+   "cp": "M5507ENK"
   },
   {
    "codigo": "40007",
@@ -877,7 +1092,9 @@
    "domicilio": "Juan B. Justo 415",
    "localidad": "Mendoza",
    "lat": -32.883648,
-   "lon": -68.854948
+   "lon": -68.854948,
+   "telefono": "(0261) 4201123",
+   "cp": "M5500DND"
   },
   {
    "codigo": "40050",
@@ -886,25 +1103,32 @@
    "domicilio": "Las Heras 22",
    "localidad": "Tulumaya O Lavalle",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "cp": "M5533"
   },
   {
    "codigo": "40051",
    "nombre": "AGENCIA LA CONSULTA",
    "tipo": "agencia",
-   "domicilio": "9 de Julio 235",
+   "domicilio": "Ramon Calderon Norte 165",
    "localidad": "La Consulta",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "9 de Julio 235",
+   "telefono": "(02622) 471219",
+   "cp": "5567"
   },
   {
    "codigo": "40053",
    "nombre": "AGENCIA LA PAZ",
    "tipo": "agencia",
-   "domicilio": "Caligniana 151",
+   "domicilio": "Galigniana 151",
    "localidad": "La Paz",
-   "lat": -32.833333,
-   "lon": -67.3
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Caligniana 151",
+   "telefono": "(02626) 421378",
+   "cp": "M5590ZAA"
   },
   {
    "codigo": "40054",
@@ -913,16 +1137,21 @@
    "domicilio": "Francisco Cirot 85",
    "localidad": "Las Catitas",
    "lat": -33.300598,
-   "lon": -68.045113
+   "lon": -68.045113,
+   "telefono": "(02634) 495166",
+   "cp": "M5594"
   },
   {
    "codigo": "40055",
    "nombre": "AGENCIA RIVADAVIA",
    "tipo": "agencia",
-   "domicilio": "Wenceslao Nuñez 232",
+   "domicilio": "Wenceslao Nuñez 732",
    "localidad": "Rivadavia",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Wenceslao Nuñez 232",
+   "telefono": "(02634) 442797",
+   "cp": "M5577"
   },
   {
    "codigo": "40056",
@@ -931,7 +1160,9 @@
    "domicilio": "Las Heras y las Calandrias 246",
    "localidad": "Capdeville",
    "lat": -32.75,
-   "lon": -68.816667
+   "lon": -68.816667,
+   "telefono": "(02624) 420274",
+   "cp": "5545"
   },
   {
    "codigo": "40057",
@@ -940,7 +1171,9 @@
    "domicilio": "Almirante Brown 290",
    "localidad": "La Arboleda",
    "lat": -33.366667,
-   "lon": -69.133333
+   "lon": -69.133333,
+   "telefono": "(02622) 488073",
+   "cp": "M5561AGF"
   },
   {
    "codigo": "40062",
@@ -949,7 +1182,9 @@
    "domicilio": "Ladislao Segura 123",
    "localidad": "Junin",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(02634) 492486",
+   "cp": "M5573BLC"
   },
   {
    "codigo": "40100",
@@ -958,7 +1193,9 @@
    "domicilio": "Av. Rivadavia 40",
    "localidad": "San Rafael",
    "lat": -34.608985,
-   "lon": -68.326902
+   "lon": -68.326902,
+   "telefono": "(0260) 4425189",
+   "cp": "M5602GLB"
   },
   {
    "codigo": "40104",
@@ -967,43 +1204,57 @@
    "domicilio": "Roque Saens Peña 675",
    "localidad": "Canalejas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(02625) 423910",
+   "cp": "M5620GUM"
   },
   {
    "codigo": "40152",
    "nombre": "AGENCIA MALARGUE",
    "tipo": "agencia",
-   "domicilio": "Rufino Ortega 778",
+   "domicilio": "Saturnino Torres 342",
    "localidad": "Malargue",
-   "lat": -35.474616,
-   "lon": -69.579923
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Rufino Ortega 778",
+   "telefono": "(02604) 471799",
+   "cp": "5613"
   },
   {
    "codigo": "40158",
    "nombre": "AGENCIA VILLA ATUEL",
    "tipo": "agencia",
-   "domicilio": "Bartolome Mitre 299",
+   "domicilio": "Agustin Alvarez y 25 de Mayo S/N",
    "localidad": "Jaime Prats",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Bartolome Mitre 299",
+   "telefono": "(02625) 470035",
+   "cp": "5622"
   },
   {
    "codigo": "40159",
    "nombre": "AGENCIA BOWEN",
    "tipo": "agencia",
-   "domicilio": "Colon y San Martin 555",
+   "domicilio": "Colon y San Martin 188",
    "localidad": "Bowen",
-   "lat": -35.0,
-   "lon": -67.533333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Colon y San Martin 555",
+   "telefono": "(02625) 530277",
+   "cp": "5634"
   },
   {
    "codigo": "40160",
    "nombre": "AGENCIA MONTE COMAN",
    "tipo": "agencia",
-   "domicilio": "Av Mendoza 149",
+   "domicilio": "Mendoza 147",
    "localidad": "Colonia Elena",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av Mendoza 149",
+   "telefono": "(0260) 4490051",
+   "cp": "5609"
   },
   {
    "codigo": "40161",
@@ -1012,7 +1263,9 @@
    "domicilio": "Avenida San Martin 189",
    "localidad": "Godoy Cruz",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0261) 4220166",
+   "cp": "M5501AAB"
   }
  ],
  "V": [
@@ -1023,7 +1276,9 @@
    "domicilio": "San Martín 261",
    "localidad": "Bahia Blanca",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0291) 4518617",
+   "cp": "8000"
   },
   {
    "codigo": "50001",
@@ -1032,7 +1287,9 @@
    "domicilio": "Cecilio Lopez 316",
    "localidad": "Saavedra",
    "lat": -37.766667,
-   "lon": -62.35
+   "lon": -62.35,
+   "telefono": "(02923) 497104",
+   "cp": "B8174AKR"
   },
   {
    "codigo": "50100",
@@ -1041,7 +1298,9 @@
    "domicilio": "Humberto Primo 202",
    "localidad": "Carhue",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2932) 424844",
+   "cp": "B8109BVF"
   },
   {
    "codigo": "50101",
@@ -1050,7 +1309,9 @@
    "domicilio": "Istilart 86",
    "localidad": "Tres Arroyos",
    "lat": -38.378796,
-   "lon": -60.2713
+   "lon": -60.2713,
+   "telefono": "(2983) 430045",
+   "cp": "7500"
   },
   {
    "codigo": "50102",
@@ -1059,7 +1320,9 @@
    "domicilio": "Stegman 557",
    "localidad": "Cnel Pringles",
    "lat": -37.966667,
-   "lon": -61.366667
+   "lon": -61.366667,
+   "telefono": "(2922) 462903",
+   "cp": "B7530DBK"
   },
   {
    "codigo": "50103",
@@ -1068,7 +1331,9 @@
    "domicilio": "San Martin 548",
    "localidad": "Cnel Dorrego",
    "lat": -38.715823,
-   "lon": -61.291224
+   "lon": -61.291224,
+   "telefono": "(2921) 452007",
+   "cp": "B8150DYJ"
   },
   {
    "codigo": "50104",
@@ -1077,7 +1342,9 @@
    "domicilio": "Rawson 240",
    "localidad": "Tornquist",
    "lat": -38.1,
-   "lon": -62.233333
+   "lon": -62.233333,
+   "telefono": "(0291) 4941301",
+   "cp": "B8160"
   },
   {
    "codigo": "50150",
@@ -1086,7 +1353,9 @@
    "domicilio": "Sarmiento 198",
    "localidad": "Orense",
    "lat": -38.683333,
-   "lon": -59.783333
+   "lon": -59.783333,
+   "telefono": "(2982) 420074",
+   "cp": "B7503BVD"
   },
   {
    "codigo": "50200",
@@ -1095,7 +1364,9 @@
    "domicilio": "Belgrano 1029",
    "localidad": "Cnel Suarez",
    "lat": -37.459256,
-   "lon": -61.930652
+   "lon": -61.930652,
+   "telefono": "(2926) 422072",
+   "cp": "B7540BFU"
   },
   {
    "codigo": "50205",
@@ -1104,7 +1375,9 @@
    "domicilio": "Traful Bis, Galeria Fenizi Local 268 S/N",
    "localidad": "Monte Hermoso",
    "lat": -38.983333,
-   "lon": -61.3
+   "lon": -61.3,
+   "telefono": "(2921) 482258",
+   "cp": "8153"
   },
   {
    "codigo": "50206",
@@ -1113,25 +1386,33 @@
    "domicilio": "7 de Marzo 150",
    "localidad": "Carmen de Patagones",
    "lat": -40.800926,
-   "lon": -62.985386
+   "lon": -62.985386,
+   "telefono": "(2920) 461833",
+   "cp": "B8504BSD"
   },
   {
    "codigo": "50207",
    "nombre": "AGENCIA MEDANOS",
    "tipo": "agencia",
-   "domicilio": "Bartolome Mitre 400",
+   "domicilio": "Bartolome Mitre 401",
    "localidad": "Medanos",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Bartolome Mitre 400",
+   "telefono": "(2927) 432013",
+   "cp": "8132"
   },
   {
    "codigo": "50209",
    "nombre": "AGENCIA GUAMINI",
    "tipo": "agencia",
-   "domicilio": "Av. M. Freire 105",
+   "domicilio": "Freyre E/belgrano y Alvear 105",
    "localidad": "Guamini",
-   "lat": -37.033333,
-   "lon": -62.6
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. M. Freire 105",
+   "telefono": "(2929) 432396",
+   "cp": "6435"
   },
   {
    "codigo": "50210",
@@ -1140,7 +1421,9 @@
    "domicilio": "Laprida 960",
    "localidad": "Carhue",
    "lat": -37.183333,
-   "lon": -62.75
+   "lon": -62.75,
+   "telefono": "(2936) 432692",
+   "cp": "B6430CGL"
   },
   {
    "codigo": "50211",
@@ -1149,7 +1432,9 @@
    "domicilio": "Moseñor Durban 701",
    "localidad": "Pigüe",
    "lat": -37.683333,
-   "lon": -62.4
+   "lon": -62.4,
+   "telefono": "(2923) 472045",
+   "cp": "B8170AIC"
   },
   {
    "codigo": "50212",
@@ -1158,7 +1443,9 @@
    "domicilio": "San Martin 498",
    "localidad": "Puan",
    "lat": -37.55,
-   "lon": -62.766667
+   "lon": -62.766667,
+   "telefono": "(2923) 498138",
+   "cp": "B8180BGR"
   },
   {
    "codigo": "50250",
@@ -1167,7 +1454,9 @@
    "domicilio": "Calle 12 558",
    "localidad": "Huanguelen",
    "lat": -37.066667,
-   "lon": -61.95
+   "lon": -61.95,
+   "telefono": "(2933) 432479",
+   "cp": "7545"
   },
   {
    "codigo": "50251",
@@ -1176,7 +1465,9 @@
    "domicilio": "Calle Nro. 24 262",
    "localidad": "Pedro Luro",
    "lat": -39.5,
-   "lon": -62.7
+   "lon": -62.7,
+   "telefono": "(2928) 420295",
+   "cp": "B8148"
   },
   {
    "codigo": "50252",
@@ -1185,7 +1476,9 @@
    "domicilio": "Rivadavia 143",
    "localidad": "Darregueira",
    "lat": -37.7,
-   "lon": -63.166667
+   "lon": -63.166667,
+   "telefono": "(2924) 420205",
+   "cp": "B8183CEC"
   },
   {
    "codigo": "50253",
@@ -1194,7 +1487,9 @@
    "domicilio": "San Martin 936",
    "localidad": "Casbas",
    "lat": -36.766667,
-   "lon": -62.516667
+   "lon": -62.516667,
+   "telefono": "(2929) 480034",
+   "cp": "B6417BTW"
   },
   {
    "codigo": "50255",
@@ -1203,7 +1498,9 @@
    "domicilio": "7 de Marzo 411",
    "localidad": "Stroeder",
    "lat": -40.183333,
-   "lon": -62.616667
+   "lon": -62.616667,
+   "telefono": "(2920) 491404",
+   "cp": "B8508ACE"
   },
   {
    "codigo": "50258",
@@ -1212,7 +1509,9 @@
    "domicilio": "Caseros 1581",
    "localidad": "Bahia Blanca",
    "lat": -38.730597,
-   "lon": -62.246907
+   "lon": -62.246907,
+   "telefono": "(0291) 4818588",
+   "cp": "B8001BBE"
   },
   {
    "codigo": "50259",
@@ -1221,7 +1520,9 @@
    "domicilio": "Siches 3937",
    "localidad": "Ing White",
    "lat": -38.784803,
-   "lon": -62.267013
+   "lon": -62.267013,
+   "telefono": "(0291) 4571149",
+   "cp": "B8103DZC"
   },
   {
    "codigo": "50260",
@@ -1230,7 +1531,9 @@
    "domicilio": "Jose Maria Gutierrez 379",
    "localidad": "Gral Daniel Cerri",
    "lat": -38.720366,
-   "lon": -62.391802
+   "lon": -62.391802,
+   "telefono": "(0291) 4846275",
+   "cp": "B8105BMG"
   }
  ],
  "VI": [
@@ -1241,7 +1544,9 @@
    "domicilio": "Tucuman 753 Piso 6º",
    "localidad": "Capital Federal",
    "lat": -34.601053,
-   "lon": -58.37767
+   "lon": -58.37767,
+   "telefono": "(011) 50710100",
+   "cp": "C1049AAO"
   },
   {
    "codigo": "60001",
@@ -1250,7 +1555,8 @@
    "domicilio": "Avda. Córdoba 2351",
    "localidad": "Capital Federal",
    "lat": -34.5995,
-   "lon": -58.400162
+   "lon": -58.400162,
+   "no_figura_web": true
   },
   {
    "codigo": "60002",
@@ -1259,7 +1565,8 @@
    "domicilio": "Av Belgrano 2975",
    "localidad": "Capital Federal",
    "lat": -34.614925,
-   "lon": -58.407627
+   "lon": -58.407627,
+   "no_figura_web": true
   },
   {
    "codigo": "60100",
@@ -1268,16 +1575,20 @@
    "domicilio": "Juan Bautista Alberdi 5834",
    "localidad": "Capital Federal",
    "lat": -34.651866,
-   "lon": -58.502433
+   "lon": -58.502433,
+   "telefono": "(011) 46350547",
+   "cp": "C1440AAW"
   },
   {
    "codigo": "60200",
    "nombre": "AGENCIA PAMI 2",
    "tipo": "agencia",
-   "domicilio": "Avenida Rivadavia 8999",
+   "domicilio": "Av. Juan B Justo 7710",
    "localidad": "Capital Federal",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Avenida Rivadavia 8999",
+   "cp": "1407"
   },
   {
    "codigo": "60300",
@@ -1286,7 +1597,9 @@
    "domicilio": "Avenida Francisco Beiro 3572",
    "localidad": "Capital Federal",
    "lat": -34.600803,
-   "lon": -58.503377
+   "lon": -58.503377,
+   "telefono": "(011) 45802780",
+   "cp": "C1419HYW"
   },
   {
    "codigo": "60301",
@@ -1295,7 +1608,9 @@
    "domicilio": "Avenida Lope de Vega 2102",
    "localidad": "Capital Federal",
    "lat": -34.621227,
-   "lon": -58.516087
+   "lon": -58.516087,
+   "telefono": "(011) 45676928",
+   "cp": "C1417COR"
   },
   {
    "codigo": "60400",
@@ -1304,7 +1619,9 @@
    "domicilio": "Vidal 2322",
    "localidad": "Capital Federal",
    "lat": -34.561889,
-   "lon": -58.462134
+   "lon": -58.462134,
+   "telefono": "(011) 45760940",
+   "cp": "C1428CSL"
   },
   {
    "codigo": "60500",
@@ -1313,7 +1630,9 @@
    "domicilio": "Ecuador 650",
    "localidad": "Capital Federal",
    "lat": -34.602235,
-   "lon": -58.406857
+   "lon": -58.406857,
+   "telefono": "(011) 45110741",
+   "cp": "C1214ACJ"
   },
   {
    "codigo": "60600",
@@ -1322,16 +1641,21 @@
    "domicilio": "Av. Rivadavia 7358",
    "localidad": "Capital Federal",
    "lat": -34.630297,
-   "lon": -58.469094
+   "lon": -58.469094,
+   "telefono": "(011) 46118751",
+   "cp": "C1406GMQ"
   },
   {
    "codigo": "60700",
    "nombre": "AGENCIA PAMI 7",
    "tipo": "agencia",
-   "domicilio": "Avenida Corrientes 5165",
+   "domicilio": "Av. Corrientes 4727",
    "localidad": "Capital Federal",
-   "lat": -34.599774,
-   "lon": -58.438223
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Avenida Corrientes 5165",
+   "telefono": "(011) 45149863",
+   "cp": "1414"
   },
   {
    "codigo": "60800",
@@ -1340,7 +1664,9 @@
    "domicilio": "Avenida Belgrano 3880",
    "localidad": "Capital Federal",
    "lat": -34.615694,
-   "lon": -58.420925
+   "lon": -58.420925,
+   "telefono": "(011) 49831674",
+   "cp": "C1210AAT"
   },
   {
    "codigo": "60801",
@@ -1349,7 +1675,9 @@
    "domicilio": "Avenida Caseros 3401",
    "localidad": "Capital Federal",
    "lat": -34.638255,
-   "lon": -58.413045
+   "lon": -58.413045,
+   "telefono": "(011) 49121191",
+   "cp": "C1263AAD"
   },
   {
    "codigo": "60802",
@@ -1358,7 +1686,8 @@
    "domicilio": "Jujuy 1171",
    "localidad": "Capital Federal",
    "lat": -34.623359,
-   "lon": -58.402275
+   "lon": -58.402275,
+   "no_figura_web": true
   },
   {
    "codigo": "60900",
@@ -1367,7 +1696,9 @@
    "domicilio": "Avenida Paseo Colon 975",
    "localidad": "Capital Federal",
    "lat": -34.618949,
-   "lon": -58.369269
+   "lon": -58.369269,
+   "telefono": "(011) 43624595",
+   "cp": "C1063ACJ"
   },
   {
    "codigo": "60901",
@@ -1376,16 +1707,32 @@
    "domicilio": "Avenida Montes de Oca 223",
    "localidad": "Capital Federal",
    "lat": -34.63097,
-   "lon": -58.376644
+   "lon": -58.376644,
+   "telefono": "(011) 45195767",
+   "cp": "1270"
   },
   {
    "codigo": "61000",
    "nombre": "AGENCIA PAMI 10",
    "tipo": "agencia",
-   "domicilio": "Moreno 1202",
+   "domicilio": "Sarmiento 657",
    "localidad": "Capital Federal",
-   "lat": -34.612189,
-   "lon": -58.383199
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Moreno 1202",
+   "cp": "1041"
+  },
+  {
+   "codigo": "60003",
+   "nombre": "POSTA RICCIARDELLI",
+   "tipo": "boca",
+   "domicilio": "Av. Riestra y Camilo Torres Mz.29",
+   "localidad": "Capital Federal",
+   "lat": null,
+   "lon": null,
+   "telefono": "(011) 46118751",
+   "cp": "1406",
+   "nuevo_web": true
   }
  ],
  "VII": [
@@ -1396,7 +1743,9 @@
    "domicilio": "Calle 7 170",
    "localidad": "La Plata",
    "lat": -34.903465,
-   "lon": -57.965078
+   "lon": -57.965078,
+   "telefono": "(0221) 4391086",
+   "cp": "1900"
   },
   {
    "codigo": "70001",
@@ -1405,25 +1754,33 @@
    "domicilio": "Bartolome Mitre 368",
    "localidad": "Lobos",
    "lat": -35.188826,
-   "lon": -59.092546
+   "lon": -59.092546,
+   "telefono": "(02227) 422111",
+   "cp": "B7240HLH"
   },
   {
    "codigo": "70003",
    "nombre": "AGENCIA CHASCOMUS",
    "tipo": "agencia",
-   "domicilio": "Belgrano 115",
+   "domicilio": "Maipu 170",
    "localidad": "Chascomus",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Belgrano 115",
+   "telefono": "(02241) 431644",
+   "cp": "7130"
   },
   {
    "codigo": "70004",
    "nombre": "AGENCIA ALEJANDRO KORN",
    "tipo": "agencia",
-   "domicilio": "Av. Pte. Peron y Mitre 4964",
+   "domicilio": "Av Presidente Peron 4725",
    "localidad": "Alejandro Korn",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av. Pte. Peron y Mitre 4964",
+   "telefono": "(02225) 421091",
+   "cp": "1864"
   },
   {
    "codigo": "70005",
@@ -1432,7 +1789,9 @@
    "domicilio": "Santos Molina 765",
    "localidad": "San Miguel del Monte",
    "lat": -35.439299,
-   "lon": -58.801501
+   "lon": -58.801501,
+   "telefono": "(02271) 420704",
+   "cp": "B6435XAC"
   },
   {
    "codigo": "70006",
@@ -1441,7 +1800,9 @@
    "domicilio": "Rivadavia 64",
    "localidad": "Gral Belgrano",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(02243) 452860",
+   "cp": "B7223AVB"
   },
   {
    "codigo": "70007",
@@ -1450,7 +1811,9 @@
    "domicilio": "Basavilbaso 480",
    "localidad": "Cañuelas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(02226) 422930",
+   "cp": "B1814FQJ"
   },
   {
    "codigo": "70008",
@@ -1459,7 +1822,9 @@
    "domicilio": "Hipolito Yrigoyen 3247",
    "localidad": "Ranchos",
    "lat": -35.533333,
-   "lon": -58.816667
+   "lon": -58.816667,
+   "telefono": "(02241) 481027",
+   "cp": "B1987BBE"
   },
   {
    "codigo": "70009",
@@ -1468,7 +1833,9 @@
    "domicilio": "Alberti 965",
    "localidad": "Brandsen",
    "lat": -35.169678,
-   "lon": -58.233392
+   "lon": -58.233392,
+   "telefono": "(02223) 443121",
+   "cp": "B1980DYS"
   },
   {
    "codigo": "70011",
@@ -1477,7 +1844,9 @@
    "domicilio": "Ferella 593",
    "localidad": "Ensenada",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0221) 4692816",
+   "cp": "B1925COI"
   },
   {
    "codigo": "70012",
@@ -1486,7 +1855,9 @@
    "domicilio": "Calle 161 esq. 8 606 Pb",
    "localidad": "Berisso",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0221) 4640710",
+   "cp": "B1916BVN"
   },
   {
    "codigo": "70013",
@@ -1495,16 +1866,20 @@
    "domicilio": "Goenaga 882",
    "localidad": "Magdalena",
    "lat": -35.079764,
-   "lon": -57.519378
+   "lon": -57.519378,
+   "telefono": "(02221) 452722",
+   "cp": "B1913BOR"
   },
   {
    "codigo": "70051",
    "nombre": "AGENCIA CITY BELL",
    "tipo": "agencia",
-   "domicilio": "Camino Centenario 76",
+   "domicilio": "Calle 474 y 20 - En la Esquina S/N",
    "localidad": "City Bell",
-   "lat": -34.867958,
-   "lon": -58.039089
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Camino Centenario 76",
+   "cp": "1896"
   },
   {
    "codigo": "70052",
@@ -1513,7 +1888,9 @@
    "domicilio": "Calle 66 2342",
    "localidad": "Los Hornos",
    "lat": -34.958875,
-   "lon": -57.970866
+   "lon": -57.970866,
+   "telefono": "(0221) 4507258",
+   "cp": "B1741XAF"
   },
   {
    "codigo": "70053",
@@ -1522,16 +1899,21 @@
    "domicilio": "169 entre 518 y 519 1376",
    "localidad": "Melchor Romero",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0221) 4781600",
+   "cp": "B1903DJB"
   },
   {
    "codigo": "70054",
    "nombre": "AGENCIA VILLA ELISA",
    "tipo": "agencia",
-   "domicilio": "Centenario 450",
+   "domicilio": "Camino Centenario 650",
    "localidad": "Villa Elisa",
-   "lat": -34.855742,
-   "lon": -58.0752
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Centenario 450",
+   "telefono": "(0221) 4730098",
+   "cp": "1894"
   },
   {
    "codigo": "70055",
@@ -1540,16 +1922,21 @@
    "domicilio": "Presidente Peron 165",
    "localidad": "Cobo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(02242) 432759",
+   "cp": "B7116AHC"
   },
   {
    "codigo": "70056",
    "nombre": "AGENCIA PILA",
    "tipo": "agencia",
-   "domicilio": "Maxima Planes de Casco 240",
+   "domicilio": "Av General Belgrano 328",
    "localidad": "Pila",
-   "lat": -36.016667,
-   "lon": -58.15
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Maxima Planes de Casco 240",
+   "telefono": "(02242) 498186",
+   "cp": "7116"
   },
   {
    "codigo": "70057",
@@ -1558,16 +1945,21 @@
    "domicilio": "Av 25 de Mayo 308",
    "localidad": "Castelli",
    "lat": -36.1,
-   "lon": -57.816667
+   "lon": -57.816667,
+   "telefono": "(02245) 480220",
+   "cp": "B7114AAP"
   },
   {
    "codigo": "70058",
    "nombre": "AGENCIA VERONICA",
    "tipo": "agencia",
-   "domicilio": "Calle 30 1606",
+   "domicilio": "Calle 21 1604",
    "localidad": "Punta Indio",
-   "lat": -35.276375,
-   "lon": -57.246468
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Calle 30 1606",
+   "telefono": "(02221) 480270",
+   "cp": "1917"
   },
   {
    "codigo": "70059",
@@ -1576,7 +1968,9 @@
    "domicilio": "Avenida 122 2431",
    "localidad": "Villa Elvira",
    "lat": -34.915668,
-   "lon": -57.944541
+   "lon": -57.944541,
+   "telefono": "(0221) 4530873",
+   "cp": "B1914NGC"
   },
   {
    "codigo": "70060",
@@ -1585,7 +1979,9 @@
    "domicilio": "Avenida 51 E/ 8 y 9 662",
    "localidad": "La Plata",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0221) 4222633",
+   "cp": "1900"
   }
  ],
  "VIII": [
@@ -1593,19 +1989,25 @@
    "codigo": "80000",
    "nombre": "UGL VIII - SAN MARTIN",
    "tipo": "ugl",
-   "domicilio": "Ricardo Balbin 1954",
+   "domicilio": "Ricardo Balbin 1985",
    "localidad": "San Martin",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Ricardo Balbin 1954",
+   "telefono": "(011) 47244700",
+   "cp": "1650"
   },
   {
    "codigo": "80001",
    "nombre": "AGENCIA CASEROS",
    "tipo": "agencia",
-   "domicilio": "Juan B. Alberdi 4665",
+   "domicilio": "Juan Bautista Alberdi 4645",
    "localidad": "Caseros",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Juan B. Alberdi 4665",
+   "telefono": "(011) 47162505",
+   "cp": "B1678CLE"
   },
   {
    "codigo": "80002",
@@ -1614,7 +2016,9 @@
    "domicilio": "Profesor Aguer 4977",
    "localidad": "Villa Ballester",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(011) 45125921",
+   "cp": "1653"
   },
   {
    "codigo": "80100",
@@ -1623,7 +2027,9 @@
    "domicilio": "9 de Julio 336",
    "localidad": "San Isidro",
    "lat": -34.470059,
-   "lon": -58.510597
+   "lon": -58.510597,
+   "telefono": "(011) 45134685",
+   "cp": "B1642DLB"
   },
   {
    "codigo": "80102",
@@ -1632,7 +2038,9 @@
    "domicilio": "Bernardino Rivadavia 2534",
    "localidad": "Munro",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(011) 45125930",
+   "cp": "B1605CBJ"
   },
   {
    "codigo": "80103",
@@ -1641,7 +2049,9 @@
    "domicilio": "Av. Maipu 2124",
    "localidad": "Vicente Lopez",
    "lat": -34.517334,
-   "lon": -58.486567
+   "lon": -58.486567,
+   "telefono": "(011) 45195452",
+   "cp": "1636"
   },
   {
    "codigo": "80200",
@@ -1650,16 +2060,21 @@
    "domicilio": "Muñoz 1563",
    "localidad": "San Miguel",
    "lat": -34.540612,
-   "lon": -58.708547
+   "lon": -58.708547,
+   "telefono": "(011) 47244741",
+   "cp": "B1663GSI"
   },
   {
    "codigo": "80201",
    "nombre": "AGENCIA MALVINAS ARGENTINAS",
    "tipo": "agencia",
-   "domicilio": "Francisco Segui 1371",
+   "domicilio": "Hipolito Bouchard 1485",
    "localidad": "Grand Bourg",
-   "lat": -34.486795,
-   "lon": -58.723132
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Francisco Segui 1371",
+   "telefono": "(02320) 413800",
+   "cp": "1615"
   },
   {
    "codigo": "80202",
@@ -1668,7 +2083,9 @@
    "domicilio": "Pte. Peron 3832",
    "localidad": "Jose C Paz",
    "lat": -34.526231,
-   "lon": -58.733968
+   "lon": -58.733968,
+   "telefono": "(02320) 442604",
+   "cp": "B1665KQQ"
   },
   {
    "codigo": "80300",
@@ -1677,7 +2094,9 @@
    "domicilio": "Avda Cazon 966",
    "localidad": "Tigre",
    "lat": -34.428183,
-   "lon": -58.573619
+   "lon": -58.573619,
+   "telefono": "(011) 45805581",
+   "cp": "B1648EWW"
   },
   {
    "codigo": "80301",
@@ -1686,7 +2105,9 @@
    "domicilio": "Av. Constitucion 1452",
    "localidad": "San Fernando",
    "lat": -34.443688,
-   "lon": -58.553151
+   "lon": -58.553151,
+   "telefono": "(011) 45805774",
+   "cp": "B1646CYD"
   },
   {
    "codigo": "80304",
@@ -1695,7 +2116,9 @@
    "domicilio": "Hipolito Yrigoyen 1795",
    "localidad": "Gral Pacheco",
    "lat": -34.468062,
-   "lon": -58.647382
+   "lon": -58.647382,
+   "telefono": "(011) 45065934",
+   "cp": "B1618AWC"
   },
   {
    "codigo": "80305",
@@ -1704,7 +2127,32 @@
    "domicilio": "25 de Mayo 128",
    "localidad": "Ciudadela",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(011) 46473557",
+   "cp": "B1702FKD"
+  },
+  {
+   "codigo": "80308",
+   "nombre": "BOCA DE ATENCION BOULOGNE",
+   "tipo": "boca",
+   "domicilio": "Av.avelino Rolon 2163",
+   "localidad": "Boulogne",
+   "lat": null,
+   "lon": null,
+   "cp": "1609",
+   "nuevo_web": true
+  },
+  {
+   "codigo": "80306",
+   "nombre": "POSTA LA CARCOVA",
+   "tipo": "boca",
+   "domicilio": "Frias 7581",
+   "localidad": "Jose Leon Suarez",
+   "lat": null,
+   "lon": null,
+   "telefono": "(011) 39753725",
+   "cp": "1655",
+   "nuevo_web": true
   }
  ],
  "IX": [
@@ -1715,16 +2163,21 @@
    "domicilio": "San Lorenzo 926",
    "localidad": "Rosario",
    "lat": -32.94518,
-   "lon": -60.63519
+   "lon": -60.63519,
+   "telefono": "(341) 4102400",
+   "cp": "S2000ARF"
   },
   {
    "codigo": "90001",
    "nombre": "AGENCIA ARROYO SECO",
    "tipo": "agencia",
-   "domicilio": "Belgrano 434",
+   "domicilio": "Moreno 664",
    "localidad": "Arroyo Seco",
-   "lat": -33.158611,
-   "lon": -60.510291
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Belgrano 434",
+   "telefono": "(3402) 421989",
+   "cp": "2128"
   },
   {
    "codigo": "90010",
@@ -1733,16 +2186,21 @@
    "domicilio": "San Martin 4816",
    "localidad": "Rosario",
    "lat": -32.993055,
-   "lon": -60.64719
+   "lon": -60.64719,
+   "telefono": "(341) 4232862",
+   "cp": "S2001HVT"
   },
   {
    "codigo": "90011",
    "nombre": "BOCA DE ATENCION ROSARIO NORTE",
    "tipo": "boca",
-   "domicilio": "Genova 1732",
+   "domicilio": "Genova 1722",
    "localidad": "Rosario",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Genova 1732",
+   "telefono": "(341) 4370691",
+   "cp": "2000"
   },
   {
    "codigo": "90100",
@@ -1751,7 +2209,9 @@
    "domicilio": "Buenos Aires 2722",
    "localidad": "Casilda",
    "lat": -33.048387,
-   "lon": -61.17352
+   "lon": -61.17352,
+   "telefono": "(3464) 420094",
+   "cp": "S2170BOP"
   },
   {
    "codigo": "90101",
@@ -1760,16 +2220,21 @@
    "domicilio": "Lisandro de la Torre 841",
    "localidad": "Venado Tuerto",
    "lat": -33.748452,
-   "lon": -61.972935
+   "lon": -61.972935,
+   "telefono": "(3462) 422402",
+   "cp": "S2600NHQ"
   },
   {
    "codigo": "90102",
    "nombre": "AGENCIA RUFINO",
    "tipo": "agencia",
-   "domicilio": "Bernabé Ferreyra 151",
+   "domicilio": "Av Cobo 346",
    "localidad": "Rufino",
-   "lat": -34.265277,
-   "lon": -62.714132
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Bernabé Ferreyra 151",
+   "telefono": "(3282) 428542",
+   "cp": "6100"
   },
   {
    "codigo": "90103",
@@ -1778,7 +2243,9 @@
    "domicilio": "Boulevar Urquiza 556",
    "localidad": "San Lorenzo",
    "lat": -32.747695,
-   "lon": -60.733334
+   "lon": -60.733334,
+   "telefono": "(3476) 431738",
+   "cp": "S2200AAR"
   },
   {
    "codigo": "90104",
@@ -1787,25 +2254,33 @@
    "domicilio": "Lisandro de la Torre 444",
    "localidad": "Villa Constitucion",
    "lat": -33.227478,
-   "lon": -60.331
+   "lon": -60.331,
+   "telefono": "(3400) 474101",
+   "cp": "S2919ETJ"
   },
   {
    "codigo": "90105",
    "nombre": "AGENCIA CAÑADA DE GOMEZ",
    "tipo": "agencia",
-   "domicilio": "España 164",
+   "domicilio": "Sarmiento 49",
    "localidad": "Cañada de Gomez",
-   "lat": -32.819811,
-   "lon": -61.393248
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "España 164",
+   "telefono": "(3471) 4803593",
+   "cp": "2500"
   },
   {
    "codigo": "90106",
    "nombre": "AGENCIA CHAÑAR LADEADO",
    "tipo": "agencia",
-   "domicilio": "9 de Julio 220",
+   "domicilio": "25 de Mayo y J.sacco Escarafia S/N",
    "localidad": "Chañar Ladeado",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "9 de Julio 220",
+   "telefono": "(3468) 481246",
+   "cp": "2643"
   },
   {
    "codigo": "90107",
@@ -1814,7 +2289,9 @@
    "domicilio": "Italia 116",
    "localidad": "Las Rosas",
    "lat": -32.477051,
-   "lon": -61.577972
+   "lon": -61.577972,
+   "telefono": "(3471) 451449",
+   "cp": "S2520BND"
   },
   {
    "codigo": "90108",
@@ -1823,16 +2300,21 @@
    "domicilio": "Avellaneda esq French S/N",
    "localidad": "Firmat",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3465) 423224",
+   "cp": "2630"
   },
   {
    "codigo": "90150",
    "nombre": "AGENCIA ALCORTA",
    "tipo": "agencia",
-   "domicilio": "España 838",
+   "domicilio": "España 680",
    "localidad": "Alcorta",
-   "lat": -33.55,
-   "lon": -61.133333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "España 838",
+   "telefono": "(3465) 470470",
+   "cp": "2117"
   },
   {
    "codigo": "90151",
@@ -1841,7 +2323,9 @@
    "domicilio": "Carlos Pellegrini 845",
    "localidad": "Totoras",
    "lat": -32.586994,
-   "lon": -61.171145
+   "lon": -61.171145,
+   "telefono": "(3476) 460156",
+   "cp": "S2144AOG"
   },
   {
    "codigo": "90152",
@@ -1850,7 +2334,9 @@
    "domicilio": "San Martin 797",
    "localidad": "San Gregorio",
    "lat": -34.324815,
-   "lon": -62.036118
+   "lon": -62.036118,
+   "telefono": "(3282) 471127",
+   "cp": "S2613BFO"
   },
   {
    "codigo": "90153",
@@ -1859,7 +2345,9 @@
    "domicilio": "Gral. Lopez 434",
    "localidad": "Wheelwright",
    "lat": -33.791988,
-   "lon": -61.211751
+   "lon": -61.211751,
+   "telefono": "(2473) 481483",
+   "cp": "2722"
   },
   {
    "codigo": "90154",
@@ -1868,7 +2356,9 @@
    "domicilio": "Calle 53 315",
    "localidad": "Villa Cañas",
    "lat": -34.004967,
-   "lon": -61.604249
+   "lon": -61.604249,
+   "telefono": "(3462) 451816",
+   "cp": "S2607AWG"
   },
   {
    "codigo": "90155",
@@ -1877,16 +2367,21 @@
    "domicilio": "Belgrano 1418",
    "localidad": "Carcaraña",
    "lat": -32.857241,
-   "lon": -61.150139
+   "lon": -61.150139,
+   "telefono": "(341) 4940081",
+   "cp": "S2138AFZ"
   },
   {
    "codigo": "90156",
    "nombre": "AGENCIA VILLA GOBERNADOR GALVEZ",
    "tipo": "agencia",
-   "domicilio": "Libertad 697",
+   "domicilio": "San Martin 1676",
    "localidad": "Villa Gob Galvez",
-   "lat": -33.020744,
-   "lon": -60.617989
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Libertad 697",
+   "telefono": "(341) 3173400",
+   "cp": "2124"
   },
   {
    "codigo": "90157",
@@ -1895,34 +2390,45 @@
    "domicilio": "Santa Fe 1750",
    "localidad": "Funes",
    "lat": -32.918076,
-   "lon": -60.812135
+   "lon": -60.812135,
+   "telefono": "(341) 4930900",
+   "cp": "S2132AUF"
   },
   {
    "codigo": "90158",
    "nombre": "AGENCIA GRANADERO BAIGORRIA",
    "tipo": "agencia",
-   "domicilio": "Rivadavia y Pueyrredon S/N",
+   "domicilio": "J. C. Orsetti 299",
    "localidad": "Granadero Baigorria",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Rivadavia y Pueyrredon S/N",
+   "telefono": "(0341) 4710373",
+   "cp": "2152"
   },
   {
    "codigo": "90159",
    "nombre": "AGENCIA PEREZ",
    "tipo": "agencia",
-   "domicilio": "Av. Belgrano 1897",
+   "domicilio": "Yapeyu 1272",
    "localidad": "Perez",
-   "lat": -32.963114,
-   "lon": -60.620833
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. Belgrano 1897",
+   "telefono": "(341) 5263267",
+   "cp": "2121"
   },
   {
    "codigo": "90162",
    "nombre": "BOCA DE ATENCION CAPITAN BERMUDEZ",
    "tipo": "boca",
-   "domicilio": "Av. San Lorenzo 1701",
+   "domicilio": "Av. San Lorenzo 1702",
    "localidad": "CAP Bermudez",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av. San Lorenzo 1701",
+   "telefono": "(341) 4910189",
+   "cp": "2154"
   },
   {
    "codigo": "90163",
@@ -1931,7 +2437,9 @@
    "domicilio": "Avenida 17 669",
    "localidad": "Las Parejas",
    "lat": -32.682737,
-   "lon": -61.570137
+   "lon": -61.570137,
+   "telefono": "(3471) 472820",
+   "cp": "S2505CNM"
   }
  ],
  "X": [
@@ -1942,7 +2450,9 @@
    "domicilio": "Hipolito Yrigoyen 6247",
    "localidad": "Remedios de Escalada",
    "lat": -34.728724,
-   "lon": -58.395456
+   "lon": -58.395456,
+   "telefono": "(011) 50882048",
+   "cp": "1826"
   },
   {
    "codigo": "100002",
@@ -1951,7 +2461,9 @@
    "domicilio": "Pte. Peron 3872",
    "localidad": "Valentin Alsina",
    "lat": -34.725651,
-   "lon": -58.35721
+   "lon": -58.35721,
+   "telefono": "(011) 42283246",
+   "cp": "B1824"
   },
   {
    "codigo": "100003",
@@ -1960,7 +2472,9 @@
    "domicilio": "Arturo Illia 1173",
    "localidad": "Gerli",
    "lat": -34.705494,
-   "lon": -58.38611
+   "lon": -58.38611,
+   "telefono": "(011) 42413468",
+   "cp": "B1824MNE"
   },
   {
    "codigo": "100004",
@@ -1969,7 +2483,9 @@
    "domicilio": "Av. Eva Peron 3269",
    "localidad": "Monte Chingolo",
    "lat": -34.720982,
-   "lon": -58.363314
+   "lon": -58.363314,
+   "telefono": "(011) 42466517",
+   "cp": "B1825AAH"
   },
   {
    "codigo": "100100",
@@ -1978,7 +2494,9 @@
    "domicilio": "Av. Alsina 1923",
    "localidad": "Lomas de Zamora",
    "lat": -34.759568,
-   "lon": -58.395471
+   "lon": -58.395471,
+   "telefono": "(011) 50882000",
+   "cp": "1832"
   },
   {
    "codigo": "100101",
@@ -1987,52 +2505,69 @@
    "domicilio": "Maximo Paz 11",
    "localidad": "Monte Grande",
    "lat": -34.81443,
-   "lon": -58.469673
+   "lon": -58.469673,
+   "telefono": "(011) 42900042",
+   "cp": "B1842HVA"
   },
   {
    "codigo": "100102",
    "nombre": "AGENCIA ADROGUE",
    "tipo": "agencia",
-   "domicilio": "Canale 967",
+   "domicilio": "Int. Dr. Martín González 961",
    "localidad": "Almte Brown",
-   "lat": -34.80368,
-   "lon": -58.404116
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Canale 967",
+   "telefono": "(011) 42938369",
+   "cp": "B1846DPS"
   },
   {
    "codigo": "100103",
    "nombre": "AGENCIA VILLA FIORITO",
    "tipo": "agencia",
-   "domicilio": "El Plumerillo 2148",
+   "domicilio": "El Plumerillo 2028",
    "localidad": "Lomas de Zamora",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "El Plumerillo 2148",
+   "telefono": "(011) 42864214",
+   "cp": "B1821DTL"
   },
   {
    "codigo": "100104",
    "nombre": "AGENCIA EZEIZA",
    "tipo": "agencia",
-   "domicilio": "Conquista de Desierto 372",
+   "domicilio": "Ituzaingo 201",
    "localidad": "Ezeiza",
-   "lat": -34.855569,
-   "lon": -58.52283
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Conquista de Desierto 372",
+   "telefono": "(011) 42328996",
+   "cp": "1804"
   },
   {
    "codigo": "100200",
    "nombre": "AGENCIA AVELLANEDA",
    "tipo": "agencia",
-   "domicilio": "Bereguestein 30",
+   "domicilio": "Beguerestain 30",
    "localidad": "Avellaneda",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Bereguestein 30",
+   "telefono": "(011) 42033765",
+   "cp": "1870"
   },
   {
    "codigo": "100202",
    "nombre": "AGENCIA GLEW",
    "tipo": "agencia",
-   "domicilio": "Sarmiento 195",
+   "domicilio": "Av. Sarmiento 182",
    "localidad": "Glew",
-   "lat": -34.891025,
-   "lon": -58.386246
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Sarmiento 195",
+   "telefono": "(02224) 434993",
+   "cp": "B1856CJD"
   },
   {
    "codigo": "100304",
@@ -2041,7 +2576,9 @@
    "domicilio": "Hipólito Yrigoyen 6922",
    "localidad": "Banfield",
    "lat": -34.735992,
-   "lon": -58.396842
+   "lon": -58.396842,
+   "telefono": "(011) 42026663",
+   "cp": "1828"
   },
   {
    "codigo": "100305",
@@ -2050,25 +2587,44 @@
    "domicilio": "Avenida Fabián Onzari 184",
    "localidad": "Wilde",
    "lat": -34.706431,
-   "lon": -58.31899
+   "lon": -58.31899,
+   "telefono": "(011) 42060779",
+   "cp": "B1875"
   },
   {
    "codigo": "100306",
    "nombre": "AGENCIA GUERNICA",
    "tipo": "agencia",
-   "domicilio": "Ruta 210 esq 24 2409",
+   "domicilio": "Av. Pres. Hipólito Yrigoyen 24094",
    "localidad": "Guernica",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Ruta 210 esq 24 2409",
+   "telefono": "(2224) 473190",
+   "cp": "1862"
   },
   {
    "codigo": "100307",
    "nombre": "AGENCIA LAVALLOL",
    "tipo": "agencia",
-   "domicilio": "Antartida Argentina 1657",
+   "domicilio": "Antártida Argentina 1645",
    "localidad": "Llavallol",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Antartida Argentina 1657",
+   "telefono": "(011) 50922100",
+   "cp": "1036"
+  },
+  {
+   "codigo": "100309",
+   "nombre": "AGENCIA TRISTAN SUAREZ",
+   "tipo": "agencia",
+   "domicilio": "Moreno 220",
+   "localidad": "Tristan Suarez",
+   "lat": null,
+   "lon": null,
+   "cp": "1806",
+   "nuevo_web": true
   }
  ],
  "XI": [
@@ -2076,10 +2632,13 @@
    "codigo": "110000",
    "nombre": "UGL XI - MAR DEL PLATA",
    "tipo": "ugl",
-   "domicilio": "Balcarce 3296",
+   "domicilio": "Av. Independencia 1576",
    "localidad": "Mar del Plata",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Balcarce 3296",
+   "telefono": "(0223) 4991220",
+   "cp": "7600"
   },
   {
    "codigo": "110002",
@@ -2088,25 +2647,33 @@
    "domicilio": "Calle 15 401",
    "localidad": "Balcarce",
    "lat": -37.842456,
-   "lon": -58.258142
+   "lon": -58.258142,
+   "telefono": "(2266) 423796",
+   "cp": "B7620"
   },
   {
    "codigo": "110003",
    "nombre": "AGENCIA NECOCHEA",
    "tipo": "agencia",
-   "domicilio": "Calle 62 3143",
+   "domicilio": "Calle 63 2732",
    "localidad": "Necochea",
-   "lat": -38.554909,
-   "lon": -58.743934
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Calle 62 3143",
+   "telefono": "(2262) 435378",
+   "cp": "7630"
   },
   {
    "codigo": "110004",
    "nombre": "AGENCIA SANTA TERESITA",
    "tipo": "agencia",
-   "domicilio": "Calle 35 801",
+   "domicilio": "Calle 34 342",
    "localidad": "Santa Teresita",
-   "lat": -36.537553,
-   "lon": -56.700199
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Calle 35 801",
+   "telefono": "(2246) 420598",
+   "cp": "7107"
   },
   {
    "codigo": "110005",
@@ -2115,7 +2682,9 @@
    "domicilio": "Belgrano y Justo Girado S/N",
    "localidad": "San Cayetano",
    "lat": -38.35,
-   "lon": -59.616667
+   "lon": -59.616667,
+   "telefono": "(2983) 470501",
+   "cp": "B7521"
   },
   {
    "codigo": "110006",
@@ -2124,7 +2693,9 @@
    "domicilio": "Alem 169",
    "localidad": "Loberia",
    "lat": -38.166667,
-   "lon": -58.766667
+   "lon": -58.766667,
+   "telefono": "(2261) 443098",
+   "cp": "B7635"
   },
   {
    "codigo": "110007",
@@ -2133,16 +2704,21 @@
    "domicilio": "Calle 28 1127",
    "localidad": "Miramar",
    "lat": -38.2696,
-   "lon": -57.839461
+   "lon": -57.839461,
+   "telefono": "(2291) 433254",
+   "cp": "B7607"
   },
   {
    "codigo": "110008",
    "nombre": "AGENCIA VILLA GESELL",
    "tipo": "agencia",
-   "domicilio": "Calle 105 365",
+   "domicilio": "Calle 108 384",
    "localidad": "Villa Gesell",
-   "lat": -37.256546,
-   "lon": -56.969529
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Calle 105 365",
+   "telefono": "(2255) 473025",
+   "cp": "7165"
   },
   {
    "codigo": "110009",
@@ -2151,16 +2727,21 @@
    "domicilio": "Hipolito Irigoyen 122",
    "localidad": "Gral Juan Madariaga",
    "lat": -36.996385,
-   "lon": -57.139607
+   "lon": -57.139607,
+   "telefono": "(2267) 425448",
+   "cp": "B7163EDD"
   },
   {
    "codigo": "110010",
    "nombre": "AGENCIA CORONEL VIDAL",
    "tipo": "agencia",
-   "domicilio": "Avellaneda 40",
+   "domicilio": "General Paz 155",
    "localidad": "Cnel Vidal",
-   "lat": -37.45,
-   "lon": -57.733333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Avellaneda 40",
+   "telefono": "(2265) 432383",
+   "cp": "7174"
   },
   {
    "codigo": "110011",
@@ -2169,25 +2750,33 @@
    "domicilio": "Julian Lynch 641",
    "localidad": "Maipu",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2268) 421569",
+   "cp": "B7160"
   },
   {
    "codigo": "110013",
    "nombre": "AGENCIA DOLORES",
    "tipo": "agencia",
-   "domicilio": "Castelli 152",
+   "domicilio": "Casteli 152",
    "localidad": "Dolores",
-   "lat": -36.314441,
-   "lon": -57.674897
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Castelli 152",
+   "telefono": "(2245) 447133",
+   "cp": "B7100ACD"
   },
   {
    "codigo": "110014",
    "nombre": "BOCA DE ATENCION FORTUNATO DE LA PLAZA",
    "tipo": "boca",
-   "domicilio": "Vidal 1990",
+   "domicilio": "Av. Fortunato de la Plaza 6392",
    "localidad": "Mar del Plata",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Vidal 1990",
+   "telefono": "(0223) 4954392",
+   "cp": "7600"
   },
   {
    "codigo": "110015",
@@ -2196,7 +2785,8 @@
    "domicilio": "Av Juan B. Justo 1774",
    "localidad": "Mar del Plata",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "no_figura_web": true
   },
   {
    "codigo": "110016",
@@ -2205,7 +2795,8 @@
    "domicilio": "Av. Juan B. Justo 1774",
    "localidad": "Mar del Plata",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "no_figura_web": true
   },
   {
    "codigo": "110017",
@@ -2214,7 +2805,8 @@
    "domicilio": "Avenida Juan B. Justo 6701",
    "localidad": "Mar del Plata",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "no_figura_web": true
   },
   {
    "codigo": "110018",
@@ -2223,7 +2815,8 @@
    "domicilio": "San Luis 2562",
    "localidad": "Mar del Plata",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "no_figura_web": true
   },
   {
    "codigo": "110052",
@@ -2232,7 +2825,9 @@
    "domicilio": "Marco Polo esq. Jason 54",
    "localidad": "Pinamar",
    "lat": -37.112039,
-   "lon": -56.8659
+   "lon": -56.8659,
+   "telefono": "(2254) 484338",
+   "cp": "B7167"
   },
   {
    "codigo": "110053",
@@ -2241,16 +2836,21 @@
    "domicilio": "Anselmo Cepeda 150",
    "localidad": "Gral Guido",
    "lat": -36.65,
-   "lon": -57.8
+   "lon": -57.8,
+   "telefono": "(2268) 491087",
+   "cp": "B7118BOC"
   },
   {
    "codigo": "110054",
    "nombre": "AGENCIA MAR DE AJO",
    "tipo": "agencia",
-   "domicilio": "San Juan 1263",
+   "domicilio": "Marano 621",
    "localidad": "Mar de Ajo",
-   "lat": -36.703446,
-   "lon": -56.677315
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "San Juan 1263",
+   "telefono": "(2257) 429357",
+   "cp": "7109"
   },
   {
    "codigo": "110055",
@@ -2259,16 +2859,21 @@
    "domicilio": "Rondeau 520",
    "localidad": "Mar del Plata",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(223) 4804330",
+   "cp": "7600"
   },
   {
    "codigo": "110056",
    "nombre": "AGENCIA QUEQUEN",
    "tipo": "agencia",
-   "domicilio": "Calle 521 2399",
+   "domicilio": "Calle 554 882",
    "localidad": "Quequen",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Calle 521 2399",
+   "telefono": "(2262) 453145",
+   "cp": "7631"
   },
   {
    "codigo": "110057",
@@ -2277,7 +2882,9 @@
    "domicilio": "Calle 4 2303",
    "localidad": "San Clemente del Tuyu",
    "lat": -36.359163,
-   "lon": -56.719747
+   "lon": -56.719747,
+   "telefono": "(2252) 422700",
+   "cp": "B7105"
   },
   {
    "codigo": "110058",
@@ -2286,16 +2893,21 @@
    "domicilio": "Belgrano 351",
    "localidad": "Gral Piran",
    "lat": -37.283333,
-   "lon": -57.783333
+   "lon": -57.783333,
+   "telefono": "(2266) 5491029",
+   "cp": "B7172AGG"
   },
   {
    "codigo": "110059",
    "nombre": "AGENCIA COMANDANTE NICANOR OTAMENDI",
    "tipo": "agencia",
-   "domicilio": "Pueyrredon 2565",
+   "domicilio": "San Juan 2250",
    "localidad": "Cmdte Nicanor Otamendi",
-   "lat": -38.133333,
-   "lon": -57.85
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Pueyrredon 2565",
+   "telefono": "(2291) 480431",
+   "cp": "7603"
   },
   {
    "codigo": "110060",
@@ -2304,7 +2916,9 @@
    "domicilio": "Calle 35 y 20 S/nº",
    "localidad": "Juan N Fernandez",
    "lat": -38.016667,
-   "lon": -59.266667
+   "lon": -59.266667,
+   "telefono": "(2264) 498270",
+   "cp": "7011"
   },
   {
    "codigo": "110061",
@@ -2313,7 +2927,9 @@
    "domicilio": "Calle 33 65",
    "localidad": "La Dulce",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2264) 432444",
+   "cp": "B7637"
   },
   {
    "codigo": "110062",
@@ -2322,7 +2938,9 @@
    "domicilio": "Lastres 174",
    "localidad": "Santa Clara del Mar",
    "lat": -37.887845,
-   "lon": -57.523454
+   "lon": -57.523454,
+   "telefono": "(0223) 4504141",
+   "cp": "B7609"
   },
   {
    "codigo": "110063",
@@ -2331,25 +2949,33 @@
    "domicilio": "Calle 136, esq. 155 9895",
    "localidad": "Batan",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(223) 4641345",
+   "cp": "B7601"
   },
   {
    "codigo": "110064",
    "nombre": "AGENCIA GENERAL LAVALLE",
    "tipo": "agencia",
-   "domicilio": "Mitre (palacio Municipal) 861",
+   "domicilio": "De la Serna 1249",
    "localidad": "Gral Lavalle",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Mitre (palacio Municipal) 861",
+   "telefono": "(2252) 491337",
+   "cp": "B7103"
   },
   {
    "codigo": "110090",
    "nombre": "BOCA DE ATENCION TUCUMAN",
    "tipo": "boca",
-   "domicilio": "Tucuman 2271",
+   "domicilio": "Av Luro 5799",
    "localidad": "Mar del Plata",
-   "lat": -38.007391,
-   "lon": -57.544095
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Tucuman 2271",
+   "telefono": "(0223) 4991220",
+   "cp": "7600"
   },
   {
    "codigo": "110091",
@@ -2358,25 +2984,33 @@
    "domicilio": "Constitucion 5988",
    "localidad": "Mar del Plata",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0223) 4707239",
+   "cp": "B7604EJW"
   },
   {
    "codigo": "110100",
    "nombre": "AGENCIA TANDIL",
    "tipo": "agencia",
-   "domicilio": "Pinto 869",
+   "domicilio": "Pintos 869",
    "localidad": "Tandil",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Pinto 869",
+   "telefono": "(2293) 429320",
+   "cp": "7000"
   },
   {
    "codigo": "110101",
    "nombre": "AGENCIA AYACUCHO",
    "tipo": "agencia",
-   "domicilio": "9 de Julio 737",
+   "domicilio": "Saenz Peña 1615",
    "localidad": "Ayacucho",
-   "lat": -37.15,
-   "lon": -58.483333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "9 de Julio 737",
+   "telefono": "(2296) 451180",
+   "cp": "7150"
   },
   {
    "codigo": "110104",
@@ -2385,7 +3019,9 @@
    "domicilio": "Lavalle 65",
    "localidad": "Adolfo Gonzales Chaves",
    "lat": -38.030511,
-   "lon": -60.098817
+   "lon": -60.098817,
+   "telefono": "(2983) 484944",
+   "cp": "B7513CEA"
   }
  ],
  "XII": [
@@ -2396,7 +3032,9 @@
    "domicilio": "Zuviria 20",
    "localidad": "Salta",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(387) 4955800",
+   "cp": "A4400EFB"
   },
   {
    "codigo": "120001",
@@ -2405,7 +3043,9 @@
    "domicilio": "España 2",
    "localidad": "Tartagal",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3873) 422979",
+   "cp": "A4554XBA"
   },
   {
    "codigo": "120002",
@@ -2414,7 +3054,9 @@
    "domicilio": "Bolivia esq Pasaje El Milagro S/N",
    "localidad": "San Ramon de la Nueva Oran",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3878) 423775",
+   "cp": "A4530XBF"
   },
   {
    "codigo": "120003",
@@ -2423,25 +3065,31 @@
    "domicilio": "Jose Ignacio Sierra 198",
    "localidad": "Metan",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3876) 420631",
+   "cp": "4440"
   },
   {
    "codigo": "120004",
    "nombre": "AGENCIA JOAQUIN V. GONZALEZ",
    "tipo": "agencia",
-   "domicilio": "Yrigoyen 174",
+   "domicilio": "Mariano Moreno 288",
    "localidad": "Ceibalito",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Yrigoyen 174",
+   "cp": "4448"
   },
   {
    "codigo": "120005",
    "nombre": "AGENCIA CERRILLOS",
    "tipo": "agencia",
-   "domicilio": "Egidio Bonato 201",
+   "domicilio": "Libertad 102",
    "localidad": "Cerrillos",
-   "lat": -24.916667,
-   "lon": -65.483333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Egidio Bonato 201",
+   "cp": "4403"
   },
   {
    "codigo": "120010",
@@ -2450,7 +3098,8 @@
    "domicilio": "Avenida Paraguay 1240",
    "localidad": "Salta",
    "lat": -24.782039,
-   "lon": -65.448657
+   "lon": -65.448657,
+   "no_figura_web": true
   },
   {
    "codigo": "120050",
@@ -2459,34 +3108,45 @@
    "domicilio": "Leandro N Alem 180",
    "localidad": "Gral Güemes",
    "lat": -24.682176,
-   "lon": -65.033376
+   "lon": -65.033376,
+   "telefono": "(387) 4911354",
+   "cp": "A4430CXD"
   },
   {
    "codigo": "120052",
    "nombre": "AGENCIA CAFAYATE",
    "tipo": "agencia",
-   "domicilio": "Sebastian Arias 50",
+   "domicilio": "Av. Costanera y Esq Bs As S/N",
    "localidad": "Cafayate",
-   "lat": -26.1,
-   "lon": -65.95
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Sebastian Arias 50",
+   "telefono": "(3868) 421183",
+   "cp": "4427"
   },
   {
    "codigo": "120053",
    "nombre": "AGENCIA ROSARIO DE LA FRONTE",
    "tipo": "agencia",
-   "domicilio": "Heroes de la Patria Exterminal S/N",
+   "domicilio": "Las Carretas y Pje.héroes. P. S/N",
    "localidad": "Rosario de la Frontera",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Heroes de la Patria Exterminal S/N",
+   "telefono": "(3876) 481672",
+   "cp": "4190"
   },
   {
    "codigo": "120054",
    "nombre": "AGENCIA EL CARRIL",
    "tipo": "agencia",
-   "domicilio": "Islas Malvinas 318",
+   "domicilio": "Libertad 313",
    "localidad": "El Carril",
-   "lat": -25.062432,
-   "lon": -65.493383
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Islas Malvinas 318",
+   "telefono": "(387) 4908003",
+   "cp": "4421"
   },
   {
    "codigo": "120055",
@@ -2495,7 +3155,9 @@
    "domicilio": "9 de Julio 156 Local 1",
    "localidad": "Rosario de Lerma",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(387) 4931428",
+   "cp": "4405"
   },
   {
    "codigo": "120056",
@@ -2504,25 +3166,44 @@
    "domicilio": "Ruiz de los Llanos S/nº",
    "localidad": "Cachi",
    "lat": -25.116667,
-   "lon": -66.2
+   "lon": -66.2,
+   "telefono": "(3868) 491033",
+   "cp": "4417"
   },
   {
    "codigo": "120057",
    "nombre": "AGENCIA EMBARCACION",
    "tipo": "agencia",
-   "domicilio": "España 24",
+   "domicilio": "Hipolito Irigoyen 220",
    "localidad": "Embarcacion",
-   "lat": -23.216667,
-   "lon": -64.116667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "España 24",
+   "telefono": "(3878) 471340",
+   "cp": "4550"
   },
   {
    "codigo": "120058",
    "nombre": "AGENCIA APOLINARIO SARAVIA",
    "tipo": "agencia",
-   "domicilio": "Pasaje Peyrotty 70",
+   "domicilio": "Av. 9 de Julio 170",
    "localidad": "Apolinario Saravia",
-   "lat": -24.416667,
-   "lon": -64.033333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Pasaje Peyrotty 70",
+   "telefono": "(3877) 493018",
+   "cp": "4449"
+  },
+  {
+   "codigo": "120060",
+   "nombre": "BOCA DE ATENCION GUACHIPAS",
+   "tipo": "boca",
+   "domicilio": "Apolinario Saravia S/N",
+   "localidad": "Guachipas",
+   "lat": null,
+   "lon": null,
+   "cp": "4425",
+   "nuevo_web": true
   }
  ],
  "XIII": [
@@ -2533,7 +3214,9 @@
    "domicilio": "Avda 9 de Julio 155",
    "localidad": "Resistencia",
    "lat": -27.452318,
-   "lon": -58.985053
+   "lon": -58.985053,
+   "telefono": "(0362) 4418800",
+   "cp": "H3500ABB"
   },
   {
    "codigo": "130001",
@@ -2542,7 +3225,9 @@
    "domicilio": "Lopez y Planes (calle 21) 526",
    "localidad": "Presidencia Roque Saenz Peña",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0364) 4422452",
+   "cp": "H3700AUL"
   },
   {
    "codigo": "130002",
@@ -2551,16 +3236,20 @@
    "domicilio": "9 de Julio esq. Lavalle S/N",
    "localidad": "Villa Angela",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "cp": "H3540"
   },
   {
    "codigo": "130003",
    "nombre": "AGENCIA GENERAL SAN MARTIN",
    "tipo": "agencia",
-   "domicilio": "12 de Octubre 660",
+   "domicilio": "Chile 140",
    "localidad": "Gral Jose de San Martin",
-   "lat": -26.533333,
-   "lon": -59.35
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "12 de Octubre 660",
+   "telefono": "(03725) 420451",
+   "cp": "3509"
   },
   {
    "codigo": "130004",
@@ -2569,7 +3258,9 @@
    "domicilio": "Gral. Jones 367",
    "localidad": "Las Breñas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03731) 460193",
+   "cp": "H3724BID"
   },
   {
    "codigo": "130005",
@@ -2578,25 +3269,33 @@
    "domicilio": "25 de Mayo 857",
    "localidad": "Charata",
    "lat": -27.216667,
-   "lon": -61.2
+   "lon": -61.2,
+   "telefono": "(03731) 420132",
+   "cp": "H3730"
   },
   {
    "codigo": "130006",
    "nombre": "AGENCIA JUAN JOSE CASTELLI",
    "tipo": "agencia",
-   "domicilio": "Sarmiento 940",
+   "domicilio": "Sarmiento 935",
    "localidad": "Juan Jose Castelli",
-   "lat": -25.95,
-   "lon": -60.616667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Sarmiento 940",
+   "telefono": "(3644) 4471360",
+   "cp": "3705"
   },
   {
    "codigo": "130050",
    "nombre": "AGENCIA LAS PALMAS",
    "tipo": "agencia",
-   "domicilio": "Peron esq San Martin S/N",
+   "domicilio": "Remedio de Escalada 402",
    "localidad": "Las Palmas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Peron esq San Martin S/N",
+   "telefono": "(03624) 470277",
+   "cp": "3518"
   },
   {
    "codigo": "130052",
@@ -2605,16 +3304,20 @@
    "domicilio": "Moreno esq Pradier S/N",
    "localidad": "Tres Isletas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03644) 461246",
+   "cp": "3703"
   },
   {
    "codigo": "130053",
    "nombre": "AGENCIA GENERAL PINEDO",
    "tipo": "agencia",
-   "domicilio": "Rivadavia 357",
+   "domicilio": "Mariano Moreno 300",
    "localidad": "Gral Pinedo",
-   "lat": -27.3,
-   "lon": -61.283333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Rivadavia 357",
+   "cp": "3732"
   },
   {
    "codigo": "130054",
@@ -2623,34 +3326,44 @@
    "domicilio": "Granadero Baigorria 541",
    "localidad": "Santa Sylvina",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03735) 494473",
+   "cp": "H3541"
   },
   {
    "codigo": "130055",
    "nombre": "AGENCIA SAN BERNARDO",
    "tipo": "agencia",
-   "domicilio": "Moreno y 25 de Mayo 563",
+   "domicilio": "Maipu 563",
    "localidad": "San Bernardo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Moreno y 25 de Mayo 563",
+   "telefono": "(03735) 496453",
+   "cp": "H3726AMK"
   },
   {
    "codigo": "130056",
    "nombre": "AGENCIA CORZUELA",
    "tipo": "agencia",
-   "domicilio": "Pres. Roca 337",
+   "domicilio": "Salta 235",
    "localidad": "Corzuela",
-   "lat": -26.95,
-   "lon": -60.983333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Pres. Roca 337",
+   "telefono": "(03731) 470406",
+   "cp": "3718"
   },
   {
    "codigo": "130057",
    "nombre": "AGENCIA MACHAGAI",
    "tipo": "agencia",
-   "domicilio": "Teodolinda Ermacora 101",
+   "domicilio": "Las Heras(reconquista/codutti) S/N",
    "localidad": "Las Palmas",
-   "lat": -27.066667,
-   "lon": -58.683333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Teodolinda Ermacora 101",
+   "cp": "3534"
   },
   {
    "codigo": "130058",
@@ -2659,7 +3372,9 @@
    "domicilio": "Avda San Martín 551",
    "localidad": "Pampa del Infierno",
    "lat": -26.516667,
-   "lon": -61.166667
+   "lon": -61.166667,
+   "telefono": "(03644) 497575",
+   "cp": "3708"
   },
   {
    "codigo": "130059",
@@ -2668,7 +3383,8 @@
    "domicilio": "Mitre entre Pelegrini y Lavall S/nº",
    "localidad": "Villa Berthet",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "cp": "3545"
   },
   {
    "codigo": "130060",
@@ -2677,7 +3393,9 @@
    "domicilio": "Moreno S/nro. S/nº",
    "localidad": "Taco Pozo",
    "lat": -25.616667,
-   "lon": -63.283333
+   "lon": -63.283333,
+   "telefono": "(3794) 270722",
+   "cp": "3714"
   },
   {
    "codigo": "130061",
@@ -2686,7 +3404,9 @@
    "domicilio": "Bobuena Valdez 571",
    "localidad": "Pampa del Indio",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03725) 494285",
+   "cp": "3531"
   },
   {
    "codigo": "130062",
@@ -2695,7 +3415,9 @@
    "domicilio": "Avda. Laprida 5440",
    "localidad": "Barranqueras",
    "lat": -27.488076,
-   "lon": -58.930525
+   "lon": -58.930525,
+   "telefono": "(03624) 977814",
+   "cp": "H3503HSH"
   },
   {
    "codigo": "130063",
@@ -2704,7 +3426,9 @@
    "domicilio": "Av San Martin 740",
    "localidad": "Quitilipi",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03644) 480651",
+   "cp": "H3530DQP"
   },
   {
    "codigo": "130064",
@@ -2713,7 +3437,9 @@
    "domicilio": "Onolho S/nro. (mz. 75 Pc. 9) N/n",
    "localidad": "El Sauzalito",
    "lat": -24.466475,
-   "lon": -61.685955
+   "lon": -61.685955,
+   "telefono": "(03715) 482725",
+   "cp": "H3705XAO"
   }
  ],
  "XIV": [
@@ -2724,7 +3450,9 @@
    "domicilio": "Venezuela 100",
    "localidad": "Parana",
    "lat": -31.734773,
-   "lon": -60.53165
+   "lon": -60.53165,
+   "telefono": "(343) 4230068",
+   "cp": "3100"
   },
   {
    "codigo": "140001",
@@ -2733,16 +3461,20 @@
    "domicilio": "Alvarado 2250",
    "localidad": "Parana",
    "lat": -31.753139,
-   "lon": -60.531829
+   "lon": -60.531829,
+   "no_figura_web": true
   },
   {
    "codigo": "140003",
    "nombre": "AGENCIA NOGOYA",
    "tipo": "agencia",
-   "domicilio": "Centenario 1090",
+   "domicilio": "Caseros 1239",
    "localidad": "Betbeder",
-   "lat": -32.383333,
-   "lon": -59.95
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Centenario 1090",
+   "telefono": "(3435) 421146",
+   "cp": "3150"
   },
   {
    "codigo": "140005",
@@ -2751,7 +3483,9 @@
    "domicilio": "Federacion 21",
    "localidad": "Gualeguay",
    "lat": -33.144754,
-   "lon": -59.314001
+   "lon": -59.314001,
+   "telefono": "(3444) 423012",
+   "cp": "E2840BYA"
   },
   {
    "codigo": "140006",
@@ -2760,25 +3494,33 @@
    "domicilio": "Echagüe 985",
    "localidad": "La Paz",
    "lat": -30.740221,
-   "lon": -59.644453
+   "lon": -59.644453,
+   "telefono": "(3437) 421659",
+   "cp": "E3190COM"
   },
   {
    "codigo": "140052",
    "nombre": "AGENCIA ROSARIO DEL TALA",
    "tipo": "agencia",
-   "domicilio": "Saenz Peña 453",
+   "domicilio": "Roque Sáenz Peña 432",
    "localidad": "Altamirano Sur",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Saenz Peña 453",
+   "telefono": "(3445) 421218",
+   "cp": "E3174CGJ"
   },
   {
    "codigo": "140055",
    "nombre": "AGENCIA VICTORIA",
    "tipo": "agencia",
-   "domicilio": "España 261",
+   "domicilio": "Mitre 731",
    "localidad": "Antelo",
-   "lat": -32.533333,
-   "lon": -60.083333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "España 261",
+   "telefono": "(3436) 421216",
+   "cp": "3153"
   },
   {
    "codigo": "140057",
@@ -2787,16 +3529,21 @@
    "domicilio": "Primer Maestro 298",
    "localidad": "Santa Elena",
    "lat": -30.95,
-   "lon": -59.783333
+   "lon": -59.783333,
+   "telefono": "(3437) 481868",
+   "cp": "3192"
   },
   {
    "codigo": "140059",
    "nombre": "AGENCIA DIAMANTE",
    "tipo": "agencia",
-   "domicilio": "Av. Colon 447",
+   "domicilio": "Brown Esq. Jose Hernandez S/N",
    "localidad": "Aldea Brasilera",
-   "lat": -31.883333,
-   "lon": -60.583333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. Colon 447",
+   "telefono": "(343) 4983044",
+   "cp": "2251"
   },
   {
    "codigo": "140060",
@@ -2805,34 +3552,44 @@
    "domicilio": "Tucuman 368",
    "localidad": "La Paz",
    "lat": -31.225425,
-   "lon": -59.986349
+   "lon": -59.986349,
+   "telefono": "(343) 4960241",
+   "cp": "E3127AWB"
   },
   {
    "codigo": "140062",
    "nombre": "AGENCIA GENERAL GALARZA",
    "tipo": "agencia",
-   "domicilio": "Av. Ramirez (ex Estación de Tren) S/n°",
+   "domicilio": "25 de Mayo 557",
    "localidad": "Aldea Asuncion",
-   "lat": -32.816667,
-   "lon": -59.233333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. Ramirez (ex Estación de Tren) S/n°",
+   "cp": "2843"
   },
   {
    "codigo": "140064",
    "nombre": "AGENCIA LUCAS GONZALEZ",
    "tipo": "agencia",
-   "domicilio": "Supremo Entrerriano 298",
+   "domicilio": "Roque Saenz Peña 145",
    "localidad": "La Llave",
-   "lat": -32.45,
-   "lon": -59.616667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Supremo Entrerriano 298",
+   "telefono": "(3435) 480307",
+   "cp": "E3158BQA"
   },
   {
    "codigo": "140065",
    "nombre": "AGENCIA MACIA",
    "tipo": "agencia",
-   "domicilio": "Elias Loiber 20",
+   "domicilio": "Pje. Loyber 20",
    "localidad": "Macia",
-   "lat": -32.183333,
-   "lon": -59.4
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Elias Loiber 20",
+   "telefono": "(3445) 461703",
+   "cp": "3177"
   },
   {
    "codigo": "140066",
@@ -2841,7 +3598,9 @@
    "domicilio": "Diagonal Industria 245",
    "localidad": "Aldea Santa Maria",
    "lat": -31.616667,
-   "lon": -60.0
+   "lon": -60.0,
+   "telefono": "(343) 4890704",
+   "cp": "E3122ASE"
   },
   {
    "codigo": "140067",
@@ -2850,7 +3609,9 @@
    "domicilio": "Estrada 1322",
    "localidad": "Crespo",
    "lat": -32.033333,
-   "lon": -60.316667
+   "lon": -60.316667,
+   "telefono": "(343) 4950444",
+   "cp": "E3116BKV"
   },
   {
    "codigo": "140068",
@@ -2859,7 +3620,9 @@
    "domicilio": "Av. Urquiza (ex Estación de Tren) S/n°",
    "localidad": "Parana",
    "lat": -31.664617,
-   "lon": -59.900635
+   "lon": -59.900635,
+   "telefono": "(343) 4940707",
+   "cp": "3133"
   },
   {
    "codigo": "140069",
@@ -2868,7 +3631,9 @@
    "domicilio": "Ramirez 473",
    "localidad": "Hasenkamp",
    "lat": -31.516667,
-   "lon": -59.833333
+   "lon": -59.833333,
+   "telefono": "(343) 4930367",
+   "cp": "3134"
   },
   {
    "codigo": "140071",
@@ -2877,7 +3642,8 @@
    "domicilio": "Martin Panutto 267",
    "localidad": "Viale",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "cp": "E3109AWC"
   }
  ],
  "XV": [
@@ -2888,7 +3654,9 @@
    "domicilio": "1 de Mayo 2269",
    "localidad": "Santa Fe",
    "lat": -31.648518,
-   "lon": -60.711421
+   "lon": -60.711421,
+   "telefono": "(342) 4101500",
+   "cp": "3000"
   },
   {
    "codigo": "150001",
@@ -2897,7 +3665,9 @@
    "domicilio": "Bvard. Pte Julio A Roca 255",
    "localidad": "Rafaela",
    "lat": -31.252314,
-   "lon": -61.494525
+   "lon": -61.494525,
+   "telefono": "(3492) 420247",
+   "cp": "2300"
   },
   {
    "codigo": "150002",
@@ -2906,25 +3676,32 @@
    "domicilio": "Santa Fe 951",
    "localidad": "El Trebol",
    "lat": -32.056584,
-   "lon": -61.603384
+   "lon": -61.603384,
+   "telefono": "(3401) 422376",
+   "cp": "S2535EGS"
   },
   {
    "codigo": "150003",
    "nombre": "AGENCIA RECONQUISTA",
    "tipo": "agencia",
-   "domicilio": "Roca 1032",
+   "domicilio": "San Martin 1074",
    "localidad": "Reconquista",
-   "lat": -29.148105,
-   "lon": -59.643999
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Roca 1032",
+   "telefono": "(03482) 431293",
+   "cp": "3560"
   },
   {
    "codigo": "150004",
    "nombre": "AGENCIA ESPERANZA",
    "tipo": "agencia",
-   "domicilio": "Av. Cordoba 1982",
+   "domicilio": "Aaron Castellanos 1198",
    "localidad": "Esperanza",
-   "lat": -31.44785,
-   "lon": -60.934785
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. Cordoba 1982",
+   "cp": "3080"
   },
   {
    "codigo": "150005",
@@ -2933,16 +3710,21 @@
    "domicilio": "Belgrano 2001",
    "localidad": "Coronda",
    "lat": -31.976154,
-   "lon": -60.922514
+   "lon": -60.922514,
+   "telefono": "(342) 4910351",
+   "cp": "S2240"
   },
   {
    "codigo": "150006",
    "nombre": "AGENCIA CERES",
    "tipo": "agencia",
-   "domicilio": "Moreno 185",
+   "domicilio": "9 de Julio 343",
    "localidad": "Ceres",
-   "lat": -29.879628,
-   "lon": -61.94525
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Moreno 185",
+   "telefono": "(3491) 420293",
+   "cp": "2340"
   },
   {
    "codigo": "150007",
@@ -2951,16 +3733,20 @@
    "domicilio": "Colon 1635",
    "localidad": "Vera",
    "lat": -29.457295,
-   "lon": -60.20923
+   "lon": -60.20923,
+   "telefono": "(3483) 428165",
+   "cp": "S3550BKG"
   },
   {
    "codigo": "150008",
    "nombre": "AGENCIA SAN JAVIER",
    "tipo": "agencia",
-   "domicilio": "Alvear 2056",
+   "domicilio": "Dr Tiscornia 1837",
    "localidad": "San Javier",
-   "lat": -30.579959,
-   "lon": -59.928021
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Alvear 2056",
+   "cp": "3005"
   },
   {
    "codigo": "150009",
@@ -2969,7 +3755,9 @@
    "domicilio": "San Martín 2353",
    "localidad": "San Justo",
    "lat": -30.786494,
-   "lon": -60.589698
+   "lon": -60.589698,
+   "telefono": "(3498) 427371",
+   "cp": "3040"
   },
   {
    "codigo": "150010",
@@ -2978,16 +3766,21 @@
    "domicilio": "Belgrano 1555",
    "localidad": "San Carlos Centro",
    "lat": -31.737116,
-   "lon": -61.094017
+   "lon": -61.094017,
+   "telefono": "(3404) 420669",
+   "cp": "S6106XAH"
   },
   {
    "codigo": "150011",
    "nombre": "AGENCIA VILLA OCAMPO",
    "tipo": "agencia",
-   "domicilio": "Padre Angel Tibaldo 1003",
+   "domicilio": "Bv Urquiza 1520",
    "localidad": "Villa Ocampo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Padre Angel Tibaldo 1003",
+   "telefono": "(3482) 467545",
+   "cp": "3580"
   },
   {
    "codigo": "150012",
@@ -2996,7 +3789,9 @@
    "domicilio": "Belgrano 853",
    "localidad": "Galvez",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3404) 482686",
+   "cp": "S2252CFG"
   },
   {
    "codigo": "150013",
@@ -3005,7 +3800,9 @@
    "domicilio": "Sarmiento 2351",
    "localidad": "Santo Tome",
    "lat": -31.661259,
-   "lon": -60.764346
+   "lon": -60.764346,
+   "telefono": "(0342) 4747466",
+   "cp": "S3016AAO"
   },
   {
    "codigo": "150052",
@@ -3014,16 +3811,20 @@
    "domicilio": "Jorge Ortiz 1834",
    "localidad": "San Jorge",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3406) 440963",
+   "cp": "S2452AQP"
   },
   {
    "codigo": "150053",
    "nombre": "AGENCIA SAN CRISTOBAL",
    "tipo": "agencia",
-   "domicilio": "Hipolito Yrigoyen 783",
+   "domicilio": "Caseros y las Heras S/N",
    "localidad": "San Cristobal",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Hipolito Yrigoyen 783",
+   "cp": "3070"
   },
   {
    "codigo": "150054",
@@ -3032,7 +3833,9 @@
    "domicilio": "Independencia 1773",
    "localidad": "Tostado",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3491) 470288",
+   "cp": "S3060AUC"
   },
   {
    "codigo": "150055",
@@ -3041,7 +3844,9 @@
    "domicilio": "San Martin 730",
    "localidad": "San Guillermo",
    "lat": -30.359889,
-   "lon": -61.916367
+   "lon": -61.916367,
+   "telefono": "(3562) 466491",
+   "cp": "S2347"
   },
   {
    "codigo": "150056",
@@ -3050,7 +3855,9 @@
    "domicilio": "Ameghino 27",
    "localidad": "Sunchales",
    "lat": -30.95,
-   "lon": -61.583333
+   "lon": -61.583333,
+   "telefono": "(3493) 421764",
+   "cp": "S2322DPA"
   },
   {
    "codigo": "150057",
@@ -3059,7 +3866,9 @@
    "domicilio": "Sarmiento 64",
    "localidad": "Maria Juana",
    "lat": -31.675812,
-   "lon": -61.751121
+   "lon": -61.751121,
+   "telefono": "(3406) 471320",
+   "cp": "S2445BLB"
   },
   {
    "codigo": "150058",
@@ -3068,7 +3877,9 @@
    "domicilio": "Senador Antille 750",
    "localidad": "Helvecia",
    "lat": -31.107132,
-   "lon": -60.090261
+   "lon": -60.090261,
+   "telefono": "(3405) 470458",
+   "cp": "S3003"
   },
   {
    "codigo": "150059",
@@ -3077,16 +3888,20 @@
    "domicilio": "Sarmiento 1103",
    "localidad": "Laguna Paiva",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0342) 4944271",
+   "cp": "3020"
   },
   {
    "codigo": "150060",
    "nombre": "AGENCIA SAN JOSE DEL RINCON",
    "tipo": "agencia",
-   "domicilio": "Castañeda y Republica S/N",
+   "domicilio": "Juan de Garay 2595",
    "localidad": "San Jose del Rincon",
-   "lat": -31.60191,
-   "lon": -60.582363
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Castañeda y Republica S/N",
+   "cp": "3001"
   },
   {
    "codigo": "150061",
@@ -3095,7 +3910,9 @@
    "domicilio": "Calle 6 E/ 13 y 15 748",
    "localidad": "Las Toscas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03482) 492201",
+   "cp": "S3586"
   }
  ],
  "XVI": [
@@ -3106,7 +3923,9 @@
    "domicilio": "Hipolito Yrigoyen 55",
    "localidad": "Neuquen",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0299) 4475853",
+   "cp": "Q8300"
   },
   {
    "codigo": "160001",
@@ -3115,7 +3934,9 @@
    "domicilio": "Av Olascoaga 570",
    "localidad": "Cutral Co",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0299) 4961649",
+   "cp": "Q8322"
   },
   {
    "codigo": "160002",
@@ -3124,16 +3945,21 @@
    "domicilio": "Ejercito Argentino 201",
    "localidad": "Covunco Centro",
    "lat": -38.733086,
-   "lon": -70.019861
+   "lon": -70.019861,
+   "telefono": "(02942) 430817",
+   "cp": "Q8340EME"
   },
   {
    "codigo": "160003",
    "nombre": "AGENCIA SAN MARTIN DE LOS ANDES",
    "tipo": "agencia",
-   "domicilio": "Teniente Ramayon 660",
+   "domicilio": "Rudencido Roca 869",
    "localidad": "San Martin de los Andes",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Teniente Ramayon 660",
+   "telefono": "(02972) 411556",
+   "cp": "8370"
   },
   {
    "codigo": "160004",
@@ -3142,16 +3968,21 @@
    "domicilio": "San Martin 1047",
    "localidad": "Rincon de los Sauces",
    "lat": -37.391135,
-   "lon": -68.92396
+   "lon": -68.92396,
+   "telefono": "(0299) 4886667",
+   "cp": "Q8319CGU"
   },
   {
    "codigo": "160050",
    "nombre": "AGENCIA CENTENARIO",
    "tipo": "agencia",
-   "domicilio": "Paraguay 235",
+   "domicilio": "Paraguay 232",
    "localidad": "Auca Mahuida",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Paraguay 235",
+   "telefono": "(0299) 4891778",
+   "cp": "Q8309EGF"
   },
   {
    "codigo": "160051",
@@ -3160,25 +3991,33 @@
    "domicilio": "Roca 171",
    "localidad": "Chos Malal",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(02948) 421297",
+   "cp": "Q8353CNC"
   },
   {
    "codigo": "160052",
    "nombre": "AGENCIA PLOTTIER",
    "tipo": "agencia",
-   "domicilio": "Martelotta 96",
+   "domicilio": "Buenos Aires Sur 376",
    "localidad": "Arroyito",
-   "lat": -38.953895,
-   "lon": -68.227148
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Martelotta 96",
+   "telefono": "(0299) 4933581",
+   "cp": "8316"
   },
   {
    "codigo": "160053",
    "nombre": "AGENCIA JUNIN DE LOS ANDES",
    "tipo": "agencia",
-   "domicilio": "Coronel Suarez 59",
+   "domicilio": "Necochea 190",
    "localidad": "Junin de los Andes",
-   "lat": -39.95,
-   "lon": -71.083333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Coronel Suarez 59",
+   "telefono": "(02972) 491418",
+   "cp": "8371"
   },
   {
    "codigo": "160054",
@@ -3187,16 +4026,20 @@
    "domicilio": "David Almendra S/nº",
    "localidad": "Loncopue",
    "lat": -38.066667,
-   "lon": -70.616667
+   "lon": -70.616667,
+   "telefono": "(02948) 498135",
+   "cp": "8349"
   },
   {
    "codigo": "160055",
    "nombre": "AGENCIA ALUMINE",
    "tipo": "agencia",
-   "domicilio": "Conrado Villegas 201",
+   "domicilio": "Av Rim 26, 550",
    "localidad": "Alumine",
-   "lat": -39.25,
-   "lon": -70.916667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Conrado Villegas 201",
+   "cp": "8345"
   },
   {
    "codigo": "160056",
@@ -3205,7 +4048,9 @@
    "domicilio": "Cacique Sayhueque 179",
    "localidad": "Villa la Angostura",
    "lat": -40.758897,
-   "lon": -71.645933
+   "lon": -71.645933,
+   "telefono": "(02944) 494535",
+   "cp": "Q8407"
   },
   {
    "codigo": "160057",
@@ -3214,16 +4059,31 @@
    "domicilio": "San Martin. Local N° 2 773",
    "localidad": "Plaza Huincul",
    "lat": -38.916667,
-   "lon": -69.2
+   "lon": -69.2,
+   "no_figura_web": true
   },
   {
    "codigo": "160058",
    "nombre": "AGENCIA PIEDRA DEL AGUILA",
    "tipo": "agencia",
-   "domicilio": "Sarmiento 90",
+   "domicilio": "Comb. de Malvinas y Alsina S/N",
    "localidad": "Piedra del Aguila",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Sarmiento 90",
+   "telefono": "(02942) 493642",
+   "cp": "8315"
+  },
+  {
+   "codigo": "160060",
+   "nombre": "BOCA DE ATENCION SENILLOSA",
+   "tipo": "boca",
+   "domicilio": "Las Lengas y los Aromos S/N",
+   "localidad": "Senillosa",
+   "lat": null,
+   "lon": null,
+   "cp": "8316",
+   "nuevo_web": true
   }
  ],
  "XVII": [
@@ -3234,16 +4094,21 @@
    "domicilio": "Saavedra 935",
    "localidad": "Cmdro Rivadavia",
    "lat": -45.860798,
-   "lon": -67.495591
+   "lon": -67.495591,
+   "telefono": "(297) 4467350",
+   "cp": "U9000CGS"
   },
   {
    "codigo": "170001",
    "nombre": "AGENCIA ESQUEL",
    "tipo": "agencia",
-   "domicilio": "9 de Julio 725",
+   "domicilio": "Roca 417",
    "localidad": "Esquel",
-   "lat": -42.9157,
-   "lon": -71.324534
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "9 de Julio 725",
+   "telefono": "(2945) 454718",
+   "cp": "9200"
   },
   {
    "codigo": "170002",
@@ -3252,16 +4117,21 @@
    "domicilio": "Paraguay 88",
    "localidad": "Trelew",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(280) 4422637",
+   "cp": "U9100AFB"
   },
   {
    "codigo": "170006",
    "nombre": "AGENCIA PUERTO MADRYN",
    "tipo": "agencia",
-   "domicilio": "Marcos A. Zar 455",
+   "domicilio": "Marcos A. Zar 445",
    "localidad": "Puerto Madryn",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Marcos A. Zar 455",
+   "telefono": "(280) 4453865",
+   "cp": "U9120ARI"
   },
   {
    "codigo": "170050",
@@ -3270,7 +4140,9 @@
    "domicilio": "Perito Moreno 351",
    "localidad": "Sarmiento",
    "lat": -45.583333,
-   "lon": -69.066667
+   "lon": -69.066667,
+   "telefono": "(297) 4893349",
+   "cp": "U9020"
   },
   {
    "codigo": "170051",
@@ -3279,7 +4151,9 @@
    "domicilio": "San Martin 1025",
    "localidad": "El Maiten",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2945) 495110",
+   "cp": "U9210CFC"
   },
   {
    "codigo": "170052",
@@ -3288,7 +4162,9 @@
    "domicilio": "Hipolito Yrigoyen 152",
    "localidad": "Gaiman",
    "lat": -43.283333,
-   "lon": -65.5
+   "lon": -65.5,
+   "telefono": "(280) 4491208",
+   "cp": "U9105BNB"
   },
   {
    "codigo": "170053",
@@ -3297,7 +4173,9 @@
    "domicilio": "Pasaje Garzon 74",
    "localidad": "Rawson",
    "lat": -43.296829,
-   "lon": -65.102259
+   "lon": -65.102259,
+   "telefono": "(280) 4481331",
+   "cp": "U9103JSB"
   },
   {
    "codigo": "170054",
@@ -3306,16 +4184,21 @@
    "domicilio": "Belgrano esq. Irigoyen S/N",
    "localidad": "Rio Mayo",
    "lat": -45.683333,
-   "lon": -70.266667
+   "lon": -70.266667,
+   "telefono": "(2903) 420103",
+   "cp": "9033"
   },
   {
    "codigo": "170055",
    "nombre": "AGENCIA RIO SENGUER",
    "tipo": "agencia",
-   "domicilio": "San Juan Bosco (htal Rural Rio Senguer) S/N",
+   "domicilio": "Juan Domingo Peron Casa 16",
    "localidad": "Alto Rio Senguer",
-   "lat": -45.05,
-   "lon": -70.833333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "San Juan Bosco (htal Rural Rio Senguer) S/N",
+   "telefono": "(2945) 497007",
+   "cp": "9033"
   },
   {
    "codigo": "170056",
@@ -3324,7 +4207,9 @@
    "domicilio": "Julio A. Roca y Jose Aguado S/N",
    "localidad": "Jose de San Martin",
    "lat": -44.05,
-   "lon": -70.566667
+   "lon": -70.566667,
+   "telefono": "(2945) 491006",
+   "cp": "U9223"
   },
   {
    "codigo": "170057",
@@ -3333,7 +4218,8 @@
    "domicilio": "25 de Mayo y Maipu Norte S/N",
    "localidad": "Dolavon",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "cp": "9107"
   },
   {
    "codigo": "170058",
@@ -3342,7 +4228,9 @@
    "domicilio": "Km 8 Barrio Parque 112",
    "localidad": "Cmdro Rivadavia",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(297) 535214",
+   "cp": "9000"
   },
   {
    "codigo": "170059",
@@ -3351,7 +4239,9 @@
    "domicilio": "San Martin 719",
    "localidad": "Trevelin",
    "lat": -43.066667,
-   "lon": -71.483333
+   "lon": -71.483333,
+   "telefono": "(2945) 480080",
+   "cp": "U9203APH"
   },
   {
    "codigo": "170060",
@@ -3360,7 +4250,9 @@
    "domicilio": "Av.aut.club Arg.y.colhue Huapi S/N",
    "localidad": "Rada Tilly",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0297) 4452779",
+   "cp": "9001"
   },
   {
    "codigo": "170061",
@@ -3369,7 +4261,9 @@
    "domicilio": "Los Guindos y los Nogales S/N",
    "localidad": "El Maiten",
    "lat": -42.05,
-   "lon": -71.516667
+   "lon": -71.516667,
+   "telefono": "(0294) 4471065",
+   "cp": "9211"
   }
  ],
  "XVIII": [
@@ -3380,43 +4274,56 @@
    "domicilio": "Salta 1744",
    "localidad": "Posadas",
    "lat": -27.371669,
-   "lon": -55.893755
+   "lon": -55.893755,
+   "telefono": "(3764) 427809",
+   "cp": "N3300BHL"
   },
   {
    "codigo": "180001",
    "nombre": "AGENCIA OBERA",
    "tipo": "agencia",
-   "domicilio": "Av. Libertad 455",
+   "domicilio": "Av. de las Americas 1387",
    "localidad": "Obera",
-   "lat": -27.487606,
-   "lon": -55.113642
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. Libertad 455",
+   "telefono": "(03755) 682236",
+   "cp": "3360"
   },
   {
    "codigo": "180002",
    "nombre": "AGENCIA EL DORADO",
    "tipo": "agencia",
-   "domicilio": "Christiansen esq. A Malvinas 110",
+   "domicilio": "Jujuy 1844",
    "localidad": "Eldorado",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Christiansen esq. A Malvinas 110",
+   "telefono": "(3751) 477742",
+   "cp": "3380"
   },
   {
    "codigo": "180003",
    "nombre": "AGENCIA APOSTOLES",
    "tipo": "agencia",
-   "domicilio": "Belgrano 447",
+   "domicilio": "Padre Fiege 1054",
    "localidad": "Apostoles",
-   "lat": -27.9,
-   "lon": -55.75
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Belgrano 447",
+   "telefono": "(3758) 486853",
+   "cp": "3350"
   },
   {
    "codigo": "180004",
    "nombre": "AGENCIA JARDIN AMERICA",
    "tipo": "agencia",
-   "domicilio": "Sarmiento 135",
+   "domicilio": "Venezuela 770",
    "localidad": "Jardin America",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Sarmiento 135",
+   "cp": "3328"
   },
   {
    "codigo": "180005",
@@ -3425,25 +4332,33 @@
    "domicilio": "Av. 9 de Julio y Andresito Sn",
    "localidad": "Puerto Rico",
    "lat": -26.8,
-   "lon": -55.033333
+   "lon": -55.033333,
+   "telefono": "(3743) 459989",
+   "cp": "3334"
   },
   {
    "codigo": "180006",
    "nombre": "AGENCIA MONTECARLO",
    "tipo": "agencia",
-   "domicilio": "H Quiroga y Carlos Culmey S/nº",
+   "domicilio": "Cumley y Horacio Quiroga S/N",
    "localidad": "Montecarlo",
-   "lat": -26.55,
-   "lon": -54.783333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "H Quiroga y Carlos Culmey S/nº",
+   "telefono": "(3751) 661370",
+   "cp": "3384"
   },
   {
    "codigo": "180007",
    "nombre": "AGENCIA PUERTO IGUAZU",
    "tipo": "agencia",
-   "domicilio": "Guatambu 4 y los Cedros 4",
+   "domicilio": "Av Victoria Aguirre 456",
    "localidad": "Puerto Iguazu",
-   "lat": -25.603011,
-   "lon": -54.573904
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Guatambu 4 y los Cedros 4",
+   "telefono": "(3794) 383742",
+   "cp": "3370"
   },
   {
    "codigo": "180008",
@@ -3452,43 +4367,56 @@
    "domicilio": "25 de Mayo 25",
    "localidad": "Leandro N Alem",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3754) 531923",
+   "cp": "N3315ADA"
   },
   {
    "codigo": "180009",
    "nombre": "AGENCIA SAN VICENTE",
    "tipo": "agencia",
-   "domicilio": "J.b.alberdi S/N",
+   "domicilio": "Leandro Alem Casi Rta Nac 14 S/N",
    "localidad": "San Vicente",
-   "lat": -26.987666,
-   "lon": -54.502599
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "J.b.alberdi S/N",
+   "telefono": "(3755) 435643",
+   "cp": "3364"
   },
   {
    "codigo": "180050",
    "nombre": "AGENCIA BERNARDO DE IRIGOYEN",
    "tipo": "agencia",
-   "domicilio": "Av. de las Americas (hospital) 190",
+   "domicilio": "Av Independencia 156",
    "localidad": "Bernardo de Irigoyen",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av. de las Americas (hospital) 190",
+   "telefono": "(3741) 404159",
+   "cp": "3366"
   },
   {
    "codigo": "180051",
    "nombre": "AGENCIA SAN JAVIER",
    "tipo": "agencia",
-   "domicilio": "Sarmiento y Jacobo Lenuza Manzana 116 81",
+   "domicilio": "Sarmiento y 9 de Julio 529",
    "localidad": "San Javier",
-   "lat": -27.883333,
-   "lon": -55.133333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Sarmiento y Jacobo Lenuza Manzana 116 81",
+   "cp": "3357"
   },
   {
    "codigo": "180052",
    "nombre": "AGENCIA SAN PEDRO",
    "tipo": "agencia",
-   "domicilio": "Chubut 785",
+   "domicilio": "San Luis 590",
    "localidad": "San Pedro",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Chubut 785",
+   "telefono": "(3751) 334054",
+   "cp": "3364"
   },
   {
    "codigo": "180053",
@@ -3497,7 +4425,9 @@
    "domicilio": "Entre Rios 150",
    "localidad": "Puerto Esperanza",
    "lat": -26.016667,
-   "lon": -54.65
+   "lon": -54.65,
+   "telefono": "(3757) 616676",
+   "cp": "3378"
   },
   {
    "codigo": "180054",
@@ -3506,25 +4436,33 @@
    "domicilio": "San Martin 253",
    "localidad": "San Ignacio",
    "lat": -27.283333,
-   "lon": -55.533333
+   "lon": -55.533333,
+   "telefono": "(3764) 4373968",
+   "cp": "N3322BKC"
   },
   {
    "codigo": "180055",
    "nombre": "AGENCIA EL SOBERBIO",
    "tipo": "agencia",
-   "domicilio": "Moreno 433",
+   "domicilio": "Suipacha Casi Rivadavia S/N",
    "localidad": "El Soberbio",
-   "lat": -27.3,
-   "lon": -54.2
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Moreno 433",
+   "telefono": "(376) 4669494",
+   "cp": "3364"
   },
   {
    "codigo": "180056",
    "nombre": "AGENCIA ARISTOBULO DEL VALLE",
    "tipo": "agencia",
-   "domicilio": "Padre Fiege 1074",
+   "domicilio": "Belgrano 447",
    "localidad": "Aristobulo del Valle",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Padre Fiege 1074",
+   "telefono": "(3755) 201267",
+   "cp": "3364"
   },
   {
    "codigo": "180057",
@@ -3533,7 +4471,9 @@
    "domicilio": "Avda. Centenario y Don Bosco S/N",
    "localidad": "San Jose",
    "lat": -27.766667,
-   "lon": -55.783333
+   "lon": -55.783333,
+   "telefono": "(0376) 4168026",
+   "cp": "3300"
   },
   {
    "codigo": "180058",
@@ -3542,16 +4482,21 @@
    "domicilio": "Rivadavia 320",
    "localidad": "25 de Mayo",
    "lat": -27.383333,
-   "lon": -54.733333
+   "lon": -54.733333,
+   "telefono": "(3755) 652614",
+   "cp": "N3363"
   },
   {
    "codigo": "180059",
    "nombre": "AGENCIA CANDELARIA",
    "tipo": "agencia",
-   "domicilio": "Avda. Roque Gonzalez 974",
+   "domicilio": "Mitre y Pellegrini B° Belgrano S/N",
    "localidad": "Candelaria",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Avda. Roque Gonzalez 974",
+   "telefono": "(376) 4657336",
+   "cp": "3308"
   },
   {
    "codigo": "180060",
@@ -3560,7 +4505,9 @@
    "domicilio": "Timbo y Av. San Martin S/nº",
    "localidad": "Santa Ana",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(376) 4227777",
+   "cp": "3316"
   },
   {
    "codigo": "180061",
@@ -3569,7 +4516,9 @@
    "domicilio": "Marcos Paz 2400",
    "localidad": "Puerto Piray",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3751) 602682",
+   "cp": "3381"
   }
  ],
  "XIX": [
@@ -3580,7 +4529,9 @@
    "domicilio": "Pellegrini 335",
    "localidad": "Santiago del Estero",
    "lat": -27.78522,
-   "lon": -64.258948
+   "lon": -64.258948,
+   "telefono": "(0385) 4219300",
+   "cp": "G4200CWG"
   },
   {
    "codigo": "190001",
@@ -3589,7 +4540,9 @@
    "domicilio": "Dr. Stemberg 117",
    "localidad": "Añatuya",
    "lat": -28.462662,
-   "lon": -62.834338
+   "lon": -62.834338,
+   "telefono": "(03844) 421561",
+   "cp": "G3760"
   },
   {
    "codigo": "190002",
@@ -3598,25 +4551,32 @@
    "domicilio": "Belgrano 57",
    "localidad": "Frias",
    "lat": -28.637723,
-   "lon": -65.130053
+   "lon": -65.130053,
+   "telefono": "(03854) 421028",
+   "cp": "G4230ARA"
   },
   {
    "codigo": "190003",
    "nombre": "AGENCIA TERMAS DE RIO HONDO",
    "tipo": "agencia",
-   "domicilio": "Dorrego 27",
+   "domicilio": "12 de Octubre y P Rosa Mistica S/N",
    "localidad": "Termas de Rio Hondo",
-   "lat": -27.500279,
-   "lon": -64.878565
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Dorrego 27",
+   "cp": "4220"
   },
   {
    "codigo": "190004",
    "nombre": "AGENCIA FERNANDEZ",
    "tipo": "agencia",
-   "domicilio": "Independencia 126",
+   "domicilio": "Pje Maximo Victoria E/sm y Lib S/N",
    "localidad": "Fernandez",
-   "lat": -27.916667,
-   "lon": -63.9
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Independencia 126",
+   "telefono": "(0385) 4911340",
+   "cp": "4322"
   },
   {
    "codigo": "190005",
@@ -3625,7 +4585,9 @@
    "domicilio": "Eduardo Miguel 47 Pb Local 1",
    "localidad": "Villa San Martin",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03845) 427744",
+   "cp": "4208"
   },
   {
    "codigo": "190006",
@@ -3634,16 +4596,21 @@
    "domicilio": "San Martín 571",
    "localidad": "Ojo de Agua",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03856) 421025",
+   "cp": "G5250AYK"
   },
   {
    "codigo": "190007",
    "nombre": "AGENCIA QUIMILI",
    "tipo": "agencia",
-   "domicilio": "Moreno 220",
+   "domicilio": "Rivadavia (barrio Centro) 70",
    "localidad": "Quimili",
-   "lat": -27.65,
-   "lon": -62.416667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Moreno 220",
+   "telefono": "(03843) 421158",
+   "cp": "3740"
   },
   {
    "codigo": "190008",
@@ -3652,7 +4619,9 @@
    "domicilio": "Av. Belgrano 158",
    "localidad": "La Banda",
    "lat": -27.73431,
-   "lon": -64.241102
+   "lon": -64.241102,
+   "telefono": "(0385) 4289403",
+   "cp": "G4300AAO"
   },
   {
    "codigo": "190050",
@@ -3661,7 +4630,9 @@
    "domicilio": "Republica 634",
    "localidad": "Clodomira",
    "lat": -27.583333,
-   "lon": -64.133333
+   "lon": -64.133333,
+   "telefono": "(0385) 4921544",
+   "cp": "G4338CZP"
   },
   {
    "codigo": "190051",
@@ -3670,7 +4641,9 @@
    "domicilio": "Rivadavia Esquina Italia 202",
    "localidad": "Selva",
    "lat": -29.783333,
-   "lon": -62.05
+   "lon": -62.05,
+   "telefono": "(03857) 495124",
+   "cp": "2354"
   },
   {
    "codigo": "190052",
@@ -3679,7 +4652,9 @@
    "domicilio": "Rivadavia entre Calle Moreno y Sarmiento S/N",
    "localidad": "Bandera",
    "lat": -28.883333,
-   "lon": -62.266667
+   "lon": -62.266667,
+   "telefono": "(03857) 421065",
+   "cp": "G3064"
   },
   {
    "codigo": "190053",
@@ -3688,7 +4663,9 @@
    "domicilio": "Ramon Carrillo 444",
    "localidad": "Pinto",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03857) 481056",
+   "cp": "G2356AYR"
   },
   {
    "codigo": "190054",
@@ -3697,7 +4674,9 @@
    "domicilio": "Calle 9 de Julio entre Calle Belgrano y Mitre S/N",
    "localidad": "Suncho Corral",
    "lat": -27.933333,
-   "lon": -63.433333
+   "lon": -63.433333,
+   "telefono": "(03855) 421188",
+   "cp": "G4350"
   },
   {
    "codigo": "190055",
@@ -3706,7 +4685,9 @@
    "domicilio": "La Rioja entre Calle San Martin y Alvarado Null",
    "localidad": "Villa Atamisqui",
    "lat": -28.483333,
-   "lon": -63.816667
+   "lon": -63.816667,
+   "telefono": "(03845) 494071",
+   "cp": "4317"
   },
   {
    "codigo": "190056",
@@ -3715,16 +4696,20 @@
    "domicilio": "San Martin 724",
    "localidad": "Monte Quemado",
    "lat": -25.8,
-   "lon": -62.883333
+   "lon": -62.883333,
+   "telefono": "(03841) 421156",
+   "cp": "G3714CIP"
   },
   {
    "codigo": "190057",
    "nombre": "AGENCIA CAMPO GALLO",
    "tipo": "agencia",
-   "domicilio": "Irigoyen E/rivadavia y Lavalle B° Centro S/N",
+   "domicilio": "Belgrano 70",
    "localidad": "Campo Gallo",
-   "lat": -26.583333,
-   "lon": -62.866667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Irigoyen E/rivadavia y Lavalle B° Centro S/N",
+   "cp": "3747"
   },
   {
    "codigo": "190058",
@@ -3733,7 +4718,9 @@
    "domicilio": "San Juan E/ Rivadavia y Farath 253",
    "localidad": "Tintina",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03846) 421028",
+   "cp": "3743"
   },
   {
    "codigo": "190059",
@@ -3742,7 +4729,9 @@
    "domicilio": "Gaspar Juarez entre Calle Maximo Ruiz y Andres Chazarreta S/N",
    "localidad": "Pozo Hondo",
    "lat": -27.166667,
-   "lon": -64.5
+   "lon": -64.5,
+   "telefono": "(0385) 154353955",
+   "cp": "G4184"
   },
   {
    "codigo": "190060",
@@ -3751,7 +4740,9 @@
    "domicilio": "Cnel. Borges entre Calle Belgrano y Pedro Leon Gallo S/N",
    "localidad": "Nueva Esperanza",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03861) 421026",
+   "cp": "G4197ANJ"
   },
   {
    "codigo": "190061",
@@ -3760,7 +4751,9 @@
    "domicilio": "Maipu 46",
    "localidad": "San Pedro",
    "lat": -27.883333,
-   "lon": -64.85
+   "lon": -64.85,
+   "telefono": "(03854) 490240",
+   "cp": "G4238BDB"
   },
   {
    "codigo": "190062",
@@ -3769,7 +4762,9 @@
    "domicilio": "Pte Peron y Sarmiento S/N",
    "localidad": "Los Juries",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03857) 471094",
+   "cp": "G3763"
   },
   {
    "codigo": "190063",
@@ -3778,7 +4773,9 @@
    "domicilio": "Belgrano esq. Salta Barrio Pro-vi-ru S/N",
    "localidad": "Pampa de los Guanacos",
    "lat": -26.233333,
-   "lon": -61.866667
+   "lon": -61.866667,
+   "telefono": "(03841) 491224",
+   "cp": "G3712"
   },
   {
    "codigo": "190064",
@@ -3787,7 +4784,8 @@
    "domicilio": "Independencia 128",
    "localidad": "La Banda",
    "lat": -27.716667,
-   "lon": -63.783333
+   "lon": -63.783333,
+   "cp": "G4354XAF"
   },
   {
    "codigo": "190065",
@@ -3796,7 +4794,9 @@
    "domicilio": "9 de Julio 143",
    "localidad": "Sumampa",
    "lat": -29.366667,
-   "lon": -63.483333
+   "lon": -63.483333,
+   "telefono": "(03856) 491041",
+   "cp": "G5253"
   },
   {
    "codigo": "190066",
@@ -3805,7 +4805,8 @@
    "domicilio": "Avda Belgrano 150",
    "localidad": "Bandera Bajada",
    "lat": -27.266667,
-   "lon": -63.516667
+   "lon": -63.516667,
+   "cp": "G4301XAG"
   },
   {
    "codigo": "190067",
@@ -3814,7 +4815,8 @@
    "domicilio": "25 de Mayo y Juan D Peron .",
    "localidad": "Brea Pozo",
    "lat": -28.25,
-   "lon": -63.95
+   "lon": -63.95,
+   "cp": "G4313XAD"
   },
   {
    "codigo": "190068",
@@ -3823,7 +4825,8 @@
    "domicilio": "Rivadavia 290",
    "localidad": "Lavalle",
    "lat": -28.194483,
-   "lon": -65.116234
+   "lon": -65.116234,
+   "cp": "G4234XAA"
   },
   {
    "codigo": "190069",
@@ -3832,7 +4835,9 @@
    "domicilio": "Corrientes entre Calle Mitre y Suispacha S/N",
    "localidad": "Colonia Dora",
    "lat": -28.616667,
-   "lon": -62.95
+   "lon": -62.95,
+   "telefono": "(03844) 481709",
+   "cp": "G4332"
   },
   {
    "codigo": "190070",
@@ -3841,7 +4846,9 @@
    "domicilio": "Juan Xxiii entre Av. San Martin y Uriarte S/N",
    "localidad": "Beltran",
    "lat": -27.833333,
-   "lon": -64.066667
+   "lon": -64.066667,
+   "telefono": "(0385) 4903380",
+   "cp": "G4308"
   },
   {
    "codigo": "190071",
@@ -3850,7 +4857,8 @@
    "domicilio": "San Martin S/nº",
    "localidad": "Los Telares",
    "lat": -29.0,
-   "lon": -63.45
+   "lon": -63.45,
+   "cp": "G4321XAA"
   }
  ],
  "XX": [
@@ -3861,7 +4869,9 @@
    "domicilio": "Av. San Martin Oeste 106",
    "localidad": "Santa Rosa",
    "lat": -36.624575,
-   "lon": -64.295935
+   "lon": -64.295935,
+   "telefono": "(2954) 451701",
+   "cp": "L6300OQU"
   },
   {
    "codigo": "200001",
@@ -3870,7 +4880,9 @@
    "domicilio": "Calle 5 996",
    "localidad": "Gral Pico",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2302) 421793",
+   "cp": "L6360"
   },
   {
    "codigo": "200002",
@@ -3879,16 +4891,21 @@
    "domicilio": "Gral.campos 532",
    "localidad": "Gral Acha",
    "lat": -37.366667,
-   "lon": -64.6
+   "lon": -64.6,
+   "telefono": "(2952) 432456",
+   "cp": "L8200"
   },
   {
    "codigo": "200003",
    "nombre": "AGENCIA REALICO",
    "tipo": "agencia",
-   "domicilio": "Av. Mullally 1714",
+   "domicilio": "Constitucion y España S/N",
    "localidad": "Realico",
-   "lat": -35.040889,
-   "lon": -64.245139
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. Mullally 1714",
+   "telefono": "(2331) 492456",
+   "cp": "6200"
   },
   {
    "codigo": "200050",
@@ -3897,16 +4914,21 @@
    "domicilio": "San Luis 344",
    "localidad": "Macachin",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2953) 452243",
+   "cp": "L6307"
   },
   {
    "codigo": "200051",
    "nombre": "AGENCIA GENERAL SAN MARTIN",
    "tipo": "agencia",
-   "domicilio": "Juan Adagas 120",
+   "domicilio": "25 de Mayo 311",
    "localidad": "Gral San Martin",
-   "lat": -37.983333,
-   "lon": -63.616667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Juan Adagas 120",
+   "telefono": "(2925) 497307",
+   "cp": "8206"
   },
   {
    "codigo": "200052",
@@ -3915,16 +4937,21 @@
    "domicilio": "Av. Zeballos 496",
    "localidad": "Guatrache",
    "lat": -37.666879,
-   "lon": -63.538971
+   "lon": -63.538971,
+   "telefono": "(2924) 492020",
+   "cp": "L6311BYR"
   },
   {
    "codigo": "200053",
    "nombre": "AGENCIA QUEMU-QUEMU",
    "tipo": "agencia",
-   "domicilio": "Mitre 567",
+   "domicilio": "Bartolomé Mitre 496",
    "localidad": "Quemu Quemu",
-   "lat": -36.05492,
-   "lon": -63.565121
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Mitre 567",
+   "telefono": "(2333) 442136",
+   "cp": "6333"
   },
   {
    "codigo": "200054",
@@ -3933,34 +4960,44 @@
    "domicilio": "Don Bosco 1141",
    "localidad": "Colonia Baron",
    "lat": -36.15,
-   "lon": -63.85
+   "lon": -63.85,
+   "cp": "L6315"
   },
   {
    "codigo": "200055",
    "nombre": "AGENCIA CATRILO",
    "tipo": "agencia",
-   "domicilio": "Av. Miglione 186",
+   "domicilio": "Migliore 186",
    "localidad": "Catrilo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av. Miglione 186",
+   "telefono": "(2954) 491066",
+   "cp": "L6330AKF"
   },
   {
    "codigo": "200056",
    "nombre": "AGENCIA EDUARDO CASTEX",
    "tipo": "agencia",
-   "domicilio": "Sarmiento 771",
+   "domicilio": "Diagonal San Martin 758",
    "localidad": "Eduardo Castex",
-   "lat": -35.916797,
-   "lon": -64.29816
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Sarmiento 771",
+   "telefono": "(2334) 452250",
+   "cp": "6380"
   },
   {
    "codigo": "200057",
    "nombre": "AGENCIA VICTORICA",
    "tipo": "agencia",
-   "domicilio": "Calle 16 705",
+   "domicilio": "Calle 15 1477",
    "localidad": "Victorica",
-   "lat": -36.233333,
-   "lon": -65.4
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Calle 16 705",
+   "telefono": "(2338) 432391",
+   "cp": "6319"
   },
   {
    "codigo": "200058",
@@ -3969,7 +5006,9 @@
    "domicilio": "Juan J. Paso 135",
    "localidad": "Int Alvear",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2302) 481389",
+   "cp": "L6221BLC"
   },
   {
    "codigo": "200059",
@@ -3978,7 +5017,9 @@
    "domicilio": "Tucuman 612",
    "localidad": "Ing Luiggi",
    "lat": -35.416667,
-   "lon": -64.483333
+   "lon": -64.483333,
+   "telefono": "(2335) 471394",
+   "cp": "L6205BQL"
   },
   {
    "codigo": "200060",
@@ -3987,7 +5028,32 @@
    "domicilio": "Toay 214",
    "localidad": "Colonia 25 de Mayo",
    "lat": -37.783333,
-   "lon": -67.7
+   "lon": -67.7,
+   "telefono": "(299) 4948144",
+   "cp": "L8201BXF"
+  },
+  {
+   "codigo": "200063",
+   "nombre": "CAP SANTA ISABEL",
+   "tipo": "cap",
+   "domicilio": "Cacique Barbon 34",
+   "localidad": "Santa Isabel",
+   "lat": null,
+   "lon": null,
+   "cp": "6323",
+   "nuevo_web": true
+  },
+  {
+   "codigo": "200062",
+   "nombre": "CAP TOAY",
+   "tipo": "cap",
+   "domicilio": "Italia 1244",
+   "localidad": "Toay",
+   "lat": null,
+   "lon": null,
+   "telefono": "(2954) 490767",
+   "cp": "6303",
+   "nuevo_web": true
   }
  ],
  "XXI": [
@@ -3998,7 +5064,9 @@
    "domicilio": "Avenida Cordoba Este 5",
    "localidad": "San Juan",
    "lat": -31.540408,
-   "lon": -68.525383
+   "lon": -68.525383,
+   "telefono": "(0264) 4272294",
+   "cp": "J5400JCR"
   },
   {
    "codigo": "210001",
@@ -4007,7 +5075,9 @@
    "domicilio": "Rawson 767",
    "localidad": "Caucete",
    "lat": -31.65505,
-   "lon": -68.276913
+   "lon": -68.276913,
+   "telefono": "(0264) 4961266",
+   "cp": "J5442"
   },
   {
    "codigo": "210002",
@@ -4016,7 +5086,9 @@
    "domicilio": "Av Caseros esq. Laprida 265",
    "localidad": "Villa Mercedes",
    "lat": -30.243468,
-   "lon": -68.74454
+   "lon": -68.74454,
+   "telefono": "(02647) 420417",
+   "cp": "J5460"
   },
   {
    "codigo": "210003",
@@ -4025,25 +5097,33 @@
    "domicilio": "Boulevard Sarmiento Oeste 18",
    "localidad": "Rawson",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0264) 4285086",
+   "cp": "5425"
   },
   {
    "codigo": "210050",
    "nombre": "AGENCIA VILLA MEDIA AGUA",
    "tipo": "agencia",
-   "domicilio": "Jose Arez, entre Calles Rivadavia y Barboza 70",
+   "domicilio": "Jose Arez y Rp319 S/N",
    "localidad": "Villa Media Agua",
-   "lat": -31.983333,
-   "lon": -68.4
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Jose Arez, entre Calles Rivadavia y Barboza 70",
+   "telefono": "(0264) 4941031",
+   "cp": "J5435"
   },
   {
    "codigo": "210051",
    "nombre": "AGENCIA BARREAL",
    "tipo": "agencia",
-   "domicilio": "Cordillera de Ansilta esq. Soler S/N",
+   "domicilio": "Las Heras 33",
    "localidad": "Barreal",
-   "lat": -31.633333,
-   "lon": -69.466667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Cordillera de Ansilta esq. Soler S/N",
+   "telefono": "(02648) 441011",
+   "cp": "5405"
   },
   {
    "codigo": "210052",
@@ -4052,7 +5132,9 @@
    "domicilio": "General Acha Norte 84",
    "localidad": "San Agustin de Valle Fertil",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(02646) 420106",
+   "cp": "J5449"
   },
   {
    "codigo": "210053",
@@ -4061,7 +5143,9 @@
    "domicilio": "Diagonal San Martin S/N",
    "localidad": "9 de Julio",
    "lat": -31.669102,
-   "lon": -68.390356
+   "lon": -68.390356,
+   "telefono": "(0264) 4977136",
+   "cp": "J5417"
   },
   {
    "codigo": "210054",
@@ -4070,7 +5154,9 @@
    "domicilio": "Rodriguez 168",
    "localidad": "Chimbas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(264) 4310550",
+   "cp": "J5413"
   },
   {
    "codigo": "210055",
@@ -4079,16 +5165,21 @@
    "domicilio": "Ruta Nro. 270, entre Calles 4 y 5 S/N",
    "localidad": "Villa Santa Rosa",
    "lat": -31.74408,
-   "lon": -68.320561
+   "lon": -68.320561,
+   "telefono": "(0264) 4978366",
+   "cp": "5443"
   },
   {
    "codigo": "210056",
    "nombre": "AGENCIA POCITO",
    "tipo": "agencia",
-   "domicilio": "R. Vidart y Sta. Mº de Oro 1073",
+   "domicilio": "Av Ing. Marcos Zalazar 765",
    "localidad": "Villa Aberastain",
-   "lat": -31.655716,
-   "lon": -68.580558
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "R. Vidart y Sta. Mº de Oro 1073",
+   "telefono": "(264) 4921369",
+   "cp": "5429"
   }
  ],
  "XXII": [
@@ -4099,7 +5190,9 @@
    "domicilio": "Lavalle 376",
    "localidad": "San Salvador de Jujuy",
    "lat": -24.184293,
-   "lon": -65.302894
+   "lon": -65.302894,
+   "telefono": "(388) 4222011",
+   "cp": "Y4600EAH"
   },
   {
    "codigo": "220001",
@@ -4108,16 +5201,21 @@
    "domicilio": "San Juan 67",
    "localidad": "La Quiaca",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3885) 422460",
+   "cp": "Y4650CRA"
   },
   {
    "codigo": "220002",
    "nombre": "AGENCIA SAN PEDRO",
    "tipo": "agencia",
-   "domicilio": "Gobernador Tello 135",
+   "domicilio": "Bartolomé Mitre 383",
    "localidad": "San Pedro",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Gobernador Tello 135",
+   "telefono": "(3888) 420291",
+   "cp": "Y4500AJG"
   },
   {
    "codigo": "220003",
@@ -4126,16 +5224,21 @@
    "domicilio": "Buenos Aires Esq.san Juan 900",
    "localidad": "Humahuaca",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3887) 421019",
+   "cp": "Y4630BCR"
   },
   {
    "codigo": "220004",
    "nombre": "AGENCIA LIBERTADOR GRAL SAN MARTIN",
    "tipo": "agencia",
-   "domicilio": "Avda. Libertad 592",
+   "domicilio": "Snopek 294",
    "localidad": "Lib Gral San Martin",
-   "lat": -23.813441,
-   "lon": -64.789708
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Avda. Libertad 592",
+   "telefono": "(3886) 421159",
+   "cp": "Y4512"
   },
   {
    "codigo": "220005",
@@ -4144,34 +5247,44 @@
    "domicilio": "Avda. Rio de la Plata 150",
    "localidad": "Palpala",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(388) 4276906",
+   "cp": "Y4613AAO"
   },
   {
    "codigo": "220050",
    "nombre": "AGENCIA PERICO",
    "tipo": "agencia",
-   "domicilio": "Exodo 63",
+   "domicilio": "Coronel Arenas 440",
    "localidad": "Los Alisos",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Exodo 63",
+   "cp": "4608"
   },
   {
    "codigo": "220051",
    "nombre": "AGENCIA EL CARMEN",
    "tipo": "agencia",
-   "domicilio": "Av.ejercito del Norte 83",
+   "domicilio": "Ejercito del Norte 386",
    "localidad": "El Carmen",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av.ejercito del Norte 83",
+   "telefono": "(388) 4933297",
+   "cp": "4603"
   },
   {
    "codigo": "220052",
    "nombre": "AGENCIA TILCARA",
    "tipo": "agencia",
-   "domicilio": "Jujuy 551",
+   "domicilio": "San Martin 878",
    "localidad": "Tilcara",
-   "lat": -23.566667,
-   "lon": -65.383333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Jujuy 551",
+   "telefono": "(388) 4955338",
+   "cp": "4624"
   },
   {
    "codigo": "220053",
@@ -4180,7 +5293,9 @@
    "domicilio": "Ruta 9 Av Juan Domingo Peron S/N",
    "localidad": "Abra Pampa",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3887) 491353",
+   "cp": "4640"
   }
  ],
  "XXIII": [
@@ -4188,10 +5303,13 @@
    "codigo": "230000",
    "nombre": "UGL XXIII - FORMOSA",
    "tipo": "ugl",
-   "domicilio": "Moreno 1193",
+   "domicilio": "Jujuy 1281",
    "localidad": "Formosa",
-   "lat": -26.187209,
-   "lon": -58.165581
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Moreno 1193",
+   "telefono": "(370) 4429333",
+   "cp": "3600"
   },
   {
    "codigo": "230001",
@@ -4200,16 +5318,21 @@
    "domicilio": "Avda San Martin 829",
    "localidad": "Clorinda",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3718) 422216",
+   "cp": "P3610"
   },
   {
    "codigo": "230002",
    "nombre": "AGENCIA IBARRETA",
    "tipo": "agencia",
-   "domicilio": "San Martin 629",
+   "domicilio": "9 de Julio y Eugenio Wasniuk S/N",
    "localidad": "Ibarreta",
-   "lat": -25.216667,
-   "lon": -59.85
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "San Martin 629",
+   "telefono": "(370) 4445615",
+   "cp": "3624"
   },
   {
    "codigo": "230003",
@@ -4218,16 +5341,20 @@
    "domicilio": "Santa Fe 148",
    "localidad": "El Colorado",
    "lat": -26.3,
-   "lon": -59.366667
+   "lon": -59.366667,
+   "telefono": "(370) 4481164",
+   "cp": "P3603CLD"
   },
   {
    "codigo": "230005",
    "nombre": "AGENCIA LAS LOMITAS",
    "tipo": "agencia",
-   "domicilio": "Libertad 240",
+   "domicilio": "Rivadavia 418",
    "localidad": "Las Lomitas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Libertad 240",
+   "cp": "3630"
   },
   {
    "codigo": "230050",
@@ -4236,16 +5363,20 @@
    "domicilio": "Leando N. Alen y San Martin S/N",
    "localidad": "Laguna Blanca",
    "lat": -25.133333,
-   "lon": -58.25
+   "lon": -58.25,
+   "telefono": "(3718) 401692",
+   "cp": "P3613"
   },
   {
    "codigo": "230051",
    "nombre": "AGENCIA INGENIERO JUAREZ",
    "tipo": "agencia",
-   "domicilio": "Avda. Deguen S/N",
+   "domicilio": "Av. Juan Degen 384",
    "localidad": "Ing Guillermo N Juarez",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Avda. Deguen S/N",
+   "cp": "P3636"
   },
   {
    "codigo": "230052",
@@ -4254,7 +5385,9 @@
    "domicilio": "Sarmiento y Gral. Paz S/N",
    "localidad": "Pirane",
    "lat": -25.733333,
-   "lon": -59.116667
+   "lon": -59.116667,
+   "telefono": "(0370) 4463108",
+   "cp": "3606"
   },
   {
    "codigo": "230053",
@@ -4263,7 +5396,8 @@
    "domicilio": "Av Libertador esq J.d. Peron S/N",
    "localidad": "Gral Manuel Belgrano",
    "lat": -24.948858,
-   "lon": -58.985095
+   "lon": -58.985095,
+   "cp": "P3615"
   },
   {
    "codigo": "230054",
@@ -4272,7 +5406,9 @@
    "domicilio": "Fontana y Av. Belgrano S/nº",
    "localidad": "Villa Gral Güemes",
    "lat": -24.754299,
-   "lon": -59.488682
+   "lon": -59.488682,
+   "telefono": "(03716) 403195",
+   "cp": "P3621"
   }
  ],
  "XXIV": [
@@ -4280,10 +5416,13 @@
    "codigo": "240000",
    "nombre": "UGL XXIV - CATAMARCA",
    "tipo": "ugl",
-   "domicilio": "San Martin 680",
+   "domicilio": "Avenida Guemes 553",
    "localidad": "San Fdo del Valle de Catamarca",
-   "lat": -28.469866,
-   "lon": -65.777718
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "San Martin 680",
+   "telefono": "(383) 4746001",
+   "cp": "4700"
   },
   {
    "codigo": "240001",
@@ -4292,7 +5431,9 @@
    "domicilio": "Cubas S/N",
    "localidad": "Belen",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3835) 461525",
+   "cp": "4750"
   },
   {
    "codigo": "240002",
@@ -4301,16 +5442,21 @@
    "domicilio": "San Martin 380",
    "localidad": "Santa Maria",
    "lat": -26.7,
-   "lon": -66.033333
+   "lon": -66.033333,
+   "telefono": "(3838) 420355",
+   "cp": "4139"
   },
   {
    "codigo": "240003",
    "nombre": "AGENCIA TINOGASTA",
    "tipo": "agencia",
-   "domicilio": "Copiapo 459",
+   "domicilio": "Copiapó 359",
    "localidad": "Tinogasta",
-   "lat": -28.067708,
-   "lon": -67.565339
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Copiapo 459",
+   "telefono": "(3837) 420097",
+   "cp": "5341"
   },
   {
    "codigo": "240004",
@@ -4319,7 +5465,9 @@
    "domicilio": "Barcena 468",
    "localidad": "Andalgala",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3835) 422032",
+   "cp": "K4740"
   },
   {
    "codigo": "240005",
@@ -4328,7 +5476,9 @@
    "domicilio": "Moreno 145",
    "localidad": "Recreo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3832) 427269",
+   "cp": "K5260CJC"
   },
   {
    "codigo": "240006",
@@ -4337,16 +5487,20 @@
    "domicilio": "Pte. Castillo S/N",
    "localidad": "Poman",
    "lat": -28.416667,
-   "lon": -66.216667
+   "lon": -66.216667,
+   "telefono": "(3835) 497063",
+   "cp": "K5315"
   },
   {
    "codigo": "240007",
    "nombre": "AGENCIA VALLE VIEJO",
    "tipo": "agencia",
-   "domicilio": "Padre Esquiu 33",
+   "domicilio": "Avda Coronel Felipe Varela S/N",
    "localidad": "Villa Dolores",
-   "lat": -28.45,
-   "lon": -65.716667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Padre Esquiu 33",
+   "cp": "4705"
   },
   {
    "codigo": "240008",
@@ -4355,7 +5509,9 @@
    "domicilio": "La Callecita Ruta 41 S/N",
    "localidad": "Piedra Blanca",
    "lat": -28.357408,
-   "lon": -65.711496
+   "lon": -65.711496,
+   "telefono": "(3834) 492054",
+   "cp": "4709"
   },
   {
    "codigo": "240053",
@@ -4364,7 +5520,8 @@
    "domicilio": "Avda. Nestor Kirchner S/n° - Ruta Nac. 64 S/N",
    "localidad": "Bañado de Ovanta",
    "lat": -28.116667,
-   "lon": -65.3
+   "lon": -65.3,
+   "cp": "4723"
   },
   {
    "codigo": "240055",
@@ -4373,7 +5530,9 @@
    "domicilio": "Belgrano esq Catamarca S/N",
    "localidad": "Chumbicha",
    "lat": -28.866667,
-   "lon": -66.3
+   "lon": -66.3,
+   "telefono": "(383) 491251",
+   "cp": "K4728AGA"
   },
   {
    "codigo": "240056",
@@ -4382,7 +5541,9 @@
    "domicilio": "Diego Carrizo de Frites S/N",
    "localidad": "Fiambala",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3837) 496483",
+   "cp": "K5345"
   },
   {
    "codigo": "240059",
@@ -4391,7 +5552,9 @@
    "domicilio": "Matias Aredes S/N",
    "localidad": "La Merced",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(383) 495213",
+   "cp": "K4718"
   },
   {
    "codigo": "240060",
@@ -4400,7 +5563,8 @@
    "domicilio": "Calle Principal Barrio El Talar S/N",
    "localidad": "La Puerta",
    "lat": -28.166667,
-   "lon": -65.8
+   "lon": -65.8,
+   "no_figura_web": true
   },
   {
    "codigo": "240061",
@@ -4409,7 +5573,8 @@
    "domicilio": "Calle Principal Barrio San Roque S/N",
    "localidad": "Corral Quemado",
    "lat": -27.166667,
-   "lon": -66.95
+   "lon": -66.95,
+   "cp": "4751"
   }
  ],
  "XXV": [
@@ -4420,25 +5585,33 @@
    "domicilio": "Avda. Facundo Quiroga 53",
    "localidad": "La Rioja",
    "lat": -29.41733,
-   "lon": -66.848283
+   "lon": -66.848283,
+   "telefono": "(3804) 420114",
+   "cp": "F5300ISA"
   },
   {
    "codigo": "250001",
    "nombre": "AGENCIA CHILECITO",
    "tipo": "agencia",
-   "domicilio": "Joaquin V. Gonzalez 221",
+   "domicilio": "Joaquín V. González 142",
    "localidad": "Chilecito",
-   "lat": -29.166667,
-   "lon": -67.5
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Joaquin V. Gonzalez 221",
+   "telefono": "(3825) 422266",
+   "cp": "5360"
   },
   {
    "codigo": "250002",
    "nombre": "AGENCIA CHAMICAL",
    "tipo": "agencia",
-   "domicilio": "San Martin 150",
+   "domicilio": "Juan D Peron 67",
    "localidad": "Chamical",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "San Martin 150",
+   "telefono": "(3826) 422150",
+   "cp": "5380"
   },
   {
    "codigo": "250003",
@@ -4447,7 +5620,9 @@
    "domicilio": "Juan Domingo Peron y Roque Saenz Peña S/N",
    "localidad": "Chepes",
    "lat": -31.35,
-   "lon": -66.616667
+   "lon": -66.616667,
+   "telefono": "(3821) 420231",
+   "cp": "F5470"
   },
   {
    "codigo": "250004",
@@ -4456,25 +5631,33 @@
    "domicilio": "20 de Mayo 265",
    "localidad": "Aimogasta",
    "lat": -28.55,
-   "lon": -66.816667
+   "lon": -66.816667,
+   "telefono": "(3827) 420125",
+   "cp": "F5310AAE"
   },
   {
    "codigo": "250050",
    "nombre": "AGENCIA MILAGRO",
    "tipo": "agencia",
-   "domicilio": "Estac. Ferrocarril Gral. Belgrano-avda 9 de Julio S/N",
+   "domicilio": "Joaquin V.gonzalez y J.d.peron S/N",
    "localidad": "El Milagro",
-   "lat": -31.016667,
-   "lon": -66.016667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Estac. Ferrocarril Gral. Belgrano-avda 9 de Julio S/N",
+   "telefono": "(3826) 497171",
+   "cp": "5274"
   },
   {
    "codigo": "250052",
    "nombre": "AGENCIA VILLA UNION",
    "tipo": "agencia",
-   "domicilio": "J. V. Gonzalez esq. Hipolito Irigoyen S/N",
+   "domicilio": "Av Peron E/guerrero y Peñaloza S/N",
    "localidad": "Villa Union",
-   "lat": -29.3,
-   "lon": -68.2
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "J. V. Gonzalez esq. Hipolito Irigoyen S/N",
+   "telefono": "(3825) 470000",
+   "cp": "5350"
   },
   {
    "codigo": "250053",
@@ -4483,7 +5666,9 @@
    "domicilio": "Calle Principal S/nro.sobre Ruta Nac. 40 S/N",
    "localidad": "San Blas",
    "lat": -28.4,
-   "lon": -67.1
+   "lon": -67.1,
+   "telefono": "(3827) 497083",
+   "cp": "5327"
   },
   {
    "codigo": "250054",
@@ -4492,7 +5677,9 @@
    "domicilio": "San Martin S/N",
    "localidad": "Vinchina",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3825) 494113",
+   "cp": "5357"
   },
   {
    "codigo": "250055",
@@ -4501,25 +5688,33 @@
    "domicilio": "San Martin S/N S/N",
    "localidad": "Tama",
    "lat": -30.516667,
-   "lon": -66.533333
+   "lon": -66.533333,
+   "telefono": "(3826) 490328",
+   "cp": "5385"
   },
   {
    "codigo": "250056",
    "nombre": "AGENCIA ANILLACO",
    "tipo": "agencia",
-   "domicilio": "Catamarca Oeste S/N",
+   "domicilio": "Facundo Quiroga 34",
    "localidad": "Anillaco",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Catamarca Oeste S/N",
+   "telefono": "(3827) 452091",
+   "cp": "5301"
   },
   {
    "codigo": "250057",
    "nombre": "AGENCIA FAMATINA",
    "tipo": "agencia",
-   "domicilio": "9 de Julio S/N",
+   "domicilio": "Juan Domingo Peron S/N",
    "localidad": "Famatina",
-   "lat": -28.9,
-   "lon": -67.516667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "9 de Julio S/N",
+   "telefono": "(3825) 493178",
+   "cp": "5365"
   },
   {
    "codigo": "250058",
@@ -4528,16 +5723,20 @@
    "domicilio": "Av. El Libertador S/N",
    "localidad": "Nonogasta",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "cp": "5372"
   },
   {
    "codigo": "250059",
    "nombre": "AGENCIA OLTA",
    "tipo": "agencia",
-   "domicilio": "Jose S. Salinas y Victoria Rom S/N",
+   "domicilio": "Joaquin V.gonzalez 567",
    "localidad": "Olta",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Jose S. Salinas y Victoria Rom S/N",
+   "telefono": "(3826) 491686",
+   "cp": "5383"
   }
  ],
  "XXVI": [
@@ -4548,16 +5747,21 @@
    "domicilio": "San Martin e L.heras y T.jofre 1233",
    "localidad": "San Luis",
    "lat": -33.295283,
-   "lon": -66.343892
+   "lon": -66.343892,
+   "telefono": "(0226) 4423216",
+   "cp": "5700"
   },
   {
    "codigo": "260001",
    "nombre": "AGENCIA VILLA MERCEDES",
    "tipo": "agencia",
-   "domicilio": "Dagnillo 27",
+   "domicilio": "Prof Ricardo D Agnillo 27",
    "localidad": "Villa Mercedes",
-   "lat": -33.682637,
-   "lon": -65.465883
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Dagnillo 27",
+   "telefono": "(2657) 427938",
+   "cp": "5730"
   },
   {
    "codigo": "260002",
@@ -4566,16 +5770,21 @@
    "domicilio": "Av. los Almendros 66",
    "localidad": "Merlo",
    "lat": -32.35,
-   "lon": -65.033333
+   "lon": -65.033333,
+   "telefono": "(2656) 475097",
+   "cp": "D5881DXF"
   },
   {
    "codigo": "260003",
    "nombre": "AGENCIA BUENA ESPERANZA",
    "tipo": "agencia",
-   "domicilio": "Pedernera y 25 de Mayo S/nº",
+   "domicilio": "Pedernera 1535",
    "localidad": "Buena Esperanza",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Pedernera y 25 de Mayo S/nº",
+   "telefono": "(2658) 420160",
+   "cp": "6277"
   },
   {
    "codigo": "260004",
@@ -4584,7 +5793,9 @@
    "domicilio": "Belgrano S/nº",
    "localidad": "San Francisco del Monte de Oro",
    "lat": -32.6,
-   "lon": -66.133333
+   "lon": -66.133333,
+   "telefono": "(2651) 426089",
+   "cp": "5705"
   },
   {
    "codigo": "260005",
@@ -4593,7 +5804,9 @@
    "domicilio": "Urquiza S/nº",
    "localidad": "Concaran",
    "lat": -32.566667,
-   "lon": -65.25
+   "lon": -65.25,
+   "telefono": "(2656) 480095",
+   "cp": "5770"
   },
   {
    "codigo": "260006",
@@ -4602,16 +5815,21 @@
    "domicilio": "Av.viento Chorrillero Esq.los Pejes S/nº",
    "localidad": "El Chorrillo",
    "lat": -33.283333,
-   "lon": -66.266667
+   "lon": -66.266667,
+   "telefono": "(2664) 450113",
+   "cp": "5701"
   },
   {
    "codigo": "260051",
    "nombre": "AGENCIA UNION",
    "tipo": "agencia",
-   "domicilio": "Granaderos Puntanos 430",
+   "domicilio": "Av Wust Mza 107 Parcela 10 S/N",
    "localidad": "Union",
-   "lat": -35.15,
-   "lon": -65.95
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Granaderos Puntanos 430",
+   "telefono": "(2658) 495013",
+   "cp": "6216"
   },
   {
    "codigo": "260052",
@@ -4620,7 +5838,9 @@
    "domicilio": "Moreno 170",
    "localidad": "La Toma",
    "lat": -33.070803,
-   "lon": -65.591938
+   "lon": -65.591938,
+   "telefono": "(2655) 421610",
+   "cp": "D5750BHD"
   },
   {
    "codigo": "260053",
@@ -4629,7 +5849,9 @@
    "domicilio": "Sarmiento y Granadero Figueroa S/nº",
    "localidad": "Quines",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2651) 470279",
+   "cp": "5711"
   },
   {
    "codigo": "260054",
@@ -4638,16 +5860,21 @@
    "domicilio": "Hipolito Irigoyen 369",
    "localidad": "Justo Daract",
    "lat": -33.866667,
-   "lon": -65.183333
+   "lon": -65.183333,
+   "telefono": "(2657) 480201",
+   "cp": "5738"
   },
   {
    "codigo": "260055",
    "nombre": "AGENCIA TILISARAO",
    "tipo": "agencia",
-   "domicilio": "Av. Cordoba 460",
+   "domicilio": "Av. Cordoba 462",
    "localidad": "Tilisarao",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av. Cordoba 460",
+   "telefono": "(2656) 420687",
+   "cp": "D5773AVJ"
   },
   {
    "codigo": "260056",
@@ -4656,7 +5883,8 @@
    "domicilio": "Avda Wust 455",
    "localidad": "Anchorena",
    "lat": -35.683333,
-   "lon": -65.45
+   "lon": -65.45,
+   "no_figura_web": true
   },
   {
    "codigo": "260057",
@@ -4665,7 +5893,9 @@
    "domicilio": "Av.serrana-mz127-lote16-local 2 S/nº",
    "localidad": "Desconocida",
    "lat": -33.180795,
-   "lon": -66.315676
+   "lon": -66.315676,
+   "telefono": "(266) 4783648",
+   "cp": "5710"
   },
   {
    "codigo": "260058",
@@ -4674,7 +5904,9 @@
    "domicilio": "25 de Mayo 433",
    "localidad": "Naschel",
    "lat": -32.933333,
-   "lon": -65.466667
+   "lon": -65.466667,
+   "telefono": "(2656) 491472",
+   "cp": "D5759AAI"
   }
  ],
  "XXVII": [
@@ -4685,16 +5917,21 @@
    "domicilio": "9 de Julio y Belgrano 499",
    "localidad": "Gral Roca",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(298) 4420000",
+   "cp": "R8332AAI"
   },
   {
    "codigo": "270001",
    "nombre": "AGENCIA VIEDMA",
    "tipo": "agencia",
-   "domicilio": "Irigoyen 171",
+   "domicilio": "Leandro N Alem 158",
    "localidad": "Viedma",
-   "lat": -40.811688,
-   "lon": -62.98998
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Irigoyen 171",
+   "telefono": "(2920) 422032",
+   "cp": "8500"
   },
   {
    "codigo": "270002",
@@ -4703,16 +5940,21 @@
    "domicilio": "Vicealte O Connor 847",
    "localidad": "San Carlos de Bariloche",
    "lat": -41.13486,
-   "lon": -71.297878
+   "lon": -71.297878,
+   "telefono": "(294) 4421415",
+   "cp": "8400"
   },
   {
    "codigo": "270003",
    "nombre": "AGENCIA CIPOLETTI",
    "tipo": "agencia",
-   "domicilio": "Irigoyen 1045",
+   "domicilio": "Puerto Belgrano 286",
    "localidad": "Cipolletti",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Irigoyen 1045",
+   "telefono": "(299) 4782682",
+   "cp": "8324"
   },
   {
    "codigo": "270004",
@@ -4721,7 +5963,9 @@
    "domicilio": "Rivadavia 87",
    "localidad": "Villa Regina",
    "lat": -39.1,
-   "lon": -67.083333
+   "lon": -67.083333,
+   "telefono": "(298) 4460054",
+   "cp": "8336"
   },
   {
    "codigo": "270050",
@@ -4730,7 +5974,9 @@
    "domicilio": "Belgrano 1580",
    "localidad": "San Antonio Oeste",
    "lat": -40.730652,
-   "lon": -64.952327
+   "lon": -64.952327,
+   "telefono": "(2934) 421572",
+   "cp": "R8520BGF"
   },
   {
    "codigo": "270051",
@@ -4739,25 +5985,33 @@
    "domicilio": "San Martin 3431",
    "localidad": "El Bolson",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(294) 4492544",
+   "cp": "R8430AQJ"
   },
   {
    "codigo": "270052",
    "nombre": "AGENCIA CINCO SALTOS",
    "tipo": "agencia",
-   "domicilio": "Avda Sarmiento 346",
+   "domicilio": "San Lorenzo 775",
    "localidad": "Cinco Saltos",
-   "lat": -38.826992,
-   "lon": -68.069581
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Avda Sarmiento 346",
+   "telefono": "(299) 4980776",
+   "cp": "8303"
   },
   {
    "codigo": "270053",
    "nombre": "AGENCIA CHOELE-CHOEL",
    "tipo": "agencia",
-   "domicilio": "San Martin 129",
+   "domicilio": "San Martin 1295",
    "localidad": "Choele Choel",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "San Martin 129",
+   "telefono": "(2946) 442399",
+   "cp": "R8360AIM"
   },
   {
    "codigo": "270054",
@@ -4766,7 +6020,9 @@
    "domicilio": "Roca 122",
    "localidad": "Rio Colorado",
    "lat": -39.00037,
-   "lon": -64.072228
+   "lon": -64.072228,
+   "telefono": "(2931) 432172",
+   "cp": "R8138BID"
   },
   {
    "codigo": "270055",
@@ -4775,7 +6031,9 @@
    "domicilio": "San Martin 291",
    "localidad": "Ing Jacobacci",
    "lat": -41.3,
-   "lon": -69.6
+   "lon": -69.6,
+   "telefono": "(2940) 432031",
+   "cp": "R8334BRH"
   },
   {
    "codigo": "270056",
@@ -4784,7 +6042,9 @@
    "domicilio": "Juan B. Justo 42",
    "localidad": "Allen",
    "lat": -38.983333,
-   "lon": -67.816667
+   "lon": -67.816667,
+   "telefono": "(298) 4453210",
+   "cp": "R8328DDB"
   },
   {
    "codigo": "270057",
@@ -4793,7 +6053,9 @@
    "domicilio": "Roca 497",
    "localidad": "Catriel",
    "lat": -37.866667,
-   "lon": -67.85
+   "lon": -67.85,
+   "telefono": "(299) 4911435",
+   "cp": "R8307FNI"
   },
   {
    "codigo": "270058",
@@ -4802,16 +6064,21 @@
    "domicilio": "San Martin 703",
    "localidad": "Ing Luis A Huergo",
    "lat": -39.083333,
-   "lon": -67.233333
+   "lon": -67.233333,
+   "telefono": "(298) 4480349",
+   "cp": "R8334BRH"
   },
   {
    "codigo": "270059",
    "nombre": "AGENCIA GENERAL CONESA",
    "tipo": "agencia",
-   "domicilio": "Roca 627",
+   "domicilio": "Julio A Roca 671",
    "localidad": "Gral Conesa",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Roca 627",
+   "telefono": "(2931) 498264",
+   "cp": "R8503BHM"
   },
   {
    "codigo": "270060",
@@ -4820,7 +6087,9 @@
    "domicilio": "Belgrano 99",
    "localidad": "Sierra Grande",
    "lat": -41.616667,
-   "lon": -65.4
+   "lon": -65.4,
+   "telefono": "(2934) 481422",
+   "cp": "8532"
   },
   {
    "codigo": "270061",
@@ -4829,25 +6098,33 @@
    "domicilio": "Vicente Lopez y Gob. Pagano S/N",
    "localidad": "Valcheta",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2934) 493270",
+   "cp": "8536"
   },
   {
    "codigo": "270062",
    "nombre": "AGENCIA EL ALTO BARILOCHE",
    "tipo": "agencia",
-   "domicilio": "Brown 1071",
+   "domicilio": "Santiago Albarracin 743",
    "localidad": "San Carlos de Bariloche",
-   "lat": -41.149429,
-   "lon": -71.297332
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Brown 1071",
+   "telefono": "(294) 4436040",
+   "cp": "8400"
   },
   {
    "codigo": "270063",
    "nombre": "AGENCIA LOS MENUCOS",
    "tipo": "agencia",
-   "domicilio": "La Pampa 1144",
+   "domicilio": "Corrientes 159",
    "localidad": "Los Menucos",
-   "lat": -40.85,
-   "lon": -68.133333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "La Pampa 1144",
+   "telefono": "(2940) 492281",
+   "cp": "8424"
   },
   {
    "codigo": "270064",
@@ -4856,16 +6133,21 @@
    "domicilio": "Coronel Dorrego 67",
    "localidad": "Gral Roca",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(299) 4973375",
+   "cp": "R8308AKC"
   },
   {
    "codigo": "270065",
    "nombre": "AGENCIA GENERAL FERNANDEZ ORO",
    "tipo": "agencia",
-   "domicilio": "Mariano Moreno 263",
+   "domicilio": "Fernandez 260",
    "localidad": "Gral Fernandez Oro",
-   "lat": -38.95,
-   "lon": -67.916667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Mariano Moreno 263",
+   "telefono": "(0299) 4997040",
+   "cp": "8324"
   },
   {
    "codigo": "270066",
@@ -4874,16 +6156,21 @@
    "domicilio": "Av. Currú Leuvú y Ruta Acce 2 S/N",
    "localidad": "Las Grutas",
    "lat": -40.803176,
-   "lon": -65.080932
+   "lon": -65.080932,
+   "telefono": "(02920) 15475334",
+   "cp": "8520"
   },
   {
    "codigo": "270067",
    "nombre": "AGENCIA MAQUINCHAO",
    "tipo": "agencia",
-   "domicilio": "Independencia 786",
+   "domicilio": "Rogelio Cortizo 664",
    "localidad": "Maquinchao",
-   "lat": -41.25,
-   "lon": -68.733333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Independencia 786",
+   "telefono": "(2940) 491202",
+   "cp": "8422"
   },
   {
    "codigo": "270068",
@@ -4892,7 +6179,21 @@
    "domicilio": "Belgrano 452",
    "localidad": "Cervantes",
    "lat": -39.066667,
-   "lon": -67.4
+   "lon": -67.4,
+   "telefono": "(02981) 54692477",
+   "cp": "R8326XAA"
+  },
+  {
+   "codigo": "270069",
+   "nombre": "CAP LUIS BELTRAN",
+   "tipo": "cap",
+   "domicilio": "Avellaneda 1677",
+   "localidad": "Fray Luis Beltran",
+   "lat": null,
+   "lon": null,
+   "telefono": "(298) 154678553",
+   "cp": "8361",
+   "nuevo_web": true
   }
  ],
  "XXVIII": [
@@ -4903,7 +6204,9 @@
    "domicilio": "Perito Moreno 467",
    "localidad": "Rio Gallegos",
    "lat": -51.619923,
-   "lon": -69.233234
+   "lon": -69.233234,
+   "telefono": "(2966) 434076",
+   "cp": "Z9400FYA"
   },
   {
    "codigo": "280001",
@@ -4912,16 +6215,21 @@
    "domicilio": "Av. Eva Peron 232",
    "localidad": "Caleta Olivia",
    "lat": -46.433333,
-   "lon": -67.533333
+   "lon": -67.533333,
+   "telefono": "(0297) 4858817",
+   "cp": "Z9011BEP"
   },
   {
    "codigo": "280002",
    "nombre": "AGENCIA PUERTO SAN JULIAN",
    "tipo": "agencia",
-   "domicilio": "Avda Piedra Buena 669",
+   "domicilio": "Av. Cmte. Luis Piedrabuena 669",
    "localidad": "Puerto San Julian",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Avda Piedra Buena 669",
+   "telefono": "(02962) 452175",
+   "cp": "Z9310BTD"
   },
   {
    "codigo": "280003",
@@ -4930,7 +6238,9 @@
    "domicilio": "Pellegrini 19",
    "localidad": "El Turbio",
    "lat": -51.582418,
-   "lon": -72.141062
+   "lon": -72.141062,
+   "telefono": "(02902) 422500",
+   "cp": "9407"
   },
   {
    "codigo": "280004",
@@ -4939,16 +6249,21 @@
    "domicilio": "Avenida San Martin 409",
    "localidad": "Gob Gregores",
    "lat": -48.766667,
-   "lon": -70.266667
+   "lon": -70.266667,
+   "telefono": "(2962) 491037",
+   "cp": "Z9311AVE"
   },
   {
    "codigo": "280050",
    "nombre": "AGENCIA PTO SANTA CRUZ",
    "tipo": "agencia",
-   "domicilio": "Mariano Moreno 316",
+   "domicilio": "Mariano Moreno 318",
    "localidad": "Puerto Santa Cruz",
-   "lat": -50.03091,
-   "lon": -68.524171
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Mariano Moreno 316",
+   "telefono": "(2962) 498600",
+   "cp": "9300"
   },
   {
    "codigo": "280051",
@@ -4957,7 +6272,9 @@
    "domicilio": "Belgrano 237",
    "localidad": "Puerto Deseado",
    "lat": -47.75,
-   "lon": -65.9
+   "lon": -65.9,
+   "telefono": "(02974) 870334",
+   "cp": "Z9050BYC"
   },
   {
    "codigo": "280052",
@@ -4966,16 +6283,21 @@
    "domicilio": "28 de Noviembre y El Calafate S/N",
    "localidad": "Las Heras",
    "lat": -46.533333,
-   "lon": -68.933333
+   "lon": -68.933333,
+   "telefono": "(2974) 975722",
+   "cp": "Z9017"
   },
   {
    "codigo": "280054",
    "nombre": "AGENCIA EL CALAFATE",
    "tipo": "agencia",
-   "domicilio": "Av. Gral. Peron 1711",
+   "domicilio": "Campaña del Desierto 976",
    "localidad": "El Calafate",
-   "lat": -50.333333,
-   "lon": -72.266667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. Gral. Peron 1711",
+   "telefono": "(2902) 491282",
+   "cp": "9405"
   },
   {
    "codigo": "280055",
@@ -4984,7 +6306,9 @@
    "domicilio": "Av. San Martin 1063",
    "localidad": "Perito Moreno",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2963) 432080",
+   "cp": "Z9040"
   },
   {
    "codigo": "280056",
@@ -4993,7 +6317,9 @@
    "domicilio": "Saavedra 507",
    "localidad": "Pico Truncado",
    "lat": -46.8,
-   "lon": -67.95
+   "lon": -67.95,
+   "telefono": "(2974) 992672",
+   "cp": "9015"
   },
   {
    "codigo": "280057",
@@ -5002,7 +6328,9 @@
    "domicilio": "Simon Bolivar 381",
    "localidad": "Cmdte Luis Piedrabuena",
    "lat": -49.962526,
-   "lon": -68.811662
+   "lon": -68.811662,
+   "telefono": "(2962) 497739",
+   "cp": "Z9303BRG"
   },
   {
    "codigo": "280058",
@@ -5011,7 +6339,9 @@
    "domicilio": "Teniente del Castillo 281",
    "localidad": "28 de Noviembre",
    "lat": -51.65,
-   "lon": -72.3
+   "lon": -72.3,
+   "telefono": "(2920) 482482",
+   "cp": "Z9408BLC"
   }
  ],
  "XXIX": [
@@ -5022,7 +6352,9 @@
    "domicilio": "25 de Mayo 330",
    "localidad": "Moron",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(011) 41333000",
+   "cp": "1708"
   },
   {
    "codigo": "290003",
@@ -5031,16 +6363,21 @@
    "domicilio": "Juan Diaz de Solis 1308",
    "localidad": "Hurlingham",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(011) 46659005",
+   "cp": "B1686KVB"
   },
   {
    "codigo": "290004",
    "nombre": "AGENCIA ITUZAINGO",
    "tipo": "agencia",
-   "domicilio": "Los Pozos 126",
+   "domicilio": "Zufriategui 657",
    "localidad": "Ituzaingo Norte",
-   "lat": -34.662114,
-   "lon": -58.667458
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Los Pozos 126",
+   "telefono": "(011) 41333053",
+   "cp": "1714"
   },
   {
    "codigo": "290010",
@@ -5049,7 +6386,9 @@
    "domicilio": "Baradero 1340",
    "localidad": "Moron",
    "lat": -34.690041,
-   "lon": -58.635694
+   "lon": -58.635694,
+   "telefono": "(011) 46973386",
+   "cp": "B1708ALB"
   },
   {
    "codigo": "290011",
@@ -5058,7 +6397,8 @@
    "domicilio": "Santos Vega y Quiroga S/N",
    "localidad": "Ituzaingo Norte",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "cp": "B1715EQO"
   },
   {
    "codigo": "290012",
@@ -5067,7 +6407,8 @@
    "domicilio": "Coronel Pringles 2740",
    "localidad": "Ituzaingo Norte",
    "lat": -34.653519,
-   "lon": -58.695474
+   "lon": -58.695474,
+   "no_figura_web": true
   },
   {
    "codigo": "290300",
@@ -5076,7 +6417,9 @@
    "domicilio": "Avda Argentina 1245",
    "localidad": "Merlo",
    "lat": -34.673969,
-   "lon": -58.723455
+   "lon": -58.723455,
+   "telefono": "(0220) 4854999",
+   "cp": "B1722MHH"
   },
   {
    "codigo": "290302",
@@ -5085,7 +6428,21 @@
    "domicilio": "Avda Alcorta 2454",
    "localidad": "Moreno",
    "lat": -34.652362,
-   "lon": -58.785136
+   "lon": -58.785136,
+   "telefono": "(0237) 4635352",
+   "cp": "B1744HDZ"
+  },
+  {
+   "codigo": "290305",
+   "nombre": "BOCA DE ATENCION WILLIAM MORRIS",
+   "tipo": "boca",
+   "domicilio": "Planes 1811",
+   "localidad": "William Morris",
+   "lat": null,
+   "lon": null,
+   "telefono": "(011) 46625673",
+   "cp": "1686",
+   "nuevo_web": true
   }
  ],
  "XXX": [
@@ -5096,7 +6453,9 @@
    "domicilio": "San Martín esq Uriburu 500",
    "localidad": "Azul",
    "lat": -36.779106,
-   "lon": -59.861953
+   "lon": -59.861953,
+   "telefono": "(2281) 425269",
+   "cp": "7300"
   },
   {
    "codigo": "300002",
@@ -5105,7 +6464,9 @@
    "domicilio": "San Martin 623",
    "localidad": "Las Flores",
    "lat": -36.016498,
-   "lon": -59.098115
+   "lon": -59.098115,
+   "telefono": "(224) 453028",
+   "cp": "7200"
   },
   {
    "codigo": "300006",
@@ -5114,7 +6475,9 @@
    "domicilio": "Moreno 2971",
    "localidad": "Saladillo",
    "lat": -35.640003,
-   "lon": -59.776635
+   "lon": -59.776635,
+   "telefono": "(2344) 453472",
+   "cp": "7260"
   },
   {
    "codigo": "300008",
@@ -5123,7 +6486,9 @@
    "domicilio": "9 de Julio 1266",
    "localidad": "Roque Perez",
    "lat": -35.4,
-   "lon": -59.3
+   "lon": -59.3,
+   "telefono": "(2227) 491508",
+   "cp": "B7245ABL"
   },
   {
    "codigo": "300009",
@@ -5132,16 +6497,21 @@
    "domicilio": "Peron 627",
    "localidad": "Gral Alvear",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2344) 481021",
+   "cp": "7263"
   },
   {
    "codigo": "300010",
    "nombre": "AGENCIA TAPALQUE",
    "tipo": "agencia",
-   "domicilio": "Pedro Bloy 102",
+   "domicilio": "9 de Julio 662",
    "localidad": "Tapalque",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Pedro Bloy 102",
+   "telefono": "(2283) 420068",
+   "cp": "7303"
   },
   {
    "codigo": "300050",
@@ -5150,7 +6520,9 @@
    "domicilio": "Cortazar 734",
    "localidad": "Chillar",
    "lat": -37.316667,
-   "lon": -59.983333
+   "lon": -59.983333,
+   "telefono": "(2281) 497022",
+   "cp": "7311"
   },
   {
    "codigo": "300055",
@@ -5159,7 +6531,9 @@
    "domicilio": "Rivadavia y Sarmiento S/N",
    "localidad": "Cachari",
    "lat": -36.383333,
-   "lon": -59.5
+   "lon": -59.5,
+   "telefono": "(2281) 481002",
+   "cp": "7214"
   },
   {
    "codigo": "300100",
@@ -5168,16 +6542,21 @@
    "domicilio": "Dorrego 2625",
    "localidad": "Olavarria",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2284) 422318",
+   "cp": "7400"
   },
   {
    "codigo": "300103",
    "nombre": "AGENCIA LAPRIDA",
    "tipo": "agencia",
-   "domicilio": "Avda. Pedro Pereyra 1339",
+   "domicilio": "Avda. Pedro Pereyra 1319",
    "localidad": "Laprida",
-   "lat": -37.55,
-   "lon": -60.8
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Avda. Pedro Pereyra 1339",
+   "telefono": "(2285) 420133",
+   "cp": "7414"
   },
   {
    "codigo": "300104",
@@ -5186,16 +6565,21 @@
    "domicilio": "Pellegrini 389",
    "localidad": "Daireaux",
    "lat": -36.616667,
-   "lon": -61.75
+   "lon": -61.75,
+   "telefono": "(2316) 452679",
+   "cp": "B6555ATG"
   },
   {
    "codigo": "300105",
    "nombre": "AGENCIA SALAZAR",
    "tipo": "agencia",
-   "domicilio": "Sarmiento 353",
+   "domicilio": "Av. Barcelo 484",
    "localidad": "Salazar",
-   "lat": -36.3,
-   "lon": -62.2
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Sarmiento 353",
+   "telefono": "(02393) 492011",
+   "cp": "6471"
   },
   {
    "codigo": "300107",
@@ -5204,7 +6588,9 @@
    "domicilio": "Olavarria 262",
    "localidad": "Bolivar",
    "lat": -36.233333,
-   "lon": -61.116667
+   "lon": -61.116667,
+   "telefono": "(2314) 427570",
+   "cp": "B6550BRF"
   },
   {
    "codigo": "300153",
@@ -5213,7 +6599,9 @@
    "domicilio": "Moreno 614",
    "localidad": "Gral la Madrid",
    "lat": -37.25,
-   "lon": -61.266667
+   "lon": -61.266667,
+   "telefono": "(2286) 420365",
+   "cp": "7406"
   },
   {
    "codigo": "300156",
@@ -5222,16 +6610,21 @@
    "domicilio": "Rivadavia 2204",
    "localidad": "Sierras Bayas",
    "lat": -36.933333,
-   "lon": -60.133333
+   "lon": -60.133333,
+   "telefono": "(2284) 492241",
+   "cp": "B7403BZH"
   },
   {
    "codigo": "300157",
    "nombre": "C.A.P. RAUCH",
    "tipo": "cap",
-   "domicilio": "Garralda 294",
+   "domicilio": "San Martin 360",
    "localidad": "Azul",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Garralda 294",
+   "telefono": "(2297) 442429",
+   "cp": "7203"
   },
   {
    "codigo": "300158",
@@ -5240,7 +6633,9 @@
    "domicilio": "Cordoba 95",
    "localidad": "Vicente Pereda",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2292) 451270",
+   "cp": "7020"
   }
  ],
  "XXXI": [
@@ -5251,7 +6646,9 @@
    "domicilio": "Alvarez Rodriguez 320",
    "localidad": "Junin",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(236) 4429899",
+   "cp": "6000"
   },
   {
    "codigo": "310001",
@@ -5260,7 +6657,9 @@
    "domicilio": "Alsina 464",
    "localidad": "Gral Pinto",
    "lat": -34.783333,
-   "lon": -61.9
+   "lon": -61.9,
+   "telefono": "(2356) 420220",
+   "cp": "B6050ACJ"
   },
   {
    "codigo": "310002",
@@ -5269,7 +6668,9 @@
    "domicilio": "9 de Julio 521",
    "localidad": "Lincoln",
    "lat": -34.866667,
-   "lon": -61.55
+   "lon": -61.55,
+   "telefono": "(2355) 423351",
+   "cp": "B6070XAB"
   },
   {
    "codigo": "310004",
@@ -5278,16 +6679,21 @@
    "domicilio": "Arenales 359",
    "localidad": "Gral Villegas",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3388) 421444",
+   "cp": "6230"
   },
   {
    "codigo": "310005",
    "nombre": "AGENCIA GENERAL ARENALES",
    "tipo": "agencia",
-   "domicilio": "Avda. Alvear 161",
+   "domicilio": "Guido Spano 265",
    "localidad": "Gral Arenales",
-   "lat": -34.316667,
-   "lon": -61.3
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Avda. Alvear 161",
+   "telefono": "(2353) 460304",
+   "cp": "B6005AVE"
   },
   {
    "codigo": "310006",
@@ -5296,16 +6702,21 @@
    "domicilio": "Coliqueo 130",
    "localidad": "Gral Viamonte",
    "lat": -35.0,
-   "lon": -61.05
+   "lon": -61.05,
+   "telefono": "(2358) 442548",
+   "cp": "B6015DBD"
   },
   {
    "codigo": "310007",
    "nombre": "AGENCIA VEDIA",
    "tipo": "agencia",
-   "domicilio": "Lavalle 90",
+   "domicilio": "Avenida Leandro N Alem y Belgrano S/N",
    "localidad": "Vedia",
-   "lat": -34.5,
-   "lon": -61.533333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Lavalle 90",
+   "telefono": "(2354) 420359",
+   "cp": "6030"
   },
   {
    "codigo": "310008",
@@ -5314,7 +6725,9 @@
    "domicilio": "Eva Peron (ex Uruguay) 544",
    "localidad": "Rojas",
    "lat": -34.2,
-   "lon": -60.733333
+   "lon": -60.733333,
+   "telefono": "(2475) 462458",
+   "cp": "B2705EOB"
   },
   {
    "codigo": "310009",
@@ -5323,7 +6736,9 @@
    "domicilio": "Calle 9 esq. 30 S/N",
    "localidad": "Ameghino",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3388) 471200",
+   "cp": "6064"
   },
   {
    "codigo": "310010",
@@ -5332,16 +6747,21 @@
    "domicilio": "Avda. Libertad 534",
    "localidad": "Junin",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(236) 4441251",
+   "cp": "B6000XAD"
   },
   {
    "codigo": "310200",
    "nombre": "AGENCIA PERGAMINO",
    "tipo": "agencia",
-   "domicilio": "9 de Julio 850",
+   "domicilio": "Alsina 620",
    "localidad": "Pergamino",
-   "lat": -33.896673,
-   "lon": -60.574962
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "9 de Julio 850",
+   "telefono": "(2477) 427070",
+   "cp": "2700"
   },
   {
    "codigo": "310206",
@@ -5350,7 +6770,9 @@
    "domicilio": "Cale 47 759",
    "localidad": "Colon",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2473) 421895",
+   "cp": "B2720CJG"
   },
   {
    "codigo": "310300",
@@ -5359,7 +6781,9 @@
    "domicilio": "Mitre 381",
    "localidad": "San Nicolas de los Arroyos",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(336) 4434336",
+   "cp": "B2900ACG"
   },
   {
    "codigo": "310301",
@@ -5368,7 +6792,9 @@
    "domicilio": "Av Mitre 1599",
    "localidad": "Ramallo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3407) 421295",
+   "cp": "2915"
   },
   {
    "codigo": "310350",
@@ -5377,7 +6803,9 @@
    "domicilio": "Av Raul Manfredi 571",
    "localidad": "Perez Millan",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3329) 490175",
+   "cp": "2933"
   },
   {
    "codigo": "310352",
@@ -5386,16 +6814,21 @@
    "domicilio": "Sarmiento 1232",
    "localidad": "Roberts",
    "lat": -35.15,
-   "lon": -61.983333
+   "lon": -61.983333,
+   "telefono": "(2355) 498120",
+   "cp": "B6079APF"
   },
   {
    "codigo": "310353",
    "nombre": "BOCA DE ATENCION LA EMILIA",
    "tipo": "boca",
-   "domicilio": "E. Ferreira 308",
+   "domicilio": "Doctor Alberto Gonzalez 111",
    "localidad": "La Emilia",
-   "lat": -33.366667,
-   "lon": -60.3
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "E. Ferreira 308",
+   "telefono": "(336) 4481208",
+   "cp": "2901"
   }
  ],
  "XXXII": [
@@ -5403,10 +6836,13 @@
    "codigo": "320000",
    "nombre": "UGL XXXII - LUJAN",
    "tipo": "ugl",
-   "domicilio": "Lavalle 522",
+   "domicilio": "Av. Constitucion 2131",
    "localidad": "Lujan",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Lavalle 522",
+   "telefono": "(2323) 409200",
+   "cp": "B6700"
   },
   {
    "codigo": "320001",
@@ -5415,16 +6851,21 @@
    "domicilio": "25 de Mayo 401",
    "localidad": "San Andres de Giles",
    "lat": -34.441994,
-   "lon": -59.444995
+   "lon": -59.444995,
+   "telefono": "(2325) 442081",
+   "cp": "B6720AKK"
   },
   {
    "codigo": "320002",
    "nombre": "AGENCIA GENERAL RODRIGUEZ",
    "tipo": "agencia",
-   "domicilio": "Sarmiento 576",
+   "domicilio": "Av 25 de Mayo 482",
    "localidad": "Gral Rodriguez",
-   "lat": -34.605707,
-   "lon": -58.954706
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Sarmiento 576",
+   "telefono": "(237) 4850310",
+   "cp": "1748"
   },
   {
    "codigo": "320003",
@@ -5433,16 +6874,21 @@
    "domicilio": "Calle 25 esq. 16 369",
    "localidad": "Mercedes",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2324) 4023940",
+   "cp": "B6600DPH"
   },
   {
    "codigo": "320004",
    "nombre": "AGENCIA PILAR",
    "tipo": "agencia",
-   "domicilio": "Pedro Lagrave 342",
+   "domicilio": "Estanislao Lopez 538",
    "localidad": "Pilar",
-   "lat": -34.457349,
-   "lon": -58.909337
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Pedro Lagrave 342",
+   "telefono": "(230) 4423057",
+   "cp": "1629"
   },
   {
    "codigo": "320005",
@@ -5451,7 +6897,9 @@
    "domicilio": "Alvear 557",
    "localidad": "San Antonio de Areco",
    "lat": -34.24719,
-   "lon": -59.467775
+   "lon": -59.467775,
+   "telefono": "(2326) 452004",
+   "cp": "B2760ADK"
   },
   {
    "codigo": "320006",
@@ -5460,7 +6908,9 @@
    "domicilio": "Moreno 2124",
    "localidad": "Marcos Paz",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(220) 4772976",
+   "cp": "B1727INL"
   },
   {
    "codigo": "320008",
@@ -5469,7 +6919,9 @@
    "domicilio": "Jose Manuel Estrada 405",
    "localidad": "Capilla del Señor",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2323) 492124",
+   "cp": "B2812BQI"
   },
   {
    "codigo": "320010",
@@ -5478,7 +6930,9 @@
    "domicilio": "Calle Nro. 7 Esq.26 92",
    "localidad": "Navarro",
    "lat": -35.012086,
-   "lon": -59.277997
+   "lon": -59.277997,
+   "telefono": "(2272) 421011",
+   "cp": "B6605"
   },
   {
    "codigo": "320011",
@@ -5487,16 +6941,21 @@
    "domicilio": "25 de Mayo 1048",
    "localidad": "Gral las Heras",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(220) 46624444",
+   "cp": "B1741AAL"
   },
   {
    "codigo": "320012",
    "nombre": "AGENCIA GARIN",
    "tipo": "agencia",
-   "domicilio": "Sarmiento 306",
+   "domicilio": "Padre Perna 1323",
    "localidad": "Garin",
-   "lat": -34.419146,
-   "lon": -58.733855
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Sarmiento 306",
+   "telefono": "(3484) 470023",
+   "cp": "1619"
   },
   {
    "codigo": "320051",
@@ -5505,7 +6964,9 @@
    "domicilio": "Lisandro de la Torre 7031",
    "localidad": "Del Viso",
    "lat": -34.451394,
-   "lon": -58.794618
+   "lon": -58.794618,
+   "telefono": "(2320) 300360",
+   "cp": "B1669FBM"
   },
   {
    "codigo": "320100",
@@ -5514,16 +6975,21 @@
    "domicilio": "19 de Marzo 630",
    "localidad": "Zarate",
    "lat": -34.100507,
-   "lon": -59.019736
+   "lon": -59.019736,
+   "telefono": "(3487) 423379",
+   "cp": "B2800ANN"
   },
   {
    "codigo": "320102",
    "nombre": "AGENCIA BARADERO",
    "tipo": "agencia",
-   "domicilio": "Laprida 929",
+   "domicilio": "Pedro Alonso 395",
    "localidad": "Baradero",
-   "lat": -33.80762,
-   "lon": -59.500673
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Laprida 929",
+   "telefono": "(3329) 480045",
+   "cp": "B2942AGG"
   },
   {
    "codigo": "320150",
@@ -5532,7 +6998,9 @@
    "domicilio": "Calle Nro. 6 63",
    "localidad": "Lima",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3487) 480314",
+   "cp": "B2806AYN"
   },
   {
    "codigo": "320252",
@@ -5541,16 +7009,20 @@
    "domicilio": "San Martin 404",
    "localidad": "Pilar",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0230) 448841",
+   "cp": "B1635AGR"
   },
   {
    "codigo": "320253",
    "nombre": "AGENCIA MAQUINISTA SAVIO",
    "tipo": "agencia",
-   "domicilio": "Republica del Paraguay 377",
+   "domicilio": "Jazmines y Blvd 5 de Junio S/N",
    "localidad": "Gral Savio",
-   "lat": -34.403319,
-   "lon": -58.775039
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Republica del Paraguay 377",
+   "cp": "1620"
   },
   {
    "codigo": "320254",
@@ -5559,7 +7031,9 @@
    "domicilio": "Avenida Flandes 541",
    "localidad": "Jauregui",
    "lat": -34.594913,
-   "lon": -59.177729
+   "lon": -59.177729,
+   "telefono": "(2323) 487266",
+   "cp": "B6706ARK"
   },
   {
    "codigo": "320255",
@@ -5568,7 +7042,9 @@
    "domicilio": "Moreno 331",
    "localidad": "Gral Rodriguez",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3489) 420237",
+   "cp": "2804"
   },
   {
    "codigo": "320256",
@@ -5577,7 +7053,20 @@
    "domicilio": "Spadaccini 1078",
    "localidad": "Gral Rodriguez",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3484) 431115",
+   "cp": "1625"
+  },
+  {
+   "codigo": "320013",
+   "nombre": "BOCA DE ATENCION LOS CARDALES",
+   "tipo": "boca",
+   "domicilio": "Belgrano 450",
+   "localidad": "Los Cardales",
+   "lat": null,
+   "lon": null,
+   "cp": "2814",
+   "nuevo_web": true
   }
  ],
  "XXXIII": [
@@ -5588,7 +7077,9 @@
    "domicilio": "Akanik 587",
    "localidad": "Ushuaia",
    "lat": -54.814056,
-   "lon": -68.338719
+   "lon": -68.338719,
+   "telefono": "(2901) 434841",
+   "cp": "V9410IGM"
   },
   {
    "codigo": "330001",
@@ -5597,7 +7088,21 @@
    "domicilio": "Espora 781",
    "localidad": "Rio Grande",
    "lat": -53.788771,
-   "lon": -67.69855
+   "lon": -67.69855,
+   "telefono": "(2964) 430803",
+   "cp": "V9420VGE"
+  },
+  {
+   "codigo": "330003",
+   "nombre": "BOCA DE ATENCION TOLHUIN",
+   "tipo": "boca",
+   "domicilio": "Shelknan 416",
+   "localidad": "Tolhuin",
+   "lat": null,
+   "lon": null,
+   "telefono": "(02901) 492238",
+   "cp": "9420",
+   "nuevo_web": true
   }
  ],
  "XXXIV": [
@@ -5608,7 +7113,9 @@
    "domicilio": "Tucuman Esq.urquiza 67",
    "localidad": "Concordia",
    "lat": -31.388276,
-   "lon": -58.014353
+   "lon": -58.014353,
+   "telefono": "(0345) 4226200",
+   "cp": "E3200OSO"
   },
   {
    "codigo": "340001",
@@ -5617,7 +7124,9 @@
    "domicilio": "Av. Rocamora 202",
    "localidad": "Gualeguaychu",
    "lat": -33.012037,
-   "lon": -58.521397
+   "lon": -58.521397,
+   "telefono": "(03446) 433164",
+   "cp": "2820"
   },
   {
    "codigo": "340002",
@@ -5626,16 +7135,21 @@
    "domicilio": "San Martin 547",
    "localidad": "Concepcion del Uruguay",
    "lat": -32.485049,
-   "lon": -58.229548
+   "lon": -58.229548,
+   "telefono": "(03442) 425575",
+   "cp": "3260"
   },
   {
    "codigo": "340003",
    "nombre": "AGENCIA COLON",
    "tipo": "agencia",
-   "domicilio": "Urquiza 308",
+   "domicilio": "Olegario Victor Andrade 237",
    "localidad": "Colon",
-   "lat": -32.22229,
-   "lon": -58.1384
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Urquiza 308",
+   "telefono": "(03447) 422185",
+   "cp": "3280"
   },
   {
    "codigo": "340050",
@@ -5644,16 +7158,21 @@
    "domicilio": "Belgrano e Irigoyen S/N",
    "localidad": "Federal",
    "lat": -30.916667,
-   "lon": -58.766667
+   "lon": -58.766667,
+   "telefono": "(03454) 421442",
+   "cp": "3180"
   },
   {
    "codigo": "340051",
    "nombre": "AGENCIA CHAJARI",
    "tipo": "agencia",
-   "domicilio": "Urquiza 1296",
+   "domicilio": "Alem 2210",
    "localidad": "Chajari",
-   "lat": -30.76033,
-   "lon": -57.983537
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Urquiza 1296",
+   "telefono": "(03456) 420065",
+   "cp": "3228"
   },
   {
    "codigo": "340052",
@@ -5662,7 +7181,9 @@
    "domicilio": "Colon y Castelli S/N",
    "localidad": "Villaguay",
    "lat": -31.866667,
-   "lon": -59.016667
+   "lon": -59.016667,
+   "telefono": "(03455) 422326",
+   "cp": "3240"
   },
   {
    "codigo": "340053",
@@ -5671,7 +7192,9 @@
    "domicilio": "San Martin 1188",
    "localidad": "Villa Elisa",
    "lat": -32.166667,
-   "lon": -58.4
+   "lon": -58.4,
+   "telefono": "(03447) 480264",
+   "cp": "3265"
   },
   {
    "codigo": "340054",
@@ -5680,16 +7203,21 @@
    "domicilio": "Moreno 1432",
    "localidad": "San Jose",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03447) 470010",
+   "cp": "3283"
   },
   {
    "codigo": "340055",
    "nombre": "AGENCIA SAN JOSE DE FELICIANO",
    "tipo": "agencia",
-   "domicilio": "Rivadavia 286",
+   "domicilio": "Santa Fe 161",
    "localidad": "San Jose de Feliciano",
-   "lat": -30.383333,
-   "lon": -58.75
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Rivadavia 286",
+   "telefono": "(03458) 420210",
+   "cp": "3187"
   },
   {
    "codigo": "340056",
@@ -5698,16 +7226,21 @@
    "domicilio": "Francisco Ramirez 74",
    "localidad": "San Salvador",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(0345) 4910493",
+   "cp": "3218"
   },
   {
    "codigo": "340057",
    "nombre": "AGENCIA URDINARDAIN",
    "tipo": "agencia",
-   "domicilio": "Libertad 475",
+   "domicilio": "Virginio Silva 607",
    "localidad": "Urdinarrain",
-   "lat": -32.683333,
-   "lon": -58.883333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Libertad 475",
+   "telefono": "(03446) 480690",
+   "cp": "2826"
   },
   {
    "codigo": "340058",
@@ -5716,25 +7249,33 @@
    "domicilio": "Jose Virue 235",
    "localidad": "Larroque",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03446) 460347",
+   "cp": "2854"
   },
   {
    "codigo": "340059",
    "nombre": "AGENCIA FEDERACION",
    "tipo": "agencia",
-   "domicilio": "Av. entre Rios 27",
+   "domicilio": "Avenida San Martín 719",
    "localidad": "Federacion",
-   "lat": -31.0,
-   "lon": -57.883333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. entre Rios 27",
+   "telefono": "(03456) 482850",
+   "cp": "3206"
   },
   {
    "codigo": "340060",
    "nombre": "AGENCIA BASAVILBASO",
    "tipo": "agencia",
-   "domicilio": "Baron Hirch 297",
+   "domicilio": "Hirsch 287",
    "localidad": "Basavilbaso",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Baron Hirch 297",
+   "telefono": "(03445) 482207",
+   "cp": "3170"
   },
   {
    "codigo": "340061",
@@ -5743,7 +7284,9 @@
    "domicilio": "República Argentina (entre Cuchilla de Montiel y Av. Corrientes) S/N",
    "localidad": "San Jaime",
    "lat": -30.35,
-   "lon": -58.3
+   "lon": -58.3,
+   "telefono": "(03458) 487055",
+   "cp": "3185"
   },
   {
    "codigo": "340062",
@@ -5752,16 +7295,21 @@
    "domicilio": "Concepcion del Uruguay y 25 de Mayo S/N",
    "localidad": "San Salvador",
    "lat": -31.516667,
-   "lon": -58.4
+   "lon": -58.4,
+   "telefono": "(0345) 4901664",
+   "cp": "3216"
   },
   {
    "codigo": "340063",
    "nombre": "AGENCIA VILLA PARANACITO",
    "tipo": "agencia",
-   "domicilio": "Av.entre Rios 265",
+   "domicilio": "Av. la Alameda 183",
    "localidad": "Paranacito",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av.entre Rios 265",
+   "telefono": "(03446) 495383",
+   "cp": "2823"
   },
   {
    "codigo": "340064",
@@ -5770,7 +7318,9 @@
    "domicilio": "Pasaje Houssay 831",
    "localidad": "Ibicuy",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(03446) 498250",
+   "cp": "2846"
   }
  ],
  "XXXV": [
@@ -5781,7 +7331,9 @@
    "domicilio": "Peru 2559",
    "localidad": "San Justo",
    "lat": -34.680016,
-   "lon": -58.559616
+   "lon": -58.559616,
+   "telefono": "(011) 40031125",
+   "cp": "B1754EZE"
   },
   {
    "codigo": "350001",
@@ -5790,7 +7342,9 @@
    "domicilio": "Patagonia 578",
    "localidad": "Gonzalez Catan",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2202) 421900",
+   "cp": "B1759EOL"
   },
   {
    "codigo": "350002",
@@ -5799,7 +7353,9 @@
    "domicilio": "Asuncion 5777",
    "localidad": "Isidro Casanova",
    "lat": -34.702043,
-   "lon": -58.583389
+   "lon": -58.583389,
+   "telefono": "(011) 46255731",
+   "cp": "B1765EAF"
   },
   {
    "codigo": "350003",
@@ -5808,7 +7364,9 @@
    "domicilio": "Boulogne Sur Mer 1508",
    "localidad": "Tapiales",
    "lat": -34.699375,
-   "lon": -58.504611
+   "lon": -58.504611,
+   "telefono": "(011) 44421780",
+   "cp": "B1768AAP"
   },
   {
    "codigo": "350004",
@@ -5817,16 +7375,33 @@
    "domicilio": "Monseñor López May 2955",
    "localidad": "Gregorio de Laferrere",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(011) 44571673",
+   "cp": "B1757DHA"
   },
   {
    "codigo": "350005",
    "nombre": "AGENCIA RAMOS MEJIA",
    "tipo": "agencia",
-   "domicilio": "Av. de Mayo 1270",
+   "domicilio": "Necochea 568",
    "localidad": "Ramos Mejia",
-   "lat": -34.653903,
-   "lon": -58.562478
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. de Mayo 1270",
+   "telefono": "(011) 44647183",
+   "cp": "1704"
+  },
+  {
+   "codigo": "350007",
+   "nombre": "POSTA SAN JUSTO",
+   "tipo": "boca",
+   "domicilio": "Av Intendente Esteban Crovara S/N",
+   "localidad": "Ciudad Evita",
+   "lat": null,
+   "lon": null,
+   "telefono": "(011) 44413265",
+   "cp": "1778",
+   "nuevo_web": true
   }
  ],
  "XXXVI": [
@@ -5837,16 +7412,21 @@
    "domicilio": "Alvear 842",
    "localidad": "Rio Cuarto",
    "lat": -33.123872,
-   "lon": -64.349727
+   "lon": -64.349727,
+   "telefono": "(358) 4672210",
+   "cp": "X5800GIG"
   },
   {
    "codigo": "360001",
    "nombre": "AGENCIA LABOULAYE",
    "tipo": "agencia",
-   "domicilio": "Tomas Scott 14/16",
+   "domicilio": "Tomás Scott 18",
    "localidad": "Laboulaye",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Tomas Scott 14/16",
+   "telefono": "(3385) 426422",
+   "cp": "X6120"
   },
   {
    "codigo": "360002",
@@ -5855,16 +7435,21 @@
    "domicilio": "Guemes 84",
    "localidad": "Huinca Renanco",
    "lat": -34.85,
-   "lon": -64.366667
+   "lon": -64.366667,
+   "telefono": "(2336) 442066",
+   "cp": "6270"
   },
   {
    "codigo": "360003",
    "nombre": "AGENCIA VICUÑA MACKENA",
    "tipo": "agencia",
-   "domicilio": "Sarmiento 224",
+   "domicilio": "Domingo Faustino Sarmiento 223",
    "localidad": "Vicuña Mackenna",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Sarmiento 224",
+   "telefono": "(3583) 420647",
+   "cp": "X6140CME"
   },
   {
    "codigo": "360004",
@@ -5873,7 +7458,9 @@
    "domicilio": "09 de Julio 548",
    "localidad": "Cnel Moldes",
    "lat": -33.633333,
-   "lon": -64.55
+   "lon": -64.55,
+   "telefono": "(3582) 481800",
+   "cp": "X5847"
   },
   {
    "codigo": "360005",
@@ -5882,16 +7469,21 @@
    "domicilio": "Buenos Aires esq. Italia 202",
    "localidad": "Canals",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3563) 420669",
+   "cp": "X2650AJF"
   },
   {
    "codigo": "360006",
    "nombre": "AGENCIA LA CARLOTA",
    "tipo": "agencia",
-   "domicilio": "Leandro N Alem 185",
+   "domicilio": "Velez Sarfield 284",
    "localidad": "Villa Reduccion",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Leandro N Alem 185",
+   "telefono": "(3584) 420323",
+   "cp": "2670"
   },
   {
    "codigo": "360007",
@@ -5900,7 +7492,9 @@
    "domicilio": "Rioja 934",
    "localidad": "Villa Reduccion",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(358) 4930157",
+   "cp": "X5809CHL"
   },
   {
    "codigo": "360008",
@@ -5909,7 +7503,9 @@
    "domicilio": "Misiones 159",
    "localidad": "Villa Reduccion",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(353) 4900223",
+   "cp": "2677"
   },
   {
    "codigo": "360050",
@@ -5918,7 +7514,9 @@
    "domicilio": "19 de Noviembre esq Lamadrid S/N",
    "localidad": "Sampacho",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(3582) 420500",
+   "cp": "5829"
   },
   {
    "codigo": "360051",
@@ -5927,7 +7525,43 @@
    "domicilio": "San Juan y Concejal Serena S/N",
    "localidad": "Elena",
    "lat": -32.566667,
-   "lon": -64.366667
+   "lon": -64.366667,
+   "telefono": "(358) 4881143",
+   "cp": "X5815"
+  },
+  {
+   "codigo": "360055",
+   "nombre": "BOCA DE ATENCION ALBERDI",
+   "tipo": "boca",
+   "domicilio": "Salta 1055",
+   "localidad": "Rio Cuarto",
+   "lat": null,
+   "lon": null,
+   "cp": "5800",
+   "nuevo_web": true
+  },
+  {
+   "codigo": "360054",
+   "nombre": "BOCA DE ATENCION BANDA NORTE",
+   "tipo": "boca",
+   "domicilio": "Av. M.t de Alvear 700",
+   "localidad": "Rio Cuarto",
+   "lat": null,
+   "lon": null,
+   "cp": "5800",
+   "nuevo_web": true
+  },
+  {
+   "codigo": "360053",
+   "nombre": "BOCA DE ATENCION JOVITA",
+   "tipo": "boca",
+   "domicilio": "Mariano Moreno 328",
+   "localidad": "Santa Magdalena",
+   "lat": null,
+   "lon": null,
+   "telefono": "(3385) 498109",
+   "cp": "6127",
+   "nuevo_web": true
   }
  ],
  "XXXVII": [
@@ -5938,7 +7572,9 @@
    "domicilio": "Andres Baranda 1265",
    "localidad": "Quilmes Oeste",
    "lat": -34.728093,
-   "lon": -58.267048
+   "lon": -58.267048,
+   "telefono": "(011) 43507600",
+   "cp": "B1878DKY"
   },
   {
    "codigo": "370300",
@@ -5947,16 +7583,21 @@
    "domicilio": "Lavalle 683",
    "localidad": "Quilmes",
    "lat": -34.723811,
-   "lon": -58.255777
+   "lon": -58.255777,
+   "telefono": "(011) 43507641",
+   "cp": "B1878FUM"
   },
   {
    "codigo": "370301",
    "nombre": "AGENCIA FLORENCIO VARELA",
    "tipo": "agencia",
-   "domicilio": "Rivadavia 78",
+   "domicilio": "Rivadavia 71",
    "localidad": "Florencio Varela",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Rivadavia 78",
+   "telefono": "(011) 42371056",
+   "cp": "1888"
   },
   {
    "codigo": "370302",
@@ -5965,7 +7606,9 @@
    "domicilio": "Calle 146 1253",
    "localidad": "Berazategui",
    "lat": -34.761982,
-   "lon": -58.212319
+   "lon": -58.212319,
+   "telefono": "(011) 42260370",
+   "cp": "B1880DOO"
   },
   {
    "codigo": "370303",
@@ -5974,7 +7617,9 @@
    "domicilio": "Calle 895 4552",
    "localidad": "San Francisco Solano",
    "lat": -34.780932,
-   "lon": -58.309663
+   "lon": -58.309663,
+   "telefono": "(011) 43507628",
+   "cp": "B1881"
   },
   {
    "codigo": "370304",
@@ -5983,7 +7628,9 @@
    "domicilio": "Hipolito Irigoyen 1213",
    "localidad": "Florencio Varela",
    "lat": -37.233333,
-   "lon": -59.816667
+   "lon": -59.816667,
+   "telefono": "(011) 42260370",
+   "cp": "1888"
   },
   {
    "codigo": "370305",
@@ -5992,7 +7639,9 @@
    "domicilio": "Calle 52 E/ 133 y 131 3125",
    "localidad": "Florencio Varela",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2229) 443184",
+   "cp": "1885"
   },
   {
    "codigo": "370306",
@@ -6001,7 +7650,66 @@
    "domicilio": "Av Lujan 1420",
    "localidad": "Bosques",
    "lat": -34.827545,
-   "lon": -58.226027
+   "lon": -58.226027,
+   "telefono": "(011) 20577583",
+   "cp": "B1889"
+  },
+  {
+   "codigo": "370309",
+   "nombre": "BOCA DE ATENCION BERNAL",
+   "tipo": "boca",
+   "domicilio": "Pampa y Calle 173",
+   "localidad": "Bernal Oeste",
+   "lat": null,
+   "lon": null,
+   "telefono": "(011) 43507600",
+   "cp": "1876",
+   "nuevo_web": true
+  },
+  {
+   "codigo": "370312",
+   "nombre": "POSTA LA PAZ",
+   "tipo": "boca",
+   "domicilio": "Calle 891 1536",
+   "localidad": "San Francisco Solano",
+   "lat": null,
+   "lon": null,
+   "cp": "1881",
+   "nuevo_web": true
+  },
+  {
+   "codigo": "370310",
+   "nombre": "POSTA OBISPO PADRE NOVACK",
+   "tipo": "boca",
+   "domicilio": "Calle 12 2552",
+   "localidad": "Berazategui",
+   "lat": null,
+   "lon": null,
+   "cp": "1884",
+   "nuevo_web": true
+  },
+  {
+   "codigo": "370307",
+   "nombre": "POSTA QUILMES ITATI",
+   "tipo": "boca",
+   "domicilio": "Pampa y Falucho S/N",
+   "localidad": "Itati",
+   "lat": null,
+   "lon": null,
+   "telefono": "(011) 43507600",
+   "cp": "3414",
+   "nuevo_web": true
+  },
+  {
+   "codigo": "370311",
+   "nombre": "POSTA SAN FRANCISCO DE ASIS - ING ALAM",
+   "tipo": "boca",
+   "domicilio": "Calle 1276 560",
+   "localidad": "Ing Juan Allan",
+   "lat": null,
+   "lon": null,
+   "cp": "1891",
+   "nuevo_web": true
   }
  ],
  "XXXVIII": [
@@ -6012,25 +7720,33 @@
    "domicilio": "Av. Villarino 345",
    "localidad": "Chivilcoy",
    "lat": -34.901474,
-   "lon": -60.024707
+   "lon": -60.024707,
+   "telefono": "(2346) 439200",
+   "cp": "B6620MJD"
   },
   {
    "codigo": "380001",
    "nombre": "AGENCIA RIVADAVIA",
    "tipo": "agencia",
-   "domicilio": "General Rodriguez 71",
+   "domicilio": "Sarmiento 359",
    "localidad": "Rivadavia",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "General Rodriguez 71",
+   "telefono": "(2337) 404848",
+   "cp": "6237"
   },
   {
    "codigo": "380002",
    "nombre": "AGENCIA TRENQUE LAUQUEN",
    "tipo": "agencia",
-   "domicilio": "San Martin 80",
+   "domicilio": "Belgrano 362",
    "localidad": "Trenque Lauquen",
-   "lat": -35.966667,
-   "lon": -62.733333
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "San Martin 80",
+   "telefono": "(2392) 424627",
+   "cp": "6400"
   },
   {
    "codigo": "380003",
@@ -6039,16 +7755,21 @@
    "domicilio": "Calle 30 1004",
    "localidad": "25 de Mayo",
    "lat": -35.416667,
-   "lon": -60.183333
+   "lon": -60.183333,
+   "telefono": "(2345) 462173",
+   "cp": "B6660BNV"
   },
   {
    "codigo": "380004",
    "nombre": "AGENCIA NORBERTO DE LA RIESTRA",
    "tipo": "agencia",
-   "domicilio": "Sargento Cabral 425",
+   "domicilio": "Bv. Sgto Cabral 445",
    "localidad": "Ernestina",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Sargento Cabral 425",
+   "telefono": "(2343) 440050",
+   "cp": "B6663BKE"
   },
   {
    "codigo": "380005",
@@ -6057,34 +7778,45 @@
    "domicilio": "Zapiola 177",
    "localidad": "Chacabuco",
    "lat": -34.640454,
-   "lon": -60.467282
+   "lon": -60.467282,
+   "telefono": "(2352) 429090",
+   "cp": "B6740EFC"
   },
   {
    "codigo": "380006",
    "nombre": "AGENCIA 9 DE JULIO",
    "tipo": "agencia",
-   "domicilio": "Av. Vedia 564",
+   "domicilio": "Poratti 1526",
    "localidad": "9 de Julio",
-   "lat": -35.448095,
-   "lon": -60.872818
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. Vedia 564",
+   "telefono": "(2317) 432345",
+   "cp": "6500"
   },
   {
    "codigo": "380007",
    "nombre": "AGENCIA BRAGADO",
    "tipo": "agencia",
-   "domicilio": "Belgrano 1238",
+   "domicilio": "Brandsen 59",
    "localidad": "Bragado",
-   "lat": -35.116667,
-   "lon": -60.5
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Belgrano 1238",
+   "telefono": "(2342) 430692",
+   "cp": "B6640ENA"
   },
   {
    "codigo": "380008",
    "nombre": "AGENCIA PEHUAJO",
    "tipo": "agencia",
-   "domicilio": "Artigas 465",
+   "domicilio": "Av San Martin 225",
    "localidad": "Pehuajo",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Artigas 465",
+   "telefono": "(2396) 473919",
+   "cp": "6450"
   },
   {
    "codigo": "380009",
@@ -6093,16 +7825,21 @@
    "domicilio": "Cecilia Borja 131",
    "localidad": "Carlos Casares",
    "lat": -35.616667,
-   "lon": -61.366667
+   "lon": -61.366667,
+   "telefono": "(2395) 453110",
+   "cp": "B6530CDC"
   },
   {
    "codigo": "380010",
    "nombre": "AGENCIA CARLOS TEJEDOR",
    "tipo": "agencia",
-   "domicilio": "San Martin y Garre 190",
+   "domicilio": "Hipolito Yrigoyen 465",
    "localidad": "Carlos Tejedor",
-   "lat": -35.383333,
-   "lon": -62.416667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "San Martin y Garre 190",
+   "telefono": "(2357) 420848",
+   "cp": "B6455"
   },
   {
    "codigo": "380011",
@@ -6111,16 +7848,21 @@
    "domicilio": "Colon 716",
    "localidad": "Henderson",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2314) 452029",
+   "cp": "B6465AND"
   },
   {
    "codigo": "380012",
    "nombre": "AGENCIA FACUNDO QUIROGA",
    "tipo": "agencia",
-   "domicilio": "Av. San Luis 569",
+   "domicilio": "San Luis 529",
    "localidad": "9 de Julio",
-   "lat": -35.448046,
-   "lon": -60.87293
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Av. San Luis 569",
+   "telefono": "(2317) 441345",
+   "cp": "6533"
   },
   {
    "codigo": "380013",
@@ -6129,16 +7871,21 @@
    "domicilio": "25 de Mayo 116",
    "localidad": "Moquehua",
    "lat": -35.083333,
-   "lon": -59.766667
+   "lon": -59.766667,
+   "telefono": "(2346) 491288",
+   "cp": "B6625ACB"
   },
   {
    "codigo": "380014",
    "nombre": "AGENCIA ALBERTI",
    "tipo": "agencia",
-   "domicilio": "Vergara 101",
+   "domicilio": "Gdor. Vergara 110",
    "localidad": "Alberti",
-   "lat": -35.033333,
-   "lon": -60.266667
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Vergara 101",
+   "telefono": "(2346) 471714",
+   "cp": "B6634BOD"
   },
   {
    "codigo": "380015",
@@ -6147,16 +7894,21 @@
    "domicilio": "Rivadavia 395",
    "localidad": "Gral O'brien",
    "lat": -34.9,
-   "lon": -60.766667
+   "lon": -60.766667,
+   "telefono": "(2342) 498434",
+   "cp": "6646"
   },
   {
    "codigo": "380016",
    "nombre": "AGENCIA TRES ALGARROBOS",
    "tipo": "agencia",
-   "domicilio": "Av. Jose Balbiani 258",
+   "domicilio": "Av. José Balbiani 270",
    "localidad": "Tres Algarrobos",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Av. Jose Balbiani 258",
+   "telefono": "(3388) 482588",
+   "cp": "B6231ARP"
   },
   {
    "codigo": "380017",
@@ -6165,16 +7917,21 @@
    "domicilio": "Dr. Carlos Merlassino 700",
    "localidad": "Arrecifes",
    "lat": -34.066667,
-   "lon": -60.116667
+   "lon": -60.116667,
+   "telefono": "(2478) 452660",
+   "cp": "B2740"
   },
   {
    "codigo": "380018",
    "nombre": "AGENCIA SALTO",
    "tipo": "agencia",
-   "domicilio": "Sarmiento y Moreno S/nº",
+   "domicilio": "Cerrito y Rivadavia S/N",
    "localidad": "Salto",
-   "lat": -34.3,
-   "lon": -60.25
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "Sarmiento y Moreno S/nº",
+   "telefono": "(2474) 423271",
+   "cp": "2741"
   },
   {
    "codigo": "380019",
@@ -6183,7 +7940,9 @@
    "domicilio": "Lopez y Planes 746",
    "localidad": "CAP Sarmiento",
    "lat": -34.17183,
-   "lon": -59.792517
+   "lon": -59.792517,
+   "telefono": "(2478) 481778",
+   "cp": "B2752ALP"
   },
   {
    "codigo": "380020",
@@ -6192,7 +7951,9 @@
    "domicilio": "25 de Mayo 856",
    "localidad": "San Pedro",
    "lat": -33.678546,
-   "lon": -59.666585
+   "lon": -59.666585,
+   "telefono": "(3329) 424391",
+   "cp": "2930"
   },
   {
    "codigo": "380021",
@@ -6201,16 +7962,20 @@
    "domicilio": "San Martin 154",
    "localidad": "Santa Lucia",
    "lat": -33.866667,
-   "lon": -59.883333
+   "lon": -59.883333,
+   "no_figura_web": true
   },
   {
    "codigo": "380022",
    "nombre": "AGENCIA CARMEN DE ARECO",
    "tipo": "agencia",
-   "domicilio": "San Martin 486",
+   "domicilio": "Saavedra 620",
    "localidad": "Carmen de Areco",
-   "lat": -34.376217,
-   "lon": -59.821682
+   "lat": null,
+   "lon": null,
+   "domicilio_anterior": "San Martin 486",
+   "telefono": "(2273) 442002",
+   "cp": "6725"
   },
   {
    "codigo": "380023",
@@ -6219,7 +7984,9 @@
    "domicilio": "1 de Mayo 250",
    "localidad": "Suipacha",
    "lat": -34.771784,
-   "lon": -59.686871
+   "lon": -59.686871,
+   "telefono": "(2324) 480073",
+   "cp": "B6612AAD"
   },
   {
    "codigo": "380024",
@@ -6228,25 +7995,33 @@
    "domicilio": "San Martín 362",
    "localidad": "Rivadavia",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "telefono": "(2394) 420427",
+   "cp": "B6409CZH"
   },
   {
    "codigo": "380025",
    "nombre": "C.A.P. SALLIQUELO",
    "tipo": "cap",
-   "domicilio": "Hugo Stroeder Oeste 516",
+   "domicilio": "Av Stroeder Este 91",
    "localidad": "Trenque Lauquen",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Hugo Stroeder Oeste 516",
+   "telefono": "(2394) 480266",
+   "cp": "6339"
   },
   {
    "codigo": "380026",
    "nombre": "C.A.P. CARLOS PELLEGRINI",
    "tipo": "cap",
-   "domicilio": "Marconi 437",
+   "domicilio": "Bernardo de Irigoyen 243",
    "localidad": "Pellegrini",
    "lat": null,
-   "lon": null
+   "lon": null,
+   "domicilio_anterior": "Marconi 437",
+   "telefono": "(2392) 498357",
+   "cp": "6346"
   }
  ]
 }

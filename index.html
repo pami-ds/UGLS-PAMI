@@ -723,9 +723,13 @@ function buscarEnDirectorio(lista, hijo) {
 }
 
 function copiarUbicacion(destino, e) {
-    if (!destino.direccion && e.domicilio) destino.direccion = e.domicilio;
-    destino.localidad = destino.localidad || e.localidad;
-    if (destino.lat == null && e.lat != null) { destino.lat = e.lat; destino.lon = e.lon; }
+    // el listado oficial (actualizado desde el buscador de PAMI) manda sobre otras fuentes; lo cargado a mano se aplica después
+    if (e.domicilio) destino.direccion = e.domicilio;
+    destino.localidad = e.localidad || destino.localidad;
+    if (e.lat != null) { destino.lat = e.lat; destino.lon = e.lon; } else if (e.domicilio_anterior) { destino.lat = destino.lon = null; }
+    if (e.telefono && !destino.telefono) destino.telefono = e.telefono;
+    destino.domicilioAnterior = e.domicilio_anterior || null;
+    destino.noFiguraWeb = !!e.no_figura_web;
     destino.codigoPami = e.codigo;
     destino.nombreOficial = e.nombre;
 }
@@ -1115,6 +1119,7 @@ function expandir(id, animar = true) {
     const o = modelo.org?.get(id);
     if (!o || !o.hijos.length || EXPANDIDOS.has(id)) return;
     EXPANDIDOS.add(id);
+    RAMA_ACTIVA = id;
     const origen = red.getPositions([id])[id];
     const lay = layoutOrg();
     const destinos = o.hijos.map(h => ({ id: h.id, fin: posicionDe(h.id, lay) }));
@@ -1130,7 +1135,67 @@ function contraer(id) {
     ocultar(o);
     const ids = []; const junta = x => x.hijos.forEach(h => { ids.push(h.id); junta(h); }); junta(o);
     nodosDS.update([id === 'CENTRAL' ? nodoCentral() : nodoOrg(o), ...ids.map(i => ({ ...nodoOrg(modelo.org.get(i)), hidden: true }))]);
+    ids.forEach(i => DESPLAZADOS.delete(i));
     if (resaltado && !indice.get(resaltado)?.tipo) resaltar(null);
+    // la rama activa pasa a ser la del padre que sigue abierto
+    RAMA_ACTIVA = id !== 'CENTRAL' && o.padre && EXPANDIDOS.has(o.padre.id) ? o.padre.id : null;
+    hacerEspacio();
+}
+
+/* ---------- Hacer espacio: al abrir una rama, las demás unidades se corren para dejarla libre ---------- */
+let RAMA_ACTIVA = null;
+const DESPLAZADOS = new Map();   // id -> posición original (antes de correrlo)
+function animarA(destinos, dur = 480) {
+    if (!destinos.length) return;
+    const ini = red.getPositions(destinos.map(d => d.id));
+    const t0 = performance.now();
+    const paso = t => {
+        const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+        destinos.forEach(d => { const a = ini[d.id]; if (a) red.moveNode(d.id, a.x + (d.fin.x - a.x) * e, a.y + (d.fin.y - a.y) * e); });
+        if (k < 1) requestAnimationFrame(paso);
+    };
+    requestAnimationFrame(paso);
+}
+function hacerEspacio() {
+    if (!red || !modelo.org) return;
+    const destinos = [];
+    // 1) quien estaba corrido y ya no hace falta, vuelve a su lugar
+    const volver = new Map(DESPLAZADOS);
+    DESPLAZADOS.clear();
+    const rama = new Set();
+    const o = RAMA_ACTIVA && modelo.org.get(RAMA_ACTIVA);
+    if (o && EXPANDIDOS.has(o.id)) {
+        for (let x = o; x; x = x.padre) rama.add(x.id);
+        const baja = x => { rama.add(x.id); if (EXPANDIDOS.has(x.id)) x.hijos.forEach(baja); };
+        baja(o);
+        // 2) zona que ocupa la rama abierta (con margen para las etiquetas)
+        const ids = [...rama].filter(id => id !== 'CENTRAL' && id !== (o.padre?.id) && !nodosDS.get(id)?.hidden);
+        const pos = red.getPositions(ids);
+        const pts = ids.map(id => pos[id]).filter(Boolean);
+        if (pts.length > 1) {
+            const caja = { x0: Math.min(...pts.map(p => p.x)) - 175, x1: Math.max(...pts.map(p => p.x)) + 175,
+                           y0: Math.min(...pts.map(p => p.y)) - 45, y1: Math.max(...pts.map(p => p.y)) + 50 };
+            const cx = (caja.x0 + caja.x1) / 2, cy = (caja.y0 + caja.y1) / 2;
+            // 3) las unidades visibles que no son de la rama y caen adentro se corren hacia afuera de la zona
+            for (const u of modelo.org.values()) {
+                if (u.id === 'CENTRAL' || rama.has(u.id) || nodosDS.get(u.id)?.hidden) continue;
+                const base = volver.get(u.id) || red.getPositions([u.id])[u.id];
+                if (!base || base.x < caja.x0 || base.x > caja.x1 || base.y < caja.y0 || base.y > caja.y1) continue;
+                let dx = base.x - cx, dy = base.y - cy;
+                if (Math.abs(dx) < 1 && Math.abs(dy) < 1) dy = 1;
+                // sale por el borde más cercano de la caja
+                const tx = dx > 0 ? (caja.x1 - base.x) : (base.x - caja.x0), ty = dy > 0 ? (caja.y1 - base.y) : (base.y - caja.y0);
+                let fin = tx < ty * 2.2 ? { x: dx > 0 ? caja.x1 + 40 : caja.x0 - 40, y: base.y } : { x: base.x, y: dy > 0 ? caja.y1 + 30 : caja.y0 - 30 };
+                const r = Math.hypot(fin.x, fin.y), lim = R_UGL - 130;
+                if (r > lim) fin = { x: fin.x * lim / r, y: fin.y * lim / r };
+                DESPLAZADOS.set(u.id, base);
+                volver.delete(u.id);
+                destinos.push({ id: u.id, fin });
+            }
+        }
+    }
+    for (const [id, base] of volver) if (!nodosDS.get(id)?.hidden) destinos.push({ id, fin: base });
+    animarA(destinos);
 }
 
 /* ---------- Ubicación de nodos: radial + posiciones guardadas ---------- */
@@ -1147,7 +1212,11 @@ try {
     }
 } catch (e) {}
 function guardarPosiciones() {
-    try { localStorage.setItem(CLAVE_POS, JSON.stringify(red.getPositions(nodosDS.getIds()))); } catch (e) {}
+    try {
+        const pos = red.getPositions(nodosDS.getIds());
+        for (const [id, base] of DESPLAZADOS) pos[id] = base;          // lo corrido para hacer espacio se guarda en su lugar original
+        localStorage.setItem(CLAVE_POS, JSON.stringify(pos));
+    } catch (e) {}
 }
 
 // Árbol radial: cada UGL recibe una "porción" del círculo proporcional a su cantidad de agencias,
@@ -1246,8 +1315,9 @@ function conectarInteracciones() {
             if (o && o.hijos.length && !EXPANDIDOS.has(id)) {
                 expandir(id);
                 aplicarFiltros();
+                setTimeout(hacerEspacio, 420);
                 acercarA([id, ...o.hijos.map(h => h.id)], 1.2);
-            }
+            } else if (o && EXPANDIDOS.has(id) && RAMA_ACTIVA !== id) { RAMA_ACTIVA = id; hacerEspacio(); }
             const u = indice.get(id);
             if (u?.tipo === 'ugl' && COLAPSADAS.has(id) && u.hijos.size && document.getElementById('chkAgencias').checked) {
                 alternarColapso(id, true);
@@ -1284,7 +1354,7 @@ function conectarInteracciones() {
     });
     red.on('dragEnd', p => {
         arrastre = null;
-        if (p.nodes.length) { guardarPosiciones(); POS_GUARDADAS = red.getPositions(nodosDS.getIds()); }
+        if (p.nodes.length) { p.nodes.forEach(id => DESPLAZADOS.delete(id)); guardarPosiciones(); POS_GUARDADAS = red.getPositions(nodosDS.getIds()); for (const [id, b] of DESPLAZADOS) POS_GUARDADAS[id] = b; }
     });
     red.on('hoverNode', p => { document.getElementById('contenedor-grafo').style.cursor = 'grab'; FX.hover(p.node); });
     red.on('blurNode', () => { document.getElementById('contenedor-grafo').style.cursor = ''; FX.hover(null); });
@@ -1526,6 +1596,8 @@ function htmlContacto(o) {
             <p>${svgPin}<span><strong>Direcci&oacute;n:</strong>&nbsp;${dir}${o.manual?.direccion || o.manual?.localidad ? '<span class="chip-manual">manual</span>' : ''}</span></p>
             <p>${svgPhone}<span><strong>Tel&eacute;fono:</strong>&nbsp;${o.telefono ? esc(o.telefono) : '<span class="pendiente">no disponible</span>'}${o.manual?.telefono ? '<span class="chip-manual">manual</span>' : ''}</span></p>
             ${mapa ? `<p>${svgMapa}<a class="enlace-mapa" href="${mapa}" target="_blank" rel="noopener">Ver en Google Maps</a></p>` : ''}
+            ${o.domicilioAnterior ? `<p class="dato-oficial">Antes figuraba en: ${esc(o.domicilioAnterior)}</p>` : ''}
+            ${o.noFiguraWeb ? `<p class="dato-oficial" style="color:#fbbf24">Ya no figura en el buscador de agencias de PAMI (septiembre 2026): puede haber cerrado.</p>` : ''}
             ${o.codigoPami ? `<p class="dato-oficial">Listado oficial PAMI &middot; c&oacute;d. ${esc(o.codigoPami)} &middot; ${esc(o.nombreOficial)}</p>` : ''}
         </div>`;
 }

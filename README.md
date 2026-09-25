@@ -238,3 +238,6 @@ Algunas designaciones se publican solo como anexo PDF de la resolución (por eje
 
 ### Personal de áreas del Nivel Central (`personal_central.json`)
 Contrataciones y movimientos de personal de áreas puntuales (por ahora la Subgerencia de Internación Domiciliaria), tomados del boletín y de los anexos de cada resolución. No se guardan CUIL ni honorarios. `procesar_catalogo.py` lo incorpora a `datos_extra.json` y la ficha del área lo muestra en "Personal del área".
+
+### Domicilios y teléfonos (`actualizar_directorio.py`)
+`python actualizar_directorio.py` descarga el buscador oficial www.pami.org.ar/agencias-ugls y actualiza `directorio_agencias.json`: reemplaza los domicilios que cambiaron (guarda el anterior), agrega teléfonos, suma las agencias/bocas/postas nuevas y marca las que ya no figuran. La ficha muestra "Antes figuraba en…" y avisa si una agencia ya no aparece en el buscador.
