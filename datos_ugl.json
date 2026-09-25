@@ -1,11 +1,11 @@
 {
  "_formato": 2,
  "_meta": {
-  "generado": "2026-09-25T13:54:00",
+  "generado": "2026-09-25T14:59:57",
   "boletines": 2578,
   "desde": "2016-01-04",
   "hasta": "2026-09-23",
-  "eventos": 5386,
+  "eventos": 5443,
   "eventos_sin_ugl": 1775,
   "ugl_corregida_por_listado": [
    {
@@ -898,8 +898,8 @@
       {
        "cargo": "Titular",
        "persona": "Luciana Mabel Lopez",
-       "desde": "2024-07-04",
-       "norma": "RESOL-2024-1825-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -909,8 +909,8 @@
       {
        "cargo": "Titular",
        "persona": "José Esteban Gonzalez",
-       "desde": "2024-06-18",
-       "norma": "RESOL-2024-1703-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -931,8 +931,8 @@
       {
        "cargo": "Titular",
        "persona": "Ivana Amanda Quiroz Ruggeri",
-       "desde": "2024-05-29",
-       "norma": "RESOL-2024-1522-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -942,8 +942,8 @@
       {
        "cargo": "Titular",
        "persona": "Leandro Edelmar Huntter",
-       "desde": "2024-05-29",
-       "norma": "RESOL-2024-1521-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -953,8 +953,8 @@
       {
        "cargo": "Titular",
        "persona": "Mara Liliana Mazo",
-       "desde": "2024-06-18",
-       "norma": "RESOL-2024-1701-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -975,8 +975,8 @@
       {
        "cargo": "Titular",
        "persona": "Ayelén María Verónica Vallejos",
-       "desde": "2024-06-18",
-       "norma": "RESOL-2024-1702-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -986,8 +986,8 @@
       {
        "cargo": "Titular",
        "persona": "Carmen Dolores Piñeiro",
-       "desde": "2024-03-27",
-       "norma": "RESOL-2024-928-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -997,14 +997,21 @@
       {
        "cargo": "Titular",
        "persona": "Juan José Francisco Silva",
-       "desde": "2024-07-04",
-       "norma": "RESOL-2024-1826-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
     "Mburucuyá": {
      "tipo_original": "CAP",
-     "autoridades": []
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Augusto Emmanuel Benitez",
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
+      }
+     ]
     },
     "Mercedes": {
      "tipo_original": "CAP",
@@ -1012,8 +1019,8 @@
       {
        "cargo": "Titular",
        "persona": "Carola Yanela Perez",
-       "desde": "2024-05-29",
-       "norma": "RESOL-2024-1519-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -1023,8 +1030,8 @@
       {
        "cargo": "Titular",
        "persona": "Alejandro Andrés Ibarrola",
-       "desde": "2024-05-29",
-       "norma": "RESOL-2024-1518-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -1034,8 +1041,8 @@
       {
        "cargo": "Titular",
        "persona": "María Magdalena Vera",
-       "desde": "2020-03-02",
-       "norma": "RESOL-2020-755-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -1045,21 +1052,14 @@
       {
        "cargo": "Titular",
        "persona": "Cristian Martín Niz",
-       "desde": "2020-09-03",
-       "norma": "RESOL-2020-1916-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
     "Saladas": {
      "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Augusto Emmanuel Benitez",
-       "desde": "2024-03-27",
-       "norma": "RESOL-2024-931-INSSJP-DE#INSSJP"
-      }
-     ]
+     "autoridades": []
     },
     "San Cosme": {
      "tipo_original": "CAP",
@@ -1078,8 +1078,8 @@
       {
        "cargo": "Titular",
        "persona": "Martín Quintana",
-       "desde": "2024-05-29",
-       "norma": "RESOL-2024-1517-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -1089,8 +1089,8 @@
       {
        "cargo": "Titular",
        "persona": "Marina Andrea Villafañe",
-       "desde": "2024-05-29",
-       "norma": "RESOL-2024-1514-INSSJP-DE#INSSJP"
+       "desde": "2024-12-02",
+       "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -1227,6 +1227,150 @@
      "persona": "Patricia Angélica Capdevilla",
      "cargo": "Titular",
      "agencia": "Curuzú Cuatiá"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Cristian Martín Niz",
+     "cargo": "Titular",
+     "agencia": "Paso de los Libres"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Marina Andrea Villafañe",
+     "cargo": "Titular",
+     "agencia": "Santo Tomé"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Magdalena Vera",
+     "cargo": "Titular",
+     "agencia": "Monte Caseros"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carola Yanela Perez",
+     "cargo": "Titular",
+     "agencia": "Mercedes"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "José Esteban Gonzalez",
+     "cargo": "Titular",
+     "agencia": "Bella Vista"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mara Liliana Mazo",
+     "cargo": "Titular",
+     "agencia": "Gobernador Virasoro"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Ivana Amanda Quiroz Ruggeri",
+     "cargo": "Titular",
+     "agencia": "Esquina"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carmen Dolores Piñeiro",
+     "cargo": "Titular",
+     "agencia": "Ituzaingó"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Leandro Edelmar Huntter",
+     "cargo": "Titular",
+     "agencia": "General Paz"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "César Guillermo Vallejos Taccone",
+     "cargo": "Titular",
+     "agencia": "Saladas"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sergio Manuel Romero",
+     "cargo": "Titular",
+     "agencia": "San Cosme"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Jonathan David Castillo",
+     "cargo": "Titular",
+     "agencia": "Sauce"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Juan José Francisco Silva",
+     "cargo": "Titular",
+     "agencia": "La Cruz"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Luciana Mabel Lopez",
+     "cargo": "Titular",
+     "agencia": "Alvear"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Ayelén María Verónica Vallejos",
+     "cargo": "Titular",
+     "agencia": "Itatí"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Augusto Emmanuel Benitez",
+     "cargo": "Titular",
+     "agencia": "Mburucuyá"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Alejandro Andrés Ibarrola",
+     "cargo": "Titular",
+     "agencia": "Mocoretá"
+    },
+    {
+     "fecha": "2024-12-02",
+     "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Martín Quintana",
+     "cargo": "Titular",
+     "agencia": "Santa Rosa"
     },
     {
      "fecha": "2024-08-09",
@@ -19798,9 +19942,9 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Rocío de los Angeles",
-       "desde": "2024-12-16",
-       "norma": "RESOL-2024-3460-INSSJP-DE#INSSJP"
+       "persona": "Rocío de los Ángeles Flores",
+       "desde": "2025-03-11",
+       "norma": "RESOL-2025-459-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -19835,9 +19979,12 @@
       {
        "cargo": "Titular",
        "persona": "Yamila Rocío Cardozo",
-       "desde": "2024-12-16",
-       "norma": "RESOL-2024-3461-INSSJP-DE#INSSJP"
+       "desde": "2025-03-11",
+       "norma": "RESOL-2025-459-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Iguazú"
      ]
     },
     "Puerto Piray": {
@@ -20190,6 +20337,46 @@
      "persona": "Ana del Carmen Bascuñan",
      "cargo": "Titular del Departamento de Políticas Sociales",
      "agencia": null
+    },
+    {
+     "fecha": "2025-03-11",
+     "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carol Melisa Correa",
+     "cargo": "Titular",
+     "agencia": "Candelaria"
+    },
+    {
+     "fecha": "2025-03-11",
+     "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Yamila Rocío Cardozo",
+     "cargo": "Titular",
+     "agencia": "Iguazú"
+    },
+    {
+     "fecha": "2025-03-11",
+     "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Damaris Rosalía Alvez",
+     "cargo": "Titular",
+     "agencia": "Leandro N. Alem"
+    },
+    {
+     "fecha": "2025-03-11",
+     "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Rocío de los Ángeles Flores",
+     "cargo": "Titular",
+     "agencia": "Montecarlo"
+    },
+    {
+     "fecha": "2025-03-11",
+     "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Daniel Omar López",
+     "cargo": "Titular",
+     "agencia": "Puerto Rico"
     },
     {
      "fecha": "2025-02-07",
@@ -23119,20 +23306,52 @@
     }
    ],
    "agencias": {
+    "Abra Pampa": {
+     "tipo_original": "CAP",
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Nancy Norma Armella",
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-135-INSSJP-DE#INSSJP"
+      }
+     ]
+    },
     "El Carmen": {
      "tipo_original": "CAP",
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Analía Verónica Monaldi",
-       "desde": "2022-12-19",
-       "norma": "RESOL-2022-1563-INSSJP-DE#INSSJP"
+       "persona": "Irma Calizaya",
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-135-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Carmen"
      ]
     },
     "Humahuaca": {
      "tipo_original": "CAP",
-     "autoridades": []
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Jose Federico Sanchez",
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-135-INSSJP-DE#INSSJP"
+      }
+     ]
+    },
+    "La Quiaca": {
+     "tipo_original": "CAP",
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Lorena Isabel Diaz",
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-135-INSSJP-DE#INSSJP"
+      }
+     ]
     },
     "Libertador General San Martín": {
      "tipo_original": "CAP",
@@ -23140,8 +23359,19 @@
       {
        "cargo": "Titular",
        "persona": "Miguel Ángel Leyva",
-       "desde": "2017-09-25",
-       "norma": "RESOL-2017-943-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-135-INSSJP-DE#INSSJP"
+      }
+     ]
+    },
+    "Palpalá": {
+     "tipo_original": "CAP",
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Pablo Esteban Ordoñez",
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-135-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -23151,8 +23381,8 @@
       {
        "cargo": "Titular",
        "persona": "Marisol Judith Santillan",
-       "desde": "2019-08-05",
-       "norma": "RESOL-2019-1359-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-135-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -23162,8 +23392,8 @@
       {
        "cargo": "Titular",
        "persona": "Mariela Viviana Burgos",
-       "desde": "2021-06-22",
-       "norma": "RESOL-2021-848-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-135-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -23172,9 +23402,9 @@
      "autoridades": [
       {
        "cargo": "Titular",
-       "persona": "Omar Normando Alejo",
-       "desde": "2022-12-19",
-       "norma": "RESOL-2022-1562-INSSJP-DE#INSSJP"
+       "persona": "Nelida Carmen Ramos",
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-135-INSSJP-DE#INSSJP"
       }
      ]
     }
@@ -23187,6 +23417,78 @@
      "persona": "David Ramón Castro",
      "cargo": "Titular",
      "agencia": "Humahuaca"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Lorena Isabel Diaz",
+     "cargo": "Titular",
+     "agencia": "La Quiaca"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Nancy Norma Armella",
+     "cargo": "Titular",
+     "agencia": "Abra Pampa"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Jose Federico Sanchez",
+     "cargo": "Titular",
+     "agencia": "Humahuaca"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Nelida Carmen Ramos",
+     "cargo": "Titular",
+     "agencia": "Tilcara"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pablo Esteban Ordoñez",
+     "cargo": "Titular",
+     "agencia": "Palpalá"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Irma Calizaya",
+     "cargo": "Titular",
+     "agencia": "Carmen"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Marisol Judith Santillan",
+     "cargo": "Titular",
+     "agencia": "Perico"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mariela Viviana Burgos",
+     "cargo": "Titular",
+     "agencia": "San Pedro"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Miguel Ángel Leyva",
+     "cargo": "Titular",
+     "agencia": "Libertador General San Martín"
     },
     {
      "fecha": "2024-12-18",
@@ -24485,8 +24787,8 @@
       {
        "cargo": "Titular",
        "persona": "Liliana Patricia Aballay",
-       "desde": "2024-07-19",
-       "norma": "RESOL-2024-2033-INSSJP-DE#INSSJP"
+       "desde": "2024-12-23",
+       "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -24510,8 +24812,8 @@
       {
        "cargo": "Titular",
        "persona": "Juan Pablo Aranda",
-       "desde": "2024-07-19",
-       "norma": "RESOL-2024-2036-INSSJP-DE#INSSJP"
+       "desde": "2024-12-23",
+       "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -24541,14 +24843,25 @@
       }
      ]
     },
+    "Piedra Blanca": {
+     "tipo_original": "CAP",
+     "autoridades": [
+      {
+       "cargo": "Titular",
+       "persona": "Maria Luisa Caro",
+       "desde": "2024-12-23",
+       "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP"
+      }
+     ]
+    },
     "Pomán": {
      "tipo_original": "CAP",
      "autoridades": [
       {
        "cargo": "Titular",
        "persona": "Rosa del Carmen Picon",
-       "desde": "2024-07-19",
-       "norma": "RESOL-2024-2031-INSSJP-DE#INSSJP"
+       "desde": "2024-12-23",
+       "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -24569,8 +24882,8 @@
       {
        "cargo": "Titular",
        "persona": "Sonia del Valle Maturano",
-       "desde": "2016-08-22",
-       "norma": "RESOL-2016-1553-INSSJP-DE#INSSJP"
+       "desde": "2024-12-23",
+       "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -24591,8 +24904,8 @@
       {
        "cargo": "Titular",
        "persona": "María Laura Quintero",
-       "desde": "2024-07-19",
-       "norma": "RESOL-2024-2035-INSSJP-DE#INSSJP"
+       "desde": "2024-12-23",
+       "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP"
       }
      ]
     }
@@ -24653,6 +24966,78 @@
      "persona": "Gladys Ramona Funes",
      "cargo": "Titular de la División Auditoría Prestacional",
      "agencia": null
+    },
+    {
+     "fecha": "2024-12-23",
+     "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Juan Pablo Aranda",
+     "cargo": "Titular",
+     "agencia": "Belén"
+    },
+    {
+     "fecha": "2024-12-23",
+     "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mayra Hilen Baquinzay",
+     "cargo": "Titular",
+     "agencia": "Tinogasta"
+    },
+    {
+     "fecha": "2024-12-23",
+     "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Liliana Patricia Aballay",
+     "cargo": "Titular",
+     "agencia": "Andalgalá"
+    },
+    {
+     "fecha": "2024-12-23",
+     "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Luis Fernando Robledo",
+     "cargo": "Titular",
+     "agencia": "Chumbicha"
+    },
+    {
+     "fecha": "2024-12-23",
+     "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Hernan Matias Cortez",
+     "cargo": "Titular",
+     "agencia": "Recreo"
+    },
+    {
+     "fecha": "2024-12-23",
+     "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Laura Quintero",
+     "cargo": "Titular",
+     "agencia": "Valle Viejo"
+    },
+    {
+     "fecha": "2024-12-23",
+     "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Maria Luisa Caro",
+     "cargo": "Titular",
+     "agencia": "Piedra Blanca"
+    },
+    {
+     "fecha": "2024-12-23",
+     "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sonia del Valle Maturano",
+     "cargo": "Titular",
+     "agencia": "Santa María"
+    },
+    {
+     "fecha": "2024-12-23",
+     "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Rosa del Carmen Picon",
+     "cargo": "Titular",
+     "agencia": "Pomán"
     },
     {
      "fecha": "2024-12-09",
@@ -31521,8 +31906,8 @@
       {
        "cargo": "Titular",
        "persona": "Silvina Electra Catterino",
-       "desde": "2024-08-23",
-       "norma": "RESOL-2024-2423-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-134-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -31557,8 +31942,8 @@
       {
        "cargo": "Titular",
        "persona": "Romina Beatriz Villarreal",
-       "desde": "2024-04-23",
-       "norma": "RESOL-2024-1097-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-134-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -31604,6 +31989,9 @@
        "desde": "2025-06-23",
        "norma": "RESOL-2025-1399-INSSJP-DE#INSSJP"
       }
+     ],
+     "alias": [
+      "Las Heras"
      ]
     },
     "General Rodríguez": {
@@ -31612,8 +32000,8 @@
       {
        "cargo": "Titular",
        "persona": "Mónica Viviana Scarnatto",
-       "desde": "2024-05-03",
-       "norma": "RESOL-2024-1280-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-134-INSSJP-DE#INSSJP"
       }
      ],
      "alias": [
@@ -31627,8 +32015,8 @@
       {
        "cargo": "Titular",
        "persona": "Pamela de los Angeles Lazarte",
-       "desde": "2024-04-23",
-       "norma": "RESOL-2024-1096-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-134-INSSJP-DE#INSSJP"
       }
      ],
      "alias": [
@@ -31641,8 +32029,8 @@
       {
        "cargo": "Titular",
        "persona": "Juan Pablo Belforte",
-       "desde": "2024-08-07",
-       "norma": "RESOL-2024-2271-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-134-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -31664,8 +32052,8 @@
       {
        "cargo": "Titular",
        "persona": "María Gabriela Goncalves",
-       "desde": "2024-04-23",
-       "norma": "RESOL-2024-1104-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-134-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -31686,8 +32074,8 @@
       {
        "cargo": "Titular",
        "persona": "María Soledad Juana",
-       "desde": "2024-04-23",
-       "norma": "RESOL-2024-1107-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-134-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -31708,8 +32096,8 @@
       {
        "cargo": "Titular",
        "persona": "Claudia Sanabria Silva",
-       "desde": "2024-08-07",
-       "norma": "RESOL-2024-2253-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-134-INSSJP-DE#INSSJP"
       }
      ],
      "alias": [
@@ -31722,8 +32110,8 @@
       {
        "cargo": "Titular",
        "persona": "Micaela Sofía Barbato",
-       "desde": "2024-08-07",
-       "norma": "RESOL-2024-2268-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-134-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -31733,8 +32121,8 @@
       {
        "cargo": "Titular",
        "persona": "Roberto Ariel Rodriguez",
-       "desde": "2024-08-07",
-       "norma": "RESOL-2024-2274-INSSJP-DE#INSSJP"
+       "desde": "2025-02-03",
+       "norma": "RESOL-2025-134-INSSJP-DE#INSSJP"
       }
      ]
     },
@@ -31844,6 +32232,126 @@
      "persona": "María Daniela Canziani",
      "cargo": "Titular",
      "agencia": "Mercedes"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Romina Beatriz Villarreal",
+     "cargo": "Titular",
+     "agencia": "Del Viso"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Micaela Sofía Barbato",
+     "cargo": "Titular",
+     "agencia": "San Andrés de Giles"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Andres Cristian Goldammer",
+     "cargo": "Titular",
+     "agencia": "Garín"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Karina Lourdes Perez Perera",
+     "cargo": "Titular",
+     "agencia": "Las Heras"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mónica Viviana Scarnatto",
+     "cargo": "Titular",
+     "agencia": "General Rodríguez"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pamela de los Angeles Lazarte",
+     "cargo": "Titular",
+     "agencia": "Jáuregui"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Juan Pablo Belforte",
+     "cargo": "Titular",
+     "agencia": "Lima"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Maria Carolina Pezzolo",
+     "cargo": "Titular",
+     "agencia": "Maquinista Savio"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Soledad Juana",
+     "cargo": "Titular",
+     "agencia": "Navarro"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Claudia Sanabria Silva",
+     "cargo": "Titular",
+     "agencia": "Presidente Derqui"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Roberto Ariel Rodriguez",
+     "cargo": "Titular",
+     "agencia": "San Antonio de Areco"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Silvina Electra Catterino",
+     "cargo": "Titular",
+     "agencia": "Baradero"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Silvia Graciela Di Leo",
+     "cargo": "Titular",
+     "agencia": "Mercedes"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carlos Alberto Galarza",
+     "cargo": "Titular",
+     "agencia": "Capilla del Señor"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Gabriela Goncalves",
+     "cargo": "Titular",
+     "agencia": "Marcos Paz"
     },
     {
      "fecha": "2025-01-16",
@@ -32993,6 +33501,14 @@
      "persona": null,
      "cargo": "Creación de la dependencia",
      "agencia": "Tolhuin"
+    },
+    {
+     "fecha": "2024-11-01",
+     "norma": "RESOL-2024-3087-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Roque Belmar",
+     "cargo": "Titular",
+     "agencia": "Río Grande"
     },
     {
      "fecha": "2024-08-19",

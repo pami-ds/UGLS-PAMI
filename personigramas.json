@@ -1,0 +1,6343 @@
+{
+ "_nota": "Personigramas de las UGL (Anexo I de las resoluciones que asignan funciones según la estructura de la RESOL-2024-2568). Se guarda la dependencia, la función y la persona; no se guardan legajos.",
+ "ugls": {
+  "II": [
+   {
+    "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+    "fecha": "2024-12-02",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Julia Sara Alarcon"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marina Isabel Escobar"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Víctor José Marturet"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Agostina Farela Ochoa"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sebastian Dahse"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Ramon Eduardo Garay"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Cinthia Elizabet Almiron"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ramon Buenaventura Ramirez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Jorge Rene Ledesma"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Eduardo Francisco Lens"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Jorge Javier Cendoya"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sonia Mariela Ramirez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Eduardo Alberto Pujol"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Jose Luis Urdangarin"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sergio Gabriel Galarza"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Dante Daniel Vignolles"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Manuel Alberto Mendez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Guillermina Guidi Salazar"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Eugenia Valesani"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Raul Oscar Chavez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Aymará Oderda"
+     },
+     {
+      "ruta": [
+       "Agencia Goya",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Referente",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Goya",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Goya",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Goya",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": "Sonia Santajuliana"
+     },
+     {
+      "ruta": [
+       "CAP Paso de los Libres"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Cristian Martín Niz"
+     },
+     {
+      "ruta": [
+       "CAP Santo Tomé"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Marina Andrea Villafañe"
+     },
+     {
+      "ruta": [
+       "CAP Monte Caseros"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "María Magdalena Vera"
+     },
+     {
+      "ruta": [
+       "CAP Mercedes"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Carola Yanela Perez"
+     },
+     {
+      "ruta": [
+       "CAP Curuzú Cuatiá"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "CAP Bella Vista"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "José Esteban Gonzalez"
+     },
+     {
+      "ruta": [
+       "CAP Gobernador Virasoro"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Mara Liliana Mazo"
+     },
+     {
+      "ruta": [
+       "CAP Esquina"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Ivana Amanda Quiroz Ruggeri"
+     },
+     {
+      "ruta": [
+       "CAP Ituzaingó"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Carmen Dolores Piñeiro"
+     },
+     {
+      "ruta": [
+       "CAP General Paz"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Leandro Edelmar Huntter"
+     },
+     {
+      "ruta": [
+       "CAP Saladas"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "César Guillermo Vallejos Taccone"
+     },
+     {
+      "ruta": [
+       "CAP San Cosme"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Sergio Manuel Romero"
+     },
+     {
+      "ruta": [
+       "CAP Sauce"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Jonathan David Castillo"
+     },
+     {
+      "ruta": [
+       "CAP La Cruz"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Juan José Francisco Silva"
+     },
+     {
+      "ruta": [
+       "CAP Alvear"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Luciana Mabel Lopez"
+     },
+     {
+      "ruta": [
+       "CAP Itatí"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Ayelén María Verónica Vallejos"
+     },
+     {
+      "ruta": [
+       "CAP Mburucuyá"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Augusto Emmanuel Benitez"
+     },
+     {
+      "ruta": [
+       "CAP Mocoretá"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Alejandro Andrés Ibarrola"
+     },
+     {
+      "ruta": [
+       "CAP Santa Rosa"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Martín Quintana"
+     }
+    ]
+   }
+  ],
+  "III": [
+   {
+    "norma": "RESOL-2025-466-INSSJP-DE#INSSJP",
+    "fecha": "2025-03-12",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Pamela del Valle Ruartes"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "David Antonio Dominguez"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Viviana Mercedes Parnisari"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Carlos Centeno"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Ariel Pereyra"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Nancy Graciela Garcia"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Franco Emanuel Torres"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Marisa Elizabeth Ochoa Saleh"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Sergio Adolfo Donigian"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ana Lilian Dandrea"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Daniela Soledad Lujan"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Mercedes de la Trinidad Albornoz"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Eduardo Rubén Frayre"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Pablo Guillermo Franco"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marina Fenoglio"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mary Sandra Hadad"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Jorge Pedro Rodini"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Mariela Andrea Irazabal"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Néstor Fernando Estevez Buteler"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Analia Judith Blanca"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mariano Hernán Luque Davos"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Enrique Arturo Miretti"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Karen Mariela Correa"
+     }
+    ]
+   }
+  ],
+  "IV": [
+   {
+    "norma": "RESOL-2025-1191-INSSJP-DE#INSSJP",
+    "fecha": "2025-05-29",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Adriana Cecilia Gallardo"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mercedes Cortiñas"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Tomás Iván Echazarreta Davies"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Guido Ignacio Carcedo"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "María Fernanda Ragazzone"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Laura Elizabeth Domínguez"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ernesto Eduardo Poujardieu"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Sandra Mariela Ciurletti"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Lucas Emiliano Fosco"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Viviana Gabriela Rodriguez Infante"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Nancy Noemi Murzia"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Violeta Anahí Fuentes"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Alejandro Omar Zapata"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Walter José Fernández"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "German Darío Moretti"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mariano Aníbal Panelo"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "José Fernando Parlanti"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "María Fernanda Kaufman"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maximiliano de Paz"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Nicolás Varela"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mario Edgardo Rodríguez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Lucía Beatriz Moreno"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Leonardo Osvaldo Moretti"
+     },
+     {
+      "ruta": [
+       "Agencia Guaymallén",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Silvia Edith Figueroa"
+     },
+     {
+      "ruta": [
+       "Agencia Guaymallén",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Guaymallén",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Francisco Luis Maximiliano Saya"
+     },
+     {
+      "ruta": [
+       "Agencia Guaymallén",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Angelina Natalia Martínez Álvarez"
+     },
+     {
+      "ruta": [
+       "Agencia Las Heras",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Adriana Alicia Ventura"
+     },
+     {
+      "ruta": [
+       "Agencia Las Heras",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Las Heras",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ramón Alejandro Abrego Lencinas"
+     },
+     {
+      "ruta": [
+       "Agencia Las Heras",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Maipú",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Adriana Elisabeth Sudarich"
+     },
+     {
+      "ruta": [
+       "Agencia Maipú",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Maipú",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Daniel Eduardo Robledo"
+     },
+     {
+      "ruta": [
+       "Agencia Maipú",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Lorena Fabiana Michitte"
+     },
+     {
+      "ruta": [
+       "Agencia Luján de Cuyo",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Gabriela Ximena Silva"
+     },
+     {
+      "ruta": [
+       "Agencia Luján de Cuyo",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gerardo David Segura"
+     },
+     {
+      "ruta": [
+       "Agencia Luján de Cuyo",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "José María Coloma"
+     },
+     {
+      "ruta": [
+       "Agencia Luján de Cuyo",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Roberto Plate"
+     },
+     {
+      "ruta": [
+       "Agencia San Martín",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Paola Baltolina"
+     },
+     {
+      "ruta": [
+       "Agencia San Martín",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia San Martín",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos César Correa"
+     },
+     {
+      "ruta": [
+       "Agencia San Martín",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Julio Sosa"
+     },
+     {
+      "ruta": [
+       "Agencia San Rafael",
+       "Referente de PolÍticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "María José Noguerol"
+     },
+     {
+      "ruta": [
+       "Agencia San Rafael",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "David Fliguer"
+     },
+     {
+      "ruta": [
+       "Agencia San Rafael",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Alejandra Sequeira Neme"
+     },
+     {
+      "ruta": [
+       "Agencia San Rafael",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Ariel Cotrona"
+     }
+    ]
+   }
+  ],
+  "IX": [
+   {
+    "norma": "RESOL-2025-458-INSSJP-DE#INSSJP",
+    "fecha": "2025-03-11",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Gaston Aramburu"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos Marino"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marcelo Alejandro Perez"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Juan Pablo Soto"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Maria Florencia Rossi"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Miriam Edit Salgado"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Andrea Veronica Casas"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Luciana Forni"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Gabriela María Rodríguez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Verónica Dignani"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gustavo Anselmo Volpe"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "José Guillermo Cruz Zarazaga"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Ana Laura Pasero"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Matias Tantoni"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carolina Mabel Sopranzetti"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Rodrigo Ramasco"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mirna Alejandra Coso"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Omar Ruben Mottura"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Liliana Beatriz Diez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gustavo Antonio Cella"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Noel Pellicore"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carolina Fernanda Llenas"
+     }
+    ]
+   }
+  ],
+  "VI": [
+   {
+    "norma": "RESOL-2024-3042-INSSJP-DE#INSSJP",
+    "fecha": "2024-10-28",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ale Osvaldo Masmud"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Gisela Laura Cane"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "María Teresa Vanore"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Romero Joaquin Merlo"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Belén Rojas Paz"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Alfredo Daniel Gomez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Simone Cristina Luque"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Valeria Edith Chiarenza"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Matias Nicolas Rodriguez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Luciano Bruno Auad"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alejandro Martin Cerruti"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Leonardo Larenza"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Gerardo Omar Figueroa"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Natalia Jacqueline Sanchez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Flavio Rodolfo Galgani"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sergio Ricardo Pratt"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Hugo Jorge Candiloro"
+     }
+    ]
+   },
+   {
+    "norma": "RESOL-2025-136-INSSJP-DE#INSSJP",
+    "fecha": "2025-02-03",
+    "filas": [
+     {
+      "ruta": [
+       "Agencia PAMI 1",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maria Cecilia D'angelo"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 1",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Daniel Jorge Mancuso"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 1",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Liliana Calvi"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 1",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Laura Andrea Pesaresi"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 2",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Sabrina Natalia Lavorato"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 2",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Julio Alberto Mansilla"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 2",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Silvana Patricia Peralta"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 2",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Noelia Paola Arenas"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 3",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Adriana Nelda Caeiro"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 3",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Guiomar Johana Jimenez Delgadillo"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 3",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Jorge Enrique Dionisio Hugo"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 3",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Gonzalo Christian Jorge Ramirez"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 4",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maria Victoria Gardey"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 4",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Nieves Gonzalez"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 4",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Romina Isabel Spollansky"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 4",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Diego Marcelo Recio"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 5",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Yesica Estefania Diaz"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 5",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carime Elizabeth Policino"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 5",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Estrella Noemí Porto"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 5",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maria Victoria D'angelo"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 6",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maria Laura Bazzini"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 6",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Matias Daniel Ferrini"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 6",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Silvina Lucia Gerardi"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 6",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Patricia Jeanette Alkhouri"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 7",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Anabel Magali Alvarez"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 7",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Nuria Maricel Gonzalez"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 7",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Leticia Laura Mantel"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 7",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Sebastián Sandri"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 8",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Nora Esther Duarte"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 8",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Natalia Rocío Taborda"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 8",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Pablo Luis Camblong"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 8",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Silvina Beatriz Mazzei"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 9",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Susana Adela Palacios"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 9",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alejandra Monica Sartori"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 9",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 9",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Juan Carlos Malmierca"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 10",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maria Cecilia Miño"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 10",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Rodolfo Vidal Pena"
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 10",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia PAMI 10",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Patricia Fabiana Segui"
+     }
+    ]
+   }
+  ],
+  "VII": [
+   {
+    "norma": "RESOL-2025-114-INSSJP-DE#INSSJP",
+    "fecha": "2025-01-31",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Claudia Marcela Ferroni"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Paula Perez"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Moreno Kiernan"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Betina Gonzalez"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Fernando Frabrega"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Pablo Manuel Gomez"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Verónica Patricia Acevedo"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Maria Alejandra Arias"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "María Lucrecia Osaba"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carolina Di Pasqua"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alejandro Segura"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Betina Mariel Salas Ruiz"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ricardo Javier Cepeda"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Pedro Rocca"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Soledad Soto"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Vanesa Lorena Chazarreta"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Sofía Berterretche"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Lucas Lasca Trenado"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Hernan Ariel Pacheco"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Osvaldo Gil Formisano"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Lucia Ramos Costa Alvarez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Matías Nicolas Morales"
+     },
+     {
+      "ruta": [
+       "Agencia Villa Elvira",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Referente",
+      "persona": "Maria Florencia Galliaman"
+     },
+     {
+      "ruta": [
+       "Agencia Villa Elvira",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Villa Elvira",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ariel Mauricio Basso"
+     },
+     {
+      "ruta": [
+       "Agencia Villa Elvira",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": "Jose Ruiz"
+     },
+     {
+      "ruta": [
+       "Agencia Berisso",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Referente",
+      "persona": "María Sol Manzo"
+     },
+     {
+      "ruta": [
+       "Agencia Berisso",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Emiliano Arguello"
+     },
+     {
+      "ruta": [
+       "Agencia Berisso",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Berisso",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": "Juan Pablo Santos"
+     }
+    ]
+   }
+  ],
+  "XI": [
+   {
+    "norma": "RESOL-2024-3509-INSSJP-DE#INSSJP",
+    "fecha": "2024-12-23",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Gilda Bianchi"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "David Fratini"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Placido Alberto Garcia"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Diego Javier Barrios Bazan"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Maria Celeste Lespada"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Adriana Murdocca"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Adriana Raquel Gregorutti"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Adrian Marcelo Deserti"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Maximiliano Antonio Sanchez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Cecilia Dominguez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Elida Noemi Perez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Veronica Vaz"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Pablo Lionel Carricart"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Victor Julio Lopez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ulises de Benedictis"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marcela Patricia Arguelles"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Javier German Ficicchia"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Guillermo Rafael Carrizo"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Alicia Cucchi Colleoni"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ester Marcela Corrado"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Vanesa Becherini"
+     }
+    ]
+   }
+  ],
+  "XII": [
+   {
+    "norma": "RESOL-2025-108-INSSJP-DE#INSSJP",
+    "fecha": "2025-01-31",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Jose Luis Martinez"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Raúl Gabriel Benavente"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Fabricio Abelardo Borda"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "José Blas Posadas Saravia"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Víctor de Jesús Ola Castro"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Patricia Alejandra Maroelli"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marcelo Daniel Lopez"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Elio Eduardo Laspiur"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Lázaro Alberto Escribas"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Adriana Cecilia Perez Aguilar"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Norma Patricia Escribas"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Soledad Tais"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Daniel Gustavo D'abate"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Hebe Karina Cabezas"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Ubaldina Rios"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos Mariano Colque"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Analia Veronica Sanchez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Claudia Liliana Valle"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Nestor Chavez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Susana Andrea Richter Salinas"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Luis Alfredo Lopez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Marta Noman"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Horacio Miguel Aramayo Baiz"
+     }
+    ]
+   }
+  ],
+  "XIII": [
+   {
+    "norma": "RESOL-2025-94-INSSJP-DE#INSSJP",
+    "fecha": "2025-01-29",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Silvia Carina Zeniquel"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marisa Lorena Gamarra"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Pablo Rodrigo Dominguez"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Alejandro Wajfsfeld"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Horacio Leonardo Vargas Fermoselle"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Yanina Veronica Mieres"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Julio Alberto Ruiz Diaz"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Yanina Verónica Gomez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Silvana Andrea Jaime"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Helga Patricia Mellinger"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Laura Lucía Molina"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Diego Martín Jara"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Dibe Mariana Hassan"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ramón Jorge Maldonado"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Juan Carlos Roman"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Fernando Emilio Esteban Valls"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Jorge Alfredo Moreno"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Oscar Daniel Poberezny"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Laura Cabral"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Bernardo de Jesús Maldonado"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos Cesar Suarez"
+     }
+    ]
+   }
+  ],
+  "XIV": [
+   {
+    "norma": "RESOL-2024-3508-INSSJP-DE#INSSJP",
+    "fecha": "2024-12-23",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Ismael Carlos Romero"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Elizabeth Versalli"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Norberto Luis Fornari"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Hernan Alberto Viola"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Diego Nicolás Princic"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Juan Carlos Guichard"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Juan Ignacio Dell’acqua"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Federico Raúl del Castillo"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Norma Ibarra"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Argentina Miranda"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Adriana Gabriela Coronel"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Daniel Eduardo Leguizamón"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Maria Victoria Bouzada"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mariano Uriel Sanchez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Edgardo Omar Proietto"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Lucila Gerber"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Emilio Matias Ferrari"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Joaquin Nicolas Grandolio"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Jorge Horacio Parodi"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Juan Bartolome Buttazzoni"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos Anibal Scavia"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mauro Damian Gallo"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Claudia Alejandra Muruaga"
+     }
+    ]
+   }
+  ],
+  "XIX": [
+   {
+    "norma": "RESOL-2024-3453-INSSJP-DE#INSSJP",
+    "fecha": "2024-12-16",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Ana Maria Herrera"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Adriana Ines Coronel"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Maria Soledad Rita Ahuad"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Maria Amparo Lopez"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Susana E. del Carmen Lami Alzueta"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marcela Patricia Becker"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Ramon Gustavo Cardozo"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Eduardo Daniel Velarde"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Fernando Eduardo Guerrero Nazar"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria del Carmen Paz"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "María José Castillo"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Silvia Noemi Leguizamon"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Constanza del Huerto Rojo Paiola"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Hugo Nicolas Andersen"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Martín Manzur"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Jonathan Gabriel Perez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Rolando Arturo Sarquisian"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Magali del Carmen Pavon"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Florencia Mema"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mariano Osvaldo Juri"
+     }
+    ]
+   }
+  ],
+  "XVII": [
+   {
+    "norma": "RESOL-2025-502-INSSJP-DE#INSSJP",
+    "fecha": "2025-03-14",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Marta Natalia Peralta"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Pablo Horacio Tuvio"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Brenda Paola Llanquetru"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Rodrigo Gustavo Perez"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alberto Fabián Bochatey"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maribel Barros"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Alejandra Viviana Morales"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Marina Roxana Palomo"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Luciana Llana"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mara Lorena Garcia"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Cristina Beatriz Blanco"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Andrea Verónica Quilodran"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Valeria Herrera"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Eugenia Rodriguez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gabriela Delia Gotuzzo"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Jorge Hallamayer"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Claudio Raúl Bello"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "César Ariel Zalazar"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Jorge Omar Ferreyra"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gina María Laura Mamy Nicastro"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Natalia Daniela Faisca"
+     }
+    ]
+   }
+  ],
+  "XVIII": [
+   {
+    "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+    "fecha": "2025-03-11",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Paola Alejandra Zacarias"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Oscar Roberto Morel"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Guillermo Fernando Maldonado"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Carlos Miralles Reverchón"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Néstor Fabián Ledesma"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Elvira Cristina Ruppel"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Teresa Lopez"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "José María Friedl"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Nestor Jose Gordo"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Alberta Ojeda"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Iris Lorena Hernandez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Alberto Martín Celestino"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Natalia Andrea Perez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Fabio Armando Barrios"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mirta Elizabet Riedmaier"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Horacio Javier Formosa"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Nelson Ismael Benitez Llej"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "José Luis Rodriguez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Martín Lando"
+     },
+     {
+      "ruta": [
+       "CAP Candelaria"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Carol Melisa Correa"
+     },
+     {
+      "ruta": [
+       "CAP Iguazú"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Yamila Rocío Cardozo"
+     },
+     {
+      "ruta": [
+       "CAP Leandro N. Alem"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Damaris Rosalía Alvez"
+     },
+     {
+      "ruta": [
+       "CAP Montecarlo"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Rocío de los Ángeles Flores"
+     },
+     {
+      "ruta": [
+       "CAP Puerto Rico"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Daniel Omar López"
+     }
+    ]
+   }
+  ],
+  "XX": [
+   {
+    "norma": "RESOL-2024-3507-INSSJP-DE#INSSJP",
+    "fecha": "2024-12-23",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Yeni Lorena Bowen"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Cielo Rossi Miner"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Patricia Belen Casadei"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Carolina Armagno"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alejandro Ariel Colombato"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carina Lorena Bazzetta"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "María Silvia San Pedro"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Elda Silvina Llanos"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Julia Maria Hernandez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Estela Maria Mercedes Aguirre"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Susana Edith Frencia"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Jorge Alberto Holgado"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ismael Rodriguez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alberto Luis Borredon"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "José María Quintana"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Federico Fabressi"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Natalia Paola Casagrande"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Carlos Eduardo Guerrero"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Andrea Regazzoli"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Luz Marina Ferreyra"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Jose Luis Sander"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carina Hebe Yaupe"
+     }
+    ]
+   }
+  ],
+  "XXI": [
+   {
+    "norma": "RESOL-2025-93-INSSJP-DE#INSSJP",
+    "fecha": "2025-01-29",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Oscar Guillermo Gonzalez"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ruben Adrian Alvarez Roldan"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Mariano Andrés Aguilar"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Juan Alberto Ortiz Ruiz"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Graciela Beatriz Carrizo"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alicia Fabiana Vega Reinuaba"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Marcelo Omar Ochoa"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Dora Gabriela Amin"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Stella Maris Arguello"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Fabiana Mariela Morely"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Laura Edith Mercado"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marcela Beatriz Castañares"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Roberto Oscar Rosas"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Roberto Andres Becerra"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Jorge Alberto Pelayes"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sandra Gimenez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sergio Anibal Caillet"
+     },
+     {
+      "ruta": [
+       "Agencia Rawson",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Rawson",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Rawson",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Rawson",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Luis Alberto Segovia"
+     }
+    ]
+   }
+  ],
+  "XXII": [
+   {
+    "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+    "fecha": "2025-02-03",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Carlos Alberto Ramirez"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Andrea del Valle Almada"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mariel del Rosario Rizzello"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Gisela Alejandra Martin"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Gerardo Felipe Alvarez"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Adolfo Enrique Pestoni"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Juan Carlos Rubiño"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Daniel Ernesto Guanca"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Juan Manuel Madrid"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carla Mariela Ricciuti"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Fernanda Maria Valle Chauque"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Patricia Veronica Sayavedra"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Leonor Alejandra de Tezanos Pinto"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Nieves Alejandra Ibañez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mercedes Ofelia Lamas"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marta Laura de Bonis Zelaya"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ricardo Daniel Fernandez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Natalia Cecilia Olivera"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Sandra Beatriz Banega"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Beatriz Alba del Pup Carattoni"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos Roberto Lobo"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sonia Beatriz Martinez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Norma Nieves Yapura"
+     },
+     {
+      "ruta": [
+       "CAP La Quiaca"
+      ],
+      "funcion": "Jefe de Agencia",
+      "persona": "Lorena Isabel Diaz"
+     },
+     {
+      "ruta": [
+       "CAP Abra Pampa"
+      ],
+      "funcion": "Referente",
+      "persona": "Nancy Norma Armella"
+     },
+     {
+      "ruta": [
+       "CAP Humahuaca"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Jose Federico Sanchez"
+     },
+     {
+      "ruta": [
+       "CAP Tilcara"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Nelida Carmen Ramos"
+     },
+     {
+      "ruta": [
+       "CAP Palpalá"
+      ],
+      "funcion": "Referente",
+      "persona": "Pablo Esteban Ordoñez"
+     },
+     {
+      "ruta": [
+       "CAP Carmen"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Irma Calizaya"
+     },
+     {
+      "ruta": [
+       "CAP Perico"
+      ],
+      "funcion": "Referente",
+      "persona": "Marisol Judith Santillan"
+     },
+     {
+      "ruta": [
+       "CAP San Pedro"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mariela Viviana Burgos"
+     },
+     {
+      "ruta": [
+       "CAP Libertador General San Martín"
+      ],
+      "funcion": "Referente",
+      "persona": "Miguel Ángel Leyva"
+     }
+    ]
+   }
+  ],
+  "XXIII": [
+   {
+    "norma": "RESOL-2026-2845-INSSJP-DE#INSSJP",
+    "fecha": "2026-09-11",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Paulo César Mendoza"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Lourdes Magaly Caballero"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mario Alberto Rivero"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Gustavo Adolfo Gavilan"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Maria Angelica Pinto"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ramona Norma Gomez"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Analia Evangelina Maza"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "Referente Veteranos de Guerra"
+      ],
+      "funcion": "Referente",
+      "persona": "Maria Isabel Campbell"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Evangelina Gilda Cigel"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sonia María Gomez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Rita Milagro del Carmen Gomez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Juan Feliciano Rojas"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Bogado Sonia Lorena"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Dante Raul Massaro"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ana Laura Zieseniss"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Walter Miguel Soloaga"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Cristian Martin Paredes"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carmen Edith Manzur"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Fausto Nahuel Hoyos"
+     }
+    ]
+   }
+  ],
+  "XXIV": [
+   {
+    "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+    "fecha": "2024-12-23",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Nilda Beatriz Garriga"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Laura Formica"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gladys Ramona Funes"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Karen Giselle Soria"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Andrea María Lobos"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Veronica Andrea Gonzalez"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Natalia Veronica Robles"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Laura Elizabeth Aguirre"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Iris Fabiana Fernandez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Nora Marcela Andrada"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Paola Yudith Jaime"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Enzo Darío Avellaneda"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Pablo Federico Pacheco"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Lucia Petrona Vega"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ana Carolina Zampieri Garriga"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Roxana Gabriela Godoy"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Luis Alberto Sanchez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Adriana Edith del Valle Aguaysoy"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Blanca Lía Carrizo"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gabriel Fermin Caliva"
+     },
+     {
+      "ruta": [
+       "CAP Belén"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Juan Pablo Aranda"
+     },
+     {
+      "ruta": [
+       "CAP Tinogasta"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Mayra Hilen Baquinzay"
+     },
+     {
+      "ruta": [
+       "CAP Fiambalá"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "CAP Andalgalá"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Liliana Patricia Aballay"
+     },
+     {
+      "ruta": [
+       "CAP Puerta del Corral Quemado"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "CAP Chumbicha"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Luis Fernando Robledo"
+     },
+     {
+      "ruta": [
+       "CAP Recreo"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Hernan Matias Cortez"
+     },
+     {
+      "ruta": [
+       "CAP Valle Viejo"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "María Laura Quintero"
+     },
+     {
+      "ruta": [
+       "CAP Piedra Blanca"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Maria Luisa Caro"
+     },
+     {
+      "ruta": [
+       "CAP La Merced"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "CAP Bañado de Ovanta"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "CAP Santa María"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Sonia del Valle Maturano"
+     },
+     {
+      "ruta": [
+       "CAP Pomán"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Rosa del Carmen Picon"
+     },
+     {
+      "ruta": [
+       "CAP San José"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": null
+     }
+    ]
+   }
+  ],
+  "XXIX": [
+   {
+    "norma": "RESOL-2024-3178-INSSJP-DE#INSSJP",
+    "fecha": "2024-11-11",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Silvia Vaghi"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Erica Claudia Fuensalida"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Dario Emanuel Barrientos"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Claudia Noemi Puppo"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Nancy Gricelda Bethouart"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Rodolfo Amador Monteagudo"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Patricio Leandro Francomano"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Cristian Gabriel Gagliardi"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Analía Verónica Palacios"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Elena Risso Patron"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Matias Hernan Rossetti"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ricardo Angel Armentia"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Valeria Pistone"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ricardo Alejandro Gomez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Lucia Gabriela del Cioppo"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Héctor Hugo Arbel"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Sergio Daniel Lloveras"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Laura Andrea Rodriguez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marcelo Enrique Ciardulli"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Silvia Mabel Flores"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Silva Gabriela Brisotto"
+     },
+     {
+      "ruta": [
+       "Agencia Hurlingham",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Referente",
+      "persona": "Nadina Ruth Caccia"
+     },
+     {
+      "ruta": [
+       "Agencia Hurlingham",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Mercedes Socino"
+     },
+     {
+      "ruta": [
+       "Agencia Hurlingham",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Daniel Lopez Locicero"
+     },
+     {
+      "ruta": [
+       "Agencia Hurlingham",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": "Silvina Mariel Sandes"
+     },
+     {
+      "ruta": [
+       "Agencia Ituzaingó",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Referente",
+      "persona": "María Lorena Guaglianone"
+     },
+     {
+      "ruta": [
+       "Agencia Ituzaingó",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mariano Enrique Martin Rivas"
+     },
+     {
+      "ruta": [
+       "Agencia Ituzaingó",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Ituzaingó",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": "Stella Maris Picasso"
+     },
+     {
+      "ruta": [
+       "Agencia Merlo",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Referente",
+      "persona": "Paula Valeria Rodriguez"
+     },
+     {
+      "ruta": [
+       "Agencia Merlo",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Andres Agustin Casseignau"
+     },
+     {
+      "ruta": [
+       "Agencia Merlo",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Victoria Fort"
+     },
+     {
+      "ruta": [
+       "Agencia Merlo",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": "Daniel Alberto Gonzalez"
+     },
+     {
+      "ruta": [
+       "Agencia Moreno",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Referente",
+      "persona": "Gladys Edith Reinoso"
+     },
+     {
+      "ruta": [
+       "Agencia Moreno",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Karina Baldassini"
+     },
+     {
+      "ruta": [
+       "Agencia Moreno",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Claudio Zanollo"
+     },
+     {
+      "ruta": [
+       "Agencia Moreno",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": "Marisol Adela Schiavi"
+     }
+    ]
+   }
+  ],
+  "XXV": [
+   {
+    "norma": "RESOL-2024-3067-INSSJP-DE#INSSJP",
+    "fecha": "2024-10-30",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Carlos Fabián Olivera"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Rodrigo Valls"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos Cesar Caceres"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Bárbara Porporatto"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Iván Exequiel Luna Díaz"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Celia Carreño"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Brenda Ayelen Venyercsan"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Ramón José Heredia"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Silvia Nora Vega"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marisa Angela Oporto Payacan"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Claudio Nicolás Ochoa"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Delia Beatriz Madeira"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Virginia Isabel Allegretti"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María del Valle Bordon"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maria Belen Vergara"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sebastian Abdon Brizuela Meinardi"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Javier Luis Olmedo"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Oscar Alejandro Demo"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alfredo Nicolás Corzo"
+     }
+    ]
+   }
+  ],
+  "XXX": [
+   {
+    "norma": "RESOL-2025-3125-INSSJP-DE#INSSJP",
+    "fecha": "2025-12-17",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maria Alejandra Llanos"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Jose Romero Balbi"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Diego José Soriani"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos Abraham Herrera Abdala"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Claudio Oscar Losardo"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Karina Andrea Aulicino"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": "Analia Elizabeth Tartara"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "Referente Veteranos de Guerra"
+      ],
+      "funcion": "Referente",
+      "persona": "Matías Fernando Martinez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Graciana Beatriz Kletnicki"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos Alberto Caputo"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Elisa Serradell"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Santiago Zaffora"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Claudio Abel Diaz"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Sebastián Ramón Galli"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Nestor Eduardo Rossi"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Emilia Gil"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mailen Elin Pinel"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Lucila Malacrida"
+     }
+    ]
+   }
+  ],
+  "XXXI": [
+   {
+    "norma": "RESOL-2025-107-INSSJP-DE#INSSJP",
+    "fecha": "2025-01-31",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Sandra Isabel Galvan"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Mercedes Villani"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Graciela Veronica Carpenteri"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Pedro la Blunda"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Erica Aldana Torres Duhagon"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Soledad Carron"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Daniela Ochoa"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Laura Rossini"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Luisina Toscanini"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Andrea Mabel Campos"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos Luis Alberti"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Silvina Mariel Stefanuto"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Melina Zulaica"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Pablo Ernesto Villegas"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Rosana Monica Mesoraca"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Pilar Tudisco"
+     },
+     {
+      "ruta": [
+       "Agencia San Nicolás",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Referente",
+      "persona": "Maria Jimena Franco"
+     },
+     {
+      "ruta": [
+       "Agencia San Nicolás",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Jorge Eugenio Garavaglia"
+     },
+     {
+      "ruta": [
+       "Agencia San Nicolás",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gabriela Viaggio"
+     },
+     {
+      "ruta": [
+       "Agencia San Nicolás",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": "Griselda Gladis Murgan"
+     },
+     {
+      "ruta": [
+       "Agencia Pergamino",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Referente",
+      "persona": "Claudia Marcela Reynoso"
+     },
+     {
+      "ruta": [
+       "Agencia Pergamino",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ricardo Manuel Menendez"
+     },
+     {
+      "ruta": [
+       "Agencia Pergamino",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alejandro Ariel Santinelli"
+     },
+     {
+      "ruta": [
+       "Agencia Pergamino",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Referente",
+      "persona": "Rosana Julia Gornati"
+     }
+    ]
+   }
+  ],
+  "XXXII": [
+   {
+    "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+    "fecha": "2025-02-03",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Gustavo Adolfo Oloriz"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sandra Elvira Somoza"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Andrea Cassini"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Laura Raquel Trono"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Patricia Elizabeth Hurley"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Natalia Raquel Ferrarotti"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Virginia Inés Silvetti"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Gladys Susana Campanini"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carla Maria José Castro"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Claudio Fabián Torchia"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alejandra Roldán"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Marcelo Raúl Martinez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carolina Ines Quagliariello"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Christian Leonardo Gianotti"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gloria Noemí Oloriz"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Carolina Gomez"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Matias Martín Cordisco"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Juan José Pedernera"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Ana Maria Solari"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carlos Ariel Isasi"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Laura Malmsten"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maria Guillermina Lopez"
+     },
+     {
+      "ruta": [
+       "Agencia Escobar",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Escobar",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Silvana Amelia Ferrari"
+     },
+     {
+      "ruta": [
+       "Agencia Escobar",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Yanina Vanesa Ballester"
+     },
+     {
+      "ruta": [
+       "Agencia Escobar",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Pablo Mariano Bravo"
+     },
+     {
+      "ruta": [
+       "Agencia Campana",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Campana",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Silvana Amelia Ferrari"
+     },
+     {
+      "ruta": [
+       "Agencia Campana",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Yanina Vanesa Ballester"
+     },
+     {
+      "ruta": [
+       "Agencia Campana",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Pablo Mariano Bravo"
+     },
+     {
+      "ruta": [
+       "Agencia Zárate",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Zárate",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Analia Verónica Arena Gamarra"
+     },
+     {
+      "ruta": [
+       "Agencia Zárate",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Zárate",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Pilar",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Pilar",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Juan Carlos Rubio"
+     },
+     {
+      "ruta": [
+       "Agencia Pilar",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Enrique Recondo"
+     },
+     {
+      "ruta": [
+       "Agencia Pilar",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Karina Verónica Almada"
+     },
+     {
+      "ruta": [
+       "CAP Del Viso"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Romina Beatriz Villarreal"
+     },
+     {
+      "ruta": [
+       "CAP San Andrés de Giles"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Micaela Sofía Barbato"
+     },
+     {
+      "ruta": [
+       "CAP Garín"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Andres Cristian Goldammer"
+     },
+     {
+      "ruta": [
+       "CAP Las Heras"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Karina Lourdes Perez Perera"
+     },
+     {
+      "ruta": [
+       "CAP General Rodríguez"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Mónica Viviana Scarnatto"
+     },
+     {
+      "ruta": [
+       "CAP Jáuregui"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Pamela de los Angeles Lazarte"
+     },
+     {
+      "ruta": [
+       "CAP Lima"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Juan Pablo Belforte"
+     },
+     {
+      "ruta": [
+       "CAP Maquinista Savio"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Maria Carolina Pezzolo"
+     },
+     {
+      "ruta": [
+       "CAP Navarro"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "María Soledad Juana"
+     },
+     {
+      "ruta": [
+       "CAP Presidente Derqui"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Claudia Sanabria Silva"
+     },
+     {
+      "ruta": [
+       "CAP San Antonio de Areco"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Roberto Ariel Rodriguez"
+     },
+     {
+      "ruta": [
+       "CAP Baradero"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Silvina Electra Catterino"
+     },
+     {
+      "ruta": [
+       "CAP Mercedes"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Silvia Graciela Di Leo"
+     },
+     {
+      "ruta": [
+       "CAP Capilla del Señor"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "Carlos Alberto Galarza"
+     },
+     {
+      "ruta": [
+       "CAP Marcos Paz"
+      ],
+      "funcion": "Jefe de CAP",
+      "persona": "María Gabriela Goncalves"
+     }
+    ]
+   }
+  ],
+  "XXXIII": [
+   {
+    "norma": "RESOL-2024-3087-INSSJP-DE#INSSJP",
+    "fecha": "2024-11-01",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Pedro Jorge Aguilar"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Mariel Alejandra Mina"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Juan Jose Dangelo"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Sonia Liliana Lorenzo"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Martín Eduardo Pastore"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Claudia Valeria Flores"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Stella Maris Pianca"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Ignacia Beatriz Duarte"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Andrea Beatriz Conte"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Paola Margot Alfires Gallardo"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Pamela Calamaro"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Hernan Raul Monti"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alfredo Antonio Colombres"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Camilo Sebastián Gomez"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Elvio Julio Romero"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Valeria María Virginia Penayo"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Alvaro Castillo"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Horacio Gerardo Pulido"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Pedro Javier Albarengo"
+     },
+     {
+      "ruta": [
+       "CAP Río Grande"
+      ],
+      "funcion": "Jefe cap",
+      "persona": "Roque Belmar"
+     }
+    ]
+   }
+  ],
+  "XXXIV": [
+   {
+    "norma": "RESOL-2025-109-INSSJP-DE#INSSJP",
+    "fecha": "2025-01-31",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Patricia Carola Maidana"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Lucía Vales"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "María Magdalena Mac Intyre"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Maria Alejandra Pierola"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Hugo Olivieri"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Claudia Analía Gonzalez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Vanina Dirie"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Luisa Soledad Martinez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Paola Fabiana Contavalle"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Susana Canaglia"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Malena Esponda"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marcela Moline"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Monica Carolina Addy"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Angel Ismael Gussalli"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Dora Matilde Ferrero"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Monica Fabiana Acosta"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marisa Vilma Maldonado"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Santos Hector Enesefor"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marcos Caprarulo"
+     },
+     {
+      "ruta": [
+       "Agencia Gualeguaychú",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maria Ivana Melchiori"
+     },
+     {
+      "ruta": [
+       "Agencia Gualeguaychú",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Agencia Gualeguaychú",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gabriela Natalia Pascaud"
+     },
+     {
+      "ruta": [
+       "Agencia Gualeguaychú",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maria Carolina Melchior"
+     },
+     {
+      "ruta": [
+       "Concepción del Uruguay",
+       "Referente de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Concepción del Uruguay",
+       "División Administrativo Contable"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Concepción del Uruguay",
+       "División Médica"
+      ],
+      "funcion": "Jefe de División",
+      "persona": null
+     },
+     {
+      "ruta": [
+       "Concepción del Uruguay",
+       "División Médica",
+       "Referente MOEIT"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Marcelo Fabian Vagge"
+     }
+    ]
+   }
+  ],
+  "XXXVI": [
+   {
+    "norma": "RESOL-2024-3066-INSSJP-DE#INSSJP",
+    "fecha": "2024-10-30",
+    "filas": [
+     {
+      "ruta": [
+       "Sector Afiliaciones"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Maria Belén Quatrini"
+     },
+     {
+      "ruta": [
+       "División Despacho"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Elva Elizabeth Bergesio"
+     },
+     {
+      "ruta": [
+       "División Auditoría Prestacional"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Sandra Mariela Moyano Herner"
+     },
+     {
+      "ruta": [
+       "Equipo Jurídico"
+      ],
+      "funcion": "Jefe de equipo",
+      "persona": "Ignacio Javier Pizarro"
+     },
+     {
+      "ruta": [
+       "Departamento Médico"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Victor Hugo Genesio"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División Operativa"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Maricel del Carmen Roccia"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Emiliano Somenzini"
+     },
+     {
+      "ruta": [
+       "Departamento Médico",
+       "División MOEIT",
+       "Referente PAMI Escucha"
+      ],
+      "funcion": "Referente",
+      "persona": "Carlos Dario Garraza"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Marcela Alejandra Giachero"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Promoción Social y Comunitaria"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marina Luz Curellich"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Relación con las Organizaciones de Jubilados y Pensionados"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Eduardo Alfredo Gutierrez"
+     },
+     {
+      "ruta": [
+       "Departamento de Políticas Sociales",
+       "División de Políticas de Cuidado"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Anahi Della Mea"
+     },
+     {
+      "ruta": [
+       "Departamento Contable"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Walter Dante Pernigotti"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Contabilidad"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Gustavo Adrian Usili"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Tesorería"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Carina Elizabeth Marin"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Liquidación"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Juan Mariano Ayala"
+     },
+     {
+      "ruta": [
+       "Departamento Contable",
+       "División Presupuesto"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marina Soledad Giachero"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo"
+      ],
+      "funcion": "Jefe de Departamento",
+      "persona": "Stella Mary Marzuoli"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "Sector Intendencia"
+      ],
+      "funcion": "Jefe de Sector",
+      "persona": "Carlos Cesar Lerda"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Recursos Humanos"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Bruno Jose Dandrea"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Tecnología"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Pablo Gabriel Pereyra"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Mesa de Entradas y Salidas"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Natalia Carolina Roccia"
+     },
+     {
+      "ruta": [
+       "Departamento Administrativo",
+       "División Compras y Contrataciones"
+      ],
+      "funcion": "Jefe de División",
+      "persona": "Marcela Susana Almada"
+     }
+    ]
+   }
+  ]
+ }
+}

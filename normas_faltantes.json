@@ -2818,6 +2818,861 @@
     "ugl": null,
     "dependencia": null
    }
+  },
+  {
+   "fecha": "2024-12-23",
+   "boletin": "",
+   "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXIV (2024-3506), Anexo I: Jefe de CAP del CAP Belén, Juan Pablo Aranda.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Juan Pablo Aranda",
+    "cargo": "Titular",
+    "ugl": "XXIV",
+    "dependencia": "Belén",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-23",
+   "boletin": "",
+   "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXIV (2024-3506), Anexo I: Jefe de CAP del CAP Tinogasta, Mayra Hilen Baquinzay.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mayra Hilen Baquinzay",
+    "cargo": "Titular",
+    "ugl": "XXIV",
+    "dependencia": "Tinogasta",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-23",
+   "boletin": "",
+   "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXIV (2024-3506), Anexo I: Jefe de CAP del CAP Andalgalá, Liliana Patricia Aballay.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Liliana Patricia Aballay",
+    "cargo": "Titular",
+    "ugl": "XXIV",
+    "dependencia": "Andalgalá",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-23",
+   "boletin": "",
+   "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXIV (2024-3506), Anexo I: Jefe de CAP del CAP Chumbicha, Luis Fernando Robledo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Luis Fernando Robledo",
+    "cargo": "Titular",
+    "ugl": "XXIV",
+    "dependencia": "Chumbicha",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-23",
+   "boletin": "",
+   "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXIV (2024-3506), Anexo I: Jefe de CAP del CAP Recreo, Hernan Matias Cortez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Hernan Matias Cortez",
+    "cargo": "Titular",
+    "ugl": "XXIV",
+    "dependencia": "Recreo",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-23",
+   "boletin": "",
+   "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXIV (2024-3506), Anexo I: Jefe de CAP del CAP Valle Viejo, María Laura Quintero.",
+   "evento": {
+    "accion": "alta",
+    "persona": "María Laura Quintero",
+    "cargo": "Titular",
+    "ugl": "XXIV",
+    "dependencia": "Valle Viejo",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-23",
+   "boletin": "",
+   "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXIV (2024-3506), Anexo I: Jefe de CAP del CAP Piedra Blanca, Maria Luisa Caro.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Maria Luisa Caro",
+    "cargo": "Titular",
+    "ugl": "XXIV",
+    "dependencia": "Piedra Blanca",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-23",
+   "boletin": "",
+   "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXIV (2024-3506), Anexo I: Jefe de CAP del CAP Santa María, Sonia del Valle Maturano.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Sonia del Valle Maturano",
+    "cargo": "Titular",
+    "ugl": "XXIV",
+    "dependencia": "Santa María",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-23",
+   "boletin": "",
+   "norma": "RESOL-2024-3506-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXIV (2024-3506), Anexo I: Jefe de CAP del CAP Pomán, Rosa del Carmen Picon.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Rosa del Carmen Picon",
+    "cargo": "Titular",
+    "ugl": "XXIV",
+    "dependencia": "Pomán",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-11-01",
+   "boletin": "",
+   "norma": "RESOL-2024-3087-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXIII (2024-3087), Anexo I: Jefe cap del CAP Río Grande, Roque Belmar.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Roque Belmar",
+    "cargo": "Titular",
+    "ugl": "XXXIII",
+    "dependencia": "Río Grande",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-03-11",
+   "boletin": "",
+   "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XVIII (2025-459), Anexo I: Jefe de CAP del CAP Candelaria, Carol Melisa Correa.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Carol Melisa Correa",
+    "cargo": "Titular",
+    "ugl": "XVIII",
+    "dependencia": "Candelaria",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-03-11",
+   "boletin": "",
+   "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XVIII (2025-459), Anexo I: Jefe de CAP del CAP Iguazú, Yamila Rocío Cardozo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Yamila Rocío Cardozo",
+    "cargo": "Titular",
+    "ugl": "XVIII",
+    "dependencia": "Iguazú",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-03-11",
+   "boletin": "",
+   "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XVIII (2025-459), Anexo I: Jefe de CAP del CAP Leandro N. Alem, Damaris Rosalía Alvez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Damaris Rosalía Alvez",
+    "cargo": "Titular",
+    "ugl": "XVIII",
+    "dependencia": "Leandro N. Alem",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-03-11",
+   "boletin": "",
+   "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XVIII (2025-459), Anexo I: Jefe de CAP del CAP Montecarlo, Rocío de los Ángeles Flores.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Rocío de los Ángeles Flores",
+    "cargo": "Titular",
+    "ugl": "XVIII",
+    "dependencia": "Montecarlo",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-03-11",
+   "boletin": "",
+   "norma": "RESOL-2025-459-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XVIII (2025-459), Anexo I: Jefe de CAP del CAP Puerto Rico, Daniel Omar López.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Daniel Omar López",
+    "cargo": "Titular",
+    "ugl": "XVIII",
+    "dependencia": "Puerto Rico",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXII (2025-135), Anexo I: Jefe de Agencia del CAP La Quiaca, Lorena Isabel Diaz.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Lorena Isabel Diaz",
+    "cargo": "Titular",
+    "ugl": "XXII",
+    "dependencia": "La Quiaca",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXII (2025-135), Anexo I: Referente del CAP Abra Pampa, Nancy Norma Armella.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Nancy Norma Armella",
+    "cargo": "Titular",
+    "ugl": "XXII",
+    "dependencia": "Abra Pampa",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXII (2025-135), Anexo I: Jefe de División del CAP Humahuaca, Jose Federico Sanchez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Jose Federico Sanchez",
+    "cargo": "Titular",
+    "ugl": "XXII",
+    "dependencia": "Humahuaca",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXII (2025-135), Anexo I: Jefe de División del CAP Tilcara, Nelida Carmen Ramos.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Nelida Carmen Ramos",
+    "cargo": "Titular",
+    "ugl": "XXII",
+    "dependencia": "Tilcara",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXII (2025-135), Anexo I: Referente del CAP Palpalá, Pablo Esteban Ordoñez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Pablo Esteban Ordoñez",
+    "cargo": "Titular",
+    "ugl": "XXII",
+    "dependencia": "Palpalá",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXII (2025-135), Anexo I: Jefe de División del CAP Carmen, Irma Calizaya.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Irma Calizaya",
+    "cargo": "Titular",
+    "ugl": "XXII",
+    "dependencia": "Carmen",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXII (2025-135), Anexo I: Referente del CAP Perico, Marisol Judith Santillan.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Marisol Judith Santillan",
+    "cargo": "Titular",
+    "ugl": "XXII",
+    "dependencia": "Perico",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXII (2025-135), Anexo I: Jefe de División del CAP San Pedro, Mariela Viviana Burgos.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mariela Viviana Burgos",
+    "cargo": "Titular",
+    "ugl": "XXII",
+    "dependencia": "San Pedro",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-135-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXII (2025-135), Anexo I: Referente del CAP Libertador General San Martín, Miguel Ángel Leyva.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Miguel Ángel Leyva",
+    "cargo": "Titular",
+    "ugl": "XXII",
+    "dependencia": "Libertador General San Martín",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Del Viso, Romina Beatriz Villarreal.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Romina Beatriz Villarreal",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Del Viso",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP San Andrés de Giles, Micaela Sofía Barbato.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Micaela Sofía Barbato",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "San Andrés de Giles",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Garín, Andres Cristian Goldammer.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Andres Cristian Goldammer",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Garín",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Las Heras, Karina Lourdes Perez Perera.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Karina Lourdes Perez Perera",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Las Heras",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP General Rodríguez, Mónica Viviana Scarnatto.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mónica Viviana Scarnatto",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "General Rodríguez",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Jáuregui, Pamela de los Angeles Lazarte.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Pamela de los Angeles Lazarte",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Jáuregui",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Lima, Juan Pablo Belforte.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Juan Pablo Belforte",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Lima",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Maquinista Savio, Maria Carolina Pezzolo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Maria Carolina Pezzolo",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Maquinista Savio",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Navarro, María Soledad Juana.",
+   "evento": {
+    "accion": "alta",
+    "persona": "María Soledad Juana",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Navarro",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Presidente Derqui, Claudia Sanabria Silva.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Claudia Sanabria Silva",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Presidente Derqui",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP San Antonio de Areco, Roberto Ariel Rodriguez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Roberto Ariel Rodriguez",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "San Antonio de Areco",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Baradero, Silvina Electra Catterino.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Silvina Electra Catterino",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Baradero",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Mercedes, Silvia Graciela Di Leo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Silvia Graciela Di Leo",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Mercedes",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Capilla del Señor, Carlos Alberto Galarza.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Carlos Alberto Galarza",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Capilla del Señor",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2025-02-03",
+   "boletin": "",
+   "norma": "RESOL-2025-134-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL XXXII (2025-134), Anexo I: Jefe de CAP del CAP Marcos Paz, María Gabriela Goncalves.",
+   "evento": {
+    "accion": "alta",
+    "persona": "María Gabriela Goncalves",
+    "cargo": "Titular",
+    "ugl": "XXXII",
+    "dependencia": "Marcos Paz",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Paso de los Libres, Cristian Martín Niz.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Cristian Martín Niz",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Paso de los Libres",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Santo Tomé, Marina Andrea Villafañe.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Marina Andrea Villafañe",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Santo Tomé",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Monte Caseros, María Magdalena Vera.",
+   "evento": {
+    "accion": "alta",
+    "persona": "María Magdalena Vera",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Monte Caseros",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Mercedes, Carola Yanela Perez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Carola Yanela Perez",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Mercedes",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Bella Vista, José Esteban Gonzalez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "José Esteban Gonzalez",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Bella Vista",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Gobernador Virasoro, Mara Liliana Mazo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mara Liliana Mazo",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Gobernador Virasoro",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Esquina, Ivana Amanda Quiroz Ruggeri.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Ivana Amanda Quiroz Ruggeri",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Esquina",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Ituzaingó, Carmen Dolores Piñeiro.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Carmen Dolores Piñeiro",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Ituzaingó",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP General Paz, Leandro Edelmar Huntter.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Leandro Edelmar Huntter",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "General Paz",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Saladas, César Guillermo Vallejos Taccone.",
+   "evento": {
+    "accion": "alta",
+    "persona": "César Guillermo Vallejos Taccone",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Saladas",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP San Cosme, Sergio Manuel Romero.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Sergio Manuel Romero",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "San Cosme",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Sauce, Jonathan David Castillo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Jonathan David Castillo",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Sauce",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP La Cruz, Juan José Francisco Silva.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Juan José Francisco Silva",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "La Cruz",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Alvear, Luciana Mabel Lopez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Luciana Mabel Lopez",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Alvear",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Itatí, Ayelén María Verónica Vallejos.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Ayelén María Verónica Vallejos",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Itatí",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Mburucuyá, Augusto Emmanuel Benitez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Augusto Emmanuel Benitez",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Mburucuyá",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Mocoretá, Alejandro Andrés Ibarrola.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Alejandro Andrés Ibarrola",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Mocoretá",
+    "tipo_dep": "CAP"
+   }
+  },
+  {
+   "fecha": "2024-12-02",
+   "boletin": "",
+   "norma": "RESOL-2024-3338-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Personigrama UGL II (2024-3338), Anexo I: Jefe de CAP del CAP Santa Rosa, Martín Quintana.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Martín Quintana",
+    "cargo": "Titular",
+    "ugl": "II",
+    "dependencia": "Santa Rosa",
+    "tipo_dep": "CAP"
+   }
   }
  ]
 }

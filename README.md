@@ -125,6 +125,15 @@ Los datos manuales tienen prioridad sobre los boletines y el listado oficial. **
 
 Página estática que lee los tres JSON y arma el grafo en el navegador con [vis-network](https://visjs.github.io/vis-network/docs/network/). Para depurar, en la consola del navegador: `modeloPAMI` muestra el árbol ya armado.
 
+
+### Personigramas de las UGL (`personigramas.json`)
+
+Desde la nueva estructura de las UGL (RESOL-2024-2568) cada UGL publicó una resolución que asigna las funciones de su personal ("personigrama"). El Anexo I trae, para cada departamento, división, sector y referente, quién está a cargo o si está vacante. Se cargaron 26 UGL con el texto de esos anexos (dos, Chaco y San Juan, vienen escaneados y se leyeron con OCR). No se guardan legajos.
+
+En la página, cada UGL muestra el bloque **Organigrama y jefaturas**: el árbol del personigrama actualizado con las designaciones publicadas después (si una división cambió de jefe, figura el nuevo y "antes ..."). Los cargos de la estructura vieja, anteriores al personigrama, pasan a un grupo plegado **Designaciones anteriores al personigrama**. Las agencias y CAPs muestran sus **Jefaturas internas** (división médica, administrativo contable, referentes). Los jefes de CAP y agencia del personigrama también entran como titulares (normas_faltantes.json), así que el procesamiento los tiene en cuenta.
+
+Las UGL XXVII, XXVIII, VIII y XXXV publicaron el personigrama sin el anexo dentro del PDF, y las demás no lo publicaron en el boletín. El personal sin jefatura (administrativos, profesionales de planta) no aparece en ningún boletín: para sumarlo hay que cargarlo a mano con **Editar**.
+
 ---
 
 ## Estructura del repositorio
@@ -136,6 +145,7 @@ Página estática que lee los tres JSON y arma el grafo en el navegador con [vis
 ├── directorio_agencias.json      # Domicilios oficiales (lo genera importar_listado_agencias.py)
 ├── datos_manuales.json           # Correcciones y agregados a mano (se exporta desde la página)
 ├── organigrama.json              # Estructura del Nivel Central transcripta del organigrama (Anexo I)
+├── personigramas.json            # Jefaturas de cada UGL según su personigrama (Anexo I de cada resolución)
 │
 ├── procesar_boletines.py         # Lee los boletines y genera datos_ugl.json
 ├── bot_diario_graffo.py          # Descarga el boletín del día y ejecuta procesar_boletines.py

@@ -110,6 +110,17 @@
         .grupo-cargos > summary::before { content: '▸'; transition: transform .15s; }
         .grupo-cargos[open] > summary::before { transform: rotate(90deg); }
         .grupo-cargos > summary .cnt { margin-left: auto; font-weight: 500; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 0 7px; }
+        .pg-arbol { font-size: .8rem; }
+        .pg-nota { font-size: .74rem; color: var(--text-muted); margin: 2px 0 8px; line-height: 1.4; }
+        .pg-fila { display: flex; gap: 8px; align-items: baseline; padding: 5px 4px; border-bottom: 1px solid var(--border-color); }
+        .pg-fila .pg-unidad { flex: 1; min-width: 0; }
+        .pg-fila .pg-unidad .fn { display: block; font-size: .72rem; color: var(--text-muted); }
+        .pg-fila .pg-persona { text-align: right; font-weight: 600; }
+        .pg-fila .pg-persona small { display: block; font-weight: 400; font-size: .7rem; color: var(--text-muted); }
+        .pg-fila.n1 { padding-left: 16px; } .pg-fila.n2 { padding-left: 30px; } .pg-fila.n3 { padding-left: 44px; }
+        .pg-fila.n0 .pg-unidad > b { color: var(--text-main, inherit); }
+        .pg-vacante { font-weight: 500; color: var(--c-alerta, #c77); font-size: .74rem; border: 1px solid currentColor; border-radius: 8px; padding: 0 6px; }
+        .pg-sub { font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted); margin: 12px 0 4px; }
         .tabla-personal { width: 100%; border-collapse: collapse; font-size: .8rem; }
         .tabla-personal td { padding: 6px 4px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
         .tabla-personal tr { cursor: pointer; }
@@ -420,8 +431,7 @@
     <div id="contenedor-grafo"></div>
     <div id="leyenda">
         <label><span class="sw central"></span>PAMI Nivel Central</label>
-        <label><span class="sw ugl"></span>UGL con datos</label>
-        <label><span class="sw vacio"></span>UGL sin datos</label>
+        <label><span class="sw ugl"></span>UGL</label>
         <label><input type="checkbox" id="chkAgencias" checked><span class="sw agencia"></span>Agencias</label>
         <label><span class="sw agencia" style="background:#78542a;outline:1px solid var(--c-agencia)"></span>Agencia o CAP sin titular vigente</label>
         <label title="Agencias del listado oficial de PAMI que todavía no tuvieron novedades en los boletines"><input type="checkbox" id="chkListado" checked><span class="sw listado"></span>Resto del listado oficial</label>
@@ -796,7 +806,7 @@ function construirModeloV2(datos) {
    ===================================================================== */
 const CLAVE_LOCAL = 'graffo_datos_manuales_v1';
 let MANUALES_REPO = { ugls: {} }, MANUALES_LOCAL = { ugls: {} };
-let DATOS_RAW = null, DIR_RAW = null, EXTRA_RAW = null;
+let DATOS_RAW = null, DIR_RAW = null, EXTRA_RAW = null, PG_RAW = null;
 
 function leerLocal() {
     try { return JSON.parse(localStorage.getItem(CLAVE_LOCAL)) || { ugls: {} }; } catch (e) { return { ugls: {} }; }
@@ -965,6 +975,7 @@ async function inicializar() {
         return;
     }
     DIR_RAW = await leerJSON('directorio_agencias.json');           // listado oficial (opcional)
+    PG_RAW = await leerJSON('personigramas.json');                 // jefaturas de cada UGL según su personigrama (opcional)
     EXTRA_RAW = await leerJSON('datos_extra.json');                 // estructura, sedes y personal (opcional, procesar_catalogo.py)
     ORG_RAW = await leerJSON('organigrama.json');                   // organigrama del Nivel Central (opcional)
     MANUALES_REPO = (await leerJSON('datos_manuales.json')) || { ugls: {} };  // cargas manuales publicadas (opcional)
@@ -1641,6 +1652,85 @@ function htmlExtra(ugl, dep) {
         bloque('Personal (ingresos, traslados y egresos)', e.personal, 'Personas que ingresaron a trabajar, fueron trasladadas o dejaron el Instituto. No son cargos de conducción y pueden no estar vigentes.', false);
 }
 
+/* ---------- Personigrama de la UGL (personigramas.json) ---------- */
+const esDepAg = s => /^(Agencia|CAP)\b/.test(s);
+function pgDe(num) {
+    const docs = PG_RAW?.ugls?.[num] || [];
+    const filas = new Map();                                   // si hay dos personigramas, gana el más reciente
+    for (const d of docs) for (const f of d.filas) filas.set(f.ruta.join(' › '), { ...f, fecha: d.fecha, norma: d.norma });
+    return { docs, filas: [...filas.values()], fecha: docs.length ? docs[0].fecha : null };
+}
+// Designación publicada DESPUÉS del personigrama para la misma unidad (la reemplaza)
+function pgPosterior(u, f) {
+    if (esDepAg(f.ruta[0])) return null;
+    const ult = clave(f.ruta[f.ruta.length - 1]);
+    const tipo = ult.split(' ')[0];
+    const nucleo = ult.replace(/^(DIVISION|DEPARTAMENTO|SECTOR|EQUIPO|REFERENTE)\s+(DE\s+)?(LA\s+|LOS\s+|LAS\s+|EL\s+)?/, '');
+    if (nucleo.length < 5) return null;
+    let mejor = null;
+    for (const a of u.autoridades.values()) {
+        const kc = clave(a.cargo);
+        if (!a.desde || a.desde <= f.fecha) continue;
+        if (!kc.includes(nucleo) || !kc.includes(tipo)) continue;
+        if (!mejor || a.desde > mejor.desde) mejor = a;
+    }
+    return mejor;
+}
+function pgFila(u, f, nivel, etiqueta) {
+    const post = pgPosterior(u, f);
+    const persona = post ? post.personas[0] : f.persona;
+    const quien = persona
+        ? `<b class="pg-nombre">${esc(persona)}</b><small>${post ? 'desde ' + fechaCorta(post.desde) + ' &middot; ' + esc((post.norma || '').replace(/-INSSJP.*$/, '')) : fechaCorta(f.fecha)}</small>`
+        : `<span class="pg-vacante">vacante</span>`;
+    return `<div class="pg-fila n${Math.min(nivel, 3)}"><span class="pg-unidad">${nivel ? esc(etiqueta) : `<b>${esc(etiqueta)}</b>`}<span class="fn">${esc(f.funcion)}${post && f.persona && clave(f.persona) !== clave(persona) ? ' &middot; antes ' + esc(f.persona) : ''}</span></span><span class="pg-persona">${quien}</span></div>`;
+}
+function htmlPersonigrama(u) {
+    const pg = pgDe(u.num);
+    if (!pg.filas.length) return '';
+    const sede = pg.filas.filter(f => !esDepAg(f.ruta[0]));
+    const ags = pg.filas.filter(f => esDepAg(f.ruta[0]));
+    const orden = (a, b) => a.ruta.join('|').localeCompare(b.ruta.join('|'));
+    const ocupados = pg.filas.filter(f => f.persona || pgPosterior(u, f)).length;
+    let h = sede.sort(orden).map(f => pgFila(u, f, f.ruta.length - 1, f.ruta[f.ruta.length - 1])).join('');
+    if (ags.length) {
+        const por = new Map();
+        for (const f of ags) (por.get(f.ruta[0]) || por.set(f.ruta[0], []).get(f.ruta[0])).push(f);
+        h += `<div class="pg-sub">Agencias y CAP</div>`;
+        for (const [dep, lista] of [...por].sort((a, b) => a[0].localeCompare(b[0], 'es', { numeric: true }))) {
+            const cab = lista.find(f => f.ruta.length === 1);
+            if (cab) h += pgFila(u, cab, 0, dep);
+            else h += `<div class="pg-fila n0"><span class="pg-unidad"><b>${esc(dep)}</b></span></div>`;
+            h += lista.filter(f => f.ruta.length > 1).sort(orden).map(f => pgFila(u, f, f.ruta.length - 1, f.ruta[f.ruta.length - 1])).join('');
+        }
+    }
+    const normas = pg.docs.map(d => `${esc(d.norma.replace(/-INSSJP.*$/, ''))} (${fechaCorta(d.fecha)})`).join(' y ');
+    return `<details class="grupo-cargos" open><summary>Organigrama y jefaturas<span class="cnt">${ocupados}/${pg.filas.length}</span></summary>
+        <div class="pg-nota">Seg&uacute;n el personigrama publicado en ${normas}, actualizado con las designaciones posteriores. El boletín solo publica jefaturas y referentes: el personal administrativo sin cargo no figura.</div>
+        <div class="pg-arbol">${h}</div></details>`;
+}
+function htmlPersonigramaDep(h) {
+    const u = h.ugl, k = claveLugar(h.nombre);
+    const filas = pgDe(u.num).filas.filter(f => esDepAg(f.ruta[0]) && f.ruta.length > 1 && claveLugar(f.ruta[0].replace(/^(Agencia|CAP)\s+/, '')) === k);
+    if (!filas.length) return '';
+    return `<details class="grupo-cargos" open><summary>Jefaturas internas<span class="cnt">${filas.filter(f => f.persona).length}/${filas.length}</span></summary>
+        <div class="pg-nota">Seg&uacute;n el personigrama ${esc(filas[0].norma.replace(/-INSSJP.*$/, ''))} (${fechaCorta(filas[0].fecha)}).</div>
+        <div class="pg-arbol">${filas.sort((a, b) => a.ruta.join('|').localeCompare(b.ruta.join('|'))).map(f => pgFila(u, f, f.ruta.length - 2, f.ruta[f.ruta.length - 1])).join('')}</div></details>`;
+}
+// Personas del personigrama (para el buscador)
+function pgPersonas() {
+    const out = [];
+    for (const u of modelo?.ugls || []) for (const f of pgDe(u.num).filas) {
+        if (!f.persona || pgPosterior(u, f)) continue;
+        let o = u;
+        if (esDepAg(f.ruta[0])) {
+            const k = claveLugar(f.ruta[0].replace(/^(Agencia|CAP)\s+/, ''));
+            o = [...u.hijos.values()].find(h => claveLugar(h.nombre) === k) || u;
+        }
+        out.push({ u, o, persona: f.persona, funcion: `${f.funcion} · ${f.ruta[f.ruta.length - 1]}` });
+    }
+    return out;
+}
+
 /* ---------- Autoridades de la UGL agrupadas por área ---------- */
 const GRUPOS_CARGO = [
     ['Dirección', /^(Titular de la UGL|Firma delegada|Director|Subdirector)/i],
@@ -1663,6 +1753,16 @@ function htmlAutoridadesAgrupadas(mapa) {
         h += `<details class="grupo-cargos"${abierto ? ' open' : ''}><summary>${nombre}<span class="cnt">${m.size}</span></summary>${htmlAutoridades(m, '')}</details>`;
     }
     return h;
+}
+// Con personigrama: las designaciones anteriores (estructura vieja) van aparte, plegadas
+function htmlAutoridadesUGL(u) {
+    const f = pgDe(u.num).fecha;
+    if (!f) return htmlAutoridadesAgrupadas(u.autoridades);
+    const dir = GRUPOS_CARGO[0][1];
+    const vig = new Map(), ant = new Map();
+    for (const [k, a] of u.autoridades) (a.fuente === 'manual' || dir.test(a.cargo) || !a.desde || a.desde >= f ? vig : ant).set(k, a);
+    return htmlAutoridadesAgrupadas(vig) + (ant.size ? `<details class="grupo-cargos"><summary>Designaciones anteriores al personigrama<span class="cnt">${ant.size}</span></summary>
+        <div class="pg-nota">Cargos de la estructura anterior (antes del ${fechaCorta(f)}). El personigrama reasign&oacute; las funciones, as&iacute; que probablemente ya no est&eacute;n vigentes.</div>${htmlAutoridades(ant, '')}</details>` : '');
 }
 /* ---------- Todos los cargos de las agencias de una UGL ---------- */
 function htmlPersonalAgencias(ag) {
@@ -1691,7 +1791,8 @@ function mostrarUGL(u) {
         ${cabeceraFicha(u, 'UGL ' + esc(u.num), 'ugl', u.nombre, `Unidad de Gesti&oacute;n Local &middot; ${ag.length} agencia(s)${modelo.org?.has('ORG-UGTO') ? ` &middot; depende de la <a onclick="seleccionar('ORG-UGTO')">UGTO</a>` : ''}`)}
         ${htmlContacto(u)}
         <div class="seccion-titulo">Autoridades de la UGL (${u.autoridades.size})</div>
-        ${htmlAutoridadesAgrupadas(u.autoridades)}
+        ${htmlAutoridadesUGL(u)}
+        ${htmlPersonigrama(u)}
         <div class="seccion-titulo">Agencias (${ag.length})</div>
         ${lista(ag)}
         ${htmlPersonalAgencias(ag)}
@@ -1773,6 +1874,7 @@ function mostrarDependencia(h) {
         <div class="seccion-titulo">${esBoca(h) ? 'Personal a cargo' : 'Autoridades'}</div>
         ${esBoca(h) && !h.autoridades.size ? '<div class="mensaje-vacio" style="margin-top:8px">Boca de atención rápida: la atiende personal administrativo de la UGL, no tiene jefatura propia.</div>' : htmlAutoridades(h.autoridades, h.tipo)}
         ${esBoca(h) && h.autoridades.size ? '<div class="extra-nota">Las bocas de atención no tienen jefatura: se muestra la persona que el boletín designó a cargo.</div>' : ''}
+        ${htmlPersonigramaDep(h)}
         ${htmlExtra(h.ugl, h)}
         ${htmlHistorial(h.historial, false)}`;
 }
@@ -1959,10 +2061,11 @@ function mostrarSinClasificar() {
 function resaltarPersona(nombre) {
     setTimeout(() => {
         const k = clave(nombre);
-        const el = [...document.querySelectorAll('#contenido-detalles .cargo-nombre, #contenido-detalles .tabla-personal b, #contenido-detalles .extra-item b')].find(e => clave(e.textContent) === k);
+        const todos = [...document.querySelectorAll('#contenido-detalles .pg-nombre, #contenido-detalles .cargo-nombre, #contenido-detalles .tabla-personal b, #contenido-detalles .extra-item b')];
+        const el = todos.find(e => e.classList.contains('pg-nombre') && clave(e.textContent) === k) || todos.find(e => clave(e.textContent) === k);
         if (!el) return;
         el.closest('details')?.setAttribute('open', '');
-        const box = el.closest('.tarjeta-cargo, tr, .extra-item') || el;
+        const box = el.closest('.tarjeta-cargo, tr, .extra-item, .pg-fila') || el;
         box.classList.add('resaltado-busqueda');
         const panel = document.getElementById('contenido-detalles');
         const top = box.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop - panel.clientHeight / 2;
@@ -1996,6 +2099,14 @@ document.getElementById('buscador').addEventListener('input', e => {
         const h = x.dep ? [...u.hijos.values()].find(h => claveLugar(h.nombre) === claveLugar(x.dep)) : null;
         const o = h || u;
         res.push({ id: o.id, o, nombre: x.persona, motivo: 'Personal', sub: `${ETQ_EXTRA[x.accion]} ${fechaCorta(x.fecha)} · ${h ? h.nombre + ' (UGL ' + u.num + ')' : 'UGL ' + u.num + ' ' + u.nombre}` });
+    }
+    // jefaturas de los personigramas
+    const yaP = new Set(res.filter(r => r.motivo === 'Persona').map(r => clave(r.nombre)));
+    for (const x of pgPersonas()) {
+        const kp = clave(x.persona);
+        if (yaP.has(kp) || !kp.includes(q)) continue;
+        yaP.add(kp);
+        res.push({ id: x.o.id, o: x.o, nombre: x.persona, motivo: 'Persona', sub: `${x.funcion} · UGL ${x.u.num} ${x.u.nombre}` });
     }
     const orden = { UGL: 0, 'Nivel Central': 1, Agencia: 2, Persona: 3, Personal: 4 };
     res.sort((a, b) => orden[a.motivo] - orden[b.motivo]);
@@ -2101,6 +2212,17 @@ document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros
                     const lugar = o.tipo === 'ugl' ? `UGL ${o.num} ${o.nombre}` : o.tipo === 'org' ? o.nombre : `${o.nombre} · UGL ${o.ugl.num}`;
                     res.push({ id, o, texto: p, extra: `${a.cargo.length > 34 ? a.cargo.slice(0, 33) + '…' : a.cargo} · ${lugar}`, puntos: kp.startsWith(q) ? 1.5 : 3.5, persona: true });
                 }
+            }
+        }
+        // jefaturas de los personigramas
+        if (q.length >= 3) {
+            const partes = q.split(' ').filter(Boolean);
+            const ya = new Set(res.filter(r => r.persona).map(r => clave(r.texto)));
+            for (const x of pgPersonas()) {
+                const kp = clave(x.persona);
+                if (ya.has(kp) || !partes.every(t => kp.includes(t))) continue;
+                ya.add(kp);
+                res.push({ id: x.o.id, o: x.o, texto: x.persona, extra: `${x.funcion.length > 34 ? x.funcion.slice(0, 33) + '…' : x.funcion} · UGL ${x.u.num}`, puntos: kp.startsWith(q) ? 1.6 : 3.6, persona: true });
             }
         }
         // personal registrado (menor prioridad que los cargos)
