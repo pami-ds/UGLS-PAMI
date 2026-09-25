@@ -1823,8 +1823,998 @@
    "evento": {
     "accion": "alta",
     "persona": "Mónica Graciela Oliva",
-    "cargo": "Coordinadora (tareas) del Departamento de Atención Domiciliaria",
+    "cargo": "Coordinadora (tareas) en el Departamento de Atención Domiciliaria",
+    "unidad": "GPM-ID",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Secretaría Privada, Ignacio Agustín Gutierrez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Ignacio Agustín Gutierrez",
+    "cargo": "Titular",
+    "unidad": "SECPRIV",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Unidad Auditoría Interna, Cristina Lecco.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Cristina Lecco",
+    "cargo": "Titular",
+    "unidad": "UAI",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Auditor/a Interno/a Adjunto/a, Maria Alejandra Fernandez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Maria Alejandra Fernandez",
+    "cargo": "Titular",
+    "unidad": "UAI-AIA",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Auditoria Prestacional, Myriam Viviana Figueroa.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Myriam Viviana Figueroa",
+    "cargo": "Titular",
+    "unidad": "GAP",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Auditoria Integral de Prestaciones, Graciela Luisa Revuelta.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Graciela Luisa Revuelta",
+    "cargo": "Titular",
+    "unidad": "GAP-AIP",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Seguimiento y Enlace, Juan Manuel Zuccotti Figueroa.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Juan Manuel Zuccotti Figueroa",
+    "cargo": "Titular",
+    "unidad": "GAP-SET",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Asuntos Jurídicos, Adrian Gaston Moro.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Adrian Gaston Moro",
+    "cargo": "Titular",
+    "unidad": "GAJ",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Asuntos Contenciosos y Patrocinio, Jorge Andres Lavayen.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Jorge Andres Lavayen",
+    "cargo": "Titular",
+    "unidad": "GAJ-ACP",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Dictamenes y Contratos, Marcelo Alejandro Leyria.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Marcelo Alejandro Leyria",
+    "cargo": "Titular",
+    "unidad": "GAJ-DC",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Asuntos Jurídicos, Fabiana Elvira Lopez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Fabiana Elvira Lopez",
+    "cargo": "Titular",
+    "unidad": "GAJ-AJ",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Prestaciones Médicas, Nestor Daniel Rodriguez Benegas.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Nestor Daniel Rodriguez Benegas",
+    "cargo": "Titular",
+    "unidad": "GPM",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Prestaciones Médicas, Elizabeth Ana Osterberg.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Elizabeth Ana Osterberg",
+    "cargo": "Titular",
     "unidad": "GPM-PM",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Discapacidad y Salud Mental, Maria Romano.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Maria Romano",
+    "cargo": "Titular",
+    "unidad": "GPM-DSM",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Provisiones Médicas, Diego Ignacio Navarro.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Diego Ignacio Navarro",
+    "cargo": "Titular",
+    "unidad": "GPM-PRM",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Internación Domiciliaria, Mónica Graciela Oliva.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mónica Graciela Oliva",
+    "cargo": "Titular",
+    "unidad": "GPM-ID",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Centro Operativo derivador, Francisco Diego Pedrouzo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Francisco Diego Pedrouzo",
+    "cargo": "Titular",
+    "unidad": "GPM-COD",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Dirección de Atención Médica No Programada y Programada, Damián Leonardo Panessa.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Damián Leonardo Panessa",
+    "cargo": "Titular",
+    "unidad": "GPM-DAM",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Medicamentos, Federico Hoffman.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Federico Hoffman",
+    "cargo": "Titular",
+    "unidad": "GM",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Coordinación General Operativa, Ginette Soulas.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Ginette Soulas",
+    "cargo": "Titular",
+    "unidad": "GM-CGO",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Validación y Control de Medicamentos, Eduardo Woitovich Valetti.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Eduardo Woitovich Valetti",
+    "cargo": "Titular",
+    "unidad": "GM-VC",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Gestión de Compras de Medicamentos, Natalia Regina Costa.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Natalia Regina Costa",
+    "cargo": "Titular",
+    "unidad": "GM-GC",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Auditoria de Medicamentos, Cristian Alberto Fernandez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Cristian Alberto Fernandez",
+    "cargo": "Titular",
+    "unidad": "GM-AM",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Efectores Sanitarios Propios, Alejandro Damian Wittenberg.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Alejandro Damian Wittenberg",
+    "cargo": "Titular",
+    "unidad": "GESP",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Coordinación Administrativo Financiera, Georgina Sheila Odacio.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Georgina Sheila Odacio",
+    "cargo": "Titular",
+    "unidad": "GESP-CAF",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Coordinacion Médica de Efectores, Gisela Roda.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Gisela Roda",
+    "cargo": "Titular",
+    "unidad": "GESP-CME",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Jefatura de Gabinete de Asesores, Damian Rodrigo Gonzalez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Damian Rodrigo Gonzalez",
+    "cargo": "Titular",
+    "unidad": "JGA",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Afiliaciones, Marcelo Villani Guevara Lynch.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Marcelo Villani Guevara Lynch",
+    "cargo": "Titular",
+    "unidad": "JGA-AF",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Seguridad de la Informacion y Activos Digitales, Pedro Daniel Janices.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Pedro Daniel Janices",
+    "cargo": "Titular",
+    "unidad": "GSIAD",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Seguridad de la Informacion y Activos Digitales, Mariana Galán.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mariana Galán",
+    "cargo": "Titular",
+    "unidad": "GSIAD-S",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Comunicación y Relaciones Institucionales, Lucas Nicolas Catalin Malin.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Lucas Nicolas Catalin Malin",
+    "cargo": "Titular",
+    "unidad": "GCRI",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Comunicación Institucional, Julián Ignacio Sosa.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Julián Ignacio Sosa",
+    "cargo": "Titular",
+    "unidad": "GCRI-CI",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Pami Escucha y Responde, Mario Alberto Ferrara.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mario Alberto Ferrara",
+    "cargo": "Titular",
+    "unidad": "GCRI-PER",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Coordinación General de Planeamiento Estratégico, Maria Yamila Pacios.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Maria Yamila Pacios",
+    "cargo": "Titular",
+    "unidad": "CGPE",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Transparencia, Damian Berri.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Damian Berri",
+    "cargo": "Titular",
+    "unidad": "CGPE-T",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Proyectos Especiales e Institucionales, Pablo Andres Ghibaudi.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Pablo Andres Ghibaudi",
+    "cargo": "Titular",
+    "unidad": "CGPE-PEI",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Administración y Coordinación de UGL, Sergio Gabriel Castedo Gonzalez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Sergio Gabriel Castedo Gonzalez",
+    "cargo": "Titular",
+    "unidad": "UGTO-ACU",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Planificación y Fortalecimiento de UGL, Fernando Javier Ferrario.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Fernando Javier Ferrario",
+    "cargo": "Titular",
+    "unidad": "UGTO-PFU",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Veteranos de Guerra, Miguel Angel Ocampo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Miguel Angel Ocampo",
+    "cargo": "Titular",
+    "unidad": "GVG",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Cuidados en la Comunidad, Mariano Moure.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mariano Moure",
+    "cargo": "Titular",
+    "unidad": "GPSYC-CC",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Cuidados Institucionales, Mariela Carina Bianco.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mariela Carina Bianco",
+    "cargo": "Titular",
+    "unidad": "GPSYC-CI",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Relación con las Organizaciones de Jubilados y Pensionados, Romina Soledad Tejada.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Romina Soledad Tejada",
+    "cargo": "Titular",
+    "unidad": "GPSYC-ROJ",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Vinculación y Proyectos Especiales, Myriam Noemi Petrongolo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Myriam Noemi Petrongolo",
+    "cargo": "Titular",
+    "unidad": "GPSYC-VPE",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerenciate de Gerencia de Promoción Social y Comunitaria, Sergio Gerardo Barrionuevo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Sergio Gerardo Barrionuevo",
+    "cargo": "Titular",
+    "unidad": "GPSYC",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Prevención y Participación Comunitaria, Osvaldo Daniel Palazzo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Osvaldo Daniel Palazzo",
+    "cargo": "Titular",
+    "unidad": "GPSYC-PPC",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Promoción Social, Maria Gabriela Mohammad.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Maria Gabriela Mohammad",
+    "cargo": "Titular",
+    "unidad": "GPSYC-PS",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Coordinación Ejecutiva Inssjp de Coordinación Ejecutiva, Pedro Miguel Insausti.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Pedro Miguel Insausti",
+    "cargo": "Titular",
+    "unidad": "CE",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Seguridad Informática, Pablo Antonio Loberto.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Pablo Antonio Loberto",
+    "cargo": "Titular",
+    "unidad": "GTI-SI",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Operaciones, Claudio Villamonte.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Claudio Villamonte",
+    "cargo": "Titular",
+    "unidad": "GTI-OP",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia Económico Financiera, Mauro Andres Arranz.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Mauro Andres Arranz",
+    "cargo": "Titular",
+    "unidad": "GEF",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Coordinación Operativa de Pagos, German Gonzalo Bravo.",
+   "evento": {
+    "accion": "alta",
+    "persona": "German Gonzalo Bravo",
+    "cargo": "Titular",
+    "unidad": "GEF-COP",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Administración Financiera, Matias Carlos Perri.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Matias Carlos Perri",
+    "cargo": "Titular",
+    "unidad": "GEF-AF",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Coordinación de Redeterminación de Precios, Sergio Pistone.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Sergio Pistone",
+    "cargo": "Titular",
+    "unidad": "GEF-RP",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Administración e Infraestructura, Eduardo Agustin Cardeza.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Eduardo Agustin Cardeza",
+    "cargo": "Titular",
+    "unidad": "GAI",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Recursos Físicos, Jose Elias Gomez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Jose Elias Gomez",
+    "cargo": "Titular",
+    "unidad": "GAI-RF",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Compras y Contrataciones, Juan Manuel Fariña.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Juan Manuel Fariña",
+    "cargo": "Titular",
+    "unidad": "GAI-CC",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Control de Gestión y Seguimiento de Contratos, Hernan Alberto Monteleone.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Hernan Alberto Monteleone",
+    "cargo": "Titular",
+    "unidad": "GAI-CGSC",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Infraestructura, Sergio Adrián Bujan.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Sergio Adrián Bujan",
+    "cargo": "Titular",
+    "unidad": "GAI-INF",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Coordinación de Planeamiento, Pablo César Mattiussi.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Pablo César Mattiussi",
+    "cargo": "Titular",
+    "unidad": "GAPR-PL",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Coordinación de Análisis de Transmisión, Victoria Paula Grisolia.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Victoria Paula Grisolia",
+    "cargo": "Titular",
+    "unidad": "GAPR-AT",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Gerente de Gerencia de Recursos Humanos, Carolina Maria Olivera.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Carolina Maria Olivera",
+    "cargo": "Titular",
+    "unidad": "GRRHH",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Asesoramiento Jurídico y Relaciones Laborales, Carla Constanza Ma. del Rosario Bottino.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Carla Constanza Ma. del Rosario Bottino",
+    "cargo": "Titular",
+    "unidad": "GRRHH-AJRL",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Subgerencia de Administración de Recursos Humanos, Ramiro Aguilar.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Ramiro Aguilar",
+    "cargo": "Titular",
+    "unidad": "GRRHH-ARH",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Centro de Capacitación y Formación Continua, Alexis Leonel Ferrari.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Alexis Leonel Ferrari",
+    "cargo": "Titular",
+    "unidad": "GRRHH-CCFC",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Coordinación de Políticas de Seguridad del Instituto, Sergio Omar Andreolli.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Sergio Omar Andreolli",
+    "cargo": "Titular",
+    "unidad": "GRRHH-CPSI",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Coordinación Técnica Legal, Graciela Nelida Radrizani.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Graciela Nelida Radrizani",
+    "cargo": "Titular",
+    "unidad": "SG-CTL",
+    "ugl": null,
+    "dependencia": null
+   }
+  },
+  {
+   "fecha": "2024-04-30",
+   "boletin": "02-05-24.pdf",
+   "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+   "forzar": true,
+   "detalle": "Anexo I (personigrama) de la RESOL-2024-1273: Subgerente de Coordinación Técnica Económica, Sandra Agustina Gonzalez.",
+   "evento": {
+    "accion": "alta",
+    "persona": "Sandra Agustina Gonzalez",
+    "cargo": "Titular",
+    "unidad": "SG-CTE",
     "ugl": null,
     "dependencia": null
    }

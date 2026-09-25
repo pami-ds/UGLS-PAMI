@@ -1,12 +1,12 @@
 {
  "_formato": 2,
  "_meta": {
-  "generado": "2026-09-25T13:40:46",
+  "generado": "2026-09-25T13:54:00",
   "boletines": 2578,
   "desde": "2016-01-04",
   "hasta": "2026-09-23",
-  "eventos": 5320,
-  "eventos_sin_ugl": 1709,
+  "eventos": 5386,
+  "eventos_sin_ugl": 1775,
   "ugl_corregida_por_listado": [
    {
     "fecha": "2016-04-18",
@@ -38417,6 +38417,12 @@
   "SG-CTL": {
    "autoridades": [
     {
+     "cargo": "Titular",
+     "persona": "Graciela Nelida Radrizani",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Departamento Control de Gestión Prestacional Operativa, Técnico y Legal, Coordinación Técnica Legal, Unidad Ejecutiva de Control Legal",
      "persona": "Andrés Persico",
      "desde": "2018-02-09",
@@ -38430,6 +38436,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Graciela Nelida Radrizani",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2018-04-23",
      "norma": "RESOL-2018-351-INSSJP-DE#INSSJP",
@@ -38460,12 +38473,6 @@
      "persona": "Yamila Melina de Murua",
      "desde": "2026-08-27",
      "norma": "RESOL-2026-2666-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Departamento Control de Gestión Administrativa, Presupuestaria y Económico Financiera de la Coordinación Técnica Económica",
-     "persona": "Yamila Melina de Murua",
-     "desde": "2024-08-21",
-     "norma": "RESOL-2024-2393-INSSJP-DE#INSSJP"
     }
    ],
    "historial": [
@@ -38482,12 +38489,33 @@
      "accion": "alta",
      "persona": "Yamila Melina de Murua",
      "cargo": "Departamento Control de Gestión Administrativa, Presupuestaria y Económico Financiera de la Coordinación Técnica Económica"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sandra Agustina Gonzalez",
+     "cargo": "Titular"
     }
    ]
   },
   "SECPRIV": {
-   "autoridades": [],
+   "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Ignacio Agustín Gutierrez",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    }
+   ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Ignacio Agustín Gutierrez",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2017-03-22",
      "norma": "RESOL-2017-367-INSSJP-DE#INSSJP",
@@ -38531,6 +38559,13 @@
      "norma": "RESOL-2026-2360-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Sandra Agustina Gonzalez",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Cristina Lecco",
      "cargo": "Titular"
     },
     {
@@ -38595,6 +38630,25 @@
      "accion": "baja",
      "persona": "Lucas Matías Rueda",
      "cargo": "Jefe del Departamento Auditoría Legal, de la Unidad de Auditoria Interna"
+    }
+   ]
+  },
+  "UAI-AIA": {
+   "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Maria Alejandra Fernandez",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    }
+   ],
+   "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Maria Alejandra Fernandez",
+     "cargo": "Titular"
     }
    ]
   },
@@ -38671,6 +38725,13 @@
      "norma": "RESOL-2026-493-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Damián Rodrigo Gonzalez",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Myriam Viviana Figueroa",
      "cargo": "Titular"
     },
     {
@@ -38836,6 +38897,25 @@
     }
    ]
   },
+  "GAP-AIP": {
+   "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Graciela Luisa Revuelta",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    }
+   ],
+   "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Graciela Luisa Revuelta",
+     "cargo": "Titular"
+    }
+   ]
+  },
   "GAP-SET": {
    "autoridades": [],
    "historial": [
@@ -38845,6 +38925,13 @@
      "accion": "baja",
      "persona": "Juan Manuel Zuccotti Figueroa",
      "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Juan Manuel Zuccotti Figueroa",
+     "cargo": "Titular"
     }
    ]
   },
@@ -38852,9 +38939,9 @@
    "autoridades": [
     {
      "cargo": "Titular",
-     "persona": "Fabiana Elvira Lopez",
-     "desde": "2024-01-11",
-     "norma": "RESOL-2024-49-INSSJP-DE#INSSJP"
+     "persona": "Adrian Gaston Moro",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento Coordinación y Control de Gestión, Gerencia de Asuntos Jurídicos",
@@ -39066,6 +39153,13 @@
      "cargo": "División Análisis y Procesamiento de Información, Gerencia de Asuntos Jurídicos"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Adrian Gaston Moro",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2024-04-26",
      "norma": "RESOL-2024-1149-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -39239,9 +39333,9 @@
    "autoridades": [
     {
      "cargo": "Titular",
-     "persona": "Jorge Andrés Lavayen",
-     "desde": "2024-02-27",
-     "norma": "RESOL-2024-552-INSSJP-DE#INSSJP"
+     "persona": "Jorge Andres Lavayen",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "División Asuntos Contenciosos Administrativos y de la Seguridad Social del Departamento Coordinación de Asuntos Contenciosos, Subgerencia de Asuntos Contenciosos y Patrocinio, Gerencia de Asuntos Jurídicos",
@@ -39281,6 +39375,13 @@
      "accion": "alta",
      "persona": "Daniela Yamila Lopez",
      "cargo": "División Asuntos Penales de la Subgerencia de Asuntos Contenciosos y Patrocinio"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Jorge Andres Lavayen",
+     "cargo": "Titular"
     },
     {
      "fecha": "2024-04-24",
@@ -39380,8 +39481,8 @@
     {
      "cargo": "Titular",
      "persona": "Marcelo Alejandro Leyria",
-     "desde": "2024-01-11",
-     "norma": "RESOL-2024-39-INSSJP-DE#INSSJP"
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Coordinadora en la citada Gerencia, las funciones de titular de la Subgerencia de Dictámenes y Contratos de la Gerencia de Asuntos Jurídicos",
@@ -39397,6 +39498,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Marcelo Alejandro Leyria",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-01-11",
      "norma": "RESOL-2024-39-INSSJP-DE#INSSJP",
@@ -39429,6 +39537,12 @@
   },
   "GAJ-AJ": {
    "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Fabiana Elvira Lopez",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
     {
      "cargo": "Asesora Jurídica en el Departamento Penalidades de la Subgerencia de Asuntos Jurídicos",
      "persona": "Ángela Yanina Davila",
@@ -39467,6 +39581,13 @@
      "accion": "alta",
      "persona": "Ángela Yanina Davila",
      "cargo": "Asesora Jurídica en el Departamento Penalidades de la Subgerencia de Asuntos Jurídicos"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Fabiana Elvira Lopez",
+     "cargo": "Titular"
     },
     {
      "fecha": "2024-01-30",
@@ -39770,6 +39891,13 @@
      "cargo": "Titular"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Damian Rodrigo Gonzalez",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2024-01-31",
      "norma": "RESOL-2024-275-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -39900,6 +40028,12 @@
   "JGA-AF": {
    "autoridades": [
     {
+     "cargo": "Titular",
+     "persona": "Marcelo Villani Guevara Lynch",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "División Operativa de la Subgerencia de Afiliaciones de la Coordinación de Asuntos Públicos e Interdisciplinarios",
      "persona": "Laura Moran Di",
      "desde": "2018-06-29",
@@ -39919,6 +40053,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Marcelo Villani Guevara Lynch",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2020-10-14",
      "norma": "RESOL-2020-2055-INSSJP-DE#INSSJP",
@@ -39979,6 +40120,25 @@
      "accion": "alta",
      "persona": "Analía Susana Garay",
      "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pedro Daniel Janices",
+     "cargo": "Titular"
+    }
+   ]
+  },
+  "GSIAD-S": {
+   "autoridades": [],
+   "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mariana Galán",
+     "cargo": "Titular"
     }
    ]
   },
@@ -39995,12 +40155,6 @@
      "persona": "Leandro Javier Lopez Nenda",
      "desde": "2026-09-02",
      "norma": "RESOL-2026-2746-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Departamento de Comunicación Digital, Gerencia de Comunicación y Relaciones Institucionales",
-     "persona": "Nelson Omar Araujo",
-     "desde": "2024-01-19",
-     "norma": "RESOL-2024-168-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento de Prensa, Gerencia de Comunicación y Relaciones Institucionales",
@@ -40170,6 +40324,13 @@
      "norma": "RESOL-2025-206-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Nelson Omar Araujo",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Lucas Nicolas Catalin Malin",
      "cargo": "Titular"
     },
     {
@@ -40352,6 +40513,13 @@
      "cargo": "Titular"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Julián Ignacio Sosa",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2021-04-14",
      "norma": "RESOL-2021-492-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -40385,12 +40553,6 @@
      "persona": "Gabriel Curetti",
      "desde": "2024-04-08",
      "norma": "RESOL-2024-989-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Subgerencia de Pami Escucha y Responde de la Gerencia de Escucha y Respuesta Activa a Personas Afiliadas",
-     "persona": "Mario Alberto Ferrara",
-     "desde": "2024-01-23",
-     "norma": "RESOL-2024-182-INSSJP-DE#INSSJP"
     }
    ],
    "historial": [
@@ -40406,6 +40568,13 @@
      "norma": "RESOL-2025-2873-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Ariel Néstor Ionno",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mario Alberto Ferrara",
      "cargo": "Titular"
     },
     {
@@ -40515,25 +40684,39 @@
      "accion": "alta",
      "persona": "Agostina Sanguinetti Dopaso",
      "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Maria Yamila Pacios",
+     "cargo": "Titular"
     }
    ]
   },
   "CGPE-T": {
    "autoridades": [
     {
+     "cargo": "Titular",
+     "persona": "Damian Berri",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Departamento de Promoción de la Integridad y la Transparencia, Subgerencia de Transparencia y Mejora de Procesos, Unidad de Innovación y Transparencia",
      "persona": "Carolina Ethel Morales",
      "desde": "2021-03-30",
      "norma": "RESOL-2021-423-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Subgerencia de Transparencia y Mejora de Procesos de la Unidad de Innovación y Transparencia",
-     "persona": "Damián Berri",
-     "desde": "2021-03-30",
-     "norma": "RESOL-2021-422-INSSJP-DE#INSSJP"
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Damian Berri",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2021-03-30",
      "norma": "RESOL-2021-422-INSSJP-DE#INSSJP",
@@ -40557,12 +40740,6 @@
      "persona": "Camila Montes",
      "desde": "2026-03-18",
      "norma": "RESOL-2026-886-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Subgerencia de Proyectos Especiales e Institucionales de la Coordinación General de Planeamiento Estratégico. JGA",
-     "persona": "Eduardo José Castro",
-     "desde": "2025-10-21",
-     "norma": "RESOL-2025-2568-INSSJP-DE#INSSJP"
     }
    ],
    "historial": [
@@ -40592,6 +40769,13 @@
      "norma": "RESOL-2025-294-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Pablo Andrés Ghibaudi",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pablo Andres Ghibaudi",
      "cargo": "Titular"
     }
    ]
@@ -40751,9 +40935,9 @@
    "autoridades": [
     {
      "cargo": "Titular",
-     "persona": "Natalia Jorgensen",
-     "desde": "2019-05-24",
-     "norma": "RESOL-2019-1008-INSSJP-DE#INSSJP"
+     "persona": "Federico Hoffman",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento Administrativo, Gerencia de Medicamentos",
@@ -40859,6 +41043,13 @@
      "accion": "alta",
      "persona": "Mariela Vanesa Encina",
      "cargo": "Departamento Administrativo, Gerencia de Medicamentos"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Federico Hoffman",
+     "cargo": "Titular"
     },
     {
      "fecha": "2022-07-15",
@@ -40986,8 +41177,8 @@
     {
      "cargo": "Titular",
      "persona": "Ginette Soulas",
-     "desde": "2021-07-22",
-     "norma": "RESOL-2021-1015-INSSJP-DE#INSSJP"
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Coordinación General Operativa de la Gerencia de Medicamentos",
@@ -41003,6 +41194,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Ginette Soulas",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2021-07-22",
      "norma": "RESOL-2021-1015-INSSJP-DE#INSSJP",
@@ -41085,12 +41283,6 @@
      "persona": "María Candela Benitez Lopez",
      "desde": "2019-10-11",
      "norma": "RESOL-2019-1645-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Subgerencia de Validación y Control de Medicamentos de la Gerencia de Medicamentos",
-     "persona": "Eduardo Woitovich Valetti",
-     "desde": "2020-09-03",
-     "norma": "RESOL-2020-1929-INSSJP-DE#INSSJP"
     }
    ],
    "historial": [
@@ -41121,6 +41313,13 @@
      "accion": "alta",
      "persona": "Lucas Pernigotti",
      "cargo": "Departamento de Contabilidad de la Subgerencia de Validación y Control de Medicamentos"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Eduardo Woitovich Valetti",
+     "cargo": "Titular"
     },
     {
      "fecha": "2024-04-12",
@@ -41183,6 +41382,12 @@
   "GM-GC": {
    "autoridades": [
     {
+     "cargo": "Titular",
+     "persona": "Natalia Regina Costa",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Jefa del Departamento de Licitaciones de la Subgerencia de Gestión de Compras de Medicamentos",
      "persona": "Elizabeth Soledad Vázquez",
      "desde": "2024-05-13",
@@ -41196,12 +41401,33 @@
      "accion": "alta",
      "persona": "Elizabeth Soledad Vázquez",
      "cargo": "Jefa del Departamento de Licitaciones de la Subgerencia de Gestión de Compras de Medicamentos"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Natalia Regina Costa",
+     "cargo": "Titular"
     }
    ]
   },
   "GM-AM": {
-   "autoridades": [],
+   "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Cristian Alberto Fernandez",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    }
+   ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Cristian Alberto Fernandez",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2021-04-13",
      "norma": "RESOL-2021-487-INSSJP-DE#INSSJP",
@@ -42164,6 +42390,13 @@
      "cargo": "Unidad Orgánica Asesoría Jurídica del Hospital Dr. Bernardo A. Houssay"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Alejandro Damian Wittenberg",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2024-04-29",
      "norma": "RESOL-2024-1237-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -42898,11 +43131,18 @@
     {
      "cargo": "Titular",
      "persona": "Georgina Sheila Odacio",
-     "desde": "2024-01-26",
-     "norma": "RESOL-2024-222-INSSJP-DE#INSSJP"
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Georgina Sheila Odacio",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-01-26",
      "norma": "RESOL-2024-222-INSSJP-DE#INSSJP",
@@ -42954,6 +43194,13 @@
      "fecha": "2024-10-17",
      "norma": "RESOL-2024-2930-INSSJP-DE#INSSJP",
      "accion": "baja",
+     "persona": "Gisela Roda",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
      "persona": "Gisela Roda",
      "cargo": "Titular"
     }
@@ -43184,6 +43431,13 @@
      "cargo": "Titular"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Nestor Daniel Rodriguez Benegas",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2024-01-25",
      "norma": "RESOL-2024-211-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -43280,13 +43534,6 @@
      "accion": "alta",
      "persona": "Analia Verónica Sanguinetti",
      "cargo": "Departamento Administrativo y Despacho de la Gerencia de Prestaciones Médicas"
-    },
-    {
-     "fecha": "2020-04-17",
-     "norma": "RESOL-2020-1276-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Mariana Nadal",
-     "cargo": "Departamento Atención Domiciliaria, Subgerencia de Administración de Prestaciones Médicas, Gerencia de Prestaciones Médicas"
     },
     {
      "fecha": "2020-04-02",
@@ -43399,13 +43646,6 @@
      "accion": "alta",
      "persona": "Andrea Gisela Sanz",
      "cargo": "División de Atención al Afiliado Derivado, Departamento Operativo, Centro Operativo Derivador, Gerencia de Prestaciones Médicas"
-    },
-    {
-     "fecha": "2019-07-02",
-     "norma": "RESOL-2019-1217-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Diego Horacio Jakob",
-     "cargo": "Departamento Atención Domiciliaria, Subgerencia de Administración de Prestaciones Médicas, Gerencia de Prestaciones Médicas"
     },
     {
      "fecha": "2019-06-28",
@@ -43587,46 +43827,19 @@
   "GPM-PM": {
    "autoridades": [
     {
-     "cargo": "Coordinadora (tareas) del Departamento de Atención Domiciliaria",
-     "persona": "Mónica Graciela Oliva",
-     "desde": "2024-02-01",
-     "norma": "RESOL-2024-284-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Departamento de Atención Domiciliaria",
-     "persona": "Gabriela Fernanda Alfano",
-     "desde": "2026-08-11",
-     "norma": "RESOL-2026-2440-INSSJP-DE#INSSJP"
+     "cargo": "Titular",
+     "persona": "Elizabeth Ana Osterberg",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     }
    ],
    "historial": [
     {
-     "fecha": "2026-08-11",
-     "norma": "RESOL-2026-2437-INSSJP-DE#INSSJP",
-     "accion": "baja",
-     "persona": "María Alejandra Carrizo",
-     "cargo": "Departamento de Atención Domiciliaria"
-    },
-    {
-     "fecha": "2026-08-11",
-     "norma": "RESOL-2026-2440-INSSJP-DE#INSSJP",
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
      "accion": "alta",
-     "persona": "Gabriela Fernanda Alfano",
-     "cargo": "Departamento de Atención Domiciliaria"
-    },
-    {
-     "fecha": "2025-03-25",
-     "norma": "RESOL-2025-585-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "María Alejandra Carrizo",
-     "cargo": "Departamento de Atención Domiciliaria, Subgerencia de Prestaciones Médicas"
-    },
-    {
-     "fecha": "2024-02-01",
-     "norma": "RESOL-2024-284-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Mónica Graciela Oliva",
-     "cargo": "Coordinadora (tareas) del Departamento de Atención Domiciliaria"
+     "persona": "Elizabeth Ana Osterberg",
+     "cargo": "Titular"
     }
    ]
   },
@@ -43634,9 +43847,9 @@
    "autoridades": [
     {
      "cargo": "Titular",
-     "persona": "María Romano Lasfunciones de",
-     "desde": "2024-02-07",
-     "norma": "RESOL-2024-347-INSSJP-DE#INSSJP"
+     "persona": "Maria Romano",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento Discapacidad de la Subgerencia de Discapacidad y Salud Mental de la Gerencia de Prestaciones Médicas, de la Secretaría de Políticas Sanitarias",
@@ -43652,6 +43865,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Maria Romano",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-04-05",
      "norma": "RESOL-2024-955-INSSJP-DE#INSSJP",
@@ -43734,6 +43954,12 @@
   "GPM-PRM": {
    "autoridades": [
     {
+     "cargo": "Titular",
+     "persona": "Diego Ignacio Navarro",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Coordinadora de la Subgerencia de Provisiones Médicas",
      "persona": "Sabrina Giselle Gómez",
      "desde": "2025-06-23",
@@ -43747,11 +43973,91 @@
      "accion": "alta",
      "persona": "Sabrina Giselle Gómez",
      "cargo": "Coordinadora de la Subgerencia de Provisiones Médicas"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Diego Ignacio Navarro",
+     "cargo": "Titular"
+    }
+   ]
+  },
+  "GPM-ID": {
+   "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Mónica Graciela Oliva",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
+    {
+     "cargo": "Departamento de Atención Domiciliaria",
+     "persona": "Gabriela Fernanda Alfano",
+     "desde": "2026-08-11",
+     "norma": "RESOL-2026-2440-INSSJP-DE#INSSJP"
+    }
+   ],
+   "historial": [
+    {
+     "fecha": "2026-08-11",
+     "norma": "RESOL-2026-2437-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "María Alejandra Carrizo",
+     "cargo": "Departamento de Atención Domiciliaria"
+    },
+    {
+     "fecha": "2026-08-11",
+     "norma": "RESOL-2026-2440-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Gabriela Fernanda Alfano",
+     "cargo": "Departamento de Atención Domiciliaria"
+    },
+    {
+     "fecha": "2025-03-25",
+     "norma": "RESOL-2025-585-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "María Alejandra Carrizo",
+     "cargo": "Departamento de Atención Domiciliaria, Subgerencia de Prestaciones Médicas"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mónica Graciela Oliva",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-02-01",
+     "norma": "RESOL-2024-284-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mónica Graciela Oliva",
+     "cargo": "Coordinadora (tareas) en el Departamento de Atención Domiciliaria"
+    },
+    {
+     "fecha": "2020-04-17",
+     "norma": "RESOL-2020-1276-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mariana Nadal",
+     "cargo": "Departamento Atención Domiciliaria, Subgerencia de Administración de Prestaciones Médicas, Gerencia de Prestaciones Médicas"
+    },
+    {
+     "fecha": "2019-07-02",
+     "norma": "RESOL-2019-1217-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Diego Horacio Jakob",
+     "cargo": "Departamento Atención Domiciliaria, Subgerencia de Administración de Prestaciones Médicas, Gerencia de Prestaciones Médicas"
     }
    ]
   },
   "GPM-COD": {
    "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Francisco Diego Pedrouzo",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
     {
      "cargo": "Departamento de Análisis Estadístico y Control de Gestión, del Centro Operativo Derivador (CODE)",
      "persona": "Romina Magalí Navarro",
@@ -43760,6 +44066,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Francisco Diego Pedrouzo",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-01-26",
      "norma": "RESOL-2024-231-INSSJP-DE#INSSJP",
@@ -43802,8 +44115,8 @@
     {
      "cargo": "Titular",
      "persona": "Damián Leonardo Panessa",
-     "desde": "2024-01-12",
-     "norma": "RESOL-2024-81-INSSJP-DE#INSSJP"
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Coordinación General de la DAMNPyP",
@@ -44011,6 +44324,13 @@
      "accion": "baja",
      "persona": "Bárbara Magalí Gauna",
      "cargo": "Jefa del Departamento Control de Calidad, Dirección de Atención Médica No Programada y Programada"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Damián Leonardo Panessa",
+     "cargo": "Titular"
     },
     {
      "fecha": "2024-03-27",
@@ -44800,8 +45120,8 @@
     {
      "cargo": "Titular",
      "persona": "Sergio Gabriel Castedo Gonzalez",
-     "desde": "2016-08-23",
-     "norma": "RESOL-2016-1555-INSSJP-DE#INSSJP"
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento de Gestión de Vehículos, Subgerencia de Administración y Coordinación de UGL",
@@ -44823,6 +45143,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sergio Gabriel Castedo Gonzalez",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-03-27",
      "norma": "RESOL-2024-903-INSSJP-DE#INSSJP",
@@ -44870,12 +45197,6 @@
   "UGTO-PFU": {
    "autoridades": [
     {
-     "cargo": "Titular",
-     "persona": "Félix Vicente",
-     "desde": "2020-10-06",
-     "norma": "RESOL-2020-2043-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Departamento Análisis de Procesos de UGL, Subgerencia de Planificación y Fortalecimiento de UGL, Gerencia de Planificación y Administración de UGL",
      "persona": "María Alejandra Fernandez",
      "desde": "2019-02-12",
@@ -44893,6 +45214,13 @@
      "fecha": "2026-03-03",
      "norma": "RESOL-2026-728-INSSJP-DE#INSSJP",
      "accion": "baja",
+     "persona": "Fernando Javier Ferrario",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
      "persona": "Fernando Javier Ferrario",
      "cargo": "Titular"
     },
@@ -45182,18 +45510,6 @@
      "norma": "RESOL-2026-1058-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Departamento Control de Gestión",
-     "persona": "Mariana Jaqueline Peñaloza",
-     "desde": "2026-04-07",
-     "norma": "RESOL-2026-1057-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Departamento Prestacional",
-     "persona": "Néstor Román Robles",
-     "desde": "2026-04-07",
-     "norma": "RESOL-2026-1062-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Departamento Unidad Administrativa",
      "persona": "Norma Beatriz Ru",
      "desde": "2026-04-07",
@@ -45268,6 +45584,13 @@
      "accion": "alta",
      "persona": "Néstor Román Robles",
      "cargo": "Departamento Prestacional"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Miguel Angel Ocampo",
+     "cargo": "Titular"
     },
     {
      "fecha": "2024-02-07",
@@ -45581,6 +45904,13 @@
      "cargo": "Titular"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sergio Gerardo Barrionuevo",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2021-04-29",
      "norma": "RESOL-2021-567-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -45852,9 +46182,9 @@
    "autoridades": [
     {
      "cargo": "Titular",
-     "persona": "Joaquín López Casalá",
-     "desde": "2020-09-09",
-     "norma": "RESOL-2020-1945-INSSJP-DE#INSSJP"
+     "persona": "Osvaldo Daniel Palazzo",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "División Despacho, Subgerencia de Prevención y Participación Comunitaria, Gerencia de Promoción Social y Comunitaria",
@@ -45889,6 +46219,13 @@
      "accion": "alta",
      "persona": "Gloria Elsa Yaria",
      "cargo": "División Miniturismo"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Osvaldo Daniel Palazzo",
+     "cargo": "Titular"
     },
     {
      "fecha": "2021-04-29",
@@ -45984,8 +46321,22 @@
    ]
   },
   "GPSYC-PS": {
-   "autoridades": [],
+   "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Maria Gabriela Mohammad",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    }
+   ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Maria Gabriela Mohammad",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2019-12-10",
      "norma": "RESOL-2019-1975-INSSJP-DE#INSSJP",
@@ -46027,6 +46378,13 @@
      "cargo": "Titular"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mariano Moure",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2024-02-14",
      "norma": "RESOL-2024-402-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -46054,8 +46412,8 @@
     {
      "cargo": "Titular",
      "persona": "Mariela Carina Bianco",
-     "desde": "2024-03-11",
-     "norma": "RESOL-2024-661-INSSJP-DE#INSSJP"
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Sector Dirección de Residencia Avelino Lottici de la División Unidad de Gestión de Residencias Propias, Subgerencia de Cuidados Institucionales, Gerencia de Políticas de Cuidado",
@@ -46065,6 +46423,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mariela Carina Bianco",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-03-11",
      "norma": "RESOL-2024-661-INSSJP-DE#INSSJP",
@@ -46085,9 +46450,9 @@
    "autoridades": [
     {
      "cargo": "Titular",
-     "persona": "Juan Manuel Hernandez",
-     "desde": "2017-06-23",
-     "norma": "RESOL-2017-592-INSSJP-DE#INSSJP"
+     "persona": "Romina Soledad Tejada",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "División Relación con Consejeros del Instituto, del Departamento de Relación y Comunicación con las Organizaciones de Jubilados y Pensionados, de la Subgerencia de Relación con las Organizaciones de Jubilados y Pensionados, Gerencia de Promoción Social y Comunitaria",
@@ -46109,6 +46474,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Romina Soledad Tejada",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2019-11-07",
      "norma": "RESOL-2019-1832-INSSJP-DE#INSSJP",
@@ -46161,6 +46533,13 @@
      "norma": "RESOL-2025-811-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Juan Ignacio Morel",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Myriam Noemi Petrongolo",
      "cargo": "Titular"
     }
    ]
@@ -46274,6 +46653,13 @@
      "accion": "alta",
      "persona": "Leslie Monaldi",
      "cargo": "Jefa del Departamento Contrataciones de Bienes, Servicios y obras"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pedro Miguel Insausti",
+     "cargo": "Titular"
     }
    ]
   },
@@ -46497,11 +46883,37 @@
      "cargo": "Titular"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pablo Antonio Loberto",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2016-08-10",
      "norma": "RESOL-2016-1459-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Luciano Valentín Dicono",
      "cargo": "Subgerencia de Seguridad Informática de la Gerencia de Infraestructura Tecnológica"
+    }
+   ]
+  },
+  "GTI-OP": {
+   "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Claudio Villamonte",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    }
+   ],
+   "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Claudio Villamonte",
+     "cargo": "Titular"
     }
    ]
   },
@@ -46531,12 +46943,6 @@
      "persona": "Federico Miguel Lofaro",
      "desde": "2026-06-30",
      "norma": "RESOL-2026-1990-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Coordinador en la Gerencia Económico Financiera",
-     "persona": "Carlos Ariel Avila",
-     "desde": "2020-07-06",
-     "norma": "RESOL-2020-1728-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento Asesoría Jurídica y Despacho",
@@ -46765,6 +47171,13 @@
      "accion": "alta",
      "persona": "Pablo Damián Pianelli",
      "cargo": "Sector Análisis e Informes de la División Cuentas Corrientes de la Gerencia Económico Financiera"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Mauro Andres Arranz",
+     "cargo": "Titular"
     },
     {
      "fecha": "2024-04-12",
@@ -47038,6 +47451,13 @@
      "cargo": "Titular"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "German Gonzalo Bravo",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2024-01-05",
      "norma": "RESOL-2024-11-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -47055,6 +47475,12 @@
   },
   "GEF-AF": {
    "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Matias Carlos Perri",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
     {
      "cargo": "Departamento Auditoría de Facturación, Subgerencia de Administración Financiera, Gerencia Económico Financiera",
      "persona": "Edmundo Saladino",
@@ -47098,12 +47524,6 @@
      "norma": "RESOL-2019-1338-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Subgerencia de Administración Financiera de la Gerencia Económico Financiera",
-     "persona": "Matías Carlos Perri",
-     "desde": "2024-01-05",
-     "norma": "RESOL-2024-12-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Titular Sector Liquidación Proveedores, División Liquidación de Proveedores y Prestaciones Sociocomunitarias, Departamento Cuentas a Pagar, Subgerencia de Administración Financiera, Gerencia Económico Financiera",
      "persona": "Patricio Agustín Garcia Chapuis",
      "desde": "2019-08-05",
@@ -47111,6 +47531,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Matias Carlos Perri",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-01-05",
      "norma": "RESOL-2024-12-INSSJP-DE#INSSJP",
@@ -47253,6 +47680,25 @@
     }
    ]
   },
+  "GEF-RP": {
+   "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Sergio Pistone",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    }
+   ],
+   "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sergio Pistone",
+     "cargo": "Titular"
+    }
+   ]
+  },
   "GAI": {
    "autoridades": [
     {
@@ -47296,6 +47742,13 @@
      "accion": "alta",
      "persona": "Florencia Daniela Suarez",
      "cargo": "Jefa del Sector Unidad Administrativa de la Gerencia de Administración e Infraestructura"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Eduardo Agustin Cardeza",
+     "cargo": "Titular"
     }
    ]
   },
@@ -47303,9 +47756,9 @@
    "autoridades": [
     {
      "cargo": "Titular",
-     "persona": "Julián Basteiro",
-     "desde": "2021-03-10",
-     "norma": "RESOL-2021-323-INSSJP-DE#INSSJP"
+     "persona": "Jose Elias Gomez",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento Automotores, Subgerencia de Recursos Físicos, Gerencia de Administración",
@@ -47356,12 +47809,6 @@
      "norma": "RESOL-2022-1380-INSSJP-DE#INSSJP"
     },
     {
-     "cargo": "Subgerencia de Recursos Físicos de la Gerencia de Administración",
-     "persona": "José Elías Gomez",
-     "desde": "2024-01-12",
-     "norma": "RESOL-2024-73-INSSJP-DE#INSSJP"
-    },
-    {
      "cargo": "Titular División Registro y Control de Procesos, Departamento Coordinación Técnica y Administrativa, Subgerencia de Recursos Físicos, Gerencia de Administración",
      "persona": "Diego Gabriel Liffourrena",
      "desde": "2021-03-12",
@@ -47369,6 +47816,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Jose Elias Gomez",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-03-26",
      "norma": "RESOL-2024-900-INSSJP-DE#INSSJP",
@@ -47516,8 +47970,8 @@
     {
      "cargo": "Titular",
      "persona": "Juan Manuel Fariña",
-     "desde": "2024-01-12",
-     "norma": "RESOL-2024-74-INSSJP-DE#INSSJP"
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "División Traslados, Subgerencia de Compras y Contrataciones, de la Gerencia de Administración",
@@ -47533,6 +47987,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Juan Manuel Fariña",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-01-12",
      "norma": "RESOL-2024-74-INSSJP-DE#INSSJP",
@@ -47612,6 +48073,25 @@
     }
    ]
   },
+  "GAI-CGSC": {
+   "autoridades": [
+    {
+     "cargo": "Titular",
+     "persona": "Hernan Alberto Monteleone",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    }
+   ],
+   "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Hernan Alberto Monteleone",
+     "cargo": "Titular"
+    }
+   ]
+  },
   "GAI-PP": {
    "autoridades": [
     {
@@ -47635,9 +48115,9 @@
    "autoridades": [
     {
      "cargo": "Titular",
-     "persona": "Facundo Cadavid",
-     "desde": "2021-03-12",
-     "norma": "RESOL-2021-330-INSSJP-DE#INSSJP"
+     "persona": "Sergio Adrián Bujan",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento Coordinación Operativa de la Subgerencia de Infraestructura, Gerencia de Proyectos de Modernización de Infraestructura",
@@ -47671,6 +48151,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sergio Adrián Bujan",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2022-10-28",
      "norma": "RESOL-2022-1310-INSSJP-DE#INSSJP",
@@ -47793,6 +48280,12 @@
   "GAPR-PL": {
    "autoridades": [
     {
+     "cargo": "Titular",
+     "persona": "Pablo César Mattiussi",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Departamento Implementación de Operaciones, Coordinación de Planeamiento, Gerencia Análisis de Procesos Retributivos",
      "persona": "Gisela Elizabeth Sola",
      "desde": "2019-07-22",
@@ -47818,6 +48311,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Pablo César Mattiussi",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-04-15",
      "norma": "RESOL-2024-130-INSSJP-DE#INSSJP",
@@ -47893,6 +48393,12 @@
   "GAPR-AT": {
    "autoridades": [
     {
+     "cargo": "Titular",
+     "persona": "Victoria Paula Grisolia",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Departamento Servicios de Análisis y Validación de la Coordinación de Análisis de Transmisión",
      "persona": "María Verónica Santo",
      "desde": "2025-05-28",
@@ -47906,6 +48412,13 @@
      "accion": "alta",
      "persona": "María Verónica Santo",
      "cargo": "Departamento Servicios de Análisis y Validación de la Coordinación de Análisis de Transmisión"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Victoria Paula Grisolia",
+     "cargo": "Titular"
     },
     {
      "fecha": "2016-12-14",
@@ -48030,6 +48543,13 @@
      "cargo": "Sector Analisis e Informes Zona Metropolitana"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carolina Maria Olivera",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2024-01-15",
      "norma": "RESOL-2024-108-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -48140,9 +48660,9 @@
    "autoridades": [
     {
      "cargo": "Titular",
-     "persona": "Carla Constanza María del Rosario Bottino",
-     "desde": "2023-03-31",
-     "norma": "RESOL-2023-411-INSSJP-DE#INSSJP"
+     "persona": "Carla Constanza Ma. del Rosario Bottino",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento Relaciones Laborales de la Subgerencia de Asesoramiento Jurídico y Relaciones Laborales, Secretaría General de Administración",
@@ -48152,6 +48672,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Carla Constanza Ma. del Rosario Bottino",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-01-15",
      "norma": "RESOL-2024-110-INSSJP-DE#INSSJP",
@@ -48241,6 +48768,13 @@
      "cargo": "Titular"
     },
     {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Ramiro Aguilar",
+     "cargo": "Titular"
+    },
+    {
      "fecha": "2024-01-11",
      "norma": "RESOL-2024-51-INSSJP-DE#INSSJP",
      "accion": "baja",
@@ -48294,10 +48828,10 @@
   "GRRHH-CCFC": {
    "autoridades": [
     {
-     "cargo": "Centro de Capacitación y Formación Continua de la Gerencia de Recursos Humanos",
+     "cargo": "Titular",
      "persona": "Alexis Leonel Ferrari",
-     "desde": "2024-01-22",
-     "norma": "RESOL-2024-176-INSSJP-DE#INSSJP"
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Departamento de Registro y Evaluación de la Capacitación, del Centro de Capacitación y Formación Contínua, Gerencia de Recursos Humanos",
@@ -48331,6 +48865,13 @@
     }
    ],
    "historial": [
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Alexis Leonel Ferrari",
+     "cargo": "Titular"
+    },
     {
      "fecha": "2024-01-22",
      "norma": "RESOL-2024-176-INSSJP-DE#INSSJP",
@@ -48399,6 +48940,12 @@
   "GRRHH-CPSI": {
    "autoridades": [
     {
+     "cargo": "Titular",
+     "persona": "Sergio Omar Andreolli",
+     "desde": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Jefe del Departamento Operativo de la Unidad de Coordinación de Políticas de Seguridad del Instituto",
      "persona": "Diego Nicolás Toledo y Lopez",
      "desde": "2024-02-29",
@@ -48411,6 +48958,13 @@
      "norma": "RESOL-2026-1989-INSSJP-DE#INSSJP",
      "accion": "baja",
      "persona": "Sergio Oscar Andreolli",
+     "cargo": "Titular"
+    },
+    {
+     "fecha": "2024-04-30",
+     "norma": "RESOL-2024-1273-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sergio Omar Andreolli",
      "cargo": "Titular"
     },
     {

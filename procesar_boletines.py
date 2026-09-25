@@ -783,6 +783,10 @@ def ubicar_central(cargo, unidades):
     return None, visible
 
 
+# El Departamento de Atención Domiciliaria depende de la Subgerencia de Internación Domiciliaria (GPM)
+AREA_A_UNIDAD = [(r"(?:Atenci|Antenci)[oó]n\s+Domiciliaria|Internaci[oó]n\s+Domiciliaria", "GPM-ID")]
+
+
 def nucleo_cargo(c):
     """'Departamento de Atención Domiciliaria, Subgerencia de ...' -> 'DEPARTAMENTO ATENCION DOMICILIARIA'"""
     k = clave(re.split(r",|\.|\s+(?:de\s+la|del)\s+(?:Subgerencia|Gerencia|Coordinaci|Direcci|Unidad|Secretar)", c or "", flags=re.I)[0])
@@ -819,6 +823,10 @@ def construir_central(eventos):
         cargo = re.sub(r"^(L|Tutlar del|Titular del?)\s+(?=[A-Z])", "", cargo)
         e = dict(e, persona=re.sub(r"^(Al|A la)\s+Se[ñn]or(a)?\s+", "", e["persona"], flags=re.I))
         uid, visible = ubicar_central(cargo, unidades) if cargo else (None, "")
+        # áreas que dependen de una unidad aunque el boletín nombre a la de arriba
+        for rx, destino_uid in AREA_A_UNIDAD:
+            if uid and visible and re.search(rx, visible, re.I) and (uid == destino_uid.split("-")[0] or uid.startswith(destino_uid.split("-")[0] + "-")):
+                uid = destino_uid
         if e.get("unidad"):                                   # evento cargado a mano con su unidad
             uid, visible = e["unidad"], e.get("cargo") or visible
         visible = (visible or "").replace("Antención", "Atención")
@@ -839,6 +847,10 @@ def construir_central(eventos):
                     continue
                 for kc in [k for k, v in aut.items() if mismo_puesto(visible, v["cargo"])]:
                     del aut[kc]
+            if clave_cargo(visible) in ("TITULAR", "JEFEUGL") or visible == "Titular":
+                # quien pasa a ser titular de la unidad deja los otros cargos que tenía en ella (p. ej. coordinadora -> subgerente)
+                for kc in [k for k, v in destino.items() if clave(v["persona"]) == clave(e["persona"])]:
+                    del destino[kc]
             destino[clave_cargo(visible) or "TITULAR"] = {"cargo": visible[:1].upper() + visible[1:], "persona": e["persona"], "desde": e["fecha"], "norma": e["norma"]}
         elif e["accion"] == "baja":
             kp = clave(e["persona"])

@@ -232,3 +232,6 @@ Para actualizar:
 python descargar_catalogo.py        # baja los resúmenes a catalogo_pami.json (necesita acceso a pami.org.ar)
 python procesar_catalogo.py         # genera datos_extra.json
 ```
+
+### Anexos que no están en el texto del boletín
+Algunas designaciones se publican solo como anexo PDF de la resolución (por ejemplo el personigrama de la nueva estructura de 2024, RESOL-2024-1273, que asignó a los 73 gerentes y subgerentes). Esas designaciones se cargaron en `normas_faltantes.json` como eventos explícitos (`"evento": {...}` con la `unidad` del organigrama).

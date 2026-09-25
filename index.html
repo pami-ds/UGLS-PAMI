@@ -1050,6 +1050,10 @@ function nodoOrg(o) {
 // Organigrama radial dentro del anillo de UGLs: cada unidad recibe una porción del círculo
 // proporcional a la cantidad de dependencias que tiene (así las ramas no se cruzan).
 const RADIOS_ORG = [0, 240, 390, 510, 610];   // todo el organigrama entra dentro del anillo de UGLs
+const ANILLO_UGL = () => (modelo?.ugls || []).map((u, i, a) => {
+    const ang = -Math.PI / 2 + (2 * Math.PI * i) / a.length;
+    return { x: Math.cos(ang) * R_UGL, y: Math.sin(ang) * R_UGL };
+});
 function layoutOrg() {
     const pos = {};
     const raiz = modelo.org?.get('CENTRAL');
@@ -1060,16 +1064,28 @@ function layoutOrg() {
         // Desde el tercer nivel, las dependencias se apilan en una columna al costado de su unidad:
         // en el abanico radial no hay lugar y los nombres (que son largos) quedaban encimados.
         if (prof >= 3 && pos[o.id] && o.hijos.length) {
-            const base = pos[o.id], ref = (o.padre && pos[o.padre.id]) || { x: 0 }, dir = base.x >= ref.x ? 1 : -1, SEP_Y = 44, DX = 270;
-            const n = o.hijos.length;
-            // la columna se corre hacia el centro si se mete en el anillo de las UGL
-            let dy = 0;
-            const lejos = d => Math.max(...o.hijos.map((_, i) => Math.hypot(base.x + dir * DX, base.y + (i - (n - 1) / 2) * SEP_Y + d)));
-            for (let k = 0; k < 30 && lejos(dy) > R_UGL - 90; k++) dy += base.y > 0 ? -20 : 20;
-            o.hijos.forEach((h, i) => {
-                pos[h.id] = { x: base.x + dir * DX, y: base.y + (i - (n - 1) / 2) * SEP_Y + dy };
-                ubicar(h, 0, 0, prof + 1);
-            });
+            // Se prueban varias ubicaciones (a izquierda o derecha, más cerca o más lejos, más arriba o más abajo)
+            // y se elige la que menos se superpone con lo ya dibujado y no se mete en el anillo de las UGL.
+            const base = pos[o.id], n = o.hijos.length, SEP_Y = 40;
+            // Al desplegar, lo que no pertenece a la rama queda atenuado: pisar esas etiquetas molesta poco,
+            // pero hay que evitar a toda costa la rama propia, PAMI Nivel Central y el anillo de UGL (que sigue brillante).
+            const rama = new Set(); for (let x = o; x; x = x.padre) rama.add(x.id);
+            const fuertes = [{ x: 0, y: 0 }, ...[...rama].map(id => pos[id]).filter(Boolean)];
+            const debiles = Object.entries(pos).filter(([id]) => !rama.has(id)).map(([, q]) => q);
+            let mejor = null;
+            for (const dir of [-1, 1]) for (const DX of [170, 230, 290, 350]) for (let dy = -280; dy <= 280; dy += 40) {
+                const pts = o.hijos.map((_, i) => ({ x: base.x + dir * DX, y: base.y + (i - (n - 1) / 2) * SEP_Y + dy }));
+                let costo = Math.abs(dy) / 120 + DX / 250;
+                for (const p of pts) {
+                    const r = Math.hypot(p.x, p.y);
+                    if (r > R_UGL - 190) costo += 8 + (r - (R_UGL - 190)) / 8;
+                    if (r < 190) costo += 12;
+                    for (const q of fuertes) if (q !== base && Math.abs(q.x - p.x) < 240 && Math.abs(q.y - p.y) < 40) costo += 10;
+                    for (const q of debiles) if (Math.abs(q.x - p.x) < 200 && Math.abs(q.y - p.y) < 30) costo += 0.6;
+                }
+                if (!mejor || costo < mejor.costo) mejor = { costo, pts };
+            }
+            o.hijos.forEach((h, i) => { pos[h.id] = mejor.pts[i]; ubicar(h, 0, 0, prof + 1); });
             return;
         }
         const total = o.hijos.reduce((t, h) => t + hojas(h), 0);
@@ -1124,10 +1140,10 @@ let POS_GUARDADAS = {};
 try { POS_GUARDADAS = JSON.parse(localStorage.getItem(CLAVE_POS)) || {}; } catch (e) { POS_GUARDADAS = {}; }
 // El organigrama cambió de disposición: se descartan las posiciones viejas de sus nodos (una sola vez)
 try {
-    if (!localStorage.getItem('graffo_org_layout_v4')) {
+    if (!localStorage.getItem('graffo_org_layout_v8')) {
         for (const k of Object.keys(POS_GUARDADAS)) if (k.startsWith('ORG-')) delete POS_GUARDADAS[k];
         localStorage.setItem(CLAVE_POS, JSON.stringify(POS_GUARDADAS));
-        localStorage.setItem('graffo_org_layout_v4', '1');
+        localStorage.setItem('graffo_org_layout_v8', '1');
     }
 } catch (e) {}
 function guardarPosiciones() {
@@ -1601,7 +1617,7 @@ function mostrarUGL(u) {
 
 // Aclaraciones sobre unidades puntuales (lo que se sabe aunque no haya designación publicada)
 const NOTAS_ORG = {
-    'GPM-ID': `La designación de su titular no aparece en ningún boletín de 2016 a 2026 ni en el buscador de PAMI, aunque una resolución de abril de 2025 menciona a "la titular de la Subgerencia". Desde 2024 se publican contrataciones de personal para esta Subgerencia y en agosto de 2026 pidió reestructurar el <a onclick="seleccionar('ORG-GPM-PM')">Departamento de Atención Domiciliaria</a>, hoy a cargo de Gabriela Fernanda Alfano.`
+    'GPM-ID': `<b>Cómo se formó:</b> hasta 2024 la internación domiciliaria se manejaba desde el <i>Departamento de Atención Domiciliaria</i> de la Subgerencia de Administración de Prestaciones Médicas. El 01/02/2024 Mónica Graciela Oliva entró como Coordinadora de ese Departamento (RESOL-2024-284). El 30/04/2024 la nueva estructura del Instituto (RESOL-2024-1272) creó esta <b>Subgerencia de Internación Domiciliaria</b> y ese mismo día Oliva fue asignada como <b>Subgerente</b> (RESOL-2024-1273, Anexo I). Ese anexo no está en el texto del boletín, por eso no aparecía. Hoy el Departamento de Atención Domiciliaria depende de esta Subgerencia y está a cargo de Gabriela Fernanda Alfano (RESOL-2026-2440).`
 };
 
 function mostrarOrg(o) {
