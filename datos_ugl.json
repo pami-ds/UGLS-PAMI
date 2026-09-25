@@ -1,12 +1,35 @@
 {
  "_formato": 2,
  "_meta": {
-  "generado": "2026-09-24T19:45:23",
+  "generado": "2026-09-24T19:58:20",
   "boletines": 1610,
   "desde": "2020-01-02",
   "hasta": "2026-09-23",
   "eventos": 3854,
-  "eventos_sin_ugl": 1133
+  "eventos_sin_ugl": 1129,
+  "ugl_corregida_por_listado": [
+   {
+    "fecha": "2020-05-08",
+    "norma": "RESOL-2020-1386-INSSJP-DE#INSSJP",
+    "agencia": "Santa Clara del Mar",
+    "boletin_decia": "XV",
+    "corregida_a": "XI"
+   },
+   {
+    "fecha": "2021-03-04",
+    "norma": "RESOL-2021-269-INSSJP-DE#INSSJP",
+    "agencia": "Monte Quemado",
+    "boletin_decia": "XXXII",
+    "corregida_a": "XIX"
+   },
+   {
+    "fecha": "2024-07-01",
+    "norma": "RESOL-2024-1767-INSSJP-DE#INSSJP",
+    "agencia": "Caleta Olivia",
+    "boletin_decia": "XVII",
+    "corregida_a": "XXVIII"
+   }
+  ]
  },
  "ugls": {
   "I": {
@@ -4572,6 +4595,12 @@
      "norma": "RESOL-2026-1904-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Titular de la División Operativa",
+     "persona": "Noelia Fiadaron",
+     "desde": "2025-11-04",
+     "norma": "RESOL-2025-2688-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Titular de la División de Auditoria Prestacional",
      "persona": "Ignacio Rafael Llinares Paries",
      "desde": "2024-07-26",
@@ -4878,6 +4907,14 @@
      "accion": "baja",
      "persona": "Eugenia Arditti",
      "cargo": "Titular del Departamento Asistencia Informativa",
+     "agencia": null
+    },
+    {
+     "fecha": "2025-11-04",
+     "norma": "RESOL-2025-2688-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Noelia Fiadaron",
+     "cargo": "Titular de la División Operativa",
      "agencia": null
     },
     {
@@ -5719,14 +5756,6 @@
      "accion": "baja",
      "persona": "María Azagra",
      "cargo": "Titular del Departamento de Apoyo a las Comisiones Evaluadoras",
-     "agencia": null
-    },
-    {
-     "fecha": "2026-03-19",
-     "norma": "RESOL-2026-907-INSSJP-DE#INSSJP",
-     "accion": "baja",
-     "persona": "Leticia Laura Mantel",
-     "cargo": "Titular de la División Médica PAMI 7",
      "agencia": null
     },
     {
@@ -11175,6 +11204,14 @@
      "agencia": "Coronel Vidal"
     },
     {
+     "fecha": "2020-05-08",
+     "norma": "RESOL-2020-1386-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Melina Selene Acosta",
+     "cargo": "Titular",
+     "agencia": "Santa Clara del Mar"
+    },
+    {
      "fecha": "2020-04-02",
      "norma": "RESOL-2020-1136-INSSJP-DE#INSSJP",
      "accion": "alta",
@@ -13609,17 +13646,6 @@
       }
      ]
     },
-    "Santa Clara del Mar": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Melina Selene Acosta",
-       "desde": "2020-05-08",
-       "norma": "RESOL-2020-1386-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
     "Santo Tomé": {
      "tipo_original": "CAP",
      "autoridades": [
@@ -14103,14 +14129,6 @@
      "persona": "Diego Atilio Lopez",
      "cargo": "Titular de la Coordinación del Modelo de Atención Personalizada",
      "agencia": null
-    },
-    {
-     "fecha": "2020-05-08",
-     "norma": "RESOL-2020-1386-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Melina Selene Acosta",
-     "cargo": "Titular",
-     "agencia": "Santa Clara del Mar"
     },
     {
      "fecha": "2020-04-24",
@@ -15134,17 +15152,6 @@
     }
    ],
    "agencias": {
-    "Caleta Olivia": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "Sergio David Torres",
-       "desde": "2024-07-01",
-       "norma": "RESOL-2024-1767-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
     "El Maiten": {
      "tipo_original": "CAP",
      "autoridades": [
@@ -15329,14 +15336,6 @@
      "persona": "Mariela Hughes",
      "cargo": "Titular",
      "agencia": "Gaiman"
-    },
-    {
-     "fecha": "2024-07-01",
-     "norma": "RESOL-2024-1767-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "Sergio David Torres",
-     "cargo": "Titular",
-     "agencia": "Caleta Olivia"
     },
     {
      "fecha": "2024-04-24",
@@ -15638,12 +15637,6 @@
      "persona": "Jesica Soledad Muñoz",
      "desde": "2020-05-08",
      "norma": "RESOL-2020-1398-INSSJP-DE#INSSJP"
-    },
-    {
-     "cargo": "Titular de la Coordinación Médica",
-     "persona": "Enrique Nicolás Villalba",
-     "desde": "2024-09-10",
-     "norma": "RESOL-2024-2602-INSSJP-DE#INSSJP"
     },
     {
      "cargo": "Titular de la Coordinación de Promoción y Prestaciones Sociales",
@@ -16178,6 +16171,14 @@
      "accion": "baja",
      "persona": "Ana del Carmen Bascuñan",
      "cargo": "Titular del Departamento de Políticas Sociales",
+     "agencia": null
+    },
+    {
+     "fecha": "2025-02-07",
+     "norma": "RESOL-2025-176-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Enrique Nicolás Villalba",
+     "cargo": "Titular del Departamento Médico",
      "agencia": null
     },
     {
@@ -17321,6 +17322,14 @@
      "persona": "Walter Ramón Moreno",
      "cargo": "Titular",
      "agencia": "Loreto"
+    },
+    {
+     "fecha": "2021-03-04",
+     "norma": "RESOL-2021-269-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "José Genaro Montes",
+     "cargo": "Titular",
+     "agencia": "Monte Quemado"
     },
     {
      "fecha": "2020-09-04",
@@ -19647,6 +19656,12 @@
      "norma": "RESOL-2024-742-INSSJP-DE#INSSJP"
     },
     {
+     "cargo": "Titular de la División Despacho",
+     "persona": "Griselda de la Cruz Aballay",
+     "desde": "2026-04-14",
+     "norma": "RESOL-2026-1128-INSSJP-DE#INSSJP"
+    },
+    {
      "cargo": "Titular de la División de Auditoría Prestacional",
      "persona": "María Celia Carreño",
      "desde": "2024-07-05",
@@ -19832,6 +19847,14 @@
      "persona": "Alejo Hevia",
      "cargo": "Titular",
      "agencia": "Villa Unión"
+    },
+    {
+     "fecha": "2026-04-14",
+     "norma": "RESOL-2026-1128-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Griselda de la Cruz Aballay",
+     "cargo": "Titular de la División Despacho",
+     "agencia": null
     },
     {
      "fecha": "2025-12-05",
@@ -22338,6 +22361,14 @@
     },
     {
      "fecha": "2024-07-01",
+     "norma": "RESOL-2024-1767-INSSJP-DE#INSSJP",
+     "accion": "alta",
+     "persona": "Sergio David Torres",
+     "cargo": "Titular",
+     "agencia": "Caleta Olivia"
+    },
+    {
+     "fecha": "2024-07-01",
      "norma": "RESOL-2024-1768-INSSJP-DE#INSSJP",
      "accion": "alta",
      "persona": "Al Señor Lucas Facundo Oyarzo Mancilla",
@@ -22631,12 +22662,6 @@
        "norma": "RESOL-2025-2439-INSSJP-DE#INSSJP"
       },
       {
-       "cargo": "Jefe",
-       "persona": "Sebastián Obdulio Achucarro",
-       "desde": "2020-03-19",
-       "norma": "RESOL-2020-1060-INSSJP-DE#INSSJP"
-      },
-      {
        "cargo": "Titular",
        "persona": "María Sol Varela",
        "desde": "2024-08-08",
@@ -22892,6 +22917,14 @@
      "persona": "Diego Lopez Garrido",
      "cargo": "Titular",
      "agencia": "Morón Sur"
+    },
+    {
+     "fecha": "2024-04-23",
+     "norma": "RESOL-2024-1125-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Sebastián Obdulio Achucarro",
+     "cargo": "Titular",
+     "agencia": "Merlo"
     },
     {
      "fecha": "2024-03-25",
@@ -23286,10 +23319,6 @@
       }
      ]
     },
-    "Moquehuá": {
-     "tipo_original": "CAP",
-     "autoridades": []
-    },
     "Rauch": {
      "tipo_original": "CAP",
      "autoridades": [
@@ -23383,14 +23412,6 @@
      "persona": "Rosana D’Acunto",
      "cargo": "Titular del Departamento Médico",
      "agencia": null
-    },
-    {
-     "fecha": "2025-02-03",
-     "norma": "RESOL-2025-126-INSSJP-DE#INSSJP",
-     "accion": "baja",
-     "persona": "María Luján Lopez",
-     "cargo": "Titular",
-     "agencia": "Moquehuá"
     },
     {
      "fecha": "2025-01-16",
@@ -25000,17 +25021,6 @@
       }
      ]
     },
-    "Monte Quemado": {
-     "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "José Genaro Montes",
-       "desde": "2021-03-04",
-       "norma": "RESOL-2021-269-INSSJP-DE#INSSJP"
-      }
-     ]
-    },
     "Navarro": {
      "tipo_original": "CAP",
      "autoridades": [
@@ -25115,6 +25125,14 @@
      "accion": "alta",
      "persona": "María Virginia Notta",
      "cargo": "Titular del Equipo Jurídico",
+     "agencia": null
+    },
+    {
+     "fecha": "2026-03-19",
+     "norma": "RESOL-2026-907-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "Leticia Laura Mantel",
+     "cargo": "Titular de la División Médica PAMI 7",
      "agencia": null
     },
     {
@@ -25660,14 +25678,6 @@
      "persona": "Sergio Rodolfo Lorda",
      "cargo": "Titular de la Coordinación Médica",
      "agencia": null
-    },
-    {
-     "fecha": "2021-03-04",
-     "norma": "RESOL-2021-269-INSSJP-DE#INSSJP",
-     "accion": "alta",
-     "persona": "José Genaro Montes",
-     "cargo": "Titular",
-     "agencia": "Monte Quemado"
     },
     {
      "fecha": "2021-01-29",
@@ -29055,14 +29065,7 @@
     },
     "Moquehuá": {
      "tipo_original": "CAP",
-     "autoridades": [
-      {
-       "cargo": "Titular",
-       "persona": "María Luján Lopez",
-       "desde": "2024-09-10",
-       "norma": "RESOL-2024-2592-INSSJP-DE#INSSJP"
-      }
-     ]
+     "autoridades": []
     },
     "Norberto de la Riestra": {
      "tipo_original": "CAP",
@@ -29351,6 +29354,14 @@
      "persona": "Armando Eduardo Dadario",
      "cargo": "Titular",
      "agencia": "Alberti"
+    },
+    {
+     "fecha": "2025-02-03",
+     "norma": "RESOL-2025-126-INSSJP-DE#INSSJP",
+     "accion": "baja",
+     "persona": "María Luján Lopez",
+     "cargo": "Titular",
+     "agencia": "Moquehuá"
     },
     {
      "fecha": "2025-01-20",
@@ -37626,12 +37637,6 @@
     "norma": "RESOL-2024-1413-INSSJP-DE#INSSJP"
    },
    {
-    "cargo": "División Despacho. UGLl XXV – La Rioja",
-    "persona": "Griselda de la Cruz Aballay",
-    "desde": "2026-04-14",
-    "norma": "RESOL-2026-1128-INSSJP-DE#INSSJP"
-   },
-   {
     "cargo": "División Económico Administrativa",
     "persona": "María Verónica Ibarra",
     "desde": "2024-07-18",
@@ -37804,12 +37809,6 @@
     "persona": "Héctor Ruben Acosta",
     "desde": "2026-04-29",
     "norma": "RESOL-2026-1259-INSSJP-DE#INSSJP"
-   },
-   {
-    "cargo": "División Operativa, UGL Bahía Blanca",
-    "persona": "Noelia Fiadaron",
-    "desde": "2025-11-04",
-    "norma": "RESOL-2025-2688-INSSJP-DE#INSSJP"
    },
    {
     "cargo": "División Ostomía de la Coordinación Provisiones Médicas, de la Secretaría de Políticas Sanitarias",
@@ -38751,13 +38750,6 @@
     "cargo": "Sector Carpintería. GMEI"
    },
    {
-    "fecha": "2026-04-14",
-    "norma": "RESOL-2026-1128-INSSJP-DE#INSSJP",
-    "accion": "alta",
-    "persona": "Griselda de la Cruz Aballay",
-    "cargo": "División Despacho. UGLl XXV – La Rioja"
-   },
-   {
     "fecha": "2026-03-30",
     "norma": "RESOL-2026-995-INSSJP-DE#INSSJP",
     "accion": "alta",
@@ -38833,13 +38825,6 @@
     "accion": "baja",
     "persona": "Claudio Clive Caffarone",
     "cargo": "Departamento Seguimiento de Entrega de Insumos"
-   },
-   {
-    "fecha": "2025-11-04",
-    "norma": "RESOL-2025-2688-INSSJP-DE#INSSJP",
-    "accion": "alta",
-    "persona": "Noelia Fiadaron",
-    "cargo": "División Operativa, UGL Bahía Blanca"
    },
    {
     "fecha": "2025-10-21",
@@ -39169,13 +39154,6 @@
     "accion": "baja",
     "persona": "Luis Emilio Bruno",
     "cargo": null
-   },
-   {
-    "fecha": "2025-02-07",
-    "norma": "RESOL-2025-176-INSSJP-DE#INSSJP",
-    "accion": "baja",
-    "persona": "Enrique Nicolás Villalba",
-    "cargo": "Departamento Médico de la UGLl XVIII – Misiones"
    },
    {
     "fecha": "2025-01-06",

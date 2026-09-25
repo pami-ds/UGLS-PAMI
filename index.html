@@ -211,6 +211,74 @@
             box-shadow: 0 8px 24px rgba(0,0,0,.5) !important; white-space: pre-line !important; max-width: 280px;
         }
         @media (max-width: 800px) { #ayuda-grafo { display: none; } }
+        /* Tarjeta al pasar el mouse por un nodo */
+        #tarjeta-hover {
+            position: absolute; z-index: 7; pointer-events: none; width: 250px; left: 0; top: 0;
+            background: rgba(12,17,28,.97); border: 1px solid #243047; border-radius: 9px; padding: 10px 12px 9px;
+            box-shadow: 0 12px 32px rgba(0,0,0,.6); font-size: .78rem; color: #cbd5e1; line-height: 1.35;
+            opacity: 0; transform: translateY(4px); transition: opacity .14s ease, transform .14s ease;
+        }
+        #tarjeta-hover.visible { opacity: 1; transform: none; }
+        #tarjeta-hover .th-ruta { font-size: .66rem; color: #64748b; margin-bottom: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        #tarjeta-hover .th-chip { display: inline-block; font-size: .6rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+            padding: 2px 6px; border-radius: 4px; margin-bottom: 4px; }
+        #tarjeta-hover .th-nombre { font-size: .95rem; font-weight: 600; color: #f8fafc; margin-bottom: 6px; }
+        #tarjeta-hover .th-et { font-size: .62rem; text-transform: uppercase; letter-spacing: .06em; color: #64748b; margin-top: 6px; }
+        #tarjeta-hover .th-val { color: #e2e8f0; }
+        #tarjeta-hover .th-sub { font-size: .7rem; color: #94a3b8; }
+        #tarjeta-hover .th-sub.viejo { color: #fbbf24; }
+        #tarjeta-hover .th-tl { margin-top: 7px; padding: 5px 7px; border-radius: 6px; background: rgba(59,130,246,.12); border: 1px solid rgba(59,130,246,.25); font-size: .72rem; }
+        #tarjeta-hover .th-pie { margin-top: 7px; padding-top: 6px; border-top: 1px solid #1e293b; font-size: .66rem; color: #64748b; }
+
+        /* Botones de animación y línea de tiempo */
+        #controles button[aria-pressed="true"] { background: rgba(59,130,246,.18); color: #93c5fd; }
+
+        /* Línea de tiempo */
+        #linea-tiempo {
+            position: absolute; z-index: 6; bottom: 16px; left: 64px; right: 16px; max-width: 860px; margin: 0 auto;
+            display: flex; align-items: center; gap: 12px; padding: 10px 12px;
+            background: rgba(12,17,28,.95); border: 1px solid #243047; border-radius: 10px; box-shadow: 0 12px 32px rgba(0,0,0,.5);
+        }
+        #linea-tiempo[hidden] { display: none; }
+        #linea-tiempo button { border: none; background: transparent; color: #cbd5e1; cursor: pointer; border-radius: 6px; font: inherit; }
+        #linea-tiempo button:hover { background: #161c2e; color: #fff; }
+        #linea-tiempo button:focus-visible { outline: 2px solid var(--c-central); }
+        #lt-play { width: 38px; height: 38px; display: grid; place-items: center; flex-shrink: 0; background: rgba(59,130,246,.18) !important; color: #93c5fd !important; }
+        #lt-play svg { width: 16px; height: 16px; }
+        .lt-centro { flex: 1; min-width: 0; }
+        .lt-cab { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+        #lt-mes { font-size: .92rem; color: #f8fafc; font-weight: 600; white-space: nowrap; }
+        #lt-resumen { font-size: .72rem; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        #lt-resumen .a { color: #34d399; } #lt-resumen .b { color: #f87171; }
+        .lt-pista { position: relative; height: 34px; }
+        #lt-hist { position: absolute; left: 7px; right: 7px; top: 0; width: calc(100% - 14px); height: 22px; }
+        #lt-rango { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 16px; margin: 0; background: transparent; cursor: pointer;
+            -webkit-appearance: none; appearance: none; }
+        #lt-rango::-webkit-slider-runnable-track { height: 3px; border-radius: 3px; background: #243047; }
+        #lt-rango::-moz-range-track { height: 3px; border-radius: 3px; background: #243047; }
+        #lt-rango::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; margin-top: -5.5px; border-radius: 50%;
+            background: #60a5fa; border: 2px solid #0c111c; box-shadow: 0 0 0 3px rgba(96,165,250,.3); }
+        #lt-rango::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: #60a5fa; border: 2px solid #0c111c; box-shadow: 0 0 0 3px rgba(96,165,250,.3); }
+        #lt-rango:focus-visible { outline: none; }
+        #lt-rango:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px rgba(96,165,250,.6); }
+        .lt-extremos { display: flex; justify-content: space-between; font-size: .62rem; color: #475569; margin-top: 2px; }
+        #lt-lista-btn { font-size: .72rem !important; padding: 6px 9px; border: 1px solid #243047 !important; white-space: nowrap; flex-shrink: 0; }
+        #lt-cerrar { width: 28px; height: 28px; font-size: 1.1rem !important; line-height: 1; flex-shrink: 0; color: #64748b !important; }
+        #lt-lista {
+            position: absolute; bottom: calc(100% + 8px); right: 0; width: min(430px, 100%); max-height: 300px; overflow: auto;
+            background: rgba(12,17,28,.98); border: 1px solid #243047; border-radius: 10px; padding: 6px; box-shadow: 0 12px 32px rgba(0,0,0,.5);
+        }
+        #lt-lista[hidden] { display: none; }
+        #lt-lista .it { display: grid; grid-template-columns: 44px 1fr; gap: 8px; padding: 6px 8px; border-radius: 6px; cursor: pointer; font-size: .74rem; }
+        #lt-lista .it:hover { background: #161c2e; }
+        #lt-lista .it .f { color: #64748b; font-variant-numeric: tabular-nums; }
+        #lt-lista .it .acc { font-weight: 600; } #lt-lista .it .acc.alta { color: #34d399; } #lt-lista .it .acc.baja { color: #f87171; } #lt-lista .it .acc.crea { color: #60a5fa; }
+        #lt-lista .it .d { color: #94a3b8; font-size: .7rem; }
+        #lt-lista .vacio { padding: 12px; color: #64748b; font-size: .75rem; text-align: center; }
+        body.con-linea-tiempo #ayuda-grafo { display: none; }
+        body.con-linea-tiempo #controles { bottom: 90px; }
+        @media (max-width: 800px) { #lt-lista-btn { display: none; } #linea-tiempo { left: 16px; } }
+
 
         /* Divisor arrastrable entre grafo y panel */
         #divisor {
@@ -340,6 +408,24 @@
         <hr>
         <button onclick="alternarTodas()" id="btn-colapsar" title="Contraer / expandir todas las agencias" aria-label="Contraer o expandir agencias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="5" r="1.5"/><circle cx="20" cy="5" r="1.5"/><circle cx="4" cy="19" r="1.5"/><circle cx="20" cy="19" r="1.5"/></svg></button>
         <button onclick="reordenar()" title="Restablecer la ubicación de los nodos" aria-label="Restablecer ubicación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button>
+        <hr>
+        <button onclick="LT.alternar()" id="btn-tiempo" aria-pressed="false" title="Línea de tiempo: ver cómo cambiaron las autoridades desde 2020 (T)" aria-label="Línea de tiempo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></button>
+        <button onclick="FX.alternar()" id="btn-fx" aria-pressed="true" title="Animación de la red: encender / apagar" aria-label="Animación de la red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="2.5"/></svg></button>
+    </div>
+    <div id="tarjeta-hover" role="tooltip" aria-hidden="true"></div>
+    <div id="linea-tiempo" hidden aria-label="Línea de tiempo de autoridades">
+        <button id="lt-play" onclick="LT.reproducir()" title="Reproducir (espacio)" aria-label="Reproducir"></button>
+        <div class="lt-centro">
+            <div class="lt-cab"><span id="lt-mes"></span><span id="lt-resumen"></span></div>
+            <div class="lt-pista">
+                <svg id="lt-hist" preserveAspectRatio="none" aria-hidden="true"></svg>
+                <input type="range" id="lt-rango" min="0" max="0" value="0" aria-label="Mes">
+            </div>
+            <div class="lt-extremos"><span id="lt-desde"></span><span id="lt-hasta"></span></div>
+        </div>
+        <button id="lt-lista-btn" onclick="LT.alternarLista()" aria-expanded="false">Cambios del mes</button>
+        <button id="lt-cerrar" onclick="LT.alternar()" title="Cerrar línea de tiempo" aria-label="Cerrar">&times;</button>
+        <div id="lt-lista" hidden></div>
     </div>
     <div id="ayuda-grafo">Tocá un nodo para desplegar lo que tiene adentro · doble clic para plegarlo · arrastrá para reubicar · F pantalla completa · Esc quita el resaltado</div>
     <div id="buscador-rapido">
@@ -841,7 +927,7 @@ function nodoUGL(u) {
     const nAg = u.hijos.size, colapsada = COLAPSADAS.has(u.id);
     return {
         id: u.id, label: `UGL ${u.num}${colapsada && nAg ? `  +${nAg}` : ''}\n${u.nombre}`, shape: 'dot', size: 13,
-        title: `UGL ${u.num} – ${u.nombre}\n${tit ? 'Titular: ' + tit : 'Titular: sin dato'}\n${nAg} agencia(s) · ${colapsada ? 'tocá para desplegar' : 'doble clic para plegar'}`,
+        tip: `UGL ${u.num} – ${u.nombre}\n${tit ? 'Titular: ' + tit : 'Titular: sin dato'}\n${nAg} agencia(s) · ${colapsada ? 'tocá para desplegar' : 'doble clic para plegar'}`,
         color: { background: col, border: colapsada ? col : '#a7f3d0', highlight: { background: '#34d399', border: '#6ee7b7' }, hover: { background: '#34d399', border: '#6ee7b7' } },
         borderWidth: colapsada ? 1.5 : 3,
         font: { color: conDatos ? '#e2e8f0' : '#94a3b8', size: 15, strokeWidth: 4, strokeColor: '#090d16' }
@@ -852,14 +938,14 @@ function nodoAgencia(h) {
     const tit = titularDe(h);
     if (h.soloListado) return {
         id: h.id, tipo: 'agencia', listado: true, label: h.nombre, shape: 'diamond', size: 6,
-        title: `${h.subtipo || 'Agencia'} ${h.nombre} · UGL ${h.ugl.num}\n${h.direccion ? h.direccion + (h.localidad ? ', ' + h.localidad : '') : ''}\nSin novedades en los boletines analizados`,
+        tip: `${h.subtipo || 'Agencia'} ${h.nombre} · UGL ${h.ugl.num}\n${h.direccion ? h.direccion + (h.localidad ? ', ' + h.localidad : '') : ''}\nSin novedades en los boletines analizados`,
         color: { background: '#0b1220', border: '#a16207', highlight: { background: '#fde68a', border: '#fbbf24' }, hover: { background: '#3b2a10', border: '#f59e0b' } },
         font: { color: '#64748b', size: 10 }
     };
     const vacante = !h.autoridades.size;
     return {
         id: h.id, tipo: 'agencia', label: h.nombre, shape: 'diamond', size: 8,
-        title: `${h.subtipo || 'Agencia'} ${h.nombre} · UGL ${h.ugl.num}\n${tit ? 'Titular: ' + tit : vacante ? 'Sin titular vigente' : h.autoridades.size + ' autoridad(es)'}`,
+        tip: `${h.subtipo || 'Agencia'} ${h.nombre} · UGL ${h.ugl.num}\n${tit ? 'Titular: ' + tit : vacante ? 'Sin titular vigente' : h.autoridades.size + ' autoridad(es)'}`,
         color: { background: vacante ? '#78542a' : c, border: c, highlight: { background: '#fde68a', border: '#fbbf24' }, hover: { background: '#fcd34d', border: '#fbbf24' } },
         font: { color: '#94a3b8', size: 11 }
     };
@@ -880,7 +966,7 @@ function nodoCentral() {
     const n = de ? de.hijos.length : 0;
     return {
         id: 'CENTRAL', label: `PAMI\nNivel Central${n && !abierto ? '\n+ organigrama' : ''}`, shape: 'dot', size: 30,
-        title: n ? (abierto ? 'Dirección Ejecutiva · doble clic para plegar el organigrama' : 'Dirección Ejecutiva · tocá para desplegar el organigrama') : 'PAMI – Nivel Central',
+        tip: n ? (abierto ? 'Dirección Ejecutiva · doble clic para plegar el organigrama' : 'Dirección Ejecutiva · tocá para desplegar el organigrama') : 'PAMI – Nivel Central',
         color: { background: COLORES.central, border: abierto ? '#bfdbfe' : '#60a5fa', highlight: { background: '#60a5fa', border: '#dbeafe' }, hover: { background: '#60a5fa', border: '#dbeafe' } },
         borderWidth: abierto ? 3 : 2,
         font: { color: '#f8fafc', size: 26, bold: true, strokeWidth: 4, strokeColor: '#090d16', multi: false }
@@ -892,7 +978,7 @@ function nodoOrg(o) {
     const cerrado = o.hijos.length && !EXPANDIDOS.has(o.id);
     return {
         id: o.id, tipo: 'org', label: titulo(o.nombre) + (cerrado ? `  (+${o.hijos.length})` : ''), shape: 'dot', size: e.tam,
-        title: `${o.nombre}\n${NIVELES_ORG[o.nivel]}\n${tit ? 'Titular: ' + tit : 'Titular: sin dato en boletines'}${o.hijos.length ? `\n${o.hijos.length} unidad(es) a cargo · ${cerrado ? 'tocá para desplegar' : 'doble clic para plegar'}` : ''}`,
+        tip: `${o.nombre}\n${NIVELES_ORG[o.nivel]}\n${tit ? 'Titular: ' + tit : 'Titular: sin dato en boletines'}${o.hijos.length ? `\n${o.hijos.length} unidad(es) a cargo · ${cerrado ? 'tocá para desplegar' : 'doble clic para plegar'}` : ''}`,
         color: { background: e.color, border: tit ? '#f8fafc' : e.color, highlight: { background: e.color, border: '#ffffff' }, hover: { background: e.color, border: '#ffffff' } },
         borderWidth: tit ? 2 : 1,
         font: { color: e.letra, size: e.fuente, strokeWidth: 3, strokeColor: '#090d16' }
@@ -1045,6 +1131,7 @@ function dibujar() {
     red.once('afterDrawing', () => { intro.listo(); red.fit({ animation: false }); });
     aplicarFiltros();
     conectarInteracciones();
+    FX.iniciar();
 }
 
 /* ---------- Interacciones del grafo ---------- */
@@ -1065,6 +1152,7 @@ function conectarInteracciones() {
                 acercarA([id, ...[...u.hijos.values()].filter(h => !nodosDS.get(h.id)?.hidden).map(h => h.id)], 1.3);
             }
             seleccionar(id, false); resaltar(id);
+            FX.onda(id);
         }
         else if (!p.edges.length) resaltar(null);
     });
@@ -1096,14 +1184,18 @@ function conectarInteracciones() {
         arrastre = null;
         if (p.nodes.length) { guardarPosiciones(); POS_GUARDADAS = red.getPositions(nodosDS.getIds()); }
     });
-    red.on('hoverNode', () => { document.getElementById('contenedor-grafo').style.cursor = 'grab'; });
-    red.on('blurNode', () => { document.getElementById('contenedor-grafo').style.cursor = ''; });
+    red.on('hoverNode', p => { document.getElementById('contenedor-grafo').style.cursor = 'grab'; FX.hover(p.node); });
+    red.on('blurNode', () => { document.getElementById('contenedor-grafo').style.cursor = ''; FX.hover(null); });
+    red.on('dragStart', () => FX.hover(null));
+    document.getElementById('contenedor-grafo').addEventListener('mouseleave', () => FX.hover(null));
+    red.on('afterDrawing', ctx => FX.pintar(ctx));
 }
 
-let resaltado = null;
+let resaltado = null, VIVOS = null;   // VIVOS: nodos que quedan encendidos al resaltar (lo usan las animaciones)
 function resaltar(id) {
     resaltado = id;
     const vivos = new Set();
+    VIVOS = id ? vivos : null;
     if (id) {
         const o = indice.get(id);
         vivos.add(id); vivos.add('CENTRAL');
@@ -1224,6 +1316,7 @@ function refrescarGrafo() {
     actualizarBarraManuales();
     aplicarFiltros();
     if (resaltado) resaltar(indice.has(resaltado) ? resaltado : null);
+    LT.preparar();
 }
 
 function seleccionar(id, enfocar = true) {
@@ -1722,6 +1815,500 @@ document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros
 })();
 
 /* ---------- Intro: se cierra cuando pasó la animación Y el grafo está listo ---------- */
+/* =====================================================================
+   4. ANIMACIÓN DE LA RED
+   - Pulsos: puntos de luz que recorren las conexiones (del centro hacia afuera).
+   - Onda: al tocar un nodo, un pulso baja desde PAMI Central hasta él y se reparte a sus hijos.
+   - Hover: se ilumina el camino desde PAMI Central y aparece una tarjeta con los datos.
+   Todo se dibuja sobre el lienzo del grafo (afterDrawing), sin tocar los nodos: es liviano.
+   ===================================================================== */
+const titularObj = o => o?.autoridades
+    ? ([...o.autoridades.values()].find(x => x.cargo === 'Titular' || x.cargo.startsWith('Titular de la UGL')) || null) : null;
+
+function padreDe(id) {
+    if (!id || id === 'CENTRAL') return null;
+    const o = indice.get(id);
+    if (!o) return null;
+    if (o.tipo === 'agencia') return o.ugl.id;
+    if (o.tipo === 'ugl') return 'CENTRAL';
+    if (o.tipo === 'org') return o.padre?.id || 'CENTRAL';
+    return null;
+}
+function caminoDesdeCentral(id) {
+    const c = [];
+    for (let x = id; x && c.length < 12; x = padreDe(x)) c.unshift(x);
+    return c;
+}
+
+const FX = (() => {
+    const reducido = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let activo = !reducido;
+    try { const g = localStorage.getItem('graffo_fx'); if (g !== null) activo = g === '1'; } catch (e) {}
+
+    const COL = { central: [96, 165, 250], ugl: [52, 211, 153], agencia: [251, 191, 36], org: [147, 197, 253],
+                  alta: [52, 211, 153], baja: [248, 113, 113], crea: [96, 165, 250] };
+    const pulsos = [], anillos = [];
+    let aristas = [], ultimoCache = 0, ultimaSiembra = 0, ultimoFrame = 0, hoverId = null, ultimoRecorrido = 0;
+
+    const nodo = id => { const n = red?.body?.nodes[id]; return n && !n.options.hidden ? n : null; };
+    const colorDe = id => {
+        if (id === 'CENTRAL') return COL.central;
+        const t = indice.get(id)?.tipo;
+        return COL[t] || COL.org;
+    };
+    function hijosVisibles(id) {
+        let ids = [];
+        if (id === 'CENTRAL') {
+            ids = modelo.ugls.map(u => u.id);
+            const de = modelo.org?.get('CENTRAL');
+            if (de) ids.push(...de.hijos.map(h => h.id));
+        } else {
+            const o = indice.get(id);
+            if (o?.tipo === 'ugl') ids = [...o.hijos.values()].map(h => h.id);
+            else if (o?.tipo === 'org') ids = o.hijos.map(h => h.id);
+        }
+        return ids.filter(nodo);
+    }
+    function vista() {
+        const c = document.getElementById('contenedor-grafo');
+        const a = red.DOMtoCanvas({ x: 0, y: 0 }), b = red.DOMtoCanvas({ x: c.clientWidth, y: c.clientHeight });
+        const m = (b.x - a.x) * 0.08;
+        return { x0: a.x - m, y0: a.y - m, x1: b.x + m, y1: b.y + m };
+    }
+
+    // Pulsos "ambiente": se siembran sobre conexiones visibles en pantalla
+    function sembrar(ahora) {
+        if (ahora - ultimoCache > 1000) {
+            aristas = aristasDS.get().map(e => ({ from: e.from, to: e.to, org: !!e.org }));
+            ultimoCache = ahora;
+        }
+        const v = vista();
+        const dentro = n => n.x > v.x0 && n.x < v.x1 && n.y > v.y0 && n.y < v.y1;
+        const cands = [];
+        for (const e of aristas) {
+            const a = nodo(e.from), b = nodo(e.to);
+            if (!a || !b || !(dentro(a) || dentro(b))) continue;
+            if (VIVOS && !(VIVOS.has(e.from) && VIVOS.has(e.to))) continue;
+            cands.push(e);
+        }
+        const ambiente = pulsos.reduce((t, p) => t + (p.onda ? 0 : 1), 0);
+        const objetivo = Math.min(34, Math.ceil(cands.length * 0.2));
+        if (ambiente < objetivo && cands.length) {
+            const e = cands[(Math.random() * cands.length) | 0];
+            pulsos.push({ from: e.from, to: e.to, t0: ahora, dur: 1500 + Math.random() * 1400, col: colorDe(e.to), ancho: 1.8, fuerza: 0.7 });
+        }
+    }
+
+    // Cadena de pulsos por un camino (lista de ids), uno detrás del otro
+    function cadena(ids, t0, col, paso = 230, ancho = 3) {
+        for (let i = 0; i < ids.length - 1; i++)
+            pulsos.push({ from: ids[i], to: ids[i + 1], t0: t0 + i * paso, dur: paso * 1.9, col: col || colorDe(ids[i + 1]), ancho, fuerza: 1, onda: true });
+        return t0 + (ids.length - 1) * paso;
+    }
+
+    function onda(id, col) {
+        if (!red || !id) return;
+        const ahora = performance.now();
+        const fin = cadena(caminoDesdeCentral(id), ahora, col);
+        anillos.push({ id, t0: fin, dur: 950, col: col || colorDe(id) });
+        // se reparte a lo que el nodo tiene adentro (espera a que termine de desplegarse)
+        setTimeout(() => {
+            const t = performance.now();
+            hijosVisibles(id).slice(0, 80).forEach(h => pulsos.push({ from: id, to: h, t0: t + Math.random() * 220, dur: 650 + Math.random() * 250,
+                col: colorDe(h), ancho: 2.4, fuerza: 1, onda: true }));
+        }, Math.max(0, fin - ahora) + 120);
+        despertar();
+    }
+    function destello(id, col, retraso = 0) {
+        anillos.push({ id, t0: performance.now() + retraso, dur: 1100, col });
+        despertar();
+    }
+
+    // ---------- Dibujo ----------
+    function pintarPulsos(ctx, ahora, s) {
+        for (let i = pulsos.length - 1; i >= 0; i--) {
+            const p = pulsos[i], k = (ahora - p.t0) / p.dur;
+            const a = nodo(p.from), b = nodo(p.to);
+            if (k >= 1 || !a || !b) { pulsos.splice(i, 1); continue; }
+            if (k < 0) continue;
+            const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+            const x = a.x + (b.x - a.x) * e, y = a.y + (b.y - a.y) * e;
+            const e0 = Math.max(0, e - 0.16), tx = a.x + (b.x - a.x) * e0, ty = a.y + (b.y - a.y) * e0;
+            const al = Math.sin(Math.PI * k) * p.fuerza;
+            const [r, g, bl] = p.col;
+            const gr = ctx.createLinearGradient(tx, ty, x, y);
+            gr.addColorStop(0, `rgba(${r},${g},${bl},0)`);
+            gr.addColorStop(1, `rgba(${r},${g},${bl},${al * 0.85})`);
+            ctx.strokeStyle = gr; ctx.lineWidth = p.ancho / s; ctx.lineCap = 'round';
+            ctx.beginPath(); ctx.moveTo(tx, ty); ctx.lineTo(x, y); ctx.stroke();
+            const rad = (p.ancho * 2.6) / s;
+            const rg = ctx.createRadialGradient(x, y, 0, x, y, rad);
+            rg.addColorStop(0, `rgba(255,255,255,${al})`);
+            rg.addColorStop(0.35, `rgba(${r},${g},${bl},${al * 0.75})`);
+            rg.addColorStop(1, `rgba(${r},${g},${bl},0)`);
+            ctx.fillStyle = rg; ctx.beginPath(); ctx.arc(x, y, rad, 0, Math.PI * 2); ctx.fill();
+        }
+    }
+    function pintarAnillos(ctx, ahora, s) {
+        for (let i = anillos.length - 1; i >= 0; i--) {
+            const an = anillos[i], k = (ahora - an.t0) / an.dur, n = nodo(an.id);
+            if (k >= 1 || !n) { anillos.splice(i, 1); continue; }
+            if (k < 0) continue;
+            const e = 1 - Math.pow(1 - k, 3), [r, g, b] = an.col;
+            const base = (n.options.size || 10) + 2 / s;
+            ctx.strokeStyle = `rgba(${r},${g},${b},${(1 - k) * 0.9})`;
+            ctx.lineWidth = (2.2 * (1 - k) + 0.4) / s;
+            ctx.beginPath(); ctx.arc(n.x, n.y, base + e * 34 / s, 0, Math.PI * 2); ctx.stroke();
+        }
+    }
+    function pintarCamino(ctx, s) {
+        const ids = caminoDesdeCentral(hoverId).filter(nodo);
+        if (!ids.length) return;
+        const [r, g, b] = colorDe(hoverId);
+        ctx.lineCap = 'round';
+        for (let i = 0; i < ids.length - 1; i++) {
+            const a = nodo(ids[i]), c = nodo(ids[i + 1]);
+            ctx.strokeStyle = `rgba(${r},${g},${b},0.18)`; ctx.lineWidth = 7 / s;
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(c.x, c.y); ctx.stroke();
+            ctx.strokeStyle = `rgba(${r},${g},${b},0.85)`; ctx.lineWidth = 1.6 / s;
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(c.x, c.y); ctx.stroke();
+        }
+        for (const id of ids) {
+            const n = nodo(id), rad = (n.options.size || 10) + 5 / s;
+            const rg = ctx.createRadialGradient(n.x, n.y, rad * 0.6, n.x, n.y, rad * 1.9);
+            rg.addColorStop(0, `rgba(${r},${g},${b},0.35)`); rg.addColorStop(1, `rgba(${r},${g},${b},0)`);
+            ctx.fillStyle = rg; ctx.beginPath(); ctx.arc(n.x, n.y, rad * 1.9, 0, Math.PI * 2); ctx.fill();
+            ctx.strokeStyle = `rgba(${r},${g},${b},${id === hoverId ? 0.95 : 0.5})`; ctx.lineWidth = 1.4 / s;
+            ctx.beginPath(); ctx.arc(n.x, n.y, rad, 0, Math.PI * 2); ctx.stroke();
+        }
+    }
+
+    function pintar(ctx) {
+        if (!red) return;
+        const ahora = performance.now(), s = red.getScale();
+        ctx.save();
+        ctx.globalCompositeOperation = 'lighter';
+        if (LT.activa) LT.pintar(ctx, ahora, s, nodo);
+        if (hoverId && nodo(hoverId)) pintarCamino(ctx, s);
+        pintarAnillos(ctx, ahora, s);
+        pintarPulsos(ctx, ahora, s);
+        ctx.restore();
+        if (hoverId) Tarjeta.ubicar(hoverId);
+    }
+
+    // ---------- Bucle (≈30 cuadros por segundo, se pausa si no hay nada que mover) ----------
+    let dormido = true;
+    function despertar() { if (dormido) { dormido = false; requestAnimationFrame(bucle); } }
+    function bucle(ahora) {
+        if (!red) { dormido = true; return; }
+        const hayMovimiento = activo || pulsos.length || anillos.length || LT.reproduciendo;
+        if (!hayMovimiento || document.hidden) { dormido = true; if (!document.hidden) red.redraw(); return; }
+        requestAnimationFrame(bucle);
+        if (ahora - ultimoFrame < 33) return;
+        ultimoFrame = ahora;
+        if (activo && ahora - ultimaSiembra > 110) { sembrar(ahora); ultimaSiembra = ahora; }
+        if (activo && hoverId && ahora - ultimoRecorrido > 1700) { cadena(caminoDesdeCentral(hoverId), ahora, colorDe(hoverId), 260, 2.4); ultimoRecorrido = ahora; }
+        red.redraw();
+    }
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) despertar(); });
+
+    function hover(id) {
+        hoverId = id && indice.has(id) ? id : null;
+        ultimoRecorrido = 0;
+        Tarjeta.mostrar(hoverId);
+        if (red) red.redraw();
+        despertar();
+    }
+    function pintarBoton() {
+        const b = document.getElementById('btn-fx');
+        if (b) { b.setAttribute('aria-pressed', String(activo)); b.title = activo ? 'Animación de la red: apagar' : 'Animación de la red: encender'; }
+    }
+    function alternar() {
+        activo = !activo;
+        try { localStorage.setItem('graffo_fx', activo ? '1' : '0'); } catch (e) {}
+        if (!activo) pulsos.splice(0).length;
+        pintarBoton(); despertar();
+    }
+    function iniciar() { pintarBoton(); LT.preparar(); despertar(); }
+
+    return { iniciar, pintar, onda, destello, cadena, hover, alternar, colorDe, nodo, despertar, get activo() { return activo; }, COL };
+})();
+
+/* ---------- Tarjeta flotante al pasar el mouse ---------- */
+const Tarjeta = (() => {
+    const el = () => document.getElementById('tarjeta-hover');
+    let actual = null;
+    const hexDe = c => `rgb(${c.join(',')})`;
+    function contenido(id) {
+        const o = indice.get(id);
+        const col = FX.colorDe(id), chipSt = `background:rgba(${col.join(',')},.16);color:${hexDe(col)}`;
+        const ruta = caminoDesdeCentral(id).slice(0, -1).map(x => {
+            if (x === 'CENTRAL') return 'PAMI';
+            const p = indice.get(x);
+            return p?.tipo === 'ugl' ? `UGL ${p.num} ${p.nombre}` : titulo(p?.nombre || '');
+        }).join(' › ');
+        let chip, nombre, filas = '', pie = '';
+        const tit = id === 'CENTRAL' ? null : titularObj(o) || (o?.tipo === 'org' ? [...o.autoridades.values()][0] : null);
+        const filaTit = (etq, a) => a
+            ? `<div class="th-et">${esc(etq)}</div><div class="th-val">${esc(a.personas[0])}</div>` +
+              (a.desde ? `<div class="th-sub ${a.desde < '2024-01-01' ? 'viejo' : ''}">desde el ${fechaCorta(a.desde)}${a.desde < '2024-01-01' ? ' · verificar vigencia' : ''}</div>` : '')
+            : '';
+        if (id === 'CENTRAL') {
+            chip = 'Nivel Central'; nombre = 'PAMI – Dirección Ejecutiva';
+            const nAg = modelo.ugls.reduce((t, u) => t + u.hijos.size, 0);
+            filas = `<div class="th-et">Red federal</div><div class="th-val">${modelo.ugls.length} UGLs · ${nAg} agencias</div>`;
+            pie = orgVisible() ? 'Doble clic para plegar el organigrama' : 'Clic para desplegar el organigrama';
+        } else if (o.tipo === 'ugl') {
+            chip = `UGL ${o.num}`; nombre = o.nombre;
+            filas = filaTit('Titular', tit) || '<div class="th-et">Titular</div><div class="th-sub">Sin dato en los boletines</div>';
+            if (o.direccion) filas += `<div class="th-et">Dirección</div><div class="th-val">${esc(o.direccion)}</div>`;
+            const ult = (o.historial || []).reduce((m, e) => e.fecha > m ? e.fecha : m, '');
+            filas += `<div class="th-et">Agencias</div><div class="th-val">${o.hijos.size}${ult ? ` <span class="th-sub">· última novedad ${fechaCorta(ult)}</span>` : ''}</div>`;
+            pie = COLAPSADAS.has(o.id) ? 'Clic para desplegar sus agencias' : 'Clic para ver la ficha · doble clic para plegar';
+        } else if (o.tipo === 'agencia') {
+            chip = o.subtipo || 'Agencia'; nombre = o.nombre;
+            filas = filaTit('Titular', tit) || `<div class="th-et">Titular</div><div class="th-sub">${o.soloListado ? 'Sin novedades en los boletines' : 'Sin titular vigente'}</div>`;
+            if (o.direccion) filas += `<div class="th-et">Dirección</div><div class="th-val">${esc(o.direccion)}${o.localidad ? ', ' + esc(o.localidad) : ''}</div>`;
+            if (o.telefono) filas += `<div class="th-et">Teléfono</div><div class="th-val">${esc(o.telefono)}</div>`;
+            pie = 'Clic para ver la ficha completa';
+        } else {
+            chip = NIVELES_ORG[o.nivel] || 'Nivel Central'; nombre = titulo(o.nombre);
+            filas = filaTit(tit?.cargo && tit.cargo !== 'Titular' ? tit.cargo : 'Titular', tit) || '<div class="th-et">Titular</div><div class="th-sub">Sin dato en los boletines</div>';
+            if (o.hijos.length) filas += `<div class="th-et">A cargo</div><div class="th-val">${o.hijos.length} unidad(es)</div>`;
+            pie = o.hijos.length && !EXPANDIDOS.has(o.id) ? 'Clic para desplegar' : 'Clic para ver la ficha';
+        }
+        const tl = LT.activa ? LT.textoTarjeta(id) : '';
+        return `${ruta ? `<div class="th-ruta">${esc(ruta)}</div>` : ''}<span class="th-chip" style="${chipSt}">${esc(chip)}</span>
+                <div class="th-nombre">${esc(nombre)}</div>${filas}${tl}<div class="th-pie">${pie}</div>`;
+    }
+    function mostrar(id) {
+        const t = el(); if (!t) return;
+        actual = id;
+        if (!id) { t.classList.remove('visible'); t.setAttribute('aria-hidden', 'true'); return; }
+        t.innerHTML = contenido(id);
+        t.setAttribute('aria-hidden', 'false');
+        ubicar(id);
+        requestAnimationFrame(() => t.classList.add('visible'));
+    }
+    function ubicar(id) {
+        const t = el(), n = FX.nodo(id);
+        if (!t || !n || actual !== id) return;
+        const c = document.getElementById('contenedor-grafo');
+        const p = red.canvasToDOM({ x: n.x, y: n.y }), off = (n.options.size || 10) * red.getScale() + 14;
+        const w = t.offsetWidth, h = t.offsetHeight;
+        let x = p.x + off, y = p.y - h / 2;
+        if (x + w > c.clientWidth - 8) x = p.x - off - w;
+        y = Math.max(8, Math.min(c.clientHeight - h - 8, y));
+        t.style.transform = '';
+        t.style.left = Math.max(8, x) + 'px'; t.style.top = y + 'px';
+    }
+    return { mostrar, ubicar, refrescar: () => actual && mostrar(actual) };
+})();
+
+/* =====================================================================
+   5. LÍNEA DE TIEMPO
+   Recorre mes a mes todos los cambios publicados en los boletines (2020 → hoy).
+   Los nodos con novedades se encienden (verde: designación, rojo: cese) y un pulso
+   baja desde PAMI Central hasta cada uno. Al pasar el mouse se ve quién estaba a cargo en ese mes.
+   ===================================================================== */
+const LT = (() => {
+    const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+    let eventos = [], porMes = [], meses = [], porNodo = new Map(), idx = 0, activa = false, timer = null, listaAbierta = false;
+    const $ = id => document.getElementById(id);
+    const claveMes = f => f.slice(0, 7);
+    const nombreMes = m => { const [y, mm] = m.split('-'); const t = MESES[+mm - 1]; return t[0].toUpperCase() + t.slice(1) + ' ' + y; };
+    const ICON_PLAY = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5v14l12-7z"/></svg>';
+    const ICON_PAUSA = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>';
+
+    function preparar() {
+        if (!modelo) return;
+        eventos = [];
+        for (const u of modelo.ugls) for (const h of u.historial || []) {
+            let id = u.id;
+            if (h.agencia) { const ag = u.hijos.get('agencia:' + claveLugar(h.agencia)); if (ag) id = ag.id; }
+            eventos.push({ ...h, id, uglId: u.id, lugar: h.agencia ? `${h.agencia} · UGL ${u.num}` : `UGL ${u.num} ${u.nombre}` });
+        }
+        for (const o of modelo.org?.values() || []) for (const h of o.historial || [])
+            eventos.push({ ...h, id: o.id, lugar: titulo(o.nombre) });
+        eventos = eventos.filter(e => e.fecha && /^\d{4}-\d{2}/.test(e.fecha)).sort((a, b) => a.fecha.localeCompare(b.fecha));
+        porNodo = new Map();
+        for (const e of eventos) { if (!porNodo.has(e.id)) porNodo.set(e.id, []); porNodo.get(e.id).push(e); }
+        // meses desde el primer boletín hasta hoy
+        meses = [];
+        if (eventos.length) {
+            let [y, m] = eventos[0].fecha.slice(0, 7).split('-').map(Number);
+            const hoy = new Date(), yf = hoy.getFullYear(), mf = hoy.getMonth() + 1;
+            while (y < yf || (y === yf && m <= mf)) { meses.push(`${y}-${String(m).padStart(2, '0')}`); if (++m > 12) { m = 1; y++; } }
+        }
+        const pos = new Map(meses.map((m, i) => [m, i]));
+        porMes = meses.map(() => []);
+        for (const e of eventos) { const i = pos.get(claveMes(e.fecha)); if (i !== undefined) porMes[i].push(e); }
+        const r = $('lt-rango');
+        if (r) { r.max = Math.max(0, meses.length - 1); if (!activa) idx = meses.length - 1; r.value = idx; }
+        if (meses.length) { $('lt-desde').textContent = nombreMes(meses[0]); $('lt-hasta').textContent = 'hoy'; }
+        dibujarHistograma();
+        if (activa) irA(idx, false);
+    }
+
+    function dibujarHistograma() {
+        const svg = $('lt-hist'); if (!svg || !meses.length) return;
+        const max = Math.max(1, ...porMes.map(l => l.length)), n = meses.length;
+        svg.setAttribute('viewBox', `0 0 ${n} 22`);
+        let h = '';
+        for (let i = 0; i < n; i++) {
+            const alt = porMes[i].length ? Math.max(1.5, (porMes[i].length / max) * 20) : 0;
+            const col = i === idx ? '#60a5fa' : i < idx ? '#334155' : '#1e293b';
+            if (alt) h += `<rect x="${i + 0.12}" y="${22 - alt}" width="0.76" height="${alt}" rx="0.2" fill="${col}"/>`;
+            if (meses[i].endsWith('-01')) h += `<rect x="${i}" y="0" width="0.08" height="22" fill="#1e293b"/>`;
+        }
+        svg.innerHTML = h;
+    }
+
+    // nodo visible que representa al evento (si la agencia está plegada, su UGL)
+    function destinoVisible(id) {
+        for (const x of caminoDesdeCentral(id).reverse()) if (FX.nodo(x)) return x;
+        return null;
+    }
+
+    function irA(i, animar = true) {
+        if (!meses.length) return;
+        idx = Math.max(0, Math.min(meses.length - 1, i));
+        $('lt-rango').value = idx;
+        const lista = porMes[idx];
+        const altas = lista.filter(e => e.accion === 'alta').length, bajas = lista.filter(e => e.accion === 'baja').length;
+        $('lt-mes').textContent = nombreMes(meses[idx]);
+        $('lt-resumen').innerHTML = lista.length
+            ? `<span class="a">${altas} designaci${altas === 1 ? 'ón' : 'ones'}</span> · <span class="b">${bajas} cese${bajas === 1 ? '' : 's'}</span>${lista.length - altas - bajas ? ` · ${lista.length - altas - bajas} otros` : ''}`
+            : 'Sin novedades publicadas';
+        dibujarHistograma();
+        if (listaAbierta) pintarLista();
+        if (animar) {
+            // una onda por cada novedad del mes (agrupadas por nodo visible)
+            const vistos = new Map();
+            for (const e of lista) { const d = destinoVisible(e.id); if (d) vistos.set(d, (vistos.get(d) === 'baja' && e.accion === 'alta') || (vistos.get(d) === 'alta' && e.accion === 'baja') ? 'mixto' : e.accion); }
+            let k = 0;
+            const t0 = performance.now();
+            for (const [d, acc] of vistos) {
+                if (k++ > 60) break;
+                const col = acc === 'alta' ? FX.COL.alta : acc === 'baja' ? FX.COL.baja : acc === 'mixto' ? FX.COL.agencia : FX.COL.crea;
+                const fin = FX.cadena(caminoDesdeCentral(d), t0 + k * 25, col, 150, 2.2);
+                FX.destello(d, col, Math.max(0, fin - t0));
+            }
+        }
+        Tarjeta.refrescar();
+        FX.despertar();
+    }
+
+    // Halo en los nodos con novedades en los últimos 3 meses (más intenso cuanto más reciente)
+    function pintar(ctx, ahora, s, nodo) {
+        if (!meses.length) return;
+        const brillo = new Map();
+        for (let d = 0; d < 3; d++) {
+            const i = idx - d; if (i < 0) break;
+            const peso = [1, 0.5, 0.25][d];
+            for (const e of porMes[i]) {
+                const id = destinoVisible(e.id); if (!id) continue;
+                const b = brillo.get(id) || { v: 0, alta: 0, baja: 0 };
+                b.v = Math.min(1.6, b.v + peso * 0.6); b[e.accion === 'baja' ? 'baja' : 'alta'] += peso;
+                brillo.set(id, b);
+            }
+        }
+        const lat = 0.85 + 0.15 * Math.sin(ahora / 380);
+        for (const [id, b] of brillo) {
+            const n = nodo(id); if (!n) continue;
+            const [r, g, bl] = b.baja > b.alta ? FX.COL.baja : FX.COL.alta;
+            const rad = (n.options.size || 10) + (10 + 10 * b.v) / s;
+            const rg = ctx.createRadialGradient(n.x, n.y, (n.options.size || 10) * 0.8, n.x, n.y, rad);
+            rg.addColorStop(0, `rgba(${r},${g},${bl},${0.55 * Math.min(1, b.v) * lat})`);
+            rg.addColorStop(1, `rgba(${r},${g},${bl},0)`);
+            ctx.fillStyle = rg; ctx.beginPath(); ctx.arc(n.x, n.y, rad, 0, Math.PI * 2); ctx.fill();
+        }
+    }
+
+    // Quién ocupaba el cargo principal de un nodo al final del mes elegido
+    function textoTarjeta(id) {
+        if (!meses.length) return '';
+        const hasta = meses[idx] + '-31';
+        const esJefe = c => /^Titular$|^Titular de la UGL|Direcci[oó]n Ejecutiva|Director(a)? Ejecutiv/i.test(c || '');
+        let quien = null;
+        for (const e of porNodo.get(id) || []) {
+            if (e.fecha > hasta) break;
+            if (e.accion === 'alta' && (esJefe(e.cargo) || indice.get(id)?.tipo === 'org')) quien = e;
+            else if (e.accion === 'baja' && quien && e.persona === quien.persona) quien = null;
+        }
+        const nov = (porNodo.get(id) || []).filter(e => claveMes(e.fecha) === meses[idx]).length;
+        return `<div class="th-tl"><b>${esc(nombreMes(meses[idx]))}:</b> ${quien ? `a cargo ${esc(quien.persona)} <span class="th-sub">(desde ${fechaCorta(quien.fecha)})</span>` : 'sin titular registrado en los boletines'}${nov ? `<br><span class="th-sub">${nov} novedad(es) este mes</span>` : ''}</div>`;
+    }
+
+    function pintarLista() {
+        const cont = $('lt-lista'), lista = porMes[idx] || [];
+        const ACC = { alta: 'Designación', baja: 'Cese', crea: 'Creación', anula: 'Anulación' };
+        cont.innerHTML = lista.length ? lista.map((e, i) => `
+            <div class="it" data-i="${i}" role="button" tabindex="0">
+                <span class="f">${e.fecha.slice(8, 10)}/${e.fecha.slice(5, 7)}</span>
+                <span><span class="acc ${e.accion}">${ACC[e.accion] || e.accion}</span> · ${esc(e.persona || '')}
+                    <div class="d">${esc(e.cargo || '')}${e.cargo ? ' · ' : ''}${esc(e.lugar)}</div></span>
+            </div>`).join('') : '<div class="vacio">No se publicaron cambios de autoridades este mes.</div>';
+        cont.querySelectorAll('.it').forEach(el => {
+            const ir = () => {
+                const e = lista[+el.dataset.i];
+                const u = indice.get(e.uglId);
+                if (u?.tipo === 'ugl' && e.id !== u.id && COLAPSADAS.has(u.id)) alternarColapso(u.id);
+                seleccionar(e.id); resaltar(e.id); FX.onda(e.id, e.accion === 'baja' ? FX.COL.baja : FX.COL.alta);
+            };
+            el.addEventListener('click', ir);
+            el.addEventListener('keydown', ev => { if (ev.key === 'Enter') ir(); });
+        });
+    }
+    function alternarLista() {
+        listaAbierta = !listaAbierta;
+        $('lt-lista').hidden = !listaAbierta;
+        $('lt-lista-btn').setAttribute('aria-expanded', String(listaAbierta));
+        if (listaAbierta) pintarLista();
+    }
+
+    function reproducir() {
+        if (timer) { pausar(); return; }
+        if (idx >= meses.length - 1) irA(0, false);
+        $('lt-play').innerHTML = ICON_PAUSA; $('lt-play').title = 'Pausar (espacio)';
+        timer = setInterval(() => { if (idx >= meses.length - 1) { pausar(); return; } irA(idx + 1); }, 1100);
+        irA(idx);
+    }
+    function pausar() {
+        clearInterval(timer); timer = null;
+        const b = $('lt-play'); if (b) { b.innerHTML = ICON_PLAY; b.title = 'Reproducir (espacio)'; }
+    }
+    function alternar() {
+        activa = !activa;
+        $('linea-tiempo').hidden = !activa;
+        document.body.classList.toggle('con-linea-tiempo', activa);
+        $('btn-tiempo').setAttribute('aria-pressed', String(activa));
+        if (activa) { preparar(); pausar(); irA(idx, true); }
+        else { pausar(); if (listaAbierta) alternarLista(); }
+        Tarjeta.refrescar();
+        if (red) red.redraw();
+        FX.despertar();
+    }
+
+    // Controles
+    const r = document.getElementById('lt-rango');
+    if (r) {
+        let t = null;
+        r.addEventListener('input', () => { pausar(); clearTimeout(t); const v = +r.value; irA(v, false); t = setTimeout(() => irA(v, true), 180); });
+    }
+    const bp = document.getElementById('lt-play'); if (bp) bp.innerHTML = ICON_PLAY;
+    document.addEventListener('keydown', e => {
+        if (/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName) && document.activeElement.id !== 'lt-rango') return;
+        if ((e.key === 't' || e.key === 'T') && !e.ctrlKey && !e.metaKey) { alternar(); return; }
+        if (!activa) return;
+        if (e.key === ' ') { e.preventDefault(); reproducir(); }
+        else if (e.key === 'ArrowRight' && document.activeElement.id !== 'lt-rango') { pausar(); irA(idx + 1); }
+        else if (e.key === 'ArrowLeft' && document.activeElement.id !== 'lt-rango') { pausar(); irA(idx - 1); }
+    });
+
+    return { preparar, pintar, textoTarjeta, alternar, alternarLista, reproducir, get activa() { return activa; }, get reproduciendo() { return !!timer; } };
+})();
+
 const intro = (function () {
     const el = document.getElementById('intro');
     const DURACION_MIN = 3000, DURACION_MAX = 7000;

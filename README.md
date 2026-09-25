@@ -47,6 +47,9 @@ Los datos de las autoridades se extraen automáticamente de los boletines oficia
 | **Historial** | Sección desplegable con todas las novedades de la UGL o de la Agencia, de la más reciente a la más antigua. |
 | **Carga manual de datos** | Botón **Editar** en cada ficha para agregar o corregir dirección, teléfono, autoridades y agencias nuevas (ver más abajo). |
 | **Despliegue por capas** | Al abrir se ven solo el Nivel Central y las 38 UGL (cada una indica cuántas agencias tiene). Tocar una UGL despliega sus agencias y la vista se acerca; doble clic la pliega. Lo mismo con el organigrama dentro de PAMI Nivel Central. |
+| **Red animada** | Pulsos de luz recorren las conexiones desde PAMI Central hacia afuera. Al tocar un nodo, una onda baja por su camino y se reparte a lo que tiene adentro. El botón ✳ de los controles apaga o enciende la animación (se recuerda en el navegador). |
+| **Tarjeta al pasar el mouse** | Se ilumina el camino desde PAMI Central hasta el nodo y aparece una tarjeta con el titular, desde cuándo, la dirección y la cantidad de agencias. |
+| **Línea de tiempo** | Botón del reloj o tecla **T**. Recorre mes a mes, desde 2020 hasta hoy, todas las designaciones y ceses de los boletines: los nodos con novedades se encienden (verde designación, rojo cese) y el gráfico de barras muestra cuántos cambios hubo cada mes. Se reproduce con ▶ o la barra espaciadora, se avanza con ← →, "Cambios del mes" lista las novedades, y al pasar el mouse por un nodo se ve quién estaba a cargo en ese mes. |
 | **Pantalla completa** | Botón en los controles o tecla **F**. |
 | **Nodos reubicables** | Arrastrá cualquier nodo; al mover una UGL se mueven también sus agencias. La ubicación queda guardada en el navegador y el botón ↺ la restablece. |
 | **Resaltado** | Al elegir una UGL o agencia se atenúa el resto del grafo (Esc lo quita). |
@@ -96,6 +99,8 @@ Reglas importantes:
 - "Titular de la UGL" y "Titular de la Dirección Ejecutiva Local" se consideran el mismo cargo.
 - El resultado se **recalcula completo** en cada corrida, así que es seguro correrlo las veces que haga falta. `cache_indices.json` guarda los índices ya leídos para que sea rápido.
 - No se toman como autoridades las designaciones de personal ("para prestar servicios", "desempeñar tareas"), las ampliaciones de carga horaria ni las contrataciones.
+
+**Control de UGL contra el listado oficial:** si un boletín ubica una agencia en una UGL que no le corresponde (por ejemplo *"CAP Monte Quemado, UGL XXXII - Luján"*) y el listado oficial de agencias la tiene en una sola UGL, se usa la del listado; también se corrigen números de UGL mal tipeados cuando el boletín trae el nombre (*"UGL XXX- VIII – Chivilcoy"* → UGL XXXVIII). Cada corrección se informa al correr el script y queda registrada en `datos_ugl.json` (`_meta.ugl_corregida_por_listado`).
 
 **Boletines 2020 a 2023 (formato viejo):** en esos años el índice trae resúmenes abreviados y **sin nombres** (*"Designa y asigna titular CAP Lamadrid. UGL XXX"*). Para esos boletines el script busca la resolución dentro del mismo PDF y lee sus **artículos** (*"ARTÍCULO 2°.- Asignar ... las funciones de titular del Centro de Atención Personalizada Lamadrid ... a la señora ..."*), de donde saca la persona, el cargo y la dependencia. Como todo se aplica en orden cronológico, un dato de 2020 solo queda si **ningún boletín posterior** lo reemplazó; en la página esas designaciones anteriores a 2024 se muestran con la leyenda *"conviene verificar que siga vigente"*.
 

@@ -300,6 +300,20 @@ PUNTO = r"(?<!\b[A-Z])(?<!\bAg)(?<!\bDr)(?<!\bCAP)(?<!\bGral)\.(?:\s|(?=[A-Z]))"
 
 
 def detectar_ugl(txt):
+    # Si después de 'UGL' aparece el nombre de una UGL, manda el nombre: corrige números mal tipeados
+    # como 'UGL XXX- VIII – Chivilcoy' (que se leería como XXX - Azul).
+    for m in re.finditer(r"(?:\bUG\s?[Ll]|Unidad de Gesti[oó]n Local)", txt):
+        if re.search(r"\bde\s+$", txt[:m.start()]):      # 'Coordinación de UGL ...' es Nivel Central, no una UGL
+            continue
+        tramo = clave(txt[m.end():m.end() + 45])
+        mejor = None
+        for num, _, alias in UGLS:
+            for a in alias:
+                i = re.search(r"\b" + a + r"\b", tramo)
+                if i and (mejor is None or i.start() < mejor[1] or (i.start() == mejor[1] and len(a) > mejor[2])):
+                    mejor = (num, i.start(), len(a))
+        if mejor:
+            return mejor[0]
     for m in RX_UGL.finditer(txt):
         nombre = clave(m.group(2) or "")
         mejor = None
@@ -443,8 +457,18 @@ def cargar_directorio():
     return idx
 
 
+# Nombres que existen en muchas provincias: no se corrige la UGL por coincidencia con el listado
+NOMBRES_GENERICOS = {"SANTA ROSA", "SUR", "NORTE", "CENTRO", "OESTE", "ESTE", "SAN JOSE", "SAN MARTIN", "BELGRANO",
+                     "SAN JUAN", "SAN PEDRO", "SAN ANTONIO", "SAN LORENZO", "LA PAZ", "VILLA NUEVA", "CONCEPCION"}
+
+
 def construir(eventos, meta):
     dir_idx = cargar_directorio()
+    dir_por_ugl = {}
+    for k, nums in dir_idx.items():
+        for n in nums:
+            dir_por_ugl.setdefault(n, set()).add(k)
+    correcciones = []
     anuladas = {e["ref"] for e in eventos if e["accion"] == "anula"}
     ugls = {num: {"nombre": nom, "autoridades": {}, "agencias": {}, "historial": []} for num, nom, _ in UGLS}
     sin_ugl = []
@@ -475,6 +499,15 @@ def construir(eventos, meta):
         if not num:
             sin_ugl.append(e)
             continue
+        # Control contra el listado oficial: si la dependencia existe en UNA sola UGL y no en la que dice
+        # el boletín, el boletín tiene el número de UGL mal (p. ej. 'CAP Monte Quemado, UGL XXXII - Luján').
+        if e.get("dependencia"):
+            kd = clave_lugar(e["dependencia"])
+            cand = dir_idx.get(kd, set())
+            if len(cand) == 1 and num not in cand and kd not in {clave_lugar(x) for x in NOMBRES_GENERICOS} and \
+                    not any(difflib.SequenceMatcher(None, kd, k2).ratio() >= 0.88 for k2 in dir_por_ugl.get(num, ())):
+                correcciones.append((e["fecha"], e["norma"], e["dependencia"], num, next(iter(cand))))
+                num = next(iter(cand))
         u = ugls[num]
         ref = {"fecha": e["fecha"], "norma": e["norma"]}
         hist = {"fecha": e["fecha"], "norma": e["norma"], "accion": e["accion"], "persona": e.get("persona"),
@@ -520,6 +553,10 @@ def construir(eventos, meta):
             "historial": sorted(u["historial"], key=lambda h: h["fecha"], reverse=True),
         }
     salida["_meta"]["eventos_sin_ugl"] = len(sin_ugl)
+    salida["_meta"]["ugl_corregida_por_listado"] = [
+        {"fecha": f, "norma": n, "agencia": d, "boletin_decia": a, "corregida_a": b} for f, n, d, a, b in correcciones]
+    for f, n, d, a, b in correcciones:
+        print(f"[CORRECCION] {d}: el boletín {f} ({n}) dice UGL {a}, el listado oficial la ubica en UGL {b}")
     return salida, sin_ugl
 
 
