@@ -177,6 +177,8 @@ def leer_indice(ruta):
 # --------------------------------------------------------------------------------------
 NORMA_ID = r"(?:R?ESOL|DI|RESFC|DISFC)-\d{4}-\d+-[A-Z\-]+[A-Z0-9]*#[A-Z]+"
 RX_IDX_NORMA = re.compile(r"^\s*(" + NORMA_ID + r")\s*$")
+# Boletines 2016-2019: 'Resolución N° 0898' / 'Disposición N° 12' en vez de 'RESOL-2016-898-INSSJP-DE#INSSJP'
+RX_IDX_NUM = re.compile(r"^\s*((?:Resoluci[oó]n|Disposici[oó]n)(?:\s+Conjunta)?\s+N[°ºo]\.?\s*(\d+)(?:[/-][\w.\-/]+)?)\s*$", re.I)
 RX_IDX_PAG = re.compile(r"\.*\s*p[áa]g\.?\s*\d+\s*$", re.I)
 RX_BLOQUE_RUIDO = re.compile(r"^\s*(p[áa]gina \d+\s*[íi]ndice|Año [XVIL]+ - N°|BUENOS AIRES, [A-Z][a-zé]+ \d|BOLET[IÍ]N\s*DEL INSTITUTO|"
                              r"DESCARGUE LA|PARA JUBILADOS Y PENSIONADOS\s*$)", re.I)
@@ -204,35 +206,74 @@ def adaptar_articulo(a):
     a = re.sub(r"\s+", " ", a).strip()
     a = re.sub(r"([a-záéíóúñ])- ([a-záéíóúñ])", r"\1\2", a)
     a = re.sub(r"\s*\([^)]*\)", "", a)
-    a = re.sub(r"\b(al|del) (Doctor|Dr\.|Licenciado|Lic\.|Contador|Cdor\.|Ingeniero|Ing\.|Arquitecto|Abogado)\s", r"\1 señor ", a)
-    a = re.sub(r"\b(a la|de la) (Doctora|Dra\.|Licenciada|Lic\.|Contadora|Cdora\.|Ingeniera|Ing\.|Arquitecta|Abogada)\s", r"\1 señora ", a)
+    # renuncias (formato 2016-2019): 'Aceptar, ..., la renuncia presentada por el Señor X, titular de la Agencia Y, ...'
+    a = re.sub(r"^Aceptar,?\s*(.*?)la\s+renuncia\s+(?:a este Instituto\s+)?(?:presentada\s+)?por\s+(el|la)\s+"
+               r"(?:Se[ñn]ora?|agente|trabajadora?|emplead[oa]|doctora?|Dra?\.|Lic\.)\s+(.+?),?\s+"
+               r"(?:a las funciones de\s+)?(titular|jefe|jefa|coordinador|coordinadora|referente)\s+",
+               lambda m: "Limitar, " + m.group(1) + ("a la señora " if m.group(2) == "la" else "al señor ") + m.group(3) +
+               ", las funciones de " + m.group(4) + " ", a, flags=re.I)
+    a = re.sub(r"\b(al|a la|del|de la) (Señor|Señora|Agente|Trabajador|Trabajadora|Empleado|Empleada)\b", lambda m: m.group(1) + " " + m.group(2).lower(), a)
+    a = re.sub(r"\b(al|del) (Doctor|Dr\.|Licenciado|Lic\.|Contador|Cdor\.|Ingeniero|Ing\.|Arquitecto|Abogado|empleado)\s", r"\1 señor ", a, flags=re.I)
+    a = re.sub(r"\b(a la|de la) (Doctora|Dra\.|Licenciada|Lic\.|Contadora|Cdora\.|Ingeniera|Ing\.|Arquitecta|Abogada|empleada)\s", r"\1 señora ", a, flags=re.I)
     a = re.sub(r",?\s*a partir (?:de|del) (?:la fecha de (?:su )?notificaci[oó]n|(?:el )?dictado de la presente|la fecha de la presente|[^,]{0,60}),", "", a, flags=re.I)
+    a = re.sub(r",?\s*\ba (su pedido|pedido del interesado|solicitud del interesado)\b,?", "", a, flags=re.I)
     a = re.sub(r",?\s*(?:y )?con car[aá]cter (?:transitorio|interino)[^,]*,", ",", a, flags=re.I)
-    a = re.sub(r"\s*,?\s*(correspondiendo|con una carga|con un r[ée]gimen|conforme|quedando|en el Tramo|seg[uú]n lo|en virtud|como as[ií] tambi[ée]n|en los t[ée]rminos|que le fuer[ao]n?|manteniendo|y el adicional)\b.*$", "", a, flags=re.I)
+    a = re.sub(r"\s*,?\s*(correspondiendo|con una carga|con un r[ée]gimen|conforme|quedando|en el Tramo|seg[uú]n lo|en virtud|como as[ií] tambi[ée]n|en los t[ée]rminos|que le fuer[ao]n?|asignad[ao]s?\b|reubic[aá]ndol[ao]|manteniendo|y el adicional)\b.*$", "", a, flags=re.I)
     for rx, rep in VERBOS:
         if re.match(rx, a, re.I):
             a = re.sub(rx, rep, a, count=1, flags=re.I).replace(rep + ",", rep, 1)
             break
+    # Formato 2016-2019: 'Designa en el Centro de Atención Personalizada X, de la UGL ..., con funciones de titular
+    # del mencionado Centro, a la señora Y' -> 'Designa y asigna a la señora Y, las funciones de titular del Centro ... X'
+    m = re.match(r"^(?:Designa|Asigna)[,]?\s+(?:asignando funciones\s+)?(?:en|para prestar servicios en)\s+(?:el|la)\s+(.+?),?\s+(?:con las|con|asign[aá]ndole(?:s)?(?:\s+las)?)\s+funciones\s+de\s+"
+                 r"(.+?)\s+(?:del?|de la)\s+(?:mencionad[oa]|citad[oa]|referid[oa]|precitad[oa])\s+[^,]+?,?\s+"
+                 r"((?:al|a la|a)\s+(?:señor|señora|agente|trabajador|trabajadora|doctor|doctora)\s+.+)$", a, re.I)
+    if m:
+        lugar = m.group(1)
+        art = "de la " if re.match(r"(?i)(agencia|boca|unidad|coordinaci|direcci|gerencia|subgerencia|divisi)", lugar) else "del "
+        a = f"Designa y asigna {m.group(3)}, las funciones de {m.group(2)} {art}{lugar}"
+    m = re.match(r"^(?:Designa|Asigna)[,]?\s+con (?:las )?funciones de\s+(.+?),?\s+((?:al|a la|a)\s+(?:señor|señora|agente|trabajador|trabajadora)\s+.+)$", a, re.I)
+    if m:
+        a = f"Designa y asigna {m.group(2)}, las funciones de {m.group(1)}"
     # 'Asigna las funciones de X, a la señora Y' -> 'Asigna a la señora Y, las funciones de X'
-    m = re.match(r"^(Asigna|Designa y asigna|Designa|Limita)\s+(las funciones .+?),?\s+((?:al|a la|a)\s+(?:señor|señora|trabajador|trabajadora|agente)\s+.+)$", a)
+    m = re.match(r"^(Asigna|Designa y asigna|Designa|Limita)\s+((?:las )?funciones .+?),?\s+((?:al|a la|a)\s+(?:señor|señora|trabajador|trabajadora|agente)\s+.+)$", a)
     if m:
         a = f"{m.group(1)} {m.group(3)}, {m.group(2)}"
     return a.strip(" ,")
 
 
+RX_INICIO_NORMA = re.compile(r"\n\s*(?:•\s*)?(?:" + NORMA_ID + r"|(?:Resoluci[oó]n|Disposici[oó]n)(?:\s+Conjunta)?\s+N[°ºo]\.?\s*\d+[^\n]{0,12})\s*\n\s*[A-ZÁÉÍÓÚÑ ]+,\s*\d{1,2}\s", re.I)
+
+
 def leer_indice_viejo(ruta):
+    fecha = fecha_de_archivo(os.path.basename(ruta))
+    anio = fecha[:4] if fecha else "0000"
     doc = pymupdf.open(ruta)
     try:
         # índice: bloques de la columna izquierda de las primeras páginas
-        indice, pendiente = [], None
+        indice, pendiente, seccion = [], None, None
         for n, x, t in _bloques(doc, 0, 3):
-            if x > 200 or re.search(r"\n\s*[A-ZÁÉÍÓÚÑ ]+,\s*\d{1,2}\s+[A-Z]{3}", t):
+            if x > 200 or re.search(r"(^|\n)\s*[A-ZÁÉÍÓÚÑ ]+,\s*\d{1,2}\s+[A-Z]{3}", t):
                 continue
             for l in [s.strip() for s in t.splitlines() if s.strip()]:
                 l = l.lstrip("•● ").strip()
+                if re.match(r"^(RESOLUCIONES|DISPOSICIONES)(\s+CONJUNTAS)?$", l):
+                    seccion = "DI" if l.startswith("DISP") else "RESOL"
+                    pendiente = None
+                    continue
+                m = re.match(r"^N[°ºo]\.?\s*(\d+)(?:[/-][\w.\-/]+)?$", l)
+                if m and seccion:
+                    l = ("Disposición" if seccion == "DI" else "Resolución") + " N° " + m.group(1)
                 m = RX_IDX_NORMA.match(l)
                 if m:
-                    pendiente = {"norma": m.group(1), "resumen": ""}
+                    pendiente = {"norma": m.group(1), "rotulo": m.group(1), "resumen": ""}
+                    continue
+                m = RX_IDX_NUM.match(l)
+                if m:
+                    tipo = "DI" if m.group(1).lower().startswith("disp") else "RESOL"
+                    pendiente = {"norma": f"{tipo}-{anio}-{int(m.group(2))}-INSSJP-DE#INSSJP", "resumen": "",
+                                 "rotulo_rx": (r"Disposici[oó]n" if tipo == "DI" else r"Resoluci[oó]n") +
+                                              r"(?:\s+Conjunta)?\s+N[°ºo]\.?\s*0*" + str(int(m.group(2))) + r"(?![\d])[^\n]{0,14}"}
                     continue
                 if pendiente is not None:
                     pendiente["resumen"] = (pendiente["resumen"] + " " + l).strip()
@@ -251,13 +292,14 @@ def leer_indice_viejo(ruta):
     for ent in indice:
         if not RELEVANTE.search(ent["resumen"]):
             continue
-        rx = re.compile(re.escape(ent["norma"]) + r"\s*\n\s*[A-ZÁÉÍÓÚÑ ]+,\s*\d{1,2}\s")
+        rot = ent.get("rotulo_rx") or re.escape(ent["rotulo"])
+        rx = re.compile(rot + r"\s*\n\s*[A-ZÁÉÍÓÚÑ ]+,\s*\d{1,2}\s")
         m = rx.search(texto)
         txts = []
         if m:
             cuerpo = texto[m.end():]
-            fin = re.search(re.escape(ent["norma"]) + r"\s*\n", cuerpo)
-            cuerpo = cuerpo[:fin.start()] if fin else cuerpo[:20000]
+            fins = [f.start() for f in (re.search(rot + r"\s*\n", cuerpo), RX_INICIO_NORMA.search(cuerpo)) if f]
+            cuerpo = cuerpo[:min(fins)] if fins else cuerpo[:20000]
             r = re.search(r"\b(RESUELVEN?|DISPONEN?)\s*:?\s*\n", cuerpo)
             parte = cuerpo[r.end():] if r else cuerpo
             articulos = [a for a in RX_ARTICULO.split(parte) if a.strip()]
@@ -272,6 +314,52 @@ def leer_indice_viejo(ruta):
         for txt in (txts or [ent["resumen"]]):
             entradas.append({"norma": ent["norma"], "txt": txt, "resumen": ent["resumen"]})
     return entradas
+
+
+MESES_ES = {m: i + 1 for i, m in enumerate("enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre".split())}
+
+
+MESES_ABR = {m: i + 1 for i, m in enumerate("ENE FEB MAR ABR MAY JUN JUL AGO SEP OCT NOV DIC".split())}
+
+
+def fecha_impresa(ruta):
+    """(fecha del encabezado, fecha de firma más reciente de las normas, firma de contenido) del boletín."""
+    try:
+        doc = pymupdf.open(ruta)
+        t0 = doc[0].get_text()
+        todo = "".join(pg.get_text() for pg in doc)
+        doc.close()
+    except Exception:
+        return None, None, None
+    impresa = None
+    m = re.search(r"(\d{1,2})\s+(?:de\s+)?([A-Za-zé]+)\s+(?:de\s+)?(20\d{2})", t0)
+    if m and sin_tildes(m.group(2)).lower() in MESES_ES:
+        try:
+            impresa = datetime.date(int(m.group(3)), MESES_ES[sin_tildes(m.group(2)).lower()], int(m.group(1))).isoformat()
+        except ValueError:
+            pass
+    firmas = []
+    for d, mes, a in re.findall(r"[A-ZÁÉÍÓÚÑ]{4,},\s*(\d{1,2})\s+([A-Z]{3})\.?\s*(20\d{2})", todo):
+        if mes in MESES_ABR:
+            try:
+                firmas.append(datetime.date(int(a), MESES_ABR[mes], int(d)).isoformat())
+            except ValueError:
+                pass
+    firma = max(firmas) if firmas else None
+    plano = re.sub(r"\s+", "", todo)
+    return impresa, firma, f"{len(plano)}:{plano[-400:]}"
+
+
+def elegir_fecha(archivo, impresa, firma):
+    """Fecha real del boletín: la del nombre del archivo salvo que las firmas de las normas muestren que es de otro día."""
+    def encaja(f):
+        if not f or not firma:
+            return False
+        dias = (datetime.date.fromisoformat(f) - datetime.date.fromisoformat(firma)).days
+        return 0 <= dias <= 20
+    if not firma or encaja(archivo) or not encaja(impresa):
+        return archivo
+    return impresa
 
 
 def fecha_de_archivo(nombre):
@@ -361,6 +449,7 @@ def separar_dependencia(cargo):
         rol = "Titular"
     else:
         rol = re.sub(r"^titular\s+(de la|del|de)\s+", "", rol, flags=re.I)
+    dep = re.sub(r"^N[°º]\s*", "", dep)
     if re.fullmatch(r"(?i)(pami\s*)?\d+", dep):
         dep = "PAMI " + re.sub(r"\D", "", dep)
     elif dep.isupper() or dep.islower():
@@ -407,7 +496,7 @@ def interpretar(txt):
     if len(persona.split()) < 2 or len(persona) > 60:
         return ev
 
-    es_alta = bool(re.search(r"\basign", b)) and "funcion" in b
+    es_alta = bool(re.search(r"\basign(a|ar|an|ase)?\b", b)) and "funcion" in b
     es_baja = b.startswith("limit") and not es_alta
     es_firma = b.startswith("delega") and ("firma" in b or "fima" in b) and ugl is not None
 
@@ -665,7 +754,7 @@ def main():
             archivos += [os.path.join(c, f) for f in os.listdir(c) if f.lower().endswith(".pdf")]
     print(f"[INFO] {len(archivos)} boletines encontrados")
 
-    eventos, fechas = [], []
+    eventos, fechas, fechas_vistas, mal_fechados = [], [], set(), []
     for ruta in sorted(archivos):
         nombre = os.path.basename(ruta)
         fecha = fecha_de_archivo(nombre)
@@ -683,6 +772,20 @@ def main():
             except Exception as ex:
                 print(f"[ERROR] {nombre}: {ex}")
                 continue
+        # PAMI a veces publica en la dirección de un día el boletín de otro (p. ej. 08-03-24.pdf trae el del 08/04/2024).
+        # Se usa la fecha impresa en el boletín y se descartan las copias repetidas.
+        kf = "fecha2:" + clave_cache
+        if kf not in cache:
+            cache[kf] = list(fecha_impresa(ruta))
+        impresa, firma, firma_cont = cache[kf]
+        real = elegir_fecha(fecha, impresa, firma)
+        if firma_cont and firma_cont in fechas_vistas:
+            continue          # copia repetida de otro boletín
+        if real != fecha:
+            mal_fechados.append((nombre, real))
+            fecha = real
+        if firma_cont:
+            fechas_vistas.add(firma_cont)
         fechas.append(fecha)
         for i, ent in enumerate(cache[clave_cache]):
             for ev in interpretar(ent["txt"]):
@@ -692,8 +795,33 @@ def main():
                            "boletin": nombre, "resumen": ent.get("resumen") or ent["txt"]})
                 eventos.append(ev)
 
+    # normas de boletines que faltan en el servidor, cargadas desde el buscador de PAMI (normas_faltantes.json)
+    ruta_falt = os.path.join(os.path.dirname(os.path.abspath(__file__)), "normas_faltantes.json")
+    if os.path.exists(ruta_falt):
+        with open(ruta_falt, encoding="utf-8") as f:
+            faltantes = json.load(f).get("normas", [])
+        ya = {e["norma"] for e in eventos}
+        for i, nf in enumerate(faltantes):
+            if nf["norma"] in ya:
+                continue
+            t = re.sub(r"\s*EX-\d{4}.*$", "", nf["detalle"])
+            t = re.sub(r"^Design[oó] y asign[oó],?", "Designar y asignar,", t)
+            t = re.sub(r"^(Asign|Limit|Design)[oó],?", lambda m: m.group(1) + "ar,", t)
+            txt = adaptar_articulo(t)
+            if nf["fecha"] not in fechas:
+                fechas.append(nf["fecha"])
+            for ev in interpretar(txt):
+                mnum = re.match(r"^[A-Z]+-\d{4}-(\d+)", nf["norma"])
+                ev.update({"fecha": nf["fecha"], "orden": (int(mnum.group(1)) if mnum else 0, i),
+                           "norma": nf["norma"], "norma_n": normalizar_norma(nf["norma"]),
+                           "boletin": nf.get("boletin", ""), "resumen": txt})
+                eventos.append(ev)
+
     with open(CACHE, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False)
+    for nombre, impresa in mal_fechados:
+        print(f"[AVISO] {nombre} en realidad es el boletín del {impresa[8:]}/{impresa[5:7]}/{impresa[:4]}: "
+              f"falta el del {nombre[:2]}/{nombre[3:5]}/20{nombre[6:8]} (PAMI publicó otro archivo en esa dirección)")
 
     meta = {"generado": datetime.datetime.now().isoformat(timespec="seconds"),
             "boletines": len(fechas), "desde": min(fechas) if fechas else None, "hasta": max(fechas) if fechas else None,

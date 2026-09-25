@@ -213,3 +213,6 @@ Para que la actualización sea diaria, programá `bot_diario_graffo.py` en el **
 ---
 
 <p align="center"><i>Diseño y desarrollo: Leandro Sesto - 2026</i></p>
+
+### Boletines que faltan en el servidor de PAMI
+A veces PAMI publica en la dirección de un día el boletín de otro (p. ej. `08-03-24.pdf` trae el del 08/04/2024). El procesador detecta la fecha real por las fechas de firma de las normas y descarta las copias repetidas. Las normas de esos boletines perdidos se cargan en `normas_faltantes.json`, con los resúmenes del buscador de [pami.org.ar/boletin-oficial](https://www.pami.org.ar/boletin-oficial).
