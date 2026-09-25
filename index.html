@@ -1425,11 +1425,6 @@ function acercarA(ids, maxZoom = 1.3) {
     clearTimeout(camaraTimer);
     camaraTimer = setTimeout(() => {
         camaraTimer = null;
-        // si todo lo desplegado ya se ve en pantalla, no se mueve la cámara
-        const cont = document.getElementById('contenedor-grafo').getBoundingClientRect();
-        const pos = red.getPositions(ids);
-        const visibles = ids.every(id => { const d = pos[id] && red.canvasToDOM(pos[id]); return d && d.x > 40 && d.y > 40 && d.x < cont.width - 40 && d.y < cont.height - 40; });
-        if (visibles) return;
         camaraHasta = performance.now() + 700;
         red.fit({ nodes: ids, maxZoomLevel: maxZoom, animation: { duration: 600, easingFunction: 'easeInOutCubic' } });
     }, 330);
