@@ -235,3 +235,6 @@ python procesar_catalogo.py         # genera datos_extra.json
 
 ### Anexos que no están en el texto del boletín
 Algunas designaciones se publican solo como anexo PDF de la resolución (por ejemplo el personigrama de la nueva estructura de 2024, RESOL-2024-1273, que asignó a los 73 gerentes y subgerentes). Esas designaciones se cargaron en `normas_faltantes.json` como eventos explícitos (`"evento": {...}` con la `unidad` del organigrama).
+
+### Personal de áreas del Nivel Central (`personal_central.json`)
+Contrataciones y movimientos de personal de áreas puntuales (por ahora la Subgerencia de Internación Domiciliaria), tomados del boletín y de los anexos de cada resolución. No se guardan CUIL ni honorarios. `procesar_catalogo.py` lo incorpora a `datos_extra.json` y la ficha del área lo muestra en "Personal del área".

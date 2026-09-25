@@ -157,6 +157,11 @@ def main():
     tot = {k: sum(len(u[k]) for u in ugls.values()) for k in ("estructura", "inmuebles", "personal")}
     salida = {"_nota": "Generado por procesar_catalogo.py desde catalogo_pami.json (buscador de www.pami.org.ar/boletin-oficial).",
               "_totales": tot, "ugls": dict(sorted(ugls.items()))}
+    # personal de áreas del Nivel Central (personal_central.json, cargado a partir de boletines y anexos)
+    ruta_pc = os.path.join(BASE, "personal_central.json")
+    if os.path.exists(ruta_pc):
+        with open(ruta_pc, encoding="utf-8") as f:
+            salida["central"] = {k: v for k, v in json.load(f).items() if not k.startswith("_")}
     with open(SALIDA, "w", encoding="utf-8") as f:
         json.dump(salida, f, ensure_ascii=False, separators=(",", ":"))
     print(f"[OK] datos_extra.json · estructura {tot['estructura']} · inmuebles {tot['inmuebles']} · personal {tot['personal']} · {sin_ugl} sin UGL")

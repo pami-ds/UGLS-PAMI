@@ -1,0 +1,409 @@
+{
+ "_nota": "Personal de áreas del Nivel Central según el boletín y los anexos de cada resolución (sin CUIL ni honorarios). Se amplía a mano.",
+ "GPM-ID": {
+  "personal": [
+   {
+    "fecha": "2026-09-23",
+    "norma": "RESOL-2026-2979",
+    "accion": "ingreso",
+    "persona": "Fernando Zicovich Wilson",
+    "rol": "Profesional (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2026-09-18",
+    "norma": "RESOL-2026-2941",
+    "accion": "ingreso",
+    "persona": "Camila Daiana Bonora",
+    "rol": "Médica (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2026-09-18",
+    "norma": "RESOL-2026-2942",
+    "accion": "ingreso",
+    "persona": "Juan Andrés Laurino",
+    "rol": "Profesional (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2026-09-18",
+    "norma": "RESOL-2026-2943",
+    "accion": "ingreso",
+    "persona": "Sofía Belén Castro Lemme",
+    "rol": "Médica (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2026-06-03",
+    "norma": "RESOL-2026-1701",
+    "accion": "egreso",
+    "persona": "Adriana Inés Olaondo",
+    "rol": "Se rescindió su contrato",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2026-03-19",
+    "norma": "RESOL-2026-915",
+    "accion": "ingreso",
+    "persona": "Luciana Melina Díaz",
+    "rol": "Médica (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2026-02-20",
+    "norma": "RESOL-2026-608",
+    "accion": "ingreso",
+    "persona": "Sofía Romero Villalobos",
+    "rol": "Administrativa (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2026-02-13",
+    "norma": "RESOL-2026-534",
+    "accion": "ingreso",
+    "persona": "Lara Vázquez",
+    "rol": "Médica (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-12-05",
+    "norma": "RESOL-2025-3020",
+    "accion": "ingreso",
+    "persona": "Matías Leonardo Pérez",
+    "rol": "Administrativo (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-12-05",
+    "norma": "RESOL-2025-3021",
+    "accion": "ingreso",
+    "persona": "Lucas Nicolás Domínguez",
+    "rol": "Administrativo (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-10-29",
+    "norma": "RESOL-2025-2643",
+    "accion": "ingreso",
+    "persona": "Juan Martín De Zan",
+    "rol": "Médico (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-10-29",
+    "norma": "RESOL-2025-2644",
+    "accion": "ingreso",
+    "persona": "Jazmín Ayelén Márquez",
+    "rol": "Médica (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-07-07",
+    "norma": "RESOL-2025-1522",
+    "accion": "ingreso",
+    "persona": "Débora Viviana Trinelli",
+    "rol": "Contrato",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-07-03",
+    "norma": "RESOL-2025-1496",
+    "accion": "ingreso",
+    "persona": "Natalia Patricia Truffa",
+    "rol": "Profesional (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-07-03",
+    "norma": "RESOL-2025-1497",
+    "accion": "ingreso",
+    "persona": "Claudia Gabriela Passerini",
+    "rol": "Profesional (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-07-03",
+    "norma": "RESOL-2025-1510",
+    "accion": "ingreso",
+    "persona": "Ariadna Aylén Martini",
+    "rol": "Contrato",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-04-25",
+    "norma": "RESOL-2025-858",
+    "accion": "egreso",
+    "persona": "Martín Miguel Balmaceda",
+    "rol": "Se rescindió su contrato",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-04-24",
+    "norma": "RESOL-2025-833",
+    "accion": "ingreso",
+    "persona": "Constanza Schmocker",
+    "rol": "Contrato",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-04-01",
+    "norma": "RESOL-2025-643",
+    "accion": "ingreso",
+    "persona": "Gabriela Cristina Coccaro",
+    "rol": "Contrato",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-04-01",
+    "norma": "RESOL-2025-644",
+    "accion": "ingreso",
+    "persona": "Claudia Loveira",
+    "rol": "Contrato",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-04-01",
+    "norma": "RESOL-2025-646",
+    "accion": "ingreso",
+    "persona": "Marcos Caviglia",
+    "rol": "Médico (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2025-04-01",
+    "norma": "RESOL-2025-647",
+    "accion": "ingreso",
+    "persona": "Mariela Scarano",
+    "rol": "Contrato",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-28",
+    "norma": "RESOL-2024-3304",
+    "accion": "ingreso",
+    "persona": "Nicolás Facundo Gei Acri",
+    "rol": "Administrativo (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-25",
+    "norma": "RESOL-2024-3283",
+    "accion": "ingreso",
+    "persona": "Sabrina Paola Stefano",
+    "rol": "Médica (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-25",
+    "norma": "RESOL-2024-3283",
+    "accion": "ingreso",
+    "persona": "Ezequiel Amar",
+    "rol": "Médico (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-14",
+    "norma": "RESOL-2024-3200",
+    "accion": "ingreso",
+    "persona": "Luis Hernán Ricaurte",
+    "rol": "Profesional (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Lautaro Román Asenso",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Celeste Florencia Endrizzi",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Carmín María Maitia",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Magaly Victoria Martínez",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Nicolás Papavero",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Federico Damián Portero",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Santiago Agustín Romang",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Lara Sanguinetti",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Viviana Paola Schiavo",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Agustina Stachira",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3143",
+    "accion": "ingreso",
+    "persona": "Tomás Alejo Uñates Sgroi",
+    "rol": "Administrativa/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-11-06",
+    "norma": "RESOL-2024-3144",
+    "accion": "ingreso",
+    "persona": "Verónica Soledad Schettino",
+    "rol": "Profesional (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-10-28",
+    "norma": "RESOL-2024-3029",
+    "accion": "ingreso",
+    "persona": "Agustín Rey López",
+    "rol": "Profesional (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-10-28",
+    "norma": "RESOL-2024-3035",
+    "accion": "ingreso",
+    "persona": "Belén Celeste Agatiello",
+    "rol": "Administrativa (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-08-07",
+    "norma": "RESOL-2024-2247",
+    "accion": "ingreso",
+    "persona": "Adriana Inés Olaondo",
+    "rol": "Médica (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-07-17",
+    "norma": "RESOL-2024-1971",
+    "accion": "ingreso",
+    "persona": "Martín Miguel Balmaceda",
+    "rol": "Médica/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-07-17",
+    "norma": "RESOL-2024-1971",
+    "accion": "ingreso",
+    "persona": "Ayelén Andrea Carrón",
+    "rol": "Médica/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-07-17",
+    "norma": "RESOL-2024-1971",
+    "accion": "ingreso",
+    "persona": "Mónica Silvina Rostagno",
+    "rol": "Médica/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-07-17",
+    "norma": "RESOL-2024-1971",
+    "accion": "ingreso",
+    "persona": "Jorge Luis Ugalde",
+    "rol": "Médica/o (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2024-07-17",
+    "norma": "RESOL-2024-1971",
+    "accion": "ingreso",
+    "persona": "Cinthya Leonor Soich",
+    "rol": "Abogada (contrato)",
+    "area": "Subgerencia de Internación Domiciliaria"
+   },
+   {
+    "fecha": "2023-08-29",
+    "norma": "RESOL-2023-1143",
+    "accion": "traslado",
+    "persona": "Pablo Damián Sáez de Guinoa",
+    "rol": "Trasladado al Departamento",
+    "area": "Departamento de Atención Domiciliaria"
+   },
+   {
+    "fecha": "2022-03-21",
+    "norma": "RESOL-2022-316",
+    "accion": "traslado",
+    "persona": "Laura Luciana Fainland",
+    "rol": "Trasladada al Departamento",
+    "area": "Departamento de Atención Domiciliaria"
+   },
+   {
+    "fecha": "2021-05-21",
+    "norma": "RESOL-2021-659",
+    "accion": "ingreso",
+    "persona": "Claudio Rubén Sgarlata",
+    "rol": "Médico (contrato)",
+    "area": "Departamento de Atención Domiciliaria",
+    "hasta": "2021-06-30"
+   },
+   {
+    "fecha": "2021-04-14",
+    "norma": "RESOL-2021-491",
+    "accion": "ingreso",
+    "persona": "María Paula Zúñiga",
+    "rol": "Médica (contrato)",
+    "area": "Departamento de Atención Domiciliaria",
+    "hasta": "2021-06-30"
+   }
+  ]
+ }
+}

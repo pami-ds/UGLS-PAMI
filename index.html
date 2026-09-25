@@ -1288,7 +1288,8 @@ function conectarInteracciones() {
     });
     red.on('hoverNode', p => { document.getElementById('contenedor-grafo').style.cursor = 'grab'; FX.hover(p.node); });
     red.on('blurNode', () => { document.getElementById('contenedor-grafo').style.cursor = ''; FX.hover(null); });
-    red.on('dragStart', () => FX.hover(null));
+    red.on('dragStart', () => { FX.hover(null); cancelarCamara(); });
+    red.on('zoom', () => cancelarCamara());
     document.getElementById('contenedor-grafo').addEventListener('mouseleave', () => FX.hover(null));
     red.on('afterDrawing', ctx => FX.pintar(ctx));
 }
@@ -1348,8 +1349,24 @@ function animarDesde(origen, destinos, dur = 380) {
     requestAnimationFrame(paso);
 }
 // Acerca la vista a un nodo y lo que acaba de desplegar
+// Si el usuario mueve o hace zoom mientras la vista se acomoda, se cancela el movimiento automático.
+let camaraTimer = null, camaraHasta = 0;
 function acercarA(ids, maxZoom = 1.3) {
-    setTimeout(() => red.fit({ nodes: ids, maxZoomLevel: maxZoom, animation: { duration: 650, easingFunction: 'easeInOutCubic' } }), 330);
+    clearTimeout(camaraTimer);
+    camaraTimer = setTimeout(() => {
+        camaraTimer = null;
+        // si todo lo desplegado ya se ve en pantalla, no se mueve la cámara
+        const cont = document.getElementById('contenedor-grafo').getBoundingClientRect();
+        const pos = red.getPositions(ids);
+        const visibles = ids.every(id => { const d = pos[id] && red.canvasToDOM(pos[id]); return d && d.x > 40 && d.y > 40 && d.x < cont.width - 40 && d.y < cont.height - 40; });
+        if (visibles) return;
+        camaraHasta = performance.now() + 700;
+        red.fit({ nodes: ids, maxZoomLevel: maxZoom, animation: { duration: 600, easingFunction: 'easeInOutCubic' } });
+    }, 330);
+}
+function cancelarCamara() {
+    clearTimeout(camaraTimer); camaraTimer = null;
+    if (performance.now() < camaraHasta) { camaraHasta = 0; red.moveTo({ position: red.getViewPosition(), scale: red.getScale() }); }
 }
 function alternarTodas() {
     const todas = COLAPSADAS.size < modelo.ugls.length;
@@ -1620,6 +1637,29 @@ const NOTAS_ORG = {
     'GPM-ID': `<b>Cómo se formó:</b> hasta 2024 la internación domiciliaria se manejaba desde el <i>Departamento de Atención Domiciliaria</i> de la Subgerencia de Administración de Prestaciones Médicas. El 01/02/2024 Mónica Graciela Oliva entró como Coordinadora de ese Departamento (RESOL-2024-284). El 30/04/2024 la nueva estructura del Instituto (RESOL-2024-1272) creó esta <b>Subgerencia de Internación Domiciliaria</b> y ese mismo día Oliva fue asignada como <b>Subgerente</b> (RESOL-2024-1273, Anexo I). Ese anexo no está en el texto del boletín, por eso no aparecía. Hoy el Departamento de Atención Domiciliaria depende de esta Subgerencia y está a cargo de Gabriela Fernanda Alfano (RESOL-2026-2440).`
 };
 
+/* ---------- Personal de un área del Nivel Central (datos_extra.json -> central) ---------- */
+function htmlPersonalCentral(o) {
+    const lista = EXTRA_RAW?.central?.[o.orgId]?.personal || [];
+    if (!lista.length) return '';
+    const cron = [...lista].sort((a, b) => a.fecha.localeCompare(b.fecha));
+    const estado = new Map();
+    for (const x of cron) estado.set(clave(x.persona), x.accion === 'egreso' ? null : x);
+    const hoy = new Date().toISOString().slice(0, 10);
+    const vig = [...estado.values()].filter(x => x && !(x.hasta && x.hasta < hoy));
+    const grupo = x => /m[eé]dic|profesional|abogad/i.test(x.rol) ? 'Profesionales' : /administrativ/i.test(x.rol) ? 'Administrativos' : 'Otros';
+    const por = {};
+    for (const x of vig) (por[grupo(x)] = por[grupo(x)] || []).push(x);
+    const fila = x => `<tr><td><b>${esc(x.persona)}</b><div class="dep">${esc(x.rol)}${x.area && !/Subgerencia/.test(x.area) ? ' &middot; ' + esc(x.area) : ''}</div></td>
+        <td class="dep" style="text-align:right;white-space:nowrap">${fechaCorta(x.fecha)}<br>${esc(x.norma)}</td></tr>`;
+    const grupos = ['Profesionales', 'Administrativos', 'Otros'].filter(g => por[g]?.length).map(g =>
+        `<div class="extra-nota" style="margin-top:8px;font-weight:600">${g} (${por[g].length})</div><table class="tabla-personal">${por[g].sort((a, b) => a.persona.localeCompare(b.persona)).map(fila).join('')}</table>`).join('');
+    const movs = [...lista].sort((a, b) => b.fecha.localeCompare(a.fecha)).map(x => itemExtra({ ...x, texto: x.rol, dep: null }, null, false)).join('');
+    return `<details class="grupo-cargos" open><summary>Personal del área<span class="cnt">${vig.length}</span></summary>
+        <div class="extra-nota">Contrataciones, traslados y designaciones publicadas en el boletín y en los anexos de cada resolución. Se quitan quienes tienen publicada la rescisión o baja; puede haber otras bajas que no se publicaron.</div>
+        ${grupos}</details>
+        <details class="grupo-cargos"><summary>Movimientos de personal<span class="cnt">${lista.length}</span></summary>${movs}</details>`;
+}
+
 function mostrarOrg(o) {
     const ruta = [];
     if (!o.independiente) for (let p = o.padre; p; p = p.padre) ruta.unshift(`<a onclick="seleccionar('${p.id}')">${esc(p.nombre)}</a>`);
@@ -1650,6 +1690,7 @@ function mostrarOrg(o) {
         ${tit.size ? htmlAutoridades(tit, 'org') : '<div class="mensaje-vacio" style="margin-top:8px">Sin designación de titular en los boletines analizados. Podés cargarla con Editar.</div>'}
         ${areas.size ? `<div class="seccion-titulo">Áreas internas con designaciones (${areas.size})</div>${htmlAutoridades(areas, 'org')}` : ''}
         ${o.hijos.length ? `<div class="seccion-titulo">Unidades que dependen (${o.hijos.length})</div><div class="lista-hijos">${hijos}</div>` : ''}
+        ${htmlPersonalCentral(o)}
         ${red ? `<div class="seccion-titulo">Red territorial (${modelo.ugls.length} UGL)</div><div class="lista-hijos">${red}</div>` : ''}
         ${otros}
         ${htmlHistorial(o.historial, false)}`;
@@ -1856,7 +1897,9 @@ function resaltarPersona(nombre) {
         el.closest('details')?.setAttribute('open', '');
         const box = el.closest('.tarjeta-cargo, tr, .extra-item') || el;
         box.classList.add('resaltado-busqueda');
-        box.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        const panel = document.getElementById('contenido-detalles');
+        const top = box.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop - panel.clientHeight / 2;
+        panel.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
         setTimeout(() => box.classList.remove('resaltado-busqueda'), 2500);
     }, 80);
 }
@@ -1874,6 +1917,11 @@ document.getElementById('buscador').addEventListener('input', e => {
         if (motivo) res.push({ id, o, nombre, motivo });
         for (const a of o.autoridades.values()) for (const p of a.personas)
             if (clave(p).includes(q)) res.push({ id, o, nombre: p, motivo: 'Persona', sub: `${a.cargo} · ${nombre}${o.tipo === 'agencia' ? ' (UGL ' + o.ugl.num + ')' : ''}` });
+    }
+    // personal de áreas del Nivel Central
+    for (const [uid, v] of Object.entries(EXTRA_RAW?.central || {})) for (const x of v.personal || []) {
+        const o = modelo.org?.get('ORG-' + uid);
+        if (o && clave(x.persona).includes(q)) res.push({ id: o.id, o, nombre: x.persona, motivo: 'Personal', sub: `${x.rol} · ${o.nombre}` });
     }
     // personal registrado (ingresos, traslados, egresos)
     for (const u of modelo.ugls) for (const x of EXTRA_RAW?.ugls?.[u.num]?.personal || []) {
@@ -1992,6 +2040,12 @@ document.getElementById('chkAgencias').addEventListener('change', aplicarFiltros
         if (q.length >= 3 && EXTRA_RAW) {
             const partes = q.split(' ').filter(Boolean);
             const ya = new Set(res.filter(r => r.persona).map(r => clave(r.texto)));
+            for (const [uid, v] of Object.entries(EXTRA_RAW.central || {})) for (const x of v.personal || []) {
+                const kp = clave(x.persona), o = modelo.org?.get('ORG-' + uid);
+                if (!o || ya.has(kp) || !partes.every(t => kp.includes(t))) continue;
+                ya.add(kp);
+                res.push({ id: o.id, o, texto: x.persona, extra: `Personal · ${o.nombre}`, puntos: 6, persona: true });
+            }
             for (const u of modelo.ugls) for (const x of EXTRA_RAW.ugls?.[u.num]?.personal || []) {
                 const kp = clave(x.persona);
                 if (ya.has(kp) || !partes.every(t => kp.includes(t))) continue;
